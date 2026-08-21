@@ -11515,6 +11515,2652 @@
       },
       "correctKey": "A",
       "explanationSummary": "O grupo de processos de monitoramento e controle é responsável por acompanhar, revisar e regular o progresso e o desempenho do projeto, identificando desvios e implementando as ações corretivas necessárias."
+    },
+    {
+      "id": "petro2012-q1",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 1
+      },
+      "subtopic": "P.1 Compreensão de textos",
+      "stem": "Segundo os Textos I e II, a linguagem é",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "difícil",
+          "key": "A",
+          "explanation": "O texto não trata a linguagem como algo difícil, mas discute a existência de normas e usos diferentes."
+        },
+        {
+          "text": "plural",
+          "key": "B"
+        },
+        {
+          "text": "uniforme",
+          "key": "C",
+          "explanation": "Contradiz diretamente a ideia central dos textos: a linguagem é apresentada como plural/variável, não uniforme."
+        },
+        {
+          "text": "desregrada",
+          "key": "D",
+          "explanation": "Os textos não defendem a ausência de regras (desregrada), apenas que há mais de uma norma/uso legítimo."
+        },
+        {
+          "text": "dispensável",
+          "key": "E",
+          "explanation": "Nenhum dos textos sugere que a linguagem seja dispensável; ao contrário, ambos a colocam no centro da discussão."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "B",
+      "explanationSummary": "O Texto I defende que a linguagem é uma questão de uso (não de princípios únicos) e o Texto II encerra com \"O português são dois; o outro, mistério\", reforçando a ideia de que a língua não é uma realidade única/uniforme, mas plural."
+    },
+    {
+      "id": "petro2012-q2",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 2
+      },
+      "subtopic": "P.1 Compreensão de textos",
+      "stem": "O cronista do Texto I e o poeta do Texto II constroem opiniões convergentes a respeito da figura do professor de Português. De acordo com esse ponto de vista, o professor, em relação ao saber gramatical dos outros, mostra-se",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "alheio",
+          "key": "A",
+          "explanation": "Alheio' (indiferente) contradiz o tom dos textos, em que o professor é retratado como muito engajado com a norma."
+        },
+        {
+          "text": "superior",
+          "key": "B"
+        },
+        {
+          "text": "incoerente",
+          "key": "C",
+          "explanation": "Os textos não tratam de incoerência do professor, e sim de sua autoridade/domínio sobre o saber gramatical."
+        },
+        {
+          "text": "compreensivo",
+          "key": "D",
+          "explanation": "'Compreensivo' é o oposto do tom irônico de superioridade com que o professor é retratado em ambos os textos."
+        },
+        {
+          "text": "condescendente",
+          "key": "E",
+          "explanation": "'Condescendente' sugere tolerância complacente, mas o traço destacado nos textos é a superioridade de saber, não a condescendência."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "B",
+      "explanationSummary": "No Texto II, \"Professor Carlos Góis, ele é quem sabe, / e vai desmatando / o amazonas de minha ignorância\" retrata o professor como detentor de um saber superior ao dos demais, tom irônico presente também no Texto I quanto à autoridade do professor sobre a norma."
+    },
+    {
+      "id": "petro2012-q3",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 3
+      },
+      "subtopic": "P.4 Significação das palavras",
+      "stem": "O \"gigolô das palavras\", como o cronista se caracteriza no Texto I, entende sua escrita como",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "inferior",
+          "key": "A",
+          "explanation": "O cronista se coloca em posição de domínio sobre a língua ('jamais me deixo dominar por elas'), não de inferioridade."
+        },
+        {
+          "text": "medrosa",
+          "key": "B",
+          "explanation": "'Medrosa' contradiz o tom de abuso/domínio ('Abuso delas... Maltrato-as') com que o cronista descreve sua relação com as palavras."
+        },
+        {
+          "text": "submissa",
+          "key": "C",
+          "explanation": "'Submissa' é o oposto do que o texto afirma explicitamente: o cronista diz nunca se deixar dominar pelas palavras."
+        },
+        {
+          "text": "subversiva",
+          "key": "D"
+        },
+        {
+          "text": "equivocada",
+          "key": "E",
+          "explanation": "O texto não trata a escrita do cronista como equivocada/incorreta, mas como transgressora das normas."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "D",
+      "explanationSummary": "O cronista descreve uma relação de dominação sobre a língua (\"Abuso delas... Exijo submissão... Maltrato-as... jamais me deixo dominar por elas\"), isto é, uma postura de transgressão/subversão das normas gramaticais, e não de submissão a elas."
+    },
+    {
+      "id": "petro2012-q4",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 4
+      },
+      "subtopic": "P.2 Ortografia oficial",
+      "stem": "De acordo com a ortografia da língua portuguesa, sabida e ensinada pelo professor do Texto II, a seguinte frase respeita \"a linguagem / na superfície estrelada de letras\" (l. 5-6):",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "A última paralização ocorreu há cerca de dois anos.",
+          "key": "A",
+          "explanation": "'Paralização' está grafado com Z; a forma correta, de 'paralisar', é 'paralisação', com S."
+        },
+        {
+          "text": "A última paralizassão ocorreu acerca de dois anos.",
+          "key": "B",
+          "explanation": "'Paralizassão' não é uma palavra da língua portuguesa; é uma deformação inexistente da forma correta 'paralisação'."
+        },
+        {
+          "text": "A última paralização ocorreu a cerca de dois anos.",
+          "key": "C",
+          "explanation": "Mantém a grafia incorreta 'paralização' (com Z) e ainda troca 'há' (verbo haver, indicando tempo passado) por 'a cerca de'."
+        },
+        {
+          "text": "A última paralisação ocorreu há cerca de dois anos.",
+          "key": "D"
+        },
+        {
+          "text": "A última paralisação ocorreu a cerca de dois anos.",
+          "key": "E",
+          "explanation": "Grafa corretamente 'paralisação' (com S), mas usa 'a cerca de' em vez de 'há cerca de', que é a forma exigida para indicar tempo transcorrido."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "D",
+      "explanationSummary": "\"Paralisação\" grafa-se com S (de paralisar), não com Z, e \"há cerca de dois anos\" exige o verbo haver (tempo passado), não a preposição \"a\" (que indicaria aproximação futura/atual)."
+    },
+    {
+      "id": "petro2012-q5",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 5
+      },
+      "subtopic": "P.10 Regência verbal e nominal",
+      "stem": "Segundo diria o Professor Carlos Góis, mencionado no Texto II, a frase cuja regência do verbo respeita a norma-padrão é:",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Esquecemo-nos daquelas regras gramaticais.",
+          "key": "A"
+        },
+        {
+          "text": "Os professores avisaram aos alunos da prova.",
+          "key": "B",
+          "explanation": "Na norma-padrão, \"avisar\" rege objeto direto de pessoa (\"avisar os alunos\"), não \"aos alunos\"."
+        },
+        {
+          "text": "Deve-se obedecer o português padrão.",
+          "key": "C",
+          "explanation": "\"Obedecer\" é verbo transitivo indireto: \"obedecer ao português padrão\"."
+        },
+        {
+          "text": "Assistimos uma aula brilhante.",
+          "key": "D",
+          "explanation": "No sentido de \"ver/presenciar\", \"assistir\" exige a preposição \"a\": \"assistir a uma aula\"."
+        },
+        {
+          "text": "Todos aspiram o término do curso.",
+          "key": "E",
+          "explanation": "No sentido de \"desejar\", \"aspirar\" é transitivo indireto: \"aspirar ao término\"."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "A",
+      "explanationSummary": "\"Esquecer-se de algo\" é a regência pronominal padrão (esquecemo-NOS DE), corretamente empregada na alternativa A; as demais alternativas violam a regência-padrão dos verbos avisar, obedecer, assistir e aspirar."
+    },
+    {
+      "id": "petro2012-q6",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 6
+      },
+      "subtopic": "P.6 Emprego das classes de palavras",
+      "stem": "No Texto I, a frase \"os alunos desfizeram o equívoco antes que ele se criasse\" (l. 11-12) apresenta voz passiva pronominal no trecho em destaque. A seguinte frase apresenta idêntico fenômeno:",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Necessita-se de muito estudo para a realização das provas.",
+          "key": "A",
+          "explanation": "\"Necessitar de\" é intransitivo; o \"se\" indica sujeito indeterminado, não voz passiva."
+        },
+        {
+          "text": "É-se bastante exigente com Língua portuguesa nesta escola.",
+          "key": "B",
+          "explanation": "Construção de sujeito indeterminado com verbo de ligação, não voz passiva pronominal."
+        },
+        {
+          "text": "Vive-se sempre em busca de melhores oportunidades.",
+          "key": "C",
+          "explanation": "\"Viver\" aqui é intransitivo; \"se\" indica sujeito indeterminado, não passiva."
+        },
+        {
+          "text": "Acredita-se na possibilidade de superação do aluno.",
+          "key": "D",
+          "explanation": "\"Acreditar em\" é intransitivo; \"se\" indica sujeito indeterminado, não passiva."
+        },
+        {
+          "text": "Criou-se um método de estudo diferente no curso.",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "E",
+      "explanationSummary": "\"Criou-se um método\" equivale a \"um método foi criado\" (o sujeito paciente \"um método\" sofre a ação) — voz passiva pronominal, mesmo fenômeno de \"o equívoco... se criasse\". As demais opções usam \"se\" apenas como índice de indeterminação do sujeito com verbos intransitivos ou de ligação."
+    },
+    {
+      "id": "petro2012-q7",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 7
+      },
+      "subtopic": "P.9 Concordância verbal e nominal",
+      "stem": "De acordo com a norma-padrão, a frase que não precisa ser corrigida pelo Professor Carlos Góis, mencionado pelo Texto II, é:",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Houveram muitos acertos naquela prova.",
+          "key": "A",
+          "explanation": "\"Haver\" impessoal (sentido de existir) é invariável: \"Houve muitos acertos\"."
+        },
+        {
+          "text": "Existia poucos alunos com dúvidas na sala.",
+          "key": "B",
+          "explanation": "\"Existir\" é pessoal e deve concordar com o sujeito plural: \"Existiam poucos alunos\"."
+        },
+        {
+          "text": "Ocorreram poucas dúvidas sobre a matéria.",
+          "key": "C"
+        },
+        {
+          "text": "Devem haver muitos aprovados este ano.",
+          "key": "D",
+          "explanation": "Com \"haver\" impessoal após verbo auxiliar, este permanece no singular: \"Deve haver muitos aprovados\"."
+        },
+        {
+          "text": "Vão fazer dois anos que estudei a matéria.",
+          "key": "E",
+          "explanation": "\"Fazer\" em expressões de tempo é impessoal: \"Vai fazer dois anos\"."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "C",
+      "explanationSummary": "\"Ocorrer\" é verbo pessoal e concorda corretamente com o sujeito plural \"poucas dúvidas\"; as demais alternativas empregam incorretamente \"haver\"/\"fazer\" impessoais ou \"existir\" sem a concordância devida."
+    },
+    {
+      "id": "petro2012-q8",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 8
+      },
+      "subtopic": "P.5 Emprego de tempos e modos verbais",
+      "stem": "O seguinte verbo em destaque NÃO está conjugado de acordo com a norma-padrão:",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Se essa tarefa não couber a ele, pedimos a outro.",
+          "key": "A",
+          "explanation": "'Couber' é a forma correta do futuro do subjuntivo de 'caber' — está conjugada de acordo com a norma-padrão."
+        },
+        {
+          "text": "Baniram os exercícios que não ajudavam a escrever bem.",
+          "key": "B",
+          "explanation": "'Baniram' é a forma correta do pretérito perfeito de 'banir' — está conjugada de acordo com a norma-padrão."
+        },
+        {
+          "text": "Assim que dispormos do gabarito, saberemos o resultado.",
+          "key": "C"
+        },
+        {
+          "text": "Cremos em nossa capacidade para a realização da prova.",
+          "key": "D",
+          "explanation": "'Cremos' é a forma correta do presente do indicativo de 'crer' — está conjugada de acordo com a norma-padrão."
+        },
+        {
+          "text": "Todos líamos muito durante a época de escola.",
+          "key": "E",
+          "explanation": "'Líamos' é a forma correta do pretérito imperfeito de 'ler' — está conjugada de acordo com a norma-padrão."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "C",
+      "explanationSummary": "O futuro do subjuntivo de \"dispor\" (like \"pôr\") é \"dispuser/dispusermos\" (dispusermos do gabarito), e não \"dispormos\"; as demais formas (couber, baniram, cremos, líamos) estão corretamente conjugadas na norma-padrão."
+    },
+    {
+      "id": "petro2012-q9",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 9
+      },
+      "subtopic": "P.4 Significação das palavras",
+      "stem": "Um professor de gramática tradicional, ao corrigir uma redação, leu o trecho a seguir e percebeu algumas inadequações gramaticais em sua estrutura. \"Os grevistas sabiam o porque da greve, mas não entendiam porque havia tanta repressão.\" O professor corrigirá essas inadequações, produzindo o seguinte texto:",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Os grevistas sabiam o por quê da greve, mas não entendiam porque havia tanta repressão.",
+          "key": "A",
+          "explanation": "Usa 'por quê' (separado e acentuado) para o substantivo 'o motivo', quando o correto seria a forma substantivada 'o porquê' (junto e acentuado)."
+        },
+        {
+          "text": "Os grevistas sabiam o porque da greve, mas não entendiam porquê havia tanta repressão.",
+          "key": "B",
+          "explanation": "Mantém 'porque' (junto, sem acento) como substantivo, quando deveria ser 'o porquê'; e usa 'porquê' (acentuado) na oração interrogativa indireta, onde o correto é 'por que' (separado, sem acento)."
+        },
+        {
+          "text": "Os grevistas sabiam o porquê da greve, mas não entendiam por que havia tanta repressão.",
+          "key": "C"
+        },
+        {
+          "text": "Os grevistas sabiam o por que da greve, mas não entendiam porque havia tanta repressão.",
+          "key": "D",
+          "explanation": "Usa 'por que' (separado) como substantivo, quando o correto é 'o porquê' (junto, acentuado); e mantém 'porque' (junto) na interrogativa indireta, onde o correto é 'por que' (separado)."
+        },
+        {
+          "text": "Os grevistas sabiam o porquê da greve, mas não entendiam porquê havia tanta repressão.",
+          "key": "E",
+          "explanation": "Usa 'porquê' (junto, acentuado) também na oração interrogativa indireta ('não entendiam porquê havia...'), quando o correto nesse contexto é 'por que' (separado, sem acento)."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "C",
+      "explanationSummary": "\"O porquê\" (substantivo, precedido de artigo, junto e com acento) significa \"o motivo\"; \"por que\" (separado, sem acento) introduz uma interrogativa indireta (\"não entendiam por que havia...\"), exatamente a combinação da alternativa C."
+    },
+    {
+      "id": "petro2012-q10",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 10
+      },
+      "subtopic": "P.9 Concordância verbal e nominal",
+      "stem": "No poema, o verso \"O português são dois\" (l. 18) está de acordo com a norma-padrão da língua portuguesa. A frase em que também se respeita a norma-padrão, com relação à concordância, é:",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Na reunião, houveram muitos imprevistos.",
+          "key": "A",
+          "explanation": "\"Haver\" impessoal é invariável: \"houve muitos imprevistos\"."
+        },
+        {
+          "text": "Estranhou-se as mudanças na empresa.",
+          "key": "B",
+          "explanation": "Voz passiva pronominal deve concordar com o sujeito paciente plural: \"Estranharam-se as mudanças\"."
+        },
+        {
+          "text": "Devem fazer cinco meses que não o vejo.",
+          "key": "C",
+          "explanation": "\"Fazer\" em expressão de tempo é impessoal: \"Deve fazer cinco meses\"."
+        },
+        {
+          "text": "Precisam-se de vendedores nesta loja.",
+          "key": "D",
+          "explanation": "\"Precisar de\" é intransitivo; o \"se\" indica sujeito indeterminado e permanece invariável: \"Precisa-se de vendedores\"."
+        },
+        {
+          "text": "Pensou-se muito nas sugestões dos funcionários.",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "E",
+      "explanationSummary": "\"Pensar em\" é intransitivo (rege preposição), de modo que o \"se\" apenas indetermina o sujeito e o verbo fica invariável no singular, independentemente do número do complemento preposicionado — construção corretamente empregada na alternativa E."
+    },
+    {
+      "id": "petro2012-q11",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 11
+      },
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "According to Text I, when asked about their choice of the oil and gas industry,",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "all the interviewees pointed out the relevance of having a green job.",
+          "key": "A",
+          "explanation": "No interviewee mentions environmental/\"green job\" concerns."
+        },
+        {
+          "text": "all the women felt really committed to solving the nation’s energy problems.",
+          "key": "B",
+          "explanation": "Only Woman 5 mentions being \"part of our country’s energy solution\"; it is not shared by all."
+        },
+        {
+          "text": "all the interviewees mentioned that the challenges of the field attracted them.",
+          "key": "C",
+          "explanation": "Only Woman 5 explicitly cites \"challenging projects\"; the others cite technology, pay, salary/location, or chance."
+        },
+        {
+          "text": "just one of the women commented that she was attracted by the location of the job.",
+          "key": "D"
+        },
+        {
+          "text": "no interviewee considered the salary an important factor for accepting the job.",
+          "key": "E",
+          "explanation": "Woman 2 (\"the pay was good\") and Woman 3 (\"great starting salary\") explicitly mention salary."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "D",
+      "explanationSummary": "Only Woman 3 mentions being attracted by the location of the job (\"a chance to live in New Orleans\"), a factor not cited by anyone else — matching alternative D exactly, while the other alternatives make false universal claims (\"all\"/\"no interviewee\")."
+    },
+    {
+      "id": "petro2012-q12",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 12
+      },
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "In Text I, using the interviewees’ experience, it can be said that getting a job in the O&G industry can result from all the following situations, EXCEPT",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "participating in a job fair.",
+          "key": "A",
+          "explanation": "Participar de uma feira de emprego é citada por ao menos uma das entrevistadas como forma de conseguir a vaga."
+        },
+        {
+          "text": "taking part in O&G Industry interviews.",
+          "key": "B",
+          "explanation": "Participar de entrevistas do setor de O&G é citada por ao menos uma das entrevistadas como forma de conseguir a vaga."
+        },
+        {
+          "text": "applying to specific job ads via internet sites.",
+          "key": "C"
+        },
+        {
+          "text": "attending a university where major oil companies look for prospective employees.",
+          "key": "D",
+          "explanation": "Estudar em uma universidade visitada por grandes petrolíferas em busca de futuros funcionários é citado por ao menos uma das entrevistadas."
+        },
+        {
+          "text": "getting previous experience in an internship program with an O&G organization.",
+          "key": "E",
+          "explanation": "Ter experiência prévia em um programa de estágio em uma organização de O&G é citado por ao menos uma das entrevistadas."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "C",
+      "explanationSummary": "Nenhuma das cinco entrevistadas menciona ter conseguido o emprego respondendo a anúncios de vaga na internet; todas as demais situações (feira de emprego, entrevistas do setor, universidade visitada por recrutadores, estágio) são citadas por pelo menos uma delas."
+    },
+    {
+      "id": "petro2012-q13",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 13
+      },
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "In Text I, according to the answers to the third question in the interview,",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Woman 1 implies that every day is the same for her, since she performs exactly the same tasks routinely.",
+          "key": "A",
+          "explanation": "Woman 1 says it is \"tough to describe a typical day\", not that every day is identical."
+        },
+        {
+          "text": "Woman 2 complains against her very boring schedule at the office, dealing with strictly technical issues.",
+          "key": "B",
+          "explanation": "Woman 2 says \"my days are never the same, which is what I love about the job\" — the opposite of a complaint about routine."
+        },
+        {
+          "text": "Woman 3 always works off hours and does not get involved with the operations in the field.",
+          "key": "C",
+          "explanation": "Woman 3 says she calls the field every morning and works with her team on production-related activities — she IS involved with field operations."
+        },
+        {
+          "text": "Woman 4 has negotiations with the international branches and gets involved in commercial and technical issues.",
+          "key": "D"
+        },
+        {
+          "text": "Woman 5 does not need to worry about preparing written materials nor deciding on last-minute technical issues at nights or on weekends.",
+          "key": "E",
+          "explanation": "Woman 5 explicitly writes documents and gets calls at night/weekends for technical problems — the exact opposite."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "D",
+      "explanationSummary": "Woman 4 describes daily calls/emails with the facility in Norway (international branch) and involvement in budgets/finance, sales efforts and technical specifications review — i.e., both commercial and technical matters."
+    },
+    {
+      "id": "petro2012-q14",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 14
+      },
+      "subtopic": "I.2 Itens gramaticais relevantes para a compreensão dos conteúdos semânticos",
+      "stem": "Based on the meanings of the words in Text I,",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "major (line 22) and main express opposite ideas.",
+          "key": "A",
+          "explanation": "\"Major\" and \"main\" are near-synonyms (both mean \"principal\"), not opposites."
+        },
+        {
+          "text": "headquarters (line 40) could be substituted by main office.",
+          "key": "B"
+        },
+        {
+          "text": "smart (line 51) and intelligent are antonyms.",
+          "key": "C",
+          "explanation": "\"Smart\" and \"intelligent\" are synonyms."
+        },
+        {
+          "text": "enhance (line 66) and reduce express similar ideas.",
+          "key": "D",
+          "explanation": "\"Enhance\" (increase/improve) and \"reduce\" (decrease) are opposites."
+        },
+        {
+          "text": "prospective (line 84) and former are synonyms.",
+          "key": "E",
+          "explanation": "\"Prospective\" (future/potential) and \"former\" (past) are opposites, not synonyms."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "B",
+      "explanationSummary": "\"Headquarters\" (sede/matriz da empresa) pode ser substituído por \"main office\" sem alteração de sentido; as demais alternativas trocam pares de sinônimos por antônimos ou vice-versa."
+    },
+    {
+      "id": "petro2012-q15",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 15
+      },
+      "subtopic": "I.2 Itens gramaticais relevantes para a compreensão dos conteúdos semânticos",
+      "stem": "The sentence, in Text I, in which the boldfaced expression introduces an idea of addition is",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "\"Although far fewer women work in the oil and gas (O&G) industry compared to men, many women find rewarding careers in the industry.\" (lines 1-3)",
+          "key": "A",
+          "explanation": "\"Although\" introduces concession/contrast, not addition."
+        },
+        {
+          "text": "\"I chose the oil and gas industry because of the challenging projects,\" (lines 17-18)",
+          "key": "B",
+          "explanation": "\"Because of\" introduces cause/reason."
+        },
+        {
+          "text": "\"Even though my Master’s thesis was more geared toward environmental studies,\" (lines 31-32)",
+          "key": "C",
+          "explanation": "\"Even though\" introduces concession/contrast."
+        },
+        {
+          "text": "\"as well as other business relationships abroad.\" (lines 76-77)",
+          "key": "D"
+        },
+        {
+          "text": "\"but there are times when I get calls at night or on weekends from a rig or other geologists for assistance with a technical problem.\" (lines 91-94)",
+          "key": "E",
+          "explanation": "\"But\" introduces contrast."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "D",
+      "explanationSummary": "\"As well as\" é conector de adição (equivalente a \"e também\"), diferentemente de \"although\", \"because of\", \"even though\" e \"but\", que introduzem concessão, causa ou contraste."
+    },
+    {
+      "id": "petro2012-q16",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 16
+      },
+      "subtopic": "I.2 Itens gramaticais relevantes para a compreensão dos conteúdos semânticos",
+      "stem": "In Text I, the expression \"turn down\" in \"I couldn’t turn down the great starting salary and a chance to live in New Orleans\" (lines 12-14) could be replaced, without change in meaning, by",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "refuse",
+          "key": "A"
+        },
+        {
+          "text": "take",
+          "key": "B",
+          "explanation": "\"Turn down\" significa recusar, não aceitar."
+        },
+        {
+          "text": "accept",
+          "key": "C",
+          "explanation": "O sentido de \"turn down\" é o oposto de aceitar."
+        },
+        {
+          "text": "request",
+          "key": "D",
+          "explanation": "Não corresponde ao sentido de recusar."
+        },
+        {
+          "text": "understand",
+          "key": "E",
+          "explanation": "Não corresponde ao sentido de recusar."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "A",
+      "explanationSummary": "\"Turn down\" significa \"recusar\", sinônimo de \"refuse\" no contexto (\"não pude recusar o salário e a chance de morar em New Orleans\")."
+    },
+    {
+      "id": "petro2012-q17",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 17
+      },
+      "subtopic": "I.2 Itens gramaticais relevantes para a compreensão dos conteúdos semânticos",
+      "stem": "The only fragment from Text I that presents a series of actions exclusively performed in the past is",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "\"I chose the oil and gas industry because of the challenging projects, and I want to be part of our country’s energy solution.\" (lines 17-19)",
+          "key": "A",
+          "explanation": "Contém o presente \"I want\", não é exclusivamente passado."
+        },
+        {
+          "text": "\"I held that position for three years. I left that company to join a new startup company where I hold the position of president.\" (lines 46-48)",
+          "key": "B",
+          "explanation": "Contém o presente \"I hold\"."
+        },
+        {
+          "text": "\"My first job in the oil and gas industry was an internship with Mobil Oil Corp., in New Orleans. I worked with a lot of smart, focused and talented geoscientists and engineers.\" (lines 49-52)",
+          "key": "C"
+        },
+        {
+          "text": "\"At the office, I am involved in the daily business operations and also stay closely involved in the projects and the sales efforts.\" (lines 77-80)",
+          "key": "D",
+          "explanation": "Está inteiramente no presente."
+        },
+        {
+          "text": "\"On most days I work on my computer to complete my projects. I interpret logs, create maps, research local and regional geology or write documents.\" (lines 87-90)",
+          "key": "E",
+          "explanation": "Está inteiramente no presente."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "C",
+      "explanationSummary": "O trecho da Mulher 5 emprega apenas os verbos \"was\" e \"worked\", ambos no passado simples, sendo o único fragmento composto exclusivamente por ações no passado."
+    },
+    {
+      "id": "petro2012-q18",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 18
+      },
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "The main purpose of Text II is to",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "teach prospective workers how to prepare cover letters to impress employers.",
+          "key": "A",
+          "explanation": "É apenas um dos vários tópicos listados, não o propósito principal do texto."
+        },
+        {
+          "text": "advise the readers about the importance of researching for open jobs in institutional websites.",
+          "key": "B",
+          "explanation": "O texto fala de \"fazer sua pesquisa\" sobre a empresa, não especificamente em sites institucionais de vagas."
+        },
+        {
+          "text": "criticize job candidates who are excessively confident and feel that the world owes them something.",
+          "key": "C",
+          "explanation": "O texto orienta a evitar esse comportamento, mas isso é apenas um dos cinco tópicos, não o propósito geral."
+        },
+        {
+          "text": "alert the readers to the importance of joining a professional association to have free access to their events.",
+          "key": "D",
+          "explanation": "Distorce o conteúdo: o texto não fala de acesso gratuito a eventos, e é só um dos tópicos."
+        },
+        {
+          "text": "list relevant hints for those interested in entering the job market and building a successful professional life.",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "E",
+      "explanationSummary": "O Texto II é estruturado como uma lista de dicas passo a passo (\"How to start your career, step by step\") para quem deseja entrar no mercado de trabalho e construir uma carreira de sucesso — descrição que abrange o texto como um todo, ao contrário das demais alternativas, que citam apenas um tópico isolado."
+    },
+    {
+      "id": "petro2012-q19",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 19
+      },
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "The fragment that closes Text II, \"be aware that you will need to roll up your sleeves and work hard for the first couple years, and you will be rewarded in the end.\" (lines 23-25), implies that one must",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "make an effort to commit totally to one’s job in the initial phase, in order to reach success in future.",
+          "key": "A"
+        },
+        {
+          "text": "wear formal clothes to work so that, as years go by, a couple of top-rank officers can recognize one’s worth.",
+          "key": "B",
+          "explanation": "\"Roll up your sleeves\" é expressão idiomática para trabalhar duro, não sobre vestimenta formal."
+        },
+        {
+          "text": "accept jobs with severe routines only in order to obtain early promotions.",
+          "key": "C",
+          "explanation": "O texto fala em recompensa \"no final\", não em promoções antecipadas."
+        },
+        {
+          "text": "avoid postponing assigned tasks and wearing inappropriate clothes in the working environment.",
+          "key": "D",
+          "explanation": "Não trata de procrastinação de tarefas nem de vestimenta."
+        },
+        {
+          "text": "show commitment to the working routine and demand the rewards frequently offered to senior employees.",
+          "key": "E",
+          "explanation": "O texto não menciona \"exigir\" recompensas, e sim que elas virão como consequência do esforço inicial."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "A",
+      "explanationSummary": "\"Roll up your sleeves and work hard\" é expressão idiomática que significa se dedicar/trabalhar duro; a frase implica esforço total nos primeiros anos para alcançar recompensa/sucesso no futuro, exatamente o sentido da alternativa A."
+    },
+    {
+      "id": "petro2012-q20",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 20
+      },
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "Concerning Texts I and II, it is possible to affirm that",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "neither text points out ways to get rewarding jobs in the O&G industry.",
+          "key": "A",
+          "explanation": "Ambos os textos apontam caminhos para conseguir empregos gratificantes no setor."
+        },
+        {
+          "text": "both texts discuss strategies to ask for promotion in the O&G industry.",
+          "key": "B",
+          "explanation": "Nenhum dos dois textos trata de pedir promoção."
+        },
+        {
+          "text": "both texts present ways of starting successful careers in the O&G industry.",
+          "key": "C"
+        },
+        {
+          "text": "only Text I encourages prospective employees of O&G industries to plan their careers in advance.",
+          "key": "D",
+          "explanation": "É o Texto II que apresenta o passo a passo de planejamento de carreira, não exclusivamente o Texto I."
+        },
+        {
+          "text": "only Text II provides hints on how to give up highly-paid jobs in the O&G industry.",
+          "key": "E",
+          "explanation": "Nenhum dos textos trata de desistir de empregos bem remunerados."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "C",
+      "explanationSummary": "O Texto I relata experiências de mulheres que iniciaram e construíram carreiras de sucesso no setor de óleo e gás, e o Texto II lista dicas práticas de como iniciar uma carreira nesse setor — ambos, portanto, apresentam formas de iniciar carreiras bem-sucedidas no setor."
+    },
+    {
+      "id": "petro2012-q22",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 22
+      },
+      "subtopic": "2.4 PMBOK 7ª edição",
+      "stem": "O gerente de projetos de sistemas de informação de uma rede de lojas de roupas utiliza o IDC (Índice de Desempenho de Custo) e o IDP (Índice de Desempenho de Prazo) como indicadores ou índices de desempenho, para suas avaliações. Em determinada ocasião, as informações disponíveis para uma avaliação eram as seguintes: Valor Planejado (VP): R$ 600.000,00; Custo Real (CR): R$ 250.000,00; Valor Agregado (VA): R$ 300.000,00. Quais eram, respectivamente, o IDC e o IDP, naquele momento?",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "0,5 e 0,83",
+          "key": "A",
+          "explanation": "O valor 0,5 corresponde corretamente ao IDP, mas 0,83 não corresponde ao IDC calculado (VA/CR = 1,2)."
+        },
+        {
+          "text": "0,83 e 2,0",
+          "key": "B",
+          "explanation": "Nenhum dos dois valores corresponde aos índices corretos: IDC = VA/CR = 1,2 e IDP = VA/VP = 0,5."
+        },
+        {
+          "text": "1,2 e 0,5",
+          "key": "C"
+        },
+        {
+          "text": "2,0 e 0,42",
+          "key": "D",
+          "explanation": "Nenhum dos dois valores corresponde aos índices corretos calculados a partir de VP, CR e VA fornecidos."
+        },
+        {
+          "text": "2,4 e 1,2",
+          "key": "E",
+          "explanation": "O valor 1,2 corresponde corretamente ao IDC, mas aparece na ordem/combinação errada com um IDP (2,4) que não corresponde a VA/VP."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "gestao-proj",
+      "correctKey": "C",
+      "explanationSummary": "IDC (CPI) = VA/CR = 300.000/250.000 = 1,2. IDP (SPI) = VA/VP = 300.000/600.000 = 0,5. Logo, IDC=1,2 e IDP=0,5, alternativa C."
+    },
+    {
+      "id": "petro2012-q23",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 23
+      },
+      "subtopic": "2.5 Projetos e a organização",
+      "stem": "A estrutura organizacional é um fator ambiental da empresa que pode afetar a disponibilidade de recursos e influenciar a maneira como os projetos são conduzidos. Nesse contexto, o controle de orçamento do projeto, nas estruturas matriciais forte e fraca, está relacionado, respectivamente, às gerências",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "de projeto e funcional",
+          "key": "A"
+        },
+        {
+          "text": "de projeto e portfólio",
+          "key": "B",
+          "explanation": "Na matriz fraca, o controle orçamentário permanece com a gerência funcional, não com a gerência de portfólio."
+        },
+        {
+          "text": "de portfólio e de projeto",
+          "key": "C",
+          "explanation": "Nem a matriz forte nem a fraca atribuem o controle do orçamento do projeto à gerência de portfólio; a matriz forte atribui à gerência de projeto."
+        },
+        {
+          "text": "funcional e de portfólio",
+          "key": "D",
+          "explanation": "Inverte a relação correta: na matriz forte o controle é da gerência de projeto (não funcional), e na fraca é da gerência funcional (não de portfólio)."
+        },
+        {
+          "text": "funcional e de projeto",
+          "key": "E",
+          "explanation": "Inverte a ordem correta: na matriz forte o controle é da gerência de projeto, e na fraca, da gerência funcional — esta alternativa troca as duas."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "gestao-proj",
+      "correctKey": "A",
+      "explanationSummary": "Na estrutura matricial forte, o gerente de projetos tem mais autoridade e controla o orçamento do projeto; na matricial fraca, essa autoridade permanece concentrada no gerente funcional. Logo: matricial forte → gerência de projeto; matricial fraca → gerência funcional (alternativa A)."
+    },
+    {
+      "id": "petro2012-q24",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 24
+      },
+      "subtopic": "2.4 PMBOK 7ª edição",
+      "stem": "No contexto de gerência de projetos, qual a técnica de coleta de informações utilizada como meio de alcançar um consenso entre especialistas num assunto?",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Séries temporais",
+          "key": "A",
+          "explanation": "Técnica estatística de previsão baseada em dados históricos, não de consenso entre especialistas."
+        },
+        {
+          "text": "Grupo nominal",
+          "key": "B",
+          "explanation": "Técnica de geração e priorização de ideias em grupo, mas não é especificamente orientada a alcançar consenso anônimo entre especialistas."
+        },
+        {
+          "text": "Delphi",
+          "key": "C"
+        },
+        {
+          "text": "Monte Carlo",
+          "key": "D",
+          "explanation": "Técnica de simulação probabilística, não de coleta de opinião de especialistas."
+        },
+        {
+          "text": "Gantt",
+          "key": "E",
+          "explanation": "É uma ferramenta de cronograma, não uma técnica de coleta de informações."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "gestao-proj",
+      "correctKey": "C",
+      "explanationSummary": "A técnica Delphi coleta opiniões de especialistas de forma anônima e iterativa, com o objetivo explícito de alcançar consenso sobre um assunto."
+    },
+    {
+      "id": "petro2012-q25",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 25
+      },
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "O dono de uma pequena fábrica de bonecas percebeu que 4% dos olhos de cada lote que adquiria para suas bonecas eram rejeitados por algum motivo. Em consequência dessa rejeição, modificou as especificações do processo de suas compras de olhos para reduzir essas perdas. No lote seguinte, dos mesmos 1.600 olhos que sempre comprava, apenas 16 olhos foram rejeitados pelo controle de qualidade. O valor da melhoria alcançada, expresso percentualmente, é",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "1%",
+          "key": "A",
+          "explanation": "1% é a nova taxa de rejeição (16/1600), não o valor da melhoria alcançada em relação à taxa anterior."
+        },
+        {
+          "text": "25%",
+          "key": "B",
+          "explanation": "Não corresponde à redução percentual real entre as taxas de 4% e 1%."
+        },
+        {
+          "text": "75%",
+          "key": "C"
+        },
+        {
+          "text": "100%",
+          "key": "D",
+          "explanation": "A rejeição não foi eliminada por completo (ainda houve 16 rejeições), então a melhoria não foi de 100%."
+        },
+        {
+          "text": "400%",
+          "key": "E",
+          "explanation": "Não corresponde a nenhuma razão coerente entre as taxas de rejeição antes e depois."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "gestao-proj",
+      "correctKey": "C",
+      "explanationSummary": "Taxa de rejeição antes: 4% (64 em 1.600). Depois: 16/1.600 = 1%. A melhoria percentual é (4%-1%)/4% = 75% de redução na taxa de rejeição."
+    },
+    {
+      "id": "petro2012-q26",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 26
+      },
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "O mestre de uma oficina mecânica controla o ajuste em suas máquinas e a qualidade das ferramentas com as quais fabrica determinadas peças pela variação das medidas das próprias peças. Sempre que essas medidas ultrapassam os limites de controle preestabelecidos, ele aciona a sua equipe para determinar os motivos dessas variações e estabelecer medidas corretivas. As ferramentas indicadas para essas atividades são:",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "fluxograma e gráfico de Pareto",
+          "key": "A",
+          "explanation": "Não são as ferramentas específicas de monitoramento de limites de controle e de análise de causas."
+        },
+        {
+          "text": "fluxograma e histograma",
+          "key": "B",
+          "explanation": "Não tratam diretamente de limites de controle estatístico nem de análise causa-efeito."
+        },
+        {
+          "text": "diagrama de pert e carta de controle",
+          "key": "C",
+          "explanation": "O diagrama de PERT é uma ferramenta de cronograma, não de análise de causas de variação."
+        },
+        {
+          "text": "diagrama de espinha de peixe (Ishikawa) e cronograma",
+          "key": "D",
+          "explanation": "Cronograma não é ferramenta de monitoramento de limites de controle."
+        },
+        {
+          "text": "carta de controle e diagrama de espinha de peixe (Ishikawa)",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "gestao-proj",
+      "correctKey": "E",
+      "explanationSummary": "A carta de controle monitora se as medidas ultrapassam limites preestabelecidos, e o diagrama de espinha de peixe (Ishikawa) é a ferramenta clássica para investigar as causas-raiz dessas variações — exatamente as duas atividades descritas."
+    },
+    {
+      "id": "petro2012-q27",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 27
+      },
+      "subtopic": "2.4 PMBOK 7ª edição",
+      "stem": "A Estrutura Analítica de um Projeto",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "agrupa os pacotes de trabalho em atividades.",
+          "key": "A",
+          "explanation": "A EAP decompõe o escopo em entregas e pacotes de trabalho; agrupar pacotes em atividades é etapa posterior (definição de atividades)."
+        },
+        {
+          "text": "ajuda a gerar o documento de requisitos.",
+          "key": "B",
+          "explanation": "O documento de requisitos é insumo para a criação da EAP, não o contrário."
+        },
+        {
+          "text": "ajuda a definir a linha de base de escopo de um projeto.",
+          "key": "C"
+        },
+        {
+          "text": "apresenta uma visão geral dos marcos de um projeto.",
+          "key": "D",
+          "explanation": "Marcos (milestones) fazem parte do cronograma, não são o propósito da EAP."
+        },
+        {
+          "text": "organiza seus atributos de trabalho em contas de controle.",
+          "key": "E",
+          "explanation": "Contas de controle são pontos de gerenciamento associados a componentes da EAP, mas não é essa a definição central da EAP."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "gestao-proj",
+      "correctKey": "C",
+      "explanationSummary": "A EAP (WBS), junto com sua declaração de escopo e o dicionário da EAP, compõe a linha de base do escopo do projeto conforme o PMBOK."
+    },
+    {
+      "id": "petro2012-q28",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 28
+      },
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "Um gerente de projeto está definindo o planejamento do projeto para os próximos meses, porém tem certeza que ainda não dispõe de todas as informações sobre as restrições conflitantes para criar a EAP, apesar de já ter conversado com todas as partes interessadas. De qualquer forma, o patrocinador está pressionando-o para partir para a execução em função do prazo. A melhor forma do gerente tratar o planejamento do projeto, de acordo com as melhores práticas de gerenciamento de projeto é:",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Criar o plano de projeto, atualizando-o de forma iterativa à medida que dispuser das informações.",
+          "key": "A"
+        },
+        {
+          "text": "Começar o projeto quando dominar as restrições conflitantes a partir de novas informações das partes interessadas.",
+          "key": "B",
+          "explanation": "Adiar indefinidamente o início do planejamento não é compatível com a elaboração progressiva, nem atende à pressão legítima de prazo."
+        },
+        {
+          "text": "Partir para a fase de execução e criar o comitê de gestão de mudanças para tratar das restrições conflitantes.",
+          "key": "C",
+          "explanation": "Executar sem um plano mínimo de projeto contraria as boas práticas de gerenciamento de projetos."
+        },
+        {
+          "text": "Realizar uma reunião com as partes interessadas para lhes informar que enquanto não tiverem todas as informações, o projeto não poderá ir adiante.",
+          "key": "D",
+          "explanation": "Paralisar o projeto até obter informação completa contraria o princípio de elaboração progressiva."
+        },
+        {
+          "text": "Permanecer na fase de iniciação enquanto o plano de projeto não estiver definido.",
+          "key": "E",
+          "explanation": "O planejamento é um processo iterativo executado ao longo do projeto, não uma condição para permanecer eternamente na iniciação."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "gestao-proj",
+      "correctKey": "A",
+      "explanationSummary": "O PMBOK recomenda a elaboração progressiva (rolling wave planning): criar o plano de projeto com as informações disponíveis e atualizá-lo iterativamente conforme mais detalhes surgem, em vez de aguardar informação completa ou pular etapas de planejamento."
+    },
+    {
+      "id": "petro2012-q29",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 29
+      },
+      "subtopic": "5.4 Verificação, validação e teste",
+      "stem": "Um analista está testando um novo sistema, que sua empresa comercializa. Os módulos são testados individualmente e liberados para os usuários/clientes. Ocorre, porém, que, quando cada novo módulo é adicionado, parece que inúmeros efeitos colaterais se propagam, impactando o bom funcionamento da aplicação. Qual tipo de teste pode evitar essa situação?",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Teste de integração",
+          "key": "A"
+        },
+        {
+          "text": "Teste de unidade",
+          "key": "B",
+          "explanation": "O teste de unidade verifica módulos isoladamente e é exatamente o que já está sendo feito, sem detectar efeitos colaterais entre módulos."
+        },
+        {
+          "text": "Teste de validação",
+          "key": "C",
+          "explanation": "Verifica se o sistema atende aos requisitos do usuário, não se concentra em detectar efeitos colaterais entre módulos recém-integrados."
+        },
+        {
+          "text": "Teste de stress",
+          "key": "D",
+          "explanation": "Avalia o comportamento do sistema sob carga extrema, não a interação entre módulos."
+        },
+        {
+          "text": "Teste da caixa branca",
+          "key": "E",
+          "explanation": "Foca na lógica interna de um componente, não na interação entre módulos integrados."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "eng-sw",
+      "correctKey": "A",
+      "explanationSummary": "O teste de integração verifica a interação entre módulos ao serem combinados, sendo o indicado para detectar e evitar efeitos colaterais causados pela adição de novos módulos a um sistema já existente."
+    },
+    {
+      "id": "petro2012-q31",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 31
+      },
+      "subtopic": "2.7 Modelos e características",
+      "stem": "Considerando o ciclo de vida de um projeto, as curvas Q e P do gráfico apresentado (curva Q decrescente de alto a baixo e curva P crescente de baixo a alto ao longo do tempo de projeto) podem representar, respectivamente, as tendências do(a)",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "custo de mudanças e do nível de risco",
+          "key": "A",
+          "explanation": "O custo de mudanças cresce (curva ascendente), não decresce; a ordem apresentada não corresponde ao comportamento descrito para Q."
+        },
+        {
+          "text": "custo de mudanças e do nível de incerteza",
+          "key": "B",
+          "explanation": "O custo de mudanças é crescente, incompatível com a curva Q (decrescente)."
+        },
+        {
+          "text": "nível de incerteza e do nível de risco",
+          "key": "C",
+          "explanation": "Ambos tendem a decrescer ao longo do projeto; a curva P, contudo, é crescente, o que não corresponde a nível de risco."
+        },
+        {
+          "text": "nível de incerteza e da influência das partes interessadas",
+          "key": "D",
+          "explanation": "A influência das partes interessadas tende a decrescer, e não a crescer como a curva P sugere."
+        },
+        {
+          "text": "influência das partes interessadas e do custo de mudanças",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "gestao-proj",
+      "correctKey": "E",
+      "explanationSummary": "De acordo com a figura clássica do PMBOK sobre o ciclo de vida do projeto, a influência das partes interessadas (e o risco/incerteza) é maior no início e decresce com o tempo (curva Q), enquanto o custo das mudanças é baixo no início e cresce ao longo do projeto (curva P)."
+    },
+    {
+      "id": "petro2012-q34",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 34
+      },
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "O grupo de processos de encerramento é definido formalmente como consistindo nos processos que precisam ser executados para finalizar as atividades, seja de um projeto ou de uma fase do mesmo. Entre as atividades dessa fase, inclui-se a(o)",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "validação das alterações",
+          "key": "A",
+          "explanation": "Atividade do grupo de processos de monitoramento e controle."
+        },
+        {
+          "text": "realização do controle de qualidade",
+          "key": "B",
+          "explanation": "Atividade do grupo de processos de monitoramento e controle."
+        },
+        {
+          "text": "documentação das aquisições",
+          "key": "C",
+          "explanation": "Ocorre ao longo da execução/controle das aquisições, não é específica do encerramento."
+        },
+        {
+          "text": "registro das atualizações dos riscos",
+          "key": "D",
+          "explanation": "Atividade de monitoramento e controle dos riscos."
+        },
+        {
+          "text": "encerramento das aquisições",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "gestao-proj",
+      "correctKey": "E",
+      "explanationSummary": "O encerramento das aquisições (formalização da conclusão de contratos com fornecedores) é uma atividade típica do grupo de processos de encerramento, junto ao encerramento do projeto/fase."
+    },
+    {
+      "id": "petro2012-q37",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 37
+      },
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "A definição do escopo de um projeto é uma atividade fundamental na qual é definido o trabalho que será realizado e no que consistirá, efetivamente, tal projeto. Uma das entradas para essa definição é a(o)",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "EAP (Estrutura Analítica de Projeto)",
+          "key": "A",
+          "explanation": "A EAP é uma saída do processo de criação da EAP, que ocorre depois da definição do escopo, não uma entrada para ela."
+        },
+        {
+          "text": "documentação dos requisitos coletados",
+          "key": "B"
+        },
+        {
+          "text": "dicionário da WBS",
+          "key": "C",
+          "explanation": "É produzido junto com a EAP, posteriormente à definição do escopo."
+        },
+        {
+          "text": "plano de gerenciamento do projeto",
+          "key": "D",
+          "explanation": "Não é a entrada específica citada pelo PMBOK para a definição de escopo."
+        },
+        {
+          "text": "planejamento dos custos",
+          "key": "E",
+          "explanation": "Não é insumo do processo de definição de escopo."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "gestao-proj",
+      "correctKey": "B",
+      "explanationSummary": "Segundo o PMBOK, a documentação de requisitos (produzida no processo de coleta de requisitos) é uma das principais entradas do processo de definição do escopo do projeto."
+    },
+    {
+      "id": "petro2012-q41",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 41
+      },
+      "subtopic": "7.5 Conceitos de OLAP e suas operações",
+      "stem": "Partindo-se de uma tabela de fato de mapeamento (poço/fonte/reserva por ano), realizou-se uma operação OLAP que obteve o resultado agregado \"Todos os tipos\" por ano, somando os valores dos três tipos. Analisando-se esse resultado, infere-se que a operação realizada foi",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "concentrate",
+          "key": "A",
+          "explanation": "Não é uma operação OLAP padrão."
+        },
+        {
+          "text": "drill down",
+          "key": "B",
+          "explanation": "Drill down desagrega dados, indo do nível mais resumido para o mais detalhado — o oposto do que ocorreu."
+        },
+        {
+          "text": "roll up",
+          "key": "C"
+        },
+        {
+          "text": "rotation",
+          "key": "D",
+          "explanation": "Rotation (pivot) troca os eixos de exibição do cubo, sem agregar/sumarizar valores."
+        },
+        {
+          "text": "slice and dice",
+          "key": "E",
+          "explanation": "Slice and dice recorta/filtra o cubo, sem necessariamente agregar os tipos em um total."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "analise-dados",
+      "correctKey": "C",
+      "explanationSummary": "A operação que agrega dados detalhados (poço, fonte, reserva) em um nível superior de sumarização (\"Todos os tipos\") é o roll up (subida na hierarquia de agregação)."
+    },
+    {
+      "id": "petro2012-q47",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 47
+      },
+      "subtopic": "7.5 Conceitos de OLAP e suas operações",
+      "stem": "Os sistemas analíticos (OLAP), comparados com os sistemas transacionais, caracterizam-se por basearem-se em",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "atualizações mais frequentes, consistência global, maior volume de dados de retorno nas pesquisas",
+          "key": "A",
+          "explanation": "Sistemas OLAP não têm atualizações mais frequentes que os transacionais; são normalmente atualizados em lote (ETL)."
+        },
+        {
+          "text": "atualizações mais frequentes, consistência microscópica, acessos a grupos de informação",
+          "key": "B",
+          "explanation": "OLAP não se caracteriza por atualizações mais frequentes nem por consistência microscópica (essa é característica de sistemas transacionais, linha a linha)."
+        },
+        {
+          "text": "dados históricos, consistência global, acesso a grupos de informação",
+          "key": "C"
+        },
+        {
+          "text": "dados históricos, acessos pontuais, menor volume de dados de retorno nas pesquisas",
+          "key": "D",
+          "explanation": "OLAP retorna tipicamente grandes volumes de dados agregados, não pequenos volumes pontuais."
+        },
+        {
+          "text": "acessos pontuais, consistência microscópica, dados atuais",
+          "key": "E",
+          "explanation": "Esses três atributos descrevem sistemas transacionais (OLTP), não OLAP."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "analise-dados",
+      "correctKey": "C",
+      "explanationSummary": "Sistemas OLAP baseiam-se em dados históricos (séries de tempo), consistência global (agregada, não transacional linha a linha) e acessos a grandes grupos de informação — em contraste com os sistemas transacionais."
+    },
+    {
+      "id": "petro2012-q48",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 48
+      },
+      "subtopic": "7.6 Conceitos de data warehouse",
+      "stem": "Em produtos ROLAP, os cubos são alimentados",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "por uma base de cláusulas e regras de negócio",
+          "key": "A",
+          "explanation": "Não descreve a fonte de dados de um cubo ROLAP."
+        },
+        {
+          "text": "por um banco de dados relacional especialmente desenhado para o processamento analítico",
+          "key": "B"
+        },
+        {
+          "text": "por uma cópia dos dados carregada em uma matriz de armazenamento otimizada",
+          "key": "C",
+          "explanation": "Essa descrição corresponde a produtos MOLAP (armazenamento multidimensional), não ROLAP."
+        },
+        {
+          "text": "pelo cruzamento instantâneo de dados em bancos hierárquicos",
+          "key": "D",
+          "explanation": "ROLAP não se baseia em bancos hierárquicos."
+        },
+        {
+          "text": "pelo mesmo banco de dados relacional desenhado para um sistema OLTP",
+          "key": "E",
+          "explanation": "O banco relacional de um ROLAP é modelado especificamente para fins analíticos (ex.: esquema estrela), diferente do modelo OLTP."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "analise-dados",
+      "correctKey": "B",
+      "explanationSummary": "ROLAP (Relational OLAP) implementa os cubos sobre um banco de dados relacional desenhado especificamente para processamento analítico (tipicamente em esquema estrela ou floco de neve), diferentemente do MOLAP, que usa estruturas multidimensionais proprietárias."
+    },
+    {
+      "id": "petro2012-q49",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 49
+      },
+      "subtopic": "1.7 Modelagem dimensional",
+      "stem": "O modelo estrela (star schema) é a denominação comum para um modelo de dados multidimensional. Nesse tipo de modelo,",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "a entidade central é a transação.",
+          "key": "A",
+          "explanation": "A entidade central do modelo estrela é a tabela de fatos (métricas), não \"a transação\" em si."
+        },
+        {
+          "text": "as dimensões são um conjunto de fatos.",
+          "key": "B",
+          "explanation": "É o inverso: os fatos são medidas associadas a combinações de dimensões, e não as dimensões que constituem um conjunto de fatos."
+        },
+        {
+          "text": "as dimensões podem ser decompostas em várias medidas, originando o modelo conhecido como floco de neve (snowflake).",
+          "key": "C",
+          "explanation": "O floco de neve resulta da normalização das TABELAS de dimensão em subtabelas, não da decomposição das dimensões em \"medidas\" (medidas pertencem à tabela de fatos)."
+        },
+        {
+          "text": "o relacionamento entre o fato e as dimensões é de um para um, formando um cubo ou hipercubo.",
+          "key": "D",
+          "explanation": "O relacionamento entre a tabela de fatos e cada dimensão é tipicamente um-para-muitos (cada combinação de dimensões pode ter um registro de fato, mas cada dimensão tem muitos membros), não um-para-um."
+        },
+        {
+          "text": "cada dimensão é representada por uma tabela.",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "arq-dados",
+      "correctKey": "E",
+      "explanationSummary": "No modelo estrela, a tabela de fatos central se relaciona a diversas tabelas de dimensão, cada uma delas representada por uma única tabela (desnormalizada), o que distingue o esquema estrela do esquema floco de neve (onde as dimensões são normalizadas em múltiplas tabelas)."
+    },
+    {
+      "id": "petro2012-q50",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 50
+      },
+      "subtopic": "1.7 Modelagem dimensional",
+      "stem": "No contexto de modelagem multidimensional, considere uma tabela de fato com os tipos poço/fonte/reserva ao longo de 3 anos (Ano A, A+1, A+2), totalizando 9 valores numéricos. Acrescentando a dimensão localidade, com os membros Sudeste e Nordeste, o número de dados numéricos esperado da tabela de fatos resultante será",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "18",
+          "key": "A"
+        },
+        {
+          "text": "15",
+          "key": "B",
+          "explanation": "Não corresponde à multiplicação simples do total de células (9) pelo número de membros da nova dimensão (2)."
+        },
+        {
+          "text": "12",
+          "key": "C",
+          "explanation": "Não corresponde a 9 × 2."
+        },
+        {
+          "text": "11",
+          "key": "D",
+          "explanation": "Não corresponde a 9 × 2."
+        },
+        {
+          "text": "9",
+          "key": "E",
+          "explanation": "Ignoraria a nova dimensão localidade, mantendo o total original sem expansão."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "arq-dados",
+      "correctKey": "A",
+      "explanationSummary": "A tabela de fato original tem 3 tipos × 3 anos = 9 combinações/valores. Ao acrescentar a dimensão localidade com 2 membros (Sudeste, Nordeste), o número de combinações (e, portanto, de dados numéricos esperados) multiplica-se por 2: 9 × 2 = 18."
+    },
+    {
+      "id": "petro2012-q51",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 51
+      },
+      "subtopic": "5.3 Modelos, metodologias, técnicas e ferramentas de análise e projeto (estruturado e orientado a objetos)",
+      "stem": "No Diagrama de Sequência de UML, uma linha de vida (Lifeline) representa",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "a troca observável de informação entre elementos.",
+          "key": "A",
+          "explanation": "Essa é a definição de mensagem (message), não de linha de vida."
+        },
+        {
+          "text": "a unidade semântica básica de uma interação.",
+          "key": "B",
+          "explanation": "Essa é a definição de fragmento de interação (ou de mensagem/evento), não de linha de vida."
+        },
+        {
+          "text": "uma comunicação entre objetos.",
+          "key": "C",
+          "explanation": "Essa é a definição de mensagem, não de linha de vida."
+        },
+        {
+          "text": "um conjunto de objetos com um mesmo comportamento.",
+          "key": "D",
+          "explanation": "Essa é uma descrição próxima de classe/classificador, não de linha de vida."
+        },
+        {
+          "text": "um participante individual da interação.",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "eng-sw",
+      "correctKey": "E",
+      "explanationSummary": "Na UML, a Lifeline (linha de vida) representa um participante individual (instância) em uma interação, exibido como uma linha vertical no diagrama de sequência."
+    },
+    {
+      "id": "petro2012-q52",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 52
+      },
+      "subtopic": "5.1 Levantamento, análise e gerenciamento de requisitos",
+      "stem": "Em um projeto de software, o documento de requisitos de software é utilizado por vários usuários, cada um buscando no documento uma ou mais aplicações. Os Engenheiros de Sistemas buscam, principalmente,",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "desenvolver testes de validação para o sistema.",
+          "key": "A",
+          "explanation": "Essa é a principal preocupação dos engenheiros de teste de sistema (system test engineers), não dos engenheiros de sistemas."
+        },
+        {
+          "text": "entender qual sistema deve ser desenvolvido.",
+          "key": "B"
+        },
+        {
+          "text": "entender o sistema e as relações entre suas partes.",
+          "key": "C",
+          "explanation": "Essa é a principal preocupação dos engenheiros de manutenção de sistemas (system maintenance engineers)."
+        },
+        {
+          "text": "especificar os requisitos do sistema.",
+          "key": "D",
+          "explanation": "É uma atividade dos analistas/elicitadores de requisitos ao produzir o documento, não do uso do documento pelos engenheiros de sistemas."
+        },
+        {
+          "text": "planejar o processo de desenvolvimento do sistema.",
+          "key": "E",
+          "explanation": "Essa é a principal preocupação dos gerentes do projeto."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "eng-sw",
+      "correctKey": "B",
+      "explanationSummary": "Conforme a classificação clássica de leitores do documento de requisitos (Sommerville), os engenheiros de sistemas utilizam o documento principalmente para entender qual sistema deve ser desenvolvido."
+    },
+    {
+      "id": "petro2012-q53",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 53
+      },
+      "subtopic": "5.3 Modelos, metodologias, técnicas e ferramentas de análise e projeto (estruturado e orientado a objetos)",
+      "stem": "No paradigma estruturado de análise de sistemas, o primeiro modelo a ser construído é o modelo ambiental, que é composto de Declaração de Objetivos, Diagrama de Contexto e Lista de Eventos. Na Lista de Eventos é possível identificar eventos como sendo",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "controlados por fluxo, temporais, ou de controle",
+          "key": "A"
+        },
+        {
+          "text": "de usuário, do ambiente, ou do sistema",
+          "key": "B",
+          "explanation": "Não é a classificação padrão de eventos na lista de eventos da análise estruturada."
+        },
+        {
+          "text": "externos ou internos",
+          "key": "C",
+          "explanation": "É uma simplificação incompleta em relação à classificação padrão da análise estruturada, que distingue também eventos temporais e de controle."
+        },
+        {
+          "text": "funcionais ou não funcionais",
+          "key": "D",
+          "explanation": "Essa classificação se aplica a requisitos, não a eventos da lista de eventos."
+        },
+        {
+          "text": "síncronos ou assíncronos",
+          "key": "E",
+          "explanation": "Não é a classificação usada na análise estruturada para a lista de eventos."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "eng-sw",
+      "correctKey": "A",
+      "explanationSummary": "Na análise estruturada moderna (Yourdon), a Lista de Eventos identifica eventos classificados como controlados por fluxo (de dados), temporais (baseados em tempo) ou de controle."
+    },
+    {
+      "id": "petro2012-q54",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 54
+      },
+      "subtopic": "5.2 Ciclo de vida de sistemas e seus paradigmas",
+      "stem": "No âmbito dos processos de desenvolvimento de software, entre as vantagens do desenvolvimento incremental sobre o modelo em cascata, inclui-se a(o)",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "consistência com outros modelos de processo de engenharia, no qual documentação e modelos são produzidos em cada fase.",
+          "key": "A",
+          "explanation": "Essa é uma característica atribuída ao modelo em cascata, não uma vantagem do incremental sobre ele."
+        },
+        {
+          "text": "redução da interação com o usuário, colocando o foco na programação e entregando mais software útil.",
+          "key": "B",
+          "explanation": "O desenvolvimento incremental tende a aumentar, não reduzir, a interação com o usuário/cliente ao longo dos incrementos."
+        },
+        {
+          "text": "criação de um modelo matemático do sistema, garantindo um programa consistente com as especificações por meio de transformações corretas.",
+          "key": "C",
+          "explanation": "Essa descrição corresponde ao desenvolvimento formal/transformacional, não ao desenvolvimento incremental."
+        },
+        {
+          "text": "diminuição do custo de mudança nos requisitos do usuário, pela diminuição da quantidade de análise e documentação que deve ser refeita.",
+          "key": "D"
+        },
+        {
+          "text": "congelamento de partes do desenvolvimento para continuação em estágios mais avançados, o que leva a um software bem estruturado e sem truques de programação.",
+          "key": "E",
+          "explanation": "Essa característica é atribuída ao modelo em cascata (congelamento de especificações), não é uma vantagem do incremental."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "eng-sw",
+      "correctKey": "D",
+      "explanationSummary": "Como o desenvolvimento incremental produz e valida partes do sistema em ciclos curtos, uma mudança de requisitos afeta uma quantidade menor de análise e documentação já produzida, reduzindo o custo de mudança em comparação ao modelo em cascata."
+    },
+    {
+      "id": "petro2012-q55",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 55
+      },
+      "subtopic": "5.1 Levantamento, análise e gerenciamento de requisitos",
+      "stem": "As saídas da Análise de Domínio de Software são as seguintes:",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "aplicações existentes, modelos funcionais, padrões de reúso e taxonomia de classes",
+          "key": "A",
+          "explanation": "Combinação plausível, mas a literatura de análise de domínio (Arango/Prieto-Díaz, citada por Pressman) trata \"linguagens de domínio\" (vocabulário/linguagem específica do domínio), não \"aplicações existentes\", como uma das quatro saídas clássicas."
+        },
+        {
+          "text": "aplicações existentes, modelos funcionais, requisitos atuais e taxonomia de classes",
+          "key": "B",
+          "explanation": "Substitui \"padrões de reúso\", uma das saídas clássicas, por \"requisitos atuais\", que não é uma saída típica da análise de domínio."
+        },
+        {
+          "text": "linguagens de domínio, modelos funcionais, padrões de reúso e taxonomia de classes",
+          "key": "C"
+        },
+        {
+          "text": "linguagens de domínio, requisitos atuais, requisitos futuros e padrões de reúso.",
+          "key": "D",
+          "explanation": "Omite a taxonomia de classes e inclui \"requisitos atuais/futuros\", que não fazem parte das quatro saídas clássicas da análise de domínio."
+        },
+        {
+          "text": "modelos funcionais, requisitos atuais, requisitos futuros e taxonomia de classes.",
+          "key": "E",
+          "explanation": "Substitui \"linguagens de domínio\" e \"padrões de reúso\" por \"requisitos atuais/futuros\", que não são saídas típicas da análise de domínio."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "eng-sw",
+      "correctKey": "C",
+      "explanationSummary": "Segundo a literatura de análise de domínio de software (base do modelo de Pressman/Arango), as saídas típicas desse processo são: linguagens de domínio (vocabulário específico), modelos funcionais genéricos, padrões de reúso (componentes/arquiteturas reutilizáveis) e uma taxonomia de classes/objetos do domínio."
+    },
+    {
+      "id": "petro2012-q56",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 56
+      },
+      "subtopic": "9.19 ISO 27002, criptografia, certificação e assinatura digital",
+      "stem": "A NBR ISO/IEC 27002, quando trata dos controles de entrada física, estabelece algumas diretrizes para implementação. Dentre essas diretrizes, NÃO há uma especificando que",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "a data e hora da entrada e saída de visitantes sejam registradas, e todos os visitantes sejam supervisionados, a não ser que o seu acesso tenha sido previamente aprovado.",
+          "key": "A",
+          "explanation": "Essa é, de fato, uma diretriz prevista pela norma para controles de entrada física."
+        },
+        {
+          "text": "aos terceiros que realizam serviços de suporte, seja concedido acesso restrito às áreas seguras ou às instalações de processamento da informação sensível somente quando necessário; este acesso deve ser autorizado e monitorado.",
+          "key": "B",
+          "explanation": "Essa é, de fato, uma diretriz prevista pela norma."
+        },
+        {
+          "text": "o acesso às áreas em que são processadas ou armazenadas informações sensíveis seja controlado e restrito às pessoas autorizadas.",
+          "key": "C",
+          "explanation": "Essa é, de fato, uma diretriz prevista pela norma."
+        },
+        {
+          "text": "os direitos de acesso a áreas seguras sejam revogados em intervalos regulares, levados em conta os regulamentos e normas de saúde aplicáveis.",
+          "key": "D"
+        },
+        {
+          "text": "seja exigido que todos os funcionários, fornecedores e terceiros, e todos os visitantes, tenham alguma forma visível de identificação.",
+          "key": "E",
+          "explanation": "Essa é, de fato, uma diretriz prevista pela norma."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "seg-info",
+      "correctKey": "D",
+      "explanationSummary": "A norma efetivamente recomenda a revisão/atualização periódica dos direitos de acesso a áreas seguras, mas sem qualquer referência a \"regulamentos e normas de saúde aplicáveis\" — elemento estranho inserido na alternativa, que não consta das diretrizes reais da NBR ISO/IEC 27002 para esse controle."
+    },
+    {
+      "id": "petro2012-q57",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 57
+      },
+      "subtopic": "9.18 Classificação de informações",
+      "stem": "Segundo a NBR ISO/IEC 27002, é conveniente que a informação seja classificada em termos de",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "autenticidade, confidencialidade, sensibilidade e integridade para a organização",
+          "key": "A",
+          "explanation": "Não corresponde aos quatro critérios explicitados pela norma para classificação da informação."
+        },
+        {
+          "text": "autenticidade, valor, confidencialidade e criticidade para a organização",
+          "key": "B",
+          "explanation": "Não corresponde exatamente à formulação da norma."
+        },
+        {
+          "text": "legibilidade, integridade, valor e requisitos legais para a organização",
+          "key": "C",
+          "explanation": "Não corresponde exatamente à formulação da norma."
+        },
+        {
+          "text": "valor, requisitos legais, legibilidade e integridade para a organização",
+          "key": "D",
+          "explanation": "Não corresponde exatamente à formulação da norma."
+        },
+        {
+          "text": "valor, requisitos legais, sensibilidade e criticidade para a organização",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "seg-info",
+      "correctKey": "E",
+      "explanationSummary": "A NBR ISO/IEC 27002 recomenda que a informação seja classificada em termos de seu valor, requisitos legais, sensibilidade e criticidade para a organização."
+    },
+    {
+      "id": "petro2012-q58",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 58
+      },
+      "subtopic": "6.1 Conceitos de acessibilidade e usabilidade",
+      "stem": "Para que a Web seja acessível a pessoas com deficiência, vários componentes de desenvolvimento Web e ferramentas de interação devem ser coordenados, dentre os quais:",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "conteúdo e tocadores de mídia (media players)",
+          "key": "A"
+        },
+        {
+          "text": "ferramentas de desenvolvimento e protocolos de rede",
+          "key": "B",
+          "explanation": "Protocolos de rede não constam do modelo de componentes essenciais de acessibilidade Web (WAI)."
+        },
+        {
+          "text": "certificação e ferramentas de autoria",
+          "key": "C",
+          "explanation": "\"Certificação\" não é um dos componentes essenciais listados pelo modelo de acessibilidade Web."
+        },
+        {
+          "text": "navegadores web e conexão de rede sem fio",
+          "key": "D",
+          "explanation": "Conexão de rede sem fio não é um dos componentes essenciais de acessibilidade Web."
+        },
+        {
+          "text": "tecnologias assistivas e mecanismos de enlace",
+          "key": "E",
+          "explanation": "\"Mecanismos de enlace\" não é um dos componentes citados no modelo de componentes essenciais de acessibilidade Web (ainda que tecnologias assistivas o sejam)."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ux",
+      "correctKey": "A",
+      "explanationSummary": "O modelo de componentes essenciais de acessibilidade Web (W3C/WAI) inclui, entre outros, o conteúdo Web e os agentes de usuário como navegadores e tocadores de mídia (media players), que devem ser coordenados para garantir a acessibilidade."
+    },
+    {
+      "id": "petro2012-q59",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 59
+      },
+      "subtopic": "9.19 ISO 27002, criptografia, certificação e assinatura digital",
+      "stem": "A NBR ISO/IEC 27002, ao tratar dos serviços de comércio eletrônico e da política para uso de controles criptográficos, orienta o uso de assinaturas digitais (como controle criptográfico) para alcançar, dentre outros, explicitamente segundo a própria norma, o objetivo de segurança de",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "integridade/autenticidade, para proteger a autenticidade e integridade de informações sensíveis ou críticas, armazenadas ou transmitidas.",
+          "key": "A"
+        },
+        {
+          "text": "inviolabilidade, para manter as chaves secretas sob responsabilidade do seus usuários.",
+          "key": "B",
+          "explanation": "Não é um dos objetivos de segurança explicitamente citados pela norma para assinaturas digitais."
+        },
+        {
+          "text": "legalidade, para proteger juridicamente a divulgação da chave pública.",
+          "key": "C",
+          "explanation": "Não é um dos objetivos de segurança explicitamente citados pela norma para assinaturas digitais."
+        },
+        {
+          "text": "legibilidade, para garantir que todos os usuários envolvidos numa comunicação legitimem seus textos originais.",
+          "key": "D",
+          "explanation": "\"Legibilidade\" não é um objetivo de segurança citado pela norma nesse contexto."
+        },
+        {
+          "text": "transparência, para determinar, se necessário, os destinatários envolvidos na transmissão.",
+          "key": "E",
+          "explanation": "Não é um dos objetivos de segurança explicitamente citados pela norma para assinaturas digitais."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "seg-info",
+      "correctKey": "A",
+      "explanationSummary": "A NBR ISO/IEC 27002 cita explicitamente a proteção da autenticidade e integridade de informações sensíveis ou críticas (armazenadas ou transmitidas) como um dos objetivos de segurança alcançados pelo uso de assinaturas digitais como controle criptográfico."
+    },
+    {
+      "id": "petro2012-q61",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 61
+      },
+      "subtopic": "1.23 Diferenciação entre bancos relacionais, multidimensionais, documentos e grafos",
+      "stem": "Entre os tipos de Bancos de Dados Distribuídos, encontram-se as Federações de Bancos de Dados, as quais possuem",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "alguma forma de visão ou esquema global, que é compartilhado pelas aplicações.",
+          "key": "A"
+        },
+        {
+          "text": "autonomia total, sendo totalmente localizadas e sem heterogeneidade.",
+          "key": "B",
+          "explanation": "Federações de bancos de dados normalmente envolvem sistemas heterogêneos e autônomos, mas coordenados por algum esquema compartilhado, não totalmente isolados/sem heterogeneidade."
+        },
+        {
+          "text": "autonomia zero, que é vista pelo usuário como um banco de dados centralizado.",
+          "key": "C",
+          "explanation": "Autonomia zero descreve um banco de dados distribuído fortemente integrado (não federado); federações preservam autonomia significativa dos bancos componentes."
+        },
+        {
+          "text": "multiprocessadores e memória principal compartilhada.",
+          "key": "D",
+          "explanation": "Isso descreve uma arquitetura de hardware paralelo (shared-memory), não uma federação de bancos de dados."
+        },
+        {
+          "text": "multiprocessadores e memória secundária compartilhada.",
+          "key": "E",
+          "explanation": "Isso descreve uma arquitetura de hardware paralelo (shared-disk), não uma federação de bancos de dados."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "arq-dados",
+      "correctKey": "A",
+      "explanationSummary": "Uma federação de bancos de dados integra sistemas autônomos e possivelmente heterogêneos por meio de algum esquema ou visão global compartilhada pelas aplicações, preservando parte da autonomia de cada banco componente."
+    },
+    {
+      "id": "petro2012-q62",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 62
+      },
+      "subtopic": "1.10 Linguagem de consulta estruturada (SQL)",
+      "stem": "Considere a relação Cidade(nome, estado) com as tuplas: (Água Branca, Alagoas), (Água Branca, Minas Gerais), (Água Branca, Piauí), (Bom Jesus, Piauí), (Bom Jesus, Rio Grande do Sul), (Bom Jesus, Rio Grande do Norte), (Cruzeiro do Sul, Acre), (Cruzeiro do Sul, Rio Grande do Sul), (Feira Nova, Sergipe). Seja a operação da álgebra relacional π_nome (σ_estado>’R’ (Cidade)). Quantas tuplas e atributos terá a relação resultante após a execução dessa operação?",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "3 tuplas, cada uma com 1 atributo",
+          "key": "A"
+        },
+        {
+          "text": "3 tuplas, cada uma com 2 atributos",
+          "key": "B",
+          "explanation": "A projeção sobre \"nome\" resulta em apenas 1 atributo por tupla, não 2."
+        },
+        {
+          "text": "4 tuplas, cada uma com 1 atributo",
+          "key": "C",
+          "explanation": "A projeção elimina duplicatas (semântica de conjunto), reduzindo 4 tuplas selecionadas para 3 tuplas distintas de nome."
+        },
+        {
+          "text": "4 tuplas, cada uma com 2 atributos",
+          "key": "D",
+          "explanation": "Erra tanto no número de atributos (a projeção mantém só \"nome\") quanto na contagem de tuplas distintas."
+        },
+        {
+          "text": "7 tuplas, cada uma com 1 atributo",
+          "key": "E",
+          "explanation": "Contaria erroneamente todas as tuplas da relação original, sem aplicar a seleção estado>'R'."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "arq-dados",
+      "correctKey": "A",
+      "explanationSummary": "A seleção estado>’R’ retorna as tuplas com estado alfabeticamente maior que \"R\": Bom Jesus/Rio Grande do Sul, Bom Jesus/Rio Grande do Norte, Cruzeiro do Sul/Rio Grande do Sul e Feira Nova/Sergipe (4 tuplas). A projeção sobre \"nome\" elimina a duplicata \"Bom Jesus\", resultando em 3 tuplas distintas ({Bom Jesus, Cruzeiro do Sul, Feira Nova}), cada uma com 1 atributo."
+    },
+    {
+      "id": "petro2012-q65",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 65
+      },
+      "subtopic": "8.8 Valores-verdade",
+      "stem": "Considere p e q fórmulas atômicas de uma linguagem L e v uma função de valoração na qual v(p) ≠ v(q). Para tal, é necessário e suficiente que",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "v(p ∧ q) = F",
+          "key": "A",
+          "explanation": "A conjunção é falsa em três das quatro combinações de valores, não caracteriza exatamente p e q com valores diferentes (é falsa também quando ambos são falsos)."
+        },
+        {
+          "text": "v(p ∨ q) = V",
+          "key": "B",
+          "explanation": "A disjunção é verdadeira em três das quatro combinações, incluindo quando p e q têm o mesmo valor (ambos verdadeiros)."
+        },
+        {
+          "text": "v(p↔q) = F",
+          "key": "C"
+        },
+        {
+          "text": "v(p↔q) = V",
+          "key": "D",
+          "explanation": "O bicondicional é verdadeiro exatamente quando p e q TÊM o mesmo valor-verdade, o oposto da condição pedida."
+        },
+        {
+          "text": "v(p→q) = V",
+          "key": "E",
+          "explanation": "O condicional é verdadeiro em três das quatro combinações, incluindo quando ambos são verdadeiros (mesmo valor)."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "logica",
+      "correctKey": "C",
+      "explanationSummary": "O bicondicional p↔q é falso exatamente nos casos em que p e q têm valores-verdade diferentes, o que corresponde precisamente à condição necessária e suficiente pedida."
+    },
+    {
+      "id": "petro2012-q66",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 66
+      },
+      "subtopic": "1.3 O modelo Relacional",
+      "stem": "Na sua definição teórica, as relações do modelo relacional precisam satisfazer algumas propriedades, entre elas a de que",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "cada atributo contém um conjunto finito de tuplas.",
+          "key": "A",
+          "explanation": "Inverte a relação: é a relação (tabela) que contém um conjunto finito de tuplas, não o atributo."
+        },
+        {
+          "text": "os atributos são ordenados da esquerda para a direita.",
+          "key": "B",
+          "explanation": "No modelo relacional teórico, os atributos de uma relação formam um conjunto não ordenado."
+        },
+        {
+          "text": "as tuplas são ordenadas do topo para a base.",
+          "key": "C",
+          "explanation": "As tuplas de uma relação também formam um conjunto não ordenado, sem ordem definida."
+        },
+        {
+          "text": "inexistem tuplas duplicadas.",
+          "key": "D"
+        },
+        {
+          "text": "sempre existe uma tupla identificadora.",
+          "key": "E",
+          "explanation": "Não existe o conceito de \"tupla identificadora\"; a identificação de tuplas se dá por chave, um conjunto de atributos, não por outra tupla."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "arq-dados",
+      "correctKey": "D",
+      "explanationSummary": "Por definição, uma relação é um conjunto (matemático) de tuplas, e conjuntos não admitem elementos duplicados — logo, uma relação nunca contém tuplas duplicadas."
+    },
+    {
+      "id": "petro2012-q67",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 67
+      },
+      "subtopic": "8.3 A lógica sentencial",
+      "stem": "Afirmar que duas fórmulas bem formadas p e q, que são compostas pelas mesmas proposições simples t1, t2, ..., tn, são equivalentes é o mesmo que afirmar que é uma tautologia a proposição",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "p ↔ q",
+          "key": "A"
+        },
+        {
+          "text": "p ∧ q",
+          "key": "B",
+          "explanation": "A conjunção não é tautológica apenas por equivalência entre p e q (é falsa sempre que ambas são falsas)."
+        },
+        {
+          "text": "p ∨ q",
+          "key": "C",
+          "explanation": "A disjunção não caracteriza equivalência (é falsa apenas quando ambas são falsas, mas verdadeira mesmo quando p e q divergem)."
+        },
+        {
+          "text": "p → ¬q",
+          "key": "D",
+          "explanation": "Essa fórmula expressaria que p e q nunca são simultaneamente verdadeiras, o que não corresponde a equivalência."
+        },
+        {
+          "text": "¬p ∨ ¬q",
+          "key": "E",
+          "explanation": "Equivale a ¬(p∧q), que não caracteriza a equivalência lógica entre p e q."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "logica",
+      "correctKey": "A",
+      "explanationSummary": "Duas fórmulas são logicamente equivalentes exatamente quando possuem os mesmos valores-verdade em todas as valorações possíveis, o que corresponde à tautologia do bicondicional p↔q."
+    },
+    {
+      "id": "petro2012-q68",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 68
+      },
+      "subtopic": "8.4 A lógica de predicados de primeira ordem",
+      "stem": "A negação da proposição \"Todo professor de matemática usa óculos\" é:",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Nenhum professor de matemática usa óculos.",
+          "key": "A",
+          "explanation": "Essa afirmação é mais forte do que a negação lógica correta; seria a negação de \"Algum professor usa óculos\", não de \"Todo professor usa óculos\"."
+        },
+        {
+          "text": "Ninguém que usa óculos é professor de matemática.",
+          "key": "B",
+          "explanation": "Essa afirmação inverteria a implicação de forma incorreta (seria equivalente a \"nenhum professor usa óculos\"), não é a negação de um quantificador universal."
+        },
+        {
+          "text": "Todos os professores de Matemática não usam óculos.",
+          "key": "C",
+          "explanation": "Equivale a \"nenhum professor usa óculos\", uma afirmação universal mais forte que a simples negação existencial correta."
+        },
+        {
+          "text": "Existe alguma pessoa que usa óculos e não é professor de matemática.",
+          "key": "D",
+          "explanation": "Essa afirmação não contradiz a proposição original (é perfeitamente compatível com ela ser verdadeira ou falsa)."
+        },
+        {
+          "text": "Existe algum professor de matemática que não usa óculos.",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "logica",
+      "correctKey": "E",
+      "explanationSummary": "A negação de ∀x (P(x)→U(x)) é ∃x (P(x) ∧ ¬U(x)): existe algum professor de matemática que não usa óculos — um único contraexemplo já refuta a afirmação universal original."
+    },
+    {
+      "id": "petro2012-q69",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 69
+      },
+      "subtopic": "8.8 Valores-verdade",
+      "stem": "Seja a tabela verdade de p, q, ¬p e ¬p→q (com as colunas p e q já preenchidas: VV, VF, FV, FF). Quantas vezes, sem considerar os valores já preenchidos, o valor F aparece ao se completar essa tabela?",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "2",
+          "key": "A",
+          "explanation": "Contabiliza apenas as ocorrências de F na coluna ¬p, sem somar a ocorrência de F na coluna ¬p→q."
+        },
+        {
+          "text": "3",
+          "key": "B"
+        },
+        {
+          "text": "4",
+          "key": "C",
+          "explanation": "Superestima o número de ocorrências de F nas duas colunas a preencher."
+        },
+        {
+          "text": "5",
+          "key": "D",
+          "explanation": "Superestima o número de ocorrências de F nas duas colunas a preencher."
+        },
+        {
+          "text": "6",
+          "key": "E",
+          "explanation": "Corresponderia a todas as 8 células preenchidas sendo F, o que não ocorre."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "logica",
+      "correctKey": "B",
+      "explanationSummary": "Para p=V,q=V: ¬p=F, ¬p→q=V. Para p=V,q=F: ¬p=F, ¬p→q=V. Para p=F,q=V: ¬p=V, ¬p→q=V. Para p=F,q=F: ¬p=V, ¬p→q=F. Ocorrências de F nas duas colunas novas: duas em ¬p (linhas 1 e 2) e uma em ¬p→q (linha 4), totalizando 3."
+    },
+    {
+      "id": "petro2012-q70",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 70
+      },
+      "subtopic": "8.6 Sistemas dedutivos",
+      "stem": "Dadas as premissas p1, p2,..., pn e uma conclusão q, uma regra de inferência a partir da qual q se deduz logicamente de p1, p2,..., pn é denotada por p1, p2,..., pn ⊢ q. Uma das regras de inferência clássica é chamada Modus Ponens, que, em latim, significa \"modo de afirmar\". Qual a notação que designa a regra de inferência Modus Ponens?",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "p ∨ q, ¬p ⊢ q",
+          "key": "A",
+          "explanation": "Essa é a regra do silogismo disjuntivo (modus tollendo ponens sobre a disjunção), não o Modus Ponens clássico do condicional."
+        },
+        {
+          "text": "p ∧ q, ¬p ⊢ ¬q",
+          "key": "B",
+          "explanation": "Não é uma regra de inferência clássica válida com essa forma."
+        },
+        {
+          "text": "p ↔ q ⊢ p→q",
+          "key": "C",
+          "explanation": "Descreve apenas a eliminação do bicondicional, não o Modus Ponens."
+        },
+        {
+          "text": "p, p → q ⊢ q",
+          "key": "D"
+        },
+        {
+          "text": "q, p → q ⊢ p",
+          "key": "E",
+          "explanation": "Essa forma corresponde à falácia da afirmação do consequente, não ao Modus Ponens."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "logica",
+      "correctKey": "D",
+      "explanationSummary": "O Modus Ponens é a regra clássica que, a partir de \"p\" e \"se p então q\" (p→q), permite concluir \"q\": notação p, p→q ⊢ q."
+    },
+    {
+      "id": "petro2012-q36",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 36
+      },
+      "area": "gestao-proj",
+      "subtopic": "2.4 PMBOK 7ª edição",
+      "stem": "Seja o diagrama de redes de um projeto, no qual foi especificada a duração de cada tarefa (A: 2 meses, B: 2 meses, C: 1 mês, D: 2 meses, E: 5 meses, F: 2 meses, G: 1 mês), com o Início ramificando-se em A, B e C, A e D convergindo em F, C alimentando E, E convergindo em F, e F alimentando G, que converge no Fim. Qual é a duração, em meses, do caminho crítico desse projeto?",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "5",
+          "explanation": "Corresponde apenas ao caminho Início-A-F-G-Fim (2+2+1=5), que não é o mais longo dos três caminhos do diagrama."
+        },
+        {
+          "key": "B",
+          "text": "6",
+          "explanation": "Não corresponde a nenhum dos três caminhos do diagrama quando E converge para F (e não diretamente para o Fim)."
+        },
+        {
+          "key": "C",
+          "text": "7",
+          "explanation": "Corresponde ao caminho Início-B-D-F-G-Fim (2+2+2+1=7), que é mais longo que o caminho via A, mas ainda não é o caminho crítico."
+        },
+        {
+          "key": "D",
+          "text": "9"
+        },
+        {
+          "key": "E",
+          "text": "15",
+          "explanation": "Corresponde à soma das durações de todas as atividades do diagrama, não à duração de nenhum caminho real entre Início e Fim."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Verificação em 2 rodadas: na 1ª rodada, a topologia exata da seta de saída de E (se para F, ou diretamente para o Fim) não pôde ser determinada com segurança a partir da extração de texto, gerando derivação C (7 meses) divergente do gabarito (9 meses) — item enviado para review-queue. Na 2ª rodada, um revisor independente renderizou visualmente o diagrama da página original do PDF-fonte e confirmou que os três caminhos (A; B→D; C→E) convergem no nó F antes de seguir para G→Fim, resultando no caminho crítico Início-C-E-F-G-Fim = 1+5+2+1 = 9 meses, que concorda com o gabarito (alternativa D). Promovida de review-queue.json para questions.json com esta segunda confirmação."
+      },
+      "correctKey": "D",
+      "explanationSummary": "Com E convergindo para F (e não diretamente para o Fim), os três caminhos do diagrama são Início-A-F-G-Fim=5, Início-B-D-F-G-Fim=7 e Início-C-E-F-G-Fim=1+5+2+1=9. O caminho crítico (o mais longo) é 9 meses."
     }
   ]
 }

@@ -1783,6 +1783,51 @@
       ],
       "unresolved": true,
       "annulled": false
+    },
+    {
+      "id": "petro2012-q35",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 35
+      },
+      "area": "gestao-proj",
+      "subtopic": "2.4 PMBOK 7ª edição",
+      "stem": "Um gráfico de Gantt é uma ferramenta que pode auxiliar a determinar o caminho crítico de um projeto e as folgas de suas atividades. Um gerente iniciante apresentou o gráfico de Gantt de seu projeto (barras V, W, X, Y, Z, G, H, I, F, J distribuídas ao longo de 7 meses, com dependências indicadas por setas). Qual é o erro que esse diagrama possui?",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "X tem que terminar ao fim do projeto, pois não há nenhuma atividade que dependa dela."
+        },
+        {
+          "key": "B",
+          "text": "Z não pode depender de duas atividades antecessoras, pois o gráfico de Gantt é limitado a uma conexão por atividade."
+        },
+        {
+          "key": "C",
+          "text": "Z tem que ocorrer em paralelo com G, pois ambas possuem uma dependência em comum (Y)."
+        },
+        {
+          "key": "D",
+          "text": "H não pode ocorrer antes do término de G, pois existe uma dependência entre as duas."
+        },
+        {
+          "key": "E",
+          "text": "I tem que começar no início do projeto, pois não tem nenhuma atividade antecessora."
+        }
+      ],
+      "gabaritoLetter": "D",
+      "derivedLetter": "unresolved (diagram-dependent)",
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "diagrama nativo da página não capturado com precisão suficiente",
+          "note": "O gráfico de Gantt apresenta barras V, W, X, Y, Z, G, H, I, F, J posicionadas ao longo de 7 meses, com dependências indicadas por setas entre as barras. A extração de texto do PDF preserva os rótulos e o posicionamento aproximado das barras, mas a direção/origem exata de cada seta de dependência (especialmente entre G, H, Y e Z) não pode ser reconstruída com segurança a partir do texto e das coordenadas disponíveis, sem reconstrução visual do diagrama vetorial original. O gabarito indica a alternativa D (\"H não pode ocorrer antes do término de G, pois existe uma dependência entre as duas\"), mas a derivação independente não alcançou confiança alta sobre qual das cinco alternativas descreve corretamente o erro do diagrama, dado que pelo menos duas alternativas (B e D) dependem de uma leitura exata de quais setas convergem para/saem de G e H. Mesmo problema já documentado para prova07-q6/13/19/41/50/52 e prova6-q23/52/54 (diagramas/tabelas nativos da página não plenamente capturados pela extração de texto)."
+        }
+      ],
+      "unresolved": true,
+      "annulled": false
     }
   ]
 }
