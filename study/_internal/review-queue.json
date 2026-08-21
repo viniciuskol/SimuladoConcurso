@@ -1321,6 +1321,264 @@
       ],
       "unresolved": true,
       "annulled": false
+    },
+    {
+      "id": "transp15-q26",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 26
+      },
+      "area": "eng-sw",
+      "subtopic": "5.4 Verificação, validação e teste",
+      "stem": "O custo da qualidade inclui todos os custos feitos na busca da qualidade, dividindo-se em custos de prevenção, de avaliação e de falha, interna e externa. Entre os custos de prevenção está o das atividades de",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "testes e depuração"
+        },
+        {
+          "key": "B",
+          "text": "coleta de dados e métricas de avaliação"
+        },
+        {
+          "key": "C",
+          "text": "retrabalho necessárias para corrigir o erro"
+        },
+        {
+          "key": "D",
+          "text": "condução de revisões técnicas para os produtos de engenharia de software"
+        },
+        {
+          "key": "E",
+          "text": "gerência para planejar e coordenar todas as atividades de controle e garantia de qualidade"
+        }
+      ],
+      "gabaritoLetter": "E",
+      "derivedLetter": "D ou E (ambíguo)",
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "diverge/ambíguo",
+          "note": "O gabarito oficial indica (E). Em Pressman ('Engenharia de Software'), referência comum para esse tema em concursos de TI, os custos de PREVENÇÃO são explicitamente descritos como: 'quality planning, formal technical reviews, test equipment, training' — ou seja, tanto o planejamento/coordenação da qualidade (opção E) quanto a condução de revisões técnicas formais (opção D, 'formal technical reviews') aparecem juntos, no mesmo texto-fonte, como exemplos de custo de PREVENÇÃO. Isso torna as opções D e E ambas defensáveis como resposta a partir da literatura padrão, sem um critério textual inequívoco para eliminar D. Marcada para revisão por baixa confiança na derivação independente (não por mero desacordo pontual), mantendo o gabarito oficial (E) registrado para referência."
+        }
+      ]
+    },
+    {
+      "id": "transp15-q39",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 39
+      },
+      "area": "arq-dados",
+      "subtopic": "1.11 Linguagem de definição de dados (DDL) / 1.5 Integridade referencial",
+      "stem": "As Figuras abaixo exibem os dados que se encontram armazenados nas Tabelas (FORNECEDOR, MATERIAL, VENDA) usadas para controlar as compras de materiais de escritório. Considerando as informações apresentadas, qual comando SQL será executado sem erro?",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "INSERT INTO FORNECEDOR (ID_FORN,NOME,TEL2,TEL3) VALUES (5555, 'FORNECEDOR 5', '(21) 3456-9088', NULL)"
+        },
+        {
+          "key": "B",
+          "text": "INSERT INTO VENDA VALUES (3030, 2222, '02/02/2018', 10.50, 80)"
+        },
+        {
+          "key": "C",
+          "text": "DELETE FROM FORNECEDOR WHERE ID_FORN NOT IN (SELECT ID_F FROM VENDA)"
+        },
+        {
+          "key": "D",
+          "text": "DELETE FROM FORNECEDOR WHERE TEL3 IS NOT NULL"
+        },
+        {
+          "key": "E",
+          "text": "INSERT INTO FORNECEDOR VALUES(9999, 'XXX', '(61) 2113-6589')"
+        }
+      ],
+      "gabaritoLetter": "E",
+      "derivedLetter": "não determinável sem a Figura",
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "depende de imagem não capturada",
+          "note": "O enunciado remete explicitamente a 'Figuras abaixo' com os dados armazenados nas tabelas FORNECEDOR/MATERIAL/VENDA (quais IDs de fornecedor/material já existem, quais têm vendas associadas, etc.), necessárias para avaliar violações de FK/PK/NOT NULL em cada alternativa (por exemplo, se o ID_FORN=5555 do item A já existe ou não, se o ID_F=3030/ID_M=2222 do item B existem nas tabelas referenciadas, etc.). Essas figuras/tabelas de dados são elementos gráficos nativos da página, não capturados na extração de texto do HTML/PDF (apenas as definições CREATE TABLE, comuns às questões 38 e 39, foram capturadas). Sem os dados de exemplo, não é possível confirmar com segurança qual comando executa sem erro; mantido em revisão com o gabarito oficial (E) registrado para referência."
+        }
+      ]
+    },
+    {
+      "id": "transp15-q40",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 40
+      },
+      "area": "arq-dados",
+      "subtopic": "1.1 Modelagem de dados (conceitual, lógica e física)",
+      "stem": "A Figura abaixo exibe um modelo E-R. Os identificadores das entidades A, B e C são, respectivamente, (a1,a2), b1 e c1. Considere que, na transformação desse modelo para um conjunto de Tabelas relacionais, todos os atributos serão tratados como strings com exatamente 10 caracteres. Qual esquema relacional preserva a semântica do modelo E-R acima?",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "Esquema com A(A1,A2,A3,B1) FK para B; B(B1,B2); C(C1,C2,C3); RB(C1,B1) ligando C e B"
+        },
+        {
+          "key": "B",
+          "text": "Esquema com A(A1,A2,A3); B(B1,B2,A1,A2) FK para A; C(C1,C2,C3); RB(C1,B1) ligando C e B"
+        },
+        {
+          "key": "C",
+          "text": "Esquema com A(A1,A2,A3); B(B1,B2); RA(A1,A2,B1) ligando A e B; C(C1,C2,C3,B1) FK para B"
+        },
+        {
+          "key": "D",
+          "text": "Esquema com A(A1,A2,A3); B(B1,B2,C1) FK para C; RA(A1,A2,B1) ligando A e B; C(C1,C2,C3)"
+        },
+        {
+          "key": "E",
+          "text": "Esquema com A(A1,A2,A3,B1) FK para B; B(B1,B2,C1) FK para C; C(C1,C2,C3)"
+        }
+      ],
+      "gabaritoLetter": "E",
+      "derivedLetter": "não determinável sem a Figura",
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "depende de imagem não capturada",
+          "note": "As cinco alternativas apresentam arranjos de chaves estrangeiras muito diferentes entre as entidades A, B e C (ligação direta A-B, A-B via tabela associativa, B-C direta, C-B via tabela associativa, etc.), o que só pode ser decidido a partir das cardinalidades/multiplicidades exatas do diagrama E-R referido como 'A Figura abaixo', que é um elemento gráfico nativo da página não capturado na extração de texto. O texto fornece apenas os identificadores das entidades, não os relacionamentos entre elas. Mantido em revisão, com o gabarito oficial (E) registrado para referência."
+        }
+      ]
+    },
+    {
+      "id": "transp15-q41",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 41
+      },
+      "area": "arq-dados",
+      "subtopic": "1.1 Modelagem de dados (conceitual, lógica e física)",
+      "stem": "A Figura a seguir exibe um modelo E-R composto por duas entidades e uma relação. Qual diagrama de Venn contém uma relação que atende às regras de multiplicidade definidas no modelo E-R acima?",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "(diagrama de Venn A — não capturado no texto extraído)"
+        },
+        {
+          "key": "B",
+          "text": "(diagrama de Venn B — não capturado no texto extraído)"
+        },
+        {
+          "key": "C",
+          "text": "(diagrama de Venn C — não capturado no texto extraído)"
+        },
+        {
+          "key": "D",
+          "text": "(diagrama de Venn D — não capturado no texto extraído)"
+        },
+        {
+          "key": "E",
+          "text": "(diagrama de Venn E — não capturado no texto extraído)"
+        }
+      ],
+      "gabaritoLetter": "D",
+      "derivedLetter": "não determinável sem a Figura",
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "depende de imagem não capturada",
+          "note": "Tanto o modelo E-R do enunciado quanto as cinco opções de resposta são diagramas de Venn (elementos puramente gráficos/vetoriais), sem nenhum texto alternativo extraído do PDF/HTML além dos rótulos '(A)'...'(E)'. É impossível reconstruir ou verificar esta questão sem acesso visual direto às imagens da página. Mantido em revisão, com o gabarito oficial (D) registrado para referência."
+        }
+      ]
+    },
+    {
+      "id": "transp15-q69",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 69
+      },
+      "area": "logica",
+      "subtopic": "8.4 A lógica de predicados de primeira ordem",
+      "stem": "Considere a seguinte sentença: “Todo aluno do curso de Informática estuda algum tópico de Matemática Discreta” e os seguintes predicados: A(x): x é aluno. I(x): x é do curso de Informática. E(x,y): x estuda y. T(x): x é tópico de Matemática Discreta. Uma forma de traduzi-la é",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "(fórmula com quantificadores ∀/∃ e conectivos ∧/→ — glifos lógicos não capturados no texto extraído)"
+        },
+        {
+          "key": "B",
+          "text": "(fórmula com quantificadores ∀/∃ e conectivos ∧/→ — glifos lógicos não capturados no texto extraído)"
+        },
+        {
+          "key": "C",
+          "text": "(fórmula com quantificadores ∀/∃ e conectivos ∧/→ — glifos lógicos não capturados no texto extraído)"
+        },
+        {
+          "key": "D",
+          "text": "(fórmula com quantificadores ∀/∃ e conectivos ∧/→ — glifos lógicos não capturados no texto extraído)"
+        },
+        {
+          "key": "E",
+          "text": "(fórmula com quantificadores ∀/∃ e conectivos ∧/→ — glifos lógicos não capturados no texto extraído)"
+        }
+      ],
+      "gabaritoLetter": "D",
+      "derivedLetter": "não determinável sem os glifos",
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "símbolos lógicos ausentes do texto-fonte",
+          "note": "Mesmo problema já documentado para outras provas deste banco (ex.: prova6-q63/66/67/69, prova07-q22-25): os glifos de quantificadores (∀, ∃) e conectivos (∧, →) desta prova são desenhados como vetor/Type3 na fonte do PDF, não como texto extraível, de modo que todas as cinco alternativas foram capturadas praticamente em branco (apenas vírgulas e espaços remanescentes). A tradução correta, em prosa, seria algo como ∀x((A(x)∧I(x)) → ∃y(T(y)∧E(x,y))), mas não é possível confirmar com segurança qual das cinco opções corresponde exatamente a essa fórmula sem reconstrução visual a partir do PDF original. Mantido em revisão, com o gabarito oficial (D) registrado para referência."
+        }
+      ]
+    },
+    {
+      "id": "transp15-q70",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 70
+      },
+      "area": "logica",
+      "subtopic": "8.3 A lógica sentencial",
+      "stem": "Qual das proposições abaixo é uma contradição?",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "(fórmula proposicional — glifos lógicos não capturados no texto extraído)"
+        },
+        {
+          "key": "B",
+          "text": "(fórmula proposicional — glifos lógicos não capturados no texto extraído)"
+        },
+        {
+          "key": "C",
+          "text": "(fórmula proposicional — glifos lógicos não capturados no texto extraído)"
+        },
+        {
+          "key": "D",
+          "text": "(fórmula proposicional — glifos lógicos não capturados no texto extraído)"
+        },
+        {
+          "key": "E",
+          "text": "(fórmula proposicional — glifos lógicos não capturados no texto extraído)"
+        }
+      ],
+      "gabaritoLetter": "B",
+      "derivedLetter": "não determinável sem os glifos",
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "símbolos lógicos ausentes do texto-fonte",
+          "note": "Mesmo problema de extração da Q69 desta prova (e precedente já documentado em prova6-q63/66/67/69): os conectivos lógicos (¬, ∨, ∧, →) das cinco fórmulas proposicionais são desenhados como vetor/Type3 na fonte do PDF, não capturáveis como texto. As cinco alternativas restaram apenas com as letras de variáveis proposicionais (P, Q) sem os conectivos entre elas, tornando inviável confirmar de forma independente qual fórmula é uma contradição sem reconstrução visual a partir do PDF original. Mantido em revisão, com o gabarito oficial (B) registrado para referência."
+        }
+      ]
     }
   ]
 }

@@ -6125,6 +6125,2260 @@
       },
       "explanationSummary": "Excelência operacional, apoio à tomada de decisões, vantagem competitiva e sobrevivência da organização são todos objetivos organizacionais clássicos atribuídos aos sistemas de informação na literatura de SI empresarial (Laudon & Laudon).",
       "correctKey": "E"
+    },
+    {
+      "id": "transp15-q1",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 1
+      },
+      "area": "portugues",
+      "subtopic": "P.1 Compreensão de textos",
+      "stem": "Com base na leitura do texto, entende-se que o desabafo de Lobo Neves ao longo do texto deve-se à sua insatisfação com a(o)",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "vida pública"
+        },
+        {
+          "key": "B",
+          "text": "sua família",
+          "explanation": "O desabafo de Lobo Neves é sobre a vida política/pública, não sobre a família, que não é mencionada como fonte de insatisfação."
+        },
+        {
+          "key": "C",
+          "text": "seu casamento",
+          "explanation": "O texto mostra Lobo Neves satisfeito com o casamento (elogia Virgília); a insatisfação é com a carreira política."
+        },
+        {
+          "key": "D",
+          "text": "teatro da época",
+          "explanation": "O teatro é usado como metáfora/comparação para a vida política, não é objeto de insatisfação em si."
+        },
+        {
+          "key": "E",
+          "text": "glamour da sociedade",
+          "explanation": "Não há menção a insatisfação com o glamour social; o desabafo trata da 'vida política'."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "Lobo Neves relata explicitamente cansaço e amargura com a vida política/pública ('a vida política era um tecido de invejas...'; 'faltava-lhe a glória pública')."
+    },
+    {
+      "id": "transp15-q2",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 2
+      },
+      "area": "portugues",
+      "subtopic": "P.7 Coordenação e subordinação",
+      "stem": "Em “Como adorasse a mulher, não se vexava de mo dizer muitas vezes” (l. 2-3), o conector como estabelece, com a oração seguinte, uma relação semântica de",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "causa"
+        },
+        {
+          "key": "B",
+          "text": "condição",
+          "explanation": "'Como' condicional exigiria sentido de hipótese ('se'), o que não se aplica: a adoração é fato, não condição."
+        },
+        {
+          "key": "C",
+          "text": "contraste",
+          "explanation": "Não há oposição de ideias entre as duas orações; a segunda é consequência lógica da primeira."
+        },
+        {
+          "key": "D",
+          "text": "comparação",
+          "explanation": "'Como' comparativo compararia dois elementos semelhantes, o que não ocorre na frase."
+        },
+        {
+          "key": "E",
+          "text": "consequência",
+          "explanation": "A oração com 'como' é a causa; o efeito (não se envergonhar de dizer) viria depois, não o contrário."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "'Como' equivale a 'porque/já que' nesse contexto, introduzindo a causa do fato de ele não se envergonhar de declarar a adoração."
+    },
+    {
+      "id": "transp15-q3",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 3
+      },
+      "area": "portugues",
+      "subtopic": "P.4 Significação das palavras",
+      "stem": "A palavra carcoma foi empregada metaforicamente no trecho “Um dia confessou-me que trazia uma triste carcoma na existência” (l. 7-8). Um outro exemplo de metáfora empregada no texto é:",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "“Lobo Neves, a princípio, metia-me grandes sustos” (l. 1-2)",
+          "explanation": "É uma afirmação literal sobre o efeito das confidências de Lobo Neves, não uma metáfora."
+        },
+        {
+          "key": "B",
+          "text": "“De fresta que era, chegou a porta escancarada” (l. 6-7)"
+        },
+        {
+          "key": "C",
+          "text": "“Evidentemente havia aí uma crise de melancolia; tratei de combatê-la” (l. 17-18)",
+          "explanation": "'Crise de melancolia' é expressão quase literal/clínica da época, não uma metáfora construída como a da 'carcoma'."
+        },
+        {
+          "key": "D",
+          "text": "“Entrei na política por gosto, por família, por ambição, e um pouco por vaidade” (l. 21-23)",
+          "explanation": "É uma enumeração literal de motivos, sem figura de linguagem metafórica."
+        },
+        {
+          "key": "E",
+          "text": "“Lobo Neves recebeu-os com alegria” (l. 43)",
+          "explanation": "Frase literal, sem sentido figurado."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "'De fresta que era, chegou a porta escancarada' transpõe a ideia de crescimento da confiança/intimidade para a imagem física de uma fresta que se torna porta aberta, tal como 'carcoma' transpõe deterioração física para o desgaste existencial."
+    },
+    {
+      "id": "transp15-q4",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 4
+      },
+      "area": "portugues",
+      "subtopic": "P.1 Compreensão de textos",
+      "stem": "A partir da leitura do fragmento do texto: “que ele ouviu com aquela unção religiosa de um desejo que não quer acabar de morrer” (l. 10-11), infere-se que Lobo Neves",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "estava prestes a morrer.",
+          "explanation": "O trecho fala de um desejo que 'não quer morrer', não da morte física de Lobo Neves."
+        },
+        {
+          "key": "B",
+          "text": "era extremamente religioso.",
+          "explanation": "'Unção religiosa' é usada em sentido figurado para descrever a devoção com que ele ouvia as palavras, não indica religiosidade pessoal."
+        },
+        {
+          "key": "C",
+          "text": "tinha o desejo de ir para bem longe dali.",
+          "explanation": "Não há qualquer menção a desejo de fuga ou distância no trecho."
+        },
+        {
+          "key": "D",
+          "text": "esperava ainda ter uma atuação política satisfatória."
+        },
+        {
+          "key": "E",
+          "text": "estava sofrendo de uma gravíssima crise de depressão.",
+          "explanation": "O trecho fala de uma ambição/desejo que resiste, e não descreve um quadro clínico de depressão."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "D",
+      "explanationSummary": "O 'desejo que não quer acabar de morrer' é a ambição política de Lobo Neves, que ainda alimentava esperança de sucesso/reconhecimento na vida pública."
+    },
+    {
+      "id": "transp15-q5",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 5
+      },
+      "area": "portugues",
+      "subtopic": "P.4 Significação das palavras",
+      "stem": "O trecho do texto “Vira o teatro pelo lado da plateia; e, palavra, que era bonito!” (l. 25-26) faz referência ao fato de Lobo Neves",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "misturar política e lazer.",
+          "explanation": "O trecho não trata de mistura de atividades, mas de uma perspectiva ingênua sobre a política."
+        },
+        {
+          "key": "B",
+          "text": "ter uma vida social muito intensa.",
+          "explanation": "Não há referência à vida social; a comparação é com a experiência de assistir a um espetáculo."
+        },
+        {
+          "key": "C",
+          "text": "poder deslumbrar-se com o teatro.",
+          "explanation": "O deslumbramento é com a política vista de fora, não com o teatro em si, que é apenas a metáfora usada."
+        },
+        {
+          "key": "D",
+          "text": "estar saudoso de sua vida como ator.",
+          "explanation": "Não há indicação de que Lobo Neves tenha sido ator; a referência ao teatro é puramente metafórica."
+        },
+        {
+          "key": "E",
+          "text": "ter ignorado as dificuldades da atividade política."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "E",
+      "explanationSummary": "Ver a política 'pelo lado da plateia' significa vê-la de fora, apenas pelo espetáculo, sem perceber as dificuldades reais de quem está em cena (os bastidores da atividade política)."
+    },
+    {
+      "id": "transp15-q6",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 6
+      },
+      "area": "portugues",
+      "subtopic": "P.8 Emprego dos sinais de pontuação",
+      "stem": "Os sinais de pontuação contribuem para a construção dos sentidos dos textos. No fragmento do texto “Escriturei-me; deram-me um papel que... mas para que o estou a fatigar com isso? Deixe-me ficar com as minhas amofinações” (l. 28-30), as reticências são usadas para demarcar a",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "interrupção de uma ideia."
+        },
+        {
+          "key": "B",
+          "text": "insinuação de uma ameaça.",
+          "explanation": "Não há qualquer conteúdo ameaçador no trecho; a fala é de desabafo melancólico."
+        },
+        {
+          "key": "C",
+          "text": "hesitação comum na oralidade.",
+          "explanation": "O narrador não hesita ao falar; ele interrompe deliberadamente o relato do papel recebido para não continuar o assunto."
+        },
+        {
+          "key": "D",
+          "text": "continuidade de uma ação ou fato.",
+          "explanation": "As reticências marcam justamente a interrupção, o oposto de continuidade."
+        },
+        {
+          "key": "E",
+          "text": "omissão proposital de algo que se devia dizer.",
+          "explanation": "Não se trata de omitir algo que 'deveria' ser dito por dever, mas de interromper a própria frase/ideia em andamento."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "As reticências após 'um papel que...' interrompem a ideia que estava sendo desenvolvida (qual papel recebeu), sinalizada pela pergunta seguinte 'mas para que o estou a fatigar com isso?'."
+    },
+    {
+      "id": "transp15-q7",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 7
+      },
+      "area": "portugues",
+      "subtopic": "P.10 Regência verbal e nominal",
+      "stem": "O fragmento no qual a regência do verbo em destaque é a mesma do verbo referir no trecho “que não referisse a ninguém o que se passara entre nós” (l. 40-41) é",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "“Como adorasse a mulher” (l. 2)",
+          "explanation": "'Adorar' é verbo transitivo direto (sem preposição regida); o 'a' antes de 'mulher' é apenas o artigo definido feminino, não uma regência preposicionada."
+        },
+        {
+          "key": "B",
+          "text": "“Virgília era a perfeição mesma” (l. 3-4)",
+          "explanation": "'Ser' é verbo de ligação, sem regência comparável a um verbo transitivo direto e indireto como 'referir'."
+        },
+        {
+          "key": "C",
+          "text": "“Um dia confessou-me que trazia uma triste carcoma na existência” (l. 7-8)"
+        },
+        {
+          "key": "D",
+          "text": "“Mas para que o estou a fatigar com isto?” (l. 28-29)",
+          "explanation": "'Fatigar' é transitivo direto simples (fatigar alguém), sem o complemento indireto preposicionado que 'referir' exige."
+        },
+        {
+          "key": "E",
+          "text": "“ Entraram dois deputados e um chefe político da paróquia” (l. 42-43)",
+          "explanation": "'Entrar' aqui é intransitivo com adjunto locativo, sem relação com a regência bitransitiva de 'referir'."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "C",
+      "explanationSummary": "'Referir' rege objeto direto (o que se passara) e indireto preposicionado por 'a' (a ninguém), isto é, 'referir algo a alguém'. 'Confessar' tem a mesma regência bitransitiva: 'confessou-me [a mim] que trazia...' (confessar algo a alguém)."
+    },
+    {
+      "id": "transp15-q8",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 8
+      },
+      "area": "portugues",
+      "subtopic": "P.12 Colocação dos pronomes átonos",
+      "stem": "O pronome oblíquo átono está empregado de acordo com o que prevê a variedade formal da norma-padrão da língua em:",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "Poucos dar-lhe-iam a atenção merecida.",
+          "explanation": "O pronome indefinido 'poucos' é palavra atrativa de próclise; a norma-padrão exige 'Poucos lhe dariam', não a mesóclise 'dar-lhe-iam'."
+        },
+        {
+          "key": "B",
+          "text": "Lobo Neves nunca se afastara da vida pública."
+        },
+        {
+          "key": "C",
+          "text": "Diria-lhe para evitar a carreira política se perguntasse.",
+          "explanation": "A presença da conjunção 'se' na oração adjacente não anula o fato de que, no início absoluto do período, a ênclise é permitida; ainda assim, o uso mais comum nesse tipo de construção condicional prefere a próclise atraída pela oração 'se perguntasse', tornando a opção B a mais inequivocamente correta pela regra do advérbio atrativo."
+        },
+        {
+          "key": "D",
+          "text": "Ele tinha um problema que mantinha-o preocupado todo o tempo.",
+          "explanation": "O pronome relativo 'que' é palavra atrativa de próclise; a norma-padrão exige 'que o mantinha', não a ênclise 'mantinha-o'."
+        },
+        {
+          "key": "E",
+          "text": "Se atormentou com aquela crise de melancolia que parecia não ter fim.",
+          "explanation": "Pronome reflexivo não pode iniciar período na norma-padrão; o correto seria a ênclise 'Atormentou-se'."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "O advérbio 'nunca', palavra atrativa, exige próclise: 'nunca se afastara' está de acordo com a norma-padrão."
+    },
+    {
+      "id": "transp15-q9",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 9
+      },
+      "area": "portugues",
+      "subtopic": "P.11 Emprego do sinal indicativo de crase",
+      "stem": "Em português, o acento grave indica a contração de dois “a” em um só, em um processo chamado crase, e está corretamente empregado em:",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "Verei a política de outra forma à partir daquela conversa.",
+          "explanation": "'A partir de' é locução fixa que nunca recebe crase; o correto é 'a partir daquela conversa'."
+        },
+        {
+          "key": "B",
+          "text": "Daqui à duas horas Lobo Neves receberá os amigos com alegria.",
+          "explanation": "Expressões de tempo futuro com 'daqui a' não admitem crase antes de numeral sem artigo definido feminino subjacente; o correto é 'Daqui a duas horas'."
+        },
+        {
+          "key": "C",
+          "text": "Assistimos à apresentações inflamadas de alguns deputados e senadores.",
+          "explanation": "'Apresentações' está sem artigo definido (sentido indeterminado); não havendo 'as apresentações' subjacente, não cabe crase: o correto seria 'Assistimos a apresentações'."
+        },
+        {
+          "key": "D",
+          "text": "Em referência àqueles pensamentos, Lobo Neves calou-os rapidamente."
+        },
+        {
+          "key": "E",
+          "text": "A política, à qual não quero mais em minha vida, causou-me muitos problemas.",
+          "explanation": "Não há, na oração, um verbo cuja regência exija a preposição 'a' antes de 'qual' referente a 'política' (não se diz 'querer a algo' nesse sentido); a crase aqui não é motivada por regência verbal."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "D",
+      "explanationSummary": "'Em referência a' rege a preposição 'a', que se funde com o pronome demonstrativo 'aqueles' (a + aqueles = àqueles), configurando crase corretamente empregada."
+    },
+    {
+      "id": "transp15-q10",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 10
+      },
+      "area": "portugues",
+      "subtopic": "P.9 Concordância verbal e nominal",
+      "stem": "O período que atende plenamente às exigências da concordância verbal na norma-padrão da língua portuguesa é:",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "Mais de um mandato foram exercidos por Lobo Neves.",
+          "explanation": "Com a expressão 'mais de um' seguida de substantivo no singular, o verbo deve ficar no singular: 'foi exercido', não 'foram exercidos'."
+        },
+        {
+          "key": "B",
+          "text": "Fazem quinze anos que ele conseguiu entrar para a vida pública.",
+          "explanation": "O verbo 'fazer', indicando tempo transcorrido de forma impessoal, deve ficar no singular: 'Faz quinze anos'."
+        },
+        {
+          "key": "C",
+          "text": "Necessita-se de políticos mais compromissados com a população."
+        },
+        {
+          "key": "D",
+          "text": "Com certeza, haviam mais de trinta deputados no plenário naquele dia.",
+          "explanation": "O verbo 'haver' no sentido de 'existir' é impessoal e deve permanecer no singular: 'havia mais de trinta deputados'."
+        },
+        {
+          "key": "E",
+          "text": "Reeleger-se-á, somente, os políticos com um histórico de trabalho honesto.",
+          "explanation": "O sujeito 'os políticos' está no plural e exige verbo no plural: 'Reeleger-se-ão'."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "C",
+      "explanationSummary": "'Necessita-se de' é construção de sujeito indeterminado com verbo intransitivo pronominalizado (índice de indeterminação do sujeito 'se'), que permanece sempre no singular, independentemente do número do complemento preposicionado seguinte."
+    },
+    {
+      "id": "transp15-q11",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 11
+      },
+      "area": "ingles",
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "The main purpose of the text is to",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "explain the reasons for the sudden increase in the price of oil in 2018.",
+          "explanation": "The text does not explain a price increase as an established fact for 2018; it raises questions about what may happen."
+        },
+        {
+          "key": "B",
+          "text": "speculate on matters that may affect the global energy market in 2018."
+        },
+        {
+          "key": "C",
+          "text": "provide precise answers to the most relevant questions on global energy.",
+          "explanation": "The text explicitly states the answers to the four questions are 'highly uncertain', so it does not provide precise answers."
+        },
+        {
+          "key": "D",
+          "text": "forecast changes in trade and energy production in Asia and the Middle East.",
+          "explanation": "The text covers more regions/topics (China, US shale, renewables globally), not only Asia and the Middle East."
+        },
+        {
+          "key": "E",
+          "text": "measure the devastating impact of renewable industry on coal and natural gas.",
+          "explanation": "The text discusses renewables growth prospects, not a 'devastating impact' already measured."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "The text opens by posing 'four key questions' about the 2018 energy market and states 'each of which answers is highly uncertain', which is speculation, not explanation or forecasting of certainties."
+    },
+    {
+      "id": "transp15-q12",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 12
+      },
+      "area": "ingles",
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "Saudi Arabia and Iran are mentioned in paragraphs 2 and 3 (lines 8-20) because they",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "are latent enemies about to engage in violent strife.",
+          "explanation": "The text says Iran and Saudi have 'traditionally avoided' open conflict, not that conflict is imminent."
+        },
+        {
+          "key": "B",
+          "text": "produce more than 40 per cent of the world's crude oil.",
+          "explanation": "The '40 per cent' figure refers to all Gulf states' share of oil traded, not specifically Iran and Saudi Arabia's production."
+        },
+        {
+          "key": "C",
+          "text": "should spread their influence over the other Gulf States.",
+          "explanation": "The text mentions Iran might 'reassert its influence' only as a risk scenario, not a recommendation."
+        },
+        {
+          "key": "D",
+          "text": "can be considered the most stable countries in the Middle East.",
+          "explanation": "The text questions Saudi Arabia's stability and discusses the risk of conflict, the opposite of asserting stability."
+        },
+        {
+          "key": "E",
+          "text": "might affect oil production and trade if they engage in an open conflict."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "E",
+      "explanationSummary": "The text states that an open conflict between Iran and Saudi Arabia 'would spread and hit oil production and trade', which is the reason both countries are discussed."
+    },
+    {
+      "id": "transp15-q13",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 13
+      },
+      "area": "ingles",
+      "subtopic": "I.2 Itens gramaticais relevantes para a compreensão dos conteúdos semânticos",
+      "stem": "In the fragment “The threat to stability is all the greater given that Iran is likely to win any such clash and to treat the result as a licence to reassert its influence in the region” (lines 17-20), given that can be replaced, without change in meaning, by",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "even so",
+          "explanation": "'Even so' introduces a concessive/contrastive idea, not the conditional/causal sense of 'given that'."
+        },
+        {
+          "key": "B",
+          "text": "even though",
+          "explanation": "'Even though' introduces a concession ('despite the fact that'), which would invert the intended logical relation here."
+        },
+        {
+          "key": "C",
+          "text": "despite the fact that",
+          "explanation": "This is also concessive, contrary to the assumptive/conditional sense of 'given that' in the sentence."
+        },
+        {
+          "key": "D",
+          "text": "because of the fact that",
+          "explanation": "'Given that' here has an assumptive sense ('considering/assuming that'), which is somewhat but not exactly captured by a strictly causal phrase."
+        },
+        {
+          "key": "E",
+          "text": "taking into account that"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "E",
+      "explanationSummary": "'Given that' introduces a premise being taken into consideration ('considering/assuming that Iran is likely to win...'), matching 'taking into account that', not a concessive meaning."
+    },
+    {
+      "id": "transp15-q14",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 14
+      },
+      "area": "ingles",
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "The production of oil from shale rock in the US is mentioned in paragraph 4 (lines 21-29) because in 2018 it",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "can rapidly achieve the record level of 6 million barrels a day.",
+          "explanation": "The text says the US had already gone 'to over 6m' barrels in 2017, so this is not what is projected as new for 2018."
+        },
+        {
+          "key": "B",
+          "text": "will certainly reach higher levels than those announced in 2017.",
+          "explanation": "The text uses conditional language ('a comparable increase... would offset'), not the certainty implied by 'will certainly'."
+        },
+        {
+          "key": "C",
+          "text": "will make output from America's producing areas commercially viable in 2018.",
+          "explanation": "The text says higher prices had 'already made' output commercially viable (past achievement), not something to happen only in 2018."
+        },
+        {
+          "key": "D",
+          "text": "might compensate for present OPEC production cuts and cause a decrease in oil prices."
+        },
+        {
+          "key": "E",
+          "text": "is going to have devastating effects on the drilling activity in the country in the near future.",
+          "explanation": "The text describes rising drilling activity as a positive/expected trend, not a devastating effect."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "D",
+      "explanationSummary": "The text states that 'a comparable increase in 2018 would offset most of the current OPEC production cuts and either force another quota reduction or push prices down.'"
+    },
+    {
+      "id": "transp15-q15",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 15
+      },
+      "area": "ingles",
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "The phrase that shift (line 46) refers to the change in China from a",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "heavy industry fuelled by coal to a service-based industry using a more varied mix."
+        },
+        {
+          "key": "B",
+          "text": "large consumption of the world's fossil fuels to lower consumption levels.",
+          "explanation": "The text does not describe an overall reduction of fossil-fuel consumption levels, but a change in the composition of the economy/fuel mix."
+        },
+        {
+          "key": "C",
+          "text": "limited demand for oil, gas and coal to an increasing demand.",
+          "explanation": "This inverts the direction described in the text, which is about moving away from coal-heavy industry."
+        },
+        {
+          "key": "D",
+          "text": "low-fossil-fuel economy to a pollution-based economy.",
+          "explanation": "This also inverts the direction; China is described as moving away from a heavily polluting, coal-based model."
+        },
+        {
+          "key": "E",
+          "text": "fast-growing economy to a receding one.",
+          "explanation": "The text does not describe China's economy as receding, only changing in composition."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "'The country's economy is changing and moving away from heavy industry fuelled largely by coal to a more service-based one, with a more varied fuel mix' is the antecedent of 'that shift'."
+    },
+    {
+      "id": "transp15-q16",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 16
+      },
+      "area": "ingles",
+      "subtopic": "I.2 Itens gramaticais relevantes para a compreensão dos conteúdos semânticos",
+      "stem": "In the fragments “some recent data suggests that as economic growth has picked up” (lines 47-48) and “Beijing has high ambitions for a much cleaner energy economy, driven not least by the levels of air pollution in many of the major cities” (lines 49-51), picked up and driven by mean, respectively,",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "declined – guided by",
+          "explanation": "'Picked up' means the opposite of declined (it means increased/improved)."
+        },
+        {
+          "key": "B",
+          "text": "increased – delayed by",
+          "explanation": "'Driven by' means caused/motivated by, not delayed by."
+        },
+        {
+          "key": "C",
+          "text": "deteriorated – caused by",
+          "explanation": "'Picked up' does not mean deteriorated; it means improved/increased."
+        },
+        {
+          "key": "D",
+          "text": "improved – motivated by"
+        },
+        {
+          "key": "E",
+          "text": "stabilized – hindered by",
+          "explanation": "'Picked up' implies a change/increase, not stabilization, and 'driven by' does not mean hindered by."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "D",
+      "explanationSummary": "'Picked up' means improved/increased, and 'driven by' means motivated/caused by, matching option D."
+    },
+    {
+      "id": "transp15-q17",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 17
+      },
+      "area": "ingles",
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "In terms of numerical reference, one concludes that",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "“over 40 per cent” (lines 16-17) refers to the percentage of global oil produced by Iran and Saudi.",
+          "explanation": "The text attributes 'over 40 per cent' to all Gulf states' share of oil traded globally, not specifically Iran and Saudi Arabia's production."
+        },
+        {
+          "key": "B",
+          "text": "“70 per cent” (line 62) refers to the percentage decrease in solar energy costs since 2010."
+        },
+        {
+          "key": "C",
+          "text": "“60 per cent” (line 64) refers to the total percentage of solar cells commercialized in China.",
+          "explanation": "The text says China 'accounts for 60 per cent of total solar cell manufacturing capacity', which refers to manufacturing capacity, not commercialization."
+        },
+        {
+          "key": "D",
+          "text": "“5 per cent” (line 68) refers to the percentage of global energy generated by hydroelectric plants.",
+          "explanation": "The '5 per cent' refers to renewables (including hydro) as a share of global daily energy supply overall, not hydroelectric plants alone."
+        },
+        {
+          "key": "E",
+          "text": "“50 per cent” (line 70) refers to the percentage decrease in solar photovoltaic capacity in 2016.",
+          "explanation": "The text says solar photovoltaic capacity 'grew by 50 per cent in 2016', an increase, not a decrease."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "The text states that 'costs have fallen by 70 per cent since 2010', directly matching option B."
+    },
+    {
+      "id": "transp15-q18",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 18
+      },
+      "area": "ingles",
+      "subtopic": "I.2 Itens gramaticais relevantes para a compreensão dos conteúdos semânticos",
+      "stem": "Based on the meanings of the words in the text, it can be said that",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "“rife” (line 11) and scarce express similar ideas.",
+          "explanation": "'Rife' means widespread/abundant, which is essentially the opposite of 'scarce'."
+        },
+        {
+          "key": "B",
+          "text": "“claimed” (line 34) can be replaced by hidden.",
+          "explanation": "'Claimed' here means 'stated/asserted' (the claimed numbers), not 'hidden'."
+        },
+        {
+          "key": "C",
+          "text": "“flat” (line 43) and high express similar ideas.",
+          "explanation": "'Flat' (as in emissions remaining flat) means steady/unchanging, not high."
+        },
+        {
+          "key": "D",
+          "text": "“thriving” (line 61) and developing are synonyms."
+        },
+        {
+          "key": "E",
+          "text": "“surge” (line 87) and increase are antonyms.",
+          "explanation": "'Surge' means a sudden increase, which is a near-synonym of 'increase', not an antonym."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "D",
+      "explanationSummary": "'Thriving' means flourishing/growing successfully, which is close in meaning to 'developing' in this context (the solar industry expanding successfully)."
+    },
+    {
+      "id": "transp15-q19",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 19
+      },
+      "area": "ingles",
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "Concerning the renewable energy industry, the author affirms that it",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "has become highly competitive without subsidies or government support.",
+          "explanation": "The text says wind is only 'approaching' grid parity and some companies are 'built to collect subsidies', so it has not yet become fully competitive without subsidies."
+        },
+        {
+          "key": "B",
+          "text": "has been growing dramatically because of the threat posed by climate change.",
+          "explanation": "The text attributes recent growth to cost reductions and increased supply, not explicitly to the threat of climate change."
+        },
+        {
+          "key": "C",
+          "text": "needs to go through a profound change to become global and more competitive."
+        },
+        {
+          "key": "D",
+          "text": "will provide most of the global electric supply through solar, wind and hydropower.",
+          "explanation": "The text says renewables currently account for 'just 5 per cent' of global daily energy supply, far from providing most of it."
+        },
+        {
+          "key": "E",
+          "text": "has been expanding faster than personal computing and mobile phones in the 1990s and 2000s.",
+          "explanation": "The text says the industry 'needs' a period of expansion comparable to those technologies, implying it has not yet expanded that fast."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "C",
+      "explanationSummary": "The text states 'a radical change will be necessary to make the industry global and capable of competing on the scale necessary to displace coal and natural gas.'"
+    },
+    {
+      "id": "transp15-q20",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 20
+      },
+      "area": "ingles",
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "According to the last paragraph, the author believes that the",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "future of the energy business is uncertain and difficult to anticipate."
+        },
+        {
+          "key": "B",
+          "text": "recent increase in oil prices is definitely a long-lasting phenomenon.",
+          "explanation": "The author states the opposite: the surge in oil prices 'is a temporary and unsustainable phenomenon', if his view on supply/demand is right."
+        },
+        {
+          "key": "C",
+          "text": "four questions presented in the article will be answered sooner than we imagine.",
+          "explanation": "The paragraph does not claim the questions will be answered soon; it stresses uncertainty about the future."
+        },
+        {
+          "key": "D",
+          "text": "energy business is definitely facing a moment of stability, growth and prosperity.",
+          "explanation": "The author explicitly calls it 'a moment of change and transition', not stability."
+        },
+        {
+          "key": "E",
+          "text": "inevitable conflict in the Middle East will solve the imbalance between energy supply and demand.",
+          "explanation": "The author says a Middle East war is 'unfortunately... all too possible', a risk, not an inevitable or desirable solution."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "The final paragraph frames the energy business as being 'at a moment of change and transition', notes each reader has their own view, and ends acknowledging an unpredictable risk ('that is all too possible'), all pointing to genuine uncertainty about the future."
+    },
+    {
+      "id": "transp15-q22",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 22
+      },
+      "area": "arq-dados",
+      "subtopic": "1.19 Integração dos dados (ETL, Transferência de Arquivos, Integração via Base de Dados)",
+      "stem": "Os sistemas de data warehouse diferem de várias formas dos sistemas transacionais das empresas, como, por exemplo, em seu modelo de dados. Para transferir e transformar os dados dos sistemas transacionais para os sistemas de data warehousing, é comum utilizar, como estratégia, a existência de uma camada especial da arquitetura conhecida como",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "Data Marts",
+          "explanation": "Data Marts são subconjuntos departamentais do data warehouse já carregados, não a camada intermediária de extração/transformação dos dados transacionais."
+        },
+        {
+          "key": "B",
+          "text": "Data Staging Area"
+        },
+        {
+          "key": "C",
+          "text": "Dimensional Model Area",
+          "explanation": "Não é um termo padrão de arquitetura de ETL/DW; o modelo dimensional descreve a estrutura dos dados no DW, não a camada de preparação dos dados."
+        },
+        {
+          "key": "D",
+          "text": "Presentation Area",
+          "explanation": "A camada de apresentação é onde os dados já tratados são expostos para consulta/BI, não onde ocorre a extração/transformação inicial."
+        },
+        {
+          "key": "E",
+          "text": "Living Sample Area",
+          "explanation": "Não é um termo padrão da arquitetura de data warehousing."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "A Data Staging Area é a camada intermediária onde os dados extraídos dos sistemas transacionais (OLTP) são temporariamente armazenados e transformados (ETL) antes de serem carregados no data warehouse."
+    },
+    {
+      "id": "transp15-q23",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 23
+      },
+      "area": "eng-sw",
+      "subtopic": "5.2 Ciclo de vida de sistemas e seus paradigmas",
+      "stem": "O Processo Unificado de desenvolvimento de software é dividido em quatro fases: concepção (inception), elaboração, construção e transição. Um dos objetivos da fase de elaboração é",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "definir a arquitetura"
+        },
+        {
+          "key": "B",
+          "text": "estimar o custo total",
+          "explanation": "A estimativa inicial de custo/escopo é tipicamente refinada já na fase de concepção; o objetivo central de elaboração é a arquitetura, não o custo total."
+        },
+        {
+          "key": "C",
+          "text": "estabelecer o escopo do projeto",
+          "explanation": "O escopo inicial já é estabelecido, ainda que em alto nível, na fase de concepção (inception)."
+        },
+        {
+          "key": "D",
+          "text": "minimizar custos de desenvolvimento",
+          "explanation": "Não é um objetivo específico de nenhuma fase do Processo Unificado; a redução de custo não é o foco declarado da elaboração."
+        },
+        {
+          "key": "E",
+          "text": "converter bancos de dados operacionais",
+          "explanation": "É uma atividade técnica pontual, não um objetivo geral da fase de elaboração do Processo Unificado."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "A fase de elaboração do Processo Unificado tem como principal objetivo estabelecer uma arquitetura de referência sólida (baseline arquitetural) para o sistema, mitigando os principais riscos técnicos."
+    },
+    {
+      "id": "transp15-q24",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 24
+      },
+      "area": "eng-sw",
+      "subtopic": "5.4 Verificação, validação e teste",
+      "stem": "Entre as técnicas de teste de software, aquela que gera versões levemente modificadas de um programa sob teste e exercita tanto o programa original quanto os programas modificados, procurando diferenças entre essas formas, é conhecida como testes",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "aleatórios",
+          "explanation": "Testes aleatórios geram entradas de teste ao acaso, sem gerar versões modificadas do próprio programa."
+        },
+        {
+          "key": "B",
+          "text": "exploratórios",
+          "explanation": "Testes exploratórios são guiados pela investigação simultânea do testador, sem envolver a criação de mutantes do programa."
+        },
+        {
+          "key": "C",
+          "text": "de mutação"
+        },
+        {
+          "key": "D",
+          "text": "de perfil operacional",
+          "explanation": "Testes baseados em perfil operacional selecionam casos de teste conforme o uso real esperado do sistema, não pela criação de variações do código."
+        },
+        {
+          "key": "E",
+          "text": "baseados em fluxo de controle",
+          "explanation": "Essa técnica seleciona casos de teste com base nos caminhos do fluxo de controle do programa, não pela geração de mutantes."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "C",
+      "explanationSummary": "Teste de mutação gera pequenas variações (mutantes) do programa original e verifica se os casos de teste conseguem distinguir o comportamento do original em relação aos mutantes."
+    },
+    {
+      "id": "transp15-q25",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 25
+      },
+      "area": "eng-sw",
+      "subtopic": "5.4 Verificação, validação e teste",
+      "stem": "Uma das medidas de qualidade do código de um software é a Complexidade, que pode ser medida por meio da complexidade ciclomática. Considere um grafo de fluxo que possui 5 nós e 12 arcos. Qual a complexidade ciclomática desse grafo?",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "9"
+        },
+        {
+          "key": "B",
+          "text": "11",
+          "explanation": "Corresponde a E - N + 1 (12-5+1=8, nem esse valor); não é obtido pela fórmula padrão V(G) = E - N + 2."
+        },
+        {
+          "key": "C",
+          "text": "15",
+          "explanation": "Não corresponde a nenhuma variação usual da fórmula de complexidade ciclomática para os valores dados (E=12, N=5)."
+        },
+        {
+          "key": "D",
+          "text": "17",
+          "explanation": "Valor muito acima do resultado da fórmula V(G) = E - N + 2 = 12 - 5 + 2 = 9."
+        },
+        {
+          "key": "E",
+          "text": "19",
+          "explanation": "Valor muito acima do resultado correto pela fórmula padrão de complexidade ciclomática."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "A complexidade ciclomática é dada por V(G) = E - N + 2, em que E é o número de arcos e N o número de nós: V(G) = 12 - 5 + 2 = 9."
+    },
+    {
+      "id": "transp15-q27",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 27
+      },
+      "area": "eng-sw",
+      "subtopic": "5.3 Modelos, metodologias, técnicas e ferramentas de análise e projeto (estruturado e orientado a objetos)",
+      "stem": "Casos de uso são das mais importantes ferramentas de especificação de sistemas em uso atualmente, constituindo representações textuais em forma de narrativa. Tais representações demonstram",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "uma interação entre um ator e o sistema"
+        },
+        {
+          "key": "B",
+          "text": "um único cenário de uso do sistema por um ator",
+          "explanation": "Um caso de uso normalmente descreve um fluxo principal e fluxos alternativos/de exceção, não um único cenário isolado."
+        },
+        {
+          "key": "C",
+          "text": "um comportamento interno do sistema quando o ator o utiliza",
+          "explanation": "Casos de uso descrevem o comportamento observável externamente (do ponto de vista do ator), não os detalhes internos de implementação."
+        },
+        {
+          "key": "D",
+          "text": "os estados dos objetos do sistema quando são usados",
+          "explanation": "Estados de objetos são representados por diagramas de estados/máquinas de estado, não por casos de uso."
+        },
+        {
+          "key": "E",
+          "text": "a interação entre os objetos do sistema por meio de mensagens",
+          "explanation": "Essa é a representação típica de diagramas de sequência/comunicação, não de casos de uso em forma narrativa."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "Um caso de uso descreve, em forma de narrativa textual, a interação entre um ator (usuário ou sistema externo) e o sistema para atingir um objetivo."
+    },
+    {
+      "id": "transp15-q28",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 28
+      },
+      "area": "gestao-proj",
+      "subtopic": "2.1 Scrum e Kanban",
+      "stem": "Quando ocorre, no SCRUM, a reunião de Retrospectiva da Sprint?",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "No fim da Sprint, antes da Reunião de Revisão",
+          "explanation": "A Retrospectiva ocorre depois, não antes, da Reunião de Revisão da Sprint."
+        },
+        {
+          "key": "B",
+          "text": "Entre a Reunião de Revisão da Sprint e a de Planejamento da próxima Sprint"
+        },
+        {
+          "key": "C",
+          "text": "No início da Sprint, após a Reunião de Planejamento",
+          "explanation": "Nesse momento ocorre o início do trabalho da Sprint, não a Retrospectiva, que é referente à Sprint que terminou."
+        },
+        {
+          "key": "D",
+          "text": "No final de cada dia da Sprint",
+          "explanation": "Essa descrição corresponde à Reunião Diária (Daily Scrum), não à Retrospectiva."
+        },
+        {
+          "key": "E",
+          "text": "No início de cada dia da Sprint",
+          "explanation": "Também descreve a Reunião Diária, não a Retrospectiva da Sprint."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "No Scrum, a Retrospectiva da Sprint ocorre após a Reunião de Revisão da Sprint (Sprint Review) e antes do Planejamento da Sprint seguinte, encerrando o ciclo daquela Sprint."
+    },
+    {
+      "id": "transp15-q29",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 29
+      },
+      "area": "eng-sw",
+      "subtopic": "5.3 Modelos, metodologias, técnicas e ferramentas de análise e projeto (estruturado e orientado a objetos)",
+      "stem": "Qual a propriedade, típica da orientação a objeto, que habilita uma quantidade de operações diferentes a ter o mesmo nome, diminuindo o acoplamento entre objetos?",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "Encapsulamento",
+          "explanation": "Encapsulamento oculta os detalhes internos de implementação de um objeto, mas não trata da possibilidade de vários métodos com o mesmo nome."
+        },
+        {
+          "key": "B",
+          "text": "Especialização",
+          "explanation": "Especialização refere-se à criação de subclasses mais específicas a partir de uma superclasse, não à repetição de nomes de operações."
+        },
+        {
+          "key": "C",
+          "text": "Herança",
+          "explanation": "Herança permite reaproveitar atributos/métodos de uma superclasse, mas não é ela quem viabiliza diretamente múltiplas operações homônimas."
+        },
+        {
+          "key": "D",
+          "text": "Padrões de projeto",
+          "explanation": "Padrões de projeto são soluções reutilizáveis para problemas recorrentes de design, não uma propriedade da orientação a objetos como tal."
+        },
+        {
+          "key": "E",
+          "text": "Polimorfismo"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "E",
+      "explanationSummary": "Polimorfismo é a propriedade que permite que operações com o mesmo nome tenham comportamentos diferentes conforme o objeto que as invoca, reduzindo o acoplamento entre os objetos que fazem as chamadas e as classes que implementam o comportamento."
+    },
+    {
+      "id": "transp15-q30",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 30
+      },
+      "area": "gestao-proj",
+      "subtopic": "2.7 Modelos e características",
+      "stem": "Um pequeno sistema passou por um processo de contagem de pontos de função, resultando na Tabela abaixo. Baixa Média Alta / Entrada Externa 2 1 1 / Saída Externa 1 4 1 / Consulta Externa 0 0 0 / Arquivo de Interface Externa 0 0 1 / Arquivo Lógico Interno 2 2 2. Quantos pontos de função não ajustados tem tal sistema?",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "103",
+          "explanation": "Valor inferior ao total correto obtido pela soma ponderada de todas as funções de dados e transacionais."
+        },
+        {
+          "key": "B",
+          "text": "106",
+          "explanation": "Valor inferior ao total correto; não corresponde à soma completa das ponderações IFPUG para os componentes informados."
+        },
+        {
+          "key": "C",
+          "text": "120",
+          "explanation": "Muito próximo do valor correto, mas não corresponde exatamente à soma obtida com os pesos padrão do IFPUG (o total correto é 121)."
+        },
+        {
+          "key": "D",
+          "text": "121"
+        },
+        {
+          "key": "E",
+          "text": "122",
+          "explanation": "Valor superior ao total correto obtido pela soma ponderada de todas as funções de dados e transacionais."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "D",
+      "explanationSummary": "Usando os pesos padrão do IFPUG (EI: 3/4/6; EO: 4/5/7; EQ: 3/4/6; EIF: 5/7/10; ILF: 7/10/15): EI = 2x3+1x4+1x6=16; EO = 1x4+4x5+1x7=31; EQ = 0; EIF = 1x10=10; ILF = 2x7+2x10+2x15=64. Total = 16+31+0+10+64 = 121 PF não ajustados."
+    },
+    {
+      "id": "transp15-q31",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 31
+      },
+      "area": "gestao-proj",
+      "subtopic": "2.1 Scrum e Kanban",
+      "stem": "No uso de alguns métodos ágeis, como o SCRUM, é comum que o esforço de desenvolvimento seja avaliado por meio de Pontos de História (Story Points). Essa metodologia usa cartas, semelhantes a cartas de baralho, onde cada uma apresenta um valor de uma escala de valores numéricos, que, normalmente, segue a seguinte sequência:",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "0,1,2,3,4,5,6,7,8,9,10",
+          "explanation": "É uma progressão aritmética simples, e não a escala não linear (tipo Fibonacci) usada nos baralhos de Planning Poker."
+        },
+        {
+          "key": "B",
+          "text": "0,1,2,3,5,8,13,20,40 e 100"
+        },
+        {
+          "key": "C",
+          "text": "0,1,2,4,8,16,32,64,128",
+          "explanation": "É uma progressão geométrica de razão 2 (potências de 2), não a escala usada nos baralhos padrão de Planning Poker."
+        },
+        {
+          "key": "D",
+          "text": "1,2,3,6,12,24,48,96",
+          "explanation": "É uma progressão por duplicação a partir de 3, não corresponde à escala de Fibonacci modificada usada no Planning Poker."
+        },
+        {
+          "key": "E",
+          "text": "1,5,10,50,100,500,1000",
+          "explanation": "É uma escala decimal arbitrária, não a sequência de Fibonacci modificada característica do Planning Poker."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "O baralho de Planning Poker usa uma sequência baseada em Fibonacci com espaçamento crescente entre valores maiores (0,1,2,3,5,8,13,20,40,100), refletindo a incerteza crescente nas estimativas de itens maiores."
+    },
+    {
+      "id": "transp15-q35",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 35
+      },
+      "area": "ux",
+      "subtopic": "6.1 Conceitos de acessibilidade e usabilidade",
+      "stem": "O Modelo de Acessibilidade em Governo Eletrônico (eMAG) define recomendações que norteiam o desenvolvimento e adaptação de conteúdos do Governo Federal. Esse documento é uma importante norma brasileira que orienta o desenvolvimento de sites acessíveis, sendo uma versão especializada do WCAG. Entre as recomendações de acessibilidade do eMAG no design de Web sites, inclui-se",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "impedir o redimensionamento da página",
+          "explanation": "É o contrário de uma boa prática de acessibilidade; recomenda-se permitir o redimensionamento de texto/página, não impedi-lo."
+        },
+        {
+          "key": "B",
+          "text": "utilizar apenas cores para diferenciar elementos",
+          "explanation": "Recomenda-se justamente não depender apenas de cor para transmitir informação, por causa de usuários com deficiência visual/daltonismo."
+        },
+        {
+          "key": "C",
+          "text": "provocar automaticamente alterações de contexto",
+          "explanation": "Alterações de contexto automáticas e inesperadas são desrecomendadas, pois confundem o usuário, especialmente os que usam leitores de tela."
+        },
+        {
+          "key": "D",
+          "text": "sempre utilizar o uso de CAPTCHAS em questões de segurança",
+          "explanation": "CAPTCHAs tradicionais são uma barreira de acessibilidade; a recomendação é evitá-los ou oferecer alternativas acessíveis, não usá-los sempre."
+        },
+        {
+          "key": "E",
+          "text": "garantir um contraste mínimo entre o plano de fundo e o primeiro plano"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "E",
+      "explanationSummary": "O eMAG (assim como o WCAG) recomenda garantir contraste mínimo adequado entre texto/elementos (primeiro plano) e o fundo, para legibilidade por usuários com baixa visão."
+    },
+    {
+      "id": "transp15-q38",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 38
+      },
+      "area": "arq-dados",
+      "subtopic": "1.10 Linguagem de consulta estruturada (SQL)",
+      "stem": "Considerando as Tabelas (FORNECEDOR, MATERIAL, VENDA) e as informações dadas, qual consulta exibe o número de identificação e o nome dos fornecedores que realizaram pelo menos uma venda entre os dias 05/01/2018 (inclusive) e 10/01/2018 (inclusive)?",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "SELECT ID_FORN, NOME FROM FORNECEDOR F, VENDA V WHERE F.ID_FORN=ID_F AND DATA >= '05/01/2018' INTERSECT SELECT ID_FORN, NOME FROM FORNECEDOR F, VENDA V WHERE F.ID_FORN=ID_F AND DATA <= '10/01/2018'",
+          "explanation": "O INTERSECT exige apenas que o fornecedor apareça nos dois conjuntos de resultado (podendo ser vendas em linhas/datas diferentes), não que uma única venda esteja no intervalo — retorna fornecedores com qualquer venda a partir de 05/01 E qualquer venda até 10/01, não necessariamente uma venda dentro do intervalo."
+        },
+        {
+          "key": "B",
+          "text": "SELECT ID_FORN, NOME FROM FORNECEDOR F WHERE (SELECT COUNT(*) FROM VENDA WHERE F.ID_FORN=ID_F AND DATA BETWEEN '05/01/2018' AND '10/01/2018') > 0"
+        },
+        {
+          "key": "C",
+          "text": "SELECT UNIQUE ID_FORN, OME FROM FORNECEDOR F LEFT JOIN VENDA V ON F.ID_FORN= V.ID_F WHERE DATA >= '05/01/2018' OR DATA <= '10/01/2018'",
+          "explanation": "A condição usa OR entre as duas datas, o que é satisfeito por praticamente qualquer data (antes de 10/01 OU depois de 05/01 cobre quase todo o calendário), além de referenciar a coluna inexistente 'OME'."
+        },
+        {
+          "key": "D",
+          "text": "SELECT ID_FORN, NOME FROM FORNECEDOR F, VENDA V WHERE F.ID_FORN=ID_F AND DATA >= '05/01/2018' UNION SELECT ID_FORN, NOME FROM FORNECEDOR F, VENDA V WHERE F.ID_FORN=ID_F AND DATA <= '10/01/2018'",
+          "explanation": "O UNION reúne fornecedores com QUALQUER venda a partir de 05/01 OU QUALQUER venda até 10/01 (união, não interseção da condição por linha), incluindo fornecedores fora do intervalo desejado."
+        },
+        {
+          "key": "E",
+          "text": "SELECT ID_FORN, NOME FROM FORNECEDOR F WHERE ID_FORN NOT IN (SELECT ID_F FROM VENDA WHERE DATA < '05/01/2018' OR DATA > '10/01/2018')",
+          "explanation": "Essa consulta retorna fornecedores cujas vendas (se existirem) estão todas dentro do intervalo, além de incluir também fornecedores sem nenhuma venda registrada, que não deveriam aparecer no resultado."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "A subconsulta correlacionada com BETWEEN em uma única linha de VENDA garante que existe pelo menos uma venda do fornecedor com data dentro do intervalo pedido, o que as demais opções (baseadas em INTERSECT/UNION de condições aplicadas a linhas potencialmente diferentes, ou em NOT IN mal formulado) não garantem corretamente."
+    },
+    {
+      "id": "transp15-q42",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 42
+      },
+      "area": "arq-dados",
+      "subtopic": "1.4 Normalização das estruturas de dados",
+      "stem": "Considere a notação: tabelas descritas por nome e lista de colunas; colunas da chave primária sublinhadas; dependências funcionais definidas por (→). Todos os esquemas atendem à 1FN. Dos esquemas a seguir, o único que se encontra na 3FN é: (A) T1(x1,x2,x3) x2→x1, x1→x3; T2(y1,y2,y3) y2→y1, y2→y3; T3(z1,z2,z3) (z2,z3)→z1 | (B) T1(x1,x2,x3,x4) x2→x1,x2→x3,x2→x4; T2(y1,y2,y3,y4) (y1,y3)→y2, y2→y4; T3(z1,z2,z3) z1→z2,z1→z3 | (C) T1(x1,x2,x3) (x2,x3)→x1; T2(y1,y2,y3) y2→y3,y3→y1; T3(z1,z2,z3) (z1,z3)→z2 | (D) T1(x1,x2,x3,x4) x2→x1,x2→x3,x2→x4; T2(y1,y2,y3); T3(z1,z2,z3) z2→z1 | (E) T1(x1,x2,x3,x4) (x1,x4)→x2,(x1,x4)→x3; T2(y1,y2,y3); T3(z1,z2,z3) z2→z1,z2→z3",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "T1(x1,x2,x3) x2→x1,x1→x3 / T2(y1,y2,y3) y2→y1,y2→y3 / T3(z1,z2,z3) (z2,z3)→z1",
+          "explanation": "Em T1, x2 é a única chave candidata (x2→x1→x3), mas x1→x3 configura dependência transitiva de x3 em relação à chave x2 via o atributo não-chave x1, violando a 3FN."
+        },
+        {
+          "key": "B",
+          "text": "T1(x1,x2,x3,x4) x2→x1,x2→x3,x2→x4 / T2(y1,y2,y3,y4) (y1,y3)→y2,y2→y4 / T3(z1,z2,z3) z1→z2,z1→z3",
+          "explanation": "Em T2, a chave é (y1,y3); a dependência y2→y4 é transitiva, pois y4 depende de y2, que por sua vez depende da chave (y1,y3), violando a 3FN."
+        },
+        {
+          "key": "C",
+          "text": "T1(x1,x2,x3) (x2,x3)→x1 / T2(y1,y2,y3) y2→y3,y3→y1 / T3(z1,z2,z3) (z1,z3)→z2",
+          "explanation": "Em T2, chave é y2 (y2→y3→y1 fecha todos os atributos); porém y3→y1 é dependência transitiva de y1 em relação à chave y2 via o atributo não-chave y3, violando a 3FN."
+        },
+        {
+          "key": "D",
+          "text": "T1(x1,x2,x3,x4) x2→x1,x2→x3,x2→x4 / T2(y1,y2,y3) / T3(z1,z2,z3) z2→z1",
+          "explanation": "Em T3, como não há dependência que determine z3, a chave precisa ser o par (z2,z3); porém z1 depende apenas de z2 (subconjunto próprio da chave), configurando dependência parcial e violando já a 2FN (e, portanto, também a 3FN)."
+        },
+        {
+          "key": "E",
+          "text": "T1(x1,x2,x3,x4) (x1,x4)→x2,(x1,x4)→x3 / T2(y1,y2,y3) / T3(z1,z2,z3) z2→z1,z2→z3"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "E",
+      "explanationSummary": "Em T1 (opção E), a chave é o par (x1,x4) e todas as dependências partem integralmente dessa chave para os atributos não-chave (sem dependência parcial nem transitiva). Em T2 não há dependências funcionais não triviais (todos os atributos formam a chave). Em T3, a chave é o atributo único z2, e z1 e z3 dependem diretamente dele, sem dependência transitiva via outro atributo não-chave. As três tabelas do esquema E satisfazem a 3FN, enquanto as demais opções contêm ao menos uma tabela com dependência transitiva."
+    },
+    {
+      "id": "transp15-q45",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 45
+      },
+      "area": "seg-info",
+      "subtopic": "9.18 Classificação de informações",
+      "stem": "A classificação da informação visa a assegurar que a informação receba um nível adequado de proteção. O processo de classificação da informação é um processo",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "executado pelo coordenador de TI para determinar a melhor forma de armazenamento e quem pode e quem não pode acessar uma informação.",
+          "explanation": "A classificação da informação não é uma decisão técnica de TI sobre armazenamento, e sim uma decisão de negócio sobre o valor/sensibilidade da informação."
+        },
+        {
+          "key": "B",
+          "text": "executado por uma empresa externa especializada em segurança da informação para determinar quem pode e quem não pode acessar uma informação.",
+          "explanation": "A classificação é responsabilidade interna do proprietário/gestor da informação (papel de negócio), não terceirizada a uma empresa externa."
+        },
+        {
+          "key": "C",
+          "text": "de decisão estratégica, e requer que o agente de segurança física determine o que pode e o que não pode entrar e sair do ambiente da empresa.",
+          "explanation": "Isso descreve controle de acesso físico, não o processo de classificação da informação em níveis de sigilo."
+        },
+        {
+          "key": "D",
+          "text": "de decisão estratégica, e requer que o profissional de segurança determine o que deve ser classificado como confidencial, de uso interno ou público.",
+          "explanation": "A decisão sobre a classificação cabe aos gestores/proprietários da informação (área de negócio), não ao profissional de segurança isoladamente."
+        },
+        {
+          "key": "E",
+          "text": "de decisão de negócios, e requer o papel ativo do setor gerencial da empresa para determinar o que deve ser classificado como confidencial, de uso interno ou público."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "E",
+      "explanationSummary": "Por boas práticas de segurança da informação (ex.: ISO/IEC 27002), a classificação da informação é uma decisão de negócio, de responsabilidade do proprietário/gestor da informação, não uma decisão puramente técnica de TI ou de segurança física."
+    },
+    {
+      "id": "transp15-q46",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 46
+      },
+      "area": "seg-info",
+      "subtopic": "9.19 ISO 27002, criptografia, certificação e assinatura digital",
+      "stem": "A Norma ISO 27002 define o código de prática para a gestão da segurança da informação. Dentre as recomendações de segurança, o controle de acesso à rede recomenda implantar ações de controle para que",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "concessão e uso de privilégios sejam restritos e controlados.",
+          "explanation": "Essa recomendação corresponde ao gerenciamento de privilégios de acesso em geral, não especificamente ao controle de acesso à rede."
+        },
+        {
+          "key": "B",
+          "text": "sistemas sensíveis tenham um ambiente computacional dedicado (isolado).",
+          "explanation": "Essa recomendação trata de isolamento/segregação de sistemas sensíveis, um controle distinto do controle de acesso à rede propriamente dito."
+        },
+        {
+          "key": "C",
+          "text": "sessões inativas sejam encerradas após um período definido de inatividade.",
+          "explanation": "O encerramento de sessões inativas (time-out) é uma recomendação classificada sob controle de acesso ao sistema operacional, não sob controle de acesso à rede."
+        },
+        {
+          "key": "D",
+          "text": "métodos apropriados de autenticações sejam usados para controlar acesso de usuários remotos."
+        },
+        {
+          "key": "E",
+          "text": "eventos de segurança da informação sejam relatados através dos canais apropriados da direção.",
+          "explanation": "Essa recomendação trata de gestão de incidentes de segurança da informação, não de controle de acesso à rede."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "D",
+      "explanationSummary": "Na ISO/IEC 27002, dentro do domínio de controle de acesso à rede, consta especificamente a recomendação de autenticação de usuários para conexões externas/remotas (ex.: uso de métodos de autenticação apropriados para controlar o acesso de usuários remotos)."
+    },
+    {
+      "id": "transp15-q47",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 47
+      },
+      "area": "seg-info",
+      "subtopic": "9.2 Operação de segurança (Firewall, Proxy, IPS/IDS, DLP, CASB, SIEM, Antivírus, EDR, WAF, Gestão de vulnerabilidades, Monitoração, Backup)",
+      "stem": "Para proteger as redes de dados, as empresas criam perímetros de segurança formados por componentes que avaliam o tráfego de ingresso e egresso. O componente que utiliza listas de controle de acesso formadas por regras que determinam se um pacote pode ou não atravessar a barreira é a(o)",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "Firewall"
+        },
+        {
+          "key": "B",
+          "text": "Proxy",
+          "explanation": "O proxy atua como intermediário de conexões (frequentemente em nível de aplicação), não é definido primariamente por listas de controle de acesso baseadas em regras de pacotes."
+        },
+        {
+          "key": "C",
+          "text": "DMZ",
+          "explanation": "DMZ é uma zona de rede segregada, uma área da topologia, não um componente que filtra pacotes por listas de controle de acesso."
+        },
+        {
+          "key": "D",
+          "text": "IDS",
+          "explanation": "Um IDS detecta e alerta sobre atividades suspeitas, mas tipicamente não decide, por meio de ACLs, se um pacote atravessa ou não a barreira."
+        },
+        {
+          "key": "E",
+          "text": "IPS",
+          "explanation": "Um IPS pode bloquear tráfego malicioso identificado por assinaturas/comportamento, mas o mecanismo clássico de ACLs que decide passagem de pacotes é característico do firewall."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "O Firewall é o componente de perímetro que usa listas de controle de acesso (ACLs) com regras para permitir ou bloquear a passagem de pacotes entre redes."
+    },
+    {
+      "id": "transp15-q48",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 48
+      },
+      "area": "seg-info",
+      "subtopic": "9.6 VPN",
+      "stem": "A Virtual Private Network (VPN) permite o estabelecimento de um enlace seguro do tipo host-to-host, host-to-gateway ou gateway-to-gateway. Existe uma técnica que permite o encapsulamento de um pacote inteiro em outro pacote na VPN do tipo host-to-gateway, de forma segura, usando criptografia. Essa técnica é o(a)",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "empacotamento",
+          "explanation": "Não é o termo técnico padrão usado para descrever o encapsulamento seguro de pacotes em VPN."
+        },
+        {
+          "key": "B",
+          "text": "encaminhamento",
+          "explanation": "Encaminhamento (forwarding) refere-se ao roteamento de pacotes, não ao encapsulamento criptografado característico da VPN."
+        },
+        {
+          "key": "C",
+          "text": "tunelamento"
+        },
+        {
+          "key": "D",
+          "text": "reflexão segura",
+          "explanation": "Não é um termo padrão de redes/VPN."
+        },
+        {
+          "key": "E",
+          "text": "inundação segura",
+          "explanation": "'Inundação' (flooding) é uma técnica de propagação de pacotes em redes, não relacionada ao encapsulamento seguro de VPN."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "C",
+      "explanationSummary": "O tunelamento é a técnica que encapsula um pacote inteiro dentro de outro pacote, protegido por criptografia, permitindo o tráfego seguro entre host e gateway (ou entre gateways) através de uma rede não confiável."
+    },
+    {
+      "id": "transp15-q49",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 49
+      },
+      "area": "seg-info",
+      "subtopic": "9.3 Softwares maliciosos (ransomware, vírus, worms, spywares, rootkit etc.)",
+      "stem": "O malware (malicious software) é um código malicioso que tem o potencial de danificar sua vítima, mas nem sempre age dessa forma. Dentre eles, há um que engaja um computador em uma armada que permite a realização de tarefas de forma automatizada para atacar alvos determinados por criminosos cibernéticos, sem o conhecimento do dono do computador. Esse malware é o",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "Bot"
+        },
+        {
+          "key": "B",
+          "text": "Worm",
+          "explanation": "Um worm se autorreplica e se propaga por redes, mas a descrição de 'engajar o computador em uma armada' para ataques coordenados é característica específica de um bot/botnet."
+        },
+        {
+          "key": "C",
+          "text": "Trojan",
+          "explanation": "Um Trojan se disfarça como software legítimo para obter acesso, mas o comportamento descrito (participação em uma rede de ataque coordenado) é típico do Bot."
+        },
+        {
+          "key": "D",
+          "text": "Rabbit",
+          "explanation": "Não é o termo padrão para esse comportamento; a descrição corresponde à definição clássica de Bot/zumbi em uma botnet."
+        },
+        {
+          "key": "E",
+          "text": "Ransomware",
+          "explanation": "Ransomware sequestra/criptografa dados para exigir resgate, comportamento distinto do descrito (participação automatizada em ataques coordenados)."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "Um computador infectado por um Bot passa a integrar uma botnet ('armada'/exército de máquinas zumbis), executando tarefas automatizadas de ataque sob comando de criminosos, sem o conhecimento do proprietário."
+    },
+    {
+      "id": "transp15-q50",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 50
+      },
+      "area": "seg-info",
+      "subtopic": "9.19 ISO 27002, criptografia, certificação e assinatura digital",
+      "stem": "Um certificado digital possui o valor SHA256RSA no campo algoritmo de assinatura. Essa informação indica que a assinatura digital do certificado digital foi criada com o algoritmo de hash",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "SHA, uma chave privada de 256 bits e o algoritmo de criptografia simétrica RSA.",
+          "explanation": "RSA é um algoritmo de criptografia assimétrica, não simétrica; além disso, '256' no nome refere-se ao tamanho do digest do hash SHA256, não ao tamanho da chave privada."
+        },
+        {
+          "key": "B",
+          "text": "SHA, uma chave privada de 256 bits e o algoritmo de criptografia assimétrica RSA.",
+          "explanation": "O '256' identifica a variante do algoritmo de hash (SHA256, digest de 256 bits), não o tamanho da chave privada RSA usada na assinatura."
+        },
+        {
+          "key": "C",
+          "text": "SHA, uma chave simétrica de 256 bits e o algoritmo de criptografia simétrica RSA.",
+          "explanation": "RSA não é um algoritmo de criptografia simétrica, e a assinatura digital não usa chave simétrica; o '256' refere-se ao digest do SHA256."
+        },
+        {
+          "key": "D",
+          "text": "SHA256, que produz um digest de 256 bits, e o algoritmo de criptografia simétrica RSA.",
+          "explanation": "RSA é um algoritmo assimétrico (de chave pública/privada), não simétrico."
+        },
+        {
+          "key": "E",
+          "text": "SHA256, que produz um digest de 256 bits, e o algoritmo de criptografia assimétrica RSA."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "E",
+      "explanationSummary": "'SHA256RSA' indica que o hash do certificado é calculado com SHA256 (produzindo um digest de 256 bits) e que a assinatura sobre esse hash é gerada com o algoritmo assimétrico (de chave pública) RSA."
+    },
+    {
+      "id": "transp15-q51",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 51
+      },
+      "area": "seg-info",
+      "subtopic": "9.8 SSO",
+      "stem": "O SAML (Security Assertion Markup Language) é constituído por componentes modulares que permitem a transferência de identidade, autenticação e informações de autorização entre organizações. Dentre esses componentes, os protocolos são utilizados para realizar as requisições definidas pelo SAML e retornar as respostas apropriadas. O protocolo que fornece um mecanismo pelo qual as mensagens do protocolo SAML podem ser passadas por referência, utilizando, para isso, um valor pequeno e de tamanho fixo, é o",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "Authentication Request Protocol",
+          "explanation": "Esse protocolo trata da solicitação de autenticação de um sujeito, não do mecanismo de passagem de mensagens por referência de tamanho fixo."
+        },
+        {
+          "key": "B",
+          "text": "Assertion Query and Request Protocol",
+          "explanation": "Esse protocolo permite consultar/requisitar asserções SAML já existentes, e não define o mecanismo de referência de tamanho fixo (artifact)."
+        },
+        {
+          "key": "C",
+          "text": "Artifact Resolution Protocol"
+        },
+        {
+          "key": "D",
+          "text": "Name Identifier Management Protocol",
+          "explanation": "Esse protocolo trata do gerenciamento de identificadores de nome entre provedores, não da passagem de mensagens por referência."
+        },
+        {
+          "key": "E",
+          "text": "Name Identifier Mapping Protocol",
+          "explanation": "Esse protocolo trata do mapeamento de identificadores de nome entre diferentes formatos/provedores, não da passagem de mensagens por referência de tamanho fixo."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "C",
+      "explanationSummary": "O Artifact Resolution Protocol permite representar uma mensagem SAML maior por uma referência pequena e de tamanho fixo (o 'artifact'), que pode ser posteriormente resolvida para obter a mensagem completa."
+    },
+    {
+      "id": "transp15-q52",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 52
+      },
+      "area": "seg-info",
+      "subtopic": "9.19 ISO 27002, criptografia, certificação e assinatura digital",
+      "stem": "A ICP (Infraestrutura de Chaves Públicas) define um conjunto de técnicas, práticas e procedimentos a serem adotados pelas entidades a fim de estabelecer um sistema de certificação digital baseado em chave pública. Na ICP-Brasil, o certificado de uma Autoridade Certificadora, imediatamente subsequente à Autoridade Certificadora Raiz, é assinado",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "apenas pela Autoridade Certificadora Raiz"
+        },
+        {
+          "key": "B",
+          "text": "apenas pela Autoridade de Registro",
+          "explanation": "A Autoridade de Registro (AR) identifica e cadastra solicitantes de certificados, mas não assina certificados de outras Autoridades Certificadoras."
+        },
+        {
+          "key": "C",
+          "text": "apenas pela própria Autoridade Certificadora",
+          "explanation": "Uma AC subordinada não pode autoassinar seu próprio certificado dentro da hierarquia de confiança da ICP-Brasil; ela depende da assinatura da AC superior (no caso, a Raiz)."
+        },
+        {
+          "key": "D",
+          "text": "pela Autoridade Certificadora Raiz e pela Autoridade de Registro",
+          "explanation": "A Autoridade de Registro não participa da assinatura de certificados de Autoridades Certificadoras na cadeia hierárquica."
+        },
+        {
+          "key": "E",
+          "text": "pela Autoridade Certificadora Raiz e pela própria Autoridade Certificadora",
+          "explanation": "Não há coassinatura pela própria AC subordinada; na hierarquia da ICP-Brasil, quem assina o certificado da AC de nível imediatamente inferior é apenas a AC superior (Raiz, nesse caso)."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "Na hierarquia de confiança da ICP-Brasil, a Autoridade Certificadora Raiz (autoassinada) assina o certificado das Autoridades Certificadoras diretamente subordinadas a ela, estabelecendo a cadeia de confiança."
+    },
+    {
+      "id": "transp15-q56",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 56
+      },
+      "area": "gestao-ti",
+      "subtopic": "4.3 Conceitos e perspectivas da tecnologia",
+      "stem": "Os sistemas de informação são aperfeiçoados continuamente como consequência da evolução da tecnologia e dos processos gerenciais. Exemplo desses impactos é o avanço da migração de aplicações tradicionalmente realizadas nos computadores das empresas para serviços prestados online, sob demanda e, muitas vezes, mediante sistema de assinatura (software como serviço). A inovação criada nos últimos anos, na área de sistemas de informação, que proporciona a utilização de tais aplicações é conhecida como",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "Big data.",
+          "explanation": "Big data refere-se a grandes volumes/variedade/velocidade de dados, não ao modelo de entrega de aplicações como serviço sob demanda."
+        },
+        {
+          "key": "B",
+          "text": "computação em nuvem."
+        },
+        {
+          "key": "C",
+          "text": "e-business.",
+          "explanation": "E-business refere-se, de forma ampla, ao uso de tecnologia para conduzir negócios, não especificamente ao modelo de entrega de software sob demanda descrito."
+        },
+        {
+          "key": "D",
+          "text": "teletrabalho.",
+          "explanation": "Teletrabalho refere-se ao trabalho remoto de pessoas, não ao modelo de entrega de aplicações como serviço."
+        },
+        {
+          "key": "E",
+          "text": "virtualização.",
+          "explanation": "Virtualização é uma tecnologia habilitadora usada internamente na infraestrutura de nuvem, mas o conceito que descreve a entrega de aplicações sob demanda por assinatura é a computação em nuvem (SaaS)."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "A migração de aplicações tradicionalmente instaladas localmente para serviços entregues online, sob demanda e por assinatura (Software como Serviço) é viabilizada pela computação em nuvem."
+    },
+    {
+      "id": "transp15-q62",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 62
+      },
+      "area": "gestao-proj",
+      "subtopic": "2.5 Projetos e a organização",
+      "stem": "Um gerente de projeto recebeu uma solicitação de incluir novas atribuições e atividades no escopo do projeto que sua equipe está realizando. Esse projeto tem CPI de 1.2 e SPI de 1.3. Ao analisar o conjunto das atribuições e atividades e compará-lo com o projeto original, ele verifica que os dois poderiam ser feitos em paralelo e não há sobreposição; as atividades precisam ser realizadas por profissionais que dominem uma linguagem e arquitetura distintas do escopo inicial. Com base nas informações apresentadas, qual a melhor atitude a tomar, segundo as melhores práticas do PMBOK?",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "Desenvolver um Project charter"
+        },
+        {
+          "key": "B",
+          "text": "Reestimar o custo do projeto com as novas demandas",
+          "explanation": "Reestimar custos pressupõe que o novo trabalho será incorporado ao projeto atual, o que não é indicado dado que o novo trabalho é independente, sem sobreposição e exige competências distintas."
+        },
+        {
+          "key": "C",
+          "text": "Reestimar o cronograma de projeto com as novas demandas",
+          "explanation": "Da mesma forma, reestimar o cronograma do projeto atual pressupõe incorporar o novo escopo a ele, quando o cenário descrito sugere tratar-se de um esforço distinto."
+        },
+        {
+          "key": "D",
+          "text": "Validar o escopo do novo trabalho com a ajuda dos novos stakeholders",
+          "explanation": "Validar escopo é uma atividade de encerramento de entregas já produzidas, não o primeiro passo apropriado para decidir se um novo conjunto de atividades deve ser tratado como projeto separado."
+        },
+        {
+          "key": "E",
+          "text": "Identificar mudanças específicas ao trabalho que já está sendo realizado pela equipe",
+          "explanation": "O novo conjunto de atividades não é uma mudança ao trabalho já em andamento (não há sobreposição e exige equipe/competências distintas), e sim um esforço com identidade própria."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "Como o novo conjunto de atividades pode ser executado em paralelo, sem sobreposição com o projeto original, e exige competências/arquitetura distintas, as boas práticas do PMBOK indicam tratá-lo como um novo empreendimento, iniciado formalmente por um Termo de Abertura do Projeto (Project Charter), em vez de simplesmente incorporá-lo ao projeto em curso."
+    },
+    {
+      "id": "transp15-q63",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 63
+      },
+      "area": "gestao-proj",
+      "subtopic": "2.7 Modelos e características",
+      "stem": "Ao planejar um projeto de migração de software, foi solicitado ao analista realizar uma EAP e apresentá-la ao gerente. Para garantir a completude do seu trabalho, ele deve garantir que inseriu, nesse momento, na EAP,",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "cenários e riscos",
+          "explanation": "Riscos e cenários são tratados no plano de gerenciamento de riscos, não são o conteúdo estrutural básico da EAP."
+        },
+        {
+          "key": "B",
+          "text": "escopo e entregas"
+        },
+        {
+          "key": "C",
+          "text": "orçamento e custos",
+          "explanation": "Orçamento e custos são estimados a partir da EAP (nos processos de gerenciamento de custos), mas não são, em si, o conteúdo estrutural da EAP."
+        },
+        {
+          "key": "D",
+          "text": "restrições e premissas",
+          "explanation": "Restrições e premissas fazem parte do termo de abertura/plano do projeto, não são os elementos que compõem a decomposição da EAP."
+        },
+        {
+          "key": "E",
+          "text": "equipe e patrocinadores",
+          "explanation": "Alocação de equipe e identificação de patrocinadores pertencem aos planos de recursos humanos/partes interessadas, não à estrutura da EAP."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "A EAP (Estrutura Analítica do Projeto/WBS) é uma decomposição hierárquica do escopo total do trabalho a ser executado, organizada em torno das entregas do projeto; garantir a completude da EAP significa garantir que todo o escopo e todas as entregas estejam representados."
+    },
+    {
+      "id": "transp15-q64",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 64
+      },
+      "area": "gestao-proj",
+      "subtopic": "2.7 Modelos e características",
+      "stem": "Uma equipe de desenvolvimento de software para Cálculo de Recursos Financeiros, composta de oito pessoas, planejou trabalhar 640 pessoas-hora em 2 semanas. Um analista de sistema, porém, teve problemas de saúde e faltou ao trabalho. Assim, a equipe só trabalhou 490 pessoas-hora. Qual a eficiência aproximada de mão de obra do trabalho nessas duas semanas?",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "23%",
+          "explanation": "Corresponderia à diferença percentual entre planejado e realizado (100% - 77%), não à eficiência (razão entre realizado e planejado)."
+        },
+        {
+          "key": "B",
+          "text": "31%",
+          "explanation": "Não corresponde à razão 490/640; é um valor muito distante do resultado correto."
+        },
+        {
+          "key": "C",
+          "text": "38%",
+          "explanation": "Não corresponde à razão 490/640; é um valor muito distante do resultado correto."
+        },
+        {
+          "key": "D",
+          "text": "77%"
+        },
+        {
+          "key": "E",
+          "text": "131%",
+          "explanation": "Corresponderia à razão inversa (640/490), e não à eficiência do trabalho realizado em relação ao planejado."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "D",
+      "explanationSummary": "Eficiência = horas efetivamente trabalhadas / horas planejadas = 490/640 ≈ 0,7656, ou aproximadamente 77%."
+    },
+    {
+      "id": "transp15-q66",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 66
+      },
+      "area": "gestao-proj",
+      "subtopic": "2.4 PMBOK 7ª edição",
+      "stem": "A um analista de sistemas foi atribuída a responsabilidade de gerenciar um projeto em cascata de informática. Dentre as restrições que ele deverá determinar obrigatoriamente, nas fases iniciais desse projeto, segundo o PMBOK, constam:",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "equipamentos, disponibilidade, capacidade e integridade.",
+          "explanation": "Não corresponde ao conjunto clássico de restrições de projeto (a chamada 'restrição tripla' estendida) definido pelo PMBOK."
+        },
+        {
+          "key": "B",
+          "text": "expertise, habilidades, competências e conhecimentos.",
+          "explanation": "Esses itens são insumos para o planejamento de recursos humanos, não as restrições fundamentais do projeto (escopo/tempo/custo/qualidade/recursos) do PMBOK."
+        },
+        {
+          "key": "C",
+          "text": "fornecedores, parcerias, contratos e SLA.",
+          "explanation": "Esses itens pertencem ao gerenciamento de aquisições/fornecedores, não ao conjunto de restrições fundamentais de um projeto segundo o PMBOK."
+        },
+        {
+          "key": "D",
+          "text": "hierarquia, estilo organizacional, ética e código de conduta.",
+          "explanation": "Esses itens referem-se a fatores organizacionais e de conduta profissional, não às restrições fundamentais de escopo/tempo/custo do projeto."
+        },
+        {
+          "key": "E",
+          "text": "recursos, escopo, cronograma, qualidade e custos."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "E",
+      "explanationSummary": "O PMBOK define como restrições fundamentais de qualquer projeto o escopo, o cronograma (tempo), o custo, a qualidade e os recursos, que devem ser determinados e balanceados desde as fases iniciais do projeto."
+    },
+    {
+      "id": "transp15-q67",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 67
+      },
+      "area": "gestao-proj",
+      "subtopic": "2.7 Modelos e características",
+      "stem": "A fase de construção de um novo software da área financeira está praticamente encerrada. Como o desenvolvimento do software foi muito rápido, o projeto está adiantado em 10 dias em relação ao cronograma, no qual já estão previstas as próximas fases: teste e implantação. Qual deve ser a principal atividade desenvolvida pelo gerente do projeto antes de passar para essas próximas fases?",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "Análise de Riscos",
+          "explanation": "Análise de riscos é uma atividade contínua ao longo do projeto, mas não é a atividade formal específica de encerramento de uma fase antes de avançar para a próxima."
+        },
+        {
+          "key": "B",
+          "text": "Controlar Custos",
+          "explanation": "Controlar custos é um processo contínuo de monitoramento, não a atividade formal indicada especificamente para o encerramento/transição entre fases."
+        },
+        {
+          "key": "C",
+          "text": "Controle de Qualidade",
+          "explanation": "Controle de qualidade verifica a conformidade técnica das entregas, mas o processo formal de aceite/encerramento de fase, segundo o PMBOK, é Validar o Escopo."
+        },
+        {
+          "key": "D",
+          "text": "Gerenciar Comunicação",
+          "explanation": "Gerenciar comunicação é uma atividade contínua de execução, não a atividade formal de transição entre fases do projeto."
+        },
+        {
+          "key": "E",
+          "text": "Validar Escopo"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "E",
+      "explanationSummary": "Segundo o PMBOK, Validar o Escopo é o processo de formalizar a aceitação das entregas concluídas, sendo tipicamente realizado ao final de uma fase (como a construção), antes de se avançar para as fases seguintes (teste e implantação)."
     }
   ]
 }
