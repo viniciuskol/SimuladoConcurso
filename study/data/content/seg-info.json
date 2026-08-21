@@ -89,7 +89,7 @@
       "heading": "Ataques e defesas correspondentes",
       "items": [
         "Phishing: isca em massa. Spear phishing: alvo específico. Whaling: executivo. Vishing (voz) e smishing (SMS). Defesa central é conscientização, não ferramenta.",
-        "Phishing engana com mensagem/site falso; pharming corrompe a resolução de nomes (DNS ou arquivo hosts) e leva a vítima ao site falso mesmo digitando o endereço certo — sem clique em link. Defesa: DNSSEC, TLS com validação de certificado e proteção do resolvedor.",
+        "Pharming corrompe a resolução de nomes (DNS ou arquivo hosts) e leva a vítima ao site falso mesmo digitando o endereço certo — sem clique em link, diferente do phishing. Defesa: DNSSEC, TLS com validação de certificado e proteção do resolvedor.",
         "Engenharia social explora a pessoa, não a máquina: pretexto, urgência, autoridade, reciprocidade.",
         "DoS exaure recurso a partir de uma origem; DDoS usa muitas origens (botnet). Ataques de amplificação/reflexão abusam de serviços UDP como DNS e NTP.",
         "SQL injection: entrada não tratada concatenada na consulta. Defesa: consulta parametrizada/prepared statement, validação e menor privilégio no banco.",
