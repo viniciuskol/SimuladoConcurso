@@ -254,7 +254,7 @@
       "id": "fc-gestao-proj-001",
       "area": "gestao-proj",
       "front": "Em que a estrutura do PMBOK 7ª edição difere da 6ª?",
-      "back": "A 7ª é baseada em princípios (princípios de gerenciamento + domínios de desempenho); a 6ª e anteriores são baseadas em processos (grupos de processos + áreas de conhecimento)."
+      "back": "A 7ª é baseada em princípios: 12 princípios + 8 domínios de desempenho. A 6ª e anteriores são baseadas em processos: 5 grupos de processos e 10 áreas de conhecimento (49 processos na 6ª)."
     },
     {
       "id": "fc-gestao-proj-002",
