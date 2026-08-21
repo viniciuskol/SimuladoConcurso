@@ -1,0 +1,366 @@
+{
+  "version": 1,
+  "cards": [
+    {
+      "id": "fc-portugues-001",
+      "area": "portugues",
+      "front": "Quando o pronome \"se\" faz o verbo concordar com o termo seguinte?",
+      "back": "Quando o verbo é transitivo direto: aí o \"se\" é apassivador e o complemento é o sujeito. Por isso 'enviam-se vídeos' e 'evidenciaram-se atitudes' (plural), mas 'desenvolveu-se a ideia' (singular).",
+      "sourceQuestionId": "psjpn2018-q9"
+    },
+    {
+      "id": "fc-portugues-002",
+      "area": "portugues",
+      "front": "Por que 'Necessita-se de políticos mais compromissados' fica no singular?",
+      "back": "Porque 'necessitar de' é transitivo indireto: o \"se\" é índice de indeterminação do sujeito, não apassivador. Sem sujeito para concordar, o verbo trava na 3ª pessoa do singular.",
+      "sourceQuestionId": "transp15-q10"
+    },
+    {
+      "id": "fc-portugues-003",
+      "area": "portugues",
+      "front": "'Fazem quinze anos que ele entrou na vida pública' está correto?",
+      "back": "Não. 'Fazer' indicando tempo decorrido é impessoal e fica no singular: 'Faz quinze anos'. O mesmo vale para 'haver' de tempo ('Há quinze anos').",
+      "sourceQuestionId": "transp15-q10"
+    },
+    {
+      "id": "fc-portugues-004",
+      "area": "portugues",
+      "front": "'Haviam mais de trinta deputados no plenário' está correto?",
+      "back": "Não. 'Haver' com sentido de existir é impessoal: 'Havia mais de trinta deputados'. A impessoalidade também passa ao auxiliar ('deve haver').",
+      "sourceQuestionId": "transp15-q10"
+    },
+    {
+      "id": "fc-portugues-005",
+      "area": "portugues",
+      "front": "O verbo 'existir' é impessoal como o 'haver' existencial?",
+      "back": "Não. 'Existir' tem sujeito e concorda normalmente: 'existiam trinta deputados'. Só o 'haver' existencial (e o 'fazer' de tempo) travam no singular."
+    },
+    {
+      "id": "fc-portugues-006",
+      "area": "portugues",
+      "front": "Qual é o teste rápido para decidir se cabe crase?",
+      "back": "Trocar o termo feminino por um masculino equivalente. Se sair 'ao', tem crase ('atentas à fatura' → 'atentos ao extrato'). Se sair 'o' ou 'a', não tem.",
+      "sourceQuestionId": "psjpn2018-q5"
+    },
+    {
+      "id": "fc-portugues-007",
+      "area": "portugues",
+      "front": "Por que 'à partir daquela conversa' está errado?",
+      "back": "Porque 'partir' é verbo, e não existe crase antes de verbo. Escreve-se sempre 'a partir de', sem acento — o mesmo valendo para 'a fim de'.",
+      "sourceQuestionId": "transp15-q9"
+    },
+    {
+      "id": "fc-portugues-008",
+      "area": "portugues",
+      "front": "Cabe crase em 'assistimos a apresentações inflamadas'?",
+      "back": "Não: diante de plural indeterminado o 'a' é só preposição. Com o substantivo determinado, o artigo aparece no plural e a crase também: 'assistimos às apresentações da noite'.",
+      "sourceQuestionId": "transp15-q9"
+    },
+    {
+      "id": "fc-portugues-009",
+      "area": "portugues",
+      "front": "Que fusão gera o acento em 'em referência àqueles pensamentos'?",
+      "back": "A preposição 'a', exigida por 'em referência a', mais o demonstrativo 'aqueles': a + aqueles = àqueles. Vale igual para àquela, àquilo e à qual.",
+      "sourceQuestionId": "transp15-q9"
+    },
+    {
+      "id": "fc-portugues-010",
+      "area": "portugues",
+      "front": "Por que 'soneto à língua portuguesa' leva acento grave?",
+      "back": "Porque há preposição 'a' com valor de destinação (soneto dedicado a alguém) mais o artigo feminino 'a' de 'língua'. Preposição + artigo = crase.",
+      "sourceQuestionId": "transp23e6-q5"
+    },
+    {
+      "id": "fc-portugues-011",
+      "area": "portugues",
+      "front": "Que classes de palavras obrigam próclise?",
+      "back": "Negação (não, nunca, jamais), advérbio sem vírgula, pronome relativo, indefinido ou interrogativo, e conjunção subordinativa — inclusive o 'que'. Ex.: 'nunca se afastara', 'para que se adote'.",
+      "sourceQuestionId": "psjpn2018-q8"
+    },
+    {
+      "id": "fc-portugues-012",
+      "area": "portugues",
+      "front": "Advérbio antes do verbo sempre atrai o pronome átono?",
+      "back": "Não: se vier seguido de vírgula, perde o poder de atração e a ênclise fica correta — 'Entre os numerosos usuários da internet, constata-se...'.",
+      "sourceQuestionId": "psjpn2018-q8"
+    },
+    {
+      "id": "fc-portugues-013",
+      "area": "portugues",
+      "front": "Por que 'Diria-lhe para evitar a política' é errado?",
+      "back": "Porque com futuro do presente e futuro do pretérito a ênclise é vedada na norma-padrão: usa-se mesóclise ('Dir-lhe-ia') ou próclise, se houver palavra atrativa.",
+      "sourceQuestionId": "transp15-q8"
+    },
+    {
+      "id": "fc-portugues-014",
+      "area": "portugues",
+      "front": "Pode-se iniciar um período com pronome oblíquo átono?",
+      "back": "Não, na norma-padrão. 'Se atormentou com aquela crise' é erro; o correto é 'Atormentou-se com aquela crise'.",
+      "sourceQuestionId": "transp15-q8"
+    },
+    {
+      "id": "fc-portugues-015",
+      "area": "portugues",
+      "front": "Em que três posições a vírgula nunca pode entrar?",
+      "back": "Entre sujeito e verbo, entre verbo e seu complemento, e antes da oração substantiva que completa o verbo ('mostram que, muitas economias...'). Foram os erros plantados nos distratores.",
+      "sourceQuestionId": "psjpn2018-q4"
+    },
+    {
+      "id": "fc-portugues-016",
+      "area": "portugues",
+      "front": "Que função têm as vírgulas em 'minha avó, Pedrina Perucchi, era italiana'?",
+      "back": "Isolam um aposto explicativo, que identifica o termo anterior. O concorrente típico é o vocativo, que chama o interlocutor e não tem relação sintática com o resto.",
+      "sourceQuestionId": "transp23e6-q7"
+    },
+    {
+      "id": "fc-portugues-017",
+      "area": "portugues",
+      "front": "Dois-pontos com valor explicativo equivalem a que conjunção?",
+      "back": "A 'porque': o que vem depois deles justifica o que veio antes. Foi a substituição cobrada no trecho sobre a compra que atende à necessidade de status.",
+      "sourceQuestionId": "psjpn2018-q7"
+    },
+    {
+      "id": "fc-portugues-018",
+      "area": "portugues",
+      "front": "Que relação estabelece o 'como' no início de um período, com verbo no subjuntivo?",
+      "back": "Causa, equivalendo a 'porque' ou 'já que': 'Como adorasse a mulher, não se vexava de dizê-lo'. Não é comparação nesse contexto.",
+      "sourceQuestionId": "transp15-q2"
+    },
+    {
+      "id": "fc-portugues-019",
+      "area": "portugues",
+      "front": "Que tipo de antecedente o pronome relativo 'onde' pode retomar?",
+      "back": "Só lugar físico ('a região onde se concentra a elite'). Para referência abstrata use 'em que' ou 'no qual'; 'aonde' só com verbo de movimento.",
+      "sourceQuestionId": "prova6-q10"
+    },
+    {
+      "id": "fc-portugues-020",
+      "area": "portugues",
+      "front": "Como distinguir o 'que' pronome relativo do 'que' conjunção integrante?",
+      "back": "O relativo retoma um antecedente e exerce função sintática na oração que introduz ('a borboleta que entrou'). O integrante não retoma nada e apenas liga uma oração substantiva ao verbo anterior.",
+      "sourceQuestionId": "transp23e6-q6"
+    },
+    {
+      "id": "fc-portugues-021",
+      "area": "portugues",
+      "front": "Que diferença de sentido a vírgula cria na oração adjetiva?",
+      "back": "Sem vírgula (restritiva), limita o antecedente a uma parte: 'os alunos que estudaram passaram'. Entre vírgulas (explicativa), comenta e vale para todo o antecedente: todos estudaram e todos passaram."
+    },
+    {
+      "id": "fc-portugues-022",
+      "area": "portugues",
+      "front": "Qual é o equivalente de 'fora usada' na voz passiva sintética?",
+      "back": "'Se usara'. A conversão tem de preservar o tempo verbal — 'se usou', 'se usava' e 'se usaria' mudam o tempo e, com ele, o sentido.",
+      "sourceQuestionId": "prova6-q8"
+    },
+    {
+      "id": "fc-portugues-023",
+      "area": "portugues",
+      "front": "Que correlação verbal expressa hipótese irreal do passado?",
+      "back": "'Se' + mais-que-perfeito composto do subjuntivo na subordinada + futuro do pretérito composto na principal: 'se tivesse escrito..., teria sido lida'.",
+      "sourceQuestionId": "transp23e6-q8"
+    },
+    {
+      "id": "fc-portugues-024",
+      "area": "portugues",
+      "front": "Entre ganhar, pagar e ver, qual tem SÓ particípio irregular?",
+      "back": "'Ver' — só 'visto' circula na língua-padrão. Ganhar e pagar são abundantes (ganhado/ganho, pagado/pago), com a forma regular usada com ter/haver e a curta com ser/estar.",
+      "sourceQuestionId": "prova6-q6"
+    },
+    {
+      "id": "fc-portugues-025",
+      "area": "portugues",
+      "front": "Qual a regência de 'necessitar' na norma-padrão, e o efeito disso no pronome relativo?",
+      "back": "Rege 'de'; logo o relativo tem de vir preposicionado: 'aparelhos DE QUE elas não necessitam'. A versão sem preposição soa natural na fala e é justamente o erro.",
+      "sourceQuestionId": "psjpn2018-q10"
+    },
+    {
+      "id": "fc-portugues-026",
+      "area": "portugues",
+      "front": "Que regência têm 'referir' e 'confessar'?",
+      "back": "Bitransitiva: algo (objeto direto) a alguém (objeto indireto com 'a') — 'referir o fato a alguém', 'confessou-me que trazia uma carcoma'.",
+      "sourceQuestionId": "transp15-q7"
+    },
+    {
+      "id": "fc-portugues-027",
+      "area": "portugues",
+      "front": "Como escolher entre porque, por que, porquê e por quê?",
+      "back": "'Porque' = conjunção (causa/explicação). 'Por que' = preposição + pronome, em pergunta ou com antecedente. 'Porquê' = substantivo, vem com artigo. 'Por quê' = forma tônica no fim da frase.",
+      "sourceQuestionId": "prova6-q4"
+    },
+    {
+      "id": "fc-ingles-001",
+      "area": "ingles",
+      "front": "Que pista lexical nas alternativas quase sempre marca erro nas provas de inglês?",
+      "back": "Linguagem absoluta: certainly, definitely, surely, only, all, never, must. No banco, 16 alternativas erradas usam essas palavras e nenhuma alternativa correta usa — os textos são hedged (may, might, is likely to).",
+      "sourceQuestionId": "transp15-q20"
+    },
+    {
+      "id": "fc-ingles-002",
+      "area": "ingles",
+      "front": "Em uma questão de inglês, 'given that' pode ser substituído por quê?",
+      "back": "Por 'taking into account that' — é premissa considerada, valor de causa/consideração. Não é concessivo, então even though e despite the fact that estão errados.",
+      "sourceQuestionId": "transp15-q13"
+    },
+    {
+      "id": "fc-ingles-003",
+      "area": "ingles",
+      "front": "Iniciando frase e seguido de contraste, 'Still' equivale a quê?",
+      "back": "A 'Nevertheless' / 'However' — ainda assim. Dentro da frase, junto ao verbo, 'still' é temporal (= ainda). A posição decide o valor.",
+      "sourceQuestionId": "psjpn2018-q17"
+    },
+    {
+      "id": "fc-ingles-004",
+      "area": "ingles",
+      "front": "O que significa 'take hold' em 'Dutch disease and the oil curse will take hold'?",
+      "back": "Firmar-se, instalar-se e tornar-se difícil de reverter. Nada a ver com segurar algo fisicamente.",
+      "sourceQuestionId": "prova6-q16"
+    },
+    {
+      "id": "fc-ingles-005",
+      "area": "ingles",
+      "front": "O que significa 'account for' em 'India accounting for almost one-third of global growth'?",
+      "back": "Responder por, corresponder a uma parcela de algo. O distrator típico é 'being blamed for' (ser culpado por), que agrega juízo negativo inexistente.",
+      "sourceQuestionId": "psjpn2018-q15"
+    },
+    {
+      "id": "fc-ingles-006",
+      "area": "ingles",
+      "front": "O que significa 'forging ahead' em 'Solar is forging ahead in global power markets'?",
+      "back": "Avançando de forma firme e constante (progressing steadily). Os distratores oferecem o sentido oposto: declining, falling, slowing down.",
+      "sourceQuestionId": "psjpn2018-q15"
+    },
+    {
+      "id": "fc-ingles-007",
+      "area": "ingles",
+      "front": "Com economia ou produção como sujeito, o que significa 'pick up'?",
+      "back": "Melhorar, ganhar ritmo, aumentar — 'as economic growth has picked up'. Não é 'pegar'; e os distratores oferecem declined, deteriorated, stabilized.",
+      "sourceQuestionId": "transp15-q16"
+    },
+    {
+      "id": "fc-ingles-008",
+      "area": "ingles",
+      "front": "O que significa 'driven by' em 'driven not least by the levels of air pollution'?",
+      "back": "Impulsionado, motivado ou causado por. Distratores usam 'delayed by' e 'hindered by', que invertem o sentido.",
+      "sourceQuestionId": "transp15-q16"
+    },
+    {
+      "id": "fc-ingles-009",
+      "area": "ingles",
+      "front": "O que significa 'pivotal' em 'Satellite communications will also be pivotal'?",
+      "back": "Essencial, crucial, central. É avaliação positiva e forte, o que já elimina tricky, erratic, haphazard e problematic.",
+      "sourceQuestionId": "transp23e6-q18"
+    },
+    {
+      "id": "fc-ingles-010",
+      "area": "ingles",
+      "front": "Em texto econômico, o que significa 'flat'?",
+      "back": "Estável, sem crescimento ('growth remained flat'). Não é sinônimo de 'high' — foi exatamente essa a afirmação falsa cobrada.",
+      "sourceQuestionId": "transp15-q18"
+    },
+    {
+      "id": "fc-ingles-011",
+      "area": "ingles",
+      "front": "O que significa 'rife'?",
+      "back": "Disseminado, generalizado, abundante — geralmente de algo negativo ('speculation is rife'). É quase o oposto de 'scarce'.",
+      "sourceQuestionId": "transp15-q18"
+    },
+    {
+      "id": "fc-ingles-012",
+      "area": "ingles",
+      "front": "'Surge' e 'increase' são antônimos ou próximos?",
+      "back": "Próximos: 'surge' é um aumento súbito e forte. A afirmação de que seriam antônimos foi distrator. E 'surge' não é 'surgir' (to arise, to emerge).",
+      "sourceQuestionId": "transp15-q18"
+    },
+    {
+      "id": "fc-ingles-013",
+      "area": "ingles",
+      "front": "O que significa 'thriving' em 'a thriving solar industry'?",
+      "back": "Prosperando, crescendo com sucesso — próximo de 'developing' nesse contexto, e o oposto de estagnado.",
+      "sourceQuestionId": "transp15-q18"
+    },
+    {
+      "id": "fc-ingles-014",
+      "area": "ingles",
+      "front": "Em inglês, 'realise/realize' significa 'realizar'?",
+      "back": "Não: significa perceber, dar-se conta — por isso 'realise' e 'understand' aparecem como par de sinônimos. Para 'realizar' use carry out, perform, achieve.",
+      "sourceQuestionId": "prova6-q14"
+    },
+    {
+      "id": "fc-ingles-015",
+      "area": "ingles",
+      "front": "Qual a relação entre 'curb' e 'foster'?",
+      "back": "São antônimos: 'curb' é conter, restringir; 'foster' é fomentar, promover. Foi o único par realmente antônimo da questão.",
+      "sourceQuestionId": "prova6-q14"
+    },
+    {
+      "id": "fc-ingles-016",
+      "area": "ingles",
+      "front": "O que significa 'undisputed', e qual seu sinônimo cobrado na prova?",
+      "back": "Incontestável, indiscutível — sinônimo de 'irrefutable'. Não confundir com 'undisputed' no sentido de 'sem disputa esportiva'.",
+      "sourceQuestionId": "psjpn2018-q14"
+    },
+    {
+      "id": "fc-ingles-017",
+      "area": "ingles",
+      "front": "Em 'the SODOR project will provide low latency', o que 'low latency' garante?",
+      "back": "Transmissão de grande volume de dados com atraso mínimo. Latência é atraso, não volume — três distratores trocavam latência por 'low volume of data'.",
+      "sourceQuestionId": "transp23e6-q15"
+    },
+    {
+      "id": "fc-ingles-018",
+      "area": "ingles",
+      "front": "O que significa 'claimed' em texto jornalístico?",
+      "back": "Alegado, afirmado sem comprovação (ou reivindicado). Não é 'hidden' nem 'comprovado'; e o substantivo 'claim' é alegação, não reclamação (complaint).",
+      "sourceQuestionId": "transp15-q18"
+    },
+    {
+      "id": "fc-ingles-019",
+      "area": "ingles",
+      "front": "O que a primeira questão de inglês (a de número 11) pede nas quatro provas?",
+      "back": "A função global do texto: propósito, intenção comunicativa ou ideia central. A resposta começa por um verbo de função (describe, present an overview, speculate, argue, discuss).",
+      "sourceQuestionId": "transp15-q11"
+    },
+    {
+      "id": "fc-ingles-020",
+      "area": "ingles",
+      "front": "Como resolver uma questão que pede o sentido de dois itens 'respectively'?",
+      "back": "Glosando cada item separadamente antes de ler as alternativas e validando as duas metades. O distrator clássico acerta o primeiro item e erra o segundo.",
+      "sourceQuestionId": "psjpn2018-q15"
+    },
+    {
+      "id": "fc-ingles-021",
+      "area": "ingles",
+      "front": "Qual costuma ser o antecedente de expressões como 'that shift' ou 'this trend'?",
+      "back": "Uma oração ou um trecho inteiro, não uma palavra isolada. Em 'that shift', o antecedente era a mudança da indústria pesada movida a carvão para uma economia de serviços.",
+      "sourceQuestionId": "transp15-q15"
+    },
+    {
+      "id": "fc-ingles-022",
+      "area": "ingles",
+      "front": "Em '14% of the UK's greenhouse gas emissions, of which 91% is from road vehicles', a que 'which' se refere?",
+      "back": "A 'greenhouse gas emissions', o substantivo imediatamente anterior: 91% dessas emissões vêm de veículos rodoviários.",
+      "sourceQuestionId": "transp23e6-q16"
+    },
+    {
+      "id": "fc-ingles-023",
+      "area": "ingles",
+      "front": "Em textos de previsão, o present simple ('wind becomes the leading source after 2030') expressa quê?",
+      "back": "Futuro projetado. Já o present continuous ('are changing') descreve processo em curso agora — foi essa diferença que decidiu a questão de referência temporal.",
+      "sourceQuestionId": "psjpn2018-q16"
+    },
+    {
+      "id": "fc-ingles-024",
+      "area": "ingles",
+      "front": "Como responder a uma questão de inglês com EXCEPT em maiúsculas?",
+      "back": "Marcando V/F ao lado de cada alternativa segundo o critério positivo do enunciado e só depois invertendo: a correta é a única que NÃO pertence ao conjunto.",
+      "sourceQuestionId": "prova6-q20"
+    },
+    {
+      "id": "fc-ingles-025",
+      "area": "ingles",
+      "front": "Qual a escala de certeza dos modais em inglês, do mais forte ao mais fraco?",
+      "back": "will / must (dedução) > should, is likely to, is expected to, is projected to > can, may > could, might. Reconhecer essa escala é o que impede aceitar alternativa absoluta para texto hedged."
+    }
+  ]
+}
