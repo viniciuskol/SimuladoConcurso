@@ -2401,6 +2401,1966 @@
       },
       "correctKey": "D",
       "explanationSummary": "Como P é verdadeiro (premissa 2), ~P é falso; aplicando Modus Tollens à premissa 1, conclui-se que [(~A)˄(~G)] é falso, ou seja, ¬[(~A)˄(~G)]. Aplicando a Lei de De Morgan a essa negação, obtém-se A˅G, exatamente a conclusão do argumento."
+    },
+    {
+      "id": "prova6-q1",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 1
+      },
+      "subtopic": "P.1 Compreensão de textos",
+      "stem": "Segundo o Texto I, o motivo real para o emprego de palavras mais curtas se dá porque",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "insere o componente no enredo da escola.",
+          "key": "A",
+          "explanation": "Descreve o efeito de um caso particular (a fala do compositor Dudu Botelho sobre 'vida', 'luz' e 'mar'), não o motivo geral apontado no início do texto para a preferência por palavras curtas."
+        },
+        {
+          "text": "identifica o falante no seu contexto linguístico.",
+          "key": "B",
+          "explanation": "Não há, no texto, qualquer afirmação relacionando a escolha das palavras a uma função de identificação do falante em seu contexto linguístico."
+        },
+        {
+          "text": "estabelece uma comunicação fácil com a escola.",
+          "key": "C"
+        },
+        {
+          "text": "estimula os músicos a criarem letras mais inspiradas.",
+          "key": "D",
+          "explanation": "O texto mostra o oposto: a tendência é o empobrecimento/simplificação das letras (palavras curtas e diretas), não um estímulo à criação de letras mais elaboradas ou inspiradas."
+        },
+        {
+          "text": "envolve o público no processo de criação dos compositores.",
+          "key": "E",
+          "explanation": "Confunde o efeito de empolgar/motivar o público e os componentes com uma participação do público no processo de criação, o que o texto não afirma."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "C",
+      "explanationSummary": "O texto abre afirmando que 'a busca agora é pela comunicação direta', teses que fundamentam a preferência por palavras curtas e simples: elas favorecem uma comunicação mais fácil e direta entre compositor, escola e público, e não um efeito estético ou de identificação linguística."
+    },
+    {
+      "id": "prova6-q2",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 2
+      },
+      "subtopic": "P.1 Compreensão de textos",
+      "stem": "O Texto I pode ser lido como um jogo de oposições. A única oposição que NÃO aparece na matéria é",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "passado / presente",
+          "key": "A",
+          "explanation": "Aparece: o texto contrasta palavras 'outrora clássicas' (relicário, divinal) com as palavras atualmente mais usadas (vai, vou), opondo passado e presente."
+        },
+        {
+          "text": "otimismo / pessimismo",
+          "key": "B",
+          "explanation": "Aparece: o texto afirma explicitamente que palavras como 'vida' e 'amor' refletem o otimismo do carnaval e que 'nenhuma palavra fica no campo semântico do pessimismo, tristeza', estabelecendo a oposição."
+        },
+        {
+          "text": "tradição / modernidade",
+          "key": "C",
+          "explanation": "Aparece: a mesma contraposição entre palavras 'clássicas'/tradicionais e a linguagem atual do samba configura uma oposição entre tradição e modernidade."
+        },
+        {
+          "text": "rapidez / lentidão",
+          "key": "D"
+        },
+        {
+          "text": "envolvimento / passividade",
+          "key": "E",
+          "explanation": "Aparece: o texto fala em palavras que 'empolgam e envolvem a plateia' e 'motivam os componentes', em contraste implícito com a passividade que se busca evitar."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "D",
+      "explanationSummary": "Não há, em nenhum trecho do Texto I, qualquer menção a uma oposição entre rapidez e lentidão; todas as demais oposições (passado/presente, otimismo/pessimismo, tradição/modernidade, envolvimento/passividade) são explicitamente sustentadas por trechos do texto."
+    },
+    {
+      "id": "prova6-q3",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 3
+      },
+      "subtopic": "P.4 Significação das palavras",
+      "stem": "A escolha do título de um texto nunca é aleatória. O emprego da palavra repique no título do Texto I revela a intenção de",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "valorizar um dos instrumentos mais populares da bateria.",
+          "key": "A",
+          "explanation": "O título usa 'repique' pelo seu sentido de repetição/ressonância aplicado às palavras, não para valorizar o instrumento de percussão em si."
+        },
+        {
+          "text": "criar uma identidade com o universo linguístico do samba.",
+          "key": "B"
+        },
+        {
+          "text": "apontar uma relação entre a natureza da palavra e o seu sentido.",
+          "key": "C",
+          "explanation": "Não há, no uso da palavra 'repique' no título, uma relação motivada entre a forma da palavra e seu significado (não é onomatopeia nem se discute etimologia nesse sentido)."
+        },
+        {
+          "text": "evidenciar o contraste entre os tempos de outrora e o da atualidade.",
+          "key": "D",
+          "explanation": "Esse contraste é discutido no corpo do texto, mas não é o que motiva especificamente a escolha da palavra 'repique' no título."
+        },
+        {
+          "text": "reconhecer a importância da empolgação dos componentes da escola de samba.",
+          "key": "E",
+          "explanation": "A empolgação dos componentes é um tema abordado no texto, mas não é a razão para a escolha lexical do título."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "B",
+      "explanationSummary": "'Repique' é termo do vocabulário musical do samba (instrumento de percussão), empregado no título com o duplo sentido de 'repetição das palavras', criando assim uma identidade entre a linguagem do texto e o universo linguístico/musical do samba sobre o qual ele trata."
+    },
+    {
+      "id": "prova6-q4",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 4
+      },
+      "subtopic": "P.2 Ortografia oficial",
+      "stem": "A última fala do texto, de Marcelo de Mello, poderia ser introduzida por um conectivo, que preencheria a frase abaixo. \"A repetição das mesmas palavras indica um empobrecimento das letras __________ o visual ganhou um peso grande.\" A respeito do emprego desse conectivo, analise as afirmações a seguir. I - O conectivo adequado seria porque, uma vez que estabelece uma relação de causa. II - O conectivo adequado seria por que, uma vez que se reconhecem aqui duas palavras. III - O conectivo levaria acento, porquê, já que pode ser substituído pelo termo \"o motivo\", ou \"a razão\". É correto o que se afirma em",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "I, apenas.",
+          "key": "A"
+        },
+        {
+          "text": "II, apenas.",
+          "key": "B",
+          "explanation": "'Por que' (separado, sem acento) é usado em perguntas diretas/indiretas ou quando equivale a 'pelo qual/pela qual'; na lacuna, a relação é de causa entre duas afirmações, não uma indagação, o que descarta essa forma."
+        },
+        {
+          "text": "I e II, apenas.",
+          "key": "C",
+          "explanation": "'Porquê' (substantivo, com acento) equivale a 'o motivo'/'a razão' e é precedido de artigo ou determinante ('o porquê'); não pode substituir uma conjunção causal ligando duas orações como no trecho."
+        },
+        {
+          "text": "I e III, apenas.",
+          "key": "D",
+          "explanation": "Inclui III, que está incorreta pelo motivo acima."
+        },
+        {
+          "text": "I, II e III.",
+          "key": "E",
+          "explanation": "Inclui II e III, ambas incorretas."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "A",
+      "explanationSummary": "A lacuna liga duas orações em relação de causa (o empobrecimento das letras é explicado pelo peso do visual), o que exige a conjunção causal 'porque' (junto, sem acento). As formas 'por que' (locução interrogativa/relativa) e 'porquê' (substantivo) não se encaixam nessa função sintática."
+    },
+    {
+      "id": "prova6-q5",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 5
+      },
+      "subtopic": "P.6 Emprego das classes de palavras",
+      "stem": "\"Essa também será a incidência de 'vida' e 'amor' (dez vezes cada uma).\" (l. 7-8) O substantivo incidência vem do verbo incidir. Dos verbos a seguir, o único que segue esse mesmo paradigma é",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "abranger",
+          "key": "A"
+        },
+        {
+          "text": "devolver",
+          "key": "B",
+          "explanation": "'Devolver' não forma substantivo em '-ência' ('devolvência' não é palavra da língua); o substantivo correspondente é 'devolução'."
+        },
+        {
+          "text": "incinerar",
+          "key": "C",
+          "explanation": "'Incinerar' não forma substantivo em '-ência'; o correspondente é 'incineração'."
+        },
+        {
+          "text": "perceber",
+          "key": "D",
+          "explanation": "'Perceber' não forma substantivo em '-ência' pelo mesmo padrão; o substantivo é 'percepção', não 'percebência'."
+        },
+        {
+          "text": "iludir",
+          "key": "E",
+          "explanation": "'Iludir' não forma substantivo em '-ência'; o correspondente é 'ilusão'."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "A",
+      "explanationSummary": "O padrão de 'incidir' → 'incidência' (verbo → substantivo abstrato terminado em '-ência') se repete em 'abranger' → 'abrangência', palavra dicionarizada e de uso corrente; nenhum dos demais verbos listados forma substantivo regular nesse mesmo padrão."
+    },
+    {
+      "id": "prova6-q6",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 6
+      },
+      "subtopic": "P.5 Emprego de tempos e modos verbais",
+      "stem": "O verbo ganhar (l. 25), na sua forma usual, é considerado um verbo abundante, apresentando, pois, duas formas de particípio: uma forma regular (ganhado); outra, irregular, supletiva (ganho). Dentre os verbos encontrados no Texto II, qual é aquele que apresenta SOMENTE uma forma irregular?",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Ver (l. 1)",
+          "key": "A"
+        },
+        {
+          "text": "Ficar (l. 1)",
+          "key": "B",
+          "explanation": "'Ficar' é verbo regular, com participio regular único ('ficado'); não é abundante nem tem forma irregular."
+        },
+        {
+          "text": "Ter (l. 19)",
+          "key": "C",
+          "explanation": "'Ter' tem participio regular único ('tido'), sem forma irregular alternativa."
+        },
+        {
+          "text": "Ocorrer (l. 31)",
+          "key": "D",
+          "explanation": "'Ocorrer' tem participio regular único ('ocorrido'), sem forma irregular alternativa."
+        },
+        {
+          "text": "Vingar (l. 35)",
+          "key": "E",
+          "explanation": "'Vingar' tem participio regular único ('vingado'), sem forma irregular alternativa."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "A",
+      "explanationSummary": "'Ver' é verbo cujo particípio corrente é exclusivamente a forma irregular 'visto' (a forma regular 'vido' não é usada na língua-padrão), diferentemente de 'ganhar', que admite as duas formas (abundante). Os demais verbos listados têm apenas a forma regular de particípio."
+    },
+    {
+      "id": "prova6-q7",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 7
+      },
+      "subtopic": "P.10 Regência verbal e nominal",
+      "stem": "Na última fala do Texto II, a forma verbal vingar está com o sentido de \"ter bom êxito\", \"dar certo\". (l. 35) Em qual das frases abaixo o verbo em negrito apresenta a mesma regência de vingar?",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "\"A menção a camelôs e usuários do transporte público ressuscitou velhos preconceitos de classe,\" (l. 9-11)",
+          "key": "A",
+          "explanation": "'Ressuscitou' é verbo transitivo direto, com objeto direto explícito ('velhos preconceitos de classe'); regência diferente da de 'vingar' (intransitivo) nesse sentido."
+        },
+        {
+          "text": "\"– Não me consta que já houvesse um 'diferenciado' negativamente marcado.\" (l. 18-19)",
+          "key": "B",
+          "explanation": "'Consta' é usado impessoalmente com uma oração subordinada substantiva como sujeito, e não como verbo intransitivo comum; regência distinta."
+        },
+        {
+          "text": "\"Não tenho nenhum conhecimento de existência desse 'clichê'.\" (l. 19-20)",
+          "key": "C",
+          "explanation": "'Tenho' é transitivo direto, com objeto direto ('nenhum conhecimento'); regência diferente."
+        },
+        {
+          "text": "\"Parece-me que a origem, aí, foi absolutamente episódica,\" (l. 20-21)",
+          "key": "D",
+          "explanation": "'Parece-me' é construção impessoal com objeto indireto ('me') e oração subordinada como sujeito; regência distinta de 'vingar'."
+        },
+        {
+          "text": "\"[...] aquelas coisas que vêm entre aspas, de brincadeira –\" (l. 35-36)",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "E",
+      "explanationSummary": "'Vingar' no sentido de 'dar certo' é intransitivo, sem exigir complemento obrigatório. O verbo 'vir', em '[...] que vêm entre aspas, de brincadeira', também é usado intransitivamente (com adjuntos adverbiais opcionais), apresentando a mesma regência (verbo intransitivo, sem complemento obrigatório)."
+    },
+    {
+      "id": "prova6-q8",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 8
+      },
+      "subtopic": "P.5 Emprego de tempos e modos verbais",
+      "stem": "Segundo os compêndios gramaticais, existem duas possibilidades de escritura da voz passiva no português. Na frase abaixo, encontra-se uma delas: \"A palavra nunca fora usada até então com viés pejorativo no Brasil.\" (l. 13-14) A outra possibilidade de escritura, na forma passiva, na qual o sentido NÃO se altera é:",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "A palavra nunca se usou até então com viés pejorativo no Brasil.",
+          "key": "A",
+          "explanation": "Emprega o pretérito perfeito simples ('se usou'), alterando o tempo verbal em relação ao original, que está no pretérito mais-que-perfeito ('fora usada')."
+        },
+        {
+          "text": "A palavra nunca se usara até então com viés pejorativo no Brasil.",
+          "key": "B"
+        },
+        {
+          "text": "A palavra nunca se tem usado até então com viés pejorativo no Brasil.",
+          "key": "C",
+          "explanation": "Emprega o pretérito perfeito composto ('se tem usado'), tempo diferente do mais-que-perfeito da frase original."
+        },
+        {
+          "text": "A palavra nunca se usava até então com viés pejorativo no Brasil.",
+          "key": "D",
+          "explanation": "Emprega o pretérito imperfeito ('se usava'), tempo diferente do mais-que-perfeito original."
+        },
+        {
+          "text": "A palavra nunca se usaria até então com viés pejorativo no Brasil.",
+          "key": "E",
+          "explanation": "Emprega o futuro do pretérito ('se usaria'), tempo diferente do mais-que-perfeito original, alterando o sentido temporal."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "B",
+      "explanationSummary": "A voz passiva analítica 'fora usada' (pretérito mais-que-perfeito) equivale, na voz passiva pronominal (sintética), a 'se usara', mantendo o mesmo tempo verbal e o mesmo sentido; as demais opções mudam o tempo verbal e, com isso, o sentido temporal da frase."
+    },
+    {
+      "id": "prova6-q9",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 9
+      },
+      "subtopic": "P.5 Emprego de tempos e modos verbais",
+      "stem": "\"Não me consta que já houvesse um 'diferenciado' negativamente marcado.\" (l. 18-19) A respeito da ocorrência da forma verbal houvesse, destacada no trecho, teceram-se os seguintes comentários: I - A forma verbal houvesse, nessa estrutura, tem valor de existisse, e se apresenta como verbo impessoal. II - O verbo haver, quando impessoal, transmite sua impessoalidade a auxiliares. III - A forma verbal houvesse, nesse trecho, desempenha uma função de verbo auxiliar. É correto o que se afirma em",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "I, apenas.",
+          "key": "A",
+          "explanation": "Está incompleta: a afirmação II também é uma regra gramatical verdadeira (o haver impessoal transmite sua impessoalidade a verbos auxiliares em locuções verbais), devendo ser incluída."
+        },
+        {
+          "text": "II, apenas.",
+          "key": "B",
+          "explanation": "Está incompleta: falta a afirmação I, que corretamente descreve o valor existencial e impessoal de 'houvesse' no trecho."
+        },
+        {
+          "text": "I e II, apenas.",
+          "key": "C"
+        },
+        {
+          "text": "I e III, apenas.",
+          "key": "D",
+          "explanation": "Inclui III, que é falsa: no trecho, 'houvesse' é o próprio verbo principal da oração subordinada (com valor existencial de 'existisse'), não funciona como auxiliar de uma locução verbal composta."
+        },
+        {
+          "text": "I, II e III.",
+          "key": "E",
+          "explanation": "Inclui III, que é falsa pelo motivo acima."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "C",
+      "explanationSummary": "'Houvesse' equivale a 'existisse', empregado impessoalmente (I, correta). É regra gramatical geral que o verbo haver impessoal transmite sua invariabilidade a eventuais auxiliares de locuções verbais, como em 'deve haver' (II, correta, como regra geral). Porém, no trecho analisado, 'houvesse' é o próprio verbo principal da oração, não funcionando como auxiliar de outro verbo (III, incorreta)."
+    },
+    {
+      "id": "prova6-q10",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 10
+      },
+      "subtopic": "P.7 Coordenação e subordinação",
+      "stem": "Considere o trecho do Texto II abaixo. \"[...] colocaram lenha na polêmica sobre a construção de uma estação de metrô na região, onde se concentra parte da elite paulistana.\" (l. 5-7) O emprego do pronome relativo onde está correto. PORQUE Retoma o termo 'na região', que tem valor de lugar físico na oração antecedente. Analisando-se as afirmações acima, conclui-se que",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "as duas afirmações são verdadeiras, e a segunda justifica a primeira.",
+          "key": "A"
+        },
+        {
+          "text": "as duas afirmações são verdadeiras, e a segunda não justifica a primeira.",
+          "key": "B",
+          "explanation": "As duas afirmações são verdadeiras, mas a segunda efetivamente explica/justifica a primeira, pois é exatamente por retomar um antecedente de lugar físico que o emprego de 'onde' é gramaticalmente correto."
+        },
+        {
+          "text": "a primeira afirmação é verdadeira, e a segunda é falsa.",
+          "key": "C",
+          "explanation": "A segunda afirmação também é verdadeira: 'onde' retoma 'região', que designa um lugar físico."
+        },
+        {
+          "text": "a primeira afirmação é falsa, e a segunda é verdadeira.",
+          "key": "D",
+          "explanation": "A primeira afirmação também é verdadeira: o emprego de 'onde' está de fato correto nesse contexto."
+        },
+        {
+          "text": "as duas afirmações são falsas.",
+          "key": "E",
+          "explanation": "Ambas as afirmações são verdadeiras, não falsas."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "A",
+      "explanationSummary": "O pronome relativo 'onde' deve retomar antecedente que indique lugar físico. Como 'região' é exatamente esse tipo de antecedente, o emprego de 'onde' está correto, e essa é precisamente a razão (justificativa) apresentada na segunda afirmação."
+    },
+    {
+      "id": "prova6-q11",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 11
+      },
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "The communicative intention of Text I is to",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "classify all the economic risks Brazil will certainly run if it insists on extracting oil at great depth.",
+          "key": "A",
+          "explanation": "The text discusses risks (Dutch disease, oil curse) but does not claim they are certain ('will certainly run'); it frames them as dangers to be managed, not an exhaustive classification."
+        },
+        {
+          "text": "suggest that Brazil could soon be ranked as one of the four main oil producers in the whole world.",
+          "key": "B",
+          "explanation": "The text mentions Brazil could jump from 15th to 5th in oil reserve rankings, not to the 'four main' producers in the world."
+        },
+        {
+          "text": "argue that Brazil should try to avoid potential dangers associated to its recent deepwater oil discoveries.",
+          "key": "C"
+        },
+        {
+          "text": "report on the rising tensions between China and Brazil over the manufacturing sector of the world economy.",
+          "key": "D",
+          "explanation": "The tensions mentioned are more general (competition for resources as China grows), not specifically a rising bilateral tension between China and Brazil over manufacturing."
+        },
+        {
+          "text": "announce the expected growth of the oil industry in Brazil, Nigeria and Venezuela in the coming decades.",
+          "key": "E",
+          "explanation": "Nigeria and Venezuela are cited only as examples of countries suffering from the 'oil curse', not as countries whose oil industry growth is being announced alongside Brazil's."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "C",
+      "explanationSummary": "The text presents Brazil's new deepwater oil discoveries as an opportunity that carries real risks (Dutch disease, oil curse) and argues, through experts' opinions, that the country must manage this wisely to avoid these dangers — which matches option C."
+    },
+    {
+      "id": "prova6-q12",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 12
+      },
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "According to paragraphs 5 and 6 (lines 28-38), Dutch disease is a",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "concept that explains the relationship between a stronger currency, due to the discovery of vast gas deposits, and the decline in the manufacturing sector.",
+          "key": "A"
+        },
+        {
+          "text": "theory that can justify the increase in energy prices and the strengthening of the manufacturing sector.",
+          "key": "B",
+          "explanation": "The text describes Dutch disease as leading to a withering (weakening), not a strengthening, of the manufacturing sector."
+        },
+        {
+          "text": "dangerous form of economic malaise that can only victimize already affluent nations.",
+          "key": "C",
+          "explanation": "The text does not state that Dutch disease can only affect already affluent nations; it is presented as a risk for Brazil, a developing economy in this context."
+        },
+        {
+          "text": "severe economic disease that is affecting the economy of countries like the Netherlands.",
+          "key": "D",
+          "explanation": "The text describes Dutch disease as named after what happened in the Netherlands in the 1970s (past), not as something currently affecting the Netherlands' economy in the present."
+        },
+        {
+          "text": "a type of problem known as the 'oil curse' that affects the booming sector of oil extraction.",
+          "key": "E",
+          "explanation": "The text distinguishes Dutch disease from the 'oil curse', describing the latter as an even more severe, related but distinct phenomenon, not the same thing."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "A",
+      "explanationSummary": "The text explicitly defines Dutch disease as the phenomenon in which a currency strengthens due to a natural-resource discovery (in the historical case, gas) combined with rising energy prices, causing the manufacturing sector to wither — matching option A."
+    },
+    {
+      "id": "prova6-q13",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 13
+      },
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "According to paragraphs 9 and 10 (lines 55-65), investing in R&D",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "may open new markets for the Brazilian technological sector of oil extraction at great depth.",
+          "key": "A"
+        },
+        {
+          "text": "may justify Petrobras' plans to reduce the development of its research center.",
+          "key": "B",
+          "explanation": "The text states Petrobras has invested in EXPANDING its research center, not reducing its development."
+        },
+        {
+          "text": "is surely leading Brazilian engineers to work for African countries rich in natural resources.",
+          "key": "C",
+          "explanation": "The text says Brazilian engineers COULD lead the way in markets with similar geology, such as Africa, as a possibility, not that they are already surely working there."
+        },
+        {
+          "text": "will pay immediate dividends in the challenging sector of geology and oil exploitation.",
+          "key": "D",
+          "explanation": "The text frames the R&D dividend as a long-term goal ('the other long-term dividend'), not an immediate payoff."
+        },
+        {
+          "text": "can explain why Petrobras is spending $800m - $900m to extract oil at great depth.",
+          "key": "E",
+          "explanation": "The $800m-$900m figure refers to Petrobras' R&D spending itself, not to the cost of extracting oil at great depth; the sentence would be circular/incorrect as a causal explanation."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "A",
+      "explanationSummary": "The text states that if Brazilian engineers perfect the challenging technique of extracting oil from beneath deep salt layers, they 'can lead the way in other markets with similar geology, such as Africa' — matching option A."
+    },
+    {
+      "id": "prova6-q14",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 14
+      },
+      "subtopic": "I.2 Itens gramaticais relevantes para a compreensão dos conteúdos semânticos",
+      "stem": "Based on the meanings in Text I, the two words are antonymous in",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "\"...realise...\" (line 23) – understand",
+          "key": "A",
+          "explanation": "'Realise' (achieve/fulfill) and 'understand' are closer to synonyms than antonyms in general usage, not a clear opposite pair."
+        },
+        {
+          "text": "\"...stretch...\" (line 42) – bridge",
+          "key": "B",
+          "explanation": "'Stretch' (extend across) and 'bridge' (connect) are related in meaning, not opposites."
+        },
+        {
+          "text": "\"...curb...\" (line 46) – foster",
+          "key": "C"
+        },
+        {
+          "text": "\"...faltered...\" (line 77) – halted",
+          "key": "D",
+          "explanation": "'Faltered' (weakened/stumbled but continued) and 'halted' (completely stopped) are close in degree, not true antonyms."
+        },
+        {
+          "text": "\"...blaming...\" (line 78) – reproaching",
+          "key": "E",
+          "explanation": "'Blaming' and 'reproaching' are near-synonyms (both express attributing fault), not antonyms."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "C",
+      "explanationSummary": "'Curb' means to restrict or hold back, while 'foster' means to encourage or promote — these are true antonyms, unlike the other listed pairs, which are closer to synonyms or near-synonyms."
+    },
+    {
+      "id": "prova6-q15",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 15
+      },
+      "subtopic": "I.2 Itens gramaticais relevantes para a compreensão dos conteúdos semânticos",
+      "stem": "Concerning the referent to the pronoun it, in the fragments below,",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "in \"It looks and smells like ordinary crude oil.\" (line 5), it refers to \"beaker\" (line 4).",
+          "key": "A",
+          "explanation": "'It' here refers to the black liquid/crude oil flowing into the beaker, not to the beaker itself."
+        },
+        {
+          "text": "in \"The danger for Brazil, if it fails to manage this windfall wisely, is of falling victim to 'Dutch disease.'\" (lines 28-29), it refers to \"danger\" (line 28).",
+          "key": "B",
+          "explanation": "'It' here refers to 'Brazil', the subject that must manage the windfall wisely, not to 'danger'."
+        },
+        {
+          "text": "in \"...Brazilian engineers see it as a new frontier.\" (lines 59-60), it refers to \"coast\" (line 58).",
+          "key": "C",
+          "explanation": "'It' here refers to the challenging task of extracting oil from beneath deep salt layers, not to 'coast'."
+        },
+        {
+          "text": "in \"making it harder for Brazilian exporters of manufactured goods.\" (lines 75-76), it refers to \"stream\" (line 75).",
+          "key": "D",
+          "explanation": "This 'it' is an anticipatory (dummy) subject in the construction 'making it harder for X to do Y'; it does not refer back to 'stream'."
+        },
+        {
+          "text": "in \"'it's just going to be starved for those resources,' says Harvard's Prof Rogoff.\" (lines 81-83), it refers to \"China\" (line 81).",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "E",
+      "explanationSummary": "In the quoted remark by Prof Rogoff about growing demand for resources, 'it' refers back to 'China', the subject of the sentence about continued growth and resource needs."
+    },
+    {
+      "id": "prova6-q16",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 16
+      },
+      "subtopic": "I.2 Itens gramaticais relevantes para a compreensão dos conteúdos semânticos",
+      "stem": "In \"Without a 'firm local content policy', says Petrobras CEO, Dutch disease and the oil curse will take hold.\" (lines 50-52), \"take hold\" means to",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "become more easily controlled.",
+          "key": "A",
+          "explanation": "'Take hold' expresses the opposite idea: something becoming entrenched and hard to control, not easier to control."
+        },
+        {
+          "text": "become stronger and difficult to stop.",
+          "key": "B"
+        },
+        {
+          "text": "be completely defeated and ineffective.",
+          "key": "C",
+          "explanation": "'Take hold' means to become established/dominant, not to be defeated or rendered ineffective."
+        },
+        {
+          "text": "be absolutely harmless and disappointing.",
+          "key": "D",
+          "explanation": "'Take hold' implies the phenomena become significant and dangerous, not harmless."
+        },
+        {
+          "text": "be transformed into very powerful assets.",
+          "key": "E",
+          "explanation": "'Take hold' does not imply transformation into assets; it refers to a problem becoming entrenched, not something being turned into something positive."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "B",
+      "explanationSummary": "The idiom 'take hold' means to become firmly established and difficult to reverse or stop, which matches the warning tone of the sentence about Dutch disease and the oil curse becoming entrenched problems without a firm local content policy."
+    },
+    {
+      "id": "prova6-q17",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 17
+      },
+      "subtopic": "I.2 Itens gramaticais relevantes para a compreensão dos conteúdos semânticos",
+      "stem": "The boldfaced item is synonymous with the expression in parentheses in",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "\"Nevertheless, for Brazil, this represents something much more spectacular.\" (lines 6-7) – (Thus)",
+          "key": "A",
+          "explanation": "'Nevertheless' expresses contrast/concession, while 'Thus' expresses a consequence; they are not synonymous."
+        },
+        {
+          "text": "\"...neither the company nor the country's oil industry has so far been big enough to become a government cash cow.\" (lines 39-41) – (meanwhile)",
+          "key": "B",
+          "explanation": "'So far' means 'until now', while 'meanwhile' means 'at the same time'; they express different ideas."
+        },
+        {
+          "text": "\"However, 'if we have a firm and successful local content policy, no\" (lines 52-53) – (Moreover)",
+          "key": "C",
+          "explanation": "'However' expresses contrast, while 'Moreover' expresses addition; they are not synonymous."
+        },
+        {
+          "text": "\"'because other sectors in the economy are going to grow as fast as Petrobras.'\" (lines 53-54) – (due to the fact that)",
+          "key": "D"
+        },
+        {
+          "text": "\"Ultimately, Brazil's ability to avoid Dutch disease will depend not just on how the money from the oil is spent.\" (lines 66-68) – (Furthermore)",
+          "key": "E",
+          "explanation": "'Ultimately' means 'in the end/finally', while 'Furthermore' expresses addition; they are not synonymous."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "D",
+      "explanationSummary": "'Because' and 'due to the fact that' both introduce a cause/reason and are synonymous causal connectors, unlike the other pairs listed, which combine words with different logical values (contrast, addition, time)."
+    },
+    {
+      "id": "prova6-q18",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 18
+      },
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "Comparing Texts I and II,",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "only Text I mentions an environmental disaster derived from deepwater oil prospection.",
+          "key": "A",
+          "explanation": "It is Text II, not Text I, that mentions an environmental disaster (the Gulf of Mexico oil spill) related to deepwater drilling."
+        },
+        {
+          "text": "only Text II reports on China's intensive economic growth and absolute need of commodities.",
+          "key": "B",
+          "explanation": "Text I also discusses China's growth and need for resources (e.g., the closing quote about China being 'starved for those resources'), so this is not exclusive to Text II."
+        },
+        {
+          "text": "neither Text I nor Text II express concern for the implications of the explorations of offshore oil deposits to local economies.",
+          "key": "C",
+          "explanation": "Both texts express concern about the implications of offshore oil exploration (Dutch disease/oil curse in Text I; the shift of drilling activity worldwide in Text II)."
+        },
+        {
+          "text": "both Text I and Text II present Brazil's potential of holding an outstanding position concerning worldwide deepwater reserves and exploration.",
+          "key": "D"
+        },
+        {
+          "text": "Text I mentions Brazil, Nigeria and Venezuela to criticize their addiction to oil revenues, while Text II mentions these countries to illustrate successful examples of conventional oil prospection.",
+          "key": "E",
+          "explanation": "Text I mentions Nigeria and Venezuela as examples of countries suffering the 'oil curse', not to praise them, and Text II mentions similar regions as places where deepwater prospecting is expanding, not as models of 'conventional' (shallow) oil prospection."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "D",
+      "explanationSummary": "Text I highlights Brazil's giant deepwater discoveries putting it among the world's largest offshore oil holders, and Text II states Petrobras 'already controls a quarter of global deepwater operations' with huge proven reserves — both texts stress Brazil's outstanding position in worldwide deepwater exploration."
+    },
+    {
+      "id": "prova6-q19",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 19
+      },
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "According to Text II, in spite of the oil spill disaster in the Gulf of Mexico,",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "the US will soon surpass China in energy consumption.",
+          "key": "A",
+          "explanation": "The text states the opposite trend: China is set to overtake the U.S. in energy consumption by 2014, not the other way around."
+        },
+        {
+          "text": "the conventional drilling of oil and gas is seen as a taboo now.",
+          "key": "B",
+          "explanation": "The text says deep-water drilling 'might seem taboo just now', but clarifies that, in fact, prospecting is just getting underway in various regions — the taboo perception, not the practice itself, is what is mentioned."
+        },
+        {
+          "text": "in twenty years, the whole world will need 65 million barrels a day.",
+          "key": "C",
+          "explanation": "The text states the world will need to find 65 million ADDITIONAL barrels a day BY 2030, not that the whole world will need exactly 65 million barrels a day in twenty years."
+        },
+        {
+          "text": "energy consumption of India and China will double in ten years' time.",
+          "key": "D",
+          "explanation": "The text says India and China's energy consumption will TRIPLE by 2030 compared to 1990 levels, not double in ten years."
+        },
+        {
+          "text": "deepwater oil and gas prospecting has not been halted in other regions of the globe.",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "E",
+      "explanationSummary": "Despite the Gulf of Mexico disaster making deep-water drilling seem taboo, the text explicitly states that 'the quest for oil and gas in the most difficult places on the planet is just getting underway', citing ongoing prospecting off Ghana, Nigeria, the Black Sea, Venezuela, and Brazil — confirming that deepwater prospecting has not been halted elsewhere."
+    },
+    {
+      "id": "prova6-q20",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 20
+      },
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "In Text II, Herbert illustrates the possibility of \"...idled rigs heading to other shores.\" (line 26) EXCEPT when he mentions",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "prospection in ultra-deepwater reserves off the coasts of Ghana and Nigeria.",
+          "key": "A",
+          "explanation": "This is cited as an actual example of prospecting already taking place elsewhere, illustrating rigs operating in 'other shores'."
+        },
+        {
+          "text": "deepwater operations in the sulfur-laden depths of the Black Sea.",
+          "key": "B",
+          "explanation": "This is also cited as an actual example of ongoing deepwater operations elsewhere."
+        },
+        {
+          "text": "the quest for oil in the tar sands of Venezuela's Orinoco Basin.",
+          "key": "C",
+          "explanation": "This is also cited as an actual example of ongoing oil prospecting elsewhere."
+        },
+        {
+          "text": "the suspension of the US offshore-drilling moratorium.",
+          "key": "D"
+        },
+        {
+          "text": "Brazil's drillings four miles below the Atlantic.",
+          "key": "E",
+          "explanation": "This is also cited as an actual example of deepwater prospecting taking place (in Brazil), illustrating the same phenomenon."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "D",
+      "explanationSummary": "The suspension (or continuation) of the US offshore-drilling moratorium is presented as the hypothetical CAUSE that would trigger rigs moving to other shores ('If the U.S. offshore-drilling moratorium drags on, look for idled rigs heading to other shores'), not as one of the actual examples of prospecting already happening in other regions, unlike the other four options."
+    },
+    {
+      "id": "psjpn2018-q1",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 1
+      },
+      "subtopic": "P.1 Compreensão de textos",
+      "stem": "De acordo com o texto, o \"vício tecnológico\" pode ser explicado por",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "curiosidade de testar produtos que envolvam experiências de realidade virtual e de inteligência artificial.",
+          "key": "A",
+          "explanation": "A curiosidade por essas tecnologias é apenas o gancho inicial da reportagem, não a explicação central dada pelo neurocientista para o vício tecnológico."
+        },
+        {
+          "text": "dependência de relacionamento virtual que só pode ser obtido pelo acesso a redes sociais.",
+          "key": "B",
+          "explanation": "O texto não afirma que o vício tecnológico decorra de uma dependência de relacionamento virtual restrita a redes sociais."
+        },
+        {
+          "text": "necessidade de transformar aparelhos em elementos sagrados pelo excesso de religiosidade.",
+          "key": "C",
+          "explanation": "O texto usa a comparação com objetos sagrados apenas para ilustrar a intensidade da ativação cerebral, não afirma que o vício resulte de 'transformar aparelhos em elementos sagrados'."
+        },
+        {
+          "text": "prazer produzido pelo status social derivado da utilização de um produto que quase ninguém possui.",
+          "key": "D"
+        },
+        {
+          "text": "tendência à manifestação de uma personalidade dominada por vícios como jogos de azar e alcoolismo.",
+          "key": "E",
+          "explanation": "Jogos de azar e alcoolismo são citados como outros comportamentos impulsivos possíveis, não como explicação do vício tecnológico em si."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "D",
+      "explanationSummary": "O texto explica que a compra de novidades tecnológicas satisfaz a necessidade humana básica de status social: sentimo-nos 'melhores e superiores' ao possuir um produto que quase ninguém tem, o que corresponde exatamente à alternativa D."
+    },
+    {
+      "id": "psjpn2018-q2",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 2
+      },
+      "subtopic": "P.3 Mecanismos de coesão textual",
+      "stem": "De acordo com o ordenamento das ideias no texto, observa-se que, depois de explicar a função da dopamina no cérebro, o texto se refere à ideia de que",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "as pessoas podem desenvolver comportamentos impulsivos, como o gasto excessivo de dinheiro em aparelhos eletrônicos que nem sempre trazem novidade.",
+          "key": "A"
+        },
+        {
+          "text": "é preciso refletir sobre as causas de tanta gente se dispor a dormir em filas gigantescas só para ser um dos primeiros a comprar um novo modelo de smartphone.",
+          "key": "B",
+          "explanation": "Essa reflexão sobre as filas é apresentada no início do texto, antes da explicação sobre a dopamina, não depois."
+        },
+        {
+          "text": "o mapeamento cerebral mostra que imagens de produtos tecnológicos ativam as mesmas partes do cérebro que um objeto sagrado para pessoas religiosas.",
+          "key": "C",
+          "explanation": "O mapeamento cerebral relacionado a objetos sagrados é apresentado antes da explicação sobre a dopamina, não depois."
+        },
+        {
+          "text": "o nosso cérebro aprendeu a suprir necessidades básicas para a sobrevivência e a perpetuação da espécie, tais como sexo, segurança e status social.",
+          "key": "D",
+          "explanation": "A explicação sobre necessidades básicas (sexo, segurança, status social) também antecede a explicação sobre a dopamina."
+        },
+        {
+          "text": "os profissionais da área de tecnologia têm demonstrado grande interesse por produtos relacionados a experiências de realidade virtual e à utilização de inteligência artificial.",
+          "key": "E",
+          "explanation": "O interesse dos profissionais de tecnologia é mencionado no primeiro parágrafo, bem antes da explicação sobre a dopamina."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "A",
+      "explanationSummary": "Imediatamente após explicar que a dopamina é liberada como sensação de recompensa, o texto passa a discutir o 'grande problema' de que a busca excessiva por recompensas pode gerar comportamentos impulsivos, incluindo o gasto excessivo de dinheiro em aparelhos eletrônicos sem novidade real — o que corresponde à alternativa A."
+    },
+    {
+      "id": "psjpn2018-q3",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 3
+      },
+      "subtopic": "P.6 Emprego das classes de palavras",
+      "stem": "Alguns adjetivos do texto enfatizam a gravidade do \"vício da tecnologia\". O grupo em que todas as palavras têm essa função é:",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "gigantescas (l. 14), astronômicas (l. 17), desenfreada (l. 22)",
+          "key": "A"
+        },
+        {
+          "text": "excessiva (l. 46), impulsivos (l. 48), eletrônicos (l. 52)",
+          "key": "B",
+          "explanation": "'Eletrônicos' é um adjetivo meramente classificador (tipo de aparelho), sem função de intensificar ou enfatizar gravidade, o que quebra a uniformidade do grupo."
+        },
+        {
+          "text": "absurda (l. 57), inovadora (l. 59), momentâneo (l. 63)",
+          "key": "C",
+          "explanation": "'Inovadora' e 'momentâneo' não enfatizam gravidade: descrevem, respectivamente, uma qualidade neutra/positiva do produto e a duração breve de uma sensação, não a gravidade do vício."
+        },
+        {
+          "text": "prática (l. 59), elevado (l. 56), problematizada (l. 51)",
+          "key": "D",
+          "explanation": "'Prática' não enfatiza gravidade; descreve utilidade cotidiana, quebrando a uniformidade do grupo."
+        },
+        {
+          "text": "suficiente (l. 67), superiores (l. 29), sagrado (l. 37)",
+          "key": "E",
+          "explanation": "'Suficiente' e 'sagrado' não enfatizam a gravidade do vício tecnológico; descrevem, respectivamente, uma condição de resultado e uma comparação religiosa."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "A",
+      "explanationSummary": "'Gigantescas' (filas gigantescas), 'astronômicas' (cifras astronômicas) e 'desenfreada' (corrida desenfreada) são adjetivos que intensificam/exageram a descrição dos comportamentos ligados ao vício tecnológico, enfatizando sua gravidade de forma consistente, o que não ocorre nos demais grupos."
+    },
+    {
+      "id": "psjpn2018-q4",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 4
+      },
+      "subtopic": "P.8 Emprego dos sinais de pontuação",
+      "stem": "A vírgula foi plenamente empregada de acordo com as exigências da norma-padrão da língua portuguesa em:",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "A conexão é feita por meio de uma plataforma específica, e os conteúdos, podem ser acessados pelos dispositivos móveis dos passageiros.",
+          "key": "A",
+          "explanation": "A vírgula antes de 'podem ser acessados' separa indevidamente o sujeito ('os conteúdos') do seu verbo, o que a norma-padrão não admite."
+        },
+        {
+          "text": "O mercado brasileiro de automóveis, ainda é muito grande, porém não é capaz de absorver uma presença maior de produtos vindos do exterior.",
+          "key": "B",
+          "explanation": "A vírgula depois de 'automóveis' separa indevidamente o sujeito ('O mercado brasileiro de automóveis') do seu verbo ('ainda é'), violando a norma-padrão."
+        },
+        {
+          "text": "Depois de chegarem às telas dos computadores e celulares, as notícias estarão disponíveis em voos internacionais.",
+          "key": "C"
+        },
+        {
+          "text": "Os últimos dados mostram que, muitas economias apresentam crescimento e inflação baixa, fazendo com que os juros cresçam pouco.",
+          "key": "D",
+          "explanation": "A vírgula depois de 'que' separa indevidamente a conjunção integrante do sujeito da oração subordinada substantiva ('muitas economias apresentam...'), o que não é permitido."
+        },
+        {
+          "text": "Pode ser que haja uma grande procura de carros importados, mas as montadoras vão fazer os cálculos e ver, se a importação vale a pena.",
+          "key": "E",
+          "explanation": "A vírgula antes de 'se a importação vale a pena' separa indevidamente o verbo 'ver' do seu objeto (a oração subordinada substantiva objetiva direta), violação da norma-padrão."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "C",
+      "explanationSummary": "A vírgula em 'Depois de chegarem às telas dos computadores e celulares, as notícias estarão disponíveis...' separa corretamente um adjunto adverbial (oração subordinada adverbial temporal antecipada) do restante da oração principal, uso plenamente de acordo com a norma-padrão."
+    },
+    {
+      "id": "psjpn2018-q5",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 5
+      },
+      "subtopic": "P.11 Emprego do sinal indicativo de crase",
+      "stem": "De acordo com a norma-padrão da língua portuguesa, o acento grave indicativo da crase deve ser empregado na palavra destacada em:",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Os novos lançamentos de smartphones apresentam, em geral, pequena variação de funções quando comparados a versões anteriores.",
+          "key": "A",
+          "explanation": "'Versões anteriores' é um substantivo feminino empregado sem artigo definido (sentido indeterminado/genérico), não exigindo a crase."
+        },
+        {
+          "text": "Estudantes do ensino médio fizeram uma pesquisa junto a crianças do ensino fundamental para ver como elas se comportam no ambiente virtual.",
+          "key": "B",
+          "explanation": "'Crianças do ensino fundamental' é um substantivo feminino empregado sem artigo definido (sentido indeterminado/genérico), não exigindo a crase."
+        },
+        {
+          "text": "O acesso dos jovens a redes sociais tem causado enormes prejuízos ao seu desempenho escolar, conforme o depoimento de professores.",
+          "key": "C",
+          "explanation": "'Redes sociais' é um substantivo feminino empregado sem artigo definido (sentido indeterminado/genérico), não exigindo a crase."
+        },
+        {
+          "text": "Os consumidores compulsivos sujeitam-se a ficar horas na fila para serem os primeiros que comprarão os novos lançamentos.",
+          "key": "D",
+          "explanation": "A preposição 'a' antecede o verbo no infinitivo ('ficar'), contexto em que a crase nunca ocorre."
+        },
+        {
+          "text": "As pessoas precisam ficar atentas a fatura do cartão de crédito para não serem surpreendidas com valores muito altos.",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "E",
+      "explanationSummary": "Em 'atentas a fatura do cartão de crédito', 'fatura' é um substantivo feminino específico e determinado (a fatura em questão), exigindo o artigo definido feminino subjacente à preposição 'a', o que configura a crase ('atentas à fatura')."
+    },
+    {
+      "id": "psjpn2018-q6",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 6
+      },
+      "subtopic": "P.3 Mecanismos de coesão textual",
+      "stem": "A ideia a que a expressão destacada se refere está explicitada adequadamente entre colchetes em:",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "\"relacionados a experiências de realidade virtual e à utilização de inteligência artificial — que hoje é um dos temas que mais desperta interesse em profissionais da área\" (l. 5-8) [experiências de realidade virtual]",
+          "key": "A",
+          "explanation": "O pronome 'que' liga-se ao antecedente mais próximo, 'a utilização de inteligência artificial', não a 'experiências de realidade virtual'."
+        },
+        {
+          "text": "\"tendo em vista a ampliação do uso desse tipo de tecnologia nos mais diversos segmentos\" (l. 8-9) [inteligência artificial]",
+          "key": "B"
+        },
+        {
+          "text": "\"a compra de uma novidade tecnológica atende a essa última necessidade citada\" (l. 27-28) [segurança]",
+          "key": "C",
+          "explanation": "'Essa última necessidade citada' refere-se à última das três necessidades mencionadas (sexo, segurança e status social), ou seja, 'status social', não 'segurança'."
+        },
+        {
+          "text": "\"O ato de seguir esse impulso cerebral e comprar o mais novo lançamento tecnológico dispara em nosso cérebro a liberação de um hormônio chamado dopamina\" (l. 40-43) [mapeamento cerebral]",
+          "key": "D",
+          "explanation": "'Esse impulso cerebral' retoma o impulso relacionado à liberação de dopamina descrito na frase anterior, não o 'mapeamento cerebral' (um estudo mencionado em outro trecho)."
+        },
+        {
+          "text": "\"Ele é liberado quando nosso cérebro identifica algo que represente uma recompensa.\" (l. 44-45) [impulso cerebral]",
+          "key": "E",
+          "explanation": "'Ele' retoma 'um hormônio chamado dopamina', mencionado na frase imediatamente anterior, não 'impulso cerebral'."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "B",
+      "explanationSummary": "Em 'a ampliação do uso desse tipo de tecnologia', a expressão 'desse tipo de tecnologia' retoma o antecedente mais próximo mencionado no trecho anterior, 'a utilização de inteligência artificial', tema que 'desperta interesse em profissionais da área' e cujo uso vem se ampliando em diversos segmentos."
+    },
+    {
+      "id": "psjpn2018-q7",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 7
+      },
+      "subtopic": "P.3 Mecanismos de coesão textual",
+      "stem": "No trecho \"Nesse sentido, a compra de uma novidade tecnológica atende a essa última necessidade citada: nós nos sentimos melhores e superiores, ainda que momentaneamente, quando surgimos em nossos círculos sociais com um produto que quase ninguém ainda possui.\" (l. 27-32), os dois pontos poderiam ser substituídos, sem alterar a relação entre as ideias, por",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "mas",
+          "key": "A",
+          "explanation": "'Mas' introduziria uma relação de oposição/contraste, incompatível com a relação explicativa estabelecida pelos dois pontos no trecho."
+        },
+        {
+          "text": "para",
+          "key": "B",
+          "explanation": "'Para' introduziria uma relação de finalidade, o que não corresponde à relação explicativa/causal presente no trecho."
+        },
+        {
+          "text": "embora",
+          "key": "C",
+          "explanation": "'Embora' introduziria uma relação de concessão, incompatível com a explicação que os dois pontos apresentam."
+        },
+        {
+          "text": "porque",
+          "key": "D"
+        },
+        {
+          "text": "portanto",
+          "key": "E",
+          "explanation": "'Portanto' introduziria uma relação de conclusão/consequência, com sentido invertido em relação à explicação (causa) que os dois pontos introduzem."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "D",
+      "explanationSummary": "Os dois pontos, nesse trecho, têm valor explicativo: o que vem depois deles explica/justifica por que a compra de uma novidade atende à necessidade de status social. Essa relação de causa/explicação equivale ao uso da conjunção causal 'porque'."
+    },
+    {
+      "id": "psjpn2018-q8",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 8
+      },
+      "subtopic": "P.12 Colocação dos pronomes átonos",
+      "stem": "Segundo as exigências da norma-padrão da língua portuguesa, o pronome destacado foi utilizado na posição correta em:",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Os jornais noticiaram que alguns países mobilizam-se para combater a disseminação de notícias falsas nas redes sociais.",
+          "key": "A",
+          "explanation": "A conjunção integrante 'que', que introduz a oração subordinada, é palavra atrativa e exige próclise ('que...se mobilizam'); a ênclise em 'mobilizam-se' viola a norma-padrão."
+        },
+        {
+          "text": "Para criar leis eficientes no combate aos boatos, sempre deve-se ter em mente que o problema de divulgação de notícias falsas é grave e muito atual.",
+          "key": "B",
+          "explanation": "O advérbio 'sempre', imediatamente antes do verbo, é palavra atrativa e exige próclise ('sempre se deve'); a ênclise em 'deve-se' viola a norma-padrão."
+        },
+        {
+          "text": "Entre os numerosos usuários da internet, constata-se um sentimento generalizado de reprovação à prática de divulgação de inverdades.",
+          "key": "C"
+        },
+        {
+          "text": "Uma nova lei contra as fake news promulgada na Alemanha não aplica-se aos sites e redes sociais com menos de 2 milhões de membros.",
+          "key": "D",
+          "explanation": "O advérbio de negação 'não', imediatamente antes do verbo, é palavra atrativa clássica e exige próclise ('não se aplica'); a ênclise em 'aplica-se' viola a norma-padrão."
+        },
+        {
+          "text": "Uma vultosa multa é, muitas vezes, o estímulo mais eficaz para que adote-se a conduta correta em relação à reputação das celebridades.",
+          "key": "E",
+          "explanation": "A conjunção subordinativa 'para que' é palavra atrativa e exige próclise ('para que se adote'); a ênclise em 'adote-se' viola a norma-padrão."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "C",
+      "explanationSummary": "Em 'Entre os numerosos usuários da internet, constata-se...', o período começa por um adjunto adverbial deslocado seguido de vírgula, sem nenhuma palavra atrativa imediatamente antes do verbo; nesse contexto, a ênclise ('constata-se') está de acordo com a norma-padrão."
+    },
+    {
+      "id": "psjpn2018-q9",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 9
+      },
+      "subtopic": "P.9 Concordância verbal e nominal",
+      "stem": "A concordância do verbo destacado foi realizada de acordo com as exigências da norma-padrão da língua portuguesa em:",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Com a corrida desenfreada pelas versões mais atuais dos smartphones, evidenciou-se atitudes agressivas e violentas por parte dos usuários.",
+          "key": "A",
+          "explanation": "O sujeito da construção com 'se' apassivador é o plural 'atitudes agressivas e violentas'; o verbo deveria concordar no plural ('evidenciaram-se'), não no singular."
+        },
+        {
+          "text": "Devido à utilização de estratégias de marketing, desenvolveu-se, entre os jovens, a ideia de que a posse de novos aparelhos eletrônicos é garantia de sucesso.",
+          "key": "B"
+        },
+        {
+          "text": "É necessário que se envie a todas as escolas do país vídeos educacionais que permitam esclarecer os jovens sobre o vício da tecnologia.",
+          "key": "C",
+          "explanation": "O sujeito é o plural 'vídeos educacionais'; o verbo deveria concordar no plural ('se enviem'), não no singular 'envie'."
+        },
+        {
+          "text": "É preciso educar as novas gerações para que se reduza os comportamentos compulsivos relacionados ao uso das novas tecnologias.",
+          "key": "D",
+          "explanation": "O sujeito é o plural 'os comportamentos compulsivos'; o verbo deveria concordar no plural ('se reduzam'), não no singular 'reduza'."
+        },
+        {
+          "text": "Nos países mais industrializados, comprovou-se os danos psicológicos e o consumismo exagerado causados pelo vício da tecnologia.",
+          "key": "E",
+          "explanation": "O sujeito composto plural 'os danos psicológicos e o consumismo exagerado' exige o verbo no plural ('comprovaram-se'), não no singular 'comprovou-se'."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "B",
+      "explanationSummary": "Em 'desenvolveu-se... a ideia de que...', o sujeito da construção com 'se' apassivador é o substantivo singular 'a ideia', com o qual o verbo 'desenvolveu-se' concorda corretamente no singular, atendendo à norma-padrão."
+    },
+    {
+      "id": "psjpn2018-q10",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 10
+      },
+      "subtopic": "P.10 Regência verbal e nominal",
+      "stem": "Considere a seguinte frase: \"Os lançamentos tecnológicos a que o autor se refere podem resultar em comportamentos impulsivos nos consumidores desses produtos\". A utilização da preposição destacada a é obrigatória para atender às exigências da regência do verbo \"referir-se\", de acordo com a norma-padrão da língua portuguesa. É também obrigatório o uso de uma preposição antecedendo o pronome que destacado em:",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Os consumidores, ao adquirirem um produto que quase ninguém possui, recém-lançado no mercado, passam a ter uma sensação de superioridade.",
+          "key": "A",
+          "explanation": "'Possuir' é verbo transitivo direto (não exige preposição); 'que' funciona como objeto direto de 'possui', sem preposição obrigatória."
+        },
+        {
+          "text": "Muitos aparelhos difundidos no mercado nem sempre trazem novidades que justifiquem seu preço elevado em relação ao modelo anterior.",
+          "key": "B",
+          "explanation": "'Justificar' é verbo transitivo direto; 'que' funciona como sujeito de 'justifiquem', sem preposição obrigatória."
+        },
+        {
+          "text": "O estudo de mapeamento cerebral que o pesquisador realizou foi importante para mostrar que o vício em novidades tecnológicas cresce cada vez mais.",
+          "key": "C",
+          "explanation": "'Realizar' é verbo transitivo direto; 'que' funciona como objeto direto de 'realizou', sem preposição obrigatória."
+        },
+        {
+          "text": "O hormônio chamado dopamina é responsável por causar sensações de prazer que levam as pessoas a se sentirem recompensadas.",
+          "key": "D",
+          "explanation": "'Que' é sujeito do verbo 'levam' nessa oração, função que não exige preposição antecedente."
+        },
+        {
+          "text": "As pessoas, na maioria das vezes, gastam muito mais do que o seu orçamento permite em aparelhos que elas não necessitam.",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "E",
+      "explanationSummary": "O verbo 'necessitar', quando empregado no sentido de 'ter necessidade de algo', rege a preposição 'de' ('necessitar de algo'); assim, em 'aparelhos que elas não necessitam', a norma-padrão exige a preposição antes do pronome relativo: 'aparelhos DE que elas não necessitam', no mesmo padrão de regência obrigatória do exemplo com 'referir-se a'."
+    },
+    {
+      "id": "psjpn2018-q11",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 11
+      },
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "The main purpose of Text I is to",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "predict the imminent decrease of global oil demands in the near future.",
+          "key": "A",
+          "explanation": "The text states that oil demand continues to grow (although at a decreasing pace), so it does not predict an imminent decrease in global oil demand."
+        },
+        {
+          "text": "present an overview of world energy scenarios for the coming decades.",
+          "key": "B"
+        },
+        {
+          "text": "report on the increasing role of renewable energy sources and natural gas.",
+          "key": "C",
+          "explanation": "Renewables and gas are only part of a broader overview that also covers oil, coal, China's policies, emissions, and other themes; this option is too narrow."
+        },
+        {
+          "text": "discuss how China's economic and energy policy changes may shape global trends.",
+          "key": "D",
+          "explanation": "China's role is one of several major themes discussed (alongside the US, renewables, and electrification), not the text's main overall purpose."
+        },
+        {
+          "text": "anticipate how the US, China and India will transform the global energy system in the next decade.",
+          "key": "E",
+          "explanation": "The text discusses much more than just these three countries and covers a 25-year horizon, not only 'the next decade'."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "B",
+      "explanationSummary": "Text I ('A world in transformation: World Energy Outlook 2017') surveys multiple major trends shaping the global energy system over the coming decades (US oil and gas, renewables, electrification, China, emissions), which corresponds to a broad overview of world energy scenarios, as stated in option B."
+    },
+    {
+      "id": "psjpn2018-q12",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 12
+      },
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "According to Text I, one of the themes discussed at the IEA's 2017 Ministerial Meeting in Paris was the",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "insufficient investment in clean-energy technologies.",
+          "key": "A",
+          "explanation": "The text does not describe clean-energy investment in general as 'insufficient'; it specifically flags the need for more investment in CCUS."
+        },
+        {
+          "text": "inadequate use of solar energy in global power markets.",
+          "key": "B",
+          "explanation": "The text presents solar energy positively, as the cheapest and fastest-growing source, not as being used 'inadequately'."
+        },
+        {
+          "text": "necessary increase in investment in carbon capture, utilization and storage.",
+          "key": "C"
+        },
+        {
+          "text": "questionable leadership of the US in the areas of oil and gas production.",
+          "key": "D",
+          "explanation": "The text presents US leadership in oil and gas as an undisputed, established fact, not as 'questionable'."
+        },
+        {
+          "text": "limited use of EVs due to battery prices and lack of financial help from the government.",
+          "key": "E",
+          "explanation": "The text says EV growth is boosted by government support and falling battery costs, the opposite of 'limited use due to... lack of financial help'."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "C",
+      "explanationSummary": "The text explicitly lists 'the need for more investment in CCUS [carbon capture, utilization and storage]' among the key topics discussed by world energy leaders at the IEA's 2017 Ministerial Meeting in Paris, matching option C."
+    },
+    {
+      "id": "psjpn2018-q13",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 13
+      },
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "According to Text I, WEO-2017 includes a special focus on China because this country has been",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "suffering from severe problems derived from poor air quality.",
+          "key": "A",
+          "explanation": "Poor air quality is mentioned only as a motivation behind China's push for cleaner technologies, not as the stated reason for WEO-2017's special focus on China."
+        },
+        {
+          "text": "blamed for substituting heavy industry and coal for cleaner energy.",
+          "key": "B",
+          "explanation": "The text does not describe China as being 'blamed' for shifting away from heavy industry and coal; this shift is presented as a deliberate, positive policy choice, not as something China is blamed for."
+        },
+        {
+          "text": "responsible for the consumption of 20% of the world's natural gas.",
+          "key": "C",
+          "explanation": "The text credits China with a share of projected GROWTH in natural gas consumption (over a quarter of the growth), not with consuming 20% of the world's current natural gas."
+        },
+        {
+          "text": "an undeniable world leader in the areas of wind, solar and nuclear energy.",
+          "key": "D",
+          "explanation": "China's leadership in wind, solar, nuclear and EVs is mentioned as a consequence/result of the changes, not as the reason given for the special focus itself."
+        },
+        {
+          "text": "facing changes in the economic and energy policy that will deeply influence its energy mix.",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "E",
+      "explanationSummary": "The text explicitly states that China's special focus in WEO-2017 is due to 'economic and energy policy changes underway [that] will have a profound impact on the country's energy mix, and continue to shape global trends' — matching option E."
+    },
+    {
+      "id": "psjpn2018-q14",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 14
+      },
+      "subtopic": "I.2 Itens gramaticais relevantes para a compreensão dos conteúdos semânticos",
+      "stem": "Based on the meanings in Text I, the two items that express synonymous ideas are",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "deployed (line 25) – disturbed",
+          "key": "A",
+          "explanation": "'Deployed' means put into use/rolled out, while 'disturbed' means troubled/agitated; these are not synonymous."
+        },
+        {
+          "text": "undisputed (line 43) – irrefutable",
+          "key": "B"
+        },
+        {
+          "text": "upheaval (line 44) – stagnation",
+          "key": "C",
+          "explanation": "'Upheaval' means a major disruptive change, while 'stagnation' means a lack of change; these are near-antonyms, not synonyms."
+        },
+        {
+          "text": "unlock (line 70) – restrain",
+          "key": "D",
+          "explanation": "'Unlock' means to release/make accessible, while 'restrain' means to hold back; these are antonyms, not synonyms."
+        },
+        {
+          "text": "incumbent (line 75) – unnecessary",
+          "key": "E",
+          "explanation": "'Incumbent' (in this context, an established/current supplier) and 'unnecessary' are unrelated in meaning, not synonymous."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "B",
+      "explanationSummary": "'Undisputed' (unquestioned, universally accepted) and 'irrefutable' (impossible to deny or disprove) both convey the idea of something unquestionable, making them the only truly synonymous pair among the options."
+    },
+    {
+      "id": "psjpn2018-q15",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 15
+      },
+      "subtopic": "I.2 Itens gramaticais relevantes para a compreensão dos conteúdos semânticos",
+      "stem": "In the fragments \"Solar is forging ahead in global power markets as it becomes the cheapest source of electricity generation in many places, including China and India\" (lines 34-37) and \"with India accounting for almost one-third of global growth to 2040\" (lines 66-67), forging ahead and accounting for mean, respectively,",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "rapidly declining – amounting to",
+          "key": "A",
+          "explanation": "'Forging ahead' means advancing strongly, the opposite of 'rapidly declining'."
+        },
+        {
+          "text": "dramatically falling – adding up to",
+          "key": "B",
+          "explanation": "'Forging ahead' means advancing strongly, the opposite of 'dramatically falling'."
+        },
+        {
+          "text": "rising steeply – being blamed for",
+          "key": "C",
+          "explanation": "'Accounting for' does not carry the negative connotation of 'being blamed for'; it refers neutrally to constituting/being responsible for a share."
+        },
+        {
+          "text": "slowing down – being responsible for",
+          "key": "D",
+          "explanation": "'Forging ahead' means advancing strongly, not 'slowing down'."
+        },
+        {
+          "text": "progressing steadily – being the reason for",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "E",
+      "explanationSummary": "'Forging ahead' means advancing steadily and strongly (matching 'progressing steadily'), and 'accounting for' means being responsible for/constituting a given share of something (matching 'being the reason for' in this context), as in option E."
+    },
+    {
+      "id": "psjpn2018-q16",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 16
+      },
+      "subtopic": "I.2 Itens gramaticais relevantes para a compreensão dos conteúdos semânticos",
+      "stem": "All the boldfaced verb phrases express a future action, EXCEPT in",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "\"The resurgence in oil and gas production from the United States, deep declines in the cost of renewables and growing electrification are changing the face of the global energy system\" (lines 1-4)",
+          "key": "A"
+        },
+        {
+          "text": "\"the world's growing energy needs are met first by renewables and natural gas as fast-declining costs turn solar power into the cheapest source of new electricity generation\" (lines 9-12)",
+          "key": "B",
+          "explanation": "Although in the present tense, this verb phrase describes a projected trend for the coming 25 years, functioning as a future/predictive statement in the report's framing."
+        },
+        {
+          "text": "\"WEO-2017 (...) finds that over the next two decades the global energy system is being reshaped by four major forces\" (lines 20-23)",
+          "key": "C",
+          "explanation": "This phrase is explicitly tied to 'over the next two decades', functioning as a future/predictive statement despite the present continuous form."
+        },
+        {
+          "text": "\"meanwhile in the European Union, wind becomes the leading source of electricity soon after 2030\" (lines 31-33)",
+          "key": "D",
+          "explanation": "This phrase is explicitly tied to 'soon after 2030', clearly expressing a predicted future action."
+        },
+        {
+          "text": "\"the United States is projected to become the world's largest LNG exporter and a net oil exporter by the end of that decade.\" (lines 71-73)",
+          "key": "E",
+          "explanation": "This is explicitly a future prediction ('is projected to become... by the end of that decade')."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "A",
+      "explanationSummary": "'Are changing' describes an ongoing, present transformation happening now, not an action anchored to a specific future point in time, unlike the other options, which are all explicitly tied to future time markers (the next 25 years, the next two decades, soon after 2030, by the end of the decade) even when expressed in present-tense forms typical of forecast reports."
+    },
+    {
+      "id": "psjpn2018-q17",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 17
+      },
+      "subtopic": "I.2 Itens gramaticais relevantes para a compreensão dos conteúdos semânticos",
+      "stem": "In the fragment \"Still, this is far from enough to avoid severe impacts of climate change\" (lines 93-94), Still can be replaced, without changing the meaning of the sentence, by",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Therefore",
+          "key": "A",
+          "explanation": "'Therefore' expresses a logical consequence, whereas 'Still' here expresses contrast/concession; they are not interchangeable in this context."
+        },
+        {
+          "text": "Furthermore",
+          "key": "B",
+          "explanation": "'Furthermore' expresses addition, not the contrastive/concessive meaning of 'Still' in this sentence."
+        },
+        {
+          "text": "Nevertheless",
+          "key": "C"
+        },
+        {
+          "text": "In other words",
+          "key": "D",
+          "explanation": "'In other words' introduces a rephrasing, not the concessive contrast expressed by 'Still' here."
+        },
+        {
+          "text": "Because of that",
+          "key": "E",
+          "explanation": "'Because of that' expresses cause/consequence, not the concessive contrast expressed by 'Still' here."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "C",
+      "explanationSummary": "In this context, 'Still' has a concessive value (similar to 'however'/'nevertheless'), contrasting the slight flattening of emissions with the insufficiency of that improvement to avoid severe climate impacts — a meaning best preserved by 'Nevertheless'."
+    },
+    {
+      "id": "psjpn2018-q18",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 18
+      },
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "The main intention of Text II is to discuss the Brazilian",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "joint effort with the IEA in order to implement The Biofuture Platform in the near future.",
+          "key": "A",
+          "explanation": "The Biofuture Platform is only one specific initiative mentioned among several joint activities, not the text's overall main intention."
+        },
+        {
+          "text": "leading expertise in conventional energy and experience in managing renewable resources.",
+          "key": "B",
+          "explanation": "Brazil's expertise is mentioned as a reason for the partnership, not as the text's central focus, which is the broader partnership itself."
+        },
+        {
+          "text": "association with the IEA to replicate the use of auctions for renewable energies worldwide.",
+          "key": "C",
+          "explanation": "The auctions model is cited as one example of Brazilian best practice, not the main intention of the whole text."
+        },
+        {
+          "text": "strategic partnership with the IEA in the field of energy aiming at a safer and sustainable future.",
+          "key": "D"
+        },
+        {
+          "text": "ten-year energy efficiency plan and the sharing of its regional and global experiences with Latin American countries.",
+          "key": "E",
+          "explanation": "The energy efficiency plan and knowledge-sharing are specific joint activities mentioned, not the overall main intention, and the sharing described is global, not restricted to Latin America."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "D",
+      "explanationSummary": "Text II is centered on the announcement that 'Brazil joins IEA as an Association country, reshaping international energy governance', explicitly framed as 'another important step to place Brazil at the centre of global debate' towards 'a more secure and sustainable energy future' — matching the broader strategic-partnership framing in option D."
+    },
+    {
+      "id": "psjpn2018-q19",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 19
+      },
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "Dr. Fatih Birol affirms that \"Brazil's experience shows that policies do matter\" (lines 33-34) because, due to its long-term energy policies, the country",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "was about to change its position from a major oil consumer into that of a net oil exporter.",
+          "key": "A"
+        },
+        {
+          "text": "could dramatically increase oil exports to nearly one million barrels per day to world markets.",
+          "key": "B",
+          "explanation": "The one-million-barrels-a-day figure refers to exports projected by 2022, presented as a future goal, not something the country 'could' already dramatically achieve as the direct point being made here."
+        },
+        {
+          "text": "was able to expand its deep-water oil resources and restrict biofuels output in the recent years.",
+          "key": "C",
+          "explanation": "The text says Brazil EXPANDED both deep-water resources AND biofuels output, not that it restricted biofuels."
+        },
+        {
+          "text": "implemented a rewarding biofuels programme that helped reduce national oil-demand growth.",
+          "key": "D",
+          "explanation": "The biofuels programme is credited with keeping oil-demand growth 'under control' (moderating growth), not the central point attributed to 'policies do matter' in this specific statement, which is about the consumer-to-exporter turnaround."
+        },
+        {
+          "text": "succeeded in doubling its oil production in the last few years as the result of an outstanding increase in deep-water production.",
+          "key": "E",
+          "explanation": "The text reports a 50% increase in oil production over the past decade, not a doubling."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "A",
+      "explanationSummary": "The text explains that thanks to its long-term energy policies, 'Brazil will become a net oil exporter this year, the first major consumer in recent history to ever achieve such a turnaround' — directly illustrating Dr. Birol's statement that 'policies do matter', matching option A."
+    },
+    {
+      "id": "psjpn2018-q20",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 20
+      },
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "Comparing Texts I and II, one concludes that",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "only Text I mentions a country that is well-known for its clean energy mix.",
+          "key": "A",
+          "explanation": "It is Text II, not Text I, that highlights Brazil as a country well-known for a clean energy mix; Text I does not single out such a country in this way."
+        },
+        {
+          "text": "only Text II discusses what the global energy system will look like in the near future.",
+          "key": "B",
+          "explanation": "Text I is precisely the text most focused on projecting what the global energy system will look like in the coming decades (WEO-2017); this is not exclusive to Text II."
+        },
+        {
+          "text": "neither Text I nor Text II expresses concern with the future of oil production and demand in the next decades.",
+          "key": "C",
+          "explanation": "Both texts explicitly discuss future oil production/demand trends (Text I with global projections to 2040; Text II with Brazil's projected exports and production growth)."
+        },
+        {
+          "text": "both Text I and Text II list all the IEA association countries and discuss how they can benefit from this cooperation.",
+          "key": "D",
+          "explanation": "Text II names all seven IEA Association countries, but Text I does not list or discuss all of them."
+        },
+        {
+          "text": "both Text I and Text II mention the importance of renewable resources and clean energy technologies as a means of meeting energy demand.",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "E",
+      "explanationSummary": "Text I extensively discusses the growing role of renewables (solar, wind) and clean technologies in meeting future energy demand, and Text II highlights Brazil's leading role in bioenergy, hydro, and renewable resources as central to its energy policy — both texts stress the importance of renewable/clean energy for meeting demand, matching option E."
     }
   ]
 }
