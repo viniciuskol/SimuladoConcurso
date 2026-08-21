@@ -1828,6 +1828,204 @@
       ],
       "unresolved": true,
       "annulled": false
+    },
+    {
+      "id": "petro08-q22",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 22
+      },
+      "subtopic": "1.4 Normalização das estruturas de dados",
+      "stem": "Considere as tabelas CLIENTE (*CODIGO_C, CPF, NOME, CIDADE), PRODUTO (*CODIGO_P, DESCRICAO, PRECO) e VENDA (*CODIGO_C, *CODIGO_P, CPF, DATA, QUANTIDADE), com chaves estrangeiras de VENDA para CLIENTE (via CODIGO_C) e para PRODUTO (via CODIGO_P). O campo CPF é chave candidata para CLIENTE e também é armazenado na tabela VENDA. NOME e DESCRICAO também são chaves candidatas de suas respectivas tabelas. CIDADE, PRECO, DATA e QUANTIDADE admitem valores repetidos. Sobre as formas normais a que as tabelas satisfazem, assinale a afirmativa correta.",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "CLIENTE satisfaz à segunda forma normal (2FN), mas não à terceira (3FN).",
+          "key": "A"
+        },
+        {
+          "text": "PRODUTO satisfaz à segunda forma normal (2FN), mas não à terceira (3FN).",
+          "key": "B"
+        },
+        {
+          "text": "VENDA satisfaz à segunda forma normal (2FN), mas não à terceira (3FN).",
+          "key": "C"
+        },
+        {
+          "text": "VENDA não satisfaz à segunda forma normal (2FN).",
+          "key": "D"
+        },
+        {
+          "text": "As três tabelas satisfazem à terceira forma normal (3FN).",
+          "key": "E"
+        }
+      ],
+      "gabaritoLetter": "E",
+      "derivedLetter": "D",
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "diverge do gabarito",
+          "note": "A chave primária de VENDA é o par composto (CODIGO_C, CODIGO_P). O enunciado afirma explicitamente que o campo CPF (que depende funcionalmente apenas de CODIGO_C, um subconjunto próprio da chave composta, dado que CPF é atributo de CLIENTE e é 'também armazenado' redundantemente em VENDA) está presente em VENDA. Isso configura uma dependência funcional parcial de um atributo não-primo (CPF) sobre parte da chave primária (CODIGO_C), o que é a definição clássica de violação da 2FN — levando à derivação independente de que a alternativa D ('VENDA não satisfaz à 2FN') é a correta. O gabarito oficial, porém, indica a alternativa E ('as três tabelas satisfazem à 3FN'). Não foi encontrada uma leitura alternativa do enunciado que reconcilie essa divergência com segurança (por exemplo, se a banca não considerou CPF em VENDA como constituindo uma dependência funcional formal sobre CODIGO_C, apenas como redundância de armazenamento sem FD associada, o que seria uma leitura não convencional da teoria de normalização). Enviada para revisão por divergência genuína entre a derivação independente e o gabarito impresso."
+        }
+      ],
+      "unresolved": true,
+      "annulled": false,
+      "area": "arq-dados"
+    },
+    {
+      "id": "petro08-q40",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 40
+      },
+      "subtopic": "8.8 Valores-verdade",
+      "stem": "Para que valores de p, q, r, s e t, respectivamente, a proposição acima é verdadeira? [A FÓRMULA PROPOSICIONAL EM SI NÃO FOI CAPTURADA NA EXTRAÇÃO DE TEXTO — É ELEMENTO GRÁFICO/VETORIAL NATIVO DA PÁGINA]",
+      "images": [
+        {
+          "id": "img1",
+          "path": null,
+          "alt": "Fórmula/proposição lógica envolvendo os símbolos p, q, r, s, t — não capturada na extração de texto (é vetor/imagem nativa da página, mesmo problema de glifos lógicos ausentes já documentado em exames anteriores)."
+        }
+      ],
+      "alternatives": [
+        {
+          "text": "V, V, V, V, V",
+          "key": "A"
+        },
+        {
+          "text": "V, F, V, F, F",
+          "key": "B"
+        },
+        {
+          "text": "F, F, V, F, F",
+          "key": "C"
+        },
+        {
+          "text": "F, V, F, V, F",
+          "key": "D"
+        },
+        {
+          "text": "F, F, V, V, V",
+          "key": "E"
+        }
+      ],
+      "gabaritoLetter": "C",
+      "derivedLetter": null,
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "não é possível derivar independentemente sem a fórmula/proposição lógica citada no enunciado ('a proposição acima'), que não foi capturada pela extração de texto do PDF (glifo vetorial/Type3), mesmo problema já documentado para outras questões de lógica em exames anteriores já processados.",
+          "note": "Requer reconstrução visual da fórmula a partir do PDF-fonte em fase posterior antes de qualquer tentativa de verificação independente."
+        }
+      ],
+      "unresolved": true,
+      "annulled": false,
+      "area": "logica"
+    },
+    {
+      "id": "petro08-q42",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 42
+      },
+      "subtopic": "8.4 A lógica de predicados de primeira ordem",
+      "stem": "\"O projeto será bem-sucedido se ou o processo de desenvolvimento é o Processo Unificado ou a linguagem utilizada é Java.\" Uma possível tradução da sentença acima para a lógica de predicados de primeira ordem é [OS CONECTIVOS LÓGICOS (∨, →) NAS ALTERNATIVAS NÃO FORAM CAPTURADOS CORRETAMENTE NA EXTRAÇÃO DE TEXTO — APARECEM COMO CARACTERES SUBSTITUTOS]",
+      "images": [
+        {
+          "id": "img1",
+          "path": null,
+          "alt": "Alternativas com conectivos lógicos (∨, →, ∧) entre as variáveis Sp, Ud, JI — os glifos dos conectivos aparecem como caracteres de substituição na extração de texto (mesmo problema de glifos lógicos vetoriais/Type3 já documentado em exames anteriores), impedindo a reconstrução segura de qual operador (disjunção ou implicação, e em que posição) cada alternativa realmente usa."
+        }
+      ],
+      "alternatives": [
+        {
+          "text": "(Sp ? JI) ? (Sp ? Ud)",
+          "key": "A"
+        },
+        {
+          "text": "Sp ? (Ud ? JI)",
+          "key": "B"
+        },
+        {
+          "text": "Sp ? (JI ? Ud)",
+          "key": "C"
+        },
+        {
+          "text": "(Ud ? JI) ? Sp",
+          "key": "D"
+        },
+        {
+          "text": "(JI ? Ud) ? Sp",
+          "key": "E"
+        }
+      ],
+      "gabaritoLetter": "E",
+      "derivedLetter": null,
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "não é possível derivar independentemente com segurança: os conectivos lógicos (∨ e →) nas cinco alternativas foram extraídos como caracteres de substituição ('?'), tornando impossível distinguir com certeza, por exemplo, as alternativas D e E (que diferem apenas na ordem Ud/JI, mas cuja estrutura lógica exata — que conectivo aparece em qual posição — depende dos glifos ausentes).",
+          "note": "A tradução esperada da sentença natural ('Sp SE (Ud OU JI)') seria (Ud ∨ JI) → Sp, mas sem a certeza de qual símbolo cada '?' representa em cada alternativa (∨ ou →), não é possível confirmar com alta confiança qual das cinco opções (e em qual ordem/agrupamento) corresponde exatamente a essa forma. Requer reconstrução visual dos glifos a partir do PDF-fonte."
+        }
+      ],
+      "unresolved": true,
+      "annulled": false,
+      "area": "logica"
+    },
+    {
+      "id": "petro08-q55",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 55
+      },
+      "subtopic": "5.3 Modelos, metodologias, técnicas e ferramentas de análise e projeto (estruturado e orientado a objetos)",
+      "stem": "A figura acima mostra um diagrama de classes UML (ClasseA, ClasseB, ClasseC, ClasseD, ClasseE) desenvolvido para um projeto em que ainda não se sabe em que linguagem será realizada a implementação. Sobre o diagrama, assinale a afirmação correta. [O DIAGRAMA DE CLASSES (RELAÇÕES DE COMPOSIÇÃO, GENERALIZAÇÃO E MULTIPLICIDADES ENTRE AS CLASSES) NÃO FOI CAPTURADO COM FIDELIDADE NA EXTRAÇÃO DE TEXTO — OS SÍMBOLOS DE MULTIPLICIDADE/DIAMANTES DE COMPOSIÇÃO APARECEM COMO ASTERISCOS SOLTOS, SEM POSIÇÃO CLARA]",
+      "images": [
+        {
+          "id": "img1",
+          "path": null,
+          "alt": "Diagrama de classes UML com ClasseA, ClasseB, ClasseC (associação/composição), ClasseD e ClasseE (generalização), com símbolos de multiplicidade representados apenas por asteriscos soltos ('**', '*') na extração de texto, sem associação clara a qual relação/extremidade cada símbolo pertence — mesmo problema de diagramas UML nativos da página não capturados com fidelidade já documentado em exames anteriores (prova6-q52/q54, prova07-q50/q52)."
+        }
+      ],
+      "alternatives": [
+        {
+          "text": "Há um erro na cardinalidade da associação entre ClasseA e ClasseB, pois se trata de uma composição e, como tal, um objeto da ClasseB só pode estar associado a um objeto da ClasseA.",
+          "key": "A"
+        },
+        {
+          "text": "Há uma dependência cíclica entre ClasseB, ClasseC e ClasseE, o que não é permitido pela UML.",
+          "key": "B"
+        },
+        {
+          "text": "O fato de que ClasseD generaliza ClasseA e ClasseB se traduz em herança múltipla, o que não é permitido pela UML.",
+          "key": "C"
+        },
+        {
+          "text": "Retirando a ClasseA, o diagrama resultante corresponde ao padrão de projeto composite.",
+          "key": "D"
+        },
+        {
+          "text": "Invertendo o sentido de todas as generalizações, o diagrama resultante corresponde ao padrão de projeto chain of responsability.",
+          "key": "E"
+        }
+      ],
+      "gabaritoLetter": "A",
+      "derivedLetter": null,
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "não é possível derivar independentemente com segurança sem a posição exata dos símbolos de multiplicidade/composição no diagrama original, que na extração de texto aparecem apenas como asteriscos soltos ('**', '*'), sem indicação de qual extremidade de qual relação (ClasseA-ClasseB, ClasseB-ClasseC, ClasseD/ClasseA/ClasseB, ClasseE) cada um qualifica.",
+          "note": "Todas as cinco alternativas dependem criticamente da leitura visual exata do diagrama (posição do diamante de composição, sentido das setas de generalização, multiplicidades numéricas); requer reconstrução visual a partir do PDF-fonte em fase posterior."
+        }
+      ],
+      "unresolved": true,
+      "annulled": false,
+      "area": "eng-sw"
     }
   ]
 }

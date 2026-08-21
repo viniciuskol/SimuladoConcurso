@@ -14161,6 +14161,2456 @@
       },
       "correctKey": "D",
       "explanationSummary": "Com E convergindo para F (e não diretamente para o Fim), os três caminhos do diagrama são Início-A-F-G-Fim=5, Início-B-D-F-G-Fim=7 e Início-C-E-F-G-Fim=1+5+2+1=9. O caminho crítico (o mais longo) é 9 meses."
+    },
+    {
+      "id": "petro08-q1",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 1
+      },
+      "subtopic": "P.1 Compreensão de textos",
+      "stem": "De acordo com o texto, uma característica apresentada pela vida, que NÃO é justificativa para a necessidade de se fazer escolhas, é",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "irreversibilidade.",
+          "key": "A"
+        },
+        {
+          "text": "irregularidade.",
+          "key": "B",
+          "explanation": "O texto não atribui à vida a característica de 'irregularidade' em nenhum momento; não há passagem que sustente essa ideia como motivo para as escolhas."
+        },
+        {
+          "text": "instabilidade.",
+          "key": "C",
+          "explanation": "Aparece como justificativa: o texto cita pessoas que trocam de emprego, de empresa e de atribuição, ilustrando a instabilidade da vida profissional como motivo de escolha."
+        },
+        {
+          "text": "imprevisibilidade.",
+          "key": "D",
+          "explanation": "Aparece implicitamente: a dúvida 'o que teria acontecido se eu tivesse aceitado?' revela a imprevisibilidade dos resultados das escolhas não feitas, usada como justificativa."
+        },
+        {
+          "text": "mutabilidade.",
+          "key": "E",
+          "explanation": "Aparece explicitamente: o texto afirma que 'o que gostamos hoje não será o mesmo que prezaremos amanhã', atribuindo à vida (e aos gostos) uma natureza mutável que justifica a necessidade de escolher."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": "A irreversibilidade é apresentada no texto como propriedade da DECISÃO tomada no 'dilema da virada' (uma decisão 'irrevogável'), não como uma característica da VIDA usada para justificar a necessidade de escolher; por isso é a única alternativa que não corresponde ao que é pedido."
+      },
+      "area": "portugues",
+      "correctKey": "A",
+      "explanationSummary": "O texto justifica a necessidade de fazer escolhas por meio de características da vida como instabilidade, imprevisibilidade e mutabilidade; a irreversibilidade, por outro lado, é atribuída à natureza da decisão em si (irrevogável), não à vida como justificativa para escolher."
+    },
+    {
+      "id": "petro08-q2",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 2
+      },
+      "subtopic": "P.1 Compreensão de textos",
+      "stem": "Semanticamente, o pensamento de Albert Schweitzer está ratificado no",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "1o parágrafo - 1o período.",
+          "key": "A",
+          "explanation": "O 1º período do 1º parágrafo apenas introduz o tema (pedidos de opinião sobre carreira), sem ainda concretizar a ideia de renúncia da epígrafe."
+        },
+        {
+          "text": "1o parágrafo - 2o período.",
+          "key": "B"
+        },
+        {
+          "text": "2o parágrafo - 1o período.",
+          "key": "C",
+          "explanation": "Esse período trata do 'dilema da virada', tema de decisão irrevogável, e não diretamente da ideia de grandeza pela renúncia."
+        },
+        {
+          "text": "3o parágrafo - 1o período.",
+          "key": "D",
+          "explanation": "Esse período introduz o tema da renúncia a desejos para viabilizar outros, mas de forma genérica, não como exemplo concreto que ratifica a epígrafe da forma mais direta apontada pela banca."
+        },
+        {
+          "text": "4o parágrafo - 2o período.",
+          "key": "E",
+          "explanation": "Esse trecho trata da citação de Leonardo da Vinci sobre gostar do que se faz, um tema distinto da ideia de grandeza pela renúncia."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "medium",
+        "notes": "O 2º período do 1º parágrafo ('Alguns apreciam seu trabalho, mas não a empresa onde estão.') ilustra concretamente, desde a abertura do texto, pessoas que precisam abrir mão de algo (trabalho ou empresa), ratificando a ideia de Schweitzer de que a grandeza está no que se renuncia."
+      },
+      "area": "portugues",
+      "correctKey": "B",
+      "explanationSummary": "O 2º período do 1º parágrafo já apresenta, com um exemplo concreto (apreciar o trabalho mas não a empresa), a lógica de troca/renúncia que ratifica semanticamente a epígrafe de Schweitzer sobre a grandeza consistir no que se renuncia."
+    },
+    {
+      "id": "petro08-q3",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 3
+      },
+      "subtopic": "P.4 Significação das palavras",
+      "stem": "O substantivo abstrato cujo sentido NÃO caracteriza a atitude do profissional num momento crucial de decisão é",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "flexibilidade.",
+          "key": "A",
+          "explanation": "É uma atitude compatível com um momento de decisão profissional (capacidade de se adaptar)."
+        },
+        {
+          "text": "transigência.",
+          "key": "B",
+          "explanation": "É uma atitude compatível com decisões profissionais (disposição para ceder/negociar)."
+        },
+        {
+          "text": "determinação.",
+          "key": "C",
+          "explanation": "É uma atitude central em decisões cruciais (firmeza para decidir e seguir adiante), diretamente ligada ao tom do texto ('opto por assumir riscos... e seguir adiante')."
+        },
+        {
+          "text": "arrojo.",
+          "key": "D",
+          "explanation": "É uma atitude compatível (coragem/audácia para assumir riscos calculados, como descrito no texto)."
+        },
+        {
+          "text": "retroação.",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "E",
+      "explanationSummary": "'Retroação' remete a voltar atrás, sentido oposto ao de 'preferir' (do latim praeferere, 'levar à frente') e ao tom do texto, que valoriza seguir adiante diante de uma decisão; por isso não caracteriza a atitude do profissional num momento decisivo, ao contrário das demais opções."
+    },
+    {
+      "id": "petro08-q4",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 4
+      },
+      "subtopic": "P.4 Significação das palavras",
+      "stem": "No oitavo parágrafo do texto, os sentidos de 'armadilhas' (l. 54-55) e de 'benefício' (l. 59), respectivamente, no contexto em que se inserem, são",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "enganos e risco.",
+          "key": "A"
+        },
+        {
+          "text": "impasses e proteção.",
+          "key": "B",
+          "explanation": "'Impasses' não capta o sentido de ofertas sedutoras mas potencialmente ruins ('armadilhas'), e 'proteção' inverte o sentido: o autor recusa o 'benefício' da dúvida para assumir riscos, não para se proteger."
+        },
+        {
+          "text": "dificuldades e conhecimento.",
+          "key": "C",
+          "explanation": "'Conhecimento' não corresponde ao sentido de 'benefício' no trecho, que se refere a uma vantagem/conforto ilusório de manter a dúvida, não a um saber adquirido."
+        },
+        {
+          "text": "certezas e sucesso.",
+          "key": "D",
+          "explanation": "'Certezas' contradiz o sentido de 'armadilhas' (que são justamente convites enganosos e incertos), e 'sucesso' não corresponde ao 'benefício da dúvida' mencionado."
+        },
+        {
+          "text": "dúvidas e prazer.",
+          "key": "E",
+          "explanation": "'Dúvidas' não é o sentido de 'armadilhas' (que são as próprias ofertas/convites, não as dúvidas geradas por elas), embora 'prazer' se aproxime do sentido de conforto do 'benefício'."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "medium",
+        "notes": "'Armadilhas' refere-se aos convites de troca de emprego/atribuição, sedutores mas potencialmente enganosos ('enganos'); 'benefício' desta dúvida remete ao risco de nunca se decidir e ficar perguntando 'o que teria acontecido', que o autor prefere não correr, optando por 'riscos calculados' em vez de carregar esse risco de indecisão."
+      },
+      "area": "portugues",
+      "correctKey": "A",
+      "explanationSummary": "'Armadilhas' designa os convites de mudança de emprego/empresa como enganos sedutores, e 'benefício' remete ao risco (não vantagem real) de conviver indefinidamente com a dúvida sobre a escolha não feita, sentido que o autor rejeita ao optar por assumir riscos calculados."
+    },
+    {
+      "id": "petro08-q5",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 5
+      },
+      "subtopic": "P.1 Compreensão de textos",
+      "stem": "Quanto ao tipo, o texto classifica-se predominantemente, como",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "expositivo.",
+          "key": "A",
+          "explanation": "O texto não se limita a expor informações neutras; ele defende uma tese pessoal sobre como lidar com escolhas."
+        },
+        {
+          "text": "injuntivo.",
+          "key": "B",
+          "explanation": "O texto não dá instruções/ordens diretas de como agir passo a passo; ele argumenta e reflete sobre o tema."
+        },
+        {
+          "text": "descritivo.",
+          "key": "C",
+          "explanation": "O texto não se concentra em descrever características de algo ou alguém; ele defende um ponto de vista."
+        },
+        {
+          "text": "narrativo.",
+          "key": "D",
+          "explanation": "O texto não conta uma sequência de fatos/eventos com enredo; ele é uma reflexão opinativa sobre escolhas na vida profissional."
+        },
+        {
+          "text": "argumentativo.",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "E",
+      "explanationSummary": "O texto defende uma tese (a necessidade e o valor de fazer escolhas, mesmo arriscadas) apoiada em citações de autoridade e exemplos, características do tipo argumentativo."
+    },
+    {
+      "id": "petro08-q6",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 6
+      },
+      "subtopic": "P.1 Compreensão de textos",
+      "stem": "Com base nas ideias apresentadas no oitavo parágrafo, qual interpretação está correta?",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "As armadilhas levam às escolhas cujas consequências dependem das ponderações feitas anteriormente às decisões.",
+          "key": "A",
+          "explanation": "Inverte a relação de causa e efeito apresentada no parágrafo: são as escolhas feitas com base em nossas preferências que geram as armadilhas, e não o inverso."
+        },
+        {
+          "text": "As armadilhas geradas pelas escolhas traduzem as ponderações exigidas pelas conseqüências das decisões.",
+          "key": "B",
+          "explanation": "Também inverte a cadeia lógica: no parágrafo, as escolhas (com base em preferências) geram as armadilhas, e as armadilhas geram consequências, não o contrário."
+        },
+        {
+          "text": "As decisões originam as ponderações feitas para as escolhas cujas armadilhas se traduzem pelas consequências.",
+          "key": "C",
+          "explanation": "Coloca as decisões como origem das ponderações, quando o parágrafo apresenta a sequência inversa: preferências levam a escolhas, escolhas geram armadilhas, e armadilhas geram consequências."
+        },
+        {
+          "text": "As conseqüências das decisões tomadas retratam as ponderações estabelecidas pelas armadilhas impostas pelas escolhas.",
+          "key": "D"
+        },
+        {
+          "text": "As ponderações sobre as escolhas feitas geram as armadilhas que traduzem as conseqüências das decisões.",
+          "key": "E",
+          "explanation": "Coloca as ponderações como geradoras das armadilhas, quando o parágrafo apresenta as escolhas (baseadas em preferências) como origem das armadilhas, sendo as ponderações uma resposta a essas armadilhas/consequências."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "medium",
+        "notes": "O parágrafo apresenta a cadeia: escolhas feitas com base em preferências geram armadilhas (convites/trocas); essas armadilhas impõem ponderações (pesar riscos); e o resultado dessas ponderações se reflete nas conseqüências das decisões tomadas — exatamente a ordem descrita na alternativa D."
+      },
+      "area": "portugues",
+      "correctKey": "D",
+      "explanationSummary": "O parágrafo encadeia: escolhas (por preferência) → armadilhas → ponderações exigidas pelas armadilhas → conseqüências das decisões; a alternativa D é a única que retrata essa cadeia na ordem correta."
+    },
+    {
+      "id": "petro08-q7",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 7
+      },
+      "subtopic": "P.1 Compreensão de textos",
+      "stem": "Em relação às ideias apresentadas no fragmento 'Prazer e Vocação', assinale a afirmativa IMPROCEDENTE.",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Nem sempre as preferências implicam segurança.",
+          "key": "A",
+          "explanation": "É procedente: o texto mostra pessoas que preferem propostas desafiadoras e financeiramente desfavoráveis, mostrando que preferência não implica necessariamente segurança."
+        },
+        {
+          "text": "No campo profissional, a solução para vários problemas não está numa decisão radical.",
+          "key": "B",
+          "explanation": "É procedente: o texto sugere, ao final, o diálogo e a apresentação de propostas para melhorar o ambiente de trabalho como alternativa à mudança radical de empresa."
+        },
+        {
+          "text": "A vocação é um dom que se adquire com o tempo, ao longo da vida.",
+          "key": "C"
+        },
+        {
+          "text": "Profissionalmente, a mediocridade é um problema que não pode ser contornado.",
+          "key": "D",
+          "explanation": "É procedente com o tom do texto: 'combata a mediocridade em todas as suas vertentes' e a citação de Tolstoi sugerem que a mediocridade é algo a evitar/combater, não um problema insuperável, mas a afirmativa como um todo é compatível com a ideia de que a mediocridade deve ser enfrentada, não relativizada."
+        },
+        {
+          "text": "Muitas escolhas têm a perda como contraponto.",
+          "key": "E",
+          "explanation": "É procedente: o texto trata repetidamente de escolhas que implicam renunciar/perder algo (segurança, dinheiro, o certo) em troca de outra coisa."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": "O texto afirma que a vocação, do latim vocatione ('chamado'), 'simboliza uma espécie de predestinação imanente a cada pessoa', ou seja, é apresentada como algo inato/predestinado, e não como um dom adquirido com o tempo — por isso a afirmativa C é a improcedente."
+      },
+      "area": "portugues",
+      "correctKey": "C",
+      "explanationSummary": "O texto descreve a vocação como uma predestinação imanente a cada pessoa (algo inato, ligado ao 'chamado'), contrariando a ideia de que seria um dom adquirido ao longo da vida, tornando a afirmativa C improcedente."
+    },
+    {
+      "id": "petro08-q8",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 8
+      },
+      "subtopic": "P.6 Emprego das classes de palavras",
+      "stem": "Assinale a opção em que a seqüência de verbos NÃO pode ser considerada uma locução verbal.",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "\"Fazer escolhas implica renunciar a alguns desejos...\" (l. 22-23)",
+          "key": "A"
+        },
+        {
+          "text": "\"Analogamente, a aventura de uma vida de solteiro pode ceder espaço ao conforto de um casamento.\" (l. 27-29)",
+          "key": "B",
+          "explanation": "'Pode ceder' é uma locução verbal legítima: verbo auxiliar modal 'poder' + infinitivo do verbo principal 'ceder'."
+        },
+        {
+          "text": "\"...se apenas procurarmos fazer o que gostamos,\" (l. 37-38)",
+          "key": "C",
+          "explanation": "'Procurarmos fazer' é tradicionalmente aceita como locução verbal de sentido aspectual (tentativa), formada por verbo auxiliar + infinitivo."
+        },
+        {
+          "text": "\"Escolhas são feitas com base em nossas preferências.\" (l. 48-49)",
+          "key": "D",
+          "explanation": "'São feitas' é uma locução verbal na voz passiva analítica: verbo auxiliar 'ser' + particípio do verbo principal 'fazer'."
+        },
+        {
+          "text": "\"O que teria acontecido...\" (l. 57-58)",
+          "key": "E",
+          "explanation": "'Teria acontecido' é uma locução verbal de tempo composto (futuro do pretérito composto): auxiliar 'ter' + particípio 'acontecido'."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "medium",
+        "notes": "'Implicar' é verbo pleno (não pertence ao grupo fechado de verbos auxiliares como poder, dever, ir, ter, haver, ser), e 'implica renunciar' é uma construção de verbo principal + complemento infinitivo, não uma locução verbal (auxiliar+verbo principal) no sentido gramatical estrito exigido pela questão."
+      },
+      "area": "portugues",
+      "correctKey": "A",
+      "explanationSummary": "Locução verbal exige um verbo auxiliar (poder, dever, ter, haver, ser etc.) combinado a um verbo principal; em 'implica renunciar', 'implicar' é verbo pleno com complemento infinitivo, não um auxiliar, o que impede a classificação como locução verbal — diferentemente das demais sequências apresentadas."
+    },
+    {
+      "id": "petro08-q9",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 9
+      },
+      "subtopic": "P.10 Regência verbal e nominal",
+      "stem": "Na passagem \"Você troca segurança por desafio,\" (l. 23-24), substituindo-se o verbo destacado pelo verbo preferir, segundo o registro culto e formal da língua, teremos:",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Você prefere mais segurança que desafio.",
+          "key": "A",
+          "explanation": "A regência culta de 'preferir' não admite 'mais... que'; o correto é 'preferir A a B', sem o comparativo 'mais...que'."
+        },
+        {
+          "text": "Você prefere muito mais segurança à desafio.",
+          "key": "B",
+          "explanation": "Mistura indevidamente o comparativo 'mais' com a regência 'a' e usa crase indevida ('à desafio', substantivo masculino sem artigo feminino), violando a norma culta."
+        },
+        {
+          "text": "Você prefere mais segurança a desafio.",
+          "key": "C",
+          "explanation": "Mantém indevidamente o comparativo 'mais', que não é usado na regência padrão de 'preferir A a B'."
+        },
+        {
+          "text": "Você prefere segurança do que desafio.",
+          "key": "D",
+          "explanation": "'Preferir... do que' é regência não recomendada pela norma culta e formal; o padrão exige a preposição 'a', não 'do que'."
+        },
+        {
+          "text": "Você prefere segurança a desafio.",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "portugues",
+      "correctKey": "E",
+      "explanationSummary": "A norma culta exige a regência 'preferir A a B' (sem comparativo 'mais' e sem 'do que'), o que só é observado na alternativa E."
+    },
+    {
+      "id": "petro08-q10",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 10
+      },
+      "subtopic": "P.3 Mecanismos de coesão textual",
+      "stem": "As palavras destacadas em \"mas não têm qualquer prazer no exercício de suas funções.\" (l. 4-5) e \"Quando um homem morria,\" (l. 77-78) podem ser substituídas, respectivamente, sem alteração de sentido, por",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "visto que e Antes que.",
+          "key": "A",
+          "explanation": "'Visto que' tem valor explicativo/causal, diferente do valor adversativo de 'mas'; e 'Antes que' inverte a ordem temporal do evento (antes da morte, e não quando/depois dela)."
+        },
+        {
+          "text": "porquanto e Posto que.",
+          "key": "B",
+          "explanation": "Ambos os conectivos propostos têm valor predominantemente causal/concessivo, incompatíveis com o valor adversativo de 'mas' e o valor temporal de 'Quando'."
+        },
+        {
+          "text": "entretanto e Depois que.",
+          "key": "C"
+        },
+        {
+          "text": "portanto e de à medida que.",
+          "key": "D",
+          "explanation": "'Portanto' tem valor conclusivo, incompatível com o valor adversativo de 'mas'; 'à medida que' indica simultaneidade/proporcionalidade contínua, não um marco temporal único como 'Quando'."
+        },
+        {
+          "text": "de sorte que e Visto que.",
+          "key": "E",
+          "explanation": "'De sorte que' tem valor consecutivo e 'Visto que' tem valor causal, sentidos diferentes dos valores adversativo e temporal exigidos, respectivamente."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": "'Mas' tem valor adversativo, equivalente a 'entretanto'; 'Quando' introduz um marco temporal que pode ser parafraseado por 'Depois que' no contexto da pergunta feita pelos gregos após a morte de alguém."
+      },
+      "area": "portugues",
+      "correctKey": "C",
+      "explanationSummary": "'Mas' (adversativo) equivale a 'entretanto', e 'Quando um homem morria' (marco temporal) pode ser parafraseado por 'Depois que um homem morria', sem alteração relevante de sentido no contexto."
+    },
+    {
+      "id": "petro08-q11",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 11
+      },
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "According to Paragraph 1 (lines 1-10), Brazil",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "is not allowed to explore its abundant natural resources.",
+          "key": "A",
+          "explanation": "Not stated in Paragraph 1; the text discusses perceptions about Brazil's potential, not legal restrictions on resource exploration."
+        },
+        {
+          "text": "will never be ranked with countries such as Russia, India and China.",
+          "key": "B",
+          "explanation": "Contradicts the text, which states Goldman Sachs already classified Brazil together with Russia, India and China as the 'BRIC' countries."
+        },
+        {
+          "text": "will never be a country of the future due to its accelerated economic growth.",
+          "key": "C",
+          "explanation": "Misreads the tone: the ironic popular saying ('and it always will be') mocks the idea that Brazil never fulfills its potential, but the paragraph's overall drift is that Brazil is now living up to it, not that accelerated growth condemns it to never be a 'country of the future'."
+        },
+        {
+          "text": "was considered to be a promising land by the Austrian writer Stefan Zweig.",
+          "key": "D"
+        },
+        {
+          "text": "is condemned to play a small part among the most powerful nations of the world.",
+          "key": "E",
+          "explanation": "Contradicts the overall point of the paragraph, which argues Brazil is starting to count in the world, not that it is condemned to a minor role."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "D",
+      "explanationSummary": "Paragraph 1 explicitly recalls that Stefan Zweig, in 1941, called Brazil the 'country of the future', i.e., a promising land."
+    },
+    {
+      "id": "petro08-q12",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 12
+      },
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "The sentence \"Yet there are reasons to believe that South America's economic powerhouse of 190 million people is starting to count in the world.\" (lines 11-13), which introduces Paragraph 2,",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "confirms that the several critics of Brazil were right in their predictions.",
+          "key": "A",
+          "explanation": "The sentence pushes back against past criticism, it does not confirm the critics were right."
+        },
+        {
+          "text": "justifies why Brazil could not be added to the group of \"BRIC\" countries.",
+          "key": "B",
+          "explanation": "The paragraph 1 already states Brazil WAS grouped with the BRIC countries; this sentence does not justify an exclusion that never happened in the text."
+        },
+        {
+          "text": "explains why Brazil should depend on South American economic powers.",
+          "key": "C",
+          "explanation": "Not supported by the text, which discusses Brazil's own economic performance, not dependence on other South American powers."
+        },
+        {
+          "text": "criticizes Brazil's low rate of economic growth, compared to Chinese rates.",
+          "key": "D",
+          "explanation": "The sentence is not critical; it introduces evidence that Brazil's growth, while modest by Chinese standards, is meaningful given Brazil's different (middle-income) circumstances."
+        },
+        {
+          "text": "contradicts the criticism that Brazil would not have a role in the world's economic future.",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "E",
+      "explanationSummary": "The sentence introduces a counter-argument to the earlier mockery of Brazil's exclusion from dynamic 'BRIC' company, asserting that Brazil is indeed starting to matter in the world — contradicting the prior criticism."
+    },
+    {
+      "id": "petro08-q13",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 13
+      },
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "According to Paragraph 2 (lines 11-20),",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "China has been growing faster than Brazil lately.",
+          "key": "A"
+        },
+        {
+          "text": "Brazil is, currently, as poor as China and needs to grow faster.",
+          "key": "B",
+          "explanation": "The text says Brazil was 'almost as poor as China' only in the past (third quarter of the 20th century), not currently."
+        },
+        {
+          "text": "Brazil and China have 190 million economically active people.",
+          "key": "C",
+          "explanation": "The 190 million figure refers to Brazil's total population alone (Paragraph 1), not to a number shared with China, nor specifically to economically active people."
+        },
+        {
+          "text": "Brazil had similar growth rates as China's in the early 20th century period.",
+          "key": "D",
+          "explanation": "The text specifies the 'third quarter of the 20th century' (roughly 1950-1975), not the early 20th century."
+        },
+        {
+          "text": "Brazil and China have both reached equal levels of income for their populations.",
+          "key": "E",
+          "explanation": "Not stated; the paragraph discusses growth rates, not equal income levels between the two countries."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "A",
+      "explanationSummary": "The paragraph states Brazil's current growth (5.4%) is 'modest by Chinese standards', directly indicating China has recently grown faster than Brazil."
+    },
+    {
+      "id": "petro08-q14",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 14
+      },
+      "subtopic": "I.2 Itens gramaticais relevantes para a compreensão dos conteúdos semânticos",
+      "stem": "Which alternative contains a correct correspondence of meaning?",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "\"restored\" (line 24) and reestablished are antonyms.",
+          "key": "A",
+          "explanation": "'Restored' and 'reestablished' are synonyms, not antonyms."
+        },
+        {
+          "text": "\"tackle\" (line 28) and deal with are synonyms.",
+          "key": "B"
+        },
+        {
+          "text": "\"shift\" (line 40) is the opposite of change.",
+          "key": "C",
+          "explanation": "'Shift' means change/movement, so it is a near-synonym of 'change', not its opposite."
+        },
+        {
+          "text": "\"newly\" (line 45) and recently are not synonyms.",
+          "key": "D",
+          "explanation": "'Newly' and 'recently' are synonyms in this context ('newly discovered' = 'recently discovered')."
+        },
+        {
+          "text": "\"confined\" (line 53) means the same as released.",
+          "key": "E",
+          "explanation": "'Confined' means restricted/limited, the opposite of 'released'."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "B",
+      "explanationSummary": "'Tackle' (to tackle a problem) is a standard synonym of 'deal with'; the other pairs proposed are not correct synonym/antonym relations."
+    },
+    {
+      "id": "petro08-q15",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 15
+      },
+      "subtopic": "I.2 Itens gramaticais relevantes para a compreensão dos conteúdos semânticos",
+      "stem": "Check the option in which the phrase is INCORRECTLY explained.",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "\"South America's economic powerhouse\" (lines 11-12) = the economic powerhouse of South America.",
+          "key": "A",
+          "explanation": "This is a correct paraphrase: the possessive 'South America's' is equivalent to 'of South America'."
+        },
+        {
+          "text": "\"traditionally inward-looking family-owned affairs\" (lines 31-32) = affairs owned by traditional families who look inwards.",
+          "key": "B"
+        },
+        {
+          "text": "\"the world's second-biggest mining company\" (line 34) = a mining company that is the second biggest one in the world.",
+          "key": "C",
+          "explanation": "This is a correct paraphrase of the superlative-like ranking expression."
+        },
+        {
+          "text": "\"third-largest maker of civilian aircraft\" (line 35) = a civilian aircraft maker that is the third largest one.",
+          "key": "D",
+          "explanation": "This is a correct paraphrase preserving the original meaning."
+        },
+        {
+          "text": "\"newly discovered offshore fields of oil and natural gas\" (line 45) = fields of oil and natural gas that are offshore and that have been newly discovered.",
+          "key": "E",
+          "explanation": "This is a correct paraphrase preserving the original meaning."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "medium",
+        "notes": "No original, 'traditionally' modifica 'inward-looking' (empresas que, tradicionalmente/ao longo do tempo, olhavam para dentro), não as 'famílias' em si. A paráfrase B desloca 'traditionally' para qualificar as famílias ('traditional families'), alterando o sentido original."
+      },
+      "area": "ingles",
+      "correctKey": "B",
+      "explanationSummary": "The original phrase describes companies that were traditionally (i.e., historically) inward-looking and family-owned; the paraphrase incorrectly shifts 'traditionally' to describe the families themselves ('traditional families'), changing the meaning."
+    },
+    {
+      "id": "petro08-q16",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 16
+      },
+      "subtopic": "I.2 Itens gramaticais relevantes para a compreensão dos conteúdos semânticos",
+      "stem": "In terms of reference, it is correct to affirm that",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "\"its\" (line 8) refers to \"world's\" (line 7).",
+          "key": "A",
+          "explanation": "In context ('of his new home'), 'its' most plausibly refers to Brazil, not to 'world's'."
+        },
+        {
+          "text": "\"That\" (line 14) refers to \"year\" (line 14).",
+          "key": "B",
+          "explanation": "'That is modest by Chinese standards' refers to the growth rate (5.4%) just mentioned, not to the word 'year'."
+        },
+        {
+          "text": "\"this\" (line 30) refers to \"new mood\" (line 30).",
+          "key": "C",
+          "explanation": "'This' is the cause that 'has gradually created a new mood'; it refers back to the preceding developments, not forward to 'new mood' itself, which is its effect."
+        },
+        {
+          "text": "\"others\" (line 37) refers to \"business people\" (lines 30-31).",
+          "key": "D",
+          "explanation": "'A string of others are about to become so [well-known/privatised]' refers back to other companies, not to 'business people'."
+        },
+        {
+          "text": "\"those\" (line 46) refers to \"fields\" (line 45).",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "E",
+      "explanationSummary": "\"those\" refers back to \"fields\", comparing Brazil's newly discovered offshore oil and gas fields with those of the North Sea in the 1960s."
+    },
+    {
+      "id": "petro08-q17",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 17
+      },
+      "subtopic": "I.2 Itens gramaticais relevantes para a compreensão dos conteúdos semânticos",
+      "stem": "The only item where the boldfaced word may be replaced by furthermore is",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "\"In the past decade and a half, however, under reforming democratic governments, Brazil has conquered inflation,\" (lines 25-27)",
+          "key": "A",
+          "explanation": "'However' has an adversative (contrast) meaning, not an additive one like 'furthermore'."
+        },
+        {
+          "text": "\"Some, such as Vale, the world's second-biggest mining company,\" (lines 33-34)",
+          "key": "B",
+          "explanation": "'Such as' introduces an example, not an additive connector like 'furthermore'."
+        },
+        {
+          "text": "\"Additionally, some economists argue that Brazil is the beneficiary of a structural shift,\" (lines 39-40)",
+          "key": "C"
+        },
+        {
+          "text": "\"Compared with its past, Brazil is indeed doing much better.\" (line 55)",
+          "key": "D",
+          "explanation": "'Compared with' introduces a comparison, not an additive connector like 'furthermore'."
+        },
+        {
+          "text": "\"But before oil euphoria kicks in,\" (line 56)",
+          "key": "E",
+          "explanation": "'But' is adversative, not additive, so it cannot be replaced by 'furthermore'."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "C",
+      "explanationSummary": "'Additionally' is a direct synonym of 'furthermore' (both are additive connectors), unlike the adversative, exemplifying or comparative connectors used in the other options."
+    },
+    {
+      "id": "petro08-q18",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 18
+      },
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "According to Paragraph 6 (lines 48-54), oil can be considered a cause of concern because",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "economic problems can weaken Brazil's ability to explore the new oil resources.",
+          "key": "A",
+          "explanation": "Reverses the causality stated in the text: it is the oil bonanza that may weaken the resolve to fix structural economic problems, not the other way around."
+        },
+        {
+          "text": "Brazil's newly discovered oil resources are not as big as the experts previously expected.",
+          "key": "B",
+          "explanation": "Not stated; the text actually suggests the new fields may be bigger than expected (comparable to or bigger than the North Sea's)."
+        },
+        {
+          "text": "the current oil drilling technology is not appropriate for the extraction of all the oil discovered.",
+          "key": "C",
+          "explanation": "Not mentioned anywhere in the paragraph."
+        },
+        {
+          "text": "the nation's leaders might forget the structural problems in the euphoric scenario of new oil sources.",
+          "key": "D"
+        },
+        {
+          "text": "the heavy taxation of oil products might maximize the economic returns of drilling the recently discovered oil wealth.",
+          "key": "E",
+          "explanation": "Contradicts the text, which cites the 'oppressive tax system' as one of the structural problems (a concern), not as something that maximizes returns."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "D",
+      "explanationSummary": "The paragraph states that oil wealth may 'weaken an already infirm resolve to dig deeper into the economy's structural problems', i.e., leaders might neglect those problems amid oil euphoria."
+    },
+    {
+      "id": "petro08-q19",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 19
+      },
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "The fragment \"Brazil's leaders should ask themselves why so many other countries have made bigger returns from a much smaller natural endowment.\" (lines 56-58) means that Brazil's leaders",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "should not concern themselves about why other countries have been more lucrative than Brazil.",
+          "key": "A",
+          "explanation": "Contradicts the fragment: the text says leaders SHOULD ask themselves this question, not avoid it."
+        },
+        {
+          "text": "may be in doubt whether it is true that Brazil will eventually make as much money as countries with vast of natural resources.",
+          "key": "B",
+          "explanation": "Misrepresents the fragment, which urges leaders to actively investigate why others outperform Brazil despite fewer resources, not to doubt a future outcome."
+        },
+        {
+          "text": "might speculate if Brazil could make more gains if it made a better use of its scarce natural gifts.",
+          "key": "C",
+          "explanation": "Mischaracterizes Brazil's resources as 'scarce', while the whole article emphasizes Brazil's abundant natural endowment; the comparison is with countries that have smaller endowments."
+        },
+        {
+          "text": "would rather investigate how some countries that are not as rich as Brazil find the means to survive.",
+          "key": "D",
+          "explanation": "Trivializes the fragment's economic framing ('bigger returns') into mere survival, which is not what the text discusses."
+        },
+        {
+          "text": "had better analyze why countries with fewer natural resources than Brazil have been more profitable.",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "E",
+      "explanationSummary": "The fragment is a direct paraphrase suggestion that Brazil's leaders should examine why countries with smaller natural endowments have achieved bigger (more profitable) returns."
+    },
+    {
+      "id": "petro08-q20",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 20
+      },
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "The text as a whole is both",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "pessimistic and sarcastic.",
+          "key": "A",
+          "explanation": "The text is fundamentally optimistic about Brazil's rise, not pessimistic; it is not sarcastic in tone either."
+        },
+        {
+          "text": "optimistic and enthusiastic.",
+          "key": "B",
+          "explanation": "Too one-sidedly positive; it ignores the explicit warnings ('cause for concern') present throughout the text, especially about oil euphoria."
+        },
+        {
+          "text": "argumentative and watchful.",
+          "key": "C"
+        },
+        {
+          "text": "persuasive and comforting.",
+          "key": "D",
+          "explanation": "'Comforting' does not fit the text's explicit warnings about structural problems and the risks of oil euphoria."
+        },
+        {
+          "text": "hopeless and terrifying.",
+          "key": "E",
+          "explanation": "Contradicts the overall hopeful, forward-looking tone about Brazil's economic prospects."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ingles",
+      "correctKey": "C",
+      "explanationSummary": "The text argues for a positive reassessment of Brazil's economic prospects while repeatedly warning ('watchful') about risks such as oil euphoria and unresolved structural problems, matching 'argumentative and watchful'."
+    },
+    {
+      "id": "petro08-q21",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 21
+      },
+      "subtopic": "1.3 O modelo Relacional",
+      "stem": "É correto afirmar que qualquer relação válida de um modelo relacional",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "pode apresentar tuplas duplicadas, desde que não haja chaves candidatas definidas.",
+          "key": "A",
+          "explanation": "Falso: uma relação é, por definição, um conjunto de tuplas, e conjuntos não admitem elementos duplicados, independentemente de haver ou não chaves candidatas definidas."
+        },
+        {
+          "text": "tem seus atributos ordenados da esquerda para a direita, de acordo com a definição.",
+          "key": "B",
+          "explanation": "Falso: no modelo relacional, os atributos são identificados por nome, não por posição/ordem; a definição formal de relação não impõe ordem aos atributos."
+        },
+        {
+          "text": "tem suas tuplas naturalmente ordenadas, para fins de localização.",
+          "key": "C",
+          "explanation": "Falso: por ser um conjunto, uma relação não possui ordem inerente entre suas tuplas."
+        },
+        {
+          "text": "tem um índice físico para cada chave candidata, incluindo a chave primária.",
+          "key": "D",
+          "explanation": "Falso: índices físicos são detalhes de implementação de um SGBD concreto, não uma exigência do modelo relacional em si."
+        },
+        {
+          "text": "está, pelo menos, na primeira forma normal.",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Pela definição do modelo relacional, os domínios dos atributos são atômicos, o que garante que toda relação válida esteja, no mínimo, na 1FN."
+      },
+      "area": "arq-dados",
+      "correctKey": "E",
+      "explanationSummary": "Por definição, o modelo relacional exige domínios de valores atômicos para os atributos, condição que corresponde exatamente à primeira forma normal; logo, toda relação válida está, no mínimo, na 1FN."
+    },
+    {
+      "id": "petro08-q23",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 23
+      },
+      "subtopic": "1.10 Linguagem de consulta estruturada (SQL)",
+      "stem": "Considere o comando em SQL apresentado a seguir. SELECT C.CIDADE, AVG(P.PRECO) FROM CLIENTE C, PRODUTO P, VENDA V WHERE C.CODIGO_C = V.CODIGO_C AND P.CODIGO_P = V.CODIGO_P AND P.PRECO > 100 GROUP BY C.CIDADE HAVING AVG(P.PRECO) < 200. O que exibe esse comando?",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Para cada cidade, a média de preço de produtos vendidos a clientes da cidade com valores acima de 100, se a média for menor que 200.",
+          "key": "A"
+        },
+        {
+          "text": "Para cada cidade, a média de preço dos produtos vendidos a clientes da cidade com valores entre 100 e 200.",
+          "key": "B",
+          "explanation": "Incorreto: o filtro WHERE só exige preço acima de 100 (sem limite superior nas linhas filtradas); o valor 200 é aplicado apenas à média final via HAVING, não a cada venda individual."
+        },
+        {
+          "text": "Para cada cidade, a quantidade de produtos vendidos com valores entre 100 e 200.",
+          "key": "C",
+          "explanation": "Incorreto: o comando calcula uma MÉDIA de preço (AVG), não uma contagem (COUNT), e não há filtro superior de 200 nas linhas."
+        },
+        {
+          "text": "Para cada cidade, a média de preço dos produtos vendidos a clientes da cidade que compraram produtos de valores maiores do que 100 e cuja média de compra é menor do que 200.",
+          "key": "D",
+          "explanation": "Reformula o filtro WHERE como uma característica dos clientes ('que compraram produtos de valores maiores que 100'), quando na verdade o filtro se aplica linha a linha às vendas antes do agrupamento, não como qualificação do cliente."
+        },
+        {
+          "text": "Apenas a cidade cuja média de preço dos produtos vendidos é a mais alta dentre as que tiveram média menor do que 200 e produtos vendidos com valores acima de 100.",
+          "key": "E",
+          "explanation": "Incorreto: o comando não seleciona apenas uma cidade (a de maior média); ele retorna todas as cidades cuja média (após o filtro) for menor que 200, sem ordenação ou limitação a um único resultado."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": "O WHERE filtra linhas de venda com preço de produto acima de 100 antes do agrupamento por cidade; o HAVING, aplicado após o agrupamento, mantém apenas as cidades cuja média resultante seja menor que 200."
+      },
+      "area": "arq-dados",
+      "correctKey": "A",
+      "explanationSummary": "O filtro WHERE (preço > 100) atua sobre as vendas individuais antes do agrupamento por cidade, e o HAVING (média < 200) filtra as médias já calculadas por cidade; a alternativa A é a única que descreve corretamente essa ordem de aplicação dos filtros."
+    },
+    {
+      "id": "petro08-q25",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 25
+      },
+      "subtopic": "7.6 Conceitos de data warehouse",
+      "stem": "Um datamart será montado para análise das vendas. Consultas serão feitas com base em produtos, períodos, cidades e clientes. Assinale a afirmação correta sobre o modelo multidimensional a ser gerado.",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "É conveniente criar uma tabela para a dimensão DATA, para evitar cálculos com datas nas consultas SQL e facilitar as consultas por intervalos semanais, mensais, anuais, e similares.",
+          "key": "A"
+        },
+        {
+          "text": "Nenhum atributo da tabela PRODUTO, além da chave primária, deverá constar da tabela fato.",
+          "key": "B",
+          "explanation": "É uma boa prática geral, mas não a afirmação mais central e universalmente correta sobre a modelagem pedida; o ponto crucial destacado no enunciado é a necessidade de uma dimensão DATA elaborada, tornando A a resposta mais completa e diretamente correta."
+        },
+        {
+          "text": "Pelas especificações, CIDADE deve ser, necessariamente, uma dimensão do modelo.",
+          "key": "C",
+          "explanation": "Falso como afirmação absoluta: CIDADE poderia ser modelada como atributo de uma dimensão CLIENTE, e não necessariamente como dimensão própria e independente."
+        },
+        {
+          "text": "O modelo estará necessariamente no formato floco de neve (snowflake).",
+          "key": "D",
+          "explanation": "Falso: nada nas especificações obriga o uso do formato snowflake; um esquema estrela simples também atenderia às consultas descritas."
+        },
+        {
+          "text": "QUANTIDADE é um fato não aditivo.",
+          "key": "E",
+          "explanation": "Falso: QUANTIDADE é um fato tipicamente aditivo (pode ser somado ao longo de todas as dimensões, por exemplo, para obter a quantidade total vendida)."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "analise-dados",
+      "correctKey": "A",
+      "explanationSummary": "É prática consolidada de modelagem dimensional criar uma tabela de dimensão DATA (com atributos como dia da semana, mês, trimestre, ano) para evitar cálculos de datas em SQL e facilitar consultas por diferentes granularidades temporais."
+    },
+    {
+      "id": "petro08-q26",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 26
+      },
+      "subtopic": "7.6 Conceitos de data warehouse",
+      "stem": "A empresa passou a sortear cupons de desconto para alguns clientes, os quais dão direito a um desconto nas compras em uma determinada data. A informação sobre que clientes possuem cupons para que datas é mantida de forma independente e consolidada no processo de ETL, resultando em um campo, na tabela fato, indicando se a venda foi realizada com o desconto ou não. Um usuário tentou realizar uma consulta para saber quais clientes não haviam realizado compras, mesmo tendo um cupom de desconto para a data. Este tipo de demanda tipicamente será resolvido introduzindo, no data warehouse, uma",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "tabela de fatos complementares (complimentary fact table).",
+          "key": "A",
+          "explanation": "Não é um padrão consolidado de modelagem dimensional para esse tipo de demanda ('o que não aconteceu')."
+        },
+        {
+          "text": "tabela de fatos sem dimensão (dimensionless fact table).",
+          "key": "B",
+          "explanation": "Uma tabela de fatos sem dimensão associaria fatos sem contexto dimensional, o que não resolve o problema de rastrear eventos de 'não ocorrência' associados a clientes e datas específicas."
+        },
+        {
+          "text": "tabela de fatos sem fatos (factless fact table).",
+          "key": "C"
+        },
+        {
+          "text": "dimensão multivalorada (multivalued dimension).",
+          "key": "D",
+          "explanation": "Uma dimensão multivalorada resolve o problema de relacionamentos N:N entre fato e dimensão, não o de registrar eventos elegíveis que podem ou não ter ocorrido."
+        },
+        {
+          "text": "dimensão degenerada (degenerated dimension).",
+          "key": "E",
+          "explanation": "Dimensão degenerada é um atributo de granularidade da transação armazenado diretamente na tabela fato (como um número de nota fiscal), não uma solução para rastrear eventos de cobertura/elegibilidade."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "analise-dados",
+      "correctKey": "C",
+      "explanationSummary": "Uma tabela de fatos sem fatos (factless fact table) registra a ocorrência (ou, combinada com a dimensão de cupons, a elegibilidade) de um evento — como 'cliente X tinha cupom para a data Y' — permitindo consultas de cobertura sobre o que NÃO aconteceu (compras não realizadas apesar do cupom)."
+    },
+    {
+      "id": "petro08-q27",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 27
+      },
+      "subtopic": "7.5 Conceitos de OLAP e suas operações",
+      "stem": "Em um banco de dados multidimensional, os dados estão conceitualmente armazenados e organizados em",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "classes e objetos.",
+          "key": "A",
+          "explanation": "Corresponde ao paradigma orientado a objetos, não ao modelo multidimensional."
+        },
+        {
+          "text": "cubos e hipercubos.",
+          "key": "B"
+        },
+        {
+          "text": "partições e índices.",
+          "key": "C",
+          "explanation": "São estruturas de implementação física de bancos de dados em geral, não a organização conceitual característica do modelo multidimensional."
+        },
+        {
+          "text": "consultas materializadas e sumários.",
+          "key": "D",
+          "explanation": "São técnicas de otimização de desempenho (materialização de agregações), não a forma de organização conceitual dos dados multidimensionais."
+        },
+        {
+          "text": "estrelas e constelações.",
+          "key": "E",
+          "explanation": "'Esquema estrela' e 'esquema de constelação' são formas de representação relacional (esquema físico/lógico) de um modelo multidimensional, não a organização conceitual dos dados em si, que é feita em cubos/hipercubos."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "analise-dados",
+      "correctKey": "B",
+      "explanationSummary": "Conceitualmente, o modelo multidimensional organiza os dados como cubos (ou hipercubos, quando há mais de três dimensões), com medidas indexadas pelas combinações de valores das dimensões."
+    },
+    {
+      "id": "petro08-q28",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 28
+      },
+      "subtopic": "1.16 Transações de bancos de dados",
+      "stem": "A execução de um conjunto de transações em um banco de dados é chamado de escalonamento. O critério para um escalonamento ser considerado correto é a(o)",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "serializabilidade.",
+          "key": "A"
+        },
+        {
+          "text": "durabilidade.",
+          "key": "B",
+          "explanation": "Durabilidade é uma das propriedades ACID de uma transação individual (efeitos persistem após commit), não o critério de correção de um escalonamento de múltiplas transações concorrentes."
+        },
+        {
+          "text": "leitura limpa (clean read).",
+          "key": "C",
+          "explanation": "Não é um critério formal de correção de escalonamentos; está mais relacionado a níveis de isolamento específicos, não à definição geral de correção."
+        },
+        {
+          "text": "deadlock ausente (missing deadlock).",
+          "key": "D",
+          "explanation": "A ausência de deadlock é desejável para o progresso das transações, mas não é o critério que define a correção lógica de um escalonamento (um escalonamento pode ser correto e ainda assim, em tese, levar a um deadlock em certas implementações)."
+        },
+        {
+          "text": "commit alcançado (reached commit).",
+          "key": "E",
+          "explanation": "O simples fato de as transações alcançarem commit não garante que o resultado do escalonamento seja equivalente a alguma execução serial (correta)."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "arq-dados",
+      "correctKey": "A",
+      "explanationSummary": "Um escalonamento de transações concorrentes é considerado correto quando é serializável, ou seja, equivalente em seus efeitos a alguma execução serial (uma após a outra) das mesmas transações."
+    },
+    {
+      "id": "petro08-q30",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 30
+      },
+      "subtopic": "1.15 Independência de dados",
+      "stem": "Um modelo entidade-relacionamento foi reestruturado: antes havia as entidades FUNCIONARIO (NOME, EMAIL) e USUARIO (NOME, EMAIL, LOGIN); depois, concluiu-se que todos os usuários eram funcionários (embora nem todos os funcionários fossem usuários), passando a existir FUNCIONARIO (NOME, EMAIL) e USUARIO (LOGIN), com uma associação implícita entre ambas. O modelo relacional derivado do modelo original possuía duas variáveis de relação básicas, com os mesmos nomes das entidades correspondentes, tendo ambas EMAIL como chave primária. Considerando que a variável de relação FUNCIONARIO não será modificada e que a independência de dados lógica será honrada, a variável de relação USUARIO",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "terá que manter todos os seus atributos originais.",
+          "key": "A",
+          "explanation": "Contraria o propósito da independência de dados lógica: o objetivo é que a interface (variável de relação) USUARIO continue oferecendo os mesmos atributos aos usuários existentes, mas isso é alcançado por uma reconstrução (via view/derivada), não pela obrigação de manter fisicamente todos os atributos na mesma variável básica."
+        },
+        {
+          "text": "dispensará o uso de chaves candidatas.",
+          "key": "B",
+          "explanation": "Não há razão para dispensar chaves candidatas; EMAIL continua sendo identificador necessário para a associação entre a base de login e os dados do funcionário."
+        },
+        {
+          "text": "será substituída por uma variável de relação básica e uma derivada.",
+          "key": "C"
+        },
+        {
+          "text": "será substituída por uma variável de relação básica, apenas.",
+          "key": "D",
+          "explanation": "Não é suficiente: apenas uma variável básica não reconstituiria automaticamente a interface original USUARIO (NOME, EMAIL, LOGIN) sem uma junção com FUNCIONARIO."
+        },
+        {
+          "text": "será substituída por uma variável de relação derivada, apenas.",
+          "key": "E",
+          "explanation": "Não é suficiente isoladamente: os dados de LOGIN (que não existem em FUNCIONARIO) precisam estar armazenados em algum lugar básico; uma variável apenas derivada não teria de onde extrair essa informação nova."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": "É necessária uma variável básica nova para armazenar EMAIL/LOGIN (informação que não existe em FUNCIONARIO) e uma variável derivada (view) que reconstrua a interface original de USUARIO (NOME, EMAIL, LOGIN) via junção entre a nova variável básica e FUNCIONARIO, preservando a independência de dados lógica para os usuários da interface antiga."
+      },
+      "area": "arq-dados",
+      "correctKey": "C",
+      "explanationSummary": "Como LOGIN só existe para usuários, é necessária uma variável básica nova (EMAIL, LOGIN); a interface original USUARIO (NOME, EMAIL, LOGIN) é recomposta por uma variável derivada que junta essa base com FUNCIONARIO, preservando a independência de dados lógica."
+    },
+    {
+      "id": "petro08-q32",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 32
+      },
+      "subtopic": "6.1 Conceitos de acessibilidade e usabilidade",
+      "stem": "Já em 1999, o W3C emitiu recomendações sobre acessibilidade de páginas Web em seu Web Content Accessibility Guidelines 1.0, visando permitir que pessoas com algum tipo de deficiência possam utilizar as páginas, ainda que com dispositivos alternativos como leitores de tela. Entre os itens de acessibilidade a serem observados no projeto de sites e aplicações web, em geral, NÃO se inclui:",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "evitar usar imagens para representar texto (em botões, por exemplo).",
+          "key": "A",
+          "explanation": "É uma recomendação real de acessibilidade (texto em imagem não é lido corretamente por leitores de tela sem alternativa textual)."
+        },
+        {
+          "text": "evitar o uso de tabelas para fins de layout, a menos que façam sentido quando linearizadas.",
+          "key": "B",
+          "explanation": "É uma recomendação real de acessibilidade das WCAG relativa ao uso de tabelas."
+        },
+        {
+          "text": "evitar usar elementos que piscam ou se movem na tela.",
+          "key": "C",
+          "explanation": "É uma recomendação real de acessibilidade (elementos que piscam podem causar problemas a usuários com certas condições e dificultam o uso de leitores de tela)."
+        },
+        {
+          "text": "abrir novas janelas para minimizar a necessidade do uso do botão Retornar do navegador.",
+          "key": "D"
+        },
+        {
+          "text": "organizar o conteúdo das páginas de forma que possa ser lido sem folhas de estilo.",
+          "key": "E",
+          "explanation": "É uma recomendação real de acessibilidade (o conteúdo deve manter sentido mesmo sem CSS, por exemplo, para leitores de tela)."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ux",
+      "correctKey": "D",
+      "explanationSummary": "Abrir novas janelas inesperadamente é, na verdade, uma prática CONTRÁRIA à acessibilidade e à usabilidade (desorienta o usuário, especialmente os que usam leitores de tela), e não uma recomendação das diretrizes de acessibilidade, tornando-a a única opção que NÃO se inclui entre as boas práticas."
+    },
+    {
+      "id": "petro08-q33",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 33
+      },
+      "subtopic": "2.4 PMBOK 7ª edição",
+      "stem": "Ao apresentar o cronograma de um projeto à diretoria da empresa, o gerente foi informado de que a data de término do projeto deverá ser antecipada em 3 meses. Esta exigência implicará, necessariamente, em",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "refazer as estimativas de esforço para uma ou mais tarefas do projeto.",
+          "key": "A",
+          "explanation": "Não é uma consequência necessária: é possível reduzir a duração do projeto sem necessariamente refazer as estimativas de esforço (por exemplo, executando tarefas em paralelo ou com paralelismo adicional de recursos)."
+        },
+        {
+          "text": "reduzir a duração do caminho crítico do projeto.",
+          "key": "B"
+        },
+        {
+          "text": "alocar mais recursos ao projeto.",
+          "key": "C",
+          "explanation": "É apenas uma das técnicas possíveis (compressão de cronograma por 'crashing'), não uma consequência necessária; a antecipação também poderia ser obtida por fast tracking (paralelismo), sem novos recursos."
+        },
+        {
+          "text": "fazer entregas diferentes das especificadas.",
+          "key": "D",
+          "explanation": "Não é uma consequência necessária da antecipação de prazo; o escopo pode, em princípio, ser mantido."
+        },
+        {
+          "text": "aumentar o custo do projeto.",
+          "key": "E",
+          "explanation": "É apenas uma possível consequência (se a técnica escolhida for crashing com mais recursos), não uma necessidade lógica; algumas técnicas de compressão podem não aumentar custo."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "gestao-proj",
+      "correctKey": "B",
+      "explanationSummary": "Como a duração total do projeto é determinada pelo seu caminho crítico, antecipar necessariamente a data de término exige reduzir a duração desse caminho crítico, independentemente da técnica específica usada para isso."
+    },
+    {
+      "id": "petro08-q34",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 34
+      },
+      "subtopic": "2.4 PMBOK 7ª edição",
+      "stem": "A Estrutura Analítica do Projeto - EAP (em Inglês Work Breakdown Structure – WBS) inclui",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "estimativas de prazos.",
+          "key": "A",
+          "explanation": "Estimativas de prazos são produzidas em processos de gerenciamento de cronograma, a partir da EAP, mas não são um elemento constituinte da EAP em si."
+        },
+        {
+          "text": "estimativas de custos.",
+          "key": "B",
+          "explanation": "Estimativas de custos são produzidas em processos de gerenciamento de custos, a partir da EAP, mas não são um elemento constituinte da EAP em si."
+        },
+        {
+          "text": "entregas internas e externas.",
+          "key": "C"
+        },
+        {
+          "text": "alocação dos recursos às tarefas.",
+          "key": "D",
+          "explanation": "A alocação de recursos é feita no planejamento de recursos humanos/cronograma, não é um elemento da decomposição da EAP."
+        },
+        {
+          "text": "estratégias para mitigação dos riscos.",
+          "key": "E",
+          "explanation": "Estratégias de mitigação de risco pertencem ao gerenciamento de riscos, não são parte da estrutura de decomposição de entregas da EAP."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "gestao-proj",
+      "correctKey": "C",
+      "explanationSummary": "A EAP é uma decomposição hierárquica do escopo do projeto orientada a entregas (internas e externas), e não contém diretamente estimativas de prazo/custo, alocação de recursos ou estratégias de risco, que são produtos de outros processos de planejamento."
+    },
+    {
+      "id": "petro08-q35",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 35
+      },
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "São enumeradas métricas colhidas para determinado intervalo de tempo ao longo da vida de um projeto: I - Custo orçado do trabalho previsto. II - Custo orçado do trabalho realizado. III - Custo real do trabalho previsto. IV - Custo real do trabalho realizado. A técnica de Gerenciamento de Valor Agregado – GVA (em Inglês, Earned Value Management – EVM) se baseia nas métricas",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "I e II, apenas.",
+          "key": "A",
+          "explanation": "Omite a métrica de custo real realizado (AC), essencial para o cálculo das variações de custo do GVA."
+        },
+        {
+          "text": "I e III, apenas.",
+          "key": "B",
+          "explanation": "'Custo real do trabalho previsto' (III) não é uma das três métricas-base do GVA, e a combinação também omite o custo realizado (EV/AC)."
+        },
+        {
+          "text": "II e IV, apenas.",
+          "key": "C",
+          "explanation": "Omite a métrica de custo orçado do trabalho previsto (PV/BCWS), essencial para as análises de variação de prazo do GVA."
+        },
+        {
+          "text": "I, II e IV, apenas.",
+          "key": "D"
+        },
+        {
+          "text": "I, II, III e IV.",
+          "key": "E",
+          "explanation": "Inclui indevidamente a métrica III ('custo real do trabalho previsto'), que não corresponde a nenhuma das três métricas-base clássicas do GVA (PV, EV, AC)."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": "As três métricas-base do GVA são: PV (custo orçado do trabalho previsto, I), EV (custo orçado do trabalho realizado, II) e AC (custo real do trabalho realizado, IV); não existe uma métrica padrão de 'custo real do trabalho previsto' (III)."
+      },
+      "area": "gestao-proj",
+      "correctKey": "D",
+      "explanationSummary": "O Gerenciamento de Valor Agregado se baseia nas três métricas clássicas PV (I), EV (II) e AC (IV); a métrica III ('custo real do trabalho previsto') não faz parte do conjunto padrão de métricas do GVA."
+    },
+    {
+      "id": "petro08-q36",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 36
+      },
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "É recomendado que um projeto possua um mecanismo formal e documentado de controle de mudanças. Sobre este mecanismo: I - O mecanismo deve rastrear e tratar mudanças em quaisquer fatores críticos de sucesso do projeto, incluindo escopo, prazos e custos. II - Para tornar o processo gerenciável, é recomendado que sejam rastreadas apenas mudanças que possuam impacto significativo no custo ou nos prazos do projeto e que não sejam rejeitadas em primeira análise. III - A avaliação e a aprovação de quaisquer solicitações de mudanças são atribuições exclusivas do gerente de projeto, pois o mesmo detém a autoridade e a responsabilidade sobre os resultados finais do projeto perante os stakeholders. IV - Tipicamente, o mecanismo de controle de mudanças prevê algumas categorias de mudanças que são automaticamente aprovadas – tais como as resultantes de emergências – as quais devem ser registradas e rastreadas, da mesma forma que as demais. Estão corretas APENAS as afirmativas",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "I e II",
+          "key": "A",
+          "explanation": "II está incorreta: um bom controle de mudanças rastreia TODAS as solicitações de mudança (mesmo as de baixo impacto e as rejeitadas), para manter histórico e rastreabilidade, e não apenas as de impacto significativo não rejeitadas em primeira análise."
+        },
+        {
+          "text": "I e III",
+          "key": "B",
+          "explanation": "III está incorreta: a aprovação de mudanças normalmente cabe a um Comitê de Controle de Mudanças (CCB) ou a outros stakeholders relevantes, e não é atribuição exclusiva do gerente de projeto em muitas estruturas de governança."
+        },
+        {
+          "text": "I e IV",
+          "key": "C"
+        },
+        {
+          "text": "II e III",
+          "key": "D",
+          "explanation": "Ambas as afirmativas estão incorretas: II restringe indevidamente o rastreamento e III atribui exclusividade indevida ao gerente de projeto."
+        },
+        {
+          "text": "III e IV",
+          "key": "E",
+          "explanation": "III está incorreta pelos mesmos motivos acima, mesmo que IV esteja correta."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "gestao-proj",
+      "correctKey": "C",
+      "explanationSummary": "O controle de mudanças deve rastrear mudanças em todos os fatores críticos (escopo, prazo, custo) (I, correta) e tipicamente prevê categorias pré-aprovadas (como emergências) que ainda assim são registradas e rastreadas (IV, correta); já restringir o rastreamento a mudanças de grande impacto (II) e tornar a aprovação exclusiva do gerente de projeto (III) contrariam boas práticas usuais de governança de mudanças."
+    },
+    {
+      "id": "petro08-q37",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 37
+      },
+      "subtopic": "2.1 Scrum e Kanban",
+      "stem": "Estudos baseados na análise de diversos projetos de desenvolvimento de software sugerem que tais projetos têm maior chance de sucesso quando empregam metodologia e gerenciamento alinhados ao paradigma de desenvolvimento de novos produtos, em contraponto ao paradigma de produção industrial. Com base nessas observações, a maioria das metodologias modernas de desenvolvimento de software recomenda:",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "concluir o trabalho de especificações dos requisitos do sistema, antes de iniciar as atividades de projeto e implementação.",
+          "key": "A",
+          "explanation": "Descreve o paradigma sequencial/em cascata (modelo de produção industrial), justamente o contraponto ao que o texto recomenda."
+        },
+        {
+          "text": "planejar detalhadamente no início do projeto todas as fases e atividades do mesmo, de forma que seja possível estimar com precisão o esforço necessário e os prazos de cada atividade.",
+          "key": "B",
+          "explanation": "Também caracteriza o planejamento preditivo detalhado típico do paradigma de produção industrial, contrário à recomendação das metodologias modernas mencionadas."
+        },
+        {
+          "text": "providenciar, desde o início do projeto, mecanismos para prevenir e bloquear solicitações de mudanças de forma a garantir que será entregue exatamente o que foi especificado.",
+          "key": "C",
+          "explanation": "Contraria o espírito adaptativo do desenvolvimento de novos produtos, que abraça a mudança em vez de bloqueá-la."
+        },
+        {
+          "text": "dividir o trabalho em iterações curtas, com prazos fixos, e não permitir que as mesmas avancem sobre os prazos, reduzindo o escopo da iteração, se necessário.",
+          "key": "D"
+        },
+        {
+          "text": "não produzir documentação técnica para o sistema, tendo em vista que a mesma já nasce condenada a ficar desatualizada, investindo melhor o tempo em atividades de implementação e testes exaustivos.",
+          "key": "E",
+          "explanation": "Exagera e distorce a prática ágil (que valoriza documentação enxuta, não a ausência total de documentação) como um princípio geral recomendado."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "gestao-proj",
+      "correctKey": "D",
+      "explanationSummary": "Alinhado ao paradigma de desenvolvimento de novos produtos, as metodologias modernas (ágeis) recomendam iterações curtas com prazos fixos (timeboxing), ajustando o escopo da iteração quando necessário, em vez do planejamento preditivo detalhado ou do bloqueio de mudanças típico da produção industrial."
+    },
+    {
+      "id": "petro08-q38",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 38
+      },
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "São feitas as afirmativas a seguir, sobre o fechamento de um projeto: I - É necessário, ao final do projeto, rever o artefato de lições aprendidas de forma a retirar do mesmo as experiências mal sucedidas, para que outros projetos possam se beneficiar dos acertos do time ao mesmo tempo em que não são deixadas brechas para acionamento legal por parte dos stakeholders em caso de não-conformidade ou informações que possam revelar fraquezas e pontos sensíveis dos produtos gerados ou que contribuam para formar uma imagem negativa do mesmo. II - O fechamento de um projeto prevê atividades de naturezas administrativas, tais como avaliações de desempenho e obtenção de aceite formal das entregas, as quais são realizadas não só no final do projeto como ao longo do ciclo de vida do mesmo, notadamente no fechamento das fases do projeto. III - Se o projeto for completado com sucesso antes do prazo previsto ou com orçamento menor do que o especificado, as causas desse resultado devem ser identificadas e avaliadas sob a perspectiva de desvios do planejamento. IV - Se houver um contrato formal assinado para o projeto, atividades específicas de encerramento do contrato devem ser conduzidas, exceto no caso em que o projeto seja cancelado, absorvido pela organização como um projeto permanente ou substituído por outro projeto. Estão corretas APENAS as afirmativas",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "I e II.",
+          "key": "A",
+          "explanation": "I está incorreta: as lições aprendidas devem registrar honestamente também as experiências mal sucedidas, para benefício de projetos futuros, e não removê-las para evitar exposição legal ou de imagem."
+        },
+        {
+          "text": "I e IV.",
+          "key": "B",
+          "explanation": "Ambas incorretas: I distorce o propósito das lições aprendidas, e IV isenta indevidamente o cancelamento do projeto das atividades de encerramento de contrato, quando justamente o cancelamento é um dos casos que mais exige encerramento formal do contrato."
+        },
+        {
+          "text": "II e III.",
+          "key": "C"
+        },
+        {
+          "text": "II e IV.",
+          "key": "D",
+          "explanation": "IV está incorreta pelo motivo acima, mesmo que II esteja correta."
+        },
+        {
+          "text": "III e IV.",
+          "key": "E",
+          "explanation": "IV está incorreta pelo motivo acima, mesmo que III esteja correta."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "gestao-proj",
+      "correctKey": "C",
+      "explanationSummary": "O fechamento de projeto inclui atividades administrativas realizadas também ao longo do ciclo de vida, nos fechamentos de fase (II, correta), e a conclusão com sucesso antes do prazo/orçamento também deve ter suas causas investigadas como desvio de planejamento (III, correta); já a afirmativa I distorce o propósito das lições aprendidas e a IV isenta indevidamente o cancelamento das atividades de encerramento contratual."
+    },
+    {
+      "id": "petro08-q39",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 39
+      },
+      "subtopic": "2.6 Escritório de projetos",
+      "stem": "Uma prática gerencial adotada em diversas organizações, que aumenta a visibilidade dos projetos para os executivos, facilitando sua priorização e a detecção de problemas, bem como prevenindo a realização de projetos que não estejam alinhados com a organização é a(o)",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Análise de riscos.",
+          "key": "A",
+          "explanation": "A análise de riscos trata da identificação/tratamento de riscos de um projeto específico, não da visibilidade e priorização do conjunto de projetos da organização."
+        },
+        {
+          "text": "Gerenciamento de Portifólios de Projetos.",
+          "key": "B"
+        },
+        {
+          "text": "Gerenciamento Integrado de Projetos.",
+          "key": "C",
+          "explanation": "Refere-se à integração dos processos dentro de um único projeto, não à visibilidade e priorização de múltiplos projetos da organização como um todo."
+        },
+        {
+          "text": "Gerenciamento Total da Qualidade.",
+          "key": "D",
+          "explanation": "É uma abordagem de qualidade organizacional, não diretamente relacionada à priorização e visibilidade de projetos para executivos."
+        },
+        {
+          "text": "PERT – Program Evaluation and Review Technique.",
+          "key": "E",
+          "explanation": "É uma técnica de estimativa e sequenciamento de atividades dentro de um cronograma, não uma prática de visibilidade/priorização de portfólio de projetos."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "gestao-proj",
+      "correctKey": "B",
+      "explanationSummary": "O Gerenciamento de Portfólios de Projetos é a prática que centraliza a visão de todos os projetos da organização, permitindo priorização, detecção de problemas e alinhamento estratégico, evitando projetos desalinhados com os objetivos organizacionais."
+    },
+    {
+      "id": "petro08-q41",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 41
+      },
+      "subtopic": "8.6 Sistemas dedutivos",
+      "stem": "Se Ana sabe que Beatriz tem acesso ao sistema de almoxarifado, então Ana não fez um pedido. Ou Ana fez um pedido ou a senha de Beatriz foi descoberta. Se Carlos conversou com Ana, então Ana sabe que Beatriz tem acesso ao sistema de almoxarifado. Ora, nem a senha de Beatriz foi descoberta nem Beatriz conhece Carlos. Logo: I - Ana fez um pedido; II - Ana sabe que Beatriz tem acesso ao sistema de almoxarifado; III - Carlos não conversou com Ana; IV - Beatriz conhece Carlos. São verdadeiras APENAS as conclusões",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "I e II",
+          "key": "A",
+          "explanation": "II é falsa: como Ana fez um pedido (I verdadeira), pela premissa 1 (contrapositiva) conclui-se que Ana NÃO sabe que Beatriz tem acesso ao sistema."
+        },
+        {
+          "text": "I e III",
+          "key": "B"
+        },
+        {
+          "text": "II e III",
+          "key": "C",
+          "explanation": "II é falsa pelo mesmo motivo acima (contrapositiva da premissa 1, dado que Ana fez um pedido)."
+        },
+        {
+          "text": "II e IV",
+          "key": "D",
+          "explanation": "Tanto II quanto IV são falsas: II pela contrapositiva da premissa 1, e IV porque a premissa final afirma diretamente que Beatriz NÃO conhece Carlos."
+        },
+        {
+          "text": "III e IV",
+          "key": "E",
+          "explanation": "IV é falsa: a premissa final afirma diretamente que 'nem... Beatriz conhece Carlos', logo IV (Beatriz conhece Carlos) é falsa, não verdadeira."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Da última premissa, ¬S (senha não descoberta) e ¬K (Beatriz não conhece Carlos) são verdadeiras. Da 2ª premissa (A∨S) com ¬S, conclui-se A (Ana fez pedido) — I verdadeira. Da 1ª premissa (B→¬A), pela contrapositiva (A→¬B), conclui-se ¬B (Ana não sabe do acesso de Beatriz) — II falsa. Da 3ª premissa (C→B), pela contrapositiva (¬B→¬C), conclui-se ¬C (Carlos não conversou com Ana) — III verdadeira. IV é falsa diretamente pela última premissa (¬K). Logo, verdadeiras APENAS I e III."
+      },
+      "area": "logica",
+      "correctKey": "B",
+      "explanationSummary": "Da premissa 'nem a senha foi descoberta nem Beatriz conhece Carlos' seguem ¬S e ¬K; com ¬S e a premissa 'A ou S', conclui-se A (I verdadeira); pela contrapositiva de 'B→¬A', de A conclui-se ¬B (II falsa); pela contrapositiva de 'C→B', de ¬B conclui-se ¬C (III verdadeira); logo, são verdadeiras apenas I e III."
+    },
+    {
+      "id": "petro08-q43",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 43
+      },
+      "subtopic": "9.19 ISO 27002, criptografia, certificação e assinatura digital",
+      "stem": "De acordo com a norma NBR/ISO 27002, protegem as informações da organização e informam aos signatários das suas responsabilidades, para proteger, usar e divulgar a informação de maneira responsável e autorizada, os(as)",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "acordos de confidencialidade e de não-divulgação.",
+          "key": "A"
+        },
+        {
+          "text": "contratos de não-repúdio e privacidade.",
+          "key": "B",
+          "explanation": "Não-repúdio e privacidade são propriedades/controles de segurança distintos, não o instrumento específico citado pela norma para formalizar responsabilidades de proteção/uso/divulgação da informação por signatários."
+        },
+        {
+          "text": "direitos autorais e industriais.",
+          "key": "C",
+          "explanation": "Tratam de propriedade intelectual, não do compromisso formal de proteção/divulgação responsável da informação pelos signatários."
+        },
+        {
+          "text": "normas e políticas de segurança.",
+          "key": "D",
+          "explanation": "São documentos organizacionais gerais de segurança, não o instrumento específico assinado por signatários citado na questão."
+        },
+        {
+          "text": "senhas e identidades digitais.",
+          "key": "E",
+          "explanation": "São mecanismos de autenticação, não instrumentos que formalizam responsabilidades de proteção e divulgação da informação por signatários."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "seg-info",
+      "correctKey": "A",
+      "explanationSummary": "A NBR ISO/IEC 27002 recomenda o uso de acordos de confidencialidade e de não divulgação (NDAs), assinados pelas partes, para formalizar suas responsabilidades quanto à proteção, uso e divulgação responsável e autorizada da informação da organização."
+    },
+    {
+      "id": "petro08-q44",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 44
+      },
+      "subtopic": "9.19 ISO 27002, criptografia, certificação e assinatura digital",
+      "stem": "Com o objetivo de 'prevenir a ocorrência de erros, perdas, modificação não autorizada ou mau uso de informações em aplicações', a norma NBR/ISO 27002 recomenda os controles apresentados a seguir, EXCETO:",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "validação dos dados de entrada.",
+          "key": "A",
+          "explanation": "É um controle explícito da norma nesse contexto (processamento correto em aplicações)."
+        },
+        {
+          "text": "validação dos dados de saída.",
+          "key": "B",
+          "explanation": "É um controle explícito da norma nesse contexto."
+        },
+        {
+          "text": "controle do processamento interno.",
+          "key": "C",
+          "explanation": "É um controle explícito da norma nesse contexto."
+        },
+        {
+          "text": "integridade de mensagens.",
+          "key": "D",
+          "explanation": "É um controle explícito da norma nesse contexto (autenticidade e integridade de mensagens)."
+        },
+        {
+          "text": "integridade referencial.",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "seg-info",
+      "correctKey": "E",
+      "explanationSummary": "'Integridade referencial' é um conceito de modelagem/banco de dados relacional, não um dos controles listados pela NBR ISO/IEC 27002 para o processamento correto em aplicações (que inclui validação de entrada/saída, controle do processamento interno e integridade de mensagens)."
+    },
+    {
+      "id": "petro08-q45",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 45
+      },
+      "subtopic": "9.19 ISO 27002, criptografia, certificação e assinatura digital",
+      "stem": "A norma NBR/ISO 27002 recomenda que os requisitos para controles de segurança para novos sistemas de informação ou melhorias em sistemas existentes sejam especificados",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "no documento da política de segurança da informação da organização.",
+          "key": "A",
+          "explanation": "A política de segurança é um documento de nível organizacional/estratégico geral, não o local onde requisitos de segurança de um sistema específico devem ser especificados segundo a norma."
+        },
+        {
+          "text": "nos documentos de arquitetura de software dos sistemas.",
+          "key": "B",
+          "explanation": "Não é o local recomendado pela norma para essa especificação, que trata de requisitos de negócio e não apenas de arquitetura técnica."
+        },
+        {
+          "text": "nos manuais dos sistemas.",
+          "key": "C",
+          "explanation": "Manuais descrevem o uso do sistema, e não são o instrumento recomendado pela norma para especificar requisitos de segurança no momento da concepção do sistema."
+        },
+        {
+          "text": "na política de controle de acesso.",
+          "key": "D",
+          "explanation": "Trata especificamente de acesso, um subconjunto dos requisitos de segurança, não o instrumento geral recomendado pela norma para especificar todos os requisitos de segurança de novos sistemas."
+        },
+        {
+          "text": "nas especificações de requisitos de negócios dos sistemas.",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "seg-info",
+      "correctKey": "E",
+      "explanationSummary": "A NBR ISO/IEC 27002 recomenda que os requisitos de segurança para novos sistemas (ou melhorias) sejam identificados e justificados nas especificações de requisitos de negócios dos sistemas, junto com os demais requisitos funcionais."
+    },
+    {
+      "id": "petro08-q47",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 47
+      },
+      "subtopic": "7.2 Conceitos, fundamentos, técnicas e métodos de Business Intelligence (BI)",
+      "stem": "A respeito de sistemas de informações gerenciais, são feitas as afirmativas a seguir: I - Uma das diferenças entre bancos de dados relacionais e multidimensionais diz respeito ao compromisso entre performance e escalabilidade: bancos de dados relacionais proporcionam consultas mais rápidas, enquanto bancos de dados multidimensionais lidam melhor com grandes quantidades de informações armazenadas. II - ROLAP se refere a um tipo de solução OLAP que utiliza um banco de dados relacional. III - Quando um projeto inicia por datamarts departamentais especializados que mais tarde se consolidam em um data warehouse institucional, existe uma chance maior de surgirem problemas de inconsistência de metadados do que quando um data warehouse institucional dá origem a datamarts departamentais. IV - Para melhoria de performance, as tabelas em data warehouses, em geral, estão nas formas normais mais altas (considerando que 5FN é mais alta que 1FN). Estão corretas APENAS as afirmativas",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "I e II",
+          "key": "A",
+          "explanation": "I inverte o compromisso típico entre performance/escalabilidade: estruturas multidimensionais (MOLAP) tendem a oferecer consultas agregadas mais rápidas, enquanto o relacional (ROLAP) tende a escalar melhor para grandes volumes — o texto da afirmativa apresenta a relação trocada."
+        },
+        {
+          "text": "I e III",
+          "key": "B",
+          "explanation": "I é incorreta pelo motivo acima (compromisso performance/escalabilidade invertido), mesmo que III esteja correta."
+        },
+        {
+          "text": "I e IV",
+          "key": "C",
+          "explanation": "Ambas incorretas: I pelo motivo acima, e IV porque data warehouses são, em geral, desnormalizados (formas normais mais baixas), e não normalizados em formas mais altas, justamente para melhorar a performance de consultas analíticas."
+        },
+        {
+          "text": "II e III",
+          "key": "D"
+        },
+        {
+          "text": "III e IV",
+          "key": "E",
+          "explanation": "IV é incorreta pelo motivo acima (data warehouses são tipicamente desnormalizados para performance), mesmo que III esteja correta."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "medium",
+        "notes": "II é verdadeira (definição padrão de ROLAP). III é verdadeira: o problema clássico de datamarts departamentais 'silo' criados antes de um data warehouse institucional consolidado é a inconsistência de metadados/dimensões entre eles, risco menor na abordagem top-down (DW institucional primeiro). I inverte o compromisso real entre MOLAP/ROLAP, e IV contraria a prática usual de desnormalização em data warehouses para performance; logo, corretas apenas II e III."
+      },
+      "area": "analise-dados",
+      "correctKey": "D",
+      "explanationSummary": "ROLAP realmente designa soluções OLAP sobre bancos relacionais (II correta), e iniciar por datamarts departamentais isolados antes de um data warehouse institucional aumenta o risco de inconsistência de metadados entre eles (III correta); já I inverte o compromisso real entre bancos relacionais e multidimensionais, e IV contraria a prática usual de desnormalização de data warehouses para performance."
+    },
+    {
+      "id": "petro08-q48",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 48
+      },
+      "subtopic": "7.6 Conceitos de data warehouse",
+      "stem": "São feitas algumas afirmações a respeito de data warehouses e ferramentas OLAP: I - Os usuários finais do data warehouse, em geral, não possuem acesso à Data Staging Area. II - Drill in, drill out, roll over e roll on são típicas operações disponibilizadas pelas ferramentas de consultas OLAP para navegar pela hierarquia de uma dimensão. III - As rotinas de ETL muitas vezes originam solicitações de mudanças e melhorias nos sistemas OLTP e outras fontes de dados que alimentam o data warehouse, pois têm o potencial de revelar inconsistências entre os diversos sistemas corporativos. IV - Um data warehouse, em geral, deve ser projetado para fazer junções entre fatos e dimensões através de chaves naturais, evitando chaves substitutas (surrogate keys), pois estas apenas contribuiriam para aumentar o tamanho e a complexidade do esquema sem nenhum benefício para o usuário final. Estão corretas APENAS as afirmações",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "I e II.",
+          "key": "A",
+          "explanation": "II é incorreta: os termos padronizados de navegação em hierarquias OLAP são drill-down, drill-up (roll-up), slice, dice e pivot; 'drill in, drill out, roll over e roll on' não são a terminologia padrão dessas operações."
+        },
+        {
+          "text": "I e III.",
+          "key": "B"
+        },
+        {
+          "text": "II e III.",
+          "key": "C",
+          "explanation": "II é incorreta pelo motivo acima, mesmo que III esteja correta."
+        },
+        {
+          "text": "II e IV.",
+          "key": "D",
+          "explanation": "Ambas incorretas: II pela terminologia equivocada, e IV porque a prática recomendada é o uso de chaves substitutas (surrogate keys), não de chaves naturais, justamente para lidar com mudanças históricas e integração de fontes."
+        },
+        {
+          "text": "III e IV.",
+          "key": "E",
+          "explanation": "IV é incorreta pelo motivo acima, mesmo que III esteja correta."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "analise-dados",
+      "correctKey": "B",
+      "explanationSummary": "Usuários finais do DW tipicamente não acessam a área de staging (I correta), e rotinas de ETL frequentemente revelam inconsistências nos sistemas de origem, gerando solicitações de melhoria nesses sistemas (III correta); já II usa terminologia não padronizada para operações OLAP, e IV contraria a boa prática de uso de chaves substitutas (surrogate keys) em vez de chaves naturais."
+    },
+    {
+      "id": "petro08-q49",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 49
+      },
+      "subtopic": "7.7 Modelagem e otimização de bases de dados multidimensionais",
+      "stem": "O agrupamento de diversas dimensões correspondentes a indicadores com baixa cardinalidade, gerando uma dimensão abstrata, de forma a retirar os indicadores da tabela fato, mas preservando a possibilidade de seu uso em consultas, constitui a",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "minidimensão (minidimension).",
+          "key": "A",
+          "explanation": "Minidimensão é usada para separar atributos de alta cardinalidade e alta taxa de mudança de uma dimensão grande, não para agrupar múltiplos indicadores de baixa cardinalidade retirados da tabela fato."
+        },
+        {
+          "text": "dimensão outrigger (outrigger dimension).",
+          "key": "B",
+          "explanation": "Dimensão outrigger é uma dimensão secundária referenciada a partir de outra dimensão (não a partir da tabela fato), diferente do padrão descrito."
+        },
+        {
+          "text": "dimensão lixo ou sucata (junk dimension).",
+          "key": "C"
+        },
+        {
+          "text": "dimensão com papéis (role-playing dimension).",
+          "key": "D",
+          "explanation": "Dimensão com papéis refere-se a uma mesma dimensão física sendo usada em múltiplos papéis (ex.: várias datas), não ao agrupamento de indicadores diversos de baixa cardinalidade."
+        },
+        {
+          "text": "dimensão de campo de bits (bitmap dimension).",
+          "key": "E",
+          "explanation": "Não corresponde a um padrão de modelagem dimensional consolidado com esse propósito."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "analise-dados",
+      "correctKey": "C",
+      "explanationSummary": "A dimensão lixo (junk dimension) agrupa diversos indicadores/flags de baixa cardinalidade, retirando-os da tabela fato e combinando-os em uma única dimensão abstrata, mantendo-os disponíveis para consultas sem poluir a tabela fato com muitas colunas de baixa cardinalidade."
+    },
+    {
+      "id": "petro08-q50",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 50
+      },
+      "subtopic": "5.3 Modelos, metodologias, técnicas e ferramentas de análise e projeto (estruturado e orientado a objetos)",
+      "stem": "Aplicações com interfaces web podem apresentar fluxos de navegação complexos entre suas páginas. Há links e botões a serem clicados a qualquer momento, disparando eventos de transição de uma página para outra e até para si mesma. Utilizando Javascript no lado do cliente, e possivelmente recursos Ajax, é possível habilitar ou desabilitar links e permitir ou impedir o envio de formulários com base em condições verificadas em tempo real. Dentre os tipos de diagrama UML listados a seguir, qual o que melhor modelaria o fluxo de navegação descrito?",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Classe",
+          "key": "A",
+          "explanation": "Diagrama de classes modela estrutura estática (atributos/métodos/relações), não fluxos de transição dirigidos por eventos e condições."
+        },
+        {
+          "text": "Atividade",
+          "key": "B",
+          "explanation": "Diagrama de atividade é mais adequado para modelar fluxos de trabalho/processos com paralelismo, e não tão naturalmente estados de página com transições condicionadas a eventos como no cenário descrito."
+        },
+        {
+          "text": "Máquina de estado",
+          "key": "C"
+        },
+        {
+          "text": "Componente",
+          "key": "D",
+          "explanation": "Diagrama de componente modela a organização de módulos/componentes de software, não o fluxo dinâmico de navegação entre páginas."
+        },
+        {
+          "text": "Sequência",
+          "key": "E",
+          "explanation": "Diagrama de sequência modela a ordem temporal de troca de mensagens entre objetos em um cenário específico, não o conjunto geral de estados/transições possíveis de navegação entre páginas."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "eng-sw",
+      "correctKey": "C",
+      "explanationSummary": "Cada página pode ser vista como um estado, e os cliques em links/botões como eventos que disparam transições (possivelmente com guardas/condições); essa é exatamente a semântica de um diagrama de máquina de estado da UML."
+    },
+    {
+      "id": "petro08-q51",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 51
+      },
+      "subtopic": "5.1 Levantamento, análise e gerenciamento de requisitos",
+      "stem": "Analise as afirmativas a seguir, sobre requisitos em projetos de software: I - O rastreamento de requisitos é de grande importância para conduzir análises de impacto quando há mudanças em requisitos. II - O acrônimo FURPS+ se refere aos requisitos não funcionais das categorias de Feasibility, Usability, Reliability, Performance e Supportability. III - Um requisito pode conter, além da especificação, atributos que sirvam ao seu gerenciamento. IV - Casos de uso são descrições da interação entre um ator e o sistema e, portanto, especificam apenas requisitos funcionais. Estão corretas APENAS as afirmativas",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "I e II.",
+          "key": "A",
+          "explanation": "II é incorreta: o 'F' de FURPS refere-se a Functionality (funcionalidade), não a Feasibility, e Functionality é justamente o requisito FUNCIONAL do acrônimo, não um requisito não funcional."
+        },
+        {
+          "text": "I e III.",
+          "key": "B"
+        },
+        {
+          "text": "II e III.",
+          "key": "C",
+          "explanation": "II é incorreta pelo motivo acima, mesmo que III esteja correta."
+        },
+        {
+          "text": "II e IV.",
+          "key": "D",
+          "explanation": "Ambas incorretas: II pelo motivo acima, e IV porque casos de uso frequentemente também capturam ou referenciam requisitos não funcionais (via seções de requisitos especiais/extensões), não apenas requisitos funcionais."
+        },
+        {
+          "text": "III e IV.",
+          "key": "E",
+          "explanation": "IV é incorreta pelo motivo acima, mesmo que III esteja correta."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "eng-sw",
+      "correctKey": "B",
+      "explanationSummary": "O rastreamento de requisitos é fundamental para análises de impacto (I correta) e um requisito pode conter atributos de gerenciamento além da especificação, como prioridade e origem (III correta); já II erra a expansão do 'F' de FURPS (Functionality, não Feasibility, e Functionality é requisito funcional), e IV é incorreta pois casos de uso também podem capturar requisitos não funcionais."
+    },
+    {
+      "id": "petro08-q52",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 52
+      },
+      "subtopic": "5.4 Verificação, validação e teste",
+      "stem": "Considere o método Java: public boolean primo(int x) { if (x == 1 || x == 2) { return true; } int raiz = (int) Math.sqrt((double)x); for (int i = 2; i <= raiz; i++) { if (x % i == 0) { return false; } } return true; }. Qual a complexidade ciclomática do método?",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "2",
+          "key": "A",
+          "explanation": "Subestima o número de pontos de decisão do método (que inclui a condição composta com 'ou', o laço for e o if interno)."
+        },
+        {
+          "text": "3",
+          "key": "B",
+          "explanation": "Ainda subestima o número de predicados presentes no método."
+        },
+        {
+          "text": "4",
+          "key": "C",
+          "explanation": "Falta contar um dos quatro predicados presentes no código."
+        },
+        {
+          "text": "5",
+          "key": "D"
+        },
+        {
+          "text": "6",
+          "key": "E",
+          "explanation": "Superestima o número de predicados: há exatamente 4 predicados (x==1, x==2, i<=raiz, x%i==0), resultando em V(G)=5, não 6."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Predicados: x==1, x==2 (condição composta com ||), i<=raiz (condição do for) e x%i==0 (if interno) — 4 predicados. V(G) = número de predicados + 1 = 5."
+      },
+      "area": "eng-sw",
+      "correctKey": "D",
+      "explanationSummary": "O método tem 4 predicados (x==1, x==2, a condição do laço for i<=raiz, e x%i==0), o que resulta em complexidade ciclomática V(G) = 4 + 1 = 5."
+    },
+    {
+      "id": "petro08-q53",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 53
+      },
+      "subtopic": "5.2 Ciclo de vida de sistemas e seus paradigmas",
+      "stem": "Diversos processos de software emergiram nos últimos anos, principalmente aqueles de natureza iterativa: o Processo Unificado, XP (Extreme Programming) e, mais recentemente, o Scrum. Correlacione esses processos e suas características: I - Processo Unificado; II - Extreme Programming; III - Scrum. P - Reuniões em pé, diárias, com perguntas específicas; Q - Refatoração frequente; R - Priorização dos maiores riscos; S - Eliminação do desperdício. A relação correta é",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "I - P, II - Q, III - R.",
+          "key": "A",
+          "explanation": "Associa reuniões diárias em pé (P) ao Processo Unificado e priorização de riscos (R) ao Scrum, invertendo as associações corretas (P pertence ao Scrum, R ao Processo Unificado)."
+        },
+        {
+          "text": "I - R, II - Q, III - P.",
+          "key": "B"
+        },
+        {
+          "text": "I - R, II - S, III - Q.",
+          "key": "C",
+          "explanation": "Associa eliminação de desperdício (S) ao XP e refatoração (Q) ao Scrum, quando a refatoração frequente é característica central do XP, e a eliminação de desperdício não é o traço mais distintivo do XP entre as opções."
+        },
+        {
+          "text": "I - S, II - P, III - R.",
+          "key": "D",
+          "explanation": "Associa reuniões diárias em pé (P) ao XP e priorização de riscos (R) ao Scrum, quando as reuniões diárias (dailies/stand-ups) são características centrais do Scrum, não do XP."
+        },
+        {
+          "text": "I - S, II - R, III - P.",
+          "key": "E",
+          "explanation": "Associa priorização de riscos (R) ao XP, quando essa é uma característica central do Processo Unificado (que organiza iterações justamente para mitigar os maiores riscos primeiro)."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "eng-sw",
+      "correctKey": "B",
+      "explanationSummary": "O Processo Unificado é orientado à mitigação dos maiores riscos nas iterações iniciais (I-R); o XP é caracterizado pela refatoração constante do código (II-Q); e o Scrum é caracterizado pelas reuniões diárias em pé (dailies), com perguntas específicas (III-P)."
+    },
+    {
+      "id": "petro08-q54",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 54
+      },
+      "subtopic": "5.4 Verificação, validação e teste",
+      "stem": "Um importante aspecto da elaboração de casos de teste é a escolha dos valores de entrada e das saídas previstas. Escolhas baseadas apenas em valores típicos, em geral, são incapazes de revelar todas as falhas da implementação. É necessário identificar conjuntos de valores que possuam características comuns, do ponto de vista das funcionalidades a serem testadas, como 'números negativos', 'números com mais dígitos do que o previsto', 'strings sem brancos', 'arrays de um só elemento', além de prever casos de teste cobrindo a totalidade destes conjuntos, e projetar, para cada conjunto, casos de teste com valores nos limites e próximos ao ponto médio do conjunto. Esses conjuntos são denominados",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "partições de equivalência.",
+          "key": "A"
+        },
+        {
+          "text": "grupos de controle.",
+          "key": "B",
+          "explanation": "'Grupos de controle' é um conceito de desenho experimental/estatística, não uma técnica de teste de software."
+        },
+        {
+          "text": "espaços amostrais.",
+          "key": "C",
+          "explanation": "'Espaço amostral' é um conceito de probabilidade/estatística, não a terminologia usada para essa técnica de teste de software."
+        },
+        {
+          "text": "classes características.",
+          "key": "D",
+          "explanation": "Não é a terminologia padronizada para essa técnica na literatura de teste de software (o termo consagrado é 'partição de equivalência')."
+        },
+        {
+          "text": "intervalos de testes.",
+          "key": "E",
+          "explanation": "Não é a terminologia consagrada para a técnica descrita, que é conhecida como partição de equivalência."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "eng-sw",
+      "correctKey": "A",
+      "explanationSummary": "A técnica descrita — agrupar valores de entrada com características comuns e testar valores representativos, incluindo limites — é a técnica clássica de partição (ou classes) de equivalência, combinada com análise de valor limite."
+    },
+    {
+      "id": "petro08-q60",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 60
+      },
+      "subtopic": "6.1 Conceitos de acessibilidade e usabilidade",
+      "stem": "Assinale a opção que NÃO expressa um princípio de projeto de interface com o usuário.",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Reduzir a demanda de memória de curto prazo do usuário.",
+          "key": "A",
+          "explanation": "É um princípio de projeto de interface reconhecido (reduzir carga cognitiva/memória de curto prazo)."
+        },
+        {
+          "text": "Basear o layout visual em uma metáfora do mundo real.",
+          "key": "B",
+          "explanation": "É um princípio de projeto de interface reconhecido (uso de metáforas familiares ao usuário)."
+        },
+        {
+          "text": "Permitir que a interação com o usuário seja interruptível e possa ser desfeita (undo).",
+          "key": "C",
+          "explanation": "É um princípio de projeto de interface reconhecido (suporte a interrupção e desfazer ações)."
+        },
+        {
+          "text": "Estabelecer defaults (para escolhas e preenchimento de formulários) que façam sentido para o usuário.",
+          "key": "D",
+          "explanation": "É um princípio de projeto de interface reconhecido (uso de valores padrão sensatos)."
+        },
+        {
+          "text": "Mostrar informações completas a priori, permitindo que o usuário reduza o nível de detalhe se desejar.",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ux",
+      "correctKey": "E",
+      "explanationSummary": "O princípio consagrado de projeto de interface é o de divulgação progressiva (progressive disclosure): mostrar inicialmente apenas o essencial e permitir que o usuário solicite mais detalhe quando desejar — o inverso do que descreve a alternativa E (mostrar tudo a priori e deixar o usuário reduzir), por isso ela NÃO expressa corretamente esse princípio."
+    },
+    {
+      "id": "petro08-q61",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 61
+      },
+      "subtopic": "6.1 Conceitos de acessibilidade e usabilidade",
+      "stem": "Uma das técnicas empregadas no projeto de interfaces de sistemas é a condução de testes de usabilidade, cujos resultados fornecem importantes indicadores para melhorar a qualidade da interface. Os testes de usabilidade consistem em",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "apresentar o sistema para um grupo de foco e coletar a opinião dos participantes sobre a interface, os conceitos e as metáforas utilizadas na mesma.",
+          "key": "A",
+          "explanation": "Descreve um grupo focal (técnica de coleta de opinião em grupo), não um teste de usabilidade individual baseado em execução de tarefas observadas."
+        },
+        {
+          "text": "apresentar, para um usuário por vez, um prototipo da interface do sistema ou o próprio sistema, e solicitar que o usuário realize algum tipo de tarefa, observando suas reações à interface, erros cometidos, dificuldades e eficiência no cumprimento da tarefa.",
+          "key": "B"
+        },
+        {
+          "text": "distribuir um questionário para os usuários iniciais do sistema com perguntas sobre a interface e mapear as respostas.",
+          "key": "C",
+          "explanation": "Descreve uma pesquisa por questionário, técnica distinta e complementar, não a definição central de teste de usabilidade (que envolve observação direta de tarefas)."
+        },
+        {
+          "text": "submeter o sistema a um software robot de teste e verificar os tempos de resposta a cada padrão de navegação, comparando-os com os requisitos não funcionais do sistema.",
+          "key": "D",
+          "explanation": "Descreve teste automatizado de desempenho/performance, não teste de usabilidade com usuários reais."
+        },
+        {
+          "text": "utilizar um software robot de teste para fazer acessos aleatórios ao sistema, tentando usar elementos da interface e registrando os erros encontrados.",
+          "key": "E",
+          "explanation": "Descreve uma forma de teste automatizado exploratório (semelhante a fuzzing de interface), não um teste de usabilidade centrado na observação de usuários reais."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ux",
+      "correctKey": "B",
+      "explanationSummary": "O teste de usabilidade clássico consiste em observar, um usuário por vez, a execução de tarefas em um protótipo ou no próprio sistema, registrando reações, erros, dificuldades e eficiência — a definição da alternativa B."
+    },
+    {
+      "id": "petro08-q64",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 64
+      },
+      "subtopic": "1.13 Sistema Gerenciador de Banco de Dados (SGBD)",
+      "stem": "Sistemas de informações distribuídos são aqueles em que dados são armazenados e processados em diferentes localizações. Um banco de dados distribuído é um exemplo deste tipo de sistema. Para o usuário, um sistema de banco de dados distribuído deve parecer exatamente como um sistema não distribuído. Para que tal meta seja alcançada, alguns objetivos secundários são normalmente estabelecidos, entre os quais NÃO se inclui a",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "independência de localização.",
+          "key": "A",
+          "explanation": "É um objetivo de transparência real de bancos de dados distribuídos (o usuário não precisa saber onde os dados estão fisicamente)."
+        },
+        {
+          "text": "independência de fragmentação.",
+          "key": "B",
+          "explanation": "É um objetivo de transparência real de bancos de dados distribuídos (o usuário não precisa saber como os dados foram fragmentados)."
+        },
+        {
+          "text": "independência do sistema operacional.",
+          "key": "C",
+          "explanation": "É um objetivo real de transparência/portabilidade em sistemas distribuídos heterogêneos."
+        },
+        {
+          "text": "operação contínua.",
+          "key": "D",
+          "explanation": "É um objetivo real de disponibilidade/continuidade de operação em sistemas distribuídos."
+        },
+        {
+          "text": "coordenação em um nó central.",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "arq-dados",
+      "correctKey": "E",
+      "explanationSummary": "Sistemas de banco de dados distribuídos são projetados para evitar dependência de um nó de coordenação central (justamente para ganhar escalabilidade e tolerância a falhas), o que torna a 'coordenação em um nó central' o único item que NÃO é um objetivo secundário buscado nesse tipo de sistema."
     }
   ]
 }
