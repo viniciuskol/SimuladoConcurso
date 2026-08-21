@@ -4408,7 +4408,8 @@
         "confidence": "high",
         "notes": "Divisão relacional R1÷R2: sno pertence ao resultado se, para cada pno em R2 (1 e 2), a tupla (sno,pno) existe em R1. sno=1 tem pno {1,2,3,4} ⊇ {1,2} ✓. sno=2 tem pno {1,2} ⊇ {1,2} ✓. sno=3 tem pno {2}, falta 1 ✗. sno=4 tem pno {2,4}, falta 1 ✗. Resultado = {1,2}. Nota de extração: o cabeçalho da coluna de resultado nas 5 alternativas está rotulado como 'pno' no HTML fonte (confirmado por inspeção direta), quando semanticamente deveria ser 'sno' (atributo resultante da divisão); tratado como problema de rotulação da tabela original, não como ambiguidade sobre os valores, que são inequívocos."
       },
-      "explanationSummary": "A divisão relacional de R1 por R2 retorna os valores de sno de R1 cujos conjuntos de pno associados contêm todos os pnos de R2 ({1,2}). Apenas sno=1 e sno=2 satisfazem essa condição, o que corresponde à alternativa (D)."
+      "explanationSummary": "A divisão relacional de R1 por R2 retorna os valores de sno de R1 cujos conjuntos de pno associados contêm todos os pnos de R2 ({1,2}). Apenas sno=1 e sno=2 satisfazem essa condição, o que corresponde à alternativa (D).",
+      "correctKey": "D"
     },
     {
       "id": "prova07-q2",
@@ -4434,13 +4435,13 @@
         },
         {
           "key": "C",
-          "text": "sno = 1, 2, 3, 3, 4, 4",
-          "explanation": "Contém sno=3 duplicado e omite ocorrências corretas; não reflete as tuplas de R1 com pno ≥ 2."
+          "text": "sno = 1, 2, 3, 3, 4, 4, 4",
+          "explanation": "Contém um '4' excedente (três ocorrências em vez de duas) e não reflete corretamente as tuplas de R1 com pno ≥ 2."
         },
         {
           "key": "D",
           "text": "sno = 1, 2, 3, 3, 4, 4",
-          "explanation": "Idêntica à alternativa (C) nos valores; também não reflete corretamente as tuplas de R1 com pno ≥ 2."
+          "explanation": "Tem a cardinalidade certa para os valores 1/2/3, mas só um '4' em vez de dois; também não reflete corretamente as tuplas de R1 com pno ≥ 2."
         },
         {
           "key": "E",
@@ -4456,7 +4457,8 @@
         "confidence": "high",
         "notes": "max(R2.pno) = 2, logo a condição R1.pno >= ALL(R2.pno) equivale a R1.pno >= 2. Tuplas de R1 com pno>=2: (1,2),(1,3),(1,4),(2,2),(3,2),(4,2),(4,4) — sno correspondentes (sem DISTINCT, com repetição): 1,1,1,2,3,4,4. Ordenado: {1,1,1,2,3,4,4}, que é exatamente a alternativa E."
       },
-      "explanationSummary": "Como max(R2.pno)=2, a condição equivale a selecionar sno de R1 onde pno≥2. As tuplas de R1 que satisfazem isso produzem os valores de sno (com repetição, pois não há DISTINCT): 1,1,1,2,3,4,4 — alternativa (E)."
+      "explanationSummary": "Como max(R2.pno)=2, a condição equivale a selecionar sno de R1 onde pno≥2. As tuplas de R1 que satisfazem isso produzem os valores de sno (com repetição, pois não há DISTINCT): 1,1,1,2,3,4,4 — alternativa (E).",
+      "correctKey": "E"
     },
     {
       "id": "prova07-q3",
@@ -4504,7 +4506,8 @@
         "confidence": "high",
         "notes": "I é a definição padrão de esquema de relação (correta). II é falsa: chave candidata mínima pode ter várias colunas. III é correta: uma relação pode ter múltiplas chaves candidatas (apenas uma é escolhida como primária). IV é falsa: a regra de integridade referencial do modelo relacional permite valores nulos em chave estrangeira, a menos que uma restrição NOT NULL adicional seja definida."
       },
-      "explanationSummary": "I e III estão corretas: o esquema de relação é definido por nome + atributos com domínios, e uma relação pode ter mais de uma chave candidata. II é falsa (superchave mínima pode ter várias colunas) e IV é falsa (NULL é permitido em chave estrangeira, salvo restrição adicional)."
+      "explanationSummary": "I e III estão corretas: o esquema de relação é definido por nome + atributos com domínios, e uma relação pode ter mais de uma chave candidata. II é falsa (superchave mínima pode ter várias colunas) e IV é falsa (NULL é permitido em chave estrangeira, salvo restrição adicional).",
+      "correctKey": "B"
     },
     {
       "id": "prova07-q4",
@@ -4552,7 +4555,8 @@
         "confidence": "high",
         "notes": "Shadow paging usa uma tabela de páginas (catálogo) com n entradas, cada uma apontando para a página correspondente em disco; ao iniciar uma transação, faz-se uma cópia dessa tabela (a 'shadow'). Páginas modificadas ganham novas cópias, e a tabela corrente é atualizada para apontar para elas; a tabela shadow mantém os apontadores antigos até o commit. A alternativa (A) descreve corretamente a estrutura básica do catálogo (i-ésima entrada aponta para i-ésima página), que é o mecanismo central da técnica; (B) inverte os papéis das duas tabelas."
       },
-      "explanationSummary": "A paginação sombra baseia-se em um catálogo (tabela de páginas) com n entradas, em que a i-ésima entrada aponta para a i-ésima página do banco de dados em disco — essa estrutura é duplicada (tabela corrente e tabela shadow) para permitir desfazer alterações não confirmadas."
+      "explanationSummary": "A paginação sombra baseia-se em um catálogo (tabela de páginas) com n entradas, em que a i-ésima entrada aponta para a i-ésima página do banco de dados em disco — essa estrutura é duplicada (tabela corrente e tabela shadow) para permitir desfazer alterações não confirmadas.",
+      "correctKey": "A"
     },
     {
       "id": "prova07-q9",
@@ -4600,7 +4604,8 @@
         "confidence": "high",
         "notes": "A condição SALARIO > 3000 AND SALARIO < 7000 abrange valores que estão tanto no fragmento de S1 (salário > 5000, até 7000) quanto no fragmento de S2 (salário até 5000, a partir de 3000). Como não há replicação, o SGBDD precisa acessar ambos os sítios S1 e S2 para produzir o resultado completo, independentemente de onde a consulta foi emetida (S3), graças à transparência de fragmentação/localização típica de um SGBDD."
       },
-      "explanationSummary": "A faixa de salário pesquisada (3000 a 7000) cruza os dois fragmentos horizontais (S1: salário>5000; S2: salário≤5000), portanto o SGBDD precisa acessar ambos os sítios S1 e S2 para responder à consulta, mesmo que ela tenha sido emitida em S3, pois um SGBDD provê transparência de localização dos dados."
+      "explanationSummary": "A faixa de salário pesquisada (3000 a 7000) cruza os dois fragmentos horizontais (S1: salário>5000; S2: salário≤5000), portanto o SGBDD precisa acessar ambos os sítios S1 e S2 para responder à consulta, mesmo que ela tenha sido emitida em S3, pois um SGBDD provê transparência de localização dos dados.",
+      "correctKey": "C"
     },
     {
       "id": "prova07-q10",
@@ -4648,7 +4653,8 @@
         "confidence": "high",
         "notes": "Métricas quantitativas clássicas de teste de usabilidade são tempo de execução de tarefa e taxa de sucesso (conclusão da tarefa); coletá-las para elaborar relatórios é prática padrão e atribuição legítima da equipe que aplica os testes."
       },
-      "explanationSummary": "A prática correta em testes de usabilidade é coletar métricas objetivas — tempo de execução e taxa de sucesso de cada tarefa — para consolidar relatórios com os resultados, e não interferir no comportamento natural do usuário durante o teste."
+      "explanationSummary": "A prática correta em testes de usabilidade é coletar métricas objetivas — tempo de execução e taxa de sucesso de cada tarefa — para consolidar relatórios com os resultados, e não interferir no comportamento natural do usuário durante o teste.",
+      "correctKey": "D"
     },
     {
       "id": "prova07-q11",
@@ -4696,7 +4702,8 @@
         "confidence": "high",
         "notes": "Testar páginas em navegadores/modo texto (como leitores de tela e navegadores textuais) é uma prática recomendada clássica para verificar se o conteúdo permanece acessível e compreensível sem recursos visuais avançados, alinhada às diretrizes de acessibilidade Web (WCAG/UAAG)."
       },
-      "explanationSummary": "Testar o acesso em um navegador com modo textual é uma prática recomendada para verificar a acessibilidade de páginas Web, pois simula o uso por tecnologias assistivas e evita depender de recursos exclusivamente visuais (cor, JavaScript) ou de conteúdo alternativo insuficiente."
+      "explanationSummary": "Testar o acesso em um navegador com modo textual é uma prática recomendada para verificar a acessibilidade de páginas Web, pois simula o uso por tecnologias assistivas e evita depender de recursos exclusivamente visuais (cor, JavaScript) ou de conteúdo alternativo insuficiente.",
+      "correctKey": "D"
     },
     {
       "id": "prova07-q12",
@@ -4744,7 +4751,8 @@
         "confidence": "high",
         "notes": "O CPM (Critical Path Method) tem origem e forte associação histórica com projetos de construção civil/industrial, com foco explícito nas relações entre tempo e custo (compressão de cronograma via alocação adicional de recursos/custo), o que diferencia sua ênfase do PERT (mais voltado a incerteza de duração em projetos de pesquisa/desenvolvimento)."
       },
-      "explanationSummary": "O CPM enfatiza as relações tempo-custo (permitindo analisar o custo de acelerar atividades do caminho crítico), o que historicamente o tornou mais associado a projetos de construção. O PERT, por outro lado, trabalha com estimativas probabilísticas de duração."
+      "explanationSummary": "O CPM enfatiza as relações tempo-custo (permitindo analisar o custo de acelerar atividades do caminho crítico), o que historicamente o tornou mais associado a projetos de construção. O PERT, por outro lado, trabalha com estimativas probabilísticas de duração.",
+      "correctKey": "C"
     },
     {
       "id": "prova07-q14",
@@ -4792,7 +4800,8 @@
         "confidence": "high",
         "notes": "CPM forward pass: Ativ1 0-10; Ativ2 0-8; Ativ3(dep1) 10-13; Ativ4(dep2,3) 13-18; Ativ5(dep3) 13-17; Ativ6(dep4) 18-24; Ativ7(dep5) 17-21; Ativ8(dep6,7) 24-29. Duração total=29 dias. Backward pass dá folga zero para 1,3,4,6,8 (caminho crítico) e folga para 2 (5 dias), 5 (3 dias) e 7 (3 dias). III: aumentando ativ5 (dur 4→6) e ativ6 (dur 6→8): novo EF da ativ6=18+8=26; novo EF da ativ5=13+6=19, ativ7(dep5)=19+4=23; ativ8 início=max(26,23)=26, término=31. Acréscimo=31-29=2 dias. Data de término: contando 29 dias corridos a partir de 01/03/2010 (segunda-feira), pulando os domingos (06/03 não é domingo, mas 07/03, 14/03, 21/03 e 28/03 são), o 29º dia útil cai em 02/04/2010 (sexta-feira). Portanto: I=02/04/2010, II=atividade 4 (ou 1, 3, 6 — todas críticas, mas apenas a opção com data e III corretos simultaneamente e atividade crítica válida é a A), III=2 dias."
       },
-      "explanationSummary": "O caminho crítico do projeto (atividades 1-3-4-6-8) totaliza 29 dias corridos (exceto domingos), terminando em 02/04/2010. O acréscimo de 2 dias em cada uma das atividades 5 e 6 aumenta o projeto em apenas 2 dias, pois apenas a atividade 6 é crítica (a atividade 5 tem folga suficiente para absorver parte do atraso). A atividade 4 está no caminho crítico."
+      "explanationSummary": "O caminho crítico do projeto (atividades 1-3-4-6-8) totaliza 29 dias corridos (exceto domingos), terminando em 02/04/2010. O acréscimo de 2 dias em cada uma das atividades 5 e 6 aumenta o projeto em apenas 2 dias, pois apenas a atividade 6 é crítica (a atividade 5 tem folga suficiente para absorver parte do atraso). A atividade 4 está no caminho crítico.",
+      "correctKey": "A"
     },
     {
       "id": "prova07-q15",
@@ -4840,7 +4849,8 @@
         "confidence": "high",
         "notes": "Segundo o PMBOK, a Verificação do Escopo é o processo de formalizar a aceitação das entregas do projeto concluídas, obtendo o aceite formal do cliente/patrocinador com base nos critérios de aceitação definidos — especialmente relevante no encerramento de projetos contratados."
       },
-      "explanationSummary": "A verificação do escopo, segundo o PMBOK, tem como objetivo obter a aceitação formal, pelo cliente ou patrocinador, das entregas do projeto que atendem aos critérios de aceitação estabelecidos — processo central no encerramento de um projeto contratado."
+      "explanationSummary": "A verificação do escopo, segundo o PMBOK, tem como objetivo obter a aceitação formal, pelo cliente ou patrocinador, das entregas do projeto que atendem aos critérios de aceitação estabelecidos — processo central no encerramento de um projeto contratado.",
+      "correctKey": "E"
     },
     {
       "id": "prova07-q16",
@@ -4888,7 +4898,8 @@
         "confidence": "high",
         "notes": "A criação de casos de teste, rotinas de teste e, eventualmente, ferramentas/programas para automatizar a execução dos testes é uma das atividades centrais do processo de teste de software em qualquer ciclo de vida."
       },
-      "explanationSummary": "Projetar o processo de teste — criando casos de teste, rotinas de teste e, quando aplicável, automação de testes — é uma das principais atividades do processo de teste em qualquer ciclo de vida de projeto de software."
+      "explanationSummary": "Projetar o processo de teste — criando casos de teste, rotinas de teste e, quando aplicável, automação de testes — é uma das principais atividades do processo de teste em qualquer ciclo de vida de projeto de software.",
+      "correctKey": "B"
     },
     {
       "id": "prova07-q17",
@@ -4936,7 +4947,8 @@
         "confidence": "high",
         "notes": "I é falsa: a contagem por LOC é uma métrica dependente de linguagem, difícil de aplicar de forma imediata a linguagens não procedimentais/declarativas, e sua principal limitação é exigir código já escrito. II é falsa: mistura de forma incorreta as categorias de pontos de função (arquivos lógicos internos, arquivos de interface externa, entradas externas, saídas externas, consultas externas são categorias distintas, não agrupadas como descrito). III é verdadeira: identificação de riscos via reuniões formais e técnicas de coleta anônima (tipo Delphi) são práticas reconhecidas. IV é verdadeira: planejamento da qualidade define critérios de conformidade e ocorre em paralelo a outros processos de planejamento."
       },
-      "explanationSummary": "As considerações III (identificação de riscos por reuniões formais e coleta anônima de opiniões) e IV (planejamento de critérios de qualidade em paralelo a outros processos) estão corretas. I é falsa porque a contagem por LOC não se aplica facilmente a linguagens não procedimentais, e II é falsa porque mistura incorretamente as categorias de componentes de pontos de função."
+      "explanationSummary": "As considerações III (identificação de riscos por reuniões formais e coleta anônima de opiniões) e IV (planejamento de critérios de qualidade em paralelo a outros processos) estão corretas. I é falsa porque a contagem por LOC não se aplica facilmente a linguagens não procedimentais, e II é falsa porque mistura incorretamente as categorias de componentes de pontos de função.",
+      "correctKey": "E"
     },
     {
       "id": "prova07-q18",
@@ -4984,7 +4996,8 @@
         "confidence": "high",
         "notes": "Taxa de erros da equipe B por dia = 184/7 ≈ 26,29 erros/dia. Com 33 testes/dia, a proporção de testes que resultam em falha ≈ 26,29/33 ≈ 0,797 = 79,7%, que é maior que 70%."
       },
-      "explanationSummary": "A equipe B encontrou, em média, aproximadamente 26,3 erros por dia (184/7). Dividindo pelos 33 testes/dia realizados, a proporção de testes com falha é de aproximadamente 79,7%, superior a 70%."
+      "explanationSummary": "A equipe B encontrou, em média, aproximadamente 26,3 erros por dia (184/7). Dividindo pelos 33 testes/dia realizados, a proporção de testes com falha é de aproximadamente 79,7%, superior a 70%.",
+      "correctKey": "D"
     },
     {
       "id": "prova07-q20",
@@ -5032,7 +5045,8 @@
         "confidence": "high",
         "notes": "A Declaração de Escopo do Projeto, segundo o PMBOK, descreve o projeto e o produto, incluindo o sumário dos produtos/entregas, as justificativas do projeto e objetivos mensuráveis (quantificáveis)."
       },
-      "explanationSummary": "O escopo do projeto corresponde à declaração que descreve o projeto e o produto a ser entregue, incluindo o sumário das entregas, as justificativas do projeto e seus objetivos quantificáveis — conforme definido pelo PMBOK."
+      "explanationSummary": "O escopo do projeto corresponde à declaração que descreve o projeto e o produto a ser entregue, incluindo o sumário das entregas, as justificativas do projeto e seus objetivos quantificáveis — conforme definido pelo PMBOK.",
+      "correctKey": "E"
     },
     {
       "id": "prova07-q21",
@@ -5080,7 +5094,8 @@
         "confidence": "high",
         "notes": "O processo de Encerramento do Projeto, segundo o PMBOK, inclui a obtenção do aceite formal do patrocinador/cliente, a documentação de lições aprendidas e a atualização dos ativos de processos organizacionais — descrição correta e consistente com o guia."
       },
-      "explanationSummary": "O encerramento do projeto, segundo o PMBOK, envolve o aceite formal do patrocinador, o registro de lições aprendidas e a atualização dos ativos de processos organizacionais da empresa."
+      "explanationSummary": "O encerramento do projeto, segundo o PMBOK, envolve o aceite formal do patrocinador, o registro de lições aprendidas e a atualização dos ativos de processos organizacionais da empresa.",
+      "correctKey": "E"
     },
     {
       "id": "prova07-q26",
@@ -5128,7 +5143,8 @@
         "confidence": "high",
         "notes": "A definição da NBR ISO/IEC 27002 estabelece que a segurança da informação protege a informação de ameaças para garantir a continuidade dos negócios, minimizar os riscos ao negócio, maximizar o retorno sobre os investimentos e as oportunidades de negócio."
       },
-      "explanationSummary": "Conforme a NBR ISO/IEC 27002, a proteção da informação visa garantir a continuidade do negócio, minimizar o risco ao negócio e maximizar o retorno sobre os investimentos e as oportunidades de negócio — formulação literal da norma."
+      "explanationSummary": "Conforme a NBR ISO/IEC 27002, a proteção da informação visa garantir a continuidade do negócio, minimizar o risco ao negócio e maximizar o retorno sobre os investimentos e as oportunidades de negócio — formulação literal da norma.",
+      "correctKey": "A"
     },
     {
       "id": "prova07-q27",
@@ -5176,7 +5192,8 @@
         "confidence": "high",
         "notes": "O controle de 'Proteção contra códigos maliciosos e códigos móveis' da NBR ISO/IEC 27002 (seção 10.4) tem como objetivo proteger a integridade do software e da informação."
       },
-      "explanationSummary": "O objetivo declarado pela NBR ISO/IEC 27002 para o controle de proteção contra códigos maliciosos e códigos móveis é proteger a integridade do software e da informação."
+      "explanationSummary": "O objetivo declarado pela NBR ISO/IEC 27002 para o controle de proteção contra códigos maliciosos e códigos móveis é proteger a integridade do software e da informação.",
+      "correctKey": "B"
     },
     {
       "id": "prova07-q28",
@@ -5224,7 +5241,8 @@
         "confidence": "high",
         "notes": "Segundo a NBR ISO/IEC 27002 (seção 15, Conformidade), os controles tipicamente vistos como baseados em requisitos legais/regulatórios incluem: proteção de dados e privacidade de informações pessoais (P), direitos de propriedade intelectual — DPI (S), e proteção de registros organizacionais (U), pois todos derivam de obrigações legais/contratuais. Já documento da política de segurança (Q), atribuição de responsabilidades (R) e gestão de vulnerabilidades técnicas (T) são práticas organizacionais recomendadas, não impostas diretamente por lei. Logo, I=P,S,U e II=Q,R,T, que corresponde à alternativa (C)."
       },
-      "explanationSummary": "Controles baseados em requisitos legais incluem proteção de dados pessoais (P), direitos de propriedade intelectual (S) e proteção de registros organizacionais (U); controles baseados em melhores práticas incluem o documento de política (Q), atribuição de responsabilidades (R) e gestão de vulnerabilidades técnicas (T) — associação (C)."
+      "explanationSummary": "Controles baseados em requisitos legais incluem proteção de dados pessoais (P), direitos de propriedade intelectual (S) e proteção de registros organizacionais (U); controles baseados em melhores práticas incluem o documento de política (Q), atribuição de responsabilidades (R) e gestão de vulnerabilidades técnicas (T) — associação (C).",
+      "correctKey": "C"
     },
     {
       "id": "prova07-q39",
@@ -5272,7 +5290,8 @@
         "confidence": "high",
         "notes": "JAD (Joint Application Development) é uma técnica estruturada de elicitação de requisitos baseada em sessões de trabalho conjuntas entre usuários e desenvolvedores, com o objetivo explícito de promover cooperação e trabalho colaborativo em equipe entre as partes envolvidas."
       },
-      "explanationSummary": "O JAD é uma técnica de elicitação de requisitos baseada em sessões de trabalho estruturadas que reúnem usuários e desenvolvedores, promovendo cooperação e trabalho em equipe entre eles — diferentemente de entrevistas individuais ou reuniões informais."
+      "explanationSummary": "O JAD é uma técnica de elicitação de requisitos baseada em sessões de trabalho estruturadas que reúnem usuários e desenvolvedores, promovendo cooperação e trabalho em equipe entre eles — diferentemente de entrevistas individuais ou reuniões informais.",
+      "correctKey": "B"
     },
     {
       "id": "prova07-q42",
@@ -5320,7 +5339,8 @@
         "confidence": "high",
         "notes": "A abordagem bottom-up de Kimball para data warehousing constrói o DW a partir da integração incremental de data marts departamentais, cada um modelado dimensionalmente segundo o esquema estrela (fato + dimensões) — é uma característica central e amplamente citada dessa estratégia."
       },
-      "explanationSummary": "A abordagem bottom-up de construção de data warehouses (Kimball) baseia-se na modelagem dimensional em esquema estrela para os data marts que compõem incrementalmente o data warehouse."
+      "explanationSummary": "A abordagem bottom-up de construção de data warehouses (Kimball) baseia-se na modelagem dimensional em esquema estrela para os data marts que compõem incrementalmente o data warehouse.",
+      "correctKey": "C"
     },
     {
       "id": "prova07-q43",
@@ -5368,7 +5388,8 @@
         "confidence": "high",
         "notes": "O processo de ETL (Extração, Transformação e Carga) inclui tarefas como filtragem, limpeza, integração, conversão, condensação e derivação de dados provenientes de múltiplas fontes, inclusive fontes externas aos sistemas transacionais (OLTP) da organização — descrição padrão do processo."
       },
-      "explanationSummary": "O processo de ETL realiza tarefas de filtragem, integração, conversão, condensação e derivação de dados que podem vir de diversas fontes, inclusive externas aos sistemas OLTP da organização — descrição consistente com a literatura padrão de data warehousing."
+      "explanationSummary": "O processo de ETL realiza tarefas de filtragem, integração, conversão, condensação e derivação de dados que podem vir de diversas fontes, inclusive externas aos sistemas OLTP da organização — descrição consistente com a literatura padrão de data warehousing.",
+      "correctKey": "C"
     },
     {
       "id": "prova07-q44",
@@ -5416,7 +5437,8 @@
         "confidence": "high",
         "notes": "A modelagem dimensional (esquema estrela ou floco de neve), usada na construção de data warehouses/data marts, sempre se baseia em uma tabela de fatos central associada a tabelas de dimensão periféricas — característica fundamental e universal dessa técnica de modelagem."
       },
-      "explanationSummary": "Toda técnica de modelagem multidimensional para data warehouses baseia-se em uma tabela de fatos central, associada a tabelas de dimensão que fornecem o contexto descritivo para as medidas armazenadas nos fatos."
+      "explanationSummary": "Toda técnica de modelagem multidimensional para data warehouses baseia-se em uma tabela de fatos central, associada a tabelas de dimensão que fornecem o contexto descritivo para as medidas armazenadas nos fatos.",
+      "correctKey": "B"
     },
     {
       "id": "prova07-q46",
@@ -5464,7 +5486,8 @@
         "confidence": "high",
         "notes": "Um dos quatro atributos clássicos (Inmon) que definem um data warehouse é justamente ser NÃO volátil (os dados, uma vez carregados, não são alterados/removidos, apenas acrescentados) — logo a primeira afirmação (volatilidade como característica intrínseca) é falsa. A segunda afirmação descreve corretamente a arquitetura ROLAP: um conjunto de camadas/interfaces sobre um SGBD relacional convencional que lhe conferem capacidades de análise multidimensional (OLAP) sem exigir um motor de armazenamento multidimensional dedicado."
       },
-      "explanationSummary": "Data warehouses são caracterizados pela NÃO volatilidade dos dados (um dos quatro atributos de Inmon), tornando a primeira afirmação falsa. A segunda afirmação, sobre sistemas ROLAP oferecerem capacidades multidimensionais sobre um SGBD relacional, é verdadeira."
+      "explanationSummary": "Data warehouses são caracterizados pela NÃO volatilidade dos dados (um dos quatro atributos de Inmon), tornando a primeira afirmação falsa. A segunda afirmação, sobre sistemas ROLAP oferecerem capacidades multidimensionais sobre um SGBD relacional, é verdadeira.",
+      "correctKey": "D"
     },
     {
       "id": "prova07-q48",
@@ -5512,7 +5535,8 @@
         "confidence": "high",
         "notes": "O modelo estrela, por manter as dimensões desnormalizadas em uma única tabela cada, exige menos junções (joins) nas consultas do que o modelo floco de neve (que normaliza as dimensões em várias tabelas), resultando em melhor desempenho de consulta — vantagem clássica atribuída ao esquema estrela na literatura de data warehousing."
       },
-      "explanationSummary": "O esquema estrela, por manter tabelas de dimensão desnormalizadas, exige menos junções nas consultas analíticas do que o esquema floco de neve, resultando em melhor desempenho de consulta."
+      "explanationSummary": "O esquema estrela, por manter tabelas de dimensão desnormalizadas, exige menos junções nas consultas analíticas do que o esquema floco de neve, resultando em melhor desempenho de consulta.",
+      "correctKey": "A"
     },
     {
       "id": "prova07-q49",
@@ -5560,7 +5584,8 @@
         "confidence": "high",
         "notes": "O modelo de casos de uso é uma técnica padrão e amplamente utilizada na engenharia de requisitos para especificar requisitos funcionais de um sistema, descrevendo as interações entre atores e o sistema."
       },
-      "explanationSummary": "A engenharia de requisitos permite ao engenheiro de software utilizar o modelo de casos de uso como técnica para especificar os requisitos funcionais do produto de software."
+      "explanationSummary": "A engenharia de requisitos permite ao engenheiro de software utilizar o modelo de casos de uso como técnica para especificar os requisitos funcionais do produto de software.",
+      "correctKey": "E"
     },
     {
       "id": "prova07-q51",
@@ -5608,7 +5633,8 @@
         "confidence": "high",
         "notes": "O Processo Unificado é classicamente descrito por quatro características centrais: ser dirigido a casos de uso, centrado em arquitetura, iterativo e incremental. 'Guiado por testes de aceitação' (acceptance-test-driven) é uma prática associada a métodos ágeis como XP/BDD, não uma característica definidora do Processo Unificado."
       },
-      "explanationSummary": "O Processo Unificado é caracterizado por ser dirigido a casos de uso, centrado em arquitetura, iterativo e incremental. Ser 'guiado por testes de aceitação' não é uma característica do Processo Unificado, mas sim de práticas ágeis como XP."
+      "explanationSummary": "O Processo Unificado é caracterizado por ser dirigido a casos de uso, centrado em arquitetura, iterativo e incremental. Ser 'guiado por testes de aceitação' não é uma característica do Processo Unificado, mas sim de práticas ágeis como XP.",
+      "correctKey": "E"
     },
     {
       "id": "prova07-q53",
@@ -5656,7 +5682,8 @@
         "confidence": "high",
         "notes": "O modelo em cascata (waterfall) é definido pela execução sequencial e linear das fases de desenvolvimento (requisitos, projeto, implementação, testes, manutenção), cada uma concluída antes de iniciar a seguinte."
       },
-      "explanationSummary": "O modelo em cascata caracteriza-se pela execução sequencial das fases de desenvolvimento de software, uma após a outra, sem sobreposição ou retorno planejado a fases anteriores."
+      "explanationSummary": "O modelo em cascata caracteriza-se pela execução sequencial das fases de desenvolvimento de software, uma após a outra, sem sobreposição ou retorno planejado a fases anteriores.",
+      "correctKey": "A"
     },
     {
       "id": "prova07-q55",
@@ -5704,7 +5731,8 @@
         "confidence": "high",
         "notes": "Ambas as afirmações são verdadeiras e reconhecidas na literatura sobre o Processo Unificado, mas a segunda (uso do modelo de casos de uso como ponto de partida do modelo de classes) descreve uma aplicação prática subsequente, não a razão pela qual o modelo de casos de uso representa o comportamento externo do sistema — logo não há relação de justificativa entre elas."
       },
-      "explanationSummary": "Ambas as afirmações são verdadeiras: o modelo de casos de uso representa o comportamento externo do sistema, e pode servir de ponto de partida para o modelo de classes conceituais — mas a segunda não é a razão/justificativa da primeira, são fatos independentes."
+      "explanationSummary": "Ambas as afirmações são verdadeiras: o modelo de casos de uso representa o comportamento externo do sistema, e pode servir de ponto de partida para o modelo de classes conceituais — mas a segunda não é a razão/justificativa da primeira, são fatos independentes.",
+      "correctKey": "B"
     },
     {
       "id": "prova07-q56",
@@ -5752,7 +5780,8 @@
         "confidence": "high",
         "notes": "Atividades de verificação e validação podem ser apoiadas, de forma opcional, por ferramentas CASE (automação de inspeções, análise estática etc.) ou pela construção de prototipos para validar requisitos/comportamento com o usuário — afirmação consistente com a literatura de engenharia de software."
       },
-      "explanationSummary": "As atividades de verificação e validação podem ser opcionalmente apoiadas por ferramentas CASE ou pela construção de protótipos, entre outras técnicas, ao longo de todo o ciclo de vida do software."
+      "explanationSummary": "As atividades de verificação e validação podem ser opcionalmente apoiadas por ferramentas CASE ou pela construção de protótipos, entre outras técnicas, ao longo de todo o ciclo de vida do software.",
+      "correctKey": "E"
     },
     {
       "id": "prova07-q57",
@@ -5800,7 +5829,8 @@
         "confidence": "high",
         "notes": "Ferramentas de análise estática de código (sem executar o programa) permitem obter métricas de qualidade, como grau de acoplamento/dependência entre componentes, complexidade ciclomática, entre outras — descrição correta e padrão dessa categoria de ferramenta."
       },
-      "explanationSummary": "Ferramentas de análise estática de código permitem obter métricas de qualidade de software, como o grau de dependência (acoplamento) entre componentes, sem a necessidade de executar o programa."
+      "explanationSummary": "Ferramentas de análise estática de código permitem obter métricas de qualidade de software, como o grau de dependência (acoplamento) entre componentes, sem a necessidade de executar o programa.",
+      "correctKey": "B"
     },
     {
       "id": "prova07-q65",
@@ -5848,7 +5878,8 @@
         "confidence": "high",
         "notes": "Ambas as afirmações correspondem a definições padrão (SI: componentes que coletam/processam/armazenam/distribuem informação para apoiar decisão, coordenação e controle; TI: conjunto de hardware e software necessário aos objetivos organizacionais), mas são definições paralelas e independentes — a segunda não é a causa/justificativa lógica da primeira."
       },
-      "explanationSummary": "Ambas as afirmações são definições corretas e amplamente aceitas — de Sistema de Informação e de Tecnologia da Informação, respectivamente — mas tratam de conceitos relacionados e não guardam relação de causa/justificativa entre si."
+      "explanationSummary": "Ambas as afirmações são definições corretas e amplamente aceitas — de Sistema de Informação e de Tecnologia da Informação, respectivamente — mas tratam de conceitos relacionados e não guardam relação de causa/justificativa entre si.",
+      "correctKey": "B"
     },
     {
       "id": "prova07-q66",
@@ -5896,7 +5927,8 @@
         "confidence": "high",
         "notes": "As quatro dificuldades listadas são reconhecidas na literatura sobre implantação de ERP: adaptação a legislações locais em implantações multinacionais (I), resistência dos usuários à mudança (II), foco tradicionalmente interno dos ERPs em detrimento da integração com agentes externos como fornecedores e clientes (III), e alto custo/complexidade de customização para necessidades específicas (IV)."
       },
-      "explanationSummary": "As quatro afirmações (adequação legal regional, resistência dos usuários, foco insuficiente em agentes externos e dificuldade de customização) são dificuldades amplamente documentadas em implantações de sistemas ERP."
+      "explanationSummary": "As quatro afirmações (adequação legal regional, resistência dos usuários, foco insuficiente em agentes externos e dificuldade de customização) são dificuldades amplamente documentadas em implantações de sistemas ERP.",
+      "correctKey": "E"
     },
     {
       "id": "prova07-q67",
@@ -5944,7 +5976,8 @@
         "confidence": "high",
         "notes": "O diagrama de implantação (deployment diagram) representa a topologia física de hardware/infraestrutura onde os componentes de software são executados — não guarda relação com a navegação entre telas de uma interface, sendo o único, entre as opções, claramente inadequado a essa tarefa."
       },
-      "explanationSummary": "O diagrama de implantação descreve a infraestrutura física (nós de hardware, distribuição de componentes), sem relação com o fluxo de navegação entre telas de uma interface — por isso é o diagrama UML inadequado para construir o mapa de navegação."
+      "explanationSummary": "O diagrama de implantação descreve a infraestrutura física (nós de hardware, distribuição de componentes), sem relação com o fluxo de navegação entre telas de uma interface — por isso é o diagrama UML inadequado para construir o mapa de navegação.",
+      "correctKey": "B"
     },
     {
       "id": "prova07-q68",
@@ -5992,7 +6025,8 @@
         "confidence": "high",
         "notes": "Sistemas ERP automatizam processos de negócio (financeiro, RH, cadeia de suprimentos etc.), não 'as etapas de projetos de TI'; a primeira afirmação está incorreta quanto ao objeto de automação dos ERPs. A segunda afirmação corresponde à definição padrão de workflow (Workflow Management Coalition): automação de processos de negócio com transferência de documentos/informação/tarefas segundo uma sequência definida — verdadeira."
       },
-      "explanationSummary": "Sistemas ERP automatizam processos de negócio das organizações, não as etapas de projetos de TI, tornando a primeira afirmação falsa. A segunda afirmação, sobre a definição de workflow, é verdadeira."
+      "explanationSummary": "Sistemas ERP automatizam processos de negócio das organizações, não as etapas de projetos de TI, tornando a primeira afirmação falsa. A segunda afirmação, sobre a definição de workflow, é verdadeira.",
+      "correctKey": "D"
     },
     {
       "id": "prova07-q69",
@@ -6040,7 +6074,8 @@
         "confidence": "high",
         "notes": "A visão sociotécnica clássica de Sistemas de Informação (Laudon & Laudon) considera que um SI é composto por três dimensões interdependentes: organizacional, humana (pessoas) e tecnológica — todas partes integrantes do sistema, sem que uma se sobreponha às demais."
       },
-      "explanationSummary": "Sistemas de informação são compostos por três dimensões interdependentes — organizacional, humana e tecnológica — todas parte integrante do sistema, conforme a visão sociotécnica clássica de SI."
+      "explanationSummary": "Sistemas de informação são compostos por três dimensões interdependentes — organizacional, humana e tecnológica — todas parte integrante do sistema, conforme a visão sociotécnica clássica de SI.",
+      "correctKey": "A"
     },
     {
       "id": "prova07-q70",
@@ -6088,7 +6123,8 @@
         "confidence": "high",
         "notes": "Os quatro itens correspondem aos objetivos organizacionais clássicos de sistemas de informação segundo Laudon & Laudon: excelência operacional, apoio à tomada de decisão, vantagem competitiva e sobrevivência da organização — todos amplamente citados na literatura de SI/TI empresarial."
       },
-      "explanationSummary": "Excelência operacional, apoio à tomada de decisões, vantagem competitiva e sobrevivência da organização são todos objetivos organizacionais clássicos atribuídos aos sistemas de informação na literatura de SI empresarial (Laudon & Laudon)."
+      "explanationSummary": "Excelência operacional, apoio à tomada de decisões, vantagem competitiva e sobrevivência da organização são todos objetivos organizacionais clássicos atribuídos aos sistemas de informação na literatura de SI empresarial (Laudon & Laudon).",
+      "correctKey": "E"
     }
   ]
 }
