@@ -46,8 +46,8 @@
     {
       "id": "fc-gestao-ti-007",
       "area": "gestao-ti",
-      "front": "O que é governança de TI?",
-      "back": "O conjunto de estruturas, processos, políticas e estratégias que garante que a TI atenda aos objetivos da organização e aos seus requisitos regulatórios e éticos.",
+      "front": "Que conceito reúne os processos, políticas e estratégias que garantem que a TI atenda aos objetivos e aos requisitos regulatórios e éticos da organização?",
+      "back": "Governança — e atenção ao rótulo: em transp23e6-q59 a Cesgranrio deu como correta \"governança CORPORATIVA\", pondo \"gestão de serviços de TI\" como distrator. Guarde os dois rótulos ligados a \"avaliar, dirigir e monitorar\".",
       "sourceQuestionId": "transp23e6-q59"
     },
     {
@@ -92,7 +92,7 @@
       "id": "fc-gestao-ti-014",
       "area": "gestao-ti",
       "front": "No COBIT 2019, qual domínio contém os objetivos de governança?",
-      "back": "Apenas o EDM (Avaliar, Dirigir e Monitorar). APO, BAI, DSS e MEA são domínios de objetivos de gestão; os cinco somam 40 objetivos."
+      "back": "Apenas o EDM (Avaliar, Dirigir e Monitorar). APO, BAI, DSS e MEA são domínios de objetivos de gestão."
     },
     {
       "id": "fc-gestao-ti-015",
@@ -123,8 +123,8 @@
     {
       "id": "fc-gestao-ti-019",
       "area": "gestao-ti",
-      "front": "A LGPD tem alcance extraterritorial?",
-      "back": "Sim. Aplica-se independentemente do país da sede ou de onde estejam os dados, bastando que o tratamento ocorra em território nacional, vise ofertar bens/serviços a pessoas aqui localizadas ou envolva dados coletados aqui.",
+      "front": "Em que hipóteses a LGPD se aplica, quanto a território e sede do agente?",
+      "back": "Aplica-se independentemente do país da sede do agente ou de onde estejam os dados, bastando que o tratamento ocorra em território nacional, vise ofertar bens ou serviços a pessoas aqui localizadas, ou envolva dados coletados aqui.",
       "sourceQuestionId": "transp23e6-q57"
     },
     {
@@ -155,8 +155,8 @@
     {
       "id": "fc-gestao-ti-024",
       "area": "gestao-ti",
-      "front": "Consentimento é obrigatório para todo tratamento de dado pessoal?",
-      "back": "Não. É apenas uma das dez bases legais do art. 7º — ao lado de obrigação legal, execução de contrato, políticas públicas, tutela da saúde, legítimo interesse, proteção do crédito e outras."
+      "front": "Que lugar o consentimento ocupa entre as bases legais do art. 7º da LGPD?",
+      "back": "É apenas uma das dez bases legais do art. 7º — ao lado de obrigação legal, execução de contrato, políticas públicas, tutela da saúde, legítimo interesse, proteção do crédito e outras. Não é a regra geral."
     },
     {
       "id": "fc-gestao-ti-025",
@@ -167,8 +167,8 @@
     {
       "id": "fc-gestao-ti-026",
       "area": "gestao-ti",
-      "front": "Qual direito do titular da LGPD depende de requisição expressa?",
-      "back": "A portabilidade dos dados a outro fornecedor de serviço ou produto. Os demais direitos do art. 18 incluem confirmação, acesso, correção, anonimização/bloqueio/eliminação, informação sobre compartilhamento e revogação do consentimento."
+      "front": "Que ressalva o art. 18 faz especificamente para a portabilidade?",
+      "back": "A portabilidade a outro fornecedor de serviço ou produto é o único inciso que fala em \"requisição expressa\" e depende de regulamentação da ANPD, observados segredo comercial e industrial."
     },
     {
       "id": "fc-gestao-ti-027",
@@ -217,8 +217,8 @@
     {
       "id": "fc-ux-007",
       "area": "ux",
-      "front": "Que recomendação de acessibilidade do eMAG já foi cobrada em prova, e quais práticas ele rejeita?",
-      "back": "Recomenda garantir contraste mínimo entre plano de fundo e primeiro plano. Rejeita impedir o redimensionamento da página, diferenciar elementos apenas por cor e provocar alteração automática de contexto.",
+      "front": "Que exigência o eMAG faz sobre plano de fundo e primeiro plano?",
+      "back": "Garantir um contraste mínimo entre o plano de fundo e o primeiro plano, para legibilidade por usuários com baixa visão.",
       "sourceQuestionId": "transp15-q35"
     },
     {
@@ -308,8 +308,8 @@
     {
       "id": "fc-ux-021",
       "area": "ux",
-      "front": "Quais são as três afirmações falsas mais comuns sobre MVP?",
-      "back": "Que seria a versão 1.0 completa lançada ao grande público; que seria inadequado para empresas já estabelecidas; e que exigiria necessariamente as mesmas tecnologias do produto final.",
+      "front": "Quem pode usar MVP e com que tecnologias ele pode ser construído?",
+      "back": "Qualquer organização, inclusive empresas já estabelecidas, e com quaisquer tecnologias — não precisa ser a pilha do produto final. O MVP também não é a V1.0 completa lançada ao grande público.",
       "sourceQuestionId": "transp23e6-q58"
     },
     {
@@ -347,8 +347,8 @@
     {
       "id": "fc-ux-027",
       "area": "ux",
-      "front": "Que termo apresentado como estilo de interação de interface não existe em IHC?",
-      "back": "Linguagem polimórfica — polimorfismo é conceito de orientação a objetos. Estilos reais incluem linguagem de comandos, linguagem natural, menus, formulários, manipulação direta, WIMP e WYSIWYG.",
+      "front": "Quais são os estilos de interação reconhecidos em IHC?",
+      "back": "Linguagem de comandos, linguagem natural, seleção em menus, preenchimento de formulários, manipulação direta (mais WIMP e WYSIWYG como estilos derivados). \"Linguagem polimórfica\" não existe: polimorfismo é orientação a objetos.",
       "sourceQuestionId": "prova6-q41"
     },
     {
@@ -366,7 +366,7 @@
     {
       "id": "fc-analise-dados-003",
       "area": "analise-dados",
-      "front": "Qual característica fundamental do data warehouse foi cobrada em 2023?",
+      "front": "Qual característica define o data warehouse quanto à origem dos dados que ele reúne?",
       "back": "Consolidar dados de diversas fontes em um só local, permitindo análises multidimensionais.",
       "sourceQuestionId": "transp23e6-q56"
     },
@@ -385,8 +385,8 @@
     {
       "id": "fc-analise-dados-006",
       "area": "analise-dados",
-      "front": "A área de staging é componente obrigatório de um data warehouse?",
-      "back": "Não: sua utilização é decisão de projeto. Foi por isso que a afirmação que a chamava de 'indispensável' foi considerada falsa.",
+      "front": "Que status a área de staging tem na arquitetura de um data warehouse?",
+      "back": "É componente opcional: sua utilização é decisão de projeto. Foi por isso que a afirmação que a chamava de 'indispensável' foi considerada falsa.",
       "sourceQuestionId": "prova6-q47"
     },
     {
@@ -470,8 +470,8 @@
     {
       "id": "fc-analise-dados-019",
       "area": "analise-dados",
-      "front": "Mineração de dados é sinônimo de KDD?",
-      "back": "Não. Mineração é apenas a etapa de aplicação dos algoritmos dentro do KDD, que inclui seleção, pré-processamento, transformação, mineração e interpretação/avaliação."
+      "front": "Que relação existe entre mineração de dados e KDD?",
+      "back": "Mineração é apenas a etapa de aplicação dos algoritmos dentro do KDD, que inclui seleção, pré-processamento, transformação, mineração e interpretação/avaliação. Não são sinônimos."
     },
     {
       "id": "fc-analise-dados-020",
@@ -488,8 +488,8 @@
     {
       "id": "fc-analise-dados-022",
       "area": "analise-dados",
-      "front": "Correlação alta entre duas variáveis prova causalidade?",
-      "back": "Não. Pode haver variável de confusão, causalidade em sentido inverso ou coincidência. Afirmar causa exige experimento (teste A/B) ou desenho quase experimental."
+      "front": "O que uma correlação alta entre duas variáveis autoriza concluir — e o que não autoriza?",
+      "back": "Autoriza afirmar associação, nada mais: pode haver variável de confusão, causalidade em sentido inverso ou coincidência. Para afirmar causa é preciso experimento (teste A/B) ou desenho quase experimental."
     },
     {
       "id": "fc-analise-dados-023",
@@ -500,13 +500,13 @@
     {
       "id": "fc-analise-dados-024",
       "area": "analise-dados",
-      "front": "Qual gráfico usar para comparar categorias, evolução no tempo e relação entre variáveis?",
-      "back": "Barras para comparar categorias, linhas para evolução no tempo e dispersão para relação entre variáveis. Tabela quando o valor exato importa."
+      "front": "Que gráfico usar para comparar categorias e para mostrar evolução no tempo?",
+      "back": "Barras para comparar categorias; linhas para evolução no tempo. Quando o valor exato importa mais que o padrão, use tabela."
     },
     {
       "id": "fc-analise-dados-025",
       "area": "analise-dados",
-      "front": "Quais são três boas práticas de visualização em dashboards?",
+      "front": "Quais boas práticas orientam a construção de um visual em dashboard?",
       "back": "Uma mensagem por visual; título que afirma a conclusão; escala do eixo de barras começando em zero (além de ordenar categorias por valor e usar cor com propósito)."
     },
     {
@@ -520,6 +520,19 @@
       "area": "analise-dados",
       "front": "Que formato de planilha é adequado para análise em ferramentas de BI?",
       "back": "Tabela plana: uma linha por registro, uma coluna por atributo, cabeçalho único, sem células mescladas, sem totais no meio dos dados e com tipo consistente por coluna."
+    },
+    {
+      "id": "fc-ux-028",
+      "area": "ux",
+      "front": "Quais práticas de design o eMAG rejeita explicitamente?",
+      "back": "Impedir o redimensionamento da página, diferenciar elementos apenas por cor, provocar automaticamente alterações de contexto e recorrer a CAPTCHA como solução de segurança.",
+      "sourceQuestionId": "transp15-q35"
+    },
+    {
+      "id": "fc-analise-dados-028",
+      "area": "analise-dados",
+      "front": "Que gráfico usar para mostrar relação entre duas variáveis e para mostrar distribuição?",
+      "back": "Dispersão para relação entre duas variáveis; histograma ou boxplot para distribuição. Composição vai em barras empilhadas ou pizza com poucas fatias."
     }
   ]
 }
