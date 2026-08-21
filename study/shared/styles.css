@@ -86,6 +86,24 @@ h2 { font-size: 1.05rem; }
 }
 .stem-card math, .stem-card mjx-container { font-size: 1.08em; }
 
+/* Texto-base (ex.: "Texto I"/"Texto II") de que uma ou mais questões dependem — visualmente
+   distinto do enunciado para deixar claro que é material de apoio, não a pergunta em si. */
+.passage-card {
+  background: var(--surface-2);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  line-height: 1.65;
+  max-width: 38em;
+  color: var(--text);
+}
+.passage-card p { margin: 0 0 12px; }
+.passage-card p:last-child { margin-bottom: 0; }
+.passage-card strong:first-child,
+.passage-card > strong { color: var(--accent); }
+
 .alt-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 4px; }
 
 .btn {

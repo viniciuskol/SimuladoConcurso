@@ -105,6 +105,7 @@ function renderQuestion() {
   app.innerHTML = `
     <div class="progressbar"><div style="width:${(100 * session.idx) / session.order.length}%"></div></div>
     <p class="muted">${areaLabel} · questão ${session.idx + 1} de ${session.order.length}</p>
+    ${q.passage ? `<div class="passage-card">${q.passage}</div>` : ""}
     <div class="stem-card">${q.stem}</div>
     <div class="alt-list" id="alts">
       ${q.alternatives.map(alt => `<button class="btn" data-key="${alt.key}"><span class="alt-key">${alt.key}</span><span class="alt-text">${alt.text}</span></button>`).join("")}
