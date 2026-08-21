@@ -4361,6 +4361,1734 @@
       "area": "ingles",
       "correctKey": "E",
       "explanationSummary": "Text I extensively discusses the growing role of renewables (solar, wind) and clean technologies in meeting future energy demand, and Text II highlights Brazil's leading role in bioenergy, hydro, and renewable resources as central to its energy policy — both texts stress the importance of renewable/clean energy for meeting demand, matching option E."
+    },
+    {
+      "id": "prova07-q1",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 1
+      },
+      "area": "arq-dados",
+      "subtopic": "1.3 O modelo Relacional",
+      "stem": "Considere as instâncias de relações R1 e R2 apresentadas abaixo para responder às questões de números 1 e 2. O cabeçalho em cada uma dessas instâncias de relações apresenta os respectivos nomes das colunas.\n\nR1 (sno, pno): (1,1) (1,2) (1,3) (1,4) (2,1) (2,2) (3,2) (4,2) (4,4)\nR2 (pno): (1) (2)\n\nNo contexto da Álgebra Relacional, o resultado da divisão relacional de R1 por R2 é",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "sno = 1, 2, 4",
+          "explanation": "Inclui sno=4, mas o sno 4 só está associado ao pno=2 e pno=4 em R1, faltando o pno=1 exigido por R2; portanto 4 não deveria aparecer no resultado."
+        },
+        {
+          "key": "B",
+          "text": "sno = 1, 2, 3, 4",
+          "explanation": "Inclui todos os valores de sno de R1, mas nem sno=3 (só tem pno=2) nem sno=4 (tem pno=2,4) possuem todos os pnos de R2 (1 e 2) associados."
+        },
+        {
+          "key": "C",
+          "text": "sno = 1, 4",
+          "explanation": "Omite sno=2 (que tem pno=1 e pno=2, satisfazendo a divisão) e inclui indevidamente sno=4, que não tem pno=1."
+        },
+        {
+          "key": "D",
+          "text": "sno = 1, 2"
+        },
+        {
+          "key": "E",
+          "text": "sno = 2, 3, 4",
+          "explanation": "Omite sno=1 (que claramente satisfaz a divisão) e inclui sno=3 e sno=4, que não possuem o pno=1 exigido."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Divisão relacional R1÷R2: sno pertence ao resultado se, para cada pno em R2 (1 e 2), a tupla (sno,pno) existe em R1. sno=1 tem pno {1,2,3,4} ⊇ {1,2} ✓. sno=2 tem pno {1,2} ⊇ {1,2} ✓. sno=3 tem pno {2}, falta 1 ✗. sno=4 tem pno {2,4}, falta 1 ✗. Resultado = {1,2}. Nota de extração: o cabeçalho da coluna de resultado nas 5 alternativas está rotulado como 'pno' no HTML fonte (confirmado por inspeção direta), quando semanticamente deveria ser 'sno' (atributo resultante da divisão); tratado como problema de rotulação da tabela original, não como ambiguidade sobre os valores, que são inequívocos."
+      },
+      "explanationSummary": "A divisão relacional de R1 por R2 retorna os valores de sno de R1 cujos conjuntos de pno associados contêm todos os pnos de R2 ({1,2}). Apenas sno=1 e sno=2 satisfazem essa condição, o que corresponde à alternativa (D)."
+    },
+    {
+      "id": "prova07-q2",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 2
+      },
+      "area": "arq-dados",
+      "subtopic": "1.10 Linguagem de consulta estruturada (SQL)",
+      "stem": "Considere a expressão em SQL a seguir, aplicada às mesmas instâncias de R1 (sno, pno) e R2 (pno) da questão anterior.\n\nSELECT R1.sno\nFROM R1\nWHERE R1.pno >= ALL (SELECT R2.pno FROM R2)\n\nO resultado dessa consulta é",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "sno = 1, 2, 2, 2, 4, 4",
+          "explanation": "Não corresponde às tuplas de R1 com pno maior ou igual a 2 (o máximo de R2); a contagem de repetições de cada sno está incorreta."
+        },
+        {
+          "key": "B",
+          "text": "sno = 1, 1, 1, 2, 2, 3, 4",
+          "explanation": "A lista tem a cardinalidade certa (7 valores), mas as repetições estão incorretas: deveria haver dois '4' (de pno=2 e pno=4 associados a sno=4) e apenas um '2' (de pno=2 associado a sno=2), não o inverso."
+        },
+        {
+          "key": "C",
+          "text": "sno = 1, 2, 3, 3, 4, 4",
+          "explanation": "Contém sno=3 duplicado e omite ocorrências corretas; não reflete as tuplas de R1 com pno ≥ 2."
+        },
+        {
+          "key": "D",
+          "text": "sno = 1, 2, 3, 3, 4, 4",
+          "explanation": "Idêntica à alternativa (C) nos valores; também não reflete corretamente as tuplas de R1 com pno ≥ 2."
+        },
+        {
+          "key": "E",
+          "text": "sno = 1, 1, 1, 2, 3, 4, 4"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": "max(R2.pno) = 2, logo a condição R1.pno >= ALL(R2.pno) equivale a R1.pno >= 2. Tuplas de R1 com pno>=2: (1,2),(1,3),(1,4),(2,2),(3,2),(4,2),(4,4) — sno correspondentes (sem DISTINCT, com repetição): 1,1,1,2,3,4,4. Ordenado: {1,1,1,2,3,4,4}, que é exatamente a alternativa E."
+      },
+      "explanationSummary": "Como max(R2.pno)=2, a condição equivale a selecionar sno de R1 onde pno≥2. As tuplas de R1 que satisfazem isso produzem os valores de sno (com repetição, pois não há DISTINCT): 1,1,1,2,3,4,4 — alternativa (E)."
+    },
+    {
+      "id": "prova07-q3",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 3
+      },
+      "area": "arq-dados",
+      "subtopic": "1.3 O modelo Relacional",
+      "stem": "Sobre o modelo de banco de dados relacional, considere as afirmativas abaixo.\n\nI - Um esquema de relação é composto de um nome de relação e de uma lista de atributos, e cada atributo está associado a um domínio.\nII - Por definição, uma superchave mínima é aquela composta por uma única coluna.\nIII - Um esquema de relação pode conter mais de uma chave candidata.\nIV - A ocorrência de um valor nulo (NULL) é proibida em qualquer coluna sobre a qual se define uma restrição de integridade referencial.\n\nSão corretas APENAS as afirmativas",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "I e II.",
+          "explanation": "II é falsa: uma superchave mínima (chave candidata) pode ser composta por mais de uma coluna (chave composta); a definição não exige coluna única."
+        },
+        {
+          "key": "B",
+          "text": "I e III."
+        },
+        {
+          "key": "C",
+          "text": "II e III.",
+          "explanation": "II é falsa pelo mesmo motivo acima."
+        },
+        {
+          "key": "D",
+          "text": "II e IV.",
+          "explanation": "Tanto II quanto IV são falsas: superchave mínima não precisa ter uma única coluna, e NULL em coluna de chave estrangeira é permitido (regra de integridade referencial não exige valor não nulo, salvo restrição adicional NOT NULL)."
+        },
+        {
+          "key": "E",
+          "text": "III e IV.",
+          "explanation": "IV é falsa pelo motivo acima."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": "I é a definição padrão de esquema de relação (correta). II é falsa: chave candidata mínima pode ter várias colunas. III é correta: uma relação pode ter múltiplas chaves candidatas (apenas uma é escolhida como primária). IV é falsa: a regra de integridade referencial do modelo relacional permite valores nulos em chave estrangeira, a menos que uma restrição NOT NULL adicional seja definida."
+      },
+      "explanationSummary": "I e III estão corretas: o esquema de relação é definido por nome + atributos com domínios, e uma relação pode ter mais de uma chave candidata. II é falsa (superchave mínima pode ter várias colunas) e IV é falsa (NULL é permitido em chave estrangeira, salvo restrição adicional)."
+    },
+    {
+      "id": "prova07-q4",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 4
+      },
+      "area": "arq-dados",
+      "subtopic": "1.16 Transações de bancos de dados",
+      "stem": "A técnica de recuperação de falhas com base em paginação sombra (shadow paging)",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "constrói um catálogo com um número n de entradas, onde a i-ésima entrada aponta para a i-ésima página do banco de dados em disco."
+        },
+        {
+          "key": "B",
+          "text": "mantém uma tabela shadow, que aponta para as páginas alteradas pela transação, enquanto a tabela original aponta para as páginas originais do banco de dados.",
+          "explanation": "Inverte os papéis: é a tabela corrente (em uso durante a transação) que passa a apontar para as páginas alteradas (novas cópias), enquanto a tabela shadow preserva os apontadores para as páginas originais — não o contrário."
+        },
+        {
+          "key": "C",
+          "text": "considera que o banco de dados é composto por um número de páginas de tamanho fixo ou variável (quando as relações possuem campos BLOB ou CLOB).",
+          "explanation": "A paginação sombra pressupõe páginas de tamanho fixo, para que a tabela de páginas seja um simples vetor de apontadores indexado por número de página."
+        },
+        {
+          "key": "D",
+          "text": "possui um catálogo que sempre será mantido em memória principal durante seu uso, independente do tamanho da base de dados.",
+          "explanation": "Não há essa garantia; o catálogo (tabela de páginas) pode ser grande e não fica necessariamente todo residente em memória principal, dependendo do tamanho do banco de dados."
+        },
+        {
+          "key": "E",
+          "text": "cria uma estrutura de log em disco, que armazena apenas as modificações nas páginas realizadas pelas transações nos elementos do banco de dados.",
+          "explanation": "Descreve a técnica de log (write-ahead logging), que é uma alternativa à paginação sombra, não a própria paginação sombra, que dispensa o uso de log para undo/redo."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Shadow paging usa uma tabela de páginas (catálogo) com n entradas, cada uma apontando para a página correspondente em disco; ao iniciar uma transação, faz-se uma cópia dessa tabela (a 'shadow'). Páginas modificadas ganham novas cópias, e a tabela corrente é atualizada para apontar para elas; a tabela shadow mantém os apontadores antigos até o commit. A alternativa (A) descreve corretamente a estrutura básica do catálogo (i-ésima entrada aponta para i-ésima página), que é o mecanismo central da técnica; (B) inverte os papéis das duas tabelas."
+      },
+      "explanationSummary": "A paginação sombra baseia-se em um catálogo (tabela de páginas) com n entradas, em que a i-ésima entrada aponta para a i-ésima página do banco de dados em disco — essa estrutura é duplicada (tabela corrente e tabela shadow) para permitir desfazer alterações não confirmadas."
+    },
+    {
+      "id": "prova07-q9",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 9
+      },
+      "area": "arq-dados",
+      "subtopic": "1.19 Integração dos dados (ETL, Transferência de Arquivos, Integração via Base de Dados)",
+      "stem": "Considere um Sistema de Gerenciamento de Banco de Dados Distribuído (SGBDD) formado por três sítios (sites) S1, S2 e S3, no qual existe uma relação que segue o esquema apresentado a seguir. Considere também que existe uma restrição de integridade sobre o campo SALARIO (que representa o salário de cada funcionário), assegurando que valores desse campo sejam sempre positivos.\n\ncreate table FUNCIONARIO(ID INTEGER NOT NULL, NOME VARCHAR(60) NOT NULL, SALARIO DECIMAL(10,2) NOT NULL, IDADE INTEGER NOT NULL);\nalter table FUNCIONARIO add constraint pk_001 primary key(ID);\n\nSuponha que a relação FUNCIONARIO esteja fragmentada horizontalmente, de tal forma que todos os funcionários cujo salário seja maior que R$ 5.000,00 estão armazenados em S1, e todos os funcionários cujo salário vale até R$ 5.000,00 estão em S2. Considere ainda que ambos os fragmentos são não vazios e que não foi usada replicação.\n\nSe um usuário emite a consulta em SQL padrão\n\nSELECT AVG(F.IDADE) FROM Funcionario F WHERE F.SALARIO > 3000 AND F.SALARIO < 7000\n\nno sítio S3, o resultado é",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "um erro, pois o sítio S3 não possui informações necessárias para executá-la.",
+          "explanation": "Em um SGBDD com transparência de fragmentação, o sítio de origem da consulta não precisa armazenar os dados; o sistema roteia a consulta para os sítios que possuem os fragmentos relevantes."
+        },
+        {
+          "key": "B",
+          "text": "um erro, pois a função AVG não pode ser usada sobre o campo IDADE.",
+          "explanation": "Não há nenhuma restrição que impeça o uso de AVG sobre um campo numérico como IDADE."
+        },
+        {
+          "key": "C",
+          "text": "uma relação produzida através do acesso a ambos os sítios, S1 e S2."
+        },
+        {
+          "key": "D",
+          "text": "uma relação produzida através do acesso ao sítio S1 apenas.",
+          "explanation": "A faixa de salário da consulta (3000 a 7000) também inclui valores até 5000, que estão armazenados em S2, não apenas os valores acima de 5000 armazenados em S1."
+        },
+        {
+          "key": "E",
+          "text": "uma relação produzida através do acesso ao sítio S2 apenas.",
+          "explanation": "A faixa de salário da consulta também inclui valores acima de 5000 (até 7000), que estão armazenados em S1, não apenas os valores até 5000 armazenados em S2."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": "A condição SALARIO > 3000 AND SALARIO < 7000 abrange valores que estão tanto no fragmento de S1 (salário > 5000, até 7000) quanto no fragmento de S2 (salário até 5000, a partir de 3000). Como não há replicação, o SGBDD precisa acessar ambos os sítios S1 e S2 para produzir o resultado completo, independentemente de onde a consulta foi emetida (S3), graças à transparência de fragmentação/localização típica de um SGBDD."
+      },
+      "explanationSummary": "A faixa de salário pesquisada (3000 a 7000) cruza os dois fragmentos horizontais (S1: salário>5000; S2: salário≤5000), portanto o SGBDD precisa acessar ambos os sítios S1 e S2 para responder à consulta, mesmo que ela tenha sido emitida em S3, pois um SGBDD provê transparência de localização dos dados."
+    },
+    {
+      "id": "prova07-q10",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 10
+      },
+      "area": "ux",
+      "subtopic": "6.1 Conceitos de acessibilidade e usabilidade",
+      "stem": "Nos testes de usabilidade de um sistema Web, foi definido um conjunto de tarefas a serem realizadas nesse sistema, assim como foi selecionado um conjunto de potenciais usuários para realizar essas tarefas. É atribuição dos membros da equipe de desenvolvimento do sistema Web, que aplica os testes,",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "assegurar que os usuários que realizam as diversas tarefas tenham o mesmo nível de experiência na realização das tarefas e já tenham sido treinados no uso do sistema.",
+          "explanation": "Testes de usabilidade normalmente buscam uma amostra representativa e variada de usuários (incluindo novatos), e não usuários já treinados e homogêneos, o que mascararia problemas reais de usabilidade."
+        },
+        {
+          "key": "B",
+          "text": "solicitar aos usuários o uso do menor número de comandos possível para realizar cada tarefa, no caso de haver mais de uma maneira de realizá-la.",
+          "explanation": "Isso influenciaria artificialmente o comportamento natural do usuário, comprometendo a validade do teste; o usuário deve agir espontaneamente."
+        },
+        {
+          "key": "C",
+          "text": "instruir aos usuários que permaneçam em silêncio durante a realização das tarefas, para que o conhecimento de seu modelo mental não influencie nos resultados dos testes.",
+          "explanation": "Muitas técnicas de teste de usabilidade (como 'pensar alto'/think aloud) incentivam o contrário: que o usuário verbalize seu raciocínio, pois isso é uma fonte valiosa de dados qualitativos."
+        },
+        {
+          "key": "D",
+          "text": "usar os tempos e as taxas de sucesso coletados na realização de cada tarefa para posterior geração de relatórios com resultados dos testes."
+        },
+        {
+          "key": "E",
+          "text": "apresentar os casos de uso do sistema aos usuários, para que indiquem inconsistências entre os casos apresentados e a interface gráfica correspondente.",
+          "explanation": "Isso seria uma revisão/inspeção de especificação feita pelos próprios usuários, não a condução de um teste de usabilidade observacional, que se baseia na execução de tarefas reais."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Métricas quantitativas clássicas de teste de usabilidade são tempo de execução de tarefa e taxa de sucesso (conclusão da tarefa); coletá-las para elaborar relatórios é prática padrão e atribuição legítima da equipe que aplica os testes."
+      },
+      "explanationSummary": "A prática correta em testes de usabilidade é coletar métricas objetivas — tempo de execução e taxa de sucesso de cada tarefa — para consolidar relatórios com os resultados, e não interferir no comportamento natural do usuário durante o teste."
+    },
+    {
+      "id": "prova07-q11",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 11
+      },
+      "area": "ux",
+      "subtopic": "6.1 Conceitos de acessibilidade e usabilidade",
+      "stem": "A User Agent Accessibility Guidelines 2.0 (UAAG 2.0) é parte de uma série de boas práticas sobre acessibilidade publicada pelo W3C Web Accessibility Initiative (WAI) e preconiza que web sites devem ser acessíveis para pessoas portadoras de necessidades especiais. Qual das alternativas a seguir está de acordo com a construção de sistemas Web mais acessíveis para uma faixa maior de pessoas com tais necessidades?",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "Usar código em JavaScript no lado cliente para implementar a navegação entre páginas HTML.",
+          "explanation": "Depender de JavaScript para navegação básica pode excluir usuários que utilizam tecnologias assistivas ou navegadores/configurações que desabilitam scripts."
+        },
+        {
+          "key": "B",
+          "text": "Usar cores para enfatizar elementos em partes menos visíveis de uma página HTML.",
+          "explanation": "Depender apenas de cor para transmitir ênfase/informação exclui usuários com deficiência visual (incluindo daltonismo), indo contra as diretrizes de acessibilidade."
+        },
+        {
+          "key": "C",
+          "text": "Restringir o conteúdo alternativo ao mínimo possível na construção das páginas HTML.",
+          "explanation": "As diretrizes de acessibilidade recomendam justamente o oposto: fornecer conteúdo alternativo adequado (como texto alternativo para imagens), não minimizá-lo."
+        },
+        {
+          "key": "D",
+          "text": "Testar o acesso às páginas HTML em um navegador (browser) com acesso em modo textual."
+        },
+        {
+          "key": "E",
+          "text": "Organizar tabelas das páginas HTML para que cada tabela possa ser lida em uma coluna por vez.",
+          "explanation": "Tabelas complexas devem ser estruturadas com marcação semântica adequada (cabeçalhos associados a células) para leitura correta por leitores de tela linha a linha; a leitura 'coluna por vez' não é o critério de acessibilidade recomendado."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Testar páginas em navegadores/modo texto (como leitores de tela e navegadores textuais) é uma prática recomendada clássica para verificar se o conteúdo permanece acessível e compreensível sem recursos visuais avançados, alinhada às diretrizes de acessibilidade Web (WCAG/UAAG)."
+      },
+      "explanationSummary": "Testar o acesso em um navegador com modo textual é uma prática recomendada para verificar a acessibilidade de páginas Web, pois simula o uso por tecnologias assistivas e evita depender de recursos exclusivamente visuais (cor, JavaScript) ou de conteúdo alternativo insuficiente."
+    },
+    {
+      "id": "prova07-q12",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 12
+      },
+      "area": "gestao-proj",
+      "subtopic": "2.7 Modelos e características",
+      "stem": "Em relação ao conceito de PERT/CPM,",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "o PERT trabalha com durações determinísticas, aplicando um cálculo de média simples nas diversas estimativas de tempo total de uma atividade.",
+          "explanation": "O PERT trabalha com durações probabilísticas (estimativas otimista, mais provável e pessimista), não determinísticas, e usa uma média ponderada, não uma média simples."
+        },
+        {
+          "key": "B",
+          "text": "no PERT, não se leva em conta qualquer estimativa pessimista de duração de uma atividade.",
+          "explanation": "O PERT usa exatamente três estimativas de duração — otimista, mais provável e pessimista — para calcular o tempo esperado de cada atividade."
+        },
+        {
+          "key": "C",
+          "text": "o CPM preocupa-se, em especial, com as relações tempo-custo, por isto é mais usado em projetos voltados para construção de produtos."
+        },
+        {
+          "key": "D",
+          "text": "a programação de qualquer atividade no PERT/CPM consiste em alocar recursos técnicos a um evento temporal, sem se prender à data de início.",
+          "explanation": "A programação de atividades no PERT/CPM está diretamente ligada a datas de início e término (mais cedo/mais tarde), não é indiferente a elas."
+        },
+        {
+          "key": "E",
+          "text": "o tempo inicial mais cedo de uma atividade no PERT/CPM é o menor tempo necessário para que o evento seja atingido, considerando-se todos os atrasos.",
+          "explanation": "O tempo mais cedo (early start) é calculado considerando as dependências e durações das atividades predecessoras, não 'todos os atrasos'; a definição está incorreta."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": "O CPM (Critical Path Method) tem origem e forte associação histórica com projetos de construção civil/industrial, com foco explícito nas relações entre tempo e custo (compressão de cronograma via alocação adicional de recursos/custo), o que diferencia sua ênfase do PERT (mais voltado a incerteza de duração em projetos de pesquisa/desenvolvimento)."
+      },
+      "explanationSummary": "O CPM enfatiza as relações tempo-custo (permitindo analisar o custo de acelerar atividades do caminho crítico), o que historicamente o tornou mais associado a projetos de construção. O PERT, por outro lado, trabalha com estimativas probabilísticas de duração."
+    },
+    {
+      "id": "prova07-q14",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 14
+      },
+      "area": "gestao-proj",
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "A tabela acima apresenta um projeto com suas atividades, cada atividade com seu respectivo recurso alocado, duração e precedências. Para efeito de controle de projeto, algumas questões precisaram ser respondidas.\n\nAtividade / Duração(dias) / Precedências:\n1 / 10 / —\n2 / 8 / —\n3 / 3 / 1\n4 / 5 / 2, 3\n5 / 4 / 3\n6 / 6 / 4\n7 / 4 / 5\n8 / 5 / 6, 7\n\nI - Se o projeto começou dia 01/03/2010 (segunda-feira) e foi determinado que se trabalhou aos sábados e feriados em horário normal, mas não se trabalhou aos domingos, em qual dia ele terminou?\nII - Qual atividade pertenceu ao caminho crítico?\nIII - Caso as atividades 5 e 6 tivessem aumentado sua duração cada uma em mais 2 dias, de quantos dias seria acrescido o tempo total do projeto?\n\nA opção contendo as respectivas respostas corretas é",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "I-02/04/2010; II- atividade 4; III-2 dias"
+        },
+        {
+          "key": "B",
+          "text": "I-05/04/2010; II- atividade 1; III-4 dias",
+          "explanation": "A data de término calculada contando os dias corridos (exceto domingos) a partir de 01/03/2010 é 02/04/2010, não 05/04/2010; e o acréscimo de 2 dias em cada uma das atividades 5 e 6 aumenta o projeto em apenas 2 dias, não 4."
+        },
+        {
+          "key": "C",
+          "text": "I-05/04/2010; II- atividade 3; III-2 dias",
+          "explanation": "Embora a atividade 3 esteja de fato no caminho crítico e o acréscimo de III esteja correto, a data de término está errada: contando os dias (exceto domingos) a partir de 01/03/2010 chega-se a 02/04/2010, não 05/04/2010."
+        },
+        {
+          "key": "D",
+          "text": "I-02/04/2010; II- atividade 6; III-4 dias",
+          "explanation": "A atividade 6 está de fato no caminho crítico e a data está correta, mas o acréscimo de 2 dias em cada uma das atividades 5 e 6 aumenta o projeto em apenas 2 dias (não 4), pois apenas a atividade 6 é crítica; o atraso na atividade 5 (que tem 3 dias de folga) é parcialmente absorvido."
+        },
+        {
+          "key": "E",
+          "text": "I-02/04/2010; II- atividade 7; III-2 dias",
+          "explanation": "A atividade 7 não pertence ao caminho crítico (tem 3 dias de folga total), apenas as atividades 1, 3, 4, 6 e 8 são críticas."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": "CPM forward pass: Ativ1 0-10; Ativ2 0-8; Ativ3(dep1) 10-13; Ativ4(dep2,3) 13-18; Ativ5(dep3) 13-17; Ativ6(dep4) 18-24; Ativ7(dep5) 17-21; Ativ8(dep6,7) 24-29. Duração total=29 dias. Backward pass dá folga zero para 1,3,4,6,8 (caminho crítico) e folga para 2 (5 dias), 5 (3 dias) e 7 (3 dias). III: aumentando ativ5 (dur 4→6) e ativ6 (dur 6→8): novo EF da ativ6=18+8=26; novo EF da ativ5=13+6=19, ativ7(dep5)=19+4=23; ativ8 início=max(26,23)=26, término=31. Acréscimo=31-29=2 dias. Data de término: contando 29 dias corridos a partir de 01/03/2010 (segunda-feira), pulando os domingos (06/03 não é domingo, mas 07/03, 14/03, 21/03 e 28/03 são), o 29º dia útil cai em 02/04/2010 (sexta-feira). Portanto: I=02/04/2010, II=atividade 4 (ou 1, 3, 6 — todas críticas, mas apenas a opção com data e III corretos simultaneamente e atividade crítica válida é a A), III=2 dias."
+      },
+      "explanationSummary": "O caminho crítico do projeto (atividades 1-3-4-6-8) totaliza 29 dias corridos (exceto domingos), terminando em 02/04/2010. O acréscimo de 2 dias em cada uma das atividades 5 e 6 aumenta o projeto em apenas 2 dias, pois apenas a atividade 6 é crítica (a atividade 5 tem folga suficiente para absorver parte do atraso). A atividade 4 está no caminho crítico."
+    },
+    {
+      "id": "prova07-q15",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 15
+      },
+      "area": "gestao-proj",
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "Um projeto executado sob contrato se encontra no processo de encerramento. Para este caso, a verificação do escopo é usada para",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "avaliar as metas e os requisitos do projeto, seus custos totais, sua produtividade, sua matriz de responsabilidades e também para garantir o pagamento aos fornecedores.",
+          "explanation": "Mistura elementos de controle financeiro/organizacional que não são o foco da verificação do escopo no encerramento, que trata da aceitação formal das entregas."
+        },
+        {
+          "key": "B",
+          "text": "avaliar as metas do projeto, sua produtividade, a qualidade dos testes e assegurar que o produto final entregue não ultrapasse os custos orçados.",
+          "explanation": "Controle de custos é tratado por outro processo (controle de custos), não pela verificação do escopo."
+        },
+        {
+          "key": "C",
+          "text": "atualizar o escopo final do projeto, qualificar os requisitos não atendidos e contabilizar as diferenças entre o que está sendo entregue e o que o cliente desejava, verificando se o orçamento final do projeto foi atendido.",
+          "explanation": "Contabilizar diferenças de orçamento não é o propósito da verificação do escopo, que foca na aceitação formal das entregas, e não em atualizar o escopo nessa fase final."
+        },
+        {
+          "key": "D",
+          "text": "verificar os requisitos de precisão das entregas do produto, o valor do orçamento final do projeto, os dados de confiabilidade do projeto, as informações sobre suporte ao produto final e a lista de testes com baixa confiabilidade.",
+          "explanation": "Mistura diversos elementos de qualidade/suporte que não correspondem à definição de verificação do escopo do PMBOK."
+        },
+        {
+          "key": "E",
+          "text": "verificar se as entregas do projeto foram concluídas satisfatoriamente, obtendo o aceite formal do cliente ou patrocinador para as entregas que estão de acordo com os critérios de aceitação."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Segundo o PMBOK, a Verificação do Escopo é o processo de formalizar a aceitação das entregas do projeto concluídas, obtendo o aceite formal do cliente/patrocinador com base nos critérios de aceitação definidos — especialmente relevante no encerramento de projetos contratados."
+      },
+      "explanationSummary": "A verificação do escopo, segundo o PMBOK, tem como objetivo obter a aceitação formal, pelo cliente ou patrocinador, das entregas do projeto que atendem aos critérios de aceitação estabelecidos — processo central no encerramento de um projeto contratado."
+    },
+    {
+      "id": "prova07-q16",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 16
+      },
+      "area": "eng-sw",
+      "subtopic": "5.4 Verificação, validação e teste",
+      "stem": "Uma das principais atividades do processo de teste de um ciclo de vida de um projeto qualquer é",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "projetar testes que tratem da especificação de procedimentos externos ao computador, tais como: captação das informações, identificação das partes interessadas e distribuição das saídas.",
+          "explanation": "Descreve atividades de levantamento de requisitos/análise, não atividades do processo de teste de software."
+        },
+        {
+          "key": "B",
+          "text": "projetar o processo de teste criando casos de teste, rotinas de teste e, eventualmente, desenvolvendo programas que fazem o teste de forma automática."
+        },
+        {
+          "key": "C",
+          "text": "analisar e definir testes através da manipulação de ferramentas de processos usadas especialmente para obtenção de requisitos de teste de software, tais como: CMMI, BPM e ISO 9001:2000.",
+          "explanation": "CMMI, BPM e ISO 9001:2000 são modelos/frameworks de maturidade e gestão de processos organizacionais, não ferramentas para obtenção de requisitos de teste de software."
+        },
+        {
+          "key": "D",
+          "text": "produzir testes e o manual de especificação do uso do sistema que é utilizado para ensinar o usuário a manipular o produto final do software.",
+          "explanation": "Confunde o processo de teste com a produção de documentação/manual do usuário, que é uma atividade distinta."
+        },
+        {
+          "key": "E",
+          "text": "testar as unidade de software na fase de operação e manutenção do sistema e utilizar os resultados como métricas para eventuais ajustes em projetos anteriores.",
+          "explanation": "O teste de unidade ocorre tipicamente durante o desenvolvimento/implementação, não restrito à fase de operação e manutenção."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": "A criação de casos de teste, rotinas de teste e, eventualmente, ferramentas/programas para automatizar a execução dos testes é uma das atividades centrais do processo de teste de software em qualquer ciclo de vida."
+      },
+      "explanationSummary": "Projetar o processo de teste — criando casos de teste, rotinas de teste e, quando aplicável, automação de testes — é uma das principais atividades do processo de teste em qualquer ciclo de vida de projeto de software."
+    },
+    {
+      "id": "prova07-q17",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 17
+      },
+      "area": "gestao-proj",
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "Durante a fase de planejamento de um projeto de software de uma empresa, as seguintes considerações foram feitas:\n\nI - ao estimar o tamanho do projeto, optou-se por usar contagem por linhas de código (LOC), pois é um método mais fácil de se trabalhar na fase inicial do projeto, é de imediata aplicação a linguagens não procedimentais e fácil de ser calculada;\nII - caso a opção fosse por estimativa por pontos de função, deveriam ser levados em conta os tipos de transações, tais como arquivos lógicos internos e entradas externas, e os tipos de dados, como consultas internas e arquivos de interface, a fim de se fazer o correto cálculo de estimativas;\nIII - a identificação de riscos pode ser obtida a partir de reuniões formais com a equipe de desenvolvimento, as quais vão servir para verificar e separar os problemas, e através da participação anônima de pessoas envolvidas no projeto informando problemas futuros e atuais;\nIV - foi importante, no planejamento, identificar os itens que servirão para atestar a conformidade do produto gerado de acordo com os padrões estabelecidos, sem a qual não seria possível ter-se a medida de qualidade do mesmo, sendo que esta identificação de qualidade foi planejada para funcionar em paralelo com outros processos do projeto.\n\nEstá(ão) correta(s) APENAS a(s) consideração(ões)",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "I.",
+          "explanation": "I é falsa: contagem por LOC não é de aplicação imediata a linguagens não procedimentais, e sua principal crítica é justamente depender da linguagem/estilo de codificação, além de só ser precisa após o código existir."
+        },
+        {
+          "key": "B",
+          "text": "I e III.",
+          "explanation": "I é falsa pelo mesmo motivo."
+        },
+        {
+          "key": "C",
+          "text": "II e IV.",
+          "explanation": "II é falsa: a categorização de pontos de função mistura incorretamente os tipos de componente (arquivos lógicos internos e entradas externas não são ambos 'tipos de transação' da mesma categoria; consultas e arquivos de interface também são categorizados de forma diferente da descrita)."
+        },
+        {
+          "key": "D",
+          "text": "II, III e IV.",
+          "explanation": "II é falsa pelo motivo acima."
+        },
+        {
+          "key": "E",
+          "text": "III e IV."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": "I é falsa: a contagem por LOC é uma métrica dependente de linguagem, difícil de aplicar de forma imediata a linguagens não procedimentais/declarativas, e sua principal limitação é exigir código já escrito. II é falsa: mistura de forma incorreta as categorias de pontos de função (arquivos lógicos internos, arquivos de interface externa, entradas externas, saídas externas, consultas externas são categorias distintas, não agrupadas como descrito). III é verdadeira: identificação de riscos via reuniões formais e técnicas de coleta anônima (tipo Delphi) são práticas reconhecidas. IV é verdadeira: planejamento da qualidade define critérios de conformidade e ocorre em paralelo a outros processos de planejamento."
+      },
+      "explanationSummary": "As considerações III (identificação de riscos por reuniões formais e coleta anônima de opiniões) e IV (planejamento de critérios de qualidade em paralelo a outros processos) estão corretas. I é falsa porque a contagem por LOC não se aplica facilmente a linguagens não procedimentais, e II é falsa porque mistura incorretamente as categorias de componentes de pontos de função."
+    },
+    {
+      "id": "prova07-q18",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 18
+      },
+      "area": "eng-sw",
+      "subtopic": "5.4 Verificação, validação e teste",
+      "stem": "Duas equipes de desenvolvimento de software diferentes obtiveram os seguintes resultados durante sua fase de teste:\n- a equipe A encontrou 345 erros, por mês, nos testes de software de um sistema antes da entrega;\n- a equipe B encontrou 184 erros, por semana, nos testes de software de um sistema antes da entrega.\n\nConsiderando-se que o mês de trabalho teve 30 dias e a semana 7 dias, tratando-se de indicadores de desempenho e avaliação,",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "o sistema da equipe A apresentou um índice de produtividade maior, pois a maior quantidade de erros, por mês, estaria ligada diretamente a mais linhas de código produzidas.",
+          "explanation": "Mais erros encontrados não implica necessariamente mais linhas de código produzidas nem maior produtividade; a relação sugerida não é uma conclusão válida a partir dos dados apresentados."
+        },
+        {
+          "key": "B",
+          "text": "o sistema da equipe B apresentou um grau de confiabilidade melhor do que o sistema da equipe A.",
+          "explanation": "A taxa diária de erros da equipe B (184/7 ≈ 26,3/dia) é muito maior que a da equipe A (345/30 = 11,5/dia), sugerindo o oposto: menor confiabilidade, não melhor."
+        },
+        {
+          "key": "C",
+          "text": "o sistema da equipe B teve, necessariamente, um custo maior do que o sistema da equipe A.",
+          "explanation": "Os dados fornecidos (contagem de erros por período) não permitem concluir nada sobre custo dos sistemas; não há informação de custo no enunciado."
+        },
+        {
+          "key": "D",
+          "text": "a probabilidade de falha em próxima execução de um teste do sistema da equipe B, considerando-se que foram realizados 33 testes/dia, foi maior que 70%."
+        },
+        {
+          "key": "E",
+          "text": "os pontos de função ajustados de cada sistema podem ser deduzidos em função dos erros por tempo.",
+          "explanation": "Pontos de função ajustados dependem de características funcionais do sistema e fatores de ajuste, não podem ser deduzidos a partir da taxa de erros por tempo."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Taxa de erros da equipe B por dia = 184/7 ≈ 26,29 erros/dia. Com 33 testes/dia, a proporção de testes que resultam em falha ≈ 26,29/33 ≈ 0,797 = 79,7%, que é maior que 70%."
+      },
+      "explanationSummary": "A equipe B encontrou, em média, aproximadamente 26,3 erros por dia (184/7). Dividindo pelos 33 testes/dia realizados, a proporção de testes com falha é de aproximadamente 79,7%, superior a 70%."
+    },
+    {
+      "id": "prova07-q20",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 20
+      },
+      "area": "gestao-proj",
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "Na elaboração de um projeto, devem ser considerados vários componentes. Um deles é o escopo. Um escopo de projeto é o(a)",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "documento que contém informações relevantes dos testes que serão executados pela equipe de teste de sistemas na fase de abertura de um projeto, sendo que essas informações poderão ser obtidas a partir de descrições de processos de sistemas futuros.",
+          "explanation": "Confunde o escopo do projeto com um plano de testes; não é essa a definição de escopo de projeto."
+        },
+        {
+          "key": "B",
+          "text": "documento de requisitos de usabilidade, contendo todos os requisitos não funcionais tais como requisitos de confiabilidade, desempenho e segurança, que consideram o contexto sociotecnológico externo no qual o sistema estará inserido.",
+          "explanation": "Descreve um documento de requisitos não funcionais, não a declaração de escopo do projeto."
+        },
+        {
+          "key": "C",
+          "text": "declaração dos dados do projeto que vai considerar as características internas do sistema, mapear todas as características não sistêmicas e ignorar requisitos importantes associados ao usuário final.",
+          "explanation": "Um escopo de projeto não deve ignorar requisitos do usuário final; essa característica contradiz a própria finalidade da declaração de escopo."
+        },
+        {
+          "key": "D",
+          "text": "percepção da equipe de desenvolvimento, em relação ao projeto, dos objetivos de grau de importância mínimo do projeto, bem como as características menos restritivas de uso do sistema a ser desenvolvido.",
+          "explanation": "O escopo do projeto não trata de objetivos de 'grau de importância mínimo' nem de características 'menos restritivas'; é uma descrição formal e objetiva do trabalho e das entregas."
+        },
+        {
+          "key": "E",
+          "text": "descrição do projeto e do produto, contendo, entre outras coisas, o sumário descritivo dos produtos a serem entregues, as justificativas e os objetivos quantificáveis do projeto."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": "A Declaração de Escopo do Projeto, segundo o PMBOK, descreve o projeto e o produto, incluindo o sumário dos produtos/entregas, as justificativas do projeto e objetivos mensuráveis (quantificáveis)."
+      },
+      "explanationSummary": "O escopo do projeto corresponde à declaração que descreve o projeto e o produto a ser entregue, incluindo o sumário das entregas, as justificativas do projeto e seus objetivos quantificáveis — conforme definido pelo PMBOK."
+    },
+    {
+      "id": "prova07-q21",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 21
+      },
+      "area": "gestao-proj",
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "Considerando-se conceitos e objetivos da gerência de projetos, tem-se que",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "o reconhecimento de novas partes interessadas do projeto, trazendo novos requisitos na fase de execução, não influencia em nada o projeto e não implica novo cálculo de estimativas de custos e recursos, pois esse problema é identificado como um risco mínimo do projeto.",
+          "explanation": "Novas partes interessadas trazendo novos requisitos tipicamente exigem replanejamento de custos/recursos/escopo; não é correto afirmar que 'não influencia em nada'."
+        },
+        {
+          "key": "B",
+          "text": "o maior motivo para que duas empresas do mesmo ramo, em países diferentes, tenham graus diferentes de qualidade, confiabilidade e produtividade são seus aspectos étnicos, pois, no caso de projetos, o aspecto étnico é o que mais tem influência nas estimativas de tempo e custo.",
+          "explanation": "Atribuir as diferenças de qualidade/produtividade principalmente a 'aspectos étnicos' não é um princípio reconhecido de gerência de projetos; fatores como processos, maturidade organizacional e cultura organizacional (não étnica) são mais relevantes."
+        },
+        {
+          "key": "C",
+          "text": "em empresas com organização voltada para projetos, ou empresas projetizadas, o gerente de projetos organiza os projetos de acordo com as necessidades das gerências funcionais, que serão responsáveis pela liberação de recursos, sendo que este fator não é o único que limita o poder do gerente de projetos neste tipo de empresa.",
+          "explanation": "Em organizações projetizadas, é o gerente de projetos (e não as gerências funcionais) que detém a maior autoridade sobre os recursos; essa é justamente a característica que diferencia a estrutura projetizada da funcional."
+        },
+        {
+          "key": "D",
+          "text": "o gerente de projeto deve ser um bom técnico, com liderança natural, que, se preciso for, pode especializar-se mais ainda em técnicas de liderança, sem precisar saber negociar, pois negociação é tarefa do gerente de portifólios e do patrocinador do projeto.",
+          "explanation": "Negociação é reconhecidamente uma competência essencial do gerente de projetos (com stakeholders, fornecedores, equipe), não uma atribuição exclusiva de outras funções."
+        },
+        {
+          "key": "E",
+          "text": "o encerramento de um projeto vai tratar, entre outras coisas, do aceite do patrocinador, da geração de base de dados de lições aprendidas e das atualizações dos ativos de processos organizacionais."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": "O processo de Encerramento do Projeto, segundo o PMBOK, inclui a obtenção do aceite formal do patrocinador/cliente, a documentação de lições aprendidas e a atualização dos ativos de processos organizacionais — descrição correta e consistente com o guia."
+      },
+      "explanationSummary": "O encerramento do projeto, segundo o PMBOK, envolve o aceite formal do patrocinador, o registro de lições aprendidas e a atualização dos ativos de processos organizacionais da empresa."
+    },
+    {
+      "id": "prova07-q26",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 26
+      },
+      "area": "seg-info",
+      "subtopic": "9.19 ISO 27002, criptografia, certificação e assinatura digital",
+      "stem": "De acordo com a NBR/ISO 27002, Segurança da Informação é a proteção da informação de vários tipos de ameaças para",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "garantir a continuidade do negócio, minimizar o risco ao negócio, maximizar o retorno sobre os investimentos e as oportunidades de negócio."
+        },
+        {
+          "key": "B",
+          "text": "garantir a continuidade do negócio, minimizar as vulnerabilidades dos ativos de segurança, maximizar o retorno sobre os investimentos e as oportunidades de negócio.",
+          "explanation": "Troca 'risco ao negócio' por 'vulnerabilidades dos ativos de segurança', o que não corresponde literalmente à definição da norma."
+        },
+        {
+          "key": "C",
+          "text": "garantir a continuidade do negócio, facilitar o controle de acesso, maximizar o retorno sobre os investimentos e maximizar a disponibilidade dos sistemas de segurança.",
+          "explanation": "Substitui 'minimizar o risco ao negócio' por elementos específicos (controle de acesso, disponibilidade de sistemas) que não são os termos usados na definição da norma."
+        },
+        {
+          "key": "D",
+          "text": "facilitar o controle de acesso, minimizar o risco ao negócio, maximizar a disponibilidade dos sistemas de segurança e as oportunidades de negócio.",
+          "explanation": "Substitui 'garantir a continuidade do negócio' e 'maximizar o retorno sobre investimentos' por termos que não constam da definição da norma."
+        },
+        {
+          "key": "E",
+          "text": "minimizar as vulnerabilidades dos ativos de segurança, minimizar o risco ao negócio, maximizar o retorno sobre os investimentos e a disponibilidade dos sistemas de segurança.",
+          "explanation": "Não corresponde à formulação literal da norma, que fala em garantir a continuidade do negócio, não em minimizar vulnerabilidades dos ativos."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": "A definição da NBR ISO/IEC 27002 estabelece que a segurança da informação protege a informação de ameaças para garantir a continuidade dos negócios, minimizar os riscos ao negócio, maximizar o retorno sobre os investimentos e as oportunidades de negócio."
+      },
+      "explanationSummary": "Conforme a NBR ISO/IEC 27002, a proteção da informação visa garantir a continuidade do negócio, minimizar o risco ao negócio e maximizar o retorno sobre os investimentos e as oportunidades de negócio — formulação literal da norma."
+    },
+    {
+      "id": "prova07-q27",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 27
+      },
+      "area": "seg-info",
+      "subtopic": "9.3 Softwares maliciosos (ransomware, vírus, worms, spywares, rootkit etc.)",
+      "stem": "Segundo a NBR/ISO 27002, o objetivo da proteção contra códigos maliciosos e códigos móveis é proteger a",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "irretratabilidade da informação.",
+          "explanation": "Irretratabilidade (não repúdio) é objetivo de mecanismos como assinatura digital, não da proteção contra código malicioso."
+        },
+        {
+          "key": "B",
+          "text": "integridade do software e da informação."
+        },
+        {
+          "key": "C",
+          "text": "disponibilidade da informação.",
+          "explanation": "Embora malware possa afetar disponibilidade, o objetivo central do controle de proteção contra código malicioso na norma é a integridade do software e da informação."
+        },
+        {
+          "key": "D",
+          "text": "confidencialidade do software e da informação.",
+          "explanation": "Confidencialidade não é o foco principal desse controle específico da norma; o alvo declarado é a integridade."
+        },
+        {
+          "key": "E",
+          "text": "autenticidade da informação.",
+          "explanation": "Autenticidade não é o objetivo central declarado pela norma para esse controle específico."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": "O controle de 'Proteção contra códigos maliciosos e códigos móveis' da NBR ISO/IEC 27002 (seção 10.4) tem como objetivo proteger a integridade do software e da informação."
+      },
+      "explanationSummary": "O objetivo declarado pela NBR ISO/IEC 27002 para o controle de proteção contra códigos maliciosos e códigos móveis é proteger a integridade do software e da informação."
+    },
+    {
+      "id": "prova07-q28",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 28
+      },
+      "area": "seg-info",
+      "subtopic": "9.19 ISO 27002, criptografia, certificação e assinatura digital",
+      "stem": "Segundo a NBR/ISO 27002, adotar certo número de controles pode ser considerado um bom ponto de partida para a implementação da segurança da informação. Esses controles se baseiam tanto em requisitos legais como nas melhores práticas de segurança da informação normalmente usadas.\n\nRelacione a lista de controles às respectivas categorias.\n\nI - Controle com base em requisitos legais\nII - Controle com base nas melhores práticas de segurança da informação\n\nP - Proteção dos dados e privacidade de informações pessoais\nQ - Documento da política da segurança da informação\nR - Atribuição de responsabilidade para a segurança da informação\nS - Direito de propriedade intelectual\nT - Gestão de vulnerabilidades técnicas\nU - Proteção de registros organizacionais\n\nEstão corretas as associações",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "I com P, R e S - II com Q, T e U",
+          "explanation": "Coloca R (atribuição de responsabilidade, uma prática organizacional) entre os controles legais, e Q (documento de política) entre as práticas; a associação correta coloca R entre as melhores práticas."
+        },
+        {
+          "key": "B",
+          "text": "I com Q, S e U - II com P, R e T",
+          "explanation": "Coloca Q (documento de política) entre os requisitos legais e P (proteção de dados pessoais, tipicamente amparada por legislação) entre as melhores práticas — inverte a lógica das categorias."
+        },
+        {
+          "key": "C",
+          "text": "I com P, S e U - II com Q, R e T"
+        },
+        {
+          "key": "D",
+          "text": "I com Q, T e U - II com P, R e S",
+          "explanation": "Coloca controles de natureza organizacional/prática (Q, T) entre os legais e um controle legal (P, S) entre as práticas."
+        },
+        {
+          "key": "E",
+          "text": "I com P, R e T - II com Q, S e U",
+          "explanation": "Coloca R (atribuição de responsabilidade) entre os legais e S (propriedade intelectual, tipicamente uma exigência legal) entre as práticas — inverte a lógica correta."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Segundo a NBR ISO/IEC 27002 (seção 15, Conformidade), os controles tipicamente vistos como baseados em requisitos legais/regulatórios incluem: proteção de dados e privacidade de informações pessoais (P), direitos de propriedade intelectual — DPI (S), e proteção de registros organizacionais (U), pois todos derivam de obrigações legais/contratuais. Já documento da política de segurança (Q), atribuição de responsabilidades (R) e gestão de vulnerabilidades técnicas (T) são práticas organizacionais recomendadas, não impostas diretamente por lei. Logo, I=P,S,U e II=Q,R,T, que corresponde à alternativa (C)."
+      },
+      "explanationSummary": "Controles baseados em requisitos legais incluem proteção de dados pessoais (P), direitos de propriedade intelectual (S) e proteção de registros organizacionais (U); controles baseados em melhores práticas incluem o documento de política (Q), atribuição de responsabilidades (R) e gestão de vulnerabilidades técnicas (T) — associação (C)."
+    },
+    {
+      "id": "prova07-q39",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 39
+      },
+      "area": "eng-sw",
+      "subtopic": "5.1 Levantamento, análise e gerenciamento de requisitos",
+      "stem": "No contexto do BPM, várias técnicas podem ser úteis durante a modelagem do estado atual do processo (As Is), entre elas, a técnica conhecida por JAD (Joint Application Development). Nessa técnica, bastante utilizada em desenvolvimento de software,",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "as reuniões são realizadas com procedimentos flexíveis e improvisados, garantindo o exercício da criatividade dos participantes.",
+          "explanation": "O JAD é caracterizado por reuniões estruturadas, com pauta e papéis bem definidos (facilitador, escriba, usuários, desenvolvedores), não por procedimentos improvisados."
+        },
+        {
+          "key": "B",
+          "text": "o formato da reunião promove o espírito de cooperação e valoriza o trabalho em equipe de desenvolvedores e usuários."
+        },
+        {
+          "key": "C",
+          "text": "o líder da reunião é eleito entre os usuários, garantindo o comprometimento da categoria.",
+          "explanation": "No JAD, a reunião é conduzida por um facilitador treinado (geralmente neutro/independente da equipe de projeto), não necessariamente eleito entre os próprios usuários."
+        },
+        {
+          "key": "D",
+          "text": "o levantamento de informações entre os participantes utiliza técnica de entrevista com questionários fechados.",
+          "explanation": "O JAD é uma técnica de sessões de trabalho em grupo (workshops estruturados), não de entrevistas individuais com questionários fechados."
+        },
+        {
+          "key": "E",
+          "text": "a equipe de usuários é selecionada no nível gerencial de todas as áreas da organização, garantindo a visão institucional das especificações.",
+          "explanation": "A seleção de participantes no JAD busca representantes de diferentes níveis (não apenas gerencial) que efetivamente usarão ou serão afetados pelo sistema, não exclusivamente gestores."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": "JAD (Joint Application Development) é uma técnica estruturada de elicitação de requisitos baseada em sessões de trabalho conjuntas entre usuários e desenvolvedores, com o objetivo explícito de promover cooperação e trabalho colaborativo em equipe entre as partes envolvidas."
+      },
+      "explanationSummary": "O JAD é uma técnica de elicitação de requisitos baseada em sessões de trabalho estruturadas que reúnem usuários e desenvolvedores, promovendo cooperação e trabalho em equipe entre eles — diferentemente de entrevistas individuais ou reuniões informais."
+    },
+    {
+      "id": "prova07-q42",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 42
+      },
+      "area": "arq-dados",
+      "subtopic": "1.7 Modelagem dimensional",
+      "stem": "A abordagem bottom up, no projeto da data warehouses, é uma estratégia que",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "exige grande investimento inicial.",
+          "explanation": "A abordagem bottom-up (Kimball), ao construir data marts incrementalmente, é caracterizada justamente por exigir menor investimento inicial que a abordagem top-down."
+        },
+        {
+          "key": "B",
+          "text": "possui custo mais baixo e mais arriscado no curto prazo.",
+          "explanation": "A abordagem bottom-up tem custo mais baixo, mas é geralmente considerada menos arriscada no curto prazo (entrega valor rápido, em incrementos), não mais arriscada."
+        },
+        {
+          "key": "C",
+          "text": "deve ser utilizada em conjunto com a modelagem multidimensional estrela."
+        },
+        {
+          "key": "D",
+          "text": "é também conhecida como abordagem Data Mart.",
+          "explanation": "Embora a abordagem bottom-up esteja associada à construção de data marts, sua característica definidora mais citada na literatura é o uso de modelagem dimensional em estrela; 'abordagem Data Mart' não é o nome padrão pelo qual a estratégia é reconhecida na literatura clássica (Kimball vs. Inmon)."
+        },
+        {
+          "key": "E",
+          "text": "é compatível com servidores MOLAP e DOLAP apenas.",
+          "explanation": "A abordagem bottom-up não se restringe a servidores MOLAP e DOLAP; é compatível também com ROLAP e outras arquiteturas de armazenamento."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": "A abordagem bottom-up de Kimball para data warehousing constrói o DW a partir da integração incremental de data marts departamentais, cada um modelado dimensionalmente segundo o esquema estrela (fato + dimensões) — é uma característica central e amplamente citada dessa estratégia."
+      },
+      "explanationSummary": "A abordagem bottom-up de construção de data warehouses (Kimball) baseia-se na modelagem dimensional em esquema estrela para os data marts que compõem incrementalmente o data warehouse."
+    },
+    {
+      "id": "prova07-q43",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 43
+      },
+      "area": "arq-dados",
+      "subtopic": "1.19 Integração dos dados (ETL, Transferência de Arquivos, Integração via Base de Dados)",
+      "stem": "No contexto de Data Warehouses, o processo de Extração, Transformação e Carga (ETC)",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "revela-se como uma das etapas importantes do processo de criação do data warehouse, já que sua função é obter automaticamente os conhecimentos necessários para a padronização dos dados em modelos multidimensionais.",
+          "explanation": "Descreve uma função de mineração de dados/descoberta de conhecimento, não a função do processo de ETL, que trata da extração, limpeza e carga dos dados, não da 'obtenção automática de conhecimentos'."
+        },
+        {
+          "key": "B",
+          "text": "produz, ao seu término, uma série de tabelas (chamadas fatos) que se caracterizam por possuírem dados normalizados até a 3ª forma normal.",
+          "explanation": "Tabelas fato em modelos dimensionais tipicamente não seguem a normalização até a 3FN; o modelo dimensional (estrela/floco de neve) é intencionalmente desnormalizado ou parcialmente normalizado para otimizar consultas."
+        },
+        {
+          "key": "C",
+          "text": "apresenta, como algumas de suas tarefas, filtragem, integração, conversão, condensação e derivação dos dados de entrada, que podem ser originários de diversas fontes, inclusive externas aos sistemas OLTP da organização."
+        },
+        {
+          "key": "D",
+          "text": "leva em consideração o modelo conceitual de dados das fontes de dados, que é geralmente expresso como modelo entidade-relacionamento.",
+          "explanation": "Embora o ETL possa considerar as fontes, essa não é a característica definidora do processo, que se caracteriza principalmente pelas tarefas de filtragem/integração/conversão/carga descritas na alternativa correta."
+        },
+        {
+          "key": "E",
+          "text": "considera somente os dados provenientes de sistemas OLTP como válidos para o processo e, caso exista a necessidade de consideração de dados externos, estes devem ser importados para os sistemas legados.",
+          "explanation": "O ETL tipicamente integra dados de múltiplas fontes, incluindo fontes externas aos sistemas OLTP, sem exigir que sejam antes importados para sistemas legados."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": "O processo de ETL (Extração, Transformação e Carga) inclui tarefas como filtragem, limpeza, integração, conversão, condensação e derivação de dados provenientes de múltiplas fontes, inclusive fontes externas aos sistemas transacionais (OLTP) da organização — descrição padrão do processo."
+      },
+      "explanationSummary": "O processo de ETL realiza tarefas de filtragem, integração, conversão, condensação e derivação de dados que podem vir de diversas fontes, inclusive externas aos sistemas OLTP da organização — descrição consistente com a literatura padrão de data warehousing."
+    },
+    {
+      "id": "prova07-q44",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 44
+      },
+      "area": "arq-dados",
+      "subtopic": "1.7 Modelagem dimensional",
+      "stem": "Os armazéns de dados (Data Warehouses) servem como uma importante ferramenta aos gestores para avaliarem a conveniência da execução da estratégia organizacional utilizada. Sobre concepção/uso de Data Warehouses, tem-se que",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "a concepção de um data warehouse segue os mesmos princípios do projeto de bancos de dados de sistemas transacionais, com as etapas de modelagem conceitual de dados, projeto lógico e projeto físico de banco de dados.",
+          "explanation": "A modelagem de data warehouses (dimensional) difere fundamentalmente da modelagem de sistemas transacionais (normalizada/entidade-relacionamento), não segue os mesmos princípios."
+        },
+        {
+          "key": "B",
+          "text": "as técnicas de geração de modelos multidimensionais sempre consideram a existência de uma tabela de fatos, que mantém associações com tabelas periféricas, chamadas dimensões."
+        },
+        {
+          "key": "C",
+          "text": "o projeto de data warehouses carrega, na base do data warehouses, amostras de dados com alto nível de detalhes, com vistas a auditar, sempre que necessário, os dados consolidados utilizados nas análises realizadas.",
+          "explanation": "O data warehouse armazena o histórico detalhado dos dados (não apenas 'amostras'); a caracterização como amostragem para fins de auditoria não é a definição padrão."
+        },
+        {
+          "key": "D",
+          "text": "um data mart pode ser definido como uma porção física ou lógica do data warehouse, centrado em um assunto específico, com a finalidade de facilitar o processo de Extração, Transformação e Carga (ETC) no data warehouse principal.",
+          "explanation": "A relação típica é o data warehouse alimentar os data marts (não o contrário); um data mart não existe para 'facilitar o ETL no data warehouse principal', mas para atender a necessidades analíticas de um departamento/assunto específico."
+        },
+        {
+          "key": "E",
+          "text": "a incorporação da dimensão tempo em data warehouses é opcional e utilizada quando se deseja aprimorar a qualidade das análises realizadas em sistemas OLAP.",
+          "explanation": "A dimensão tempo é uma característica essencial (não opcional) de data warehouses, um dos quatro atributos definidores de Inmon (orientado a assuntos, integrado, não volátil e variável no tempo)."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": "A modelagem dimensional (esquema estrela ou floco de neve), usada na construção de data warehouses/data marts, sempre se baseia em uma tabela de fatos central associada a tabelas de dimensão periféricas — característica fundamental e universal dessa técnica de modelagem."
+      },
+      "explanationSummary": "Toda técnica de modelagem multidimensional para data warehouses baseia-se em uma tabela de fatos central, associada a tabelas de dimensão que fornecem o contexto descritivo para as medidas armazenadas nos fatos."
+    },
+    {
+      "id": "prova07-q46",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 46
+      },
+      "area": "arq-dados",
+      "subtopic": "1.7 Modelagem dimensional",
+      "stem": "A volatilidade dos dados é característica intrínseca a data warehouses.\n\nPORQUE\n\nSistemas ROLAP possuem um conjunto de interfaces e aplicações que dão ao Sistema Gerenciador de Banco de Dados Relacionais características multidimensionais.\n\nAnalisando as afirmações acima, conclui-se que",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "as duas afirmações são verdadeiras e a segunda justifica a primeira.",
+          "explanation": "A primeira afirmação é falsa, portanto não pode ser justificada pela segunda."
+        },
+        {
+          "key": "B",
+          "text": "as duas afirmações são verdadeiras e a segunda não justifica a primeira.",
+          "explanation": "A primeira afirmação é falsa."
+        },
+        {
+          "key": "C",
+          "text": "a primeira afirmação é verdadeira e a segunda é falsa.",
+          "explanation": "É o inverso: a primeira afirmação é falsa (data warehouses são caracterizados pela NÃO volatilidade dos dados) e a segunda é verdadeira (descrição correta de ROLAP)."
+        },
+        {
+          "key": "D",
+          "text": "a primeira afirmação é falsa e a segunda é verdadeira."
+        },
+        {
+          "key": "E",
+          "text": "as duas afirmações são falsas.",
+          "explanation": "A segunda afirmação é verdadeira, não falsa."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Um dos quatro atributos clássicos (Inmon) que definem um data warehouse é justamente ser NÃO volátil (os dados, uma vez carregados, não são alterados/removidos, apenas acrescentados) — logo a primeira afirmação (volatilidade como característica intrínseca) é falsa. A segunda afirmação descreve corretamente a arquitetura ROLAP: um conjunto de camadas/interfaces sobre um SGBD relacional convencional que lhe conferem capacidades de análise multidimensional (OLAP) sem exigir um motor de armazenamento multidimensional dedicado."
+      },
+      "explanationSummary": "Data warehouses são caracterizados pela NÃO volatilidade dos dados (um dos quatro atributos de Inmon), tornando a primeira afirmação falsa. A segunda afirmação, sobre sistemas ROLAP oferecerem capacidades multidimensionais sobre um SGBD relacional, é verdadeira."
+    },
+    {
+      "id": "prova07-q48",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 48
+      },
+      "area": "arq-dados",
+      "subtopic": "1.7 Modelagem dimensional",
+      "stem": "Técnicas de modelagem de Data Warehouses diferem das tradicionalmente utilizadas em sistemas transacionais. Analisando uma dessas abordagens, o modelo multidimensional estrela, verifica-se que",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "possui melhor desempenho, quando comparado ao modelo floco de neve."
+        },
+        {
+          "key": "B",
+          "text": "representa hierarquias explicitamente.",
+          "explanation": "É o modelo floco de neve (snowflake), com dimensões normalizadas, que representa hierarquias de forma explícita; o modelo estrela mantém as dimensões desnormalizadas (hierarquias implícitas em uma única tabela)."
+        },
+        {
+          "key": "C",
+          "text": "facilita a tarefa de manutenção das dimensões.",
+          "explanation": "É o modelo floco de neve, com dimensões normalizadas, que facilita a manutenção (evita redundância); o modelo estrela, sendo desnormalizado, é mais difícil de manter em termos de atualização de dados redundantes."
+        },
+        {
+          "key": "D",
+          "text": "assemelha-se ao modelo de classes conceitual da UML.",
+          "explanation": "O esquema estrela é um modelo específico para bancos de dados analíticos (fato/dimensões), sem correspondência direta com o modelo de classes conceitual da UML."
+        },
+        {
+          "key": "E",
+          "text": "é opcional a sua utilização, sendo substituído pelo diagrama de atividades da UML.",
+          "explanation": "O esquema estrela é uma técnica de modelagem de dados; não é substituído por um diagrama de atividades da UML, que serve a outro propósito (modelagem de fluxo de processos/comportamento)."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": "O modelo estrela, por manter as dimensões desnormalizadas em uma única tabela cada, exige menos junções (joins) nas consultas do que o modelo floco de neve (que normaliza as dimensões em várias tabelas), resultando em melhor desempenho de consulta — vantagem clássica atribuída ao esquema estrela na literatura de data warehousing."
+      },
+      "explanationSummary": "O esquema estrela, por manter tabelas de dimensão desnormalizadas, exige menos junções nas consultas analíticas do que o esquema floco de neve, resultando em melhor desempenho de consulta."
+    },
+    {
+      "id": "prova07-q49",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 49
+      },
+      "area": "eng-sw",
+      "subtopic": "5.1 Levantamento, análise e gerenciamento de requisitos",
+      "stem": "No contexto da engenharia de software, o processo conhecido como engenharia de requisitos permite ao engenheiro de software",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "eliminar a volatilidade dos requisitos que foram levantados para o produto de software.",
+          "explanation": "A engenharia de requisitos busca gerenciar/mitigar a volatilidade dos requisitos (por meio de gestão de mudanças, rastreabilidade etc.), mas não a elimina; requisitos naturalmente evoluem ao longo do projeto."
+        },
+        {
+          "key": "B",
+          "text": "postergar a definição do escopo inicial do sistema para etapas posteriores do desenvolvimento.",
+          "explanation": "A engenharia de requisitos busca justamente definir o escopo o mais cedo e claramente possível, não postergá-lo."
+        },
+        {
+          "key": "C",
+          "text": "realizar a Implantação da Função de Qualidade (IFQ/QFD), que corresponde a maximizar a qualidade do processo de software utilizado no desenvolvimento do produto de software já implantado.",
+          "explanation": "QFD é uma técnica específica que relaciona requisitos do cliente a características técnicas do produto, aplicada durante o desenvolvimento, não uma atividade voltada à qualidade do processo de um produto 'já implantado'."
+        },
+        {
+          "key": "D",
+          "text": "remover as dependências entre os requisitos do sistema e as regras de negócio.",
+          "explanation": "A engenharia de requisitos busca identificar e documentar corretamente as dependências entre requisitos e regras de negócio, não removê-las."
+        },
+        {
+          "key": "E",
+          "text": "usar o modelo de casos de uso para especificar os requisitos funcionais do produto de software."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": "O modelo de casos de uso é uma técnica padrão e amplamente utilizada na engenharia de requisitos para especificar requisitos funcionais de um sistema, descrevendo as interações entre atores e o sistema."
+      },
+      "explanationSummary": "A engenharia de requisitos permite ao engenheiro de software utilizar o modelo de casos de uso como técnica para especificar os requisitos funcionais do produto de software."
+    },
+    {
+      "id": "prova07-q51",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 51
+      },
+      "area": "eng-sw",
+      "subtopic": "5.2 Ciclo de vida de sistemas e seus paradigmas",
+      "stem": "Conforme proposto originalmente, o Processo Unificado é dividido em diversas fases, e em cada uma delas podem ser realizadas atividades de diferentes fluxos de trabalho (workflows), em diferentes proporções. A característica que NÃO se aplica a esse processo é ser",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "incremental.",
+          "explanation": "O Processo Unificado é reconhecidamente incremental — o sistema é construído em incrementos ao longo das iterações."
+        },
+        {
+          "key": "B",
+          "text": "iterativo.",
+          "explanation": "O Processo Unificado é reconhecidamente iterativo — cada fase é dividida em iterações."
+        },
+        {
+          "key": "C",
+          "text": "centrado em arquitetura.",
+          "explanation": "Ser 'centrado em arquitetura' (architecture-centric) é uma das características fundamentais e amplamente citadas do Processo Unificado."
+        },
+        {
+          "key": "D",
+          "text": "modelo prescritivo.",
+          "explanation": "O Processo Unificado é frequentemente descrito como um framework de processo adaptável/configurável (não um único modelo prescritivo e rígido), mas essa não é a característica mais claramente ausente entre as opções apresentadas."
+        },
+        {
+          "key": "E",
+          "text": "guiado por testes de aceitação."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": "O Processo Unificado é classicamente descrito por quatro características centrais: ser dirigido a casos de uso, centrado em arquitetura, iterativo e incremental. 'Guiado por testes de aceitação' (acceptance-test-driven) é uma prática associada a métodos ágeis como XP/BDD, não uma característica definidora do Processo Unificado."
+      },
+      "explanationSummary": "O Processo Unificado é caracterizado por ser dirigido a casos de uso, centrado em arquitetura, iterativo e incremental. Ser 'guiado por testes de aceitação' não é uma característica do Processo Unificado, mas sim de práticas ágeis como XP."
+    },
+    {
+      "id": "prova07-q53",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 53
+      },
+      "area": "eng-sw",
+      "subtopic": "5.2 Ciclo de vida de sistemas e seus paradigmas",
+      "stem": "O modelo de ciclo de vida em cascata",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "enfatiza a realização sequencial das atividades do desenvolvimento de um produto de software."
+        },
+        {
+          "key": "B",
+          "text": "enfatiza a comunicação estreita com o cliente durante o desenvolvimento do produto de software.",
+          "explanation": "É característica de modelos ágeis/iterativos, não do modelo cascata, que planeja o envolvimento do cliente principalmente no início (requisitos) e no final (entrega), não de forma estreita e contínua."
+        },
+        {
+          "key": "C",
+          "text": "envolve a ideia principal de criar um protótipo executável e, através de transformações sucessivas, chegar ao sistema completamente implementado.",
+          "explanation": "Descreve o modelo de prototipação (ou transformacional), não o modelo em cascata, que segue fases sequenciais sem construir protótipos intermediários como estratégia central."
+        },
+        {
+          "key": "D",
+          "text": "envolve a análise dos riscos envolvidos no desenvolvimento dos requisitos identificados para produto de software.",
+          "explanation": "Análise formal e cíclica de riscos é característica central do modelo espiral, não do modelo em cascata."
+        },
+        {
+          "key": "E",
+          "text": "recomenda a geração de versões incompletas do sistema, que podem ser passadas para o usuário final, o que permite a retroalimentação do processo de desenvolvimento.",
+          "explanation": "Descreve o desenvolvimento incremental/evolucionário, não o modelo cascata, que entrega o sistema completo apenas ao final do processo sequencial."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": "O modelo em cascata (waterfall) é definido pela execução sequencial e linear das fases de desenvolvimento (requisitos, projeto, implementação, testes, manutenção), cada uma concluída antes de iniciar a seguinte."
+      },
+      "explanationSummary": "O modelo em cascata caracteriza-se pela execução sequencial das fases de desenvolvimento de software, uma após a outra, sem sobreposição ou retorno planejado a fases anteriores."
+    },
+    {
+      "id": "prova07-q55",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 55
+      },
+      "area": "eng-sw",
+      "subtopic": "5.3 Modelos, metodologias, técnicas e ferramentas de análise e projeto (estruturado e orientado a objetos)",
+      "stem": "Uma das características do Processo Unificado (Unified Process) é ser dirigido a casos de uso (use case driven). Nesse contexto, analise as afirmações a seguir.\n\nO modelo de casos de uso representa o comportamento de um sistema, conforme percebido do ponto de vista externo a esse sistema.\n\nPORQUE\n\nA construção do modelo de classes conceituais de um sistema pode usar como ponto de partida o modelo de casos de uso.\n\nA esse respeito, conclui-se que",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "as duas afirmações são verdadeiras e a segunda justifica a primeira.",
+          "explanation": "A segunda afirmação descreve uma aplicação prática (uso do modelo de casos de uso como insumo para o modelo de classes), mas não é a razão/justificativa lógica pela qual o modelo de casos de uso representa o comportamento externo do sistema — são fatos independentes, não uma relação causal."
+        },
+        {
+          "key": "B",
+          "text": "as duas afirmações são verdadeiras e a segunda não justifica a primeira."
+        },
+        {
+          "key": "C",
+          "text": "a primeira afirmação é verdadeira e a segunda é falsa.",
+          "explanation": "A segunda afirmação também é verdadeira: é prática reconhecida (inclusive no próprio Processo Unificado) usar o modelo de casos de uso como ponto de partida para identificar classes conceituais."
+        },
+        {
+          "key": "D",
+          "text": "a primeira afirmação é falsa e a segunda é verdadeira.",
+          "explanation": "A primeira afirmação é verdadeira: é a definição padrão de modelo de casos de uso (visão comportamental externa do sistema)."
+        },
+        {
+          "key": "E",
+          "text": "as duas afirmações são falsas.",
+          "explanation": "Ambas as afirmações são verdadeiras."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Ambas as afirmações são verdadeiras e reconhecidas na literatura sobre o Processo Unificado, mas a segunda (uso do modelo de casos de uso como ponto de partida do modelo de classes) descreve uma aplicação prática subsequente, não a razão pela qual o modelo de casos de uso representa o comportamento externo do sistema — logo não há relação de justificativa entre elas."
+      },
+      "explanationSummary": "Ambas as afirmações são verdadeiras: o modelo de casos de uso representa o comportamento externo do sistema, e pode servir de ponto de partida para o modelo de classes conceituais — mas a segunda não é a razão/justificativa da primeira, são fatos independentes."
+    },
+    {
+      "id": "prova07-q56",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 56
+      },
+      "area": "eng-sw",
+      "subtopic": "5.4 Verificação, validação e teste",
+      "stem": "No contexto da Engenharia de Software, a verificação e a validação são conjuntos de atividades que",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "envolvem o uso de inspeções técnicas, cujo objetivo é verificar características funcionais de um produto de software, tais como desempenho e usabilidade.",
+          "explanation": "Desempenho e usabilidade são tipicamente características não funcionais, não funcionais; a caracterização está incorreta."
+        },
+        {
+          "key": "B",
+          "text": "asseguram a inexistência de erros de lógica no código-fonte de um produto de software.",
+          "explanation": "Nenhuma técnica de verificação/validação pode assegurar a inexistência total de erros; apenas aumenta a confiança/reduz defeitos."
+        },
+        {
+          "key": "C",
+          "text": "são de uso exclusivo entre si e correspondem a verificar se o produto de software que está sendo construído atende às expectativas do usuário.",
+          "explanation": "Verificação e validação são atividades complementares, não mutuamente exclusivas; além disso, 'atender às expectativas do usuário' é a definição de validação, não de ambas."
+        },
+        {
+          "key": "D",
+          "text": "são aplicadas após a finalização da etapa de projeto (design) e se limitam às etapas de implementação e de testes.",
+          "explanation": "Atividades de V&V ocorrem ao longo de todo o ciclo de vida (inclusive durante requisitos e projeto), não apenas após o design."
+        },
+        {
+          "key": "E",
+          "text": "são opcionalmente auxiliadas por ferramentas CASE ou pela construção de protótipos."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Atividades de verificação e validação podem ser apoiadas, de forma opcional, por ferramentas CASE (automação de inspeções, análise estática etc.) ou pela construção de prototipos para validar requisitos/comportamento com o usuário — afirmação consistente com a literatura de engenharia de software."
+      },
+      "explanationSummary": "As atividades de verificação e validação podem ser opcionalmente apoiadas por ferramentas CASE ou pela construção de protótipos, entre outras técnicas, ao longo de todo o ciclo de vida do software."
+    },
+    {
+      "id": "prova07-q57",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 57
+      },
+      "area": "eng-sw",
+      "subtopic": "5.5 Ambientes de desenvolvimento de software",
+      "stem": "É comum, na Engenharia de Software, o uso de ferramentas de software que auxiliam na realização de diversas atividades do desenvolvimento. Nesse contexto, ferramentas de",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "refatoração auxiliam a modificação de uma região do código-fonte de um sistema, com o objetivo de alterar comportamento externo deste último.",
+          "explanation": "Por definição, refatoração é a modificação da estrutura interna do código SEM alterar seu comportamento externo; a alternativa afirma o contrário do conceito correto."
+        },
+        {
+          "key": "B",
+          "text": "análise estática do código permitem obter métricas de qualidade de um produto de software, tais como o grau de dependência entre seus componentes."
+        },
+        {
+          "key": "C",
+          "text": "integração contínua são destinadas a automatizar a implantação do produto de software no ambiente de produção.",
+          "explanation": "Integração contínua automatiza a integração e build/testes frequentes do código, não especificamente a implantação (deploy) em produção, que é função de ferramentas de implantação/entrega contínua."
+        },
+        {
+          "key": "D",
+          "text": "engenharia reversa são destinadas ao controle das diversas versões de um produto de software.",
+          "explanation": "Ferramentas de engenharia reversa recuperam artefatos de projeto/análise a partir do código-fonte existente; controle de versões é função de ferramentas de controle de versão (CVS/SVN/Git), não de engenharia reversa."
+        },
+        {
+          "key": "E",
+          "text": "cobertura de código determinam em que grau o código-fonte de um sistema corresponde aos seus requisitos não funcionais.",
+          "explanation": "Ferramentas de cobertura de código medem o grau de execução do código-fonte durante os testes (cobertura de linhas/ramos/caminhos), não sua correspondência com requisitos não funcionais."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Ferramentas de análise estática de código (sem executar o programa) permitem obter métricas de qualidade, como grau de acoplamento/dependência entre componentes, complexidade ciclomática, entre outras — descrição correta e padrão dessa categoria de ferramenta."
+      },
+      "explanationSummary": "Ferramentas de análise estática de código permitem obter métricas de qualidade de software, como o grau de dependência (acoplamento) entre componentes, sem a necessidade de executar o programa."
+    },
+    {
+      "id": "prova07-q65",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 65
+      },
+      "area": "gestao-ti",
+      "subtopic": "4.1 Conceitos, segmentos e mercado de tecnologia da informação",
+      "stem": "Um Sistema de Informação (SI) pode ser definido, tecnicamente, como um conjunto de componentes inter-relacionados que coletam (recuperam), processam, armazenam e distribuem informações destinadas a apoiar a tomada de decisões, a coordenação e o controle de uma organização.\n\nPORQUE\n\nPode-se definir Tecnologia da Informação (TI) como todo software e todo hardware de que uma empresa necessita para atingir seus objetivos organizacionais.\n\nA esse respeito, conclui-se que",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "as duas afirmações são verdadeiras e a segunda justifica a primeira.",
+          "explanation": "As duas definições descrevem conceitos relacionados, mas distintos (SI e TI); a definição de TI não é a razão/justificativa lógica da definição de SI, são definições independentes."
+        },
+        {
+          "key": "B",
+          "text": "as duas afirmações são verdadeiras e a segunda não justifica a primeira."
+        },
+        {
+          "key": "C",
+          "text": "a primeira afirmação é verdadeira e a segunda é falsa.",
+          "explanation": "A segunda afirmação também é uma definição amplamente aceita (ainda que ampla) de Tecnologia da Informação."
+        },
+        {
+          "key": "D",
+          "text": "a primeira afirmação é falsa e a segunda é verdadeira.",
+          "explanation": "A primeira afirmação corresponde à definição clássica (Laudon & Laudon) de Sistema de Informação, sendo verdadeira."
+        },
+        {
+          "key": "E",
+          "text": "as duas afirmações são falsas.",
+          "explanation": "Ambas as afirmações correspondem a definições padrão e aceitas na literatura."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Ambas as afirmações correspondem a definições padrão (SI: componentes que coletam/processam/armazenam/distribuem informação para apoiar decisão, coordenação e controle; TI: conjunto de hardware e software necessário aos objetivos organizacionais), mas são definições paralelas e independentes — a segunda não é a causa/justificativa lógica da primeira."
+      },
+      "explanationSummary": "Ambas as afirmações são definições corretas e amplamente aceitas — de Sistema de Informação e de Tecnologia da Informação, respectivamente — mas tratam de conceitos relacionados e não guardam relação de causa/justificativa entre si."
+    },
+    {
+      "id": "prova07-q66",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 66
+      },
+      "area": "gestao-ti",
+      "subtopic": "4.1 Conceitos, segmentos e mercado de tecnologia da informação",
+      "stem": "Refletem possíveis dificuldades relacionadas a Sistemas Integrados de Gestão (ERP – Enterprise Resource Planning):\n\nI - problemas relativos à legislação da região onde a empresa se localiza;\nII - aceitação da nova tecnologia pelos funcionários;\nIII - falta de foco nos agentes externos da empresa;\nIV - customização do software frente a necessidades específicas da empresa contratante.\n\nSão dificuldades relativas a ERP",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "I e III, apenas.",
+          "explanation": "Deixa de fora II (resistência dos usuários) e IV (custo/complexidade de customização), ambas dificuldades clássicas e amplamente documentadas na literatura sobre implantação de ERP."
+        },
+        {
+          "key": "B",
+          "text": "III e IV, apenas.",
+          "explanation": "Deixa de fora I (adequação a legislações locais em implantações multinacionais) e II (resistência à mudança), ambas dificuldades reconhecidas."
+        },
+        {
+          "key": "C",
+          "text": "I, II e IV, apenas.",
+          "explanation": "Omite III; embora III seja menos frequentemente citada isoladamente, a falta de foco em agentes externos (fornecedores/clientes) também é apontada como limitação de ERPs tradicionais, tornando as quatro afirmações válidas."
+        },
+        {
+          "key": "D",
+          "text": "II, III e IV, apenas.",
+          "explanation": "Omite I; adequação a diferentes legislações regionais é uma dificuldade real e documentada em implantações de ERP multinacionais."
+        },
+        {
+          "key": "E",
+          "text": "I, II, III e IV."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": "As quatro dificuldades listadas são reconhecidas na literatura sobre implantação de ERP: adaptação a legislações locais em implantações multinacionais (I), resistência dos usuários à mudança (II), foco tradicionalmente interno dos ERPs em detrimento da integração com agentes externos como fornecedores e clientes (III), e alto custo/complexidade de customização para necessidades específicas (IV)."
+      },
+      "explanationSummary": "As quatro afirmações (adequação legal regional, resistência dos usuários, foco insuficiente em agentes externos e dificuldade de customização) são dificuldades amplamente documentadas em implantações de sistemas ERP."
+    },
+    {
+      "id": "prova07-q67",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 67
+      },
+      "area": "eng-sw",
+      "subtopic": "5.3 Modelos, metodologias, técnicas e ferramentas de análise e projeto (estruturado e orientado a objetos)",
+      "stem": "No Projeto de Interfaces de software modelados e projetados segundo o paradigma da orientação a objetos, diversos artefatos da UML 2.0 são utilizados para a construção do mapa de navegação das telas. Um diagrama NÃO adequado a essa tarefa é o de",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "objetos.",
+          "explanation": "Diagramas de objetos podem auxiliar a representar instâncias/estados de tela em determinados momentos, sendo por vezes usados em mapas de navegação."
+        },
+        {
+          "key": "B",
+          "text": "implantação."
+        },
+        {
+          "key": "C",
+          "text": "transição de estados.",
+          "explanation": "Diagramas de estados são frequentemente usados para representar telas como estados e transições entre elas, sendo adequados a mapas de navegação."
+        },
+        {
+          "key": "D",
+          "text": "atividades.",
+          "explanation": "Diagramas de atividades podem representar o fluxo de navegação entre telas como um fluxo de ações/decisões, sendo utilizados para esse fim."
+        },
+        {
+          "key": "E",
+          "text": "casos de uso.",
+          "explanation": "Diagramas de casos de uso, embora mais focados em funcionalidades do que em navegação, podem apoiar indiretamente o mapeamento de fluxos de interação; ainda assim, não é o diagrama tipicamente citado como inadequado nesse contexto."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": "O diagrama de implantação (deployment diagram) representa a topologia física de hardware/infraestrutura onde os componentes de software são executados — não guarda relação com a navegação entre telas de uma interface, sendo o único, entre as opções, claramente inadequado a essa tarefa."
+      },
+      "explanationSummary": "O diagrama de implantação descreve a infraestrutura física (nós de hardware, distribuição de componentes), sem relação com o fluxo de navegação entre telas de uma interface — por isso é o diagrama UML inadequado para construir o mapa de navegação."
+    },
+    {
+      "id": "prova07-q68",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 68
+      },
+      "area": "gestao-ti",
+      "subtopic": "4.1 Conceitos, segmentos e mercado de tecnologia da informação",
+      "stem": "Sistemas ERP revelam-se, de fato, como softwares que automatizam as etapas dos projetos de Tecnologia de Informação de organizações.\n\nPORQUE\n\nWorkflows representam a automação de processos de negócio, no todo ou em partes, onde documentos, informação e tarefas são transferidas de um ponto a outro, de acordo com uma sequência previamente definida.\n\nAnalisando as afirmações acima, conclui-se que",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "as duas afirmações são verdadeiras e a segunda justifica a primeira.",
+          "explanation": "A primeira afirmação é falsa."
+        },
+        {
+          "key": "B",
+          "text": "as duas afirmações são verdadeiras e a segunda não justifica a primeira.",
+          "explanation": "A primeira afirmação é falsa."
+        },
+        {
+          "key": "C",
+          "text": "a primeira afirmação é verdadeira e a segunda é falsa.",
+          "explanation": "É o inverso: a primeira é falsa e a segunda é verdadeira."
+        },
+        {
+          "key": "D",
+          "text": "a primeira afirmação é falsa e a segunda é verdadeira."
+        },
+        {
+          "key": "E",
+          "text": "as duas afirmações são falsas.",
+          "explanation": "A segunda afirmação corresponde à definição padrão (WfMC) de workflow, sendo verdadeira."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Sistemas ERP automatizam processos de negócio (financeiro, RH, cadeia de suprimentos etc.), não 'as etapas de projetos de TI'; a primeira afirmação está incorreta quanto ao objeto de automação dos ERPs. A segunda afirmação corresponde à definição padrão de workflow (Workflow Management Coalition): automação de processos de negócio com transferência de documentos/informação/tarefas segundo uma sequência definida — verdadeira."
+      },
+      "explanationSummary": "Sistemas ERP automatizam processos de negócio das organizações, não as etapas de projetos de TI, tornando a primeira afirmação falsa. A segunda afirmação, sobre a definição de workflow, é verdadeira."
+    },
+    {
+      "id": "prova07-q69",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 69
+      },
+      "area": "gestao-ti",
+      "subtopic": "4.1 Conceitos, segmentos e mercado de tecnologia da informação",
+      "stem": "O avanço tecnológico trouxe às empresas uma série de facilidades, que propiciaram a evolução dos sistemas de informação empresariais. Nesse contexto, deve-se considerar que",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "as componentes organizacional e humana são partes integrantes dos sistemas, bem como a componente técnica."
+        },
+        {
+          "key": "B",
+          "text": "a capacitação técnica em sistemas de informação equivale à capacitação em computadores, centrando a atenção, primordialmente, no conhecimento da Tecnologia da Informação.",
+          "explanation": "A visão sociotécnica de SI rejeita reduzir a capacitação em SI apenas ao conhecimento técnico/computacional, pois envolve também aspectos organizacionais e humanos."
+        },
+        {
+          "key": "C",
+          "text": "a componente tecnológica sobrepõe-se às demais dimensões, por conta da relevância de seu papel frente à sociedade e aos órgãos reguladores.",
+          "explanation": "Nenhuma das três componentes (organizacional, humana, tecnológica) se sobrepõe isoladamente às demais; a visão sociotécnica as trata como igualmente relevantes e interdependentes."
+        },
+        {
+          "key": "D",
+          "text": "a implantação de um novo sistema de informação deve promover, sempre que necessária, uma modificação da cultura organizacional, alterando os processos organizacionais da empresa.",
+          "explanation": "Embora sistemas de informação possam influenciar processos e cultura, não é correto afirmar que a implantação DEVE sempre promover essa modificação; isso depende do contexto e não é uma regra geral."
+        },
+        {
+          "key": "E",
+          "text": "os processos organizacionais que manipulam dados críticos à estratégia da instituição não devem ser automatizados, com vistas à sua segurança.",
+          "explanation": "Não é verdade que processos críticos não devam ser automatizados por segurança; pelo contrário, muitos processos críticos são automatizados com controles de segurança adequados."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": "A visão sociotécnica clássica de Sistemas de Informação (Laudon & Laudon) considera que um SI é composto por três dimensões interdependentes: organizacional, humana (pessoas) e tecnológica — todas partes integrantes do sistema, sem que uma se sobreponha às demais."
+      },
+      "explanationSummary": "Sistemas de informação são compostos por três dimensões interdependentes — organizacional, humana e tecnológica — todas parte integrante do sistema, conforme a visão sociotécnica clássica de SI."
+    },
+    {
+      "id": "prova07-q70",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 70
+      },
+      "area": "gestao-ti",
+      "subtopic": "4.1 Conceitos, segmentos e mercado de tecnologia da informação",
+      "stem": "A Tecnologia da Informação criou diferenciais competitivos importantes para as empresas. A utilização de Sistemas de Informação tornou possível a expansão das atividades de negócio das organizações, principalmente pela automatização de processos de negócio. A esse respeito, considere os objetivos a seguir.\n\nI - Excelência operacional\nII - Auxílio do processo de tomada de decisões\nIII - Vantagem Competitiva\nIV - Sobrevivência da organização\n\nSão objetivos organizacionais dos sistemas de informação",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "I e II, apenas.",
+          "explanation": "Omite III (vantagem competitiva) e IV (sobrevivência), ambos objetivos organizacionais clássicos de SI segundo a literatura (Laudon & Laudon)."
+        },
+        {
+          "key": "B",
+          "text": "I e IV, apenas.",
+          "explanation": "Omite II (apoio à decisão) e III (vantagem competitiva), ambos objetivos amplamente reconhecidos."
+        },
+        {
+          "key": "C",
+          "text": "II e III, apenas.",
+          "explanation": "Omite I (excelência operacional) e IV (sobrevivência), ambos objetivos amplamente reconhecidos."
+        },
+        {
+          "key": "D",
+          "text": "II, III e IV, apenas.",
+          "explanation": "Omite I (excelência operacional), que também é um dos objetivos organizacionais clássicos dos sistemas de informação."
+        },
+        {
+          "key": "E",
+          "text": "I, II, III e IV."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Os quatro itens correspondem aos objetivos organizacionais clássicos de sistemas de informação segundo Laudon & Laudon: excelência operacional, apoio à tomada de decisão, vantagem competitiva e sobrevivência da organização — todos amplamente citados na literatura de SI/TI empresarial."
+      },
+      "explanationSummary": "Excelência operacional, apoio à tomada de decisões, vantagem competitiva e sobrevivência da organização são todos objetivos organizacionais clássicos atribuídos aos sistemas de informação na literatura de SI empresarial (Laudon & Laudon)."
     }
   ]
 }

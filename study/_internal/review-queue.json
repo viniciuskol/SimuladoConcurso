@@ -13,16 +13,35 @@
       "stem": "O processo de desenvolvimento de requisitos pode ser dividido em 4 etapas: elicitação, análise, especificação e validação. Qual prática da Engenharia de Requisitos está associada à etapa de análise?",
       "images": null,
       "alternatives": [
-        { "text": "Criar protótipos.", "key": "A" },
-        { "text": "Identificar casos de uso.", "key": "B" },
-        { "text": "Inspecionar documentos de requisitos.", "key": "C" },
-        { "text": "Definir critérios de aceitação.", "key": "D" },
-        { "text": "Registrar regras de negócio.", "key": "E" }
+        {
+          "text": "Criar protótipos.",
+          "key": "A"
+        },
+        {
+          "text": "Identificar casos de uso.",
+          "key": "B"
+        },
+        {
+          "text": "Inspecionar documentos de requisitos.",
+          "key": "C"
+        },
+        {
+          "text": "Definir critérios de aceitação.",
+          "key": "D"
+        },
+        {
+          "text": "Registrar regras de negócio.",
+          "key": "E"
+        }
       ],
       "gabaritoLetter": "A",
       "derivedLetter": "B",
       "reviewRounds": [
-        { "round": 1, "conclusion": "diverge do gabarito", "note": "O agente de extração original leu o gabarito como 'B' e reportou concordância com sua derivação (também B, 'Identificar casos de uso' — modelagem de casos de uso é tipicamente uma atividade de análise). Um validador independente releu o PDF do gabarito diretamente (texto embutido + imagem da tabela) e confirmou duas vezes que a resposta impressa para a questão 55, coluna 3 (Analista de Sistemas Júnior Processos de Negócio), é 'A' ('Criar protótipos'), não 'B'. Isso é uma divergência genuína: prototipação é classicamente associada à etapa de elicitação (não de análise) na literatura de Engenharia de Requisitos, o que motivou a derivação B — mas o gabarito impresso diz A. Sem uma segunda fonte que explique por que a banca considerou 'criar protótipos' como prática de análise (e não de elicitação), fica em revisão." }
+        {
+          "round": 1,
+          "conclusion": "diverge do gabarito",
+          "note": "O agente de extração original leu o gabarito como 'B' e reportou concordância com sua derivação (também B, 'Identificar casos de uso' — modelagem de casos de uso é tipicamente uma atividade de análise). Um validador independente releu o PDF do gabarito diretamente (texto embutido + imagem da tabela) e confirmou duas vezes que a resposta impressa para a questão 55, coluna 3 (Analista de Sistemas Júnior Processos de Negócio), é 'A' ('Criar protótipos'), não 'B'. Isso é uma divergência genuína: prototipação é classicamente associada à etapa de elicitação (não de análise) na literatura de Engenharia de Requisitos, o que motivou a derivação B — mas o gabarito impresso diz A. Sem uma segunda fonte que explique por que a banca considerou 'criar protótipos' como prática de análise (e não de elicitação), fica em revisão."
+        }
       ],
       "unresolved": true,
       "annulled": false
@@ -614,6 +633,694 @@
       "unresolved": true,
       "annulled": false,
       "area": "analise-dados"
+    },
+    {
+      "id": "prova07-q6",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 6
+      },
+      "area": "arq-dados",
+      "subtopic": "1.1 Modelagem de dados (conceitual, lógica e física)",
+      "stem": "Um modelador de banco de dados foi incumbido de criar um modelo conceitual para a situação a seguir.\n\n\"Representantes trabalham em empresas. Cada empresa usa o seu depósito particular, que armazena um conjunto de produtos. É preciso saber que representantes estão associados a que produtos\".\n\nDurante a modelagem inicial dessa situação, o modelador construiu o modelo conceitual acima [DIAGRAMA DE CLASSES UML 2.0 COM AS CLASSES Representante, Empresa, Depósito e Produto, RELACIONADAS PELAS ASSOCIAÇÕES 'Trabalha em', 'Usa' e 'Armazena' — AS MULTIPLICIDADES EXATAS DE CADA EXTREMIDADE NÃO FORAM CAPTURADAS COM SEGURANÇA NA EXTRAÇÃO DE TEXTO], utilizando a notação do diagrama de classes da UML 2.0.\n\nNesse contexto, analise as afirmações a seguir.\n\nA consulta \"Que representantes estão associados a que produtos\" é respondida pelo modelo conceitual apresentado.\n\nPORQUE\n\nA determinação de quais depósitos armazenam quais produtos pode ser respondida pelo modelo conceitual apresentado.\n\nA esse respeito, conclui-se que",
+      "images": [
+        {
+          "id": "img1",
+          "path": null,
+          "alt": "Diagrama de classes UML 2.0 com as classes Representante, Empresa, Depósito e Produto, ligadas pelas associações 'Trabalha em', 'Usa' e 'Armazena'; os números de multiplicidade (1, 0..*, 1..* etc.) foram capturados como texto solto, sem associação clara e confiável a qual extremidade de qual relação pertence cada valor."
+        }
+      ],
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "as duas afirmações são verdadeiras e a segunda justifica a primeira."
+        },
+        {
+          "key": "B",
+          "text": "as duas afirmações são verdadeiras e a segunda não justifica a primeira."
+        },
+        {
+          "key": "C",
+          "text": "a primeira afirmação é verdadeira e a segunda é falsa."
+        },
+        {
+          "key": "D",
+          "text": "a primeira afirmação é falsa e a segunda é verdadeira."
+        },
+        {
+          "key": "E",
+          "text": "as duas afirmações são falsas."
+        }
+      ],
+      "gabaritoLetter": "D",
+      "derivedLetter": "A",
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "diverge do gabarito / depende de multiplicidades não confirmadas",
+          "note": "Assumindo que cada Empresa usa exatamente 1 Depósito (associação 'Usa' com multiplicidade 1:1) e que Representante-Empresa e Depósito-Produto permitem navegação de muitos para muitos, seria possível encadear Representante→Empresa→Depósito→Produto e responder à consulta da primeira afirmação, levando à derivação (A) (ambas verdadeiras, a segunda parte do encadeamento que justifica a primeira). O gabarito indica (D) (primeira falsa, segunda verdadeira), o que sugere que as multiplicidades reais do diagrama impedem essa navegação seguir de forma determinística (por exemplo, se 'Trabalha em' ou 'Usa' não garantem uma associação funcional unívoca entre Representante e Empresa, ou entre Empresa e Depósito, a consulta da primeira afirmação não seria respondível apenas com o modelo, mesmo que a segunda — sobre Depósito-Produto — seja diretamente respondível pela associação 'Armazena'). Sem certeza sobre as multiplicidades exatas capturadas do diagrama original, a divergência não foi resolvida nesta sessão."
+        }
+      ],
+      "unresolved": true,
+      "annulled": false
+    },
+    {
+      "id": "prova07-q13",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 13
+      },
+      "area": "gestao-proj",
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "Analisando a rede acima [DIAGRAMA DE REDE DO CRONOGRAMA (CPM) COM DURAÇÕES E FOLGAS DAS ATIVIDADES NÃO CAPTURADO NA EXTRAÇÃO DE TEXTO], verifica-se que a folga",
+      "images": [
+        {
+          "id": "img1",
+          "path": null,
+          "alt": "Diagrama de rede do cronograma (CPM) com atividades numeradas, durações e dependências, referenciado por 'a rede acima' — é vetor/imagem nativa da página, não capturado na extração de texto. Um segundo bloco de dados na mesma página (Atividade/Duração para os números 1 a 15) parece pertencer aos nós dessa rede, mas sem as arestas/dependências não é possível reconstruir o grafo."
+        }
+      ],
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "livre da atividade 7 é de 1 dia."
+        },
+        {
+          "key": "B",
+          "text": "livre para a atividade 9 é de 2 dias."
+        },
+        {
+          "key": "C",
+          "text": "total para a atividade 14 é de 3 dias."
+        },
+        {
+          "key": "D",
+          "text": "total da atividade 13 é de 1 dia."
+        },
+        {
+          "key": "E",
+          "text": "total da atividade 3 é de 2 dias."
+        }
+      ],
+      "gabaritoLetter": "C",
+      "derivedLetter": null,
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "não é possível derivar independentemente sem o diagrama de rede do cronograma.",
+          "note": "O texto extraído contém apenas rótulos isolados 'Atividade: N / Duração: D dias' para os números 1 a 15 (mais F e I, provavelmente Fim e Início), sem as arestas/setas de precedência que definem a topologia da rede — essas são vetor gráfico nativo da página. Sem a estrutura de dependências entre atividades não é possível calcular folgas livres/totais de forma independente."
+        }
+      ],
+      "unresolved": true,
+      "annulled": false
+    },
+    {
+      "id": "prova07-q19",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 19
+      },
+      "area": "gestao-proj",
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "Dada a planilha acima [PLANILHA/GRÁFICO DE GANTT COM TAREFAS, ESFORÇO ESTIMADO/ATUAL E DATAS DE TÉRMINO NÃO CAPTURADO COM PRECISÃO NA EXTRAÇÃO DE TEXTO], que reflete o trabalho do projeto X da Empresa J.J. Jameson, produziu-se a tabela abaixo com os indicadores de desempenho (Custo Orçado do Trabalho Agendado, Custo Orçado do Trabalho Realizado, Custo Real do Trabalho Realizado, Variação do cronograma e Índice de Performance de Cronograma) em relação aos dias especificados. Analisando os dados da tabela em relação aos da planilha, conclui-se que as duas linhas que estão com todos os valores corretos são as linhas",
+      "images": [
+        {
+          "id": "img1",
+          "path": null,
+          "alt": "Planilha/gráfico de Gantt do projeto X (tarefas, esforço estimado/atual em programador/dias, datas estimadas e atuais de término) — os números foram parcialmente capturados como texto, mas sem estrutura de colunas/linhas clara o suficiente para reconstruir com confiança qual valor pertence a qual tarefa/data."
+        }
+      ],
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "1 e 3"
+        },
+        {
+          "key": "B",
+          "text": "2 e 4"
+        },
+        {
+          "key": "C",
+          "text": "2 e 5"
+        },
+        {
+          "key": "D",
+          "text": "3 e 4"
+        },
+        {
+          "key": "E",
+          "text": "4 e 5"
+        }
+      ],
+      "gabaritoLetter": "E",
+      "derivedLetter": null,
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "não é possível derivar independentemente com confiança.",
+          "note": "A extração de texto capturou os números da planilha de Gantt e da tabela de indicadores (BCWS, BCWP, ACWP, variação de cronograma, SPI) de forma solta, sem a estrutura de colunas que permita associar com certeza cada número à tarefa/data corretas — a planilha de Gantt em si é um gráfico nativo da página. Sem essa reconstrução confiável, o cálculo de SPI/variação para validar cada linha da tabela ficaria sujeito a erro de leitura dos dados de entrada."
+        }
+      ],
+      "unresolved": true,
+      "annulled": false
+    },
+    {
+      "id": "prova07-q22",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 22
+      },
+      "area": "logica",
+      "subtopic": "8.3 A lógica sentencial",
+      "stem": "Qual das seguintes proposições é uma tautologia? [AS CINCO FÓRMULAS PROPOSICIONAIS DAS ALTERNATIVAS (envolvendo P, Q e os conectivos ∨, ∧, →, ¬) NÃO FORAM CAPTURADAS NA EXTRAÇÃO DE TEXTO — os glifos dos conectivos são desenhados como vetor gráfico/Type3 na página original, não como texto.]",
+      "images": [
+        {
+          "id": "img1",
+          "path": null,
+          "alt": "Cinco fórmulas proposicionais envolvendo P e Q com conectivos lógicos (∨, ∧, →, ¬) renderizados como glifos vetoriais na página original, não extraíveis como texto (confirmado por inspeção do HTML fonte: os espaços reservados aos conectivos aparecem vazios entre as letras P e Q)."
+        }
+      ],
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "(q → p) → (p → (q → p))  [conectivos não confirmados no texto-fonte]"
+        },
+        {
+          "key": "B",
+          "text": "(p → q) → (q → p)  [conectivos não confirmados no texto-fonte]"
+        },
+        {
+          "key": "C",
+          "text": "(¬p ∨ q) → (¬q ∨ p)  [conectivos não confirmados no texto-fonte]"
+        },
+        {
+          "key": "D",
+          "text": "¬p → (¬p ∨ q)  [conectivos não confirmados no texto-fonte]"
+        },
+        {
+          "key": "E",
+          "text": "(p ∨ q ∨ ¬q) → (p ∨ q ∨ ¬p)  [conectivos não confirmados no texto-fonte]"
+        }
+      ],
+      "gabaritoLetter": "A",
+      "derivedLetter": null,
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "não é possível derivar independentemente: os conectivos lógicos das cinco fórmulas são vetor gráfico na página original e não foram capturados pela extração de texto.",
+          "note": "Requer reconstrução visual das fórmulas a partir do PDF em fase posterior, a partir de inspeção do glifo/posição exata de cada conectivo, antes de qualquer tentativa de verificação independente."
+        }
+      ],
+      "unresolved": true,
+      "annulled": false
+    },
+    {
+      "id": "prova07-q23",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 23
+      },
+      "area": "logica",
+      "subtopic": "8.4 A lógica de predicados de primeira ordem",
+      "stem": "I - [FÓRMULA DE LÓGICA DE PREDICADOS COM QUANTIFICADORES (∀, ∃) NÃO CAPTURADA NA EXTRAÇÃO DE TEXTO, envolvendo P(x,y)]\nII - [FÓRMULA DE LÓGICA DE PREDICADOS COM QUANTIFICADORES NÃO CAPTURADA NA EXTRAÇÃO DE TEXTO, envolvendo P(x) e Q(y)]\n\nAnalisando as fórmulas lógicas acima, conclui-se que",
+      "images": [
+        {
+          "id": "img1",
+          "path": null,
+          "alt": "Duas fórmulas de lógica de predicados de primeira ordem com quantificadores universal/existencial (∀, ∃) renderizados como glifos vetoriais na página original, não extraíveis como texto; apenas os predicados P(x,y), P(x) e Q(y) e as variáveis x, y foram capturados como texto."
+        }
+      ],
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "apenas I é uma fórmula satisfatível."
+        },
+        {
+          "key": "B",
+          "text": "apenas I é uma fórmula válida."
+        },
+        {
+          "key": "C",
+          "text": "apenas II é uma fórmula válida."
+        },
+        {
+          "key": "D",
+          "text": "ambas são fórmulas satisfatíveis."
+        },
+        {
+          "key": "E",
+          "text": "ambas são fórmulas válidas."
+        }
+      ],
+      "gabaritoLetter": "D",
+      "derivedLetter": null,
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "não é possível derivar independentemente sem os quantificadores exatos das fórmulas.",
+          "note": "Os símbolos de quantificação (∀, ∃) e a ordem/aninhamento exatos em cada fórmula são vetor gráfico na página original, ausentes do texto extraível; sem eles não é possível determinar satisfatibilidade/validade com segurança."
+        }
+      ],
+      "unresolved": true,
+      "annulled": false
+    },
+    {
+      "id": "prova07-q24",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 24
+      },
+      "area": "logica",
+      "subtopic": "8.3 A lógica sentencial",
+      "stem": "Associe as proposições da lógica sentencial na coluna da direita, onde P e Q são predicados atômicos, às explicações na coluna da esquerda.\n\nI - A proposição não está em nenhuma forma normal.\nII - A proposição está na forma normal disjuntiva.\nIII - A proposição está na forma normal conjuntiva.\n\nW, X, Y, Z - [QUATRO FÓRMULAS ENVOLVENDO P E Q COM CONECTIVOS (∨, ∧, ¬) NÃO CAPTURADAS NA EXTRAÇÃO DE TEXTO]\n\nAs associações corretas são:",
+      "images": [
+        {
+          "id": "img1",
+          "path": null,
+          "alt": "Quatro fórmulas proposicionais rotuladas W, X, Y, Z envolvendo P e Q, com conectivos (∨, ∧, ¬) renderizados como glifos vetoriais na página original, não extraíveis como texto — necessárias para associar cada uma às formas normais (disjuntiva, conjuntiva ou nenhuma)."
+        }
+      ],
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "I - W, II - X, III - Y"
+        },
+        {
+          "key": "B",
+          "text": "I - W, II - Z, III - Y"
+        },
+        {
+          "key": "C",
+          "text": "I - X, II - W, III - Z"
+        },
+        {
+          "key": "D",
+          "text": "I - Y, II - X, III - Z"
+        },
+        {
+          "key": "E",
+          "text": "I - Z, II - Y, III - X"
+        }
+      ],
+      "gabaritoLetter": "B",
+      "derivedLetter": null,
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "não é possível derivar independentemente sem os conectivos exatos das quatro fórmulas W, X, Y, Z.",
+          "note": "Os conectivos lógicos são vetor gráfico na página original; sem eles não é possível classificar cada fórmula quanto à forma normal (disjuntiva, conjuntiva ou nenhuma)."
+        }
+      ],
+      "unresolved": true,
+      "annulled": false
+    },
+    {
+      "id": "prova07-q25",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 25
+      },
+      "area": "logica",
+      "subtopic": "8.3 A lógica sentencial",
+      "stem": "Dadas as proposições da lógica sentencial e as explicações, associe a coluna da direita com a coluna da esquerda [FÓRMULAS E EXPLICAÇÕES NÃO CAPTURADAS COM CLAREZA NA EXTRAÇÃO DE TEXTO — mesmo problema de conectivos lógicos vetoriais das questões anteriores]. As associações corretas são:",
+      "images": [
+        {
+          "id": "img1",
+          "path": null,
+          "alt": "Fórmulas proposicionais e rótulos de associação (X, Y, Z) com conectivos lógicos renderizados como glifos vetoriais, não extraíveis como texto."
+        }
+      ],
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "I - X, II - Y"
+        },
+        {
+          "key": "B",
+          "text": "I - X, II - Z"
+        },
+        {
+          "key": "C",
+          "text": "I - Y, II - X"
+        },
+        {
+          "key": "D",
+          "text": "I - Y, II - Z"
+        },
+        {
+          "key": "E",
+          "text": "I - Z, II - X"
+        }
+      ],
+      "gabaritoLetter": "E",
+      "derivedLetter": null,
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "não é possível derivar independentemente: as fórmulas envolvidas usam conectivos lógicos vetoriais não capturados no texto-fonte.",
+          "note": "Mesma limitação de extração das questões 22 a 24 desta prova."
+        }
+      ],
+      "unresolved": true,
+      "annulled": false
+    },
+    {
+      "id": "prova07-q29",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 29
+      },
+      "area": "seg-info",
+      "subtopic": "9.19 ISO 27002, criptografia, certificação e assinatura digital",
+      "stem": "A empresa Consultores Financeiros, em conformidade com o prescrito na NBR/ISO 27002, realiza, periodicamente, a análise crítica da Política de Segurança da Informação da empresa. A Norma sugere que as entradas para a análise crítica pela direção incluam diversas informações, entre elas,",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "tendências relacionadas com as ameaças e vulnerabilidades."
+        },
+        {
+          "key": "B",
+          "text": "declaração do comprometimento da direção com o processo."
+        },
+        {
+          "key": "C",
+          "text": "estrutura existente para as atividades de Segurança da Informação."
+        },
+        {
+          "key": "D",
+          "text": "ações relacionadas à melhoria dos controles."
+        },
+        {
+          "key": "E",
+          "text": "decisões sobre a alocação de recursos para as atividades de Segurança da Informação."
+        }
+      ],
+      "gabaritoLetter": "D",
+      "derivedLetter": "A",
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "diverge do gabarito",
+          "note": "A lista clássica de entradas para a análise crítica pela direção (management review inputs) na NBR ISO/IEC 27002/27001 inclui itens como resultados de auditorias, retroalimentação de partes interessadas, situação de ações preventivas/corretivas, e vulnerabilidades/ameaças não adequadamente tratadas em avaliações de risco anteriores — o que levou à derivação (A) 'tendências relacionadas com ameaças e vulnerabilidades' como entrada. Já 'ações relacionadas à melhoria dos controles' (D) e 'decisões sobre alocação de recursos' (E) soam, na literatura padrão, mais como SAÍDAS da análise crítica (o que a direção decide fazer), não ENTRADAS (informações fornecidas à direção). O gabarito aponta D, o que sugere uma leitura da norma diferente da adotada nesta derivação — mantido em revisão por divergência genuína não resolvida nesta sessão."
+        }
+      ],
+      "unresolved": true,
+      "annulled": false
+    },
+    {
+      "id": "prova07-q41",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 41
+      },
+      "area": "analise-dados",
+      "subtopic": "7.5 Conceitos de OLAP e suas operações",
+      "stem": "São operações realizadas automaticamente por ferramentas OLAP",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "Data Surfing e Slicing."
+        },
+        {
+          "key": "B",
+          "text": "ETL e Dicing."
+        },
+        {
+          "key": "C",
+          "text": "Pivoting e Data Mart."
+        },
+        {
+          "key": "D",
+          "text": "Star Model e Drill Down."
+        },
+        {
+          "key": "E",
+          "text": "Data Drill e Slicing Over."
+        }
+      ],
+      "gabaritoLetter": "A",
+      "derivedLetter": null,
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "não é possível confirmar com alta confiança.",
+          "note": "As operações OLAP canônicas da literatura padrão (slice, dice, pivot/rotate, drill-down/up, roll-up) aparecem misturadas nas cinco alternativas com termos de nomenclatura não padronizada ou de outras categorias (ETL não é operação OLAP; Data Mart e Star Model são artefatos de modelagem, não operações; 'Data Surfing' e 'Slicing Over' não são termos padrão amplamente reconhecidos). Nenhuma alternativa contém exclusivamente dois termos claramente canônicos e corretos, o que impede uma derivação independente com alta confiança; a alternativa do gabarito ('Data Surfing e Slicing') depende de terminologia específica de alguma fonte/apostila não identificada com certeza nesta sessão."
+        }
+      ],
+      "unresolved": true,
+      "annulled": false
+    },
+    {
+      "id": "prova07-q45",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 45
+      },
+      "area": "arq-dados",
+      "subtopic": "1.7 Modelagem dimensional",
+      "stem": "Data Warehouses virtuais proporcionam visões de bancos de dados operacionais que são materializadas para acesso eficiente.\n\nPORQUE\n\nData Warehouse (depósito de dados) proporciona acesso a bancos de dados disjuntos e geralmente heterogêneos.\n\nAnalisando as afirmações acima, conclui-se que",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "as duas afirmações são verdadeiras e a segunda justifica a primeira."
+        },
+        {
+          "key": "B",
+          "text": "as duas afirmações são verdadeiras e a segunda não justifica a primeira."
+        },
+        {
+          "key": "C",
+          "text": "a primeira afirmação é verdadeira e a segunda é falsa."
+        },
+        {
+          "key": "D",
+          "text": "a primeira afirmação é falsa e a segunda é verdadeira."
+        },
+        {
+          "key": "E",
+          "text": "as duas afirmações são falsas."
+        }
+      ],
+      "gabaritoLetter": "C",
+      "derivedLetter": "D",
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "diverge do gabarito",
+          "note": "Interpretei a primeira afirmação como falsa: por definição, um data warehouse 'virtual' oferece acesso via visões sobre os sistemas de origem justamente SEM materializar os dados (a materialização é o que o distingue de um DW 'real'/físico); afirmar que ele 'proporciona visões... que são materializadas para acesso eficiente' pareceria contraditório com o próprio conceito de 'virtual'. Já a segunda afirmação (DW dá acesso a bases disjuntas/heterogêneas) pareceu razoável como descrição geral de um DW federado, levando-me a D (primeira falsa, segunda verdadeira). O gabarito indica C (primeira verdadeira, segunda falsa), sugerindo uma leitura em que 'virtual' se refere a uma camada de visões que PODE ser materializada sob demanda para desempenho (uso não estritamente definicional do termo), e que a descrição de 'bancos de dados disjuntos e heterogêneos' não corresponderia à definição padrão (Inmon) de data warehouse como coleção integrada e não volátil. Divergência não resolvida nesta sessão."
+        }
+      ],
+      "unresolved": true,
+      "annulled": false
+    },
+    {
+      "id": "prova07-q47",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 47
+      },
+      "area": "arq-dados",
+      "subtopic": "1.7 Modelagem dimensional",
+      "stem": "Data warehouse tem por característica ser",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "orientado a assuntos."
+        },
+        {
+          "key": "B",
+          "text": "temporário."
+        },
+        {
+          "key": "C",
+          "text": "descentralizado."
+        },
+        {
+          "key": "D",
+          "text": "focalizado em aspectos operacionais."
+        },
+        {
+          "key": "E",
+          "text": "normalizado."
+        }
+      ],
+      "gabaritoLetter": "B",
+      "derivedLetter": "A",
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "diverge do gabarito",
+          "note": "Pela definição clássica de Inmon, um data warehouse é caracterizado por quatro atributos: orientado a assuntos, integrado, não volátil e variável no tempo (time-variant) — o que levou à derivação (A) 'orientado a assuntos', uma das quatro características mais citadas na literatura. O gabarito indica (B) 'temporário', que contraria a literatura padrão (data warehouses são tipicamente descritos como repositórios de dados históricos de longo prazo, não temporários/efêmeros) — a menos que a intenção da banca fosse uma tradução livre de 'time-variant' (variável no tempo) como 'temporário' (relativo ao tempo), o que seria uma leitura não convencional do termo em português. Divergência não resolvida nesta sessão; mantida em revisão."
+        }
+      ],
+      "unresolved": true,
+      "annulled": false
+    },
+    {
+      "id": "prova07-q50",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 50
+      },
+      "area": "eng-sw",
+      "subtopic": "5.3 Modelos, metodologias, técnicas e ferramentas de análise e projeto (estruturado e orientado a objetos)",
+      "stem": "A análise do diagrama de classes em notação UML 2.0 apresentado acima [DIAGRAMA NÃO CAPTURADO NA EXTRAÇÃO DE TEXTO, envolvendo classes/interfaces V, W, X, Y, Z, T e um relacionamento <<create>>] indica que",
+      "images": [
+        {
+          "id": "img1",
+          "path": null,
+          "alt": "Diagrama de classes UML 2.0 com uma interface (<<interface>> V), classes W, X, Y, Z, T, uma relação <<create>> e uma multiplicidade '1' — a topologia exata (quem implementa/herda/associa quem, e o sentido das setas) é vetor gráfico nativo da página, não capturada na extração de texto."
+        }
+      ],
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "há um erro de sintaxe, pois não foi especificado o sentido da navegação entre Y e X."
+        },
+        {
+          "key": "B",
+          "text": "a quantidade de interfaces que Y implementa é 1 (um)."
+        },
+        {
+          "key": "C",
+          "text": "Y é subclasse de W."
+        },
+        {
+          "key": "D",
+          "text": "objetos da classe T podem utilizar serviços oferecidos por objetos da classe Y."
+        },
+        {
+          "key": "E",
+          "text": "objetos da classe Z criam objetos da classe Y."
+        }
+      ],
+      "gabaritoLetter": "D",
+      "derivedLetter": null,
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "não é possível derivar independentemente sem o diagrama de classes UML.",
+          "note": "Apenas rótulos isolados (<<interface>> V, <<create>>, Z, Y, W, T, X, 1) foram capturados como texto, sem as linhas/setas de associação, herança, implementação ou dependência que definem as relações entre as classes — essas são vetor gráfico nativo da página."
+        }
+      ],
+      "unresolved": true,
+      "annulled": false
+    },
+    {
+      "id": "prova07-q52",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 52
+      },
+      "area": "eng-sw",
+      "subtopic": "5.3 Modelos, metodologias, técnicas e ferramentas de análise e projeto (estruturado e orientado a objetos)",
+      "stem": "O diagrama de sequência em notação UML 2.0 acima apresenta uma interação entre objetos das classes C1, C2, C3 e C4 [DIAGRAMA NÃO CAPTURADO COM CLAREZA NA EXTRAÇÃO DE TEXTO — apenas rótulos parciais de mensagens (msg00 a msg04), um bloco 'alt' com guardas [val<0]/[val>0], e os objetos :C1, :C2, :C3, :C4, :Actor0]. Ao fazer a leitura considerando apenas as informações desse diagrama, verifica-se que, para determinado cenário da interação em questão,",
+      "images": [
+        {
+          "id": "img1",
+          "path": null,
+          "alt": "Diagrama de sequência UML 2.0 com objetos :Actor0, :C1, :C2, :C3, :C4, mensagens numeradas (1:msg00(val), 2:msg01(val), 2.1:msg02(), 2.1.1:msg03(), 2.2:msg04()) e um bloco combinado 'alt' com guardas [val<0] e [val>0] — as linhas de vida e as setas exatas de envio/retorno entre os objetos são vetor gráfico nativo da página, não capturadas com precisão suficiente para determinar remetente/destinatário de cada mensagem."
+        }
+      ],
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "a quantidade de mensagens enviadas pelo objeto da classe C2 é 2 (dois)."
+        },
+        {
+          "key": "B",
+          "text": "o envio de msg02 implica invocação de uma operação definida na classe C1."
+        },
+        {
+          "key": "C",
+          "text": "o envio de msg03 resulta na execução iterativa de uma operação definida na classe C3."
+        },
+        {
+          "key": "D",
+          "text": "os objetos apresentados no diagrama já existem antes do início da interação."
+        },
+        {
+          "key": "E",
+          "text": "há o envio em paralelo de, pelo menos, duas mensagens."
+        }
+      ],
+      "gabaritoLetter": "D",
+      "derivedLetter": null,
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "não é possível derivar independentemente sem a topologia exata do diagrama de sequência (remetente e destinatário de cada mensagem numerada).",
+          "note": "A numeração das mensagens (1, 2, 2.1, 2.1.1, 2.2) sugere aninhamento dentro do bloco 'alt', mas sem as linhas de vida e setas exatas não é possível confirmar com segurança qual classe envia/recebe cada mensagem, nem se há criação de objetos ou paralelismo."
+        }
+      ],
+      "unresolved": true,
+      "annulled": false
+    },
+    {
+      "id": "prova07-q54",
+      "source": {
+        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2010,
+        "originalNumber": 54
+      },
+      "area": "eng-sw",
+      "subtopic": "5.3 Modelos, metodologias, técnicas e ferramentas de análise e projeto (estruturado e orientado a objetos)",
+      "stem": "Tanto no paradigma orientado a objetos quanto no paradigma estruturado, existem diversas técnicas úteis para averiguar se um sistema de software foi bem projetado. No primeiro, essas medidas são aplicáveis a classes, e no segundo, são aplicáveis a módulos. Quais, dentre os termos apresentados a seguir, são medidas de qualidade de projeto aplicáveis em ambos os paradigmas?",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "Fan-in, fan-out e herança.",
+          "explanation": "Herança é um conceito específico do paradigma orientado a objetos; módulos no paradigma estruturado não possuem herança."
+        },
+        {
+          "key": "B",
+          "text": "Encapsulamento, herança e coesão.",
+          "explanation": "Encapsulamento e herança, como entendidos na orientação a objetos, não se aplicam da mesma forma a módulos do paradigma estruturado."
+        },
+        {
+          "key": "C",
+          "text": "Coesão, acoplamento e polimorfismo.",
+          "explanation": "Polimorfismo é um conceito específico da orientação a objetos, não aplicável a módulos do paradigma estruturado."
+        },
+        {
+          "key": "D",
+          "text": "Fan-in, fan-out e acoplamento."
+        },
+        {
+          "key": "E",
+          "text": "Coesão, acoplamento e polimorfismo.",
+          "explanation": "Idêntica à alternativa (C) no texto extraído; polimorfismo, de todo modo, não se aplica ao paradigma estruturado."
+        }
+      ],
+      "gabaritoLetter": "C",
+      "derivedLetter": "D",
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "diverge do gabarito / possível anomalia nas alternativas",
+          "note": "Fan-in, fan-out e acoplamento são métricas de dependência entre componentes historicamente originadas no paradigma estruturado, mas aplicáveis também a classes no paradigma OO, o que levou à derivação (D). O gabarito aponta a alternativa de índice C, cujo texto — 'Coesão, acoplamento e polimorfismo' — inclui polimorfismo, um conceito que não existe em módulos do paradigma estruturado (o que tornaria a própria alternativa logicamente inconsistente com o enunciado). Chama atenção que, na extração de texto, as alternativas (C) e (E) desta questão têm exatamente o mesmo texto ('Coesão, acoplamento e polimorfismo'), o que sugere possível erro de digitação/diagramação no caderno original (talvez uma das duas devesse ser apenas 'Coesão e acoplamento', sem polimorfismo) — não é possível confirmar a redação exata pretendida sem reinspecionar o PDF original com mais cuidado. Mantida em revisão por essa combinação de divergência de derivação e possível anomalia no enunciado."
+        }
+      ],
+      "unresolved": true,
+      "annulled": false
     }
   ]
 }
