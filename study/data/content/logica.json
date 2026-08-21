@@ -1,0 +1,263 @@
+{
+  "areaId": "logica",
+  "resumo": "<p><strong>Onde a prova mora.</strong> São 7 questões desta área no banco, e elas se concentram em muito pouca coisa: <strong>3 das 7 pedem a proposição equivalente a uma condicional</strong> (prova6-q65, psjpn2018-q67, transp23e6-q35), 2 pedem para deduzir valores-verdade a partir da informação de que uma fórmula é falsa ou de que um argumento é válido (psjpn2018-q68, psjpn2018-q69), 1 pede o <em>nome</em> das regras de inferência usadas numa dedução (psjpn2018-q70) e 1 é um problema de associação com pistas (transp23e6-q37). Nenhuma questão de lógica aparece na prova de 2010. É a área mais treinável das oito: o conteúdo é fechado e a resposta é demonstrável — quem domina condicional, equivalências e negação acerta praticamente tudo.</p><p><strong>Os cinco conectivos.</strong> Uma proposição é uma sentença declarativa a que se atribui exatamente um valor: verdadeiro (V) ou falso (F). Frases interrogativas, exclamativas, imperativas e sentenças abertas (com variável livre, como <code>x + 1 = 3</code>) não são proposições. A tabela abaixo é o alicerce de tudo:</p><table><tr><th>p</th><th>q</th><th>~p</th><th>p ∧ q<br><em>e</em></th><th>p ∨ q<br><em>ou</em></th><th>p → q<br><em>se...então</em></th><th>p ↔ q<br><em>se e somente se</em></th><th>p ⊻ q<br><em>ou...ou</em> (exclusivo)</th></tr><tr><td>V</td><td>V</td><td>F</td><td>V</td><td>V</td><td>V</td><td>V</td><td>F</td></tr><tr><td>V</td><td>F</td><td>F</td><td>F</td><td>V</td><td><strong>F</strong></td><td>F</td><td>V</td></tr><tr><td>F</td><td>V</td><td>V</td><td>F</td><td>V</td><td>V</td><td>F</td><td>V</td></tr><tr><td>F</td><td>F</td><td>V</td><td>F</td><td>F</td><td>V</td><td>V</td><td>F</td></tr></table><p>Guarde as quatro frases que resolvem metade das questões: a <strong>conjunção</strong> só é V quando as duas partes são V; a <strong>disjunção</strong> só é F quando as duas são F; a <strong>condicional só é F na linha V → F</strong>; a <strong>bicondicional</strong> é V quando os dois lados têm o mesmo valor. Foi exatamente isso que resolveu psjpn2018-q68: se <code>(~p) → (~q)</code> é falsa, não há escolha — <code>~p</code> = V e <code>~q</code> = F, logo p = F e q = V, e daí se avalia tudo o mais.</p><p><strong>Equivalências.</strong> Duas fórmulas são equivalentes quando têm tabelas-verdade idênticas linha a linha. As que a Cesgranrio usa: <code>p → q ≡ ~p ∨ q</code> (condicional em disjunção) e <code>p → q ≡ ~q → ~p</code> (contrapositiva). Em prova6-q65, \"se o freio falhou, então não houve manutenção\" (<code>P → ~Q</code>) virou <code>~P ∨ ~Q</code>: \"o freio não falhou <em>ou</em> não houve manutenção\". Em psjpn2018-q67 e transp23e6-q35 a chave foi a contrapositiva. As duas leis de De Morgan: <code>~(p ∧ q) ≡ ~p ∨ ~q</code> e <code>~(p ∨ q) ≡ ~p ∧ ~q</code> — negar troca o conectivo e nega as partes.</p><p><strong>Negação: o ponto onde mais se erra.</strong> A negação de \"se P então Q\" <strong>não</strong> é \"se P então não Q\" nem \"se não P então não Q\": é <code>P ∧ ~Q</code>, \"P e não Q\". Faz sentido — a condicional só falha na linha V → F, então negá-la é afirmar exatamente essa linha. Cuidado com a armadilha simétrica: <code>P ∧ ~Q</code> é a <em>negação</em> de <code>P → Q</code>, e por isso <strong>nunca</strong> é equivalente a ela. Foi esse o distrator A de prova6-q65. Nos quantificadores, negar \"todo A é B\" dá \"<strong>algum</strong> A não é B\" (nunca \"nenhum A é B\"); negar \"algum A é B\" dá \"nenhum A é B\"; negar \"nenhum A é B\" dá \"algum A é B\". Um contraexemplo derruba um \"todo\".</p><p><strong>Argumentos.</strong> Um argumento é válido quando é <em>impossível</em> ter todas as premissas verdaderas e a conclusão falsa — validade é sobre a forma, não sobre o conteúdo ser verdade no mundo. Método prático: assuma as premissas V, propague os valores forçados e veja o que sobra para a conclusão. Foi assim em psjpn2018-q69: <code>r ∧ s</code> V força <code>~r ∨ ~s</code> = F; para a premissa <code>p → (~r ∨ ~s)</code> ser V com consequente F, p tem de ser F; a premissa <code>[p ∨ ~q] ∧ [q ∨ ~p]</code> equivale a <code>p ↔ q</code>, então q = F; logo <code>~(p ∨ q)</code> é V.</p><p><strong>Regras, falácias e sistemas dedutivos.</strong> Saber o nome das regras é cobrado: psjpn2018-q70 pedia justamente <em>Modus Tollens + De Morgan</em>. As duas falácias formais que aparecem como distrator são afirmar o consequente (<code>p → q</code>, q, logo p — inválido) e negar o antecedente (<code>p → q</code>, ~p, logo ~q — inválido); as duas correspondem a confundir a condicional com a recíproca <code>q → p</code> ou com a inversa <code>~p → ~q</code>, e nenhuma das duas é equivalente à original. Já a lógica sentencial é <strong>decidível</strong>: com n proposições simples, a tabela de 2<sup>n</sup> linhas sempre decide se a fórmula é tautologia (V em todas), contradição (F em todas) ou contingência (mistura). Isso não vale para a lógica de predicados de primeira ordem em geral, mas nela você precisa apenas de quantificadores, escopo e negação para a prova.</p>",
+  "cheatsheet": [
+    {
+      "heading": "Tabelas-verdade dos 5 conectivos (linha a linha)",
+      "items": [
+        "NEGAÇÃO ~p: p=V → ~p=F; p=F → ~p=V.",
+        "CONJUNÇÃO p∧q (e, mas, porém, embora, contudo): VV=V | VF=F | FV=F | FF=F. Só é V com as duas V.",
+        "DISJUNÇÃO INCLUSIVA p∨q (ou): VV=V | VF=V | FV=V | FF=F. Só é F com as duas F.",
+        "CONDICIONAL p→q (se p então q; p implica q; q se p; p é suficiente para q; q é necessário para p): VV=V | VF=F | FV=V | FF=V. SÓ É FALSA NA LINHA V→F.",
+        "BICONDICIONAL p↔q (se e somente se; condição necessária e suficiente): VV=V | VF=F | FV=F | FF=V. V quando os dois lados têm o MESMO valor.",
+        "DISJUNÇÃO EXCLUSIVA p⊻q (ou p ou q, mas não ambos): VV=F | VF=V | FV=V | FF=F. V quando os lados têm valores DIFERENTES.",
+        "Precedência (regras de formação): ~ liga mais forte, depois ∧ e ∨, depois →, por último ↔. Sem parênteses, ~p∧q lê-se (~p)∧q, e p∧q→r lê-se (p∧q)→r."
+      ]
+    },
+    {
+      "heading": "Equivalências que a banca usa",
+      "items": [
+        "Condicional ↔ disjunção: p→q ≡ ~p∨q. (Usada em prova6-q65.)",
+        "Contrapositiva: p→q ≡ ~q→~p. É a ÚNICA das três variações que é equivalente.",
+        "NÃO equivalentes à original: recíproca q→p e inversa ~p→~q.",
+        "De Morgan: ~(p∧q) ≡ ~p∨~q  |  ~(p∨q) ≡ ~p∧~q.",
+        "Bicondicional: p↔q ≡ (p→q)∧(q→p) ≡ (p∧q)∨(~p∧~q).",
+        "Dupla negação: ~(~p) ≡ p.",
+        "Exportação/importação: (p∧q)→r ≡ p→(q→r).",
+        "Distributivas: p∧(q∨r) ≡ (p∧q)∨(p∧r)  |  p∨(q∧r) ≡ (p∨q)∧(p∨r).",
+        "Absorção: p∨(p∧q) ≡ p  |  p∧(p∨q) ≡ p.",
+        "Distribuição da condicional: p→(q∧r) ≡ (p→q)∧(p→r)  |  p→(q∨r) ≡ (p→q)∨(p→r).",
+        "Comutativas e associativas valem para ∧, ∨ e ↔; NÃO valem para →."
+      ]
+    },
+    {
+      "heading": "Negações canônicas (decore este bloco)",
+      "items": [
+        "~(p→q) ≡ p ∧ ~q. 'Se chover, fico em casa' → negação: 'choveu E eu não fiquei em casa'. Nunca 'se chover, não fico'.",
+        "~(p∧q) ≡ ~p ∨ ~q. Negar 'é bonito e barato' → 'não é bonito ou não é barato'.",
+        "~(p∨q) ≡ ~p ∧ ~q. Negar 'estuda ou trabalha' → 'não estuda e não trabalha'.",
+        "~(p↔q) ≡ p⊻q ≡ (p∧~q)∨(~p∧q).",
+        "~(p⊻q) ≡ p↔q.",
+        "~(∀x P(x)) ≡ ∃x ~P(x). Negar 'todo A é B' = 'ALGUM A NÃO é B' (existe pelo menos um contraexemplo).",
+        "~(∃x P(x)) ≡ ∀x ~P(x). Negar 'algum A é B' = 'NENHUM A é B'.",
+        "Negar 'nenhum A é B' = 'algum A é B'. ATENÇÃO: 'todo A é B' e 'nenhum A é B' NÃO são negações uma da outra — podem ser as duas falsas ao mesmo tempo."
+      ]
+    },
+    {
+      "heading": "Regras de inferência válidas (e o nome que a banca cobra)",
+      "items": [
+        "Modus Ponens (afirmação do antecedente): p→q ; p ⊢ q.",
+        "Modus Tollens (negação do consequente): p→q ; ~q ⊢ ~p. (Foi a regra de psjpn2018-q70.)",
+        "Silogismo hipotético (transitividade): p→q ; q→r ⊢ p→r.",
+        "Silogismo disjuntivo: p∨q ; ~p ⊢ q.",
+        "Dilema construtivo: p→q ; r→s ; p∨r ⊢ q∨s.",
+        "Dilema destrutivo: p→q ; r→s ; ~q∨~s ⊢ ~p∨~r.",
+        "Simplificação: p∧q ⊢ p (e ⊢ q). Adição: p ⊢ p∨q. Conjunção: p ; q ⊢ p∧q.",
+        "Absorção: p→q ⊢ p→(p∧q).",
+        "Contradição/absurdo: se ~p leva a uma contradição, então p."
+      ]
+    },
+    {
+      "heading": "Falácias formais — os argumentos inválidos que parecem válidos",
+      "items": [
+        "FALÁCIA DA AFIRMAÇÃO DO CONSEQUENTE: p→q ; q ⊢ p. INVÁLIDO. Contraexemplo: p=F, q=V — as premissas ficam V e a conclusão F.",
+        "FALÁCIA DA NEGAÇÃO DO ANTECEDENTE: p→q ; ~p ⊢ ~q. INVÁLIDO. Contraexemplo: p=F, q=V.",
+        "As duas são o mesmo erro: tratar p→q como se fosse p↔q. Só a bicondicional autoriza ler a implicação nos dois sentidos.",
+        "Também inválido: de 'algum A é B' concluir 'algum B não é A'; de 'todo A é B' concluir 'todo B é A'.",
+        "Argumento pode ter premissas falsas e ser válido; e ter premissas e conclusão verdadeiras e ser inválido. Validade é forma, não conteúdo."
+      ]
+    },
+    {
+      "heading": "Tautologia, contradição, contingência e decidibilidade",
+      "items": [
+        "TAUTOLOGIA: V em todas as 2^n linhas. Exemplos: p∨~p; p→p; (p∧(p→q))→q; ~(p∧~p).",
+        "CONTRADIÇÃO: F em todas as linhas. Exemplo: p∧~p.",
+        "CONTINGÊNCIA (indeterminada): V em algumas linhas e F em outras. É o caso mais comum.",
+        "A negação de uma tautologia é uma contradição, e vice-versa.",
+        "p ≡ q se e somente se p↔q é tautologia. Argumento é válido se e somente se (conjunção das premissas)→conclusão é tautologia.",
+        "A lógica sentencial é DECIDÍVEL: a tabela de 2^n linhas é um procedimento finito que sempre classifica a fórmula. Uma função de avaliação (ou valoração) é a atribuição de V/F às proposições simples; a tabela lista todas as 2^n valorações possíveis."
+      ]
+    },
+    {
+      "heading": "Lógica de predicados de primeira ordem",
+      "items": [
+        "Sentença aberta / predicado: P(x) não tem valor-verdade até x ser fixado ou quantificado. 'x é par' não é proposição; 'todo inteiro x é par' é (e é falsa).",
+        "∀ (universal: todo, qualquer, cada, nenhum com negação) e ∃ (existencial: algum, existe, pelo menos um, há).",
+        "'Todo A é B' = ∀x (A(x) → B(x)) — universal vira CONDICIONAL. 'Algum A é B' = ∃x (A(x) ∧ B(x)) — existencial vira CONJUNÇÃO. Trocar um pelo outro é erro clássico.",
+        "'Nenhum A é B' = ∀x (A(x) → ~B(x)) = ~∃x (A(x) ∧ B(x)).",
+        "Variável LIGADA é a que está no escopo de um quantificador; LIVRE é a que não está. Fórmula sem variável livre é uma sentença (tem valor-verdade).",
+        "Escopo importa: ∀x ∃y P(x,y) ('para cada x existe algum y') NÃO é o mesmo que ∃y ∀x P(x,y) ('existe um y que serve para todo x'). A segunda implica a primeira; a volta não vale.",
+        "Negar percorrendo: ~∀x ∃y P(x,y) ≡ ∃x ∀y ~P(x,y). Cada quantificador troca de tipo e a negação desce até o predicado."
+      ]
+    },
+    {
+      "heading": "Sistemas dedutivos e métodos de prova",
+      "items": [
+        "TABELA-VERDADE: exaustiva, mecânica, sempre funciona na lógica sentencial. Custo 2^n linhas — inviável a olho a partir de 4 ou 5 letras.",
+        "DEDUÇÃO NATURAL: parte das premissas e aplica regras de inferência e equivalências até chegar à conclusão. É o que psjpn2018-q70 cobrou nomeando as regras.",
+        "PROVA CONDICIONAL: para provar p→q, assuma p como premissa auxiliar e derive q; ao final, descarregue a hipótese.",
+        "PROVA POR ABSURDO (redução ao absurdo): para provar C, acrescente ~C às premissas e derive uma contradição.",
+        "ÁRVORE DE REFUTAÇÃO (tableaux): nega a conclusão, decompõe as fórmulas e fecha os ramos com contradição; se todos os ramos fecham, o argumento é válido. Costuma ser bem mais curto que a tabela.",
+        "Para provar que um argumento é INVÁLIDO basta exibir UMA valoração com todas as premissas V e a conclusão F — um único contraexemplo encerra a questão."
+      ]
+    }
+  ],
+  "mentalModels": [
+    {
+      "title": "A condicional é uma promessa: só é falsa quando você prometeu e não cumpriu",
+      "body": "'Se eu passar, te pago um jantar.' Você só é mentiroso numa situação: passou (V) e não pagou (F). Se não passou, a promessa não foi quebrada — pagando ou não, ela continua verdadeira. Por isso F→V e F→F valem V, o que parece esquisito mas é a definição. E é por isso que negar a promessa é dizer o flagrante: 'passei E não me pagou' — p ∧ ~q. Toda vez que a alternativa oferecer 'se p então não q' como negação, ela está errada."
+    },
+    {
+      "title": "Contrapositiva sim; recíproca e inversa não",
+      "body": "De p→q só se salva a contrapositiva ~q→~p, que é a MESMA proposição escrita ao contrário e negada nos dois lados. A recíproca q→p e a inversa ~p→~q são proposições diferentes. Regra de bolso: se a alternativa só INVERTEU a ordem, está errada; se só NEGOU os dois lados, está errada; se inverteu E negou, está certa. Em transp23e6-q35 a resposta era exatamente isso: 'todo profissional é médico ou enfermeiro' → 'quem não é médico e não é enfermeiro não é profissional'."
+    },
+    {
+      "title": "Quando a questão diz 'é falsa', ela te deu a resposta",
+      "body": "Dizer que uma conjunção é verdadeira, uma disjunção é falsa ou uma condicional é falsa não deixa nenhuma liberdade: cada um desses casos tem UMA única linha. Conjunção V → tudo V. Disjunção F → tudo F. Condicional F → antecedente V e consequente F. Bicondicional F → lados diferentes. Comece sempre pela premissa que fixa valores e propague; nunca monte tabela de 16 linhas quando o enunciado já apontou a linha."
+    },
+    {
+      "title": "Um contraexemplo mata o 'todo'; nenhum exemplo mata o 'algum'",
+      "body": "Para derrubar 'todos os cisnes são brancos' basta um cisne negro — e é por isso que a negação de ∀ é ∃ com o predicado negado. Para derrubar 'algum cisne é negro' você precisa varrer todos e não achar nenhum — a negação de ∃ é ∀ negado. O erro que a banca planta é oferecer 'nenhum A é B' como negação de 'todo A é B': as duas podem ser falsas juntas (metade branca, metade negra), então não são negações."
+    },
+    {
+      "title": "Validade é o formato do encanamento, não a qualidade da água",
+      "body": "Um argumento válido é uma tubulação sem vazamento: se você jogar verdade nas premissas, sai verdade na conclusão, seja o assunto qual for. Premissas absurdas com forma correta = argumento válido. Premissas verdadeiras, conclusão verdadeira e forma torta = argumento inválido. Então nunca julgue pelo 'faz sentido no mundo'; simule: existe alguma valoração com premissas V e conclusão F? Se existe, inválido; se não existe, válido."
+    }
+  ],
+  "patterns": [
+    {
+      "title": "A campeã absoluta: 'qual proposição é equivalente a esta condicional?'",
+      "howToSpot": "Três das sete questões do banco são disso, e sempre com o mesmo esqueleto: o enunciado dá uma frase em linguagem natural com 'se... então' (ou um 'todo X é A ou B', que é condicional disfarçada) e as cinco alternativas passeiam pelas variações. A resposta é sempre a contrapositiva (~q→~p) ou a disjunção equivalente (~p∨q). Os distratores são previsívee repetidos: (1) a conjunção p∧~q, que é a NEGAÇÃO da frase — apareceu como alternativa A em prova6-q65; (2) a recíproca q→p; (3) a inversa ~p→~q, que em prova6-q65 veio na alternativa E disfarçada de 'contrapositiva'; (4) a disjunção com apenas um dos lados negado (p∨~q em vez de ~p∨~q). Traduza para símbolos ANTES de ler as alternativas, monte a contrapositiva e a disjunção equivalente no rascunho, e depois compare.",
+      "evidence": [
+        "prova6-q65",
+        "psjpn2018-q67",
+        "transp23e6-q35"
+      ]
+    },
+    {
+      "title": "Valoração forçada: 'sabendo que tal fórmula é FALSA, então...'",
+      "howToSpot": "Duas questões usam o mesmo truque: o enunciado informa o valor de uma fórmula composta e você precisa deduzir os valores das proposições simples. Em psjpn2018-q68, '(~p)→(~q) é FALSO' obriga ~p=V e ~q=F, ou seja p=F e q=V — e o resto é substituir nas cinco alternativas. Em psjpn2018-q69 a premissa r∧s ser verdadeira propaga para trás pela condicional e a premissa [p∨~q]∧[q∨~p] é p↔q camuflada. Reconheça o padrão: NÃO se monta tabela-verdade aqui; escreve-se p=?, q=?, r=?, s=? no rascunho e vai preenchendo. Os distratores são as demais fórmulas avaliadas na mesma valoração — só uma tem o valor pedido, então vale testar todas em vez de parar na primeira que parece boa.",
+      "evidence": [
+        "psjpn2018-q68",
+        "psjpn2018-q69"
+      ]
+    },
+    {
+      "title": "Cobrança do NOME da regra de inferência",
+      "howToSpot": "psjpn2018-q70 dá um argumento de duas premissas e a conclusão, e pede quais regras justificam a dedução — 'respectivamente', ou seja, na ordem de aplicação. Aqui não basta sentir que o argumento é válido: você tem de saber que negar o consequente para negar o antecedente é Modus Tollens, e que passar de ~(~A ∧ ~G) para A∨G é De Morgan. As alternativas erradas misturam nomes reais em pares impossíveis ('Silogismo Conjuntivo e Silogismo hipotético'), embutem termos que não são regras de inferência ('Paradoxo', 'Contingência') e trocam Modus Ponens por Modus Tollens. Decore a lista de nomes com a forma simbólica ao lado — é a única defesa.",
+      "evidence": [
+        "psjpn2018-q70"
+      ]
+    },
+    {
+      "title": "Problema de associação com pistas (quem faz o quê, quem veste o quê)",
+      "howToSpot": "transp23e6-q37 é o clássico 'Armando, Beto e Carlos / professor, médico, advogado / branco, verde, azul' com quatro pistas, sendo duas negativas ('o médico não veste verde e não é o Armando'). Comece pela pista que fixa alguém direto ('o advogado é o Carlos') e depois pelas negativas, que por eliminação em conjunto de três elementos determinam o restante. Vantagem do formato de múltipla escolha: cada alternativa é uma distribuição completa, então testar alternativa contra pista é mais rápido que montar a grade — a errada morre na primeira pista violada. Nessa questão a alternativa correta era ainda a única compatível, mas era também a mais 'incompleta' na aparência; não descarte alternativa por ela não afirmar tudo.",
+      "evidence": [
+        "transp23e6-q37"
+      ]
+    }
+  ],
+  "tactics": [
+    {
+      "title": "Simbolize antes de ler as alternativas",
+      "body": "Escreva no rascunho P = ..., Q = ... com as frases inteiras (inclusive a negação, se a frase já vem negativa) e traduza o enunciado. Em prova6-q65, P='o freio falhou' e Q='houve manutenção' dão P→~Q, e é aí que a maioria escorrega: a frase original JÁ tem um 'não', e quem simboliza como P→Q monta a contrapositiva errada. Só depois de ter a fórmula no papel você olha as alternativas — assim as cinco viram fórmulas comparáveis, não frases persuasivas."
+    },
+    {
+      "title": "Tabela cheia, linha única ou equivalência: escolha o método pelo enunciado",
+      "body": "Tabela completa de 2^n linhas só quando a pergunta é sobre TODAS as valorações — tautologia, contradição, contingência, equivalência entre duas fórmulas — e n≤3 (8 linhas). Linha única quando o enunciado fixa um valor ('sabendo que X é falsa'): propague os valores forçados, custo quase zero. Equivalência primeiro quando a fórmula é grande: troque p→q por ~p∨q, aplique De Morgan e cancele duplas negações; muitas vezes a fórmula desmonta em p∨~p (tautologia) sem nenhuma tabela. Para testar validade de argumento, o caminho mais curto é assumir a conclusão FALSA e ver se dá para deixar todas as premissas verdadeiras."
+    },
+    {
+      "title": "Antes de marcar, passe as alternativas pelo filtro das três variações",
+      "body": "Em questão de equivalência de condicional, classifique cada alternativa em quatro segundos: é recíproca (só inverteu)? inversa (só negou)? conjunção p∧~q (é a negação)? contrapositiva (inverteu e negou)? disjunção ~p∨q? Só as duas últimas podem estar certas. Esse filtro sozinho resolve prova6-q65, psjpn2018-q67 e transp23e6-q35 — quase metade da área."
+    },
+    {
+      "title": "Traduza 'todo/algum/nenhum' para símbolos com o conectivo certo",
+      "body": "'Todo A é B' = ∀x(A(x)→B(x)); 'algum A é B' = ∃x(A(x)∧B(x)); 'nenhum A é B' = ∀x(A(x)→~B(x)). Feito isso, a questão de quantificador vira questão de condicional — e a contrapositiva volta a ser a resposta, como em transp23e6-q35. Para negar, use a regra mecânica: troque ∀ por ∃ (e vice-versa) e negue o que vem depois, lembrando que negar A→B dá A∧~B. Assim a negação de 'todo A é B' sai automaticamente como 'existe A que não é B'."
+    },
+    {
+      "title": "Em problema de associação, teste as alternativas contra as pistas",
+      "body": "Não monte a grade inteira se as alternativas já trazem distribuições completas: pegue a pista mais restritiva e elimine. Em transp23e6-q37, 'o advogado é o Carlos' derruba a alternativa C na hora, e 'o médico não é o Armando' derruba B. Duas leituras de pista já reduziram a três. Se sobrarem duas alternativas, use a pista negativa restante. Só volte para a grade completa se o enunciado tiver mais de três categorias."
+    },
+    {
+      "title": "Decore a lista de nomes — é conteúdo de memória, não de raciocínio",
+      "body": "Escreva de memória, em uma linha cada, com a forma simbólica ao lado: Modus Ponens, Modus Tollens, silogismo hipotético, silogismo disjuntivo, dilema construtivo, dilema destrutivo, simplificação, adição, conjunção, absorção, De Morgan, contraposição, exportação, redução ao absurdo. E as duas falácias: afirmação do consequente e negação do antecedente. Questão como psjpn2018-q70 é ganha ou perdida nesse cartão, não no raciocínio."
+    }
+  ],
+  "trapWords": [
+    {
+      "term": "p → q (condicional)",
+      "confusedWith": "p ↔ q (bicondicional)",
+      "distinction": "A condicional vale só num sentido: p garante q, mas q não garante p. A bicondicional exige os dois. Ler 'se p então q' como se q também implicasse p é a origem das duas falácias formais (afirmar o consequente, negar o antecedente)."
+    },
+    {
+      "term": "negação de p → q",
+      "confusedWith": "p → ~q",
+      "distinction": "~(p→q) é p ∧ ~q, uma CONJUNÇÃO — nem chega a ser condicional. 'Se chover, saio' negado é 'choveu e não saí'. 'Se chover, não saio' é outra proposição, e nem é incompatível com a original em todas as linhas."
+    },
+    {
+      "term": "contrapositiva (~q → ~p)",
+      "confusedWith": "recíproca (q → p) e inversa (~p → ~q)",
+      "distinction": "Só a contrapositiva é equivalente a p→q. Recíproca e inversa são equivalentes ENTRE SI (uma é contrapositiva da outra), mas nenhuma das duas é equivalente à original. Distrator garantido em toda questão de equivalência."
+    },
+    {
+      "term": "condição suficiente",
+      "confusedWith": "condição necessária",
+      "distinction": "Em p→q, p é SUFICIENTE para q e q é NECESSÁRIO para p. 'Só se', 'somente se' e 'apenas se' marcam a condição necessária: 'p somente se q' também é p→q, e não q→p."
+    },
+    {
+      "term": "ou (disjunção inclusiva ∨)",
+      "confusedWith": "ou... ou (disjunção exclusiva ⊻)",
+      "distinction": "'Estuda ou trabalha' admite fazer as duas coisas (VV=V). 'Ou estuda ou trabalha (mas não os dois)' é exclusiva: VV=F. Em transp23e6-q35, 'todo profissional é médico ou enfermeiro' é INCLUSIVA — por isso 'não podem ser as duas coisas' era distrator."
+    },
+    {
+      "term": "argumento válido",
+      "confusedWith": "argumento com conclusão verdadeira",
+      "distinction": "Validade é impossibilidade de premissas V com conclusão F — é propriedade da FORMA. Argumento válido pode ter premissas falsas; argumento inválido pode ter conclusão verdadeira por coincidência. Argumento válido com premissas todas verdaderas é o que se chama de sólido/correto."
+    },
+    {
+      "term": "tautologia",
+      "confusedWith": "contingência",
+      "distinction": "Tautologia é V em TODAS as linhas; contingência é V em algumas e F em outras. Uma fórmula que você testou em duas ou três linhas e deu V pode perfeitamente ser contingência — só a varredura completa (ou uma demonstração) autoriza chamar de tautologia."
+    },
+    {
+      "term": "Modus Ponens",
+      "confusedWith": "Modus Tollens",
+      "distinction": "Ponens AFIRMA o antecedente e conclui o consequente (p→q, p ⊢ q). Tollens NEGA o consequente e conclui a negação do antecedente (p→q, ~q ⊢ ~p). Em psjpn2018-q70 a premissa era P (afirmando o que estava negado no consequente), logo Tollens — e a alternativa com 'Modus Ponens' era armadilha."
+    },
+    {
+      "term": "afirmação do consequente",
+      "confusedWith": "Modus Ponens",
+      "distinction": "Nome parecido, valor oposto: afirmar o CONSEQUENTE (p→q, q ⊢ p) é falácia; afirmar o ANTECEDENTE (p→q, p ⊢ q) é Modus Ponens, válido. O mesmo par existe do outro lado: negar o antecedente é falácia, negar o consequente é Modus Tollens."
+    },
+    {
+      "term": "negação de 'todo A é B'",
+      "confusedWith": "'nenhum A é B'",
+      "distinction": "A negação é 'ALGUM A não é B'. 'Todo A é B' e 'nenhum A é B' são contrárias, não contraditórias: podem ser as duas falsas ao mesmo tempo (se metade dos A é B). Só um par contraditório tem sempre valores opostos."
+    },
+    {
+      "term": "'algum A é B' = ∃x(A(x) ∧ B(x))",
+      "confusedWith": "∃x(A(x) → B(x))",
+      "distinction": "Universal se traduz com CONDICIONAL, existencial com CONJUNÇÃO. ∃x(A(x)→B(x)) é quase trivialmente verdadeira (basta existir um x que não seja A) e não expressa 'algum A é B'."
+    },
+    {
+      "term": "variável livre",
+      "confusedWith": "variável ligada",
+      "distinction": "Ligada é a que está no escopo de um quantificador; livre é a que não está. Fórmula com variável livre é sentença ABERTA e não tem valor-verdade — logo não é proposição. Em 'x > 3' o x é livre; em '∀x (x > 3)' é ligado."
+    },
+    {
+      "term": "∀x ∃y P(x,y)",
+      "confusedWith": "∃y ∀x P(x,y)",
+      "distinction": "A ordem dos quantificadores muda o sentido. 'Todo mundo tem uma mãe' (∀x∃y) é verdade; 'existe uma mãe de todo mundo' (∃y∀x) não. A segunda forma implica a primeira; a recíproca não vale."
+    },
+    {
+      "term": "proposição",
+      "confusedWith": "sentença qualquer",
+      "distinction": "Proposição é declarativa e tem exatamente um valor-verdade. Pergunta, ordem, exclamação, frase sem verbo e sentença aberta com variável livre não são proposições — e questão que peça 'quantas proposições há no trecho' conta apenas as declarativas fechadas."
+    },
+    {
+      "term": "conjunção lógica",
+      "confusedWith": "'mas', 'embora', 'contudo'",
+      "distinction": "Adversativas e concessivas do português são traduzidas como ∧ na lógica sentencial: 'estudou, mas não passou' é E ∧ ~P. A carga de contraste é retórica e não altera a tabela-verdade. O mesmo vale para 'nem' (= e não)."
+    }
+  ]
+}
