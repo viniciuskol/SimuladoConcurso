@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulado — Transpetro 2026</title>
+<link rel="stylesheet" href="shared/styles.css">
+</head>
+<body>
+<div class="topbar">
+  <a href="simulado.html">Simulado TRANSPETRO</a>
+  <nav>
+    <a href="simulado.html" class="active">Simulado</a>
+    <a href="estudo.html">Estudo</a>
+  </nav>
+</div>
+<div class="app" id="app">
+  <div class="empty-state">Carregando...</div>
+</div>
+<script type="module">
+import { loadJSON, showFetchHelp } from "./shared/data-loader.js";
+import { recordAttempt, statsByArea, clearAttempts } from "./shared/storage.js";
+
+const app = document.getElementById("app");
+let AREAS = [], QUESTIONS = [];
+let session = null; // { areaIds, order: [questionId,...], idx, correctCount, mode }
+
+async function init() {
+  try {
+    [AREAS, QUESTIONS] = await Promise.all([
+      loadJSON("data/areas.json").then(d => d.areas),
+      loadJSON("data/questions.json").then(d => d.questions),
+    ]);
+  } catch (e) {
+    showFetchHelp(app);
+    return;
+  }
+  renderPicker();
+}
+
+function countForAreas(selectedIds) {
+  return QUESTIONS.filter(q => selectedIds.includes(q.area)).length;
+}
+
+function renderPicker() {
+  const selected = new Set(AREAS.map(a => a.id));
+  const render = () => {
+    const total = countForAreas([...selected]);
+    app.innerHTML = `
+      <h1>Escolha as áreas do simulado</h1>
+      <div class="card">
+        ${AREAS.map(a => {
+          const n = QUESTIONS.filter(q => q.area === a.id).length;
+          return `<label class="chip"><input type="checkbox" data-area="${a.id}" ${selected.has(a.id) ? "checked" : ""}> ${a.label} (${n})</label>`;
+        }).join("")}
+      </div>
+      <p class="muted">${total} questão(ões) disponível(is) com as áreas selecionadas.</p>
+      ${total === 0 ? `<div class="empty-state">Ainda não há questões confirmadas nesta(s) área(s). O banco de questões é populado incrementalmente pelo processo de extração/verificação — volte em breve.</div>`
+        : `<button class="btn primary" id="start">Iniciar simulado (${total})</button>`}
+      <button class="btn" id="reset-stats">Limpar histórico de estatísticas</button>
+      <div class="card" id="stats"></div>
+    `;
+    app.querySelectorAll("input[data-area]").forEach(cb => {
+      cb.addEventListener("change", () => {
+        cb.checked ? selected.add(cb.dataset.area) : selected.delete(cb.dataset.area);
+        render();
+      });
+    });
+    const startBtn = app.querySelector("#start");
+    if (startBtn) startBtn.addEventListener("click", () => startSession([...selected]));
+    app.querySelector("#reset-stats").addEventListener("click", () => {
+      if (confirm("Limpar todo o histórico de respostas?")) { clearAttempts(); render(); }
+    });
+    renderStats();
+  };
+  render();
+}
+
+function renderStats() {
+  const el = document.getElementById("stats");
+  if (!el) return;
+  const stats = statsByArea(AREAS);
+  if (!stats.some(s => s.total > 0)) {
+    el.innerHTML = `<p class="muted">Sem histórico ainda. Responda um simulado para ver suas estatísticas por área.</p>`;
+    return;
+  }
+  el.innerHTML = `<h2>Desempenho por área</h2>` + stats.map(s => `
+    <div class="area-bar">
+      <span style="width:140px">${s.label ?? s.id}</span>
+      <div class="track"><div style="width:${s.pct ?? 0}%"></div></div>
+      <span class="pct">${s.pct === null ? "-" : s.pct + "%"}</span>
+    </div>`).join("");
+}
+
+function startSession(areaIds) {
+  const pool = QUESTIONS.filter(q => areaIds.includes(q.area));
+  const order = pool.map(q => q.id).sort(() => Math.random() - 0.5);
+  session = { areaIds, order, idx: 0, correctCount: 0 };
+  renderQuestion();
+}
+
+function renderQuestion() {
+  const q = QUESTIONS.find(x => x.id === session.order[session.idx]);
+  const areaLabel = (AREAS.find(a => a.id === q.area) || {}).label || q.area;
+  app.innerHTML = `
+    <div class="progressbar"><div style="width:${(100 * session.idx) / session.order.length}%"></div></div>
+    <p class="muted">${areaLabel} · questão ${session.idx + 1} de ${session.order.length}</p>
+    <div class="card"><div>${q.stem}</div></div>
+    <div id="alts">
+      ${q.alternatives.map(alt => `<button class="btn" data-key="${alt.key}">(${alt.key}) ${alt.text}</button>`).join("")}
+    </div>
+    <div id="feedback"></div>
+  `;
+  app.querySelectorAll("#alts button").forEach(btn => {
+    btn.addEventListener("click", () => answer(q, btn.dataset.key));
+  });
+}
+
+function answer(q, chosenKey) {
+  const correct = chosenKey === q.correctKey;
+  if (correct) session.correctCount += 1;
+  recordAttempt({ questionId: q.id, area: q.area, chosenKey, correct });
+
+  app.querySelectorAll("#alts button").forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.key === q.correctKey) btn.classList.add("correct");
+    else if (btn.dataset.key === chosenKey) btn.classList.add("incorrect");
+  });
+
+  const wrongExplain = q.alternatives
+    .filter(a => a.key !== q.correctKey && a.explanation)
+    .map(a => `<li><strong>(${a.key})</strong> ${a.explanation}</li>`).join("");
+
+  document.getElementById("feedback").innerHTML = `
+    <div class="card">
+      <p><strong>${correct ? "✅ Certo!" : "❌ Errado."}</strong> ${q.explanationSummary || ""}</p>
+      ${wrongExplain ? `<details class="explain"><summary>Por que as outras estão erradas</summary><ul>${wrongExplain}</ul></details>` : ""}
+      <button class="btn primary" id="next">${session.idx + 1 < session.order.length ? "Próxima" : "Ver resultado"}</button>
+    </div>`;
+  document.getElementById("next").addEventListener("click", () => {
+    session.idx += 1;
+    if (session.idx < session.order.length) renderQuestion();
+    else renderResult();
+  });
+}
+
+function renderResult() {
+  const pct = Math.round((100 * session.correctCount) / session.order.length);
+  app.innerHTML = `
+    <div class="card">
+      <h1>Resultado</h1>
+      <p>${session.correctCount} de ${session.order.length} corretas (${pct}%).</p>
+      <button class="btn primary" id="back">Voltar</button>
+    </div>`;
+  document.getElementById("back").addEventListener("click", renderPicker);
+}
+
+init();
+</script>
+</body>
+</html>
