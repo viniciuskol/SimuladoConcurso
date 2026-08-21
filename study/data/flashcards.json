@@ -494,6 +494,487 @@
       "front": "O que caracteriza o modelo de ciclo de vida em cascata?",
       "back": "Fases executadas de forma sequencial e linear, cada uma dependendo da conclusão da anterior, com requisitos definidos no início.",
       "sourceQuestionId": "transp23e6-q54"
+    },
+    {
+      "id": "fc-eng-sw-001",
+      "area": "eng-sw",
+      "front": "Qual é a diferença entre verificação e validação?",
+      "back": "Verificação confirma, com evidência objetiva, que o produto cumpre os requisitos especificados ('construindo certo'). Validação confirma que ele atende à necessidade real do usuário ('construindo a coisa certa').",
+      "sourceQuestionId": "psjpn2018-q45"
+    },
+    {
+      "id": "fc-eng-sw-002",
+      "area": "eng-sw",
+      "front": "O que caracteriza um requisito não funcional?",
+      "back": "É atributo de qualidade ou restrição do sistema: desempenho, disponibilidade, segurança, usabilidade, portabilidade, conformidade legal. Não descreve uma função executada pelo sistema.",
+      "sourceQuestionId": "psjpn2018-q50"
+    },
+    {
+      "id": "fc-eng-sw-003",
+      "area": "eng-sw",
+      "front": "'A velocidade do míssil deve ser calculada segundo v(t) = vo + at' é requisito funcional ou não funcional?",
+      "back": "Funcional. Um cálculo que o sistema executa é função, mesmo parecendo técnico. Criptografia AES, atraso máximo de 1 ms e resolução de câmera, no mesmo enunciado, eram não funcionais.",
+      "sourceQuestionId": "transp23e6-q24"
+    },
+    {
+      "id": "fc-eng-sw-004",
+      "area": "eng-sw",
+      "front": "O que caracteriza a técnica JAD de levantamento de requisitos?",
+      "back": "É um workshop estruturado, com facilitador, escriba e pauta definida, reunindo usuários e desenvolvedores na mesma sessão — o valor cobrado é a cooperação e o trabalho em equipe.",
+      "sourceQuestionId": "prova07-q39"
+    },
+    {
+      "id": "fc-eng-sw-005",
+      "area": "eng-sw",
+      "front": "A engenharia de requisitos elimina a volatilidade dos requisitos?",
+      "back": "Não. Ela gerencia a volatilidade por meio de controle de mudanças e rastreabilidade; requisitos evoluem naturalmente ao longo do projeto.",
+      "sourceQuestionId": "prova07-q49"
+    },
+    {
+      "id": "fc-eng-sw-006",
+      "area": "eng-sw",
+      "front": "Qual é a diferença entre rastreabilidade para frente e para trás?",
+      "back": "Para trás liga o requisito à sua origem (necessidade, norma, parte interessada). Para frente liga o requisito aos artefatos derivados dele: projeto, código e casos de teste."
+    },
+    {
+      "id": "fc-eng-sw-007",
+      "area": "eng-sw",
+      "front": "O que enfatiza o modelo de ciclo de vida em cascata?",
+      "back": "A realização estritamente sequencial das atividades: cada fase é concluída antes de a próxima começar, com entrega única no final.",
+      "sourceQuestionId": "prova07-q53"
+    },
+    {
+      "id": "fc-eng-sw-008",
+      "area": "eng-sw",
+      "front": "Quais modelos de ciclo de vida são processos sequenciais?",
+      "back": "Cascata e modelo V. Incremental, iterativo, espiral e ágil não são — todos repetem ciclos.",
+      "sourceQuestionId": "transp23e6-q25"
+    },
+    {
+      "id": "fc-eng-sw-009",
+      "area": "eng-sw",
+      "front": "Como o modelo V relaciona construção e teste?",
+      "back": "Cada fase de desenvolvimento é espelhada em um nível de teste: requisitos com aceitação, especificação de sistema com teste de sistema, projeto de arquitetura com integração e projeto detalhado com unidade."
+    },
+    {
+      "id": "fc-eng-sw-010",
+      "area": "eng-sw",
+      "front": "Qual modelo de processo entrega funcionalidades em versões sucessivas cada vez mais completas?",
+      "back": "O incremental: especifica e implementa primeiro as funcionalidades mais importantes e acrescenta as demais em incrementos, aproveitando a experiência de uso.",
+      "sourceQuestionId": "psjpn2018-q51"
+    },
+    {
+      "id": "fc-eng-sw-011",
+      "area": "eng-sw",
+      "front": "Qual é o elemento que define o modelo em espiral?",
+      "back": "A análise formal e explícita de riscos em cada volta do ciclo. Se o enunciado dispensa o tratamento de riscos, o modelo não é o espiral.",
+      "sourceQuestionId": "psjpn2018-q51"
+    },
+    {
+      "id": "fc-eng-sw-012",
+      "area": "eng-sw",
+      "front": "Quais são as quatro fases do Processo Unificado, na ordem?",
+      "back": "Concepção (inception), elaboração, construção e transição. Cada fase é dividida em iterações.",
+      "sourceQuestionId": "transp15-q23"
+    },
+    {
+      "id": "fc-eng-sw-013",
+      "area": "eng-sw",
+      "front": "Qual é o objetivo central da fase de elaboração do Processo Unificado?",
+      "back": "Definir a arquitetura do sistema (e reduzir os riscos maiores). O escopo inicial já vem da concepção.",
+      "sourceQuestionId": "transp15-q23"
+    },
+    {
+      "id": "fc-eng-sw-014",
+      "area": "eng-sw",
+      "front": "Quais são as três características canônicas do Processo Unificado?",
+      "back": "Dirigido por casos de uso, centrado em arquitetura, iterativo e incremental.",
+      "sourceQuestionId": "prova07-q51"
+    },
+    {
+      "id": "fc-eng-sw-015",
+      "area": "eng-sw",
+      "front": "'Guiado por testes de aceitação' é característica do Processo Unificado?",
+      "back": "Não — é o distrator clássico. O Processo Unificado é dirigido por casos de uso, não por testes de aceitação.",
+      "sourceQuestionId": "prova07-q51"
+    },
+    {
+      "id": "fc-eng-sw-016",
+      "area": "eng-sw",
+      "front": "O que um caso de uso em forma narrativa representa?",
+      "back": "Uma interação entre um ator e o sistema, vista de fora, com fluxo principal e fluxos alternativos. Não descreve o comportamento interno nem a troca de mensagens entre objetos.",
+      "sourceQuestionId": "transp15-q27"
+    },
+    {
+      "id": "fc-eng-sw-017",
+      "area": "eng-sw",
+      "front": "Quais são os quatro elementos de um DFD?",
+      "back": "Processo, fluxo de dados, depósito (armazenamento) de dados e entidade externa."
+    },
+    {
+      "id": "fc-eng-sw-018",
+      "area": "eng-sw",
+      "front": "O que descreve o dicionário de dados na análise estruturada?",
+      "back": "Os fluxos, depósitos e itens elementares do DFD: nome, composição, tipo, domínio e unidade. É o complemento textual do diagrama."
+    },
+    {
+      "id": "fc-eng-sw-019",
+      "area": "eng-sw",
+      "front": "Qual recurso da orientação a objetos substitui uma cadeia se-então-senão baseada no tipo da entidade?",
+      "back": "Polimorfismo: a mesma mensagem produz comportamentos diferentes conforme o tipo do objeto que a recebe.",
+      "sourceQuestionId": "prova6-q51"
+    },
+    {
+      "id": "fc-eng-sw-020",
+      "area": "eng-sw",
+      "front": "Qual é a diferença entre sobrecarga e sobrescrita?",
+      "back": "Sobrecarga (overload): métodos de mesmo nome com parâmetros diferentes na MESMA classe. Sobrescrita (override): a subclasse redefine um método da superclasse com a MESMA assinatura.",
+      "sourceQuestionId": "transp23e6-q32"
+    },
+    {
+      "id": "fc-eng-sw-021",
+      "area": "eng-sw",
+      "front": "Coesão e acoplamento são medidas intramodulares ou intermodulares, e como se relacionam com a qualidade?",
+      "back": "Coesão é intramodular e diretamente proporcional à qualidade; acoplamento é intermodular e inversamente proporcional.",
+      "sourceQuestionId": "prova6-q55"
+    },
+    {
+      "id": "fc-eng-sw-022",
+      "area": "eng-sw",
+      "front": "Qual arquitetura separa a lógica da aplicação da interface do usuário por meio de uma camada controladora?",
+      "back": "MVC (Model-View-Controller): modelo com a lógica e os dados, visão com a apresentação e controlador mediando os dois.",
+      "sourceQuestionId": "prova6-q60"
+    },
+    {
+      "id": "fc-eng-sw-023",
+      "area": "eng-sw",
+      "front": "Qual diagrama UML modela o fluxo de tarefas em que dois papéis colaboram para produzir um resultado?",
+      "back": "Diagrama de atividades. Sequência serve para ordem temporal de mensagens; estados, para o ciclo de vida de um objeto.",
+      "sourceQuestionId": "psjpn2018-q46"
+    },
+    {
+      "id": "fc-eng-sw-024",
+      "area": "eng-sw",
+      "front": "Qual diagrama UML NÃO serve para construir mapa de navegação de telas?",
+      "back": "O diagrama de implantação: ele descreve nós físicos, ambientes de execução e artefatos implantados, não fluxo de interação.",
+      "sourceQuestionId": "prova07-q67"
+    },
+    {
+      "id": "fc-eng-sw-025",
+      "area": "eng-sw",
+      "front": "Quantos tipos de diagrama tem a UML 2.5 e como se dividem?",
+      "back": "14 tipos: 7 estruturais (classes, objetos, componentes, estrutura composta, pacotes, implantação, perfil) e 7 comportamentais (casos de uso, atividades, máquina de estados, sequência, comunicação, tempo, visão geral de interação)."
+    },
+    {
+      "id": "fc-eng-sw-026",
+      "area": "eng-sw",
+      "front": "Qual é uma técnica de teste ESTÁTICO?",
+      "back": "Walkthrough (assim como revisão por pares, inspeção formal e análise estática automatizada). Regressão, valor limite e particionamento de equivalência são dinâmicos.",
+      "sourceQuestionId": "transp23e6-q23"
+    },
+    {
+      "id": "fc-eng-sw-027",
+      "area": "eng-sw",
+      "front": "Em que consiste o teste de mutação?",
+      "back": "Gera versões levemente modificadas (mutantes) do programa, executa o original e os mutantes e compara os resultados, medindo quantos mutantes os casos de teste conseguem matar.",
+      "sourceQuestionId": "transp15-q24"
+    },
+    {
+      "id": "fc-eng-sw-028",
+      "area": "eng-sw",
+      "front": "Como se calcula a complexidade ciclomática de um grafo de fluxo?",
+      "back": "V(G) = E − N + 2, com E arcos e N nós, para grafo conexo com uma entrada e uma saída. Com 12 arcos e 5 nós, V(G) = 9. Equivale ao número de regiões e ao de nós predicativos mais um.",
+      "sourceQuestionId": "transp15-q25"
+    },
+    {
+      "id": "fc-eng-sw-029",
+      "area": "eng-sw",
+      "front": "Quais são os níveis de teste, na ordem?",
+      "back": "Unidade, integração, sistema e aceitação."
+    },
+    {
+      "id": "fc-eng-sw-030",
+      "area": "eng-sw",
+      "front": "Quem executa o teste de aceitação e quando?",
+      "back": "Representantes dos usuários finais, sobre a versão aparentemente pronta, antes da liberação em produção. Alfa ocorre no ambiente do fornecedor; beta, no do cliente.",
+      "sourceQuestionId": "transp23e6-q31"
+    },
+    {
+      "id": "fc-eng-sw-031",
+      "area": "eng-sw",
+      "front": "Para que serve o teste de regressão?",
+      "back": "Reexecutar testes já aprovados depois de uma alteração no software, para confirmar que a mudança não quebrou o que funcionava. É teste dinâmico."
+    },
+    {
+      "id": "fc-eng-sw-032",
+      "area": "eng-sw",
+      "front": "Alguma técnica de verificação e validação assegura a inexistência de erros no software?",
+      "back": "Não. V&V aumenta a confiança e reduz defeitos, mas nunca prova ausência de erros — alternativa que promete isso está errada.",
+      "sourceQuestionId": "prova07-q56"
+    },
+    {
+      "id": "fc-eng-sw-033",
+      "area": "eng-sw",
+      "front": "O que diferencia teste de caixa-branca de teste de caixa-preta?",
+      "back": "Caixa-branca usa a estrutura interna do código (cobertura de comandos, decisões, caminhos, fluxo de dados). Caixa-preta usa só a especificação de entrada e saída (particionamento de equivalência, valor limite, tabela de decisão)."
+    },
+    {
+      "id": "fc-eng-sw-034",
+      "area": "eng-sw",
+      "front": "O que é refatoração?",
+      "back": "Modificar a estrutura interna do código sem alterar seu comportamento externo, para melhorar legibilidade e manutenibilidade.",
+      "sourceQuestionId": "prova07-q57"
+    },
+    {
+      "id": "fc-eng-sw-035",
+      "area": "eng-sw",
+      "front": "O que mede a cobertura de código e o que mede a análise estática?",
+      "back": "Cobertura mede quanto do código foi exercitado pelos testes (linhas, ramos, caminhos). Análise estática extrai métricas sem executar, como complexidade e grau de dependência entre componentes.",
+      "sourceQuestionId": "prova07-q57"
+    },
+    {
+      "id": "fc-eng-sw-036",
+      "area": "eng-sw",
+      "front": "Qual é a diferença entre integração contínua, entrega contínua e implantação contínua?",
+      "back": "Integração contínua: build e testes automáticos a cada integração no repositório. Entrega contínua: artefato sempre pronto, com liberação decidida por pessoa. Implantação contínua: promoção automática até produção."
+    },
+    {
+      "id": "fc-seg-info-001",
+      "area": "seg-info",
+      "front": "Qual requisito de segurança é principalmente ameaçado por ataques passivos como monitoramento e análise de tráfego?",
+      "back": "A confidencialidade. O ataque passivo apenas observa: não altera o dado (integridade) nem interrompe o serviço (disponibilidade).",
+      "sourceQuestionId": "psjpn2018-q64"
+    },
+    {
+      "id": "fc-seg-info-002",
+      "area": "seg-info",
+      "front": "Qual é a diferença entre a ISO/IEC 27001 e a ISO/IEC 27002?",
+      "back": "A 27001 traz os requisitos auditáveis do SGSI e é a norma certificável. A 27002 é o código de prática, com o catálogo de controles e as diretrizes de implementação."
+    },
+    {
+      "id": "fc-seg-info-003",
+      "area": "seg-info",
+      "front": "Segundo a NBR/ISO 27002, para que serve proteger a informação contra ameaças?",
+      "back": "Para garantir a continuidade do negócio, minimizar o risco ao negócio e maximizar o retorno sobre os investimentos e as oportunidades de negócio.",
+      "sourceQuestionId": "prova07-q26"
+    },
+    {
+      "id": "fc-seg-info-004",
+      "area": "seg-info",
+      "front": "Segundo a ISO 27002, qual propriedade a proteção contra códigos maliciosos e códigos móveis visa proteger?",
+      "back": "A integridade do software e da informação.",
+      "sourceQuestionId": "prova07-q27"
+    },
+    {
+      "id": "fc-seg-info-005",
+      "area": "seg-info",
+      "front": "Em que grupo de controles da ISO 27002 fica a proteção contra malware?",
+      "back": "Na segurança nas operações — não em comunicações, controle de acesso, recursos humanos ou segurança física.",
+      "sourceQuestionId": "transp23e6-q44"
+    },
+    {
+      "id": "fc-seg-info-006",
+      "area": "seg-info",
+      "front": "Segundo a ISO 27002, quando e onde as responsabilidades de segurança da informação devem ser atribuídas aos funcionários?",
+      "back": "Antes da contratação, nas descrições de cargo e nos termos e condições de contratação. O termo de confidencialidade é assinado antes da concessão de acesso.",
+      "sourceQuestionId": "prova6-q64"
+    },
+    {
+      "id": "fc-seg-info-007",
+      "area": "seg-info",
+      "front": "O que a ISO 27002 recomenda especificamente no controle de acesso à rede?",
+      "back": "Usar métodos apropriados de autenticação para controlar o acesso de usuários remotos.",
+      "sourceQuestionId": "transp15-q46"
+    },
+    {
+      "id": "fc-seg-info-008",
+      "area": "seg-info",
+      "front": "De quem é a responsabilidade de classificar a informação?",
+      "back": "É decisão de negócio, do proprietário/gestor da informação, com papel ativo do corpo gerencial — não do coordenador de TI, do profissional de segurança nem de empresa externa.",
+      "sourceQuestionId": "transp15-q45"
+    },
+    {
+      "id": "fc-seg-info-009",
+      "area": "seg-info",
+      "front": "Segundo a ISO 27002, o que deve ser rotulado na classificação da informação?",
+      "back": "As informações e as saídas geradas pelos sistemas que tratam dados confidenciais, conforme o valor e a sensibilidade para a organização.",
+      "sourceQuestionId": "psjpn2018-q65"
+    },
+    {
+      "id": "fc-seg-info-010",
+      "area": "seg-info",
+      "front": "Qual é a principal diferença prática entre criptografia simétrica e assimétrica?",
+      "back": "Simétrica usa uma única chave compartilhada e é rápida (boa para volume de dados); assimétrica usa par pública/privada, é lenta e serve para cifrar chaves, assinar e autenticar."
+    },
+    {
+      "id": "fc-seg-info-011",
+      "area": "seg-info",
+      "front": "Na criptografia assimétrica, com qual chave se cifra para garantir confidencialidade?",
+      "back": "Com a chave pública do destinatário — só ele, com a chave privada correspondente, consegue decifrar."
+    },
+    {
+      "id": "fc-seg-info-012",
+      "area": "seg-info",
+      "front": "Com qual chave se produz uma assinatura digital?",
+      "back": "Com a chave privada do remetente, aplicada sobre o hash do documento. Qualquer um confere com a chave pública dele."
+    },
+    {
+      "id": "fc-seg-info-013",
+      "area": "seg-info",
+      "front": "Quais garantias a assinatura digital oferece?",
+      "back": "Integridade, autenticidade e irretratabilidade (não repúdio). Ela não oferece confidencialidade."
+    },
+    {
+      "id": "fc-seg-info-014",
+      "area": "seg-info",
+      "front": "Para que serve o hash na validação de uma assinatura digital?",
+      "back": "Para assegurar a integridade do conteúdo, mostrando que ele não foi alterado desde a assinatura. O hash é irreversível: não permite recuperar o documento original.",
+      "sourceQuestionId": "psjpn2018-q63"
+    },
+    {
+      "id": "fc-seg-info-015",
+      "area": "seg-info",
+      "front": "O que significa o valor SHA256RSA no campo algoritmo de assinatura de um certificado digital?",
+      "back": "Hash SHA256, que produz um digest de 256 bits, combinado com o RSA, que é um algoritmo de criptografia assimétrica. O 256 é o tamanho do digest, não da chave.",
+      "sourceQuestionId": "transp15-q50"
+    },
+    {
+      "id": "fc-seg-info-016",
+      "area": "seg-info",
+      "front": "No envelope digital, com qual chave se cifra a chave simétrica de sessão?",
+      "back": "Com a chave pública do destinatário. Os dados em si são cifrados com a chave simétrica.",
+      "sourceQuestionId": "transp23e6-q41"
+    },
+    {
+      "id": "fc-seg-info-017",
+      "area": "seg-info",
+      "front": "Na ICP-Brasil, quem assina o certificado de uma Autoridade Certificadora imediatamente subordinada à AC Raiz?",
+      "back": "Apenas a AC Raiz. A Autoridade de Registro identifica e cadastra solicitantes, mas não assina certificados.",
+      "sourceQuestionId": "transp15-q52"
+    },
+    {
+      "id": "fc-seg-info-018",
+      "area": "seg-info",
+      "front": "Qual componente do perímetro decide, por listas de regras de controle de acesso, se um pacote atravessa a barreira?",
+      "back": "O firewall.",
+      "sourceQuestionId": "transp15-q47"
+    },
+    {
+      "id": "fc-seg-info-019",
+      "area": "seg-info",
+      "front": "Qual é a diferença entre IDS e IPS?",
+      "back": "O IDS fica fora do caminho do tráfego e apenas detecta e alerta. O IPS fica em linha e bloqueia o tráfego identificado como malicioso."
+    },
+    {
+      "id": "fc-seg-info-020",
+      "area": "seg-info",
+      "front": "Qual é a diferença entre detecção por assinatura e por anomalia?",
+      "back": "Assinatura compara com padrões de ataques conhecidos: preciso, mas cego para o que é novo. Anomalia compara com uma linha de base de comportamento: detecta o desconhecido, ao custo de mais falsos positivos."
+    },
+    {
+      "id": "fc-seg-info-021",
+      "area": "seg-info",
+      "front": "Qual solução agrega e correlaciona eventos e logs de várias fontes, dando visão holística da segurança?",
+      "back": "O SIEM.",
+      "sourceQuestionId": "transp23e6-q43"
+    },
+    {
+      "id": "fc-seg-info-022",
+      "area": "seg-info",
+      "front": "Qual técnica de VPN encapsula um pacote inteiro dentro de outro, de forma cifrada?",
+      "back": "O tunelamento.",
+      "sourceQuestionId": "transp15-q48"
+    },
+    {
+      "id": "fc-seg-info-023",
+      "area": "seg-info",
+      "front": "Qual malware engaja o computador em uma rede de ataque automatizado, sem o conhecimento do dono?",
+      "back": "O bot (máquina zumbi); o conjunto dessas máquinas é a botnet, comandada por servidores de comando e controle.",
+      "sourceQuestionId": "transp15-q49"
+    },
+    {
+      "id": "fc-seg-info-024",
+      "area": "seg-info",
+      "front": "Qual é a diferença entre vírus e worm?",
+      "back": "O vírus precisa de um arquivo ou programa hospedeiro e de execução para se replicar. O worm se autorreplica e se propaga sozinho pela rede, sem hospedeiro."
+    },
+    {
+      "id": "fc-seg-info-025",
+      "area": "seg-info",
+      "front": "Qual infraestrutura de autenticação permite usar várias aplicações sem autenticar em cada uma?",
+      "back": "Single Sign-On (SSO).",
+      "sourceQuestionId": "psjpn2018-q66"
+    },
+    {
+      "id": "fc-seg-info-026",
+      "area": "seg-info",
+      "front": "Qual protocolo do SAML passa mensagens por referência, usando um valor pequeno e de tamanho fixo?",
+      "back": "O Artifact Resolution Protocol.",
+      "sourceQuestionId": "transp15-q51"
+    },
+    {
+      "id": "fc-seg-info-027",
+      "area": "seg-info",
+      "front": "Qual abordagem de IAM concede acesso por combinação de atributos, contexto da requisição e condições ambientais?",
+      "back": "ABAC (Attribute-Based Access Control). RBAC concederia por papel/função.",
+      "sourceQuestionId": "transp23e6-q39"
+    },
+    {
+      "id": "fc-seg-info-028",
+      "area": "seg-info",
+      "front": "Qual é a diferença entre DAC e MAC?",
+      "back": "No DAC (discricionário) o proprietário do recurso decide quem acessa. No MAC (obrigatório) a decisão vem de rótulos de classificação definidos centralmente, sem discricionariedade do usuário."
+    },
+    {
+      "id": "fc-seg-info-029",
+      "area": "seg-info",
+      "front": "O que caracteriza autenticação multifator (MFA)?",
+      "back": "Exigir fatores de categorias diferentes: algo que você sabe (senha), algo que você tem (token, OTP) e algo que você é (biometria). Duas senhas não são dois fatores."
+    },
+    {
+      "id": "fc-seg-info-030",
+      "area": "seg-info",
+      "front": "Qual é a ideia central do Zero Trust?",
+      "back": "Não existe confiança implícita por estar dentro da rede: identidade e dispositivo são verificados continuamente e a autorização é avaliada a cada requisição, com microssegmentação."
+    },
+    {
+      "id": "fc-seg-info-031",
+      "area": "seg-info",
+      "front": "Qual teste de segurança analisa o software totalmente compilado em tempo de execução?",
+      "back": "DAST (Dynamic Application Security Testing). SAST analisa o código-fonte sem executar; IAST instrumenta a aplicação em execução.",
+      "sourceQuestionId": "transp23e6-q38"
+    },
+    {
+      "id": "fc-seg-info-032",
+      "area": "seg-info",
+      "front": "Qual publicação define o ciclo de vida de resposta a incidentes?",
+      "back": "NIST SP 800-61. A SP 800-30 trata de avaliação de riscos e a SP 800-34, de planejamento de contingência.",
+      "sourceQuestionId": "transp23e6-q42"
+    },
+    {
+      "id": "fc-seg-info-033",
+      "area": "seg-info",
+      "front": "No MITRE ATT&CK, qual é a diferença entre tática e técnica?",
+      "back": "Tática é o objetivo do adversário (por exemplo, acesso a credenciais, persistência, exfiltração). Técnica é como ele alcança esse objetivo (por exemplo, manipulação de conta).",
+      "sourceQuestionId": "transp23e6-q40"
+    },
+    {
+      "id": "fc-seg-info-034",
+      "area": "seg-info",
+      "front": "Qual é a diferença entre backup incremental e diferencial?",
+      "back": "O incremental copia o que mudou desde o último backup de qualquer tipo (restauração exige o completo mais todos os incrementais). O diferencial copia o que mudou desde o último completo (restauração exige o completo mais o último diferencial)."
+    },
+    {
+      "id": "fc-seg-info-035",
+      "area": "seg-info",
+      "front": "Qual é a diferença entre RPO e RTO?",
+      "back": "RPO é o volume de dados que se aceita perder, e define a frequência do backup. RTO é o tempo máximo aceitável para restabelecer o serviço, e define a solução de recuperação."
+    },
+    {
+      "id": "fc-seg-info-036",
+      "area": "seg-info",
+      "front": "Quantas funções tem o NIST Cybersecurity Framework?",
+      "back": "Cinco na versão 1.1 — Identificar, Proteger, Detectar, Responder e Recuperar — e seis na versão 2.0, que acrescentou Governar."
     }
   ]
 }

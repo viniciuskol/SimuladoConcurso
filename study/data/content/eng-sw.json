@@ -1,0 +1,324 @@
+{
+  "areaId": "eng-sw",
+  "resumo": "<p><strong>Onde a prova realmente mora.</strong> São 27 questões desta área no banco, distribuídas assim por subtópico do Anexo IV: <em>5.3 análise e projeto</em> com 9, <em>5.4 V&amp;V e teste</em> com 8, <em>5.2 ciclo de vida</em> com 5, <em>5.1 requisitos</em> com 4 e <em>5.5 ambientes de desenvolvimento</em> com apenas 1. Por prova: 10 em 2010, 3 em 2011, 9 em 2018 e 5 em 2023. A de 2023 mudou o tom: cinco enunciados curtos, todos de <strong>definição direta</strong> (teste estático, requisito funcional, modelos sequenciais, teste de aceitação, sobrecarga), sem cálculo e sem asserção-razão.</p><p><strong>Requisitos.</strong> A engenharia de requisitos vai de elicitação a análise e negociação, especificação, validação e gerenciamento (mudança e rastreabilidade). Ela <em>não</em> elimina a volatilidade dos requisitos nem remove a dependência entre requisito e regra de negócio: gerencia as duas (prova07-q49). <strong>Funcional</strong> é o que o sistema faz — função, cálculo, transformação, seleção. <strong>Não funcional</strong> é atributo de qualidade ou restrição: desempenho, disponibilidade, segurança, usabilidade, portabilidade, conformidade legal. Elicitação: entrevista, questionário, observação, análise de documentos, prototipação, brainstorming, cenários, casos de uso e workshops. O <strong>JAD</strong> é o workshop com facilitador e escriba e pauta definida, com usuários e desenvolvedores na mesma sala — a palavra cobrada foi <em>cooperação</em> (prova07-q39). Rastreabilidade liga o requisito à origem (para trás) e aos artefatos derivados (para frente).</p><p><strong>Ciclos de vida.</strong> <em>Cascata</em>: sequencial, fase encerrada antes da próxima, cliente no começo e no fim. <em>Modelo V</em>: a mesma fila, com os níveis de teste espelhados — requisitos casam com aceitação, especificação de sistema com teste de sistema, projeto de arquitetura com integração e projeto detalhado com unidade. Cascata e V são os dois <strong>sequenciais</strong> (transp23e6-q25). <em>Incremental</em>: versões parciais já úteis, uma funcionalidade por incremento. <em>Iterativo</em>: refina o mesmo produto em ciclos. <em>Espiral</em> (Boehm): iterativo com <strong>análise de risco explícita em cada volta</strong> — se o enunciado dispensa o especialista em risco, não é espiral (psjpn2018-q51). <em>RUP</em>: quatro fases — concepção, elaboração, construção, transição —, cada uma com iterações e com todas as disciplinas em proporções diferentes; características canônicas: <strong>dirigido por casos de uso, centrado em arquitetura, iterativo e incremental</strong>. O objetivo da elaboração é definir a arquitetura (transp15-q23); 'guiado por testes de aceitação' não é característica dele (prova07-q51).</p><p><strong>Estruturado x orientado a objetos.</strong> A análise estruturada separa três visões: DFD para a função, diagrama entidade-relacionamento para o dado e transição de estados para o comportamento, com o <strong>dicionário de dados</strong> descrevendo cada fluxo, depósito e item elementar. O DFD tem quatro elementos (processo, fluxo, depósito de dados, entidade externa); o contexto é o nível mais alto, com um único processo, e cada refinamento precisa ser balanceado. Na OO, os princípios mais cobrados são abstração, encapsulamento, herança e polimorfismo. <strong>Polimorfismo</strong> responde tanto por 'substituir a cadeia se-então-senão por tipo' (prova6-q51) quanto por 'várias operações com o mesmo nome' (transp15-q29). <strong>Sobrecarga</strong> é mesmo nome com assinaturas diferentes na mesma classe (transp23e6-q32); <strong>sobrescrita</strong> é a subclasse redefinindo o método herdado com a mesma assinatura. Coesão é <em>intramodular</em> e diretamente proporcional à qualidade; acoplamento é <em>intermodular</em> e inversamente proporcional (prova6-q55). Em UML 2.5 são 14 tipos de diagrama, 7 estruturais e 7 comportamentais, e a banca cobra a escolha por finalidade: fluxo de tarefas entre papéis é <strong>atividades</strong> (psjpn2018-q46), mensagens no tempo é sequência, ciclo de vida de um objeto é máquina de estados, e <strong>implantação</strong> é o diagrama que não serve para mapa de navegação de telas, porque descreve nós físicos e artefatos (prova07-q67).</p><p><strong>V&amp;V.</strong> Verificação confirma, com evidência objetiva, que os requisitos especificados foram cumpridos — 'construindo certo' (psjpn2018-q45). Validação confirma o atendimento à necessidade do usuário. As duas são complementares, atravessam todo o ciclo de vida e nenhuma prova ausência de defeitos (prova07-q56).</p><table><tr><th>Eixo</th><th>Estático</th><th>Dinâmico</th></tr><tr><td>Executa o código?</td><td>Não</td><td>Sim</td></tr><tr><td>Técnicas</td><td>Revisão por pares, <em>walkthrough</em>, inspeção, análise estática automatizada</td><td>Unidade, integração, sistema, aceitação, regressão, mutação, desempenho</td></tr></table><table><tr><th>Eixo</th><th>Caixa-branca</th><th>Caixa-preta</th></tr><tr><td>O que se conhece</td><td>Estrutura interna e código</td><td>Só a especificação de entrada/saída</td></tr><tr><td>Critérios</td><td>Cobertura de comandos, decisão, condição e caminhos; fluxo de dados; complexidade ciclomática</td><td>Particionamento de equivalência, valor limite, tabela de decisão, transição de estados, causa-efeito</td></tr><tr><td>Nível usual</td><td>Unidade e integração</td><td>Sistema e aceitação</td></tr></table><p><strong>Detalhes que a banca já cobrou.</strong> Níveis, na ordem: unidade, integração, sistema e aceitação — esta conduzida por representantes dos usuários antes da liberação (transp23e6-q31), em alfa (ambiente do fornecedor) e beta (ambiente do cliente). Regressão reexecuta testes aprovados após alteração; é dinâmica, e por isso não é resposta de teste estático (transp23e6-q23, cuja resposta é <em>walkthrough</em>). Mutação gera versões levemente modificadas do programa e compara resultados, medindo quantos mutantes morrem (transp15-q24). Complexidade ciclomática: V(G) = E − N + 2 num grafo de fluxo conexo com uma entrada e uma saída — 12 arcos e 5 nós dão 9 (transp15-q25); equivale ao número de regiões e ao de nós predicativos mais um. TDD inverte a ordem: teste que falha, código que passa, refatoração.</p><p><strong>Ambientes de desenvolvimento.</strong> Único subtópico com uma só questão no banco, e ela cobrou definição de ferramenta (prova07-q57). Guarde as fronteiras: <strong>refatoração</strong> altera a estrutura interna sem alterar o comportamento externo; <strong>análise estática</strong> extrai métricas sem executar; <strong>cobertura de código</strong> mede quanto os testes exercitaram, não aderência a requisitos; <strong>engenharia reversa</strong> recupera modelos do código, e não é controle de versão; <strong>integração contínua</strong> automatiza build e testes a cada integração — quem leva a produção é a entrega ou a implantação contínua. Contêiner compartilha o kernel do hospedeiro; máquina virtual carrega sistema operacional próprio.</p>",
+  "cheatsheet": [
+    {
+      "heading": "Requisito funcional x não funcional (o corte mais cobrado)",
+      "items": [
+        "Funcional: função, cálculo, transformação, regra que o sistema executa. 'O usuário deve selecionar o cinema' e 'a velocidade deve ser calculada por v(t)=vo+at' são FUNCIONAIS.",
+        "Não funcional: desempenho/tempo de resposta, disponibilidade (99,5%), segurança (tráfego criptografado), usabilidade, portabilidade/compatibilidade, conformidade com legislação.",
+        "Teste rápido: a frase diz O QUE o sistema faz (funcional) ou QUANTO/QUÃO BEM/SOB QUAL RESTRIÇÃO ele faz (não funcional)?",
+        "Cuidado com o formato negativo: 'qual NÃO atende ao pedido de requisitos não funcionais' — a resposta é justamente o requisito funcional escondido no meio.",
+        "Restrição de projeto (linguagem, plataforma, padrão obrigatório) entra como não funcional, não como funcional."
+      ]
+    },
+    {
+      "heading": "Engenharia de requisitos e elicitação",
+      "items": [
+        "Atividades: elicitação/levantamento → análise e negociação → especificação → validação → gerenciamento (mudança + rastreabilidade).",
+        "Ela NÃO elimina volatilidade de requisitos, NÃO posterga o escopo e NÃO remove dependência entre requisito e regra de negócio.",
+        "Técnicas: entrevista, questionário, observação/etnografia, análise de documentos, prototipação, brainstorming, cenários, casos de uso, workshop estruturado.",
+        "JAD (Joint Application Development): sessão estruturada com facilitador e escriba, pauta e papéis definidos; promove COOPERAÇÃO entre usuários e desenvolvedores. Não é entrevista com questionário fechado nem reunião improvisada, e o condutor é o facilitador, não um usuário eleito.",
+        "Modelo de casos de uso é o instrumento típico para especificar requisitos FUNCIONAIS.",
+        "Rastreabilidade: para trás liga o requisito à sua origem; para frente liga ao projeto, ao código e ao caso de teste. Serve para análise de impacto e cobertura."
+      ]
+    },
+    {
+      "heading": "Ciclos de vida em uma linha cada",
+      "items": [
+        "Cascata: sequencial puro; fase encerrada antes da próxima; cliente no início e no fim; entrega única no final.",
+        "Modelo V: cascata com níveis de teste espelhados — requisitos↔aceitação, especificação de sistema↔teste de sistema, arquitetura↔integração, projeto detalhado↔unidade.",
+        "SEQUENCIAIS são cascata e V. Incremental, iterativo, espiral e ágil NÃO são.",
+        "Incremental: versões parciais úteis, funcionalidade acrescentada por incremento, retroalimentação pelo uso.",
+        "Iterativo: repete ciclos refinando o mesmo produto (nem toda iteração entrega incremento novo ao usuário).",
+        "Espiral (Boehm): iterativo com ANÁLISE DE RISCO explícita a cada volta — sem gestão de risco, não é espiral.",
+        "Prototipação: protótipo descartável (esclarece requisito e é jogado fora) ou evolutivo (vira o produto).",
+        "RAD: ciclos muito curtos, forte prototipação e reuso/ferramentas; ágil: iterativo + incremental, valor e colaboração sobre documentação.",
+        "Baseado em componentes: monta o sistema a partir de componentes prontos/reusáveis."
+      ]
+    },
+    {
+      "heading": "Processo Unificado / RUP",
+      "items": [
+        "Quatro fases, nesta ordem: concepção (inception), elaboração, construção, transição.",
+        "Concepção: escopo em alto nível, caso de negócio, riscos principais. Elaboração: DEFINIR A ARQUITETURA (é a resposta clássica) e mitigar riscos maiores. Construção: implementar o volume do sistema. Transição: implantar, treinar, liberar.",
+        "Três características canônicas: dirigido por casos de uso, centrado em arquitetura, iterativo e incremental.",
+        "NÃO é 'guiado por testes de aceitação' — esse é o distrator plantado.",
+        "Cada fase tem iterações e todas as disciplinas (requisitos, análise e projeto, implementação, teste, implantação, mais as de apoio) aparecem em proporções variáveis ao longo das fases.",
+        "O modelo de casos de uso representa o comportamento do sistema visto de FORA, e serve de ponto de partida para identificar classes conceituais — duas verdades independentes (não é relação de causa)."
+      ]
+    },
+    {
+      "heading": "Análise e projeto estruturado",
+      "items": [
+        "Três visões complementares: DFD (função/processo), DER (dado), diagrama de transição de estados (comportamento).",
+        "DFD tem quatro elementos: processo, fluxo de dados, depósito/armazenamento de dados e entidade externa. Não representa decisão nem sequência temporal.",
+        "Diagrama de contexto: nível mais alto, um único processo representando o sistema inteiro e as entidades externas ao redor.",
+        "Balanceamento: as entradas e saídas de um processo pai devem coincidir com as do diagrama que o detalha.",
+        "Dicionário de dados: descreve fluxos, depósitos e itens elementares (nome, composição, tipo, domínio, unidade). É o complemento textual do DFD.",
+        "DER: entidade, atributo, relacionamento, cardinalidade, identificador; entidade fraca depende da existência de outra; generalização/especialização em modelos ER estendidos.",
+        "Projeto estruturado usa diagrama de estrutura/módulos e busca alta coesão com baixo acoplamento."
+      ]
+    },
+    {
+      "heading": "Orientação a objetos: princípios, mecanismos e métricas",
+      "items": [
+        "Princípios cobrados: abstração, encapsulamento, herança, polimorfismo.",
+        "Encapsulamento: oculta estado e implementação atrás de uma interface. Herança: reuso e especialização entre classes. Abstração: representa só o essencial do domínio.",
+        "Polimorfismo: mesma mensagem, comportamentos diferentes conforme o tipo — substitui a cadeia se-então-senão por tipo e permite operações homônimas.",
+        "SOBRECARGA (overload): mesmo nome, assinaturas/parâmetros diferentes, MESMA classe. SOBRESCRITA (override): subclasse redefine método da superclasse com a MESMA assinatura.",
+        "Classe abstrata: não instanciável, apoia o polimorfismo, pode ter método sem implementação. Interface: contrato só de assinaturas.",
+        "Agregação e composição são relações todo-parte (composição é mais forte, com dependência de ciclo de vida); associação é o vínculo genérico.",
+        "Coesão: métrica INTRAMODULAR, diretamente proporcional à qualidade (quanto mais alta, melhor).",
+        "Acoplamento: métrica INTERMODULAR, inversamente proporcional à qualidade (quanto mais baixo, melhor).",
+        "MVC separa modelo (lógica/dados), visão (apresentação) e controlador (mediação entre os dois) — é a resposta para 'lógica separada da interface por uma camada controladora'."
+      ]
+    },
+    {
+      "heading": "UML: qual diagrama responde a qual pergunta",
+      "items": [
+        "UML 2.5: 14 tipos de diagrama — 7 estruturais (classes, objetos, componentes, estrutura composta, pacotes, implantação, perfil) e 7 comportamentais (casos de uso, atividades, máquina de estados, sequência, comunicação, tempo, visão geral de interação). Em UML 2.0 a contagem era 13 — cite a versão se a questão citar.",
+        "Fluxo de tarefas/processo, com paralelismo e decisão, inclusive entre papéis diferentes: ATIVIDADES.",
+        "Ordem temporal de mensagens entre objetos em um cenário: SEQUÊNCIA. Mesma informação com foco nos vínculos: COMUNICAÇÃO (chamada 'colaboração' na UML 1.x).",
+        "Estados e transições de um objeto ao longo da vida: MÁQUINA DE ESTADOS. Também serve para mapa de navegação de telas.",
+        "Funcionalidades vistas pelos atores, com include/extend/generalização: CASOS DE USO. O caso de uso descreve a INTERAÇÃO entre ator e sistema, em narrativa, com fluxo principal e alternativos — não o comportamento interno nem a troca de mensagens entre objetos.",
+        "Nós físicos, ambientes de execução e artefatos implantados: IMPLANTAÇÃO — é justamente o diagrama INADEQUADO para mapa de navegação de telas.",
+        "Estrutura estática de classes, atributos, operações e relacionamentos: CLASSES. Instâncias concretas em um instante: OBJETOS."
+      ]
+    },
+    {
+      "heading": "V&V, níveis e técnicas de teste",
+      "items": [
+        "Verificação: conformidade com a especificação, com evidência objetiva ('construindo certo'). Validação: atendimento à necessidade do usuário ('construindo a coisa certa'). Complementares, não exclusivas, e presentes em todo o ciclo de vida.",
+        "Nenhuma técnica de V&V assegura inexistência de erros — alternativa que promete isso está errada.",
+        "Estático NÃO executa: revisão por pares, walkthrough, inspeção formal, análise estática automatizada. Dinâmico executa.",
+        "Níveis: unidade → integração → sistema → aceitação. Aceitação é feita por/para o usuário final, antes da liberação (alfa no ambiente do fornecedor, beta no ambiente do cliente).",
+        "Caixa-branca: cobertura de comandos, de decisão/ramos, de condição, de caminhos, fluxo de dados, complexidade ciclomática. Caixa-preta: particionamento de equivalência, análise do valor limite, tabela de decisão, transição de estados, causa-efeito, aleatório.",
+        "Regressão: reexecuta testes aprovados após alteração; é dinâmica (nunca resposta de 'teste estático').",
+        "Mutação: gera mutantes (versões levemente alteradas), executa original e mutantes e compara resultados; mede quantos mutantes morrem.",
+        "Complexidade ciclomática: V(G) = E − N + 2 para grafo de fluxo conexo com uma entrada e uma saída (E = arcos, N = nós). Também é o número de regiões e o número de nós predicativos + 1. Exemplo cobrado: 12 arcos e 5 nós → 9.",
+        "Projetar teste = criar casos de teste, procedimentos e, quando cabe, automação. Não é escrever manual do usuário nem levantar requisitos.",
+        "TDD: escreve o teste que falha, faz passar, refatora (vermelho → verde → refatorar)."
+      ]
+    },
+    {
+      "heading": "Ambientes de desenvolvimento, padrões e SOLID",
+      "items": [
+        "Refatoração: muda a estrutura interna SEM alterar o comportamento externo. Alternativa que diga o contrário está errada.",
+        "Análise estática de código: métricas de qualidade sem executar (dependência entre componentes, complexidade, code smells). Cobertura de código: quanto do código foi exercitado pelos testes — não mede requisitos não funcionais.",
+        "Engenharia reversa: recupera modelo/projeto a partir do código existente. Controle de versão é outra família de ferramenta (CVS, Subversion centralizados; Git, Mercurial distribuídos).",
+        "Integração contínua: build + testes automatizados a cada integração no repositório. Entrega contínua: artefato sempre pronto para promoção, liberação decidida por pessoa. Implantação contínua: promoção automática até produção.",
+        "Contêiner: compartilha o kernel do hospedeiro, empacota aplicação + dependências, sobe rápido. Máquina virtual: sistema operacional próprio sobre hipervisor, mais isolamento e mais peso.",
+        "GoF: 23 padrões de projeto em três famílias — criacionais (5: Abstract Factory, Builder, Factory Method, Prototype, Singleton), estruturais (7: Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy) e comportamentais (11, entre eles Observer, Strategy, State, Command, Template Method, Iterator).",
+        "Distinções que a banca gosta: Adapter converte interface incompatível; Facade simplifica um subsistema; Proxy substitui o objeto controlando o acesso; Strategy troca o algoritmo; Observer notifica dependentes; Singleton garante instância única.",
+        "SOLID: responsabilidade única, aberto/fechado (aberto para extensão, fechado para modificação), substituição de Liskov, segregação de interfaces, inversão de dependência.",
+        "Ferramentas CASE e protótipos apoiam V&V — de forma opcional, não obrigatória."
+      ]
+    }
+  ],
+  "mentalModels": [
+    {
+      "title": "Verificação é contra o papel, validação é contra a pessoa",
+      "body": "Verificação compara o produto com o documento que o especifica: 'o que está aqui é o que foi pedido no papel?'. Validação compara o produto com a necessidade de quem vai usar: 'isso resolve o problema da pessoa?'. Sempre que o enunciado disser 'confirmar com evidência objetiva que os requisitos ESPECIFICADOS foram cumpridos', é verificação. Se disser 'atende às expectativas/necessidades do usuário', é validação."
+    },
+    {
+      "title": "Funcional é verbo, não funcional é advérbio",
+      "body": "Leia o requisito e pergunte onde está a informação. Se o núcleo é uma ação — selecionar, calcular, emitir, registrar —, é funcional. Se o núcleo é um qualificador da ação — em quanto tempo, com que disponibilidade, com qual criptografia, em qual plataforma, sob qual lei —, é não funcional. 'O usuário deve selecionar o cinema' é verbo puro: funcional. 'A velocidade deve ser calculada segundo v(t)=vo+at' também é verbo (um cálculo do sistema): funcional, mesmo parecendo técnico."
+    },
+    {
+      "title": "Sobrecarga é irmã, sobrescrita é filha",
+      "body": "Sobrecarga acontece entre métodos da MESMA classe, como irmãos que têm o mesmo nome e assinaturas diferentes. Sobrescrita acontece entre classes de gerações diferentes: a filha redefine o método da mãe mantendo a assinatura. Se o enunciado disser 'na mesma classe, com parâmetros diferentes', é sobrecarga; se disser 'redefine o método herdado', é sobrescrita. As duas são formas de polimorfismo, e é polimorfismo a resposta quando a pergunta é sobre o mecanismo geral."
+    },
+    {
+      "title": "Fila x círculo: como classificar qualquer modelo de processo",
+      "body": "Desenhe mentalmente o modelo. Se as fases formam uma FILA que anda para frente uma vez só, é sequencial: cascata e modelo V. Se formam um CÍRCULO que se repete, é iterativo/incremental: incremental, iterativo, espiral, RUP, ágil. Depois separe os círculos pelo detalhe distintivo: espiral tem risco em cada volta, RUP tem as quatro fases nomeadas, incremental entrega pedaço utilizável a cada rodada, ágil tem cadência curta e cliente dentro."
+    },
+    {
+      "title": "Coesão olha para dentro, acoplamento olha para fora",
+      "body": "Coesão mede o quanto um módulo cuida de uma única coisa: é INTRAmodular e você quer que seja ALTA. Acoplamento mede quanto um módulo depende dos outros: é INTERmodular e você quer que seja BAIXO. Logo coesão é diretamente proporcional à qualidade e acoplamento é inversamente proporcional. Toda alternativa que classificar as duas na mesma categoria ('ambas intramodulares') ou dar a ambas a mesma proporcionalidade está errada."
+    }
+  ],
+  "patterns": [
+    {
+      "title": "Teste e V&V são o segundo bloco mais pesado e caem em cinco recortes fixos",
+      "howToSpot": "Oito das 27 questões são de 5.4, e elas se repartem em: (a) definição de verificação x validação (psjpn2018-q45, prova07-q56); (b) o que é uma atividade do processo de teste, com distratores que descrevem levantamento de requisitos ou redação de manual do usuário (prova07-q16); (c) nome de técnica a partir da descrição — mutação, walkthrough (transp15-q24, transp23e6-q23); (d) nível de teste a partir de quem executa e quando (transp23e6-q31); (e) cálculo de complexidade ciclomática (transp15-q25). Nas de definição, o distrator típico é um absoluto: 'assegura a inexistência de erros', 'limita-se às etapas de implementação e testes', 'são de uso exclusivo entre si'.",
+      "evidence": [
+        "psjpn2018-q45",
+        "prova07-q16",
+        "prova07-q56",
+        "transp15-q24",
+        "transp15-q25",
+        "transp23e6-q23",
+        "transp23e6-q31"
+      ]
+    },
+    {
+      "title": "Orientação a objetos vem sempre como 'qual mecanismo resolve isso?'",
+      "howToSpot": "O enunciado descreve uma situação de codificação e pede o nome do recurso. Comportamento alternativo por tipo, substituindo se-então-senão: polimorfismo (prova6-q51). Várias operações com o mesmo nome, reduzindo acoplamento: polimorfismo (transp15-q29). Três métodos de mesmo nome e parâmetros diferentes na mesma classe: sobrecarga (transp23e6-q32). Os distratores são sempre os mesmos quatro vizinhos — encapsulamento, herança, agregação/composição e classe abstrata/interface —, cada um descrito corretamente, mas respondendo a outra pergunta. Repare que classe abstrata aparece como distrator de polimorfismo: ela APOIA o polimorfismo, mas não é o mecanismo pedido.",
+      "evidence": [
+        "prova6-q51",
+        "transp15-q29",
+        "transp23e6-q32"
+      ]
+    },
+    {
+      "title": "Enunciado-caso: um diálogo ou uma narrativa longa que esconde uma única palavra-chave",
+      "howToSpot": "A Cesgranrio monta cenários de meia página (o diálogo do diretor com o desenvolvedor, os casos de uso do relatório anual, o software de mísseis, a versão a ser aprovada por representantes dos usuários) e a resposta depende de uma frase só. Em psjpn2018-q51 a chave é dupla: 'versões sucessivas e cada vez mais completas' aponta incremental, e a recusa do especialista em risco elimina espiral. Em psjpn2018-q46 a chave é 'fluxo de tarefas' entre dois papéis, que dá atividades. Em transp23e6-q31, 'representantes dos usuários finais' + 'antes de disponibilizar no mercado' dá aceitação. Tática: leia o cenário buscando o termo técnico disfarçado e ignore o resto do texto.",
+      "evidence": [
+        "psjpn2018-q51",
+        "psjpn2018-q46",
+        "transp23e6-q31",
+        "transp23e6-q24"
+      ]
+    },
+    {
+      "title": "Requisito funcional x não funcional cobrado pela negativa",
+      "howToSpot": "As duas questões de requisitos com lista de exemplos usaram o mesmo formato: dão cinco sentenças e pedem a que NÃO é do tipo pedido (psjpn2018-q50, 'qual NÃO atende à solicitação de requisitos não funcionais') ou a única que é (transp23e6-q24, 'dentre os requisitos FUNCIONAIS está o de'). Todas as sentenças são requisitos válidos; muda só a classificação. Nas duas, o funcional foi a ação simples e curta no meio de restrições técnicas sofisticadas — 'o usuário deve selecionar o cinema' e 'a velocidade deve ser calculada segundo v(t)=vo+at' — enquanto criptografia AES-256, atraso máximo de um milissegundo, disponibilidade de 99,5%, câmeras de alta resolução e conformidade com legislação municipal eram todos não funcionais.",
+      "evidence": [
+        "psjpn2018-q50",
+        "transp23e6-q24"
+      ]
+    },
+    {
+      "title": "Formatos-armadilha: pergunta negativa e asserção-razão",
+      "howToSpot": "Duas formas de perder a questão que você sabia. (1) NEGATIVA — 'a característica que NÃO se aplica' ao Processo Unificado (prova07-q51), 'um diagrama NÃO adequado' a mapa de navegação (prova07-q67), 'a sentença que NÃO atende' ao pedido de requisitos não funcionais (psjpn2018-q50): quatro alternativas são verdadeiras e a resposta é a única falsa. Circule o NÃO e escreva V ou F ao lado de cada alternativa. (2) ASSERÇÃO-RAZÃO com PORQUE (prova07-q55): as duas frases eram verdadeiras — o modelo de casos de uso representa o comportamento visto de fora, e o modelo de classes conceituais pode partir dele —, mas a segunda não é a CAUSA da primeira. Julgue cada frase isoladamente antes de olhar o nexo; a decisão real fica entre 'justifica' e 'não justifica'.",
+      "evidence": [
+        "prova07-q51",
+        "prova07-q67",
+        "psjpn2018-q50",
+        "prova07-q55"
+      ]
+    },
+    {
+      "title": "Definição canônica contra o conceito vizinho: a errada descreve corretamente outra coisa",
+      "howToSpot": "Formato transversal a todos os anos. Pergunta-se o que o modelo cascata enfatiza e as erradas descrevem, corretamente, prototipação, espiral, incremental e métodos ágeis (prova07-q53). Pergunta-se o que um caso de uso narrativo representa e as erradas descrevem diagrama de estados e diagrama de sequência (transp15-q27). Pergunta-se a arquitetura com camada controladora entre lógica e interface e as erradas descrevem três camadas, cliente/servidor e SOA — todas definições válidas de outras coisas (prova6-q60). Mesmo padrão em transp23e6-q25, com iterativo e ágil oferecidos como 'sequenciais'. Tática: anote ao lado de cada alternativa de quem é aquela definição; se a pergunta era sobre cascata, sobra uma.",
+      "evidence": [
+        "prova07-q53",
+        "transp15-q27",
+        "prova6-q60",
+        "transp23e6-q25"
+      ]
+    },
+    {
+      "title": "Ambientes de desenvolvimento cai como definição invertida de ferramenta",
+      "howToSpot": "O subtópico 5.5 tem uma única questão no banco (prova07-q57) e cinco alternativas, cada uma com o nome de uma ferramenta seguido de uma descrição errada por inversão: refatoração descrita como algo que ALTERA o comportamento externo (é o contrário), integração contínua descrita como implantação em produção, engenharia reversa descrita como controle de versão, cobertura de código descrita como aderência a requisitos não funcionais. Como é subtópico pouco explorado e o edital de 2026 o mantém, é candidato natural a estreia com o mesmo formato: decore a definição de uma linha de cada ferramenta e procure a inversão.",
+      "evidence": [
+        "prova07-q57"
+      ]
+    },
+    {
+      "title": "A prova de 2023 encurtou tudo e virou definição direta",
+      "howToSpot": "As cinco questões de 2023 desta área não têm cálculo, não têm asserção-razão, não têm lista de itens I-II-III: são enunciados de dois a três períodos pedindo o nome canônico de um conceito (walkthrough, requisito funcional, modelos sequenciais, teste de aceitação, sobrecarga). Os distratores são conceitos vizinhos descritos corretamente. Para essa geração de prova, o que rende ponto é conseguir dizer em uma frase a definição oficial de cada termo do Anexo IV e saber diferenciá-lo do vizinho mais próximo — não profundidade em nenhum deles.",
+      "evidence": [
+        "transp23e6-q23",
+        "transp23e6-q24",
+        "transp23e6-q25",
+        "transp23e6-q31",
+        "transp23e6-q32"
+      ]
+    }
+  ],
+  "tactics": [
+    {
+      "title": "Antes de escolher o modelo de processo, procure a palavra que elimina",
+      "body": "Nas questões de ciclo de vida, cada modelo tem um marcador exclusivo no enunciado. 'Risco' → espiral. 'Versões sucessivas cada vez mais completas', 'entregas parciais' → incremental. 'Cada fase concluída antes da próxima' → cascata (ou V, se houver nível de teste espelhado). 'Concepção, elaboração, construção, transição' → Processo Unificado. 'Protótipo descartado depois' → prototipação. 'Componentes prontos' → baseado em componentes. Ache o marcador e não leia o resto do diálogo."
+    },
+    {
+      "title": "Em questão de UML, converta a pergunta em uma das cinco perguntas canônicas",
+      "body": "Toda questão de escolha de diagrama reduz a: quem faz o quê (casos de uso), em que ordem no tempo (sequência), qual o fluxo de trabalho com decisão e paralelismo (atividades), em que estado o objeto está (máquina de estados), onde isso roda fisicamente (implantação). Traduza o enunciado para uma dessas cinco e o diagrama sai direto. 'Fluxo de tarefas', 'colaboram em um fluxo que leva a um resultado' é sempre atividades, nunca sequência."
+    },
+    {
+      "title": "Marque V/F ao lado de cada alternativa quando o enunciado tem NÃO",
+      "body": "As questões negativas desta área (Processo Unificado, diagrama de navegação, requisito não funcional) têm quatro alternativas verdadeiras. Se você tentar 'sentir' a resposta, marca a primeira que reconhece — e erra. Passe as cinco escrevendo V ou F conforme o critério do enunciado; a resposta é a única F. Custa vinte segundos e converte quase toda questão negativa em ponto."
+    },
+    {
+      "title": "Desconfie de absolutos e de exclusividades nas alternativas de V&V",
+      "body": "Nas questões de verificação e validação, os distratores mais longos costumam trazer 'asseguram a inexistência de erros', 'são de uso exclusivo entre si', 'limitam-se às etapas de implementação e de testes', 'aplicadas somente após o projeto'. Nenhuma das quatro é verdade: V&V não prova ausência de defeito, verificação e validação são complementares e as duas atravessam todo o ciclo de vida. A alternativa correta nessas questões tende a ser a mais modesta ('são opcionalmente auxiliadas por ferramentas CASE ou protótipos')."
+    },
+    {
+      "title": "Guarde as duas contas que a área usa, e faça-as na segunda passada",
+      "body": "Só duas questões do banco exigem cálculo: complexidade ciclomática (V(G) = E − N + 2, com 12 arcos e 5 nós dando 9) e uma de indicadores em que era preciso normalizar erros por mês contra erros por semana antes de comparar (prova07-q18). Nas duas, o risco é de pressa, não de conteúdo. Resolva primeiro todas as de definição e volte a essas com tempo, conferindo se as unidades de tempo foram igualadas."
+    },
+    {
+      "title": "Estude 5.5 e os padrões de projeto: é a fronteira barata da prova",
+      "body": "O banco tem uma única questão de ambientes de desenvolvimento, nenhuma de CI/CD moderno, nenhuma de contêiner, nenhuma de padrão GoF e nenhuma de SOLID — todos temas que caberiam em 5.3 e 5.5 e que hoje são padrão de mercado. Como a prova de 2023 pediu definição curta, uma frase decorada por conceito (integração x entrega x implantação contínua, contêiner x máquina virtual, Adapter x Facade x Proxy, aberto/fechado) tem alto retorno por minuto de estudo."
+    }
+  ],
+  "trapWords": [
+    {
+      "term": "verificação",
+      "confusedWith": "validação",
+      "distinction": "Verificação confirma, com evidência objetiva, que o produto cumpre os requisitos ESPECIFICADOS ('construindo certo'). Validação confirma que o produto atende à necessidade do usuário ('construindo a coisa certa'). São complementares, não excludentes."
+    },
+    {
+      "term": "requisito não funcional",
+      "confusedWith": "requisito funcional",
+      "distinction": "Não funcional é atributo de qualidade ou restrição (desempenho, disponibilidade, segurança, portabilidade, conformidade legal). Funcional é a ação ou o cálculo que o sistema executa — inclusive quando a ação é uma fórmula matemática."
+    },
+    {
+      "term": "sobrecarga (overload)",
+      "confusedWith": "sobrescrita (override)",
+      "distinction": "Sobrecarga: mesmo nome, parâmetros diferentes, na MESMA classe. Sobrescrita: subclasse redefine o método da superclasse com a MESMA assinatura. As duas são manifestações de polimorfismo."
+    },
+    {
+      "term": "polimorfismo",
+      "confusedWith": "classe abstrata / herança",
+      "distinction": "Polimorfismo é o mecanismo que faz a mesma mensagem produzir comportamentos diferentes por tipo. Classe abstrata e herança são estruturas que o VIABILIZAM, mas não são a resposta quando se pergunta pelo recurso que substitui a lógica condicional por tipo."
+    },
+    {
+      "term": "coesão",
+      "confusedWith": "acoplamento",
+      "distinction": "Coesão é intramodular e você quer ALTA (diretamente proporcional à qualidade). Acoplamento é intermodular e você quer BAIXO (inversamente proporcional à qualidade)."
+    },
+    {
+      "term": "modelo incremental",
+      "confusedWith": "modelo iterativo",
+      "distinction": "Incremental acrescenta pedaços utilizáveis do produto a cada rodada. Iterativo repete ciclos refinando o mesmo produto. Na prática se combinam, mas em prova o incremental é o que 'entrega versões sucessivas cada vez mais completas'."
+    },
+    {
+      "term": "modelo espiral",
+      "confusedWith": "modelo incremental / RAD",
+      "distinction": "O que define o espiral é a análise formal de RISCO em cada volta. Se o enunciado explicitamente descarta o tratamento de riscos, não é espiral. RAD é ciclo curtíssimo com prototipação e reuso intensivos."
+    },
+    {
+      "term": "modelo em V",
+      "confusedWith": "modelo iterativo",
+      "distinction": "O V é sequencial: a mesma fila da cascata, com cada fase de construção espelhada em um nível de teste (requisitos↔aceitação, arquitetura↔integração, projeto detalhado↔unidade). Ele NÃO é iterativo."
+    },
+    {
+      "term": "diagrama de atividades",
+      "confusedWith": "diagrama de sequência",
+      "distinction": "Atividades modela fluxo de tarefas, com decisões e paralelismo, mesmo entre papéis distintos. Sequência modela a ordem temporal das mensagens trocadas entre objetos em um cenário específico."
+    },
+    {
+      "term": "diagrama de implantação",
+      "confusedWith": "diagrama de componentes",
+      "distinction": "Implantação mostra nós físicos/ambientes de execução e onde os artefatos são implantados; componentes mostra as unidades de software e suas interfaces. Implantação é o diagrama tipicamente inadequado para mapa de navegação de telas."
+    },
+    {
+      "term": "teste estático",
+      "confusedWith": "teste de regressão",
+      "distinction": "Estático não executa o software: revisão, walkthrough, inspeção, análise automatizada de código. Regressão executa o software depois de uma mudança — é dinâmico, e por isso nunca é exemplo de técnica estática."
+    },
+    {
+      "term": "teste de aceitação",
+      "confusedWith": "teste de sistema",
+      "distinction": "Sistema valida o produto inteiro do ponto de vista técnico, conduzido pela equipe de teste. Aceitação é conduzido por/para representantes dos usuários, decidindo a liberação; alfa ocorre no ambiente do fornecedor, beta no do cliente."
+    },
+    {
+      "term": "cobertura de código",
+      "confusedWith": "análise estática de código",
+      "distinction": "Cobertura mede quanto do código foi exercitado durante a execução dos testes (linhas, ramos, caminhos). Análise estática extrai métricas sem executar — complexidade, dependências, code smells. Nenhuma das duas mede aderência a requisitos não funcionais."
+    },
+    {
+      "term": "refatoração",
+      "confusedWith": "reengenharia / engenharia reversa",
+      "distinction": "Refatorar muda a estrutura interna PRESERVANDO o comportamento externo. Engenharia reversa recupera modelos a partir do código; reengenharia reconstrói o sistema. Nenhuma delas é controle de versão."
+    },
+    {
+      "term": "integração contínua",
+      "confusedWith": "entrega e implantação contínuas",
+      "distinction": "Integração contínua = build e testes automáticos a cada integração no repositório. Entrega contínua = artefato sempre pronto, promoção decidida por pessoa. Implantação contínua = promoção automática até produção."
+    }
+  ]
+}
