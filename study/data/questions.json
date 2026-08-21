@@ -1,4 +1,1181 @@
 {
   "version": 1,
-  "questions": []
+  "questions": [
+    {
+      "id": "prova6-q21",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 21
+      },
+      "subtopic": "2.4 PMBOK 7ª edição",
+      "stem": "Segundo o PMBOK 4ª Edição, projetos se caracterizam como um esforço temporário com a finalidade de criar um produto, serviço ou resultado exclusivo. Conforme esse guia, os projetos, grandes ou pequenos, simples ou complexos, podem ser mapeados em uma estrutura de ciclo de vida genérico que compreende:",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Início do projeto, Organização e preparação, Execução do trabalho do projeto e Encerramento do projeto",
+          "key": "A"
+        },
+        {
+          "text": "Início do projeto, Planejamento, Construção, Testes e Encerramento do projeto",
+          "key": "B",
+          "explanation": "Mistura fases de ciclo de vida de desenvolvimento de software (construção, testes) com a estrutura genérica de projeto do PMBOK, que não usa essa nomenclatura."
+        },
+        {
+          "text": "Contratação, Levantamento de requisitos, Análise, Projeto, Execução e Homologação",
+          "key": "C",
+          "explanation": "Descreve etapas de um projeto de desenvolvimento de sistemas, não a estrutura de ciclo de vida genérica de projetos do PMBOK."
+        },
+        {
+          "text": "Contratação, Preparação, Planejamento, Execução, Avaliação e Fechamento",
+          "key": "D",
+          "explanation": "Não corresponde às fases genéricas do PMBOK; mistura termos de contratação/avaliação que não fazem parte da estrutura padrão."
+        },
+        {
+          "text": "Planejamento, Execução, Verificação e Ação",
+          "key": "E",
+          "explanation": "Corresponde ao ciclo PDCA (Planejar-Executar-Verificar-Agir), usado em qualidade/melhoria contínua, não ao ciclo de vida de projetos do PMBOK."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "gestao-proj",
+      "correctKey": "A",
+      "explanationSummary": "O PMBOK descreve a estrutura de ciclo de vida genérica de qualquer projeto como quatro fases sequenciais: início do projeto, organização e preparação, execução do trabalho do projeto e encerramento do projeto."
+    },
+    {
+      "id": "prova6-q22",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 22
+      },
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "Um gerente foi incumbido de executar o projeto interno da implantação de um serviço de atendimento a clientes. Ao iniciar a criação do termo de abertura, detectou que a Declaração de Trabalho do Projeto não continha a informação esperada. Segundo o PMBOK 4ª Edição, esse documento deve informar o(a)",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "business case, a descrição do escopo do produto e o plano estratégico",
+          "key": "A",
+          "explanation": "O business case é um documento de entrada separado usado para justificar o projeto; não é um dos três elementos referenciados pela Declaração de Trabalho."
+        },
+        {
+          "text": "necessidade de negócios, a descrição inicial de requisitos e o plano estratégico",
+          "key": "B",
+          "explanation": "'Descrição inicial de requisitos' não é um dos elementos citados pelo PMBOK para esse documento."
+        },
+        {
+          "text": "necessidade de negócios, a descrição do escopo do produto e o plano estratégico",
+          "key": "C"
+        },
+        {
+          "text": "identificação das partes interessadas, o business case e a descrição de escopo do produto",
+          "key": "D",
+          "explanation": "Identificação das partes interessadas é tratada em outro processo (Identificar as Partes Interessadas), não na Declaração de Trabalho."
+        },
+        {
+          "text": "identificação das partes interessadas, a descrição inicial de requisitos e a descrição do escopo do produto",
+          "key": "E",
+          "explanation": "Nem identificação das partes interessadas nem descrição inicial de requisitos fazem parte da Declaração de Trabalho do Projeto."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "gestao-proj",
+      "correctKey": "C",
+      "explanationSummary": "A Declaração de Trabalho do Projeto (Project Statement of Work) referencia, segundo o PMBOK, a necessidade de negócios, a descrição do escopo do produto e o plano estratégico da organização."
+    },
+    {
+      "id": "prova6-q24",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 24
+      },
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "De acordo com o PMBOK 4ª Edição, o plano de gerenciamento do projeto é progressivamente desenvolvido ao longo do projeto. PORQUE Atualizações no plano de gerenciamento de projeto podem ser feitas no processo Realizar o Controle Integrado de Mudanças. Analisando-se as afirmações acima, conclui-se que",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "as duas afirmações são verdadeiras, e a segunda justifica a primeira.",
+          "key": "A"
+        },
+        {
+          "text": "as duas afirmações são verdadeiras, e a segunda não justifica a primeira.",
+          "key": "B",
+          "explanation": "A segunda afirmação não é apenas um fato paralelo: ela descreve o mecanismo pelo qual a elaboração progressiva do plano de fato ocorre, portanto justifica a primeira."
+        },
+        {
+          "text": "a primeira afirmação é verdadeira, e a segunda é falsa.",
+          "key": "C",
+          "explanation": "A segunda afirmação também é verdadeira (é exatamente o processo do PMBOK que rege atualizações do plano)."
+        },
+        {
+          "text": "a primeira afirmação é falsa, e a segunda é verdadeira.",
+          "key": "D",
+          "explanation": "A primeira afirmação é verdadeira (elaboração progressiva é uma característica central do plano de gerenciamento do projeto no PMBOK)."
+        },
+        {
+          "text": "as duas afirmações são falsas.",
+          "key": "E",
+          "explanation": "Ambas as afirmações são verdadeiras segundo o PMBOK."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "gestao-proj",
+      "correctKey": "A",
+      "explanationSummary": "Ambas as afirmações são verdadeiras: o plano de gerenciamento do projeto é de fato elaborado progressivamente, e é exatamente por meio do Controle Integrado de Mudanças que as atualizações/revisões aprovadas são incorporadas ao plano ao longo do projeto — esse é o mecanismo formal que explica/justifica a elaboração progressiva."
+    },
+    {
+      "id": "prova6-q26",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 26
+      },
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "Segundo o PMBOK 4ª Edição, durante o processo Desenvolver o cronograma, é necessário realizar a Análise da Rede do Cronograma. Para isso, devem ser utilizadas técnicas analíticas apropriadas que permitam gerar corretamente o cronograma do projeto. A esse respeito, considere as seguintes técnicas analíticas: I - Método da cadeia crítica; II - Análise do cenário e-se; III - Nivelamento de recursos. É aplicável à Análise da Rede do Cronograma a técnica mencionada em",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "I, apenas.",
+          "key": "A",
+          "explanation": "Restringe indevidamente a apenas uma técnica, quando as três citadas são aplicáveis."
+        },
+        {
+          "text": "III, apenas.",
+          "key": "B",
+          "explanation": "Também restringe indevidamente a apenas uma técnica."
+        },
+        {
+          "text": "I e II, apenas.",
+          "key": "C",
+          "explanation": "Exclui indevidamente o nivelamento de recursos, que também é uma técnica aplicável à análise da rede do cronograma."
+        },
+        {
+          "text": "II e III, apenas.",
+          "key": "D",
+          "explanation": "Exclui indevidamente o método da cadeia crítica, que também é uma técnica aplicável."
+        },
+        {
+          "text": "I, II e III.",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "gestao-proj",
+      "correctKey": "E",
+      "explanationSummary": "No PMBOK 4ª edição, a Análise da Rede do Cronograma engloba técnicas como o método do caminho crítico, o método da cadeia crítica, a análise de cenário e-se ('what-if') e técnicas de otimização/nivelamento de recursos. As três técnicas listadas (cadeia crítica, cenário e-se, nivelamento de recursos) são todas aplicáveis."
+    },
+    {
+      "id": "prova6-q27",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 27
+      },
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "Na etapa de encerramento de um projeto, o gerente deve analisar o plano de gerenciamento do projeto, as entregas aceitas e os ativos de processos organizacionais. Por meio da opinião especializada, pode(m) ser produzida(s): I - a transição de produto, serviço ou resultado final; II - as atualizações de ativos de processos organizacionais; III - o registro da situação da configuração final. O gerente deve produzir o que se apresenta em",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "I, apenas.",
+          "key": "A",
+          "explanation": "Omite indevidamente a atualização de ativos de processos organizacionais, que também é uma saída do encerramento."
+        },
+        {
+          "text": "III, apenas.",
+          "key": "B",
+          "explanation": "'Registro da situação da configuração final' não é uma saída formalmente definida do processo de encerramento no PMBOK 4; e omite a transição do produto/serviço, que é saída central desse processo."
+        },
+        {
+          "text": "I e II, apenas.",
+          "key": "C"
+        },
+        {
+          "text": "II e III, apenas.",
+          "key": "D",
+          "explanation": "Inclui indevidamente III (não é saída padrão do encerramento) e omite I, que é a saída principal do processo."
+        },
+        {
+          "text": "I, II e III.",
+          "key": "E",
+          "explanation": "Inclui III, que não corresponde a uma saída formalmente prevista no processo de encerramento do PMBOK 4."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "medium",
+        "notes": "ITTOs detalhados do PMBOK 4 (edição descontinuada) não puderam ser conferidos em fonte primária; derivação baseada em conhecimento geral do processo Close Project or Phase."
+      },
+      "area": "gestao-proj",
+      "correctKey": "C",
+      "explanationSummary": "No processo Encerrar o Projeto ou Fase do PMBOK 4, a única ferramenta/técnica é a opinião especializada, e as saídas são a transição do produto/serviço/resultado final (I) e as atualizações de ativos de processos organizacionais (II, que incluem arquivos do projeto, documentos de encerramento e informações históricas)."
+    },
+    {
+      "id": "prova6-q28",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 28
+      },
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "O gerenciamento de projeto exige, para sua boa realização, o conhecimento não só do processo de gerenciamento e suas atividades, mas também das ferramentas e técnicas apropriadas para serem utilizadas em cada Processo. O PMBOK 4ª Edição é um guia que fornece essa informação. Com base nesse guia, considere as ferramentas e técnicas listadas a seguir: I - Análise da Variação; II - Decomposição; III - Entrevistas; IV - Oficinas. Fazem parte do processo Coletar os Requisitos apenas os que se apresentam em",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "I e II",
+          "key": "A",
+          "explanation": "Análise da variação e decomposição não são técnicas do processo Coletar os Requisitos."
+        },
+        {
+          "text": "I e III",
+          "key": "B",
+          "explanation": "Inclui análise da variação, que não pertence a esse processo."
+        },
+        {
+          "text": "I e IV",
+          "key": "C",
+          "explanation": "Inclui análise da variação, que não pertence a esse processo."
+        },
+        {
+          "text": "II e IV",
+          "key": "D",
+          "explanation": "Decomposição é técnica de Criar a EAP, não de Coletar os Requisitos."
+        },
+        {
+          "text": "III e IV",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "gestao-proj",
+      "correctKey": "E",
+      "explanationSummary": "O processo Coletar os Requisitos do PMBOK utiliza, entre outras, entrevistas e oficinas facilitadas (workshops) como técnicas de coleta. Análise da variação é técnica de controle de escopo/custo/cronograma, e decomposição é técnica de criação da EAP, não de coleta de requisitos."
+    },
+    {
+      "id": "prova6-q29",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 29
+      },
+      "subtopic": "2.5 Projetos e a organização",
+      "stem": "Segundo o PMBOK 4ª Edição, as estruturas organizacionais influenciam na forma como os projetos são executados. Nesse contexto, na estrutura organizacional",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "funcional, quem controla o orçamento é o gerente de projeto.",
+          "key": "A",
+          "explanation": "Na estrutura funcional, quem controla o orçamento é o gerente funcional, não o gerente de projeto."
+        },
+        {
+          "text": "matricial fraca, a autoridade do gerente de projeto é de considerável a total.",
+          "key": "B",
+          "explanation": "Na matricial fraca, a autoridade do gerente de projeto é limitada, não de considerável a total (isso é típico da matricial forte/projetizada)."
+        },
+        {
+          "text": "matricial balanceada, o pessoal administrativo da gerência do projeto trabalha para o mesmo em tempo integral.",
+          "key": "C",
+          "explanation": "Na matricial balanceada, o pessoal administrativo da gerência de projetos trabalha em tempo parcial, não integral."
+        },
+        {
+          "text": "matricial forte, a disponibilidade de recurso é de moderada a alta.",
+          "key": "D"
+        },
+        {
+          "text": "projetizada, o papel de gerente de projeto é de dedicação parcial.",
+          "key": "E",
+          "explanation": "Na estrutura projetizada, o papel do gerente de projeto é de dedicação integral (tempo total), não parcial."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "gestao-proj",
+      "correctKey": "D",
+      "explanationSummary": "Na tabela de estruturas organizacionais do PMBOK, a estrutura matricial forte apresenta disponibilidade de recursos de moderada a alta, característica de um ambiente onde o gerente de projeto tem papel dedicado e considerável autoridade."
+    },
+    {
+      "id": "prova6-q30",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 30
+      },
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "Os resultados de um projeto podem requerer atualizações no planejamento. Essas alterações podem mudar durações, produtividade, recursos e causar riscos imprevistos. Quanto ao Grupo de processos de execução descrito no PMBOK 4ª Edição, tem-se que",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Orientar e gerenciar a execução do projeto possui como entrada as métricas de qualidade.",
+          "key": "A",
+          "explanation": "As métricas de qualidade não constam entre as entradas do processo Orientar e Gerenciar a Execução do Projeto."
+        },
+        {
+          "text": "Mobilizar a equipe do projeto produz como uma de suas saídas o calendário dos recursos.",
+          "key": "B"
+        },
+        {
+          "text": "Desenvolver a equipe do projeto possui como uma de suas entradas os fatores ambientais da empresa.",
+          "key": "C",
+          "explanation": "Fatores ambientais da empresa não constam entre as entradas do processo Desenvolver a Equipe do Projeto (cujas entradas são designações de pessoal, plano de gerenciamento e calendários de recursos)."
+        },
+        {
+          "text": "Gerenciar a equipe do projeto inclui o processo de confirmação da disponibilidade de recursos humanos.",
+          "key": "D",
+          "explanation": "A confirmação da disponibilidade de recursos humanos é parte de Mobilizar a Equipe, não de Gerenciar a Equipe do Projeto."
+        },
+        {
+          "text": "Gerenciar as expectativas das partes interessadas inclui como uma de suas entradas os pedidos de mudança.",
+          "key": "E",
+          "explanation": "Pedidos de mudança são saída (não entrada) do processo Gerenciar as Expectativas das Partes Interessadas."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "gestao-proj",
+      "correctKey": "B",
+      "explanationSummary": "O processo Mobilizar (Contratar/Designar) a Equipe do Projeto tem como uma de suas saídas o calendário dos recursos (resource calendars), além das designações de pessoal do projeto."
+    },
+    {
+      "id": "prova6-q41",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 41
+      },
+      "subtopic": "6.3 Desenho e planejamento de interação em aplicações web",
+      "stem": "Em Projeto de Interfaces de Software, estilos de interação são as formas por meio das quais os usuários se comunicam ou interagem com os sistemas computacionais. Dentre as formas abaixo, qual NÃO representa um estilo de interação de uma interface de software?",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Linguagem de Comandos",
+          "key": "A",
+          "explanation": "Linguagem de comandos é um estilo de interação clássico e reconhecido (ex.: linhas de comando)."
+        },
+        {
+          "text": "Linguagem Natural",
+          "key": "B",
+          "explanation": "Linguagem natural é um estilo de interação reconhecido (ex.: assistentes conversacionais)."
+        },
+        {
+          "text": "Linguagem Polimórfica",
+          "key": "C"
+        },
+        {
+          "text": "WIMP (Windows, Icons, Menus, and Pointers)",
+          "key": "D",
+          "explanation": "WIMP é um estilo de interação clássico baseado em janelas, ícones, menus e apontador."
+        },
+        {
+          "text": "WYSIWYG (What You See Is What You Get)",
+          "key": "E",
+          "explanation": "WYSIWYG é um estilo de interação amplamente reconhecido em editores visuais."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "ux",
+      "correctKey": "C",
+      "explanationSummary": "'Linguagem Polimórfica' não é um estilo de interação reconhecido na literatura de IHC (polimorfismo é um conceito de orientação a objetos, não de interação); é a alternativa fabricada para a questão."
+    },
+    {
+      "id": "prova6-q44",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 44
+      },
+      "subtopic": "1.19 Integração dos dados (ETL, Transferência de Arquivos, Integração via Base de Dados)",
+      "stem": "Os Sistemas de Informação, já há algum tempo, se beneficiam de ferramentas de troca eletrônica de documentos, utilizando um padrão de comunicação chamado Intercâmbio Eletrônico de Dados (EDI – Electronic Data Interchange). Nesse contexto, um cenário que NÃO integra essa abordagem é que",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "a implementação de sistemas EDI tradicionais exigia, antes do surgimento da Internet, a utilização de uma rede de valor agregado (VAN – Value Added Network), que possui um custo alto para ser disponibilizada, o que limitou a popularização de seu uso.",
+          "key": "A",
+          "explanation": "Descrição correta e histórica das VANs como pré-requisito caro do EDI tradicional pré-Internet."
+        },
+        {
+          "text": "a utilização da tecnologia Web para sistemas EDI ainda se revela como uma lacuna devido às questões relativas à segurança, confiabilidade e disponibilidade, além de inviabilizar a implantação de funções adicionais, tais como, colaboração e fluxo de trabalho.",
+          "key": "B"
+        },
+        {
+          "text": "os documentos rotineiros, como, por exemplo, os pedidos de compra, são trocados automaticamente por parceiros de negócio, diminuindo em muito a possibilidade de erros, reduzindo o tempo de ciclo da operação e promovendo parcerias estratégicas.",
+          "key": "C",
+          "explanation": "Descrição correta de um benefício real do EDI (troca automática de documentos rotineiros)."
+        },
+        {
+          "text": "um dos importantes componentes de um EDI é o seu tradutor, que converte dados em um formato padrão antes de eles serem transmitidos; em seguida, o formulário padrão é convertido nos dados originais, viabilizando a troca dos documentos.",
+          "key": "D",
+          "explanation": "Descrição correta do papel do tradutor EDI na conversão de/para formato padrão."
+        },
+        {
+          "text": "um dos requisitos para a implantação dos EDI tradicionais é a necessidade de que os parceiros de negócio que implantarão essa abordagem de troca de documentos utilizem padrões de formatação de dados compatíveis, como, por exemplo, o ANSI X.12.",
+          "key": "E",
+          "explanation": "Descrição correta da necessidade de padrões de formatação compatíveis, como o ANSI X.12."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "arq-dados",
+      "correctKey": "B",
+      "explanationSummary": "É a única afirmação incorreta: a tecnologia Web aplicada ao EDI (Web EDI) na verdade viabiliza (não inviabiliza) funções adicionais como colaboração e fluxo de trabalho, tornando o EDI mais acessível a empresas menores."
+    },
+    {
+      "id": "prova6-q46",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 46
+      },
+      "subtopic": "7.7 Modelagem e otimização de bases de dados multidimensionais",
+      "stem": "Em data warehouses, medidas servem para quantificar os dados dos fatos que compõem a sua base de dados. Considere a tabela de dados abaixo (colunas: Recurso, Junho, Julho, Agosto, Percentual trimestral; linhas: Roldana 3/11/2/19,05%; Broca 15/1/10/30,95%; Cunha 9/8/0/50,00%). Das medidas apresentadas, quantas delas podem ser consideradas não aditivas?",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "0",
+          "key": "A",
+          "explanation": "Ignora que percentuais são classicamente não aditivos em modelagem dimensional."
+        },
+        {
+          "text": "3",
+          "key": "B"
+        },
+        {
+          "text": "4",
+          "key": "C",
+          "explanation": "Contaria uma medida além das 3 linhas de percentual, sem justificativa (as colunas de quantidade mensal são aditivas)."
+        },
+        {
+          "text": "9",
+          "key": "D",
+          "explanation": "Contaria todas as 9 células de quantidade mensal como não aditivas, mas essas são aditivas."
+        },
+        {
+          "text": "12",
+          "key": "E",
+          "explanation": "Contaria todas as 12 células da tabela como não aditivas, o que está incorreto."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "analise-dados",
+      "correctKey": "B",
+      "explanationSummary": "As medidas de quantidade por mês (Junho, Julho, Agosto) são aditivas (podem ser somadas ao longo do tempo ou entre recursos). A medida 'Percentual trimestral' é não aditiva, pois percentuais não podem ser somados de forma significativa; como há uma linha desse percentual para cada um dos 3 recursos, existem exatamente 3 valores não aditivos na tabela."
+    },
+    {
+      "id": "prova6-q47",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 47
+      },
+      "subtopic": "7.6 Conceitos de data warehouse",
+      "stem": "A área de armazenamento temporário (ODS – Staging Area) é um componente indispensável em um data warehouse, e sua utilização é uma decisão de projeto. PORQUE A área de armazenamento dinâmico de dados (DDS – Dynamic Data Storage) consiste em um espaço de armazenamento volátil onde informações correntes de dados são armazenados antes de serem carregadas para o data warehouse. Analisando-se as afirmações acima, conclui-se que",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "as duas afirmações são verdadeiras, e a segunda justifica a primeira.",
+          "key": "A",
+          "explanation": "Pressupõe que ambas são verdadeiras, mas ambas contêm problemas conceituais/terminológicos."
+        },
+        {
+          "text": "as duas afirmações são verdadeiras, e a segunda não justifica a primeira.",
+          "key": "B",
+          "explanation": "Também pressupõe que ambas são verdadeiras."
+        },
+        {
+          "text": "a primeira afirmação é verdadeira, e a segunda é falsa.",
+          "key": "C",
+          "explanation": "A primeira afirmação não é verdadeira, pois é contraditória em si mesma (indispensável vs. decisão de projeto)."
+        },
+        {
+          "text": "a primeira afirmação é falsa, e a segunda é verdadeira.",
+          "key": "D",
+          "explanation": "A primeira não é verdadeira, e a segunda também apresenta uma definição inconsistente."
+        },
+        {
+          "text": "as duas afirmações são falsas.",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "medium",
+        "notes": "Terminologia 'DDS' não é padrão amplamente documentada; conclusão baseada na contradição interna da afirmação 1 e na natureza não-canônica da definição da afirmação 2."
+      },
+      "area": "analise-dados",
+      "correctKey": "E",
+      "explanationSummary": "A primeira afirmação é falsa: a área de staging (ODS) é um componente opcional/de projeto em arquiteturas de data warehouse, não indispensável — chamá-la simultaneamente de 'indispensável' e de 'decisão de projeto' é contraditório. A segunda também é falsa: 'DDS' não é um conceito padrão distinto da própria staging area; a definição apresentada mistura/reinventa terminologia de forma incorreta."
+    },
+    {
+      "id": "prova6-q49",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 49
+      },
+      "subtopic": "7.5 Conceitos de OLAP e suas operações",
+      "stem": "Ferramentas OLAP (On-Line Analytical Processing) permitem aos seus usuários analisar tendências em bases de dados transacionais. Para implementá-las, diversas tecnologias com características diversas estão à disposição dos analistas. Sendo assim, associe as tecnologias I-MOLAP, II-HOLAP, III-ROLAP às características: P - Permitem acesso a bases de dados armazenados em estruturas multidimensionais apenas; Q - Evitam problemas de escalabilidade, tendo em vista que os dados estão armazenados em computadores pessoais; R - Constroem bases multidimensionais em sistemas de bancos de dados relacionais; S - Permitem acesso tanto a bases relacionais quanto multidimensionais. Estão corretas as associações:",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "I – P, II – R, III – Q",
+          "key": "A",
+          "explanation": "Associa II (HOLAP) a R e III (ROLAP) a Q, invertendo as características corretas de HOLAP e ROLAP."
+        },
+        {
+          "text": "I – P, II – S, III – R",
+          "key": "B"
+        },
+        {
+          "text": "I – R, II – S, III – Q",
+          "key": "C",
+          "explanation": "Associa I (MOLAP) a R, que é característica de ROLAP, não de MOLAP."
+        },
+        {
+          "text": "I – S, II – P, III – Q",
+          "key": "D",
+          "explanation": "Associa I (MOLAP) a S, que é característica de HOLAP (híbrido), não de MOLAP."
+        },
+        {
+          "text": "I – S, II – R, III – P",
+          "key": "E",
+          "explanation": "Inverte completamente as três associações corretas."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "analise-dados",
+      "correctKey": "B",
+      "explanationSummary": "MOLAP (I) armazena e acessa dados apenas em estruturas multidimensionais próprias (P). HOLAP (II) é híbrido, permitindo acesso tanto a bases relacionais quanto multidimensionais (S). ROLAP (III) constrói a visão multidimensional sobre um SGBD relacional convencional (R)."
+    },
+    {
+      "id": "prova6-q51",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 51
+      },
+      "subtopic": "5.3 Modelos, metodologias, técnicas e ferramentas de análise e projeto (estruturado e orientado a objetos)",
+      "stem": "Em um projeto de software orientado a objetos, surgiu a necessidade de modelar um certo comportamento alternativo com base no tipo específico de uma determinada entidade. Procedimento similar foi desenvolvido no passado, usando lógica condicional através dos comandos se – então – senão em uma linguagem de programação estruturada. Qual recurso o programador deverá utilizar para solucionar a questão nesse novo projeto?",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Agregação",
+          "key": "A",
+          "explanation": "Agregação modela relação todo-parte entre objetos, não substitui lógica condicional por tipo."
+        },
+        {
+          "text": "Classes Abstratas",
+          "key": "B",
+          "explanation": "Classes abstratas são um mecanismo estrutural que apoia o polimorfismo, mas não são, por si só, o recurso que resolve a questão do comportamento alternativo por tipo."
+        },
+        {
+          "text": "Encapsulamento",
+          "key": "C",
+          "explanation": "Encapsulamento trata do ocultamento de estado/implementação, não da seleção de comportamento por tipo."
+        },
+        {
+          "text": "Polimorfismo",
+          "key": "D"
+        },
+        {
+          "text": "Composição",
+          "key": "E",
+          "explanation": "Composição também modela relação todo-parte (mais forte que agregação), não substitui lógica condicional por tipo."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "eng-sw",
+      "correctKey": "D",
+      "explanationSummary": "O polimorfismo permite que o comportamento alternativo dependa do tipo concreto do objeto em tempo de execução, substituindo a lógica condicional 'se-então-senão' baseada em tipo por despacho polimórfico de métodos."
+    },
+    {
+      "id": "prova6-q53",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 53
+      },
+      "subtopic": "7.6 Conceitos de data warehouse",
+      "stem": "Entre os requisitos que devem ser levantados na construção de um data warehouse se inclui a latência de dados, que descreve a(o)",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "rapidez de entrega dos dados ao usuário final",
+          "key": "A"
+        },
+        {
+          "text": "rapidez da carga inicial do data warehouse",
+          "key": "B",
+          "explanation": "Refere-se à carga inicial do DW (carga histórica), conceito distinto de latência de dados."
+        },
+        {
+          "text": "rapidez da perda de validade do dado",
+          "key": "C",
+          "explanation": "Não corresponde à definição de latência de dados."
+        },
+        {
+          "text": "tempo total de uma consulta",
+          "key": "D",
+          "explanation": "Tempo total de execução de uma consulta é desempenho de consulta, não latência de dados."
+        },
+        {
+          "text": "tempo entre consultas do usuário",
+          "key": "E",
+          "explanation": "Tempo entre consultas do usuário não é a definição de latência de dados."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "analise-dados",
+      "correctKey": "A",
+      "explanationSummary": "Latência de dados descreve a rapidez com que os dados de origem precisam ser entregues aos usuários de negócio através do ambiente de DW/BI — quão 'frescos' os dados estarão disponíveis para consulta."
+    },
+    {
+      "id": "prova6-q55",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 55
+      },
+      "subtopic": "5.3 Modelos, metodologias, técnicas e ferramentas de análise e projeto (estruturado e orientado a objetos)",
+      "stem": "No contexto de qualidade de software e métricas de software, coesão e acoplamento são medidas",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "intramodulares, sendo a primeira inversamente proporcional, e a segunda proporcional à qualidade.",
+          "key": "A",
+          "explanation": "Classifica erroneamente o acoplamento como intramodular, quando é intermodular; também inverte a proporcionalidade correta de cada métrica."
+        },
+        {
+          "text": "intramodulares e diretamente proporcionais à qualidade.",
+          "key": "B",
+          "explanation": "Classifica erroneamente ambas como intramodulares, e afirma que ambas são diretamente proporcionais à qualidade, o que é falso para o acoplamento."
+        },
+        {
+          "text": "intramodular e intermodular, respectivamente, sendo a primeira proporcional, e a segunda inversamente proporcional à qualidade.",
+          "key": "C"
+        },
+        {
+          "text": "intermodulares e diretamente proporcionais à qualidade.",
+          "key": "D",
+          "explanation": "Classifica erroneamente a coesão como intermodular; ela é intramodular."
+        },
+        {
+          "text": "intermodular e intramodular, respectivamente, sendo a primeira proporcional, e a segunda inversamente proporcional à qualidade.",
+          "key": "E",
+          "explanation": "Inverte a ordem correta: coesão é intramodular (não intermodular) e acoplamento é intermodular (não intramodular)."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "eng-sw",
+      "correctKey": "C",
+      "explanationSummary": "Coesão é uma medida intramodular (relaciona-se ao grau de relacionamento interno de um módulo) e quanto maior, melhor a qualidade (proporcional). Acoplamento é uma medida intermodular (relaciona-se à dependência entre módulos) e quanto maior, piores as propriedades de manutenção/qualidade (inversamente proporcional)."
+    },
+    {
+      "id": "prova6-q56",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 56
+      },
+      "subtopic": "1.10 Linguagem de consulta estruturada (SQL)",
+      "stem": "Um banco de dados é construído segundo as definições: create table T1 (a integer, b integer); create table T2 (b integer). A consulta a seguir: select distinct a from T1 y where not exists( select 1 from T2 where not exists ( select 1 from T1 x where y.a = x.a and T2.b = x.b) ) implementa qual operação da álgebra relacional entre as relações T1 e T2?",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Divisão",
+          "key": "A"
+        },
+        {
+          "text": "Interseção",
+          "key": "B",
+          "explanation": "Interseção seria expressa comparando linhas completas de duas relações com o mesmo esquema, não com esse padrão de duplo NOT EXISTS sobre atributos diferentes."
+        },
+        {
+          "text": "Junção cruzada (CROSS JOIN)",
+          "key": "C",
+          "explanation": "Junção cruzada apenas combina todas as linhas sem qualquer filtro, o que não corresponde à consulta."
+        },
+        {
+          "text": "Junção externa completa (FULL OUTER JOIN)",
+          "key": "D",
+          "explanation": "Junção externa completa preserva linhas não correspondentes de ambos os lados, o que não é o efeito dessa consulta."
+        },
+        {
+          "text": "Junção natural (NATURAL JOIN)",
+          "key": "E",
+          "explanation": "Junção natural combina linhas com valores iguais nos atributos comuns, sem o padrão de dupla negação característico da divisão."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "arq-dados",
+      "correctKey": "A",
+      "explanationSummary": "A construção com duplo NOT EXISTS (selecionar valores de 'a' em T1 tais que não existe nenhum valor de 'b' em T2 para o qual não exista o par (a,b) em T1) é o padrão clássico de implementação de Divisão da álgebra relacional em SQL."
+    },
+    {
+      "id": "prova6-q57",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 57
+      },
+      "subtopic": "1.3 O modelo Relacional",
+      "stem": "No modelo relacional, chaves candidatas desempenham um papel importante, pois se referem a atributos que identificam de forma única as tuplas de uma relação. Sendo assim, chaves candidatas apresentam como característica",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "demandarem a sua implementação através de uma trigger.",
+          "key": "A",
+          "explanation": "Chaves candidatas não demandam implementação via trigger; isso não é uma característica definidora."
+        },
+        {
+          "text": "demandarem a implantação de restrição de entidade, tendo em vista serem atributos não identificadores.",
+          "key": "B",
+          "explanation": "Chaves candidatas são justamente atributos identificadores (não 'não identificadores'), e a restrição de entidade se aplica à chave primária escolhida."
+        },
+        {
+          "text": "possuírem campos que são chamados cada um de atributos primários.",
+          "key": "C"
+        },
+        {
+          "text": "serem criadas com a imposição de uma restrição de integridade do tipo CHECK.",
+          "key": "D",
+          "explanation": "A restrição CHECK não é o mecanismo que define/caracteriza chaves candidatas."
+        },
+        {
+          "text": "serem superchaves mínimas, por essa razão, compostas por apenas um atributo.",
+          "key": "E",
+          "explanation": "Ser superchave mínima está correto, mas a conclusão de que por isso é composta por apenas um atributo é falsa — uma chave candidata composta (múltiplos atributos) também pode ser uma superchave mínima."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "arq-dados",
+      "correctKey": "C",
+      "explanationSummary": "Na teoria relacional/normalização, todo atributo que participa de alguma chave candidata é chamado de atributo primo (ou atributo primário); essa é a terminologia padrão associada às chaves candidatas."
+    },
+    {
+      "id": "prova6-q58",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 58
+      },
+      "subtopic": "1.10 Linguagem de consulta estruturada (SQL)",
+      "stem": "Um DBA executou os seguintes comandos em um SGBD relacional com tabelas TAB1 e TAB2: GRANT SELECT, UPDATE ON TAB1, TAB2 TO U1, U2 WITH GRANT OPTION; GRANT DELETE, INSERT ON TAB2 TO U2, U3. A seguir, o usuário U2 executou: GRANT UPDATE ON TAB2 TO U3. Depois, o DBA executou: REVOKE SELECT, UPDATE ON TAB2 FROM U2. Um cenário válido, após a execução dos comandos acima, é aquele onde o usuário",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "U1 possuirá direito de leitura e inserção na tabela TAB1",
+          "key": "A",
+          "explanation": "U1 nunca recebeu INSERT em TAB1 (apenas SELECT e UPDATE), então a combinação leitura+inserção em TAB1 é falsa para U1."
+        },
+        {
+          "text": "U1 possuirá direito de remoção e atualização na tabela TAB2",
+          "key": "B",
+          "explanation": "U1 nunca recebeu DELETE (remoção) em TAB2 (apenas SELECT e UPDATE), então essa combinação é falsa."
+        },
+        {
+          "text": "U2 possuirá direito de leitura e inserção na tabela TAB1",
+          "key": "C",
+          "explanation": "U2 nunca recebeu INSERT em TAB1 (apenas em TAB2); a combinação leitura(TAB1)+inserção(TAB1) é falsa."
+        },
+        {
+          "text": "U3 possuirá direito de remoção e seleção na tabela TAB1",
+          "key": "D",
+          "explanation": "U3 nunca recebeu qualquer privilégio sobre TAB1; a afirmação sobre TAB1 é falsa."
+        },
+        {
+          "text": "U3 possuirá direito de remoção e inserção na tabela TAB2",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "arq-dados",
+      "correctKey": "E",
+      "explanationSummary": "U3 recebeu DELETE e INSERT em TAB2 diretamente do DBA no segundo GRANT; esses privilégios não dependem de U2 e não são afetados pelo REVOKE posterior (que atingiu apenas SELECT/UPDATE de U2 sobre TAB2, e em cascata o UPDATE que U2 havia repassado a U3). Logo, U3 mantém remoção (DELETE) e inserção (INSERT) em TAB2."
+    },
+    {
+      "id": "prova6-q60",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 60
+      },
+      "subtopic": "5.3 Modelos, metodologias, técnicas e ferramentas de análise e projeto (estruturado e orientado a objetos)",
+      "stem": "Qual é a arquitetura de software muito utilizada para desenvolvimento de aplicação web, onde a lógica da aplicação é implementada em uma camada separada da interface do usuário (entrada de dados e apresentação) e onde a comunicação entre as camadas se dá através de uma camada controladora?",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Arquitetura 3 camadas: cliente magro, servidor de aplicação e banco de dados",
+          "key": "A",
+          "explanation": "Descreve uma divisão física de camadas (cliente/servidor de aplicação/BD), não o papel explícito de uma camada 'controladora' entre lógica e interface."
+        },
+        {
+          "text": "Arquitetura Cliente / Servidor: cliente gordo e banco de dados",
+          "key": "B",
+          "explanation": "Cliente gordo concentra lógica no cliente, não corresponde à separação descrita."
+        },
+        {
+          "text": "Arquitetura de comunicação multicamadas",
+          "key": "C",
+          "explanation": "É um termo genérico demais e não nomeia o padrão específico com camada controladora."
+        },
+        {
+          "text": "Arquitetura MVC",
+          "key": "D"
+        },
+        {
+          "text": "Arquitetura SOA",
+          "key": "E",
+          "explanation": "SOA é uma arquitetura orientada a serviços distribuídos, não o padrão de camada controladora entre lógica e interface descrito."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "eng-sw",
+      "correctKey": "D",
+      "explanationSummary": "A descrição — separação entre lógica da aplicação e interface, com uma camada controladora intermediando a comunicação — corresponde exatamente ao padrão arquitetural MVC (Model-View-Controller)."
+    },
+    {
+      "id": "prova6-q61",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 61
+      },
+      "subtopic": "9.19 ISO 27002, criptografia, certificação e assinatura digital",
+      "stem": "É conveniente o uso de técnicas de criptografia para proteger a confidencialidade, a integridade e a autenticidade das informações. PORQUE Técnicas de chaves públicas proporcionam método seguro de autenticação. Analisando-se as afirmações acima à luz da NBR/ISO 27002, conclui-se que",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "as duas afirmações são verdadeiras, e a segunda justifica a primeira.",
+          "key": "A",
+          "explanation": "A segunda afirmação, por ser um caso específico de apenas um dos três aspectos (autenticidade), não justifica plenamente a afirmação geral sobre confidencialidade, integridade e autenticidade."
+        },
+        {
+          "text": "as duas afirmações são verdadeiras, e a segunda não justifica a primeira.",
+          "key": "B"
+        },
+        {
+          "text": "a primeira afirmação é verdadeira, e a segunda é falsa.",
+          "key": "C",
+          "explanation": "A segunda afirmação também é verdadeira segundo a ISO 27002."
+        },
+        {
+          "text": "a primeira afirmação é falsa, e a segunda é verdadeira.",
+          "key": "D",
+          "explanation": "A primeira afirmação é verdadeira, não falsa."
+        },
+        {
+          "text": "as duas afirmações são falsas.",
+          "key": "E",
+          "explanation": "Ambas as afirmações são verdadeiras."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "medium",
+        "notes": "Questões do tipo asserção-razão sobre 'justifica/não justifica' têm margem de interpretação; confiança média por essa razão."
+      },
+      "area": "seg-info",
+      "correctKey": "B",
+      "explanationSummary": "Ambas as afirmações são verdadeiras segundo a ISO 27002, mas a segunda (chaves públicas proporcionam autenticação segura) é apenas um exemplo pontual referente à autenticidade; ela não justifica a afirmação geral e mais abrangente de que a criptografia protege confidencialidade, integridade E autenticidade, pois não aborda os mecanismos que garantem confidencialidade (cifragem) e integridade (hash/assinatura) — apenas a autenticação."
+    },
+    {
+      "id": "prova6-q62",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 62
+      },
+      "subtopic": "9.19 ISO 27002, criptografia, certificação e assinatura digital",
+      "stem": "As NBR/ISO 27002 prescrevem que, para identificar os requisitos para os acordos de confidencialidade ou de não divulgação, convém considerar diversos elementos, entre os quais NÃO consta(m)",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "tempo de duração esperado de um acordo, incluindo situações onde a confidencialidade tenha que ser mantida.",
+          "key": "A",
+          "explanation": "Item explicitamente listado na norma (duração esperada do acordo)."
+        },
+        {
+          "text": "proprietário da informação, de segredos comerciais e de propriedade intelectual, e como isso se relaciona com a proteção da informação confidencial.",
+          "key": "B",
+          "explanation": "Item explicitamente listado (propriedade da informação, segredos comerciais e propriedade intelectual)."
+        },
+        {
+          "text": "penalidades previstas para o infrator das cláusulas acordadas.",
+          "key": "C"
+        },
+        {
+          "text": "ações requeridas de ambas as partes para homologar a rescisão de contratos.",
+          "key": "D",
+          "explanation": "Item explicitamente listado (ações requeridas quando o acordo é encerrado/rescindido)."
+        },
+        {
+          "text": "termos para a informação ser retornada ou destruída quando da suspensão do acordo.",
+          "key": "E",
+          "explanation": "Item explicitamente listado (termos para devolução ou destruição da informação ao término do acordo)."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "medium",
+        "notes": "Texto integral da NBR ISO/IEC 27002 não foi consultado diretamente nesta sessão; derivação baseada na lista de elementos de acordos de confidencialidade tal como amplamente reproduzida na literatura de segurança da informação."
+      },
+      "area": "seg-info",
+      "correctKey": "C",
+      "explanationSummary": "A lista da ISO 27002 para acordos de confidencialidade menciona 'ações esperadas a serem tomadas em caso de quebra do acordo', mas não define especificamente 'penalidades previstas para o infrator' como item explícito da lista — os demais itens (duração, propriedade da informação, ações na rescisão, devolução/destruição de informação) constam literalmente na norma."
+    },
+    {
+      "id": "prova6-q64",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 64
+      },
+      "subtopic": "9.19 ISO 27002, criptografia, certificação e assinatura digital",
+      "stem": "A seção Segurança em Recursos Humanos da Norma NBR/ISO 27002 preconiza ações mesmo antes da contratação de funcionários. O objetivo declarado é 'Assegurar que os funcionários, fornecedores e terceiros entendam suas responsabilidades e estejam de acordo com os seus papéis, e reduzir o risco de roubo, fraude ou mau uso de recursos.' Para isso, essa norma diz ser conveniente que",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "a direção reconheça, antecipadamente, como de sua exclusiva responsabilidade, a segurança sobre a proteção dos ativos de informação contra acesso não autorizado, divulgação, modificação, destruição ou interferência.",
+          "key": "A",
+          "explanation": "A norma não atribui a segurança como responsabilidade exclusiva da direção; a segurança da informação é responsabilidade compartilhada entre vários papéis."
+        },
+        {
+          "text": "a divulgação das regras de manipulação de informações sensíveis seja restrita aos candidatos a cargos de chefia e a fornecedores que possam vir a utilizá-las.",
+          "key": "B",
+          "explanation": "A norma não restringe a divulgação das regras de manipulação apenas a candidatos a cargos de chefia; deve alcançar todos os que terão acesso relevante."
+        },
+        {
+          "text": "as responsabilidades pela segurança da informação sejam atribuídas antes da contratação, de forma adequada, nas descrições de cargos e nos termos e condições de contratação.",
+          "key": "C"
+        },
+        {
+          "text": "todos os candidatos a funcionários, fornecedores e terceiros, usuários dos recursos de processamento da informação, assinem acordos de não exploração do conhecimento das fragilidades institucionais frente às ameaças à segurança da informação.",
+          "key": "D",
+          "explanation": "A norma trata de acordos de confidencialidade e conscientização, não de 'acordos de não exploração de fragilidades institucionais', termo que não corresponde à norma."
+        },
+        {
+          "text": "todos os funcionários, fornecedores e terceiros que tenham acesso a informações sensíveis assinem um termo de confidencialidade ou de não divulgação imediatamente após ser-lhes dado o acesso aos recursos de processamento da informação.",
+          "key": "E",
+          "explanation": "A assinatura de termo de confidencialidade deve ocorrer antes (não imediatamente após) da concessão de acesso aos recursos de processamento da informação, conforme o princípio de segurança pré-contratação."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "seg-info",
+      "correctKey": "C",
+      "explanationSummary": "A ISO 27002 recomenda que papéis e responsabilidades de segurança da informação sejam definidos e documentados de acordo com a política de segurança, e comunicados adequadamente ainda na fase pré-contratação, constando das descrições de cargo e dos termos e condições de contratação."
+    },
+    {
+      "id": "prova6-q65",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 65
+      },
+      "subtopic": "8.1 Sentido lógico-matemático convencional dos conectivos",
+      "stem": "A proposição 'se o freio da bicicleta falhou, então não houve manutenção' é equivalente à proposição",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "o freio da bicicleta falhou e não houve manutenção.",
+          "key": "A",
+          "explanation": "Representa uma conjunção (P∧¬Q), que não é equivalente ao condicional original."
+        },
+        {
+          "text": "o freio da bicicleta falhou ou não houve manutenção.",
+          "key": "B",
+          "explanation": "Representa P∨¬Q, disjunção diferente da equivalência correta ¬P∨¬Q."
+        },
+        {
+          "text": "o freio da bicicleta não falhou ou não houve manutenção.",
+          "key": "C"
+        },
+        {
+          "text": "se não houve manutenção, então o freio da bicicleta falhou.",
+          "key": "D",
+          "explanation": "Representa ¬Q→P, que é a proposição inversa/recíproca, não equivalente ao condicional original P→¬Q."
+        },
+        {
+          "text": "se não houve manutenção, então o freio da bicicleta não falhou.",
+          "key": "E",
+          "explanation": "Representa ¬Q→¬P, que não é a contrapositiva de P→¬Q (a contrapositiva correta seria Q→¬P) nem é logicamente equivalente ao original."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "area": "logica",
+      "correctKey": "C",
+      "explanationSummary": "Sendo P='o freio falhou' e Q='houve manutenção', a proposição é P→¬Q, que pela equivalência do condicional material é logicamente equivalente a ¬P∨¬Q, ou seja, 'o freio da bicicleta não falhou ou não houve manutenção'."
+    }
+  ]
 }
