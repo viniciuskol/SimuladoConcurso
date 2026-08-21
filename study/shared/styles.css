@@ -66,24 +66,80 @@ h2 { font-size: 1.05rem; }
   margin-bottom: 12px;
 }
 
-.btn {
+/* Enunciado da questão: tipografia confortável para leitura longa em telas pequenas */
+.stem-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 18px 18px 20px;
+  margin-bottom: 16px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 38em; /* comprimento de linha legível, evita texto "esticado" */
+}
+.stem-card img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 12px 0;
+  background: #fff; /* diagramas costumam ter fundo transparente/branco */
+}
+.stem-card math, .stem-card mjx-container { font-size: 1.08em; }
+
+.alt-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 4px; }
+
+.btn {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
   width: 100%;
-  min-height: 48px;
-  padding: 12px 16px;
-  margin-bottom: 10px;
+  min-height: 52px;
+  padding: 14px 16px;
   border: 1px solid var(--surface-2);
   border-radius: var(--radius);
   background: var(--surface-2);
   color: var(--text);
   font-size: 1rem;
+  line-height: 1.45;
   text-align: left;
   cursor: pointer;
+  transition: background-color 0.12s ease, border-color 0.12s ease;
 }
 .btn:active { transform: scale(0.99); }
-.btn.primary { background: var(--accent); color: #fff; border-color: var(--accent); text-align: center; font-weight: 600; }
+.btn:not(:disabled):hover { border-color: var(--accent); }
+.btn.primary { background: var(--accent); color: #fff; border-color: var(--accent); text-align: center; font-weight: 600; justify-content: center; }
 .btn.correct { background: color-mix(in srgb, var(--ok) 25%, var(--surface)); border-color: var(--ok); }
 .btn.incorrect { background: color-mix(in srgb, var(--err) 25%, var(--surface)); border-color: var(--err); }
+.btn:disabled { cursor: default; opacity: 0.9; }
+
+/* Selo da letra da alternativa: âncora visual fixa para escanear rápido */
+.alt-key {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text-dim);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+.btn.correct .alt-key { background: var(--ok); color: #06210f; }
+.btn.incorrect .alt-key { background: var(--err); color: #2b0a0a; }
+.alt-text { flex: 1 1 auto; }
+
+.feedback-banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.feedback-banner.correct { color: var(--ok); }
+.feedback-banner.incorrect { color: var(--err); }
 
 .chip {
   display: inline-flex;
@@ -109,7 +165,24 @@ h2 { font-size: 1.05rem; }
 .area-bar .track > div { height: 100%; background: var(--accent); }
 .area-bar .pct { width: 42px; text-align: right; font-size: 0.85rem; color: var(--text-dim); }
 
-details.explain { margin-top: 10px; }
-details.explain summary { cursor: pointer; color: var(--accent); }
+details.explain { margin-top: 12px; }
+details.explain summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: 600;
+  padding: 4px 0;
+}
+details.explain ul { margin: 10px 0 0; padding-left: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; }
+details.explain li {
+  background: var(--surface-2);
+  border-radius: 8px;
+  padding: 10px 12px;
+  line-height: 1.5;
+}
 
 .empty-state { text-align: center; padding: 40px 16px; color: var(--text-dim); }
+
+@media (min-width: 768px) {
+  .app { padding: 24px 16px; }
+  .stem-card { font-size: 1.1rem; }
+}

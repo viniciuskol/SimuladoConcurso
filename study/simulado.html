@@ -105,9 +105,9 @@ function renderQuestion() {
   app.innerHTML = `
     <div class="progressbar"><div style="width:${(100 * session.idx) / session.order.length}%"></div></div>
     <p class="muted">${areaLabel} · questão ${session.idx + 1} de ${session.order.length}</p>
-    <div class="card"><div>${q.stem}</div></div>
-    <div id="alts">
-      ${q.alternatives.map(alt => `<button class="btn" data-key="${alt.key}">(${alt.key}) ${alt.text}</button>`).join("")}
+    <div class="stem-card">${q.stem}</div>
+    <div class="alt-list" id="alts">
+      ${q.alternatives.map(alt => `<button class="btn" data-key="${alt.key}"><span class="alt-key">${alt.key}</span><span class="alt-text">${alt.text}</span></button>`).join("")}
     </div>
     <div id="feedback"></div>
   `;
@@ -133,7 +133,8 @@ function answer(q, chosenKey) {
 
   document.getElementById("feedback").innerHTML = `
     <div class="card">
-      <p><strong>${correct ? "✅ Certo!" : "❌ Errado."}</strong> ${q.explanationSummary || ""}</p>
+      <p class="feedback-banner ${correct ? "correct" : "incorrect"}">${correct ? "✅ Certo!" : "❌ Errado."}</p>
+      <p>${q.explanationSummary || ""}</p>
       ${wrongExplain ? `<details class="explain"><summary>Por que as outras estão erradas</summary><ul>${wrongExplain}</ul></details>` : ""}
       <button class="btn primary" id="next">${session.idx + 1 < session.order.length ? "Próxima" : "Ver resultado"}</button>
     </div>`;
