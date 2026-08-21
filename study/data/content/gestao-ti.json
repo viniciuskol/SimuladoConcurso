@@ -1,0 +1,272 @@
+{
+  "areaId": "gestao-ti",
+  "resumo": "<p><strong>O desequilíbrio que define o estudo desta área.</strong> São apenas 12 questões no banco — 5 de 2010, 3 de 2018 e 4 de 2023 — e 7 delas estão em um único subtópico, o 4.1 (conceitos, segmentos e mercado de TI), que na prática cobrou <em>sistemas de informação e ERP</em>. ITIL e COBIT <strong>nunca apareceram</strong> em nenhuma prova do banco; a LGPD apareceu <strong>uma vez</strong> (transp23e6-q57, 2023); o subtópico 4.4 (ciência, pesquisa, desenvolvimento e indústria) nunca foi objeto de questão. Isso não rebaixa esses temas: o Anexo IV lista explicitamente gerenciamento de serviços de TI e a Lei nº 13.709/2018, e a prova de 2026 tem 50 questões de específicas para distribuir entre 8 áreas. Use o histórico para calibrar o <em>formato</em>; use o <strong>edital</strong> para definir o <em>conteúdo</em>.</p> <p><strong>Sistema de informação, TI e governança.</strong> SI é o conjunto de componentes inter-relacionados que coletam, processam, armazenam e distribuem informação para apoiar a decisão, a coordenação e o controle da organização — definição cobrada ao pé da letra em prova07-q65. TI é o hardware e o software de que a empresa precisa: subconjunto, não sinônimo. Todo SI tem três dimensões inseparáveis — <strong>organização, pessoas e tecnologia</strong> (prova07-q69). Os objetivos de negócio dos SI, na lista de Laudon, são excelência operacional; novos produtos, serviços e modelos de negócio; relacionamento estreito com clientes e fornecedores; melhor tomada de decisão; vantagem competitiva; e sobrevivência (prova07-q70 cobrou quatro deles, e a resposta era \"todos\"). ERP integra e automatiza, em um <strong>único sistema interfuncional</strong>, processos das diversas funções da empresa (psjpn2018-q48); CRM olha o cliente, SCM a cadeia de suprimentos, BI a decisão. Já governança é o conjunto de estruturas, processos e políticas que garante que a TI atenda aos objetivos e aos requisitos regulatórios e éticos da organização (transp23e6-q59) — e atenção ao rótulo: nessa questão a Cesgranrio deu como correta a expressão <strong>governança corporativa</strong>, com \"gestão de serviços de TI\" entre os distratores, sem distinguir governança corporativa de governança de TI.</p> <table><tr><th>Camada</th><th>Pergunta que responde</th><th>Referência típica</th></tr><tr><td>Governança de TI</td><td>A TI entrega o que o negócio precisa? Quem avalia, dirige e monitora?</td><td>COBIT 2019, domínio EDM</td></tr><tr><td>Gestão de serviços de TI</td><td>Como planejar, entregar e melhorar serviços no dia a dia?</td><td>ITIL 4</td></tr></table> <p><strong>ITIL 4 e COBIT 2019 — diga sempre a versão.</strong> O <strong>Sistema de Valor de Serviço</strong> do ITIL 4 converte oportunidade e demanda em valor e reúne cinco componentes: princípios orientadores, governança, cadeia de valor de serviço, práticas e melhoria contínua. A <strong>cadeia de valor de serviço</strong> tem seis atividades combináveis, não sequenciais: planejar, melhorar, engajar, desenhar e fazer a transição, obter/construir, entregar e suportar. As <strong>quatro dimensões</strong> são organizações e pessoas, informação e tecnologia, parceiros e fornecedores, fluxos de valor e processos. São <strong>sete princípios orientadores</strong> e <strong>34 práticas</strong> em três blocos (14 gerais de gerenciamento, 17 de gerenciamento de serviço, 3 técnicas). A armadilha de versão é real: o ITIL v3 falava de <em>processos</em> em cinco estágios do ciclo de vida do serviço; o ITIL 4 fala de <em>práticas</em> e de fluxos de valor. O COBIT 2019 separa <strong>objetivos de governança</strong> (domínio EDM: avaliar, dirigir e monitorar) de <strong>objetivos de gestão</strong> (APO, BAI, DSS, MEA), somando 40 objetivos, sobre seis princípios do sistema de governança; o COBIT 5 tinha 5 princípios, 7 habilitadores e 37 processos.</p> <p><strong>Níveis de serviço e operação.</strong> <strong>SLA</strong> é o acordo entre provedor e cliente/negócio; <strong>OLA</strong>, o acordo interno entre áreas do mesmo provedor que sustentam aquele SLA; <strong>UC</strong> (contrato de apoio), o contrato com fornecedor externo. Vocabulário operacional: <em>incidente</em> é interrupção não planejada ou queda de qualidade; <em>problema</em> é a causa, ou possível causa, de um ou mais incidentes; <em>requisição de serviço</em> é pedido normal do usuário, sem falha alguma. KPIs, como cobrado em transp23e6-q66, são <strong>escolhidos a partir das necessidades do negócio</strong> e medem o sucesso do serviço — nunca são só métricas de hardware.</p> <p><strong>Economia da inovação, ciência e indústria.</strong> <em>Custo de oportunidade</em> é o valor do que se deixa de obter ao alocar tempo, esforço, conhecimento e risco a uma inovação (transp23e6-q60). Schumpeter dá a <em>destruição criadora</em>; Christensen, a <em>inovação disruptiva</em>, que começa em um nicho desatendido e depois desloca o incumbente. Conhecimento é bem não rival, o que gera externalidades positivas e problema de <strong>apropriabilidade</strong> — daí patente e subsídio à P&amp;D. O Manual de Frascati separa pesquisa básica, pesquisa aplicada e desenvolvimento experimental; o Manual de Oslo classifica os tipos de inovação (3ª edição, 2005: produto, processo, marketing e organizacional; 4ª edição, 2018: produto e processo de negócio). No Brasil, a Lei de Inovação (nº 10.973/2004) e o Marco Legal de CT&amp;I (Lei nº 13.243/2016) estruturam a relação universidade-empresa-governo.</p> <p><strong>LGPD (Lei nº 13.709/2018).</strong> Aplica-se ao tratamento por pessoa natural ou jurídica, de direito público ou privado, independentemente do meio, do país da sede ou de onde estejam os dados, bastando que o tratamento ocorra em território nacional, vise ofertar bens e serviços a pessoas aqui localizadas ou envolva dados coletados aqui — é isto que transp23e6-q57 cobrou. <strong>Não</strong> se aplica ao tratamento por pessoa natural para fins exclusivamente particulares e não econômicos, nem a fins jornalístico, artístico e acadêmico, nem à segurança pública, defesa nacional, segurança do Estado e investigação penal. O erro que a banca mais explora é supor que consentimento é a regra: ele é <strong>uma</strong> das dez bases legais do art. 7º. As listas que valem memorizar estão no cheatsheet: 10 princípios (art. 6º), 10 bases legais (art. 7º), 9 direitos do titular (art. 18) e as sanções do art. 52, aplicadas pela ANPD.</p>",
+  "cheatsheet": [
+    {
+      "heading": "Sistemas de informação, TI e a pirâmide de sistemas",
+      "items": [
+        "SI = componentes inter-relacionados que COLETAM, PROCESSAM, ARMAZENAM e DISTRIBUEM informação para apoiar decisão, coordenação e controle. TI = o hardware e o software necessários. SI ⊃ TI: TI é uma das dimensões do SI, não o SI todo.",
+        "As três dimensões do SI são organização, pessoas e tecnologia — todas parte integrante (prova07-q69). Alternativa que diz que a componente tecnológica 'se sobrepõe às demais' está errada.",
+        "Objetivos de negócio dos SI (Laudon): excelência operacional; novos produtos, serviços e modelos de negócio; relacionamento estreito com clientes e fornecedores; melhor tomada de decisão; vantagem competitiva; sobrevivência.",
+        "SPT/TPS: transações do dia a dia, nível operacional. SIG/MIS: relatórios gerenciais sobre dados dos SPT. SAD/DSS: decisão semiestruturada, cenários e modelos. SIE/ESS: painéis e indicadores para a alta direção.",
+        "ERP: integra e automatiza num único sistema INTERFUNCIONAL os processos das diversas funções da empresa (psjpn2018-q48). CRM: relacionamento com o cliente. SCM: cadeia de suprimentos. BI: análise para decisão.",
+        "Dificuldades clássicas de ERP (todas verdadeiras em prova07-q66): adequação à legislação local, aceitação pelos funcionários, foco insuficiente nos agentes externos e customização frente a necessidades específicas.",
+        "ERP automatiza PROCESSOS DE NEGÓCIO, não 'as etapas dos projetos de TI' — a inversão foi o erro plantado em prova07-q68. Workflow é a automação de processo de negócio, em que documentos, informação e tarefas passam de um ponto a outro em sequência definida.",
+        "Segmentos do mercado de TI: hardware, software e serviços (consultoria, integração, outsourcing, suporte); somam-se hoje nuvem, dados/IA e segurança. Mashup combina dados de múltiplas fontes e publica o resultado organizado (psjpn2018-q49)."
+      ]
+    },
+    {
+      "heading": "Governança x gestão, e COBIT 2019",
+      "items": [
+        "Governança de TI: conjunto de estruturas, processos, políticas e estratégias que garante que a TI atenda aos objetivos, requisitos regulatórios e éticos da organização (transp23e6-q59) — naquela questão o gabarito foi rotulado \"governança CORPORATIVA\", com \"gestão de serviços de TI\" como distrator, então trate os dois rótulos como ligados a essa mesma definição. Responde a 'estamos fazendo o certo?'.",
+        "Gestão (de serviços, de projetos): executa, planeja e monitora o dia a dia. Responde a 'estamos fazendo direito?'. Governança avalia, dirige e monitora; gestão planeja, constrói, executa e monitora.",
+        "COBIT 2019: 40 objetivos de governança e gestão em 5 domínios — EDM (Avaliar, Dirigir e Monitorar) é o único domínio de GOVERNANÇA; APO, BAI, DSS e MEA são de GESTÃO.",
+        "COBIT 2019 traz 6 princípios para o sistema de governança, entre eles 'governança é distinta da gestão', 'abordagem holística' e 'fornecer valor para as partes interessadas'; e princípios próprios para o framework de governança.",
+        "COBIT 5 (anterior): 5 princípios, 7 habilitadores e 37 processos. Se a alternativa cita um número sem dizer a versão, trate o número como suspeito.",
+        "COBIT é framework de GOVERNANÇA (o que controlar e por quê); ITIL é de GERENCIAMENTO DE SERVIÇOS (como operar). Não são concorrentes e podem coexistir.",
+        "Nenhuma questão do banco cobrou COBIT ou ITIL até hoje — mas o Anexo IV pede 'conceitos, disciplinas, técnicas e ferramentas de gerenciamento de serviços de TI', então o risco é de estreia, não de ausência."
+      ]
+    },
+    {
+      "heading": "ITIL 4: as peças que podem ser pedidas",
+      "items": [
+        "Serviço, em ITIL 4, é o meio de habilitar a COCRIAÇÃO de valor: provedor e consumidor produzem valor juntos. Utilidade = serve ao propósito ('fit for purpose'); garantia = serve ao uso, com desempenho, capacidade, continuidade e segurança ('fit for use').",
+        "Sistema de Valor de Serviço (SVS): recebe oportunidade/demanda e entrega valor. Componentes: princípios orientadores, governança, cadeia de valor de serviço, práticas e melhoria contínua.",
+        "Cadeia de valor de serviço — 6 atividades, combináveis em qualquer ordem (fluxos de valor): planejar, melhorar, engajar, desenhar e fazer a transição, obter/construir, entregar e suportar. 'Engajar' e 'melhorar' tocam todas as outras.",
+        "As 4 dimensões do gerenciamento de serviços: (1) organizações e pessoas; (2) informação e tecnologia; (3) parceiros e fornecedores; (4) fluxos de valor e processos. Ignorar uma delas é o erro que o modelo quer evitar.",
+        "Os 7 princípios orientadores: foco no valor; comece onde você está; progrida iterativamente com feedback; colabore e promova a visibilidade; pense e trabalhe holisticamente; mantenha simples e prático; otimize e automatize.",
+        "34 práticas em 3 blocos: 14 práticas gerais de gerenciamento, 17 práticas de gerenciamento de serviço e 3 práticas de gerenciamento técnico. 'Otimize e automatize' vem nessa ordem: otimizar primeiro, automatizar depois — automatizar bagunça só acelera a bagunça.",
+        "ITIL v3 x ITIL 4: v3 fala em PROCESSOS organizados em 5 estágios do ciclo de vida (estratégia, desenho, transição e operação de serviço, mais melhoria de serviço continuada); ITIL 4 fala em PRÁTICAS, dimensões e cadeia de valor. Enunciado que cita 'ciclo de vida do serviço' está no vocabulário v3."
+      ]
+    },
+    {
+      "heading": "Níveis de serviço e vocabulário de operação",
+      "items": [
+        "SLA (Service Level Agreement): acordo entre o provedor de serviço e o CLIENTE/negócio, com metas mensuráveis (disponibilidade, tempo de resposta, prazo de atendimento).",
+        "OLA (Operational Level Agreement): acordo INTERNO entre áreas do mesmo provedor, que sustenta o SLA por dentro. UC (Underpinning Contract / contrato de apoio): contrato com FORNECEDOR EXTERNO.",
+        "OLA e UC são vocabulário consagrado do ITIL v3 e seguem no glossário de gerenciamento de nível de serviço; no ITIL 4 o tema é tratado dentro da prática de gerenciamento de nível de serviço. Nenhuma questão do banco cobrou o trio até hoje — memorize pela definição, não por frequência.",
+        "Incidente: interrupção não planejada ou redução da qualidade de um serviço. Problema: causa, ou possível causa, de um ou mais incidentes. Erro conhecido: problema já analisado e documentado, com solução de contorno (workaround).",
+        "Requisição de serviço: pedido normal do usuário (acesso, informação, item de catálogo) — não é falha, então não é incidente. Mudança: adição, modificação ou remoção de algo que possa afetar serviços.",
+        "Catálogo de serviços: o que está disponível para o cliente contratar/solicitar. Central de serviços (service desk): ponto único de contato. CMDB/gerenciamento de configuração: itens de configuração e suas relações.",
+        "KPIs de serviço são selecionados a partir das NECESSIDADES DE NEGÓCIO e ajudam a medir o sucesso do serviço (transp23e6-q66). Não se limitam a hardware, não se limitam a disponibilidade e dependem de ferramenta de monitoração para serem rastreados.",
+        "Métrica é a medida bruta; indicador dá sentido à medida; KPI é o indicador ligado a um objetivo. Eficácia = alcançou o resultado. Eficiência = alcançou gastando menos recurso. Efetividade = o resultado gerou o impacto desejado."
+      ]
+    },
+    {
+      "heading": "Economia da inovação",
+      "items": [
+        "Custo de oportunidade: valor do que se deixou de obter ao alocar recursos (tempo, esforço, conhecimento, risco) àquela inovação (transp23e6-q60). Não confundir com externalidade negativa (custo imposto a terceiros) nem com elasticidade da demanda.",
+        "Schumpeter: inovação como motor do crescimento, por 'destruição criadora' — o novo arranjo destrói o valor do arranjo anterior. Empreendedor e crédito são os vetores.",
+        "Christensen: inovação disruptiva entra por baixo (nicho desatendido, desempenho inferior nos atributos tradicionais, preço/acesso melhores) e depois sobe. Inovação incremental melhora o existente; radical rompe com a trajetória técnica.",
+        "Conhecimento é bem NÃO RIVAL (o uso por um não impede o uso por outro) e de difícil exclusão, o que gera externalidades positivas (spillovers) e problema de APROPRIABILIDADE — daí patente, segredo industrial, marca e subsídio à P&amp;D.",
+        "Custo marginal quase zero do software, retornos crescentes de adoção, efeito de rede e lock-in explicam por que mercados de TI tendem à concentração e a padrões dominantes.",
+        "Inovação aberta (Chesbrough): a empresa combina P&amp;D interno com fontes externas — parcerias, startups, universidades, licenciamento."
+      ]
+    },
+    {
+      "heading": "Ciência, pesquisa, desenvolvimento e indústria (4.4 — nunca caiu)",
+      "items": [
+        "Manual de Frascati (OCDE) separa P&amp;D em pesquisa básica (conhecimento sem aplicação definida), pesquisa aplicada (objetivo prático específico) e desenvolvimento experimental (usa o conhecimento para criar/melhorar produto ou processo).",
+        "Manual de Oslo (OCDE) trata da MEDIÇÃO da inovação: na 3ª edição (2005) os tipos eram produto, processo, marketing e organizacional; na 4ª edição (2018) consolidaram-se em inovação de produto e inovação de processo de negócio. Cite a edição se a questão citar a lista.",
+        "Tríplice hélice: universidade, empresa e governo interagindo. ICT = instituição científica, tecnológica e de inovação; NIT = núcleo de inovação tecnológica, o escritório de transferência de tecnologia da ICT.",
+        "No Brasil: Lei de Inovação nº 10.973/2004 e Marco Legal de CT&amp;I (Lei nº 13.243/2016) — permitem parceria, compartilhamento de laboratório, bolsa de estímulo à inovação e encomenda tecnológica. Lei do Bem (nº 11.196/2005): incentivos fiscais a dispêndio em P&amp;D.",
+        "TRL (Technology Readiness Level): escala de maturidade tecnológica de 1 (conceito) a 9 (sistema comprovado em operação). Útil para separar pesquisa de produto.",
+        "Vale da morte / 'valley of death': lacuna de financiamento entre a pesquisa concluída e o produto comercializável — é o que os instrumentos de fomento tentam atravessar."
+      ]
+    },
+    {
+      "heading": "LGPD: definições e agentes (art. 5º)",
+      "items": [
+        "Dado pessoal: informação relacionada a pessoa natural IDENTIFICADA ou IDENTIFICÁVEL. Dado de pessoa jurídica não é dado pessoal para a LGPD.",
+        "Dado pessoal SENSÍVEL: origem racial ou étnica, convicção religiosa, opinião política, filiação a sindicato ou a organização de caráter religioso, filosófico ou político, dado referente à saúde ou à vida sexual, dado genético ou biométrico, quando vinculado a uma pessoa natural.",
+        "Dado ANONIMIZADO: perdeu a possibilidade de associação, direta ou indireta, ao indivíduo, considerando meios técnicos razoáveis e disponíveis — e, por isso, em regra sai do alcance da lei. Se a anonimização puder ser revertida com esforço razoável, o dado volta a ser pessoal.",
+        "Anonimização é irreversível pela definição legal; PSEUDONIMIZAÇÃO substitui o identificador por um código, mantendo a possibilidade de reidentificação com informação adicional guardada em separado — logo, dado pseudonimizado continua sendo dado pessoal.",
+        "Titular: a pessoa natural a quem se referem os dados. Controlador: quem toma as DECISÕES sobre o tratamento. Operador: quem TRATA em nome do controlador. Ambos são 'agentes de tratamento'.",
+        "Encarregado (DPO): pessoa indicada pelo controlador e pelo operador para atuar como canal de comunicação entre controlador, titulares e ANPD; sua identidade e contato devem ser divulgados publicamente.",
+        "Tratamento é qualquer operação com dado pessoal — coleta, produção, recepção, classificação, utilização, acesso, reprodução, transmissão, distribuição, processamento, arquivamento, armazenamento, eliminação, avaliação, controle, modificação, comunicação, transferência, difusão, extração. Praticamente tudo é tratamento.",
+        "ANPD (Autoridade Nacional de Proteção de Dados): órgão responsável por zelar, implementar e fiscalizar o cumprimento da lei e por editar normas; foi transformada em autarquia de natureza especial por lei de 2022. Ela aplica as sanções administrativas."
+      ]
+    },
+    {
+      "heading": "LGPD: alcance, bases legais, direitos, casos especiais e sanções",
+      "items": [
+        "Alcance (art. 3º): aplica-se a tratamento por pessoa natural ou jurídica, de direito público ou privado, independentemente do meio, do país de sua sede ou do país onde estejam os dados, quando a operação ocorra no território nacional, OU tenha por objetivo ofertar bens/serviços a indivíduos aqui localizados, OU os dados tenham sido coletados no território nacional. Ou seja: tem extraterritorialidade (transp23e6-q57).",
+        "Não se aplica (art. 4º): tratamento por pessoa natural para fins exclusivamente particulares e não econômicos; fins exclusivamente jornalístico e artístico; fins exclusivamente acadêmicos — MAS aqui aplicam-se os arts. 7º e 11 (é a pegadinha: \"não se aplica\" com ressalva de base legal); fins exclusivos de segurança pública, defesa nacional, segurança do Estado e investigação/repressão de infrações penais (regidos por lei específica); e dados provenientes de fora do país que não sejam objeto de comunicação, uso compartilhado com agentes brasileiros ou transferência internacional para país diverso do de proveniência, desde que o país de origem ofereça grau de proteção adequado.",
+        "Princípios (art. 6º), 10: finalidade, adequação, necessidade, livre acesso, qualidade dos dados, transparência, segurança, prevenção, não discriminação, responsabilização e prestação de contas. Boa-fé permeia todos.",
+        "Bases legais (art. 7º), 10 hipóteses: consentimento; cumprimento de obrigação legal ou regulatória; execução de políticas públicas pela administração; estudos por órgão de pesquisa; execução de contrato ou de procedimentos preliminares; exercício regular de direitos em processo; proteção da vida ou da incolumidade física; tutela da saúde; legítimo interesse do controlador ou de terceiro; proteção do crédito.",
+        "CONSENTIMENTO É APENAS UMA DAS BASES — não é a regra geral. Deve ser livre, informado, inequívoco e para finalidade determinada; consentimento genérico é nulo; pode ser revogado a qualquer momento por procedimento gratuito e facilitado.",
+        "Dado SENSÍVEL (art. 11): exige consentimento ESPECÍFICO e DESTACADO, ou uma das hipóteses próprias de dispensa (obrigação legal, políticas públicas, estudos por órgão de pesquisa com anonimização quando possível, exercício regular de direitos, proteção da vida, tutela da saúde, prevenção à fraude e segurança do titular). Legítimo interesse e proteção do crédito NÃO servem para dado sensível.",
+        "Direitos do titular (art. 18), 9: confirmação da existência de tratamento; acesso aos dados; correção de dados incompletos, inexatos ou desatualizados; anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade; portabilidade a outro fornecedor, mediante requisição expressa; eliminação dos dados tratados com consentimento; informação sobre com quem houve uso compartilhado; informação sobre a possibilidade de não consentir e as consequências; revogação do consentimento.",
+        "Criança e adolescente (art. 14): tratamento sempre no MELHOR INTERESSE do menor; dados de CRIANÇA exigem consentimento específico e em destaque de pelo menos UM DOS PAIS ou do responsável legal (adolescente não tem essa exigência de consentimento parental no texto). O controlador deve manter pública a informação sobre os dados coletados e seu uso; é vedado condicionar a participação em jogo, aplicação ou atividade a fornecer mais dados que o estritamente necessário. Exceção: coleta sem consentimento quando necessária para contatar os pais ou para proteção do menor, nunca repassada a terceiro.",
+        "Transferência internacional (art. 33): só em hipóteses fechadas — país ou organismo com grau de proteção adequado reconhecido pela ANPD; garantias oferecidas pelo controlador (cláusulas contratuais padrão, cláusulas específicas, normas corporativas globais ou selos/certificados aprovados pela ANPD); cooperação jurídica internacional; proteção da vida; autorização da ANPD; compromisso de política pública; consentimento específico e destacado, com informação prévia do caráter internacional. Quem avalia a adequação do país é a ANPD, não o controlador.",
+        "Decisão automatizada (art. 20): o titular pode solicitar REVISÃO de decisões tomadas unicamente com base em tratamento automatizado que afetem seus interesses. Atenção à versão do texto: a exigência de que a revisão fosse feita 'por pessoa natural' não está na redação vigente.",
+        "Incidente de segurança (art. 48): o controlador comunica à ANPD e ao titular a ocorrência que possa acarretar risco ou dano relevante, em prazo razoável definido pela autoridade. Relatório de impacto à proteção de dados (RIPD) pode ser exigido pela ANPD.",
+        "Sanções (art. 52), aplicadas pela ANPD após processo administrativo: advertência com indicação de prazo para correção; multa simples de até 2% do faturamento da pessoa jurídica no Brasil no último exercício, excluídos tributos, limitada a R$ 50 milhões por infração; multa diária (mesmo limite); publicização da infração; bloqueio dos dados a que se refere a infração até a regularização; eliminação dos dados a que se refere a infração; suspensão PARCIAL do funcionamento do banco de dados por até 6 meses, prorrogável por igual período; suspensão do exercício da atividade de tratamento por até 6 meses, prorrogável; e proibição PARCIAL OU TOTAL do exercício de atividades de tratamento. Guarde os pares: \"parcial\" é do banco de dados, \"parcial ou total\" é da proibição de atividade. Não há pena privativa de liberdade na LGPD."
+      ]
+    }
+  ],
+  "mentalModels": [
+    {
+      "title": "Governança pergunta 'o certo'; gestão pergunta 'direito'",
+      "body": "Escreva ao lado da questão duas perguntas. 'Estamos fazendo as coisas CERTAS?' — direção, prioridade, conformidade, valor para as partes interessadas: isso é governança (COBIT, domínio EDM: avaliar, dirigir, monitorar). 'Estamos fazendo as coisas DIREITO?' — planejar, construir, entregar, suportar, medir: isso é gestão (ITIL, PMBOK, os domínios APO/BAI/DSS/MEA). Em transp23e6-q59 a resposta é governança justamente porque o enunciado fala em alinhar a TI a objetivos, requisitos regulatórios e éticos — direção, não execução. Atenção ao rótulo: em transp23e6-q59 a Cesgranrio deu como correta a expressão \"governança CORPORATIVA\" (e pôs \"gestão de serviços de TI\" como distrator) para exatamente essa definição — ou seja, a banca não distinguiu governança corporativa de governança de TI naquele enunciado. Guarde os dois rótulos ligados à mesma definição de \"avaliar, dirigir e monitorar\"."
+    },
+    {
+      "title": "TI é o encanamento; SI é a água chegando na torneira",
+      "body": "Trocar SI por TI é o erro mais barato da área. TI é hardware e software. SI é o arranjo que junta tecnologia com PESSOAS e com a ORGANIZAÇÃO (processos, cultura, estrutura, política) para entregar informação útil. Por isso a resposta de prova07-q69 é que as componentes organizacional e humana são partes integrantes do sistema, e por isso 'capacitação em SI = capacitação em computadores' é falso. Sempre que uma alternativa reduzir SI a tecnologia, ela está errada."
+    },
+    {
+      "title": "Consentimento é uma das dez portas, não a porta",
+      "body": "A imagem que resolve metade das questões de LGPD: o tratamento é uma sala com dez portas de entrada (as bases legais do art. 7º). Consentimento é só a primeira delas — quem trata dado por obrigação legal, para executar contrato, para tutelar a saúde ou por legítimo interesse entrou por outra porta e não precisa de consentimento nenhum. Para dado SENSÍVEL, o corredor é outro (art. 11) e duas portas estão trancadas: legítimo interesse e proteção do crédito não valem. Alternativa que diz 'exige consentimento apenas para dados sensíveis' ou 'todo tratamento exige consentimento' está errada nos dois sentidos."
+    },
+    {
+      "title": "No ITIL 4 não há processo, há prática; e nada é sequencial",
+      "body": "Guarde a mudança de vocabulário como se fosse um par de sinônimos falsos. ITIL v3: cinco estágios do CICLO DE VIDA do serviço, com processos dentro de cada um, o que sugere uma esteira. ITIL 4: quatro dimensões, sete princípios, 34 práticas e uma cadeia de valor cujas seis atividades se combinam em fluxos de valor conforme o caso, sem ordem fixa. Se o enunciado fala em 'ciclo de vida do serviço' e 'processos', está no vocabulário v3; se fala em 'práticas', 'fluxo de valor' e 'cocriação de valor', é ITIL 4."
+    },
+    {
+      "title": "SLA olha para fora, OLA olha para dentro, UC olha para o contrato",
+      "body": "Três acordos, três direções. O SLA é a promessa feita ao cliente. Para cumprir aquela promessa, o provedor precisa que suas próprias áreas se comprometam entre si: é o OLA, interno. E precisa que os terceiros entreguem: é o UC, o contrato de apoio com fornecedor externo. Regra de coerência que cai em prova: o SLA não pode prometer mais do que OLAs e UCs sustentam."
+    }
+  ],
+  "patterns": [
+    {
+      "title": "A área, no histórico, é 'sistemas de informação e ERP' — não governança",
+      "howToSpot": "7 das 12 questões estão no subtópico 4.1, e o conteúdo é livro de sistemas de informação empresariais (linha Laudon &amp; Laudon): definição de SI e de TI, as três dimensões do SI, objetivos organizacionais dos SI, o que é ERP e quais são suas dificuldades de implantação, workflow. A única questão de 4.1 fora desse molde é transp23e6-q59, que pede o conceito de governança em uma linha. Se a prova de 2026 mantiver o peso do subtópico, a leitura mais rentável é um capítulo de SI empresarial — e não um manual de ITIL.",
+      "evidence": [
+        "psjpn2018-q48",
+        "prova07-q65",
+        "prova07-q66",
+        "prova07-q68",
+        "prova07-q69",
+        "prova07-q70",
+        "transp23e6-q59"
+      ]
+    },
+    {
+      "title": "'Qual é a tecnologia?': o distrator é um termo real com a definição invertida",
+      "howToSpot": "Nas duas questões de 4.3 o enunciado descreve uma mudança de mercado e pede o nome da tecnologia. Em transp15-q56, aplicações que migram para serviço online, sob demanda e por assinatura = computação em nuvem (big data, e-business, teletrabalho e virtualização são vizinhos plausíveis). Em psjpn2018-q49 a correta é mashup, e os distratores são termos reais com definição torcida: a virtualização é descrita ao contrário (vários equipamentos físicos aparentando ser um lógico, quando o normal é um físico hospedar vários lógicos), a nuvem PRIVADA é descrita como se estivesse nos servidores do provedor (isso é nuvem pública/de terceiro) e os silos de dados aparecem 'integrando' dados, quando silo é justamente a falta de integração. Leia a definição inteira antes de reconhecer só a sigla.",
+      "evidence": [
+        "psjpn2018-q49",
+        "transp15-q56"
+      ]
+    },
+    {
+      "title": "Asserção-razão: as duas questões do formato estão na prova de 2010",
+      "howToSpot": "prova07-q65 e prova07-q68 usam o par afirmação–PORQUE–afirmação com as cinco alternativas fixas. Em q65 as duas frases são verdadeiras (definição de SI e definição de TI), mas são definições independentes: a segunda não justifica a primeira. Em q68 a primeira é falsa (ERP automatiza processos de negócio, não 'as etapas dos projetos de TI') e a segunda, a definição de workflow, é verdadeira. Note o desenho: a banca aproveita o formato para plantar uma inversão sutil de escopo na primeira frase. Julgue cada frase isoladamente, marque V ou F na margem, e só então avalie o nexo causal.",
+      "evidence": [
+        "prova07-q65",
+        "prova07-q68"
+      ]
+    },
+    {
+      "title": "Em 2023, a correta é a afirmação abrangente; os distratores restringem",
+      "howToSpot": "Nas duas questões de 2023 em que se pede julgar afirmações sobre um conceito, todos os distratores estreitam indevidamente o alcance com 'apenas', 'exclusivamente', 'somente' ou 'isentos de'. Em transp23e6-q66, KPI aparece como 'apenas hardware', 'exclusivamente disponibilidade', 'apenas organizações de pequeno porte', 'isentos da influência de ferramentas de monitoramento' — e a correta é a frase ampla (selecionados com base nas necessidades de negócio, medem o sucesso do serviço). Em transp23e6-q57, a LGPD aparece como 'apenas empresas no Brasil, sem extraterritorialidade' e 'consentimento apenas para dados sensíveis'. Cuidado, porém: a palavra restritiva não é um detector automático — em outras questões do banco a própria alternativa correta usa 'apenas'. Confirme sempre se a restrição é FALSA no mérito.",
+      "evidence": [
+        "transp23e6-q57",
+        "transp23e6-q66"
+      ]
+    }
+  ],
+  "tactics": [
+    {
+      "title": "Área pouco representada no histórico: estude o edital, não a prova antiga",
+      "body": "12 questões em quatro provas é lastro fraco, e ele está concentrado num só subtópico. ITIL e COBIT nunca apareceram; a LGPD apareceu uma vez; o subtópico 4.4 (ciência, pesquisa, desenvolvimento e indústria) nunca apareceu. Isso é motivo para cobrir o Anexo IV item por item, não para ignorar o que ainda não caiu — com 50 questões de específicas divididas em 8 áreas, uma estreia de ITIL 4 ou de LGPD custa o mesmo ponto que uma repetição de ERP. Deixe pronta uma frase de definição para cada subtópico e uma lista para cada numeração da LGPD; é barato e cobre o cenário de estreia."
+    },
+    {
+      "title": "Monte a tabela de versões antes da prova",
+      "body": "Em três frentes desta área a resposta muda com a versão, e a banca pode citar o número sem citar a edição: ITIL v3 (processos, cinco estágios do ciclo de vida) x ITIL 4 (34 práticas, quatro dimensões, sete princípios, cadeia de valor com seis atividades); COBIT 5 (5 princípios, 7 habilitadores, 37 processos) x COBIT 2019 (40 objetivos de governança e gestão em 5 domínios, 6 princípios do sistema de governança); Manual de Oslo 3ª edição (produto, processo, marketing, organizacional) x 4ª edição (produto e processo de negócio). Se a alternativa depende de um número e não diz a versão, prefira a que se sustenta pelos NOMES."
+    },
+    {
+      "title": "Na LGPD, decore as listas fechadas — elas são o gabarito",
+      "body": "Quatro listas resolvem quase tudo: os 10 princípios do art. 6º, as 10 bases legais do art. 7º, os 9 direitos do titular do art. 18 e as sanções do art. 52 (advertência; multa simples de até 2% do faturamento limitada a R$ 50 milhões por infração; multa diária; publicização; bloqueio; eliminação; suspensão PARCIAL do banco de dados por até 6 meses, prorrogável; suspensão da atividade de tratamento por até 6 meses, prorrogável; e proibição PARCIAL OU TOTAL de atividades de tratamento). O jeito mais rápido de errar é confundir princípio com direito e base legal com finalidade. Escreva as quatro listas de memória, em papel, duas vezes na semana da prova."
+    },
+    {
+      "title": "Em toda questão de LGPD, pergunte 'quem é quem' e 'por qual base'",
+      "body": "Duas perguntas resolvem o mérito: (1) quem decide o tratamento é o CONTROLADOR, quem executa por conta dele é o OPERADOR, quem faz a ponte com titulares e ANPD é o ENCARREGADO, quem fiscaliza e sanciona é a ANPD; (2) qual base legal autoriza — e se o dado é SENSÍVEL, lembre que legítimo interesse e proteção do crédito estão fora. Alternativa que atribui a sanção ao encarregado, que trata o operador como quem define finalidade, ou que exige consentimento onde há obrigação legal, cai por uma dessas duas perguntas."
+    },
+    {
+      "title": "Separe 'definição de conceito' de 'julgamento de afirmações'",
+      "body": "As questões de 2023 vêm em dois moldes. No molde 'definição de conceito' (transp23e6-q59, transp23e6-q60) o enunciado descreve algo em uma frase e as alternativas são cinco termos: ganha quem tem a definição de uma linha de cada termo, e profundidade não ajuda. No molde 'julgamento de afirmações' (transp23e6-q57, transp23e6-q66) as cinco alternativas são frases inteiras sobre o mesmo conceito e é preciso caçar a restrição falsa. Identifique o molde nos primeiros segundos: ele decide se você recupera um vocabulário ou se lê palavra por palavra."
+    },
+    {
+      "title": "Não descarte item plausível sem apontar o erro",
+      "body": "Nas duas questões de lista numerada da prova de 2010 o gabarito foi 'todos os itens'. Adote a regra: para eliminar o item III é preciso dizer em voz alta qual palavra dele está errada. Se você não consegue nomear o erro, o item fica. O mesmo vale para o formato asserção-razão: marque V/F em cada frase antes de sequer olhar se uma justifica a outra, porque a alternativa 'as duas são verdadeiras e a segunda não justifica a primeira' existe exatamente para quem pula essa etapa."
+    }
+  ],
+  "trapWords": [
+    {
+      "term": "governança de TI",
+      "confusedWith": "gestão de TI / gestão de serviços de TI",
+      "distinction": "Governança avalia, dirige e monitora: define direção, prioridade e conformidade, e responde por valor às partes interessadas. Gestão planeja, constrói, executa e monitora o dia a dia. Em transp23e6-q59, 'alinhar a TI a objetivos e requisitos regulatórios e éticos' é governança, não gestão de serviços. Atenção ao rótulo: em transp23e6-q59 a Cesgranrio deu como correta a expressão \"governança CORPORATIVA\" (e pôs \"gestão de serviços de TI\" como distrator) para exatamente essa definição — ou seja, a banca não distinguiu governança corporativa de governança de TI naquele enunciado. Guarde os dois rótulos ligados à mesma definição de \"avaliar, dirigir e monitorar\"."
+    },
+    {
+      "term": "COBIT",
+      "confusedWith": "ITIL",
+      "distinction": "COBIT é framework de governança e gestão corporativa de TI: diz O QUE controlar, com objetivos, domínios e métricas. ITIL é o corpo de boas práticas de gerenciamento de SERVIÇOS: diz COMO operar e melhorar serviços. São complementares, não alternativos."
+    },
+    {
+      "term": "processo (ITIL v3)",
+      "confusedWith": "prática (ITIL 4)",
+      "distinction": "ITIL v3 organiza processos em cinco estágios do ciclo de vida do serviço. ITIL 4 substitui essa arquitetura por 34 práticas, quatro dimensões e uma cadeia de valor de serviço com seis atividades combináveis. Enunciado que fala em 'ciclo de vida do serviço' está no vocabulário v3."
+    },
+    {
+      "term": "SLA",
+      "confusedWith": "OLA e UC",
+      "distinction": "SLA: acordo com o CLIENTE/negócio. OLA: acordo INTERNO entre áreas do próprio provedor. UC (contrato de apoio): contrato com FORNECEDOR EXTERNO. O SLA não pode prometer mais do que OLAs e UCs sustentam."
+    },
+    {
+      "term": "incidente",
+      "confusedWith": "problema e requisição de serviço",
+      "distinction": "Incidente é a interrupção não planejada ou a queda de qualidade do serviço (o sintoma). Problema é a causa, ou possível causa, de um ou mais incidentes. Requisição de serviço é pedido normal do usuário, sem falha nenhuma — pedir acesso não é incidente."
+    },
+    {
+      "term": "eficiência",
+      "confusedWith": "eficácia e efetividade",
+      "distinction": "Eficácia: atingiu o resultado pretendido. Eficiência: atingiu gastando menos recurso. Efetividade: o resultado produziu o impacto desejado no negócio. KPI mal escolhido mede eficiência de algo ineficaz."
+    },
+    {
+      "term": "controlador",
+      "confusedWith": "operador",
+      "distinction": "Controlador é quem toma as DECISÕES referentes ao tratamento (finalidade e meios). Operador realiza o tratamento EM NOME do controlador. Os dois são agentes de tratamento e podem responder solidariamente, mas quem define a finalidade é o controlador."
+    },
+    {
+      "term": "encarregado (DPO)",
+      "confusedWith": "ANPD",
+      "distinction": "O encarregado é indicado pelo controlador e pelo operador e atua como canal entre controlador, titulares e autoridade — é interno à organização. A ANPD é o órgão público que fiscaliza, regulamenta e APLICA AS SANÇÕES. Encarregado não sanciona."
+    },
+    {
+      "term": "dado pessoal sensível",
+      "confusedWith": "dado pessoal comum",
+      "distinction": "Sensível é a lista fechada do art. 5º: origem racial ou étnica, convicção religiosa, opinião política, filiação sindical ou a organização religiosa/filosófica/política, dado de saúde ou vida sexual, dado genético ou biométrico vinculado a pessoa natural. Renda, endereço e CPF são dados pessoais, mas não sensíveis."
+    },
+    {
+      "term": "anonimização",
+      "confusedWith": "pseudonimização",
+      "distinction": "Dado anonimizado perdeu a possibilidade de associação ao indivíduo por meios técnicos razoáveis e, em regra, sai do alcance da lei. Pseudonimizado troca o identificador por um código e pode ser reidentificado com informação guardada em separado: continua sendo dado pessoal."
+    },
+    {
+      "term": "consentimento",
+      "confusedWith": "legítimo interesse",
+      "distinction": "São bases legais distintas e alternativas: usar legítimo interesse dispensa consentimento (com teste de balanceamento, finalidade legítima e expectativa do titular). Legítimo interesse, porém, NÃO autoriza tratar dado pessoal sensível."
+    },
+    {
+      "term": "ERP",
+      "confusedWith": "CRM, SCM e MRP",
+      "distinction": "ERP integra e automatiza processos das diversas funções da empresa em um único sistema interfuncional. CRM cuida do relacionamento com o cliente; SCM, da cadeia de suprimentos; MRP/planejamento de capacidade cuida de ordens de produção e centros de trabalho — foi justamente o distrator de psjpn2018-q48."
+    },
+    {
+      "term": "virtualização",
+      "confusedWith": "computação em nuvem",
+      "distinction": "Virtualização é a técnica de fazer um recurso físico hospedar vários recursos lógicos — a alternativa de psjpn2018-q49 inverteu isso. Nuvem é o modelo de entrega de serviço sob demanda, elástico, medido e pela rede; usa virtualização, mas não se confunde com ela."
+    },
+    {
+      "term": "custo de oportunidade",
+      "confusedWith": "externalidade negativa",
+      "distinction": "Custo de oportunidade é o valor do que se deixou de obter ao alocar recursos àquela escolha (transp23e6-q60). Externalidade negativa é o custo que a atividade impõe a terceiros sem compensação. Uma é escolha interna; a outra, efeito sobre fora."
+    },
+    {
+      "term": "inovação incremental",
+      "confusedWith": "inovação radical e disruptiva",
+      "distinction": "Incremental melhora o que existe na mesma trajetória técnica. Radical rompe a trajetória. Disruptiva (Christensen) é um conceito de mercado, não de intensidade técnica: entra por um nicho desatendido com desempenho inferior nos atributos tradicionais e depois desloca o incumbente."
+    }
+  ]
+}

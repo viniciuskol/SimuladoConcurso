@@ -1,0 +1,279 @@
+{
+  "areaId": "analise-dados",
+  "resumo": "<p><strong>A área com menos lastro do banco — e o que isso exige.</strong> São só 6 questões: 4 na prova de 2011 e 2 na de 2023. Três estão em conceitos de data warehouse (7.6), duas em OLAP e suas operações (7.5) e uma em modelagem multidimensional (7.7). Ou seja, <strong>5 das 6 questões são DW + OLAP</strong>. Oito subtópicos do Anexo IV nunca foram objeto de questão: dado/informação/conhecimento/inteligência (7.1), BI como corpo de conceitos (7.2 — o termo só apareceu como contexto de enunciado), mapeamento de fontes (7.3), dados estruturados e não estruturados (7.4), relatórios e dashboards interativos (7.8), planilhas (7.9), geração de insights (7.10) e BI como suporte à decisão (7.11). Com seis questões não se descobre padrão de banca; descobre-se, no máximo, o formato. O conteúdo aqui tem de vir do edital, e o peso do estudo está no resumo e no cheatsheet, não em previsão.</p> <p><strong>Da coleta à decisão.</strong> A cadeia clássica é <strong>dado</strong> (registro bruto, sem contexto) → <strong>informação</strong> (dado com contexto e significado) → <strong>conhecimento</strong> (informação interpretada, com experiência, que permite agir) → <strong>inteligência</strong> (conhecimento aplicado à decisão). BI é o conjunto de conceitos, métodos e ferramentas que transforma dado operacional em informação de apoio à decisão. A arquitetura padrão vai de fontes internas e externas (OLTP, arquivos, APIs, planilhas) para a área de <em>staging</em>, onde o <strong>ETL</strong> extrai, transforma e carrega; daí para o data warehouse e seus data marts; e daí para consulta OLAP, relatórios, dashboards e mineração. Requisito que a banca já cobrou nesse desenho: <em>latência de dados</em> é a rapidez de entrega dos dados ao usuário final (prova6-q53), e não o tempo de uma consulta nem o tempo da carga inicial.</p> <table><tr><th>Repositório</th><th>Escopo e propósito</th><th>Volatilidade e histórico</th></tr><tr><td>Data warehouse</td><td>Corporativo, orientado a assunto, integrado, para análise</td><td>Não volátil, guarda histórico longo</td></tr><tr><td>Data mart</td><td>Recorte departamental ou por assunto do DW</td><td>Não volátil, histórico do seu recorte</td></tr><tr><td>ODS</td><td>Dados operacionais integrados, para consulta corrente</td><td>Volátil, atualizado, detalhado, pouco histórico</td></tr><tr><td>Staging area</td><td>Área de trabalho intermediária do ETL</td><td>Transitória; é decisão de projeto, não item obrigatório</td></tr><tr><td>Data lake</td><td>Dado bruto em formato original, schema-on-read</td><td>Retém tudo, inclusive não estruturado</td></tr></table> <p><strong>Data warehouse e OLAP.</strong> Nas quatro características de Inmon, o DW é orientado a assunto, integrado, não volátil e variável no tempo; e a característica que a prova de 2023 pediu é a de <strong>consolidar dados de diversas fontes em um só lugar, permitindo análise multidimensional</strong> (transp23e6-q56). OLTP e OLAP são mundos opostos: o primeiro é transacional, normalizado, com muitas escritas curtas e dado atual; o segundo é analítico, dimensional, com poucas consultas grandes de leitura e dado histórico agregado. Quanto à implementação, <strong>MOLAP</strong> guarda e consulta em estrutura multidimensional própria, <strong>ROLAP</strong> constrói a visão multidimensional sobre um banco relacional e <strong>HOLAP</strong> é o híbrido, acessando tanto relacional quanto multidimensional (foi exatamente esse pareamento que prova6-q49 cobrou). As operações de navegação no cubo: <strong>drill down</strong> desce ao detalhe, <strong>roll up</strong> (drill up) agrega para nível hierárquico mais alto, <strong>slice</strong> fixa um valor de uma dimensão e reduz a dimensionalidade, <strong>dice</strong> recorta um subcubo filtrando duas ou mais dimensões, <strong>pivot</strong> gira os eixos da apresentação, <strong>drill through</strong> desce até o registro detalhado na origem. Em transp23e6-q62 a correta é a definição de drill down, e cada distrator inverte um sentido: roll up agregando \"para níveis mais baixos\", pivot \"criando novas dimensões\", drill through \"agregando em níveis mais altos\" — e o quarto distrator descreve slice como \"seleção de um ou mais membros de uma dimensão\": slice fixa UM valor de UMA dimensão; vários membros em mais de uma dimensão é dice.</p> <p><strong>Medida, grão e aditividade.</strong> No fato, a medida é o número que se analisa; a dimensão dá o contexto. Aditividade decide o que a ferramenta pode somar: <em>aditiva</em> soma em todas as dimensões (quantidade, valor de venda); <em>semiaditiva</em> soma em algumas, mas não no tempo (saldo, estoque, número de contas — soma entre filiais, não entre meses); <em>não aditiva</em> não soma em nenhuma (percentual, razão, média, preço unitário, índice). Foi essa distinção que prova6-q46 cobrou ao pedir quantas medidas não aditivas havia numa tabela com três linhas de \"percentual trimestral\" — as quantidades mensais são aditivas, os três percentuais não. Esquema estrela, floco de neve e SCD estão detalhados na área de Arquitetura de Dados; aqui basta guardar que estrela favorece desempenho de consulta e que o grão define o que uma linha do fato representa.</p> <p><strong>Análise, mineração e leitura de números.</strong> Os quatro tipos de análise sobem em valor e em dificuldade: <strong>descritiva</strong> (o que aconteceu), <strong>diagnóstica</strong> (por que aconteceu), <strong>preditiva</strong> (o que deve acontecer) e <strong>prescritiva</strong> (o que fazer a respeito). Na mineração de dados, as tarefas centrais são classificação (prever rótulo categórico), regressão (prever valor numérico), agrupamento/clusterização (achar grupos sem rótulo prévio), associação (regras do tipo \"quem compra A compra B\") e detecção de anomalias; as duas primeiras são supervisionadas, as duas seguintes não. Mineração é uma <em>etapa</em> do processo de descoberta de conhecimento (KDD), não sinônimo dele. Na estatística descritiva, média é sensível a valores extremos, mediana é o valor central e resiste a eles, moda é o mais frequente; desvio-padrão é a raiz da variância e mede dispersão na mesma unidade do dado. E a regra que a banca gosta de cobrar em prosa: correlação mede associação (linear, no caso de Pearson, entre -1 e 1) e <strong>não</strong> estabelece causalidade. Indicador, KPI, dashboard e storytelling fecham o ciclo: cada visual responde a uma pergunta, cada indicador tem meta e comparação, e o insight só existe quando alguém decide algo por causa dele.</p>",
+  "cheatsheet": [
+    {
+      "heading": "Dado, informação, conhecimento e as fontes (7.1, 7.3, 7.4)",
+      "items": [
+        "Dado: registro bruto, sem contexto ('37'). Informação: dado com contexto e significado ('37 pedidos cancelados em maio'). Conhecimento: informação interpretada com experiência, que permite agir. Inteligência: conhecimento aplicado à decisão, olhando cenário e consequência.",
+        "Dados ESTRUTURADOS: modelo rígido, em tabelas com tipos definidos (banco relacional, planilha bem formada). SEMIESTRUTURADOS: têm marcadores mas não esquema fixo (JSON, XML, log). NÃO ESTRUTURADOS: texto livre, imagem, áudio, vídeo, PDF.",
+        "Mapeamento de fontes de dados: inventariar o que existe (sistema, arquivo, API, planilha, dado externo), quem é o dono, periodicidade, volume, granularidade, qualidade e forma de acesso. Produtos desse trabalho: dicionário de dados, catálogo de dados e linhagem (data lineage).",
+        "Metadado é dado sobre o dado: definição de campo, origem, regra de cálculo, data de carga, dono. Sem metadado, o mesmo indicador vira dois números diferentes em duas telas.",
+        "Dado interno (transacional, cadastral) x dado externo (mercado, índices, dados abertos, redes). Fonte primária é coletada para o propósito da análise; secundária é reaproveitada.",
+        "Fonte da verdade única (single source of truth): todos os relatórios derivam do mesmo repositório e da mesma definição de indicador — é isso que evita a reunião em que cada área traz um número diferente."
+      ]
+    },
+    {
+      "heading": "BI: para que serve e como se monta (7.2, 7.11)",
+      "items": [
+        "BI é o conjunto de conceitos, métodos, processos e ferramentas que converte dado operacional em informação e conhecimento para apoiar a decisão. O objetivo é decisão, não relatório — relatório é meio.",
+        "Fluxo padrão: fontes (OLTP, arquivos, APIs, planilhas) → staging → ETL (extração, transformação, carga) → data warehouse → data marts → consulta OLAP, relatórios, dashboards, mineração.",
+        "ETL transforma ANTES de carregar (regra de negócio e limpeza no caminho). ELT carrega o dado bruto e transforma NO DESTINO, aproveitando o poder de processamento do armazém ou do lake. ELT não é 'ETL sem transformação'.",
+        "Níveis de decisão: estratégico (longo prazo, alta direção, indicadores agregados), tático (médio prazo, gerência, comparação com meta) e operacional (dia a dia, detalhe, quase tempo real). O mesmo dado muda de forma em cada nível.",
+        "Self-service BI: o usuário de negócio monta a própria análise sobre um modelo governado. Ganha agilidade, mas exige catálogo, definição única de indicador e controle de acesso, ou multiplica versões da verdade.",
+        "Latência de dados é a rapidez com que o dado chega ao usuário final (prova6-q53) — é requisito de projeto, junto com granularidade, histórico a manter, volume e perfil de consulta. Não confunda com tempo de resposta de consulta.",
+        "BI olha o passado e o presente com dado estruturado e pergunta conhecida; analytics avançado e ciência de dados atacam pergunta aberta, dado variado e predição. São complementares."
+      ]
+    },
+    {
+      "heading": "Data warehouse, data mart, ODS, staging e lake (7.6)",
+      "items": [
+        "As 4 características de Inmon: ORIENTADO A ASSUNTO (vendas, cliente — não por sistema de origem), INTEGRADO (padroniza nome, código, unidade e formato de fontes diferentes), NÃO VOLÁTIL (carrega e consulta; não se atualiza registro a registro pelo usuário) e VARIÁVEL NO TEMPO (guarda séries históricas, com referência temporal).",
+        "A característica cobrada em transp23e6-q56: consolidar dados de diversas fontes em um só local, permitindo análises multidimensionais. Erros plantados: 'somente dados brutos sem análise' (isso é lake), 'apenas dados operacionais de curto prazo' (isso é ODS), 'otimizado apenas para transações' (isso é OLTP).",
+        "Data mart: recorte do DW por assunto ou por departamento, menor e mais rápido de entregar. Pode ser derivado do DW (Inmon, top-down) ou ser o próprio ponto de partida, integrado por dimensões conformadas (Kimball, bottom-up).",
+        "ODS (Operational Data Store): integra dados operacionais de várias fontes, mas mantém granularidade detalhada, é VOLÁTIL e serve consulta corrente/operacional — não é o repositório histórico. Staging area é a área de trabalho transitória do ETL.",
+        "Atenção ao uso do banco: em prova6-q47 a banca tratou 'ODS' e 'staging area' como a mesma coisa e o que decidiu a questão foi outro ponto — a área de staging é DECISÃO DE PROJETO, e por isso chamá-la de 'indispensável' torna a afirmação falsa. Na literatura, porém, ODS e staging são conceitos distintos.",
+        "Na mesma questão, 'DDS – Dynamic Data Storage' é terminologia inventada: não é um componente reconhecido de arquitetura de DW. Sigla que você nunca viu, num enunciado de asserção-razão, é forte candidata a falsidade.",
+        "Data lake: guarda o dado em formato original, com esquema aplicado na leitura (schema-on-read), aceitando estruturado, semiestruturado e não estruturado. DW é schema-on-write. Lakehouse tenta juntar governança de DW com flexibilidade de lake. Sem catálogo e qualidade, lake degenera em 'data swamp'.",
+        "Cubo é a estrutura de análise (dimensões x medidas), não um repositório concorrente do DW: em geral é construído sobre ele ou sobre um data mart."
+      ]
+    },
+    {
+      "heading": "OLAP: tipos e operações (7.5)",
+      "items": [
+        "OLTP: transacional, normalizado, escrita intensa, registro individual, dado atual, consultas curtas e previsíveis. OLAP: analítico, dimensional, leitura intensa, dado agregado e histórico, consultas grandes e ad hoc. Rodar análise pesada direto no OLTP degrada a operação — é a razão de existir do DW.",
+        "MOLAP: armazena e consulta em estrutura multidimensional própria (cubo pré-calculado); consulta rápida, carga e reprocessamento mais custosos. ROLAP: monta a visão multidimensional sobre tabelas relacionais; escala melhor em volume, depende de SQL e índices. HOLAP: híbrido, acessa tanto relacional quanto multidimensional (prova6-q49).",
+        "Em prova6-q49 a característica 'dados armazenados em computadores pessoais' não corresponde a nenhuma das três siglas pedidas — remete ao OLAP de desktop (DOLAP) e ficou sobrando como isca. Cuidado com questão de associação em que uma das características não é usada.",
+        "DRILL DOWN: sai do resumido para o detalhado, descendo a hierarquia (ano → trimestre → mês). É a definição correta de transp23e6-q62.",
+        "ROLL UP (ou drill up): agrega, subindo para nível hierárquico MAIS ALTO. Alternativa que diz 'agregações em níveis hierárquicos mais baixos' inverteu o sentido.",
+        "SLICE: fixa um valor de UMA dimensão e recorta uma 'fatia' do cubo, reduzindo sua dimensionalidade (ex.: só o ano 2025). DICE: recorta um SUBCUBO, filtrando faixas ou vários membros em DUAS OU MAIS dimensões.",
+        "PIVOT (rotate): gira os eixos da apresentação, trocando linha por coluna — reorganiza a visão, NÃO cria dimensão nova. DRILL ACROSS: consulta duas tabelas de fatos por dimensões conformadas. DRILL THROUGH: desce do agregado até o registro detalhado na base de origem — não é operação de agregação.",
+        "Hierarquia de dimensão é o que torna drill down e roll up possíveis (tempo: ano/trimestre/mês/dia; geografia: país/estado/cidade). Sem hierarquia definida, não há por onde descer."
+      ]
+    },
+    {
+      "heading": "Medida, grão e aditividade no uso analítico (7.7)",
+      "items": [
+        "Tabela de fato guarda medidas (o que se soma e se conta) mais as chaves das dimensões; dimensão guarda o contexto descritivo pelo qual se filtra e se agrupa.",
+        "ADITIVA: soma em todas as dimensões (quantidade vendida, valor faturado). SEMIADITIVA: soma em algumas, mas não no tempo (saldo em conta, estoque, número de assinantes — some entre filiais, jamais entre meses; no tempo use último valor ou média). NÃO ADITIVA: não soma em nenhuma (percentual, razão, média, preço unitário, índice, taxa de conversão).",
+        "Regra prática de prova6-q46: percentual é medida não aditiva; a tabela trazia um 'percentual trimestral' por linha, com três linhas, logo três medidas não aditivas — as quantidades mensais são aditivas.",
+        "Para trabalhar com razão em ambiente analítico, guarde no fato o numerador e o denominador (medidas aditivas) e calcule a razão na apresentação. Somar percentuais já calculados é o erro clássico.",
+        "Grão (granularidade) é o que UMA linha do fato representa (uma venda, um item de venda, um dia por produto por loja). Grão mais fino permite mais análise e custa mais volume; definir o grão é a primeira decisão do modelo.",
+        "Fato sem medida numérica existe: é o fato de evento/sem fato (registro de que algo ocorreu, contado por linha). Fato agregado é a tabela pré-somada para acelerar consulta.",
+        "Esquema estrela x floco de neve, dimensões conformadas, SCD tipos 1, 2 e 3 e as diferenças entre Inmon e Kimball estão detalhados na área de Arquitetura de Dados — para o uso analítico basta lembrar que estrela reduz junções e favorece desempenho de consulta, e que SCD tipo 2 é o que preserva histórico."
+      ]
+    },
+    {
+      "heading": "Tipos de análise e mineração de dados",
+      "items": [
+        "Os 4 tipos: DESCRITIVA (o que aconteceu — relatório, série histórica), DIAGNÓSTICA (por que aconteceu — decomposição, correlação, causa-raiz), PREDITIVA (o que deve acontecer — modelo estatístico ou de aprendizado) e PRESCRITIVA (o que fazer — otimização, simulação, recomendação).",
+        "Tarefas de mineração: CLASSIFICAÇÃO (prever rótulo categórico: churn sim/não), REGRESSÃO (prever valor numérico: demanda do mês), AGRUPAMENTO/CLUSTERIZAÇÃO (achar grupos sem rótulo prévio: segmentação de clientes), ASSOCIAÇÃO (regras 'quem compra A compra B') e DETECÇÃO DE ANOMALIAS.",
+        "Supervisionado tem variável-alvo conhecida no treino (classificação, regressão). Não supervisionado não tem (agrupamento, associação). Confundir os dois é o erro mais frequente do tema.",
+        "Regras de associação se avaliam por suporte (frequência do conjunto), confiança (probabilidade do consequente dado o antecedente) e lift (quanto a regra supera o esperado ao acaso). Algoritmo clássico: Apriori.",
+        "Mineração de dados é uma ETAPA do KDD (descoberta de conhecimento em bases de dados), que inclui seleção, pré-processamento, transformação, mineração e interpretação/avaliação. Chamar KDD de sinônimo de mineração é a troca clássica.",
+        "CRISP-DM, 6 fases iterativas: entendimento do negócio, entendimento dos dados, preparação dos dados, modelagem, avaliação e implantação. A preparação dos dados costuma consumir a maior parte do esforço.",
+        "Avaliação de classificador: matriz de confusão, acurácia, precisão, revocação (recall) e F1. Em base desbalanceada a acurácia engana — 99% de acerto prevendo sempre 'não' não vale nada.",
+        "Sobreajuste (overfitting): o modelo decora o treino e falha no dado novo; combate-se com separação treino/teste, validação cruzada e simplificação. Correlação espúria e viés de amostra derrubam qualquer modelo bem ajustado."
+      ]
+    },
+    {
+      "heading": "Estatística descritiva para ler dados",
+      "items": [
+        "Média: soma dividida pela quantidade; SENSÍVEL a valores extremos. Mediana: valor central da série ordenada; ROBUSTA a extremos. Moda: valor mais frequente; pode não existir ou ser múltipla. Em distribuição assimétrica à direita (cauda longa de valores altos), média > mediana.",
+        "Quando há outlier ou distribuição assimétrica (salário, tempo de atendimento), a mediana descreve melhor o 'típico' que a média. Relatório que só mostra média esconde a cauda.",
+        "Dispersão: amplitude (máx - mín), variância (média dos desvios ao quadrado), desvio-padrão (raiz da variância, na MESMA unidade do dado) e coeficiente de variação (desvio-padrão sobre a média, permite comparar séries de escalas diferentes).",
+        "Quartis, intervalo interquartil e boxplot resumem posição, dispersão e outliers de uma vez. Percentil responde 'que valor separa os X% inferiores'.",
+        "Correlação de Pearson varia de -1 a 1 e mede associação LINEAR; 0 não significa ausência de relação, apenas ausência de relação linear. Spearman mede associação monotônica e serve a dado ordinal.",
+        "CORRELAÇÃO NÃO É CAUSALIDADE: pode haver variável de confusão, causalidade invertida ou coincidência (correlação espúria). Para afirmar causa é preciso experimento (teste A/B) ou desenho quase experimental.",
+        "Cuidado com a agregação: a mesma base pode mostrar tendências opostas no total e por subgrupo (paradoxo de Simpson). Sempre confira o dado segmentado antes de concluir.",
+        "Variável qualitativa nominal (sem ordem: cidade), qualitativa ordinal (com ordem: escolaridade), quantitativa discreta (contagem) e quantitativa contínua (medição). O tipo determina a estatística e o gráfico cabíveis."
+      ]
+    },
+    {
+      "heading": "Indicadores, KPIs, dashboards e storytelling (7.8, 7.10)",
+      "items": [
+        "Métrica é a medida bruta; indicador é a medida com significado e regra de cálculo; KPI é o indicador ligado a um objetivo, com meta e responsável. Nem todo indicador é KPI — se ninguém decide nada com ele, é ornamento.",
+        "Bom indicador é SMART (específico, mensurável, atingível, relevante, temporal) e vem com definição escrita, fonte, fórmula, periodicidade e meta. Indicador sem comparação (meta, período anterior, referência de mercado) não informa nada.",
+        "Indicador de tendência/direcionador (leading) antecipa o resultado (número de propostas enviadas); indicador de resultado (lagging) mede o que já ocorreu (receita). Painel só com lagging avisa tarde.",
+        "Balanced Scorecard, 4 perspectivas: financeira, clientes, processos internos, aprendizado e crescimento. OKR: um objetivo qualitativo com resultados-chave mensuráveis.",
+        "Dashboard por público: ESTRATÉGICO (poucos indicadores, agregado, comparação com meta), TÁTICO (comparação e desvio por área e período), OPERACIONAL (detalhe, alta frequência, alerta). Errar o público é o defeito mais comum.",
+        "Boas práticas de visualização: uma mensagem por visual; título que afirma a conclusão, não o assunto; ordenar categorias por valor; escala do eixo de barras começando em zero; cor com propósito (destacar, codificar) e não como decoração; evitar 3D e excesso de fatias em pizza; maximizar a razão dado/tinta (Tufte) e eliminar 'chartjunk'.",
+        "Escolha do gráfico pela pergunta: comparar categorias → barras; evolução no tempo → linhas; composição → barras empilhadas ou pizza com poucas fatias; relação entre variáveis → dispersão; distribuição → histograma ou boxplot; concentração geográfica → mapa. Tabela é melhor que gráfico quando o valor exato importa.",
+        "Interatividade útil em ferramenta de BI: filtro, segmentação, drill down do agregado ao detalhe, comparação de períodos, alerta por limite. Interatividade não substitui hierarquia visual.",
+        "Storytelling com dados: contexto (por que isto importa), conflito (o desvio, o problema, a oportunidade) e resolução (a decisão recomendada), com um único ponto focal por tela. Insight só é insight quando muda uma decisão."
+      ]
+    },
+    {
+      "heading": "Qualidade, governança de dados e planilhas (7.9)",
+      "items": [
+        "Dimensões de qualidade de dado: completude, exatidão/acurácia, consistência (entre sistemas), validade (conforme regra e domínio), unicidade (sem duplicata), atualidade/temporalidade e integridade. Análise sobre dado ruim produz decisão ruim com aparência de precisão.",
+        "Governança de dados define papéis e responsabilidades: proprietário do dado (data owner, responde pelo domínio), curador/zelador (data steward, cuida da definição e da qualidade no dia a dia) e custodiante (guarda a infraestrutura). Sem dono, indicador não tem quem corrija.",
+        "Instrumentos de governança: dicionário e catálogo de dados, glossário de negócio com definição única de cada indicador, linhagem, políticas de acesso e classificação, gestão de dados mestres (MDM) para cadastro único de cliente e produto.",
+        "Profiling de dados (perfilamento) é a inspeção inicial que revela nulos, domínios inesperados, duplicatas e distribuições estranhas — faça antes de modelar, não depois de o gráfico sair errado.",
+        "No contexto analítico a LGPD também pesa: minimização (só o dado necessário à finalidade), finalidade declarada, e anonimização ou agregação para publicar painel com dado pessoal. Detalhes na área de Gestão e Governança em TI.",
+        "Planilhas: tabela dinâmica é OLAP de bolso (arrasta dimensão para linha/coluna e agrega a medida); PROCV/VLOOKUP e ÍNDICE+CORRESP cruzam tabelas; SOMASE/CONT.SE e SE agregam com condição; referência absoluta ($) fixa a célula ao copiar a fórmula.",
+        "Planilha boa para análise é 'tabela plana': uma linha por registro, uma coluna por atributo, cabeçalho único, sem célula mesclada, sem total no meio dos dados e com tipo consistente por coluna. É esse formato que qualquer ferramenta de BI consegue ler.",
+        "Riscos de planilha como base corporativa: cópias divergentes, fórmula quebrada sem aviso, ausência de trilha de auditoria e limite de volume. Serve para explorar e prototipar; não substitui DW governado."
+      ]
+    }
+  ],
+  "mentalModels": [
+    {
+      "title": "OLTP escreve, OLAP lê",
+      "body": "Pense em dois prédios. No prédio transacional (OLTP) entram milhares de pessoas por minuto, cada uma fazendo uma coisa curta: registrar venda, atualizar cadastro. Ele é normalizado para escrever rápido e sem redundância, e olha o presente. No prédio analítico (OLAP) entram poucas pessoas, cada uma fazendo uma pergunta grande sobre anos de dados: ele é dimensional, redundante de propósito, agregado e histórico. Toda vez que a alternativa atribuir ao DW característica de transação de alta velocidade, ou ao OLTP a vocação para consulta complexa e histórica, ela trocou os prédios — foi assim em transp23e6-q56."
+    },
+    {
+      "title": "Drill desce, roll sobe; slice fatia uma, dice corta várias, pivot gira",
+      "body": "Uma frase resolve o bloco de operações OLAP. DRILL DOWN desce a hierarquia (ano para mês) e aumenta o detalhe; ROLL UP sobe e agrega. SLICE fatia: fixa UM valor em UMA dimensão. DICE corta um dado: filtra DUAS OU MAIS dimensões e devolve um subcubo. PIVOT gira a mesa: troca o que está na linha com o que está na coluna, sem inventar dimensão. Em transp23e6-q62 cada distrator quebra exatamente uma dessas quatro frases, e a correta é a que descreve o drill down sem inverter nada."
+    },
+    {
+      "title": "Se somar não faz sentido, a medida não é aditiva",
+      "body": "Teste toda medida com uma pergunta boba: somar dois valores dela produz um número que significa algo? Quantidade vendida em janeiro mais quantidade em fevereiro = quantidade no bimestre: aditiva. Saldo de conta em janeiro mais saldo em fevereiro = nada; mas saldo da filial A mais saldo da filial B = saldo total: semiaditiva (soma no espaço, não no tempo). Percentual de janeiro mais percentual de fevereiro = absurdo, em qualquer dimensão: não aditiva. Foi esse teste que decidiu prova6-q46. Corolário para projeto: guarde numerador e denominador, e calcule a razão só na hora de exibir."
+    },
+    {
+      "title": "Quatro perguntas, quatro análises",
+      "body": "Toda demanda analítica cai em uma de quatro perguntas, e a resposta certa é o nome do tipo de análise. 'O que aconteceu?' — descritiva. 'Por que aconteceu?' — diagnóstica. 'O que vai acontecer?' — preditiva. 'O que devo fazer?' — prescritiva. A escala é cumulativa: não se faz diagnóstico sem descrição confiável, nem prescrição sem previsão. Quando o enunciado descreve um modelo que recomenda ação ou otimiza alocação, é prescritiva — mesmo que use previsão por dentro."
+    },
+    {
+      "title": "Correlação é vizinhança; causalidade é parentesco",
+      "body": "Duas séries podem andar juntas por três motivos além de uma causar a outra: existe um terceiro fator que move as duas (confusão), a causa está no sentido inverso do que você supôs, ou é coincidência num período curto. Por isso 'as vendas sobem quando o gasto com anúncio sobe' não autoriza 'anúncio causa venda' sem experimento. Guarde a consequência prática: para afirmar causa é preciso intervir (teste A/B, grupo de controle) ou usar desenho quase experimental; sem isso, o correto é dizer 'associado a', e é assim que a alternativa cautelosa costuma estar redigida."
+    }
+  ],
+  "patterns": [
+    {
+      "title": "Cinco das seis questões da área são data warehouse e OLAP",
+      "howToSpot": "O banco tem 6 questões: três de conceitos de DW (prova6-q47, prova6-q53, transp23e6-q56), duas de OLAP (prova6-q49, transp23e6-q62) e uma de medida em base multidimensional (prova6-q46). Nenhuma de BI como conceito, mineração, estatística, dashboard, planilha ou insight — embora todos esses estejam no Anexo IV. O que o histórico autoriza a dizer é modesto e útil: o núcleo duro de DW (as quatro características de Inmon, o papel do data mart, do ODS e do staging, requisitos como latência) e o vocabulário OLAP (MOLAP/ROLAP/HOLAP e as operações do cubo) têm a maior chance de reaparecer, e são baratos de dominar. Comece por aí e depois vá para os oito subtópicos que nunca apareceram.",
+      "evidence": [
+        "prova6-q46",
+        "prova6-q47",
+        "prova6-q49",
+        "prova6-q53",
+        "transp23e6-q56",
+        "transp23e6-q62"
+      ]
+    },
+    {
+      "title": "OLAP é cobrado por definição de operação, e o distrator inverte o sentido da navegação",
+      "howToSpot": "Nas duas questões de OLAP a banca não pede aplicação, pede pareamento entre nome e definição. Em prova6-q49 é associação explícita entre MOLAP, HOLAP e ROLAP e suas características — e há uma característica sobrando na lista (dados em computadores pessoais), que não corresponde a nenhuma das três. Em transp23e6-q62 as cinco alternativas descrevem operações do cubo e quatro estão erradas por inversão ou deslocamento: roll up 'agregando em níveis mais baixos' (é mais altos), drill through 'agregando em níveis mais altos' (drill through desce ao detalhe da origem), pivot 'criando novas dimensões' (apenas rotaciona) e slice descrito com 'um ou mais membros' (slice fixa um único valor; vários membros em mais de uma dimensão é dice). Estratégia: escreva a definição de cada operação na margem antes de ler as alternativas.",
+      "evidence": [
+        "prova6-q49",
+        "transp23e6-q62"
+      ]
+    },
+    {
+      "title": "2011 usou formatos indiretos; 2023 usou definição direta",
+      "howToSpot": "As quatro questões de 2011 não pedem definição simples: uma é asserção-razão com duas frases falsas e uma sigla inventada ('DDS – Dynamic Data Storage', em prova6-q47); uma é associação de três tecnologias a quatro características (prova6-q49); uma exige contar quantas medidas de uma tabela são não aditivas (prova6-q46); e uma pede o significado exato de um requisito de projeto (prova6-q53). As duas de 2023 são do molde 'sobre X, verifica-se que', com uma frase abrangente correta e distratores que restringem indevidamente. Repare no detalhe que desarma o chute: em transp23e6-q56 a própria alternativa CORRETA contém a palavra 'apenas' ('em apenas um local'), então caçar advérbio restritivo não substitui julgar o mérito da frase.",
+      "evidence": [
+        "prova6-q46",
+        "prova6-q47",
+        "prova6-q49",
+        "prova6-q53",
+        "transp23e6-q56",
+        "transp23e6-q62"
+      ]
+    }
+  ],
+  "tactics": [
+    {
+      "title": "Seis questões não fazem padrão de banca: o edital é a fonte",
+      "body": "Esta é a área com menos lastro histórico do banco, e oito dos onze subtópicos nunca apareceram. Qualquer previsão de 'assunto preferido' construída sobre 6 questões é ilusão de precisão. A conduta correta é inverter o peso: gaste o tempo no resumo e no cheatsheet, cobrindo os subtópicos por definição e por lista, e use as questões antigas apenas para reconhecer os formatos. Em uma prova com 50 questões de específicas distribuídas por 8 áreas, uma questão de dashboard, de mineração ou de estatística descritiva vale o mesmo ponto que uma de data warehouse."
+    },
+    {
+      "title": "Escreva as definições OLAP na margem antes de ler as alternativas",
+      "body": "São seis linhas que se escrevem em vinte segundos: drill down desce ao detalhe; roll up agrega para cima; slice fixa um valor de uma dimensão; dice filtra duas ou mais dimensões; pivot gira os eixos; drill through desce ao registro na origem. Com essa lista no papel, transp23e6-q62 sai por eliminação mecânica, porque cada distrator viola uma das linhas. É a tática de melhor retorno da área, porque OLAP é o segundo assunto mais frequente e o mais previsível na forma."
+    },
+    {
+      "title": "Teste a aditividade somando mentalmente",
+      "body": "Em qualquer questão sobre medidas, pergunte para cada coluna: 'somar dois valores disto gera número com sentido?'. Se sim em todas as dimensões, aditiva. Se sim em algumas e não no tempo (saldo, estoque, contagem de assinantes), semiaditiva. Se não em nenhuma (percentual, razão, média, preço unitário), não aditiva. Depois conte quantas células ou colunas a questão está chamando de 'medida' — em prova6-q46 o gabarito depende de perceber que cada linha traz um percentual, o que dá três medidas não aditivas, e não uma."
+    },
+    {
+      "title": "Distinga os cinco repositórios por volatilidade e escopo",
+      "body": "Monte uma linha para cada: DW (corporativo, integrado, não volátil, histórico), data mart (recorte do DW), ODS (operacional integrado, volátil, atual, detalhado), staging (área transitória do ETL, decisão de projeto) e data lake (bruto, formato original, schema-on-read). A maioria dos distratores de DW é a descrição de um dos outros quatro colocada no lugar errado — foi literalmente o desenho de transp23e6-q56. Quando a alternativa descrever 'só dado bruto' pense em lake; 'só operacional de curto prazo', em ODS; 'otimizado para transação', em OLTP."
+    },
+    {
+      "title": "Sigla que você nunca viu, em asserção-razão, é candidata a falsa",
+      "body": "Em prova6-q47 as duas frases são falsas, e a segunda se apoia numa sigla fabricada ('DDS – Dynamic Data Storage'). Isso não autoriza chutar 'falso' em toda sigla desconhecida, mas orienta a ordem do trabalho: julgue primeiro a frase cujo conteúdo você domina (ali, a de que a staging area seria 'indispensável', quando ela é decisão de projeto — a própria frase se contradiz), decida a alternativa com base nela e só depois volte à frase obscura. E lembre da regra do formato: cada afirmação é julgada isoladamente antes de qualquer avaliação de nexo causal."
+    },
+    {
+      "title": "Cubra os subtópicos órfãos com uma lista cada",
+      "body": "Para os oito subtópicos sem questão, uma lista curta resolve o cenário de estreia: DIKW (dado, informação, conhecimento, inteligência); estruturado x semiestruturado x não estruturado; os quatro tipos de análise; as cinco tarefas de mineração e as seis fases do CRISP-DM; média/mediana/moda/desvio-padrão e 'correlação não é causalidade'; métrica x indicador x KPI e os três níveis de dashboard; a regra de um visual, uma mensagem; e o formato de tabela plana para planilha. São oito cartões — e cobrem, com uma frase cada, mais da metade do Anexo IV desta área."
+    }
+  ],
+  "trapWords": [
+    {
+      "term": "dado",
+      "confusedWith": "informação e conhecimento",
+      "distinction": "Dado é o registro bruto, sem contexto. Informação é o dado contextualizado e com significado. Conhecimento é a informação interpretada com experiência, que habilita a ação. Inteligência é o conhecimento aplicado à decisão. A cadeia é acumulativa, e cada degrau acrescenta contexto, não volume."
+    },
+    {
+      "term": "data warehouse",
+      "confusedWith": "data mart",
+      "distinction": "O DW é corporativo, integra várias fontes e cobre múltiplos assuntos. O data mart é um recorte por assunto ou departamento — menor, mais rápido de entregar e alimentado a partir do DW (top-down) ou integrado por dimensões conformadas (bottom-up)."
+    },
+    {
+      "term": "ODS",
+      "confusedWith": "data warehouse e staging area",
+      "distinction": "ODS integra dados operacionais com granularidade detalhada, é VOLÁTIL e serve consulta corrente; o DW é NÃO volátil e guarda histórico. Staging area é a área transitória de trabalho do ETL, e sua existência é decisão de projeto — foi esse ponto que tornou falsa a primeira afirmação de prova6-q47."
+    },
+    {
+      "term": "OLTP",
+      "confusedWith": "OLAP",
+      "distinction": "OLTP é transacional: normalizado, escrita intensa, dado atual, consultas curtas. OLAP é analítico: dimensional, leitura intensa, dado histórico e agregado, consultas grandes e ad hoc. DW 'otimizado apenas para transações de alta velocidade' é contradição em termos."
+    },
+    {
+      "term": "ROLAP",
+      "confusedWith": "MOLAP e HOLAP",
+      "distinction": "MOLAP guarda em estrutura multidimensional própria (só multidimensional). ROLAP constrói a visão multidimensional sobre banco relacional. HOLAP é híbrido e acessa os dois mundos. Foi esse pareamento que prova6-q49 cobrou; DOLAP, o OLAP de desktop, era a característica sobrando."
+    },
+    {
+      "term": "drill down",
+      "confusedWith": "roll up (drill up)",
+      "distinction": "Drill down desce a hierarquia e aumenta o detalhe (ano para mês). Roll up sobe e agrega para nível mais alto. Alternativa que fala em 'agregações em níveis hierárquicos mais baixos' inverteu o sentido — erro plantado em transp23e6-q62."
+    },
+    {
+      "term": "slice",
+      "confusedWith": "dice",
+      "distinction": "Slice fixa UM valor de UMA dimensão e reduz a dimensionalidade do cubo (a 'fatia'). Dice filtra faixas ou vários membros em DUAS OU MAIS dimensões e devolve um subcubo. Descrever slice com 'um ou mais membros' embaralha as duas operações."
+    },
+    {
+      "term": "pivot",
+      "confusedWith": "drill across e drill through",
+      "distinction": "Pivot apenas gira os eixos da apresentação (linha vira coluna) — não cria dimensão nova. Drill across cruza duas tabelas de fatos por dimensões conformadas. Drill through desce do agregado ao registro detalhado na base de origem, e não é operação de agregação."
+    },
+    {
+      "term": "medida semiaditiva",
+      "confusedWith": "medida não aditiva",
+      "distinction": "Semiaditiva soma em algumas dimensões, mas não no tempo (saldo, estoque, número de assinantes: soma entre filiais, não entre meses). Não aditiva não soma em nenhuma dimensão (percentual, razão, média, preço unitário). O 'percentual trimestral' de prova6-q46 é não aditivo."
+    },
+    {
+      "term": "latência de dados",
+      "confusedWith": "tempo de resposta da consulta",
+      "distinction": "Latência de dados é a rapidez com que o dado chega ao usuário final — quão 'fresco' ele está no ambiente de BI (prova6-q53). Tempo de resposta é a duração de uma consulta; tempo de carga inicial é outra coisa ainda. Os três foram alternativas na mesma questão."
+    },
+    {
+      "term": "mineração de dados",
+      "confusedWith": "KDD",
+      "distinction": "KDD é o processo completo de descoberta de conhecimento (seleção, pré-processamento, transformação, mineração, interpretação/avaliação). Mineração é apenas a etapa em que os algoritmos são aplicados. Tratar as duas como sinônimas é a troca clássica do tema."
+    },
+    {
+      "term": "classificação",
+      "confusedWith": "regressão e clusterização",
+      "distinction": "Classificação prevê rótulo CATEGÓRICO e é supervisionada. Regressão prevê valor NUMÉRICO e também é supervisionada. Clusterização agrupa sem rótulo prévio e é NÃO supervisionada. Ter ou não variável-alvo no treino é o critério que separa os grupos."
+    },
+    {
+      "term": "média",
+      "confusedWith": "mediana",
+      "distinction": "Média é sensível a valores extremos; mediana é o valor central e resiste a eles. Em série assimétrica à direita, a média fica acima da mediana. Para 'valor típico' de salário ou de tempo de atendimento, a mediana descreve melhor."
+    },
+    {
+      "term": "correlação",
+      "confusedWith": "causalidade",
+      "distinction": "Correlação mede associação (Pearson mede a linear, entre -1 e 1) e nada diz sobre causa: pode haver variável de confusão, sentido invertido ou coincidência. Afirmar causa exige experimento ou desenho quase experimental. Correlação zero também não exclui relação não linear."
+    },
+    {
+      "term": "indicador",
+      "confusedWith": "KPI",
+      "distinction": "Indicador é a medida com significado e regra de cálculo. KPI é o indicador vinculado a um objetivo, com meta e responsável — 'chave' quer dizer que alguém decide algo com ele. Painel cheio de indicador sem meta não é painel de KPI."
+    }
+  ]
+}

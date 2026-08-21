@@ -1,0 +1,347 @@
+{
+  "areaId": "seg-info",
+  "resumo": "<p><strong>Onde a prova realmente mora.</strong> São 26 questões desta área no banco. O subtópico 9.19 (ISO 27002, criptografia, certificação e assinatura digital) responde por 11 delas, e mais 2 são de classificação da informação — ou seja, <strong>metade da área é norma e criptografia</strong>. O resto se espalha em 2 questões (operação de segurança, malware, SSO) ou 1 (ataques, VPN, desenvolvimento seguro, RBAC/ABAC, MITRE ATT&amp;CK, resposta a incidentes, IoT). A evolução por prova é o dado mais útil: em 2010 e 2011, <strong>todas as 6 questões citavam a NBR/ISO 27002 no enunciado</strong>; em 2018 foram 2 de 12; em 2023, 1 de 8. A prova mudou de norma decorada para <em>vocabulário técnico de segurança</em> — sigla, ferramenta e mecanismo — cobrado por definição direta.</p><p><strong>Fundamentos.</strong> A tríade é confidencialidade, integridade e disponibilidade (CID/CIA); a ISO 27000 admite ainda <strong>autenticidade</strong> e <strong>irretratabilidade</strong> (não repúdio). Case cada propriedade com o ataque: <em>passivo</em> (escuta, análise de tráfego) ameaça a <strong>confidencialidade</strong> (psjpn2018-q64); ataque <em>ativo</em> que altera dados ameaça a integridade; DoS/DDoS, a disponibilidade; <em>spoofing</em>, a autenticidade; e a irretratabilidade é o que a assinatura digital garante. Risco nasce de uma <em>ameaça</em> explorando uma <em>vulnerabilidade</em> sobre um <em>ativo</em>; tratar risco é mitigar, transferir, evitar ou aceitar.</p><p><strong>Normas e frameworks — não confunda os números.</strong> ISO/IEC <strong>27001</strong>: requisitos auditáveis do SGSI, pela qual a organização se certifica. ISO/IEC <strong>27002</strong>: código de prática, o catálogo de controles — na edição de 2013 organizado em 14 seções (entre elas recursos humanos, controle de acesso, segurança nas operações, nas comunicações e física); na edição de 2022 reorganizado em 4 temas (organizacional, pessoas, físico e tecnológico). ISO/IEC <strong>27005</strong>: riscos de segurança da informação; <strong>ISO 31000</strong>: riscos em geral; <strong>ISO 22301</strong>: continuidade de negócios. <strong>NIST CSF</strong> 1.1 tem 5 funções — Identificar, Proteger, Detectar, Responder e Recuperar; a versão 2.0 acrescentou <strong>Governar</strong>, ficando 6 (diga a versão se a questão citar número). <strong>NIST SP 800-61</strong> define o ciclo de vida de resposta a incidentes (transp23e6-q42); a SP 800-30 é de riscos e a SP 800-34, de contingência.</p><p><strong>Criptografia, assinatura e PKI</strong> — o bloco que mais rende ponto.</p><table><tr><th>Eixo</th><th>Simétrica</th><th>Assimétrica</th></tr><tr><td>Chaves</td><td>Uma só, compartilhada, cifra e decifra</td><td>Par pública/privada, matematicamente relacionado</td></tr><tr><td>Desempenho</td><td>Rápida, boa para volume</td><td>Lenta, boa para chaves e assinaturas</td></tr><tr><td>Problema clássico</td><td>Distribuir a chave com segurança</td><td>Custo e confiança na chave pública (daí a PKI)</td></tr><tr><td>Exemplos</td><td>AES, 3DES, ChaCha20</td><td>RSA, ECC/ECDSA, Diffie-Hellman (acordo de chaves)</td></tr></table><p>O <strong>hash</strong> (SHA-256, SHA-3; MD5 e SHA-1 já inseguros) é unidirecional, produz resumo de tamanho fixo e <em>não</em> permite recuperar o original — na assinatura ele garante integridade (psjpn2018-q63). <strong>Assinatura digital</strong> = hash cifrado com a chave <em>privada do remetente</em>: integridade, autenticidade e irretratabilidade, nunca confidencialidade. <code>SHA256RSA</code> num certificado significa hash SHA-256 (digest de 256 bits) com o algoritmo <strong>assimétrico</strong> RSA — o 256 é o digest, não a chave (transp15-q50). <strong>Envelope digital</strong> = dados com chave simétrica de sessão, e essa chave cifrada com a <em>pública do destinatário</em> (transp23e6-q41), o mesmo desenho do TLS. Na <strong>ICP-Brasil</strong>, o certificado da AC imediatamente abaixo da Raiz é assinado <em>apenas pela AC Raiz</em>; a Autoridade de Registro cadastra solicitantes, mas não assina (transp15-q52).</p><p><strong>Operação de segurança.</strong> <strong>Firewall</strong> decide, por listas de regras, se o pacote atravessa a fronteira (transp15-q47): <em>stateless</em> julga cada pacote isoladamente, <em>stateful</em> mantém tabela de conexões. <strong>Proxy</strong> intermedia conexões, em geral na camada de aplicação. <strong>WAF</strong> protege aplicação web (SQL injection, XSS). <strong>DMZ</strong> é zona de rede segregada, não equipamento. <strong>SIEM</strong> agrega e correlaciona eventos e logs de toda a infraestrutura, dando a visão holística (transp23e6-q43); <strong>DLP</strong> evita vazamento; <strong>CASB</strong> controla serviços em nuvem; <strong>EDR</strong> responde no endpoint.</p><table><tr><th>Eixo</th><th>IDS</th><th>IPS</th></tr><tr><td>Posição</td><td>Fora do caminho (cópia do tráfego)</td><td>Em linha (inline)</td></tr><tr><td>Ação</td><td>Detecta e alerta</td><td>Detecta e bloqueia/descarta</td></tr><tr><td>Detecção</td><td colspan=\"2\">Por assinatura (só o conhecido) ou por anomalia (pega o novo, mais falsos positivos)</td></tr></table><p><strong>Malware e ataques.</strong> Vírus depende de hospedeiro e de execução; <em>worm</em> se autorreplica e se propaga sozinho pela rede; <em>trojan</em> se disfarça de legítimo; <em>ransomware</em> cifra e cobra resgate; <em>rootkit</em> oculta a presença e mantém acesso privilegiado; <em>spyware</em> coleta informação; <em>bot</em> é a máquina zumbi comandada remotamente, e o conjunto é a <em>botnet</em> (transp15-q49). Nos ataques: phishing e engenharia social exploram a pessoa; DoS/DDoS exaure recurso; SQL injection insere comando em consulta por falta de tratamento da entrada (defesa: consulta parametrizada); XSS injeta script que roda no navegador da vítima; CSRF induz o navegador autenticado a enviar requisição indesejada; <em>zero-day</em> é a falha explorada antes de haver correção.</p><p><strong>Identidade, acesso e gestão.</strong> <strong>SSO</strong> autentica uma vez para várias aplicações (psjpn2018-q66); o SAML troca asserções XML entre provedor de identidade e de serviço, e é dele o <em>Artifact Resolution Protocol</em>, que passa mensagem por referência com um valor pequeno e de tamanho fixo (transp15-q51). <strong>MFA</strong> exige fatores de categorias diferentes — o que você sabe, tem e é —, então duas senhas não são dois fatores. <strong>DAC</strong>: o dono decide; <strong>MAC</strong>: rótulos centrais; <strong>RBAC</strong>: pelo papel; <strong>ABAC</strong>: por combinação de atributos e contexto — localização, recurso, condições ambientais (transp23e6-q39). Sobre tudo isso valem o <em>menor privilégio</em>, a <em>necessidade de conhecer</em> e o <strong>Zero Trust</strong> (nenhuma confiança implícita pela posição na rede). No desenvolvimento seguro, <strong>SAST</strong> analisa código sem executar e <strong>DAST</strong> testa a aplicação compilada em execução (transp23e6-q38). Na continuidade, o <strong>RPO</strong> é quanto dado se aceita perder e o <strong>RTO</strong> é em quanto tempo o serviço volta — os dois saem da análise de impacto no negócio.</p>",
+  "cheatsheet": [
+    {
+      "heading": "Pilares e conceitos-base",
+      "items": [
+        "CID: confidencialidade (quem pode ver), integridade (não foi alterado), disponibilidade (está acessível quando preciso).",
+        "Propriedades adicionais admitidas pela ISO 27000: autenticidade, irretratabilidade (não repúdio), responsabilização, confiabilidade.",
+        "Ataque PASSIVO (monitoramento, análise de tráfego, escuta) ameaça CONFIDENCIALIDADE. Ataque ATIVO altera, insere ou interrompe: ameaça integridade e disponibilidade.",
+        "Spoofing/falsificação de identidade ameaça autenticidade. Repúdio de autoria ameaça irretratabilidade.",
+        "Ameaça explora vulnerabilidade sobre um ativo, gerando impacto. Risco ≈ probabilidade × impacto.",
+        "Tratamento de risco: mitigar/reduzir, transferir/compartilhar, evitar, aceitar/reter. Risco residual é o que sobra após os controles.",
+        "Segurança física: instalações, equipamentos, controle de entrada. Segurança lógica: autenticação, criptografia, permissões, registro."
+      ]
+    },
+    {
+      "heading": "Normas e publicações: qual número é qual",
+      "items": [
+        "ISO/IEC 27001: REQUISITOS do SGSI; é a norma certificável/auditável.",
+        "ISO/IEC 27002: CÓDIGO DE PRÁTICA (catálogo de controles e diretrizes). Não se certifica em 27002.",
+        "ISO/IEC 27005: gestão de riscos de segurança da informação. ISO 31000: gestão de riscos em geral. ISO 22301: continuidade de negócios.",
+        "ISO 27002 edição 2013: 14 seções de controle (5 a 18), entre elas segurança em recursos humanos, controle de acesso, criptografia, segurança física e do ambiente, segurança nas operações, segurança nas comunicações, gestão de incidentes.",
+        "ISO 27002 edição 2022: controles reorganizados em 4 temas — organizacional, pessoas, físico e tecnológico.",
+        "NIST CSF 1.1: 5 funções — Identificar, Proteger, Detectar, Responder, Recuperar. NIST CSF 2.0: acrescentou GOVERNAR, ficando 6. Cite a versão sempre que a questão citar um número.",
+        "NIST SP 800-61: ciclo de vida de resposta a incidentes. SP 800-30: avaliação de riscos. SP 800-34: planejamento de contingência. SP 800-207: arquitetura Zero Trust.",
+        "Sarbanes-Oxley (SOX): lei norte-americana de governança e controles internos sobre relatórios financeiros — cai como contexto de conformidade, não como norma técnica de TI."
+      ]
+    },
+    {
+      "heading": "ISO 27002 do jeito que a Cesgranrio cobra",
+      "items": [
+        "Definição cobrada literalmente (prova07-q26): proteger a informação de ameaças para 'garantir a continuidade do negócio, minimizar o risco ao negócio, maximizar o retorno sobre os investimentos e as oportunidades de negócio'.",
+        "Proteção contra código malicioso e código móvel: o objetivo declarado é proteger a INTEGRIDADE do software e da informação (prova07-q27), e o controle fica sob segurança NAS OPERAÇÕES (transp23e6-q44) — não em comunicações, não em controle de acesso.",
+        "Segurança em recursos humanos, antes da contratação: as responsabilidades de segurança devem ser atribuídas nas DESCRIÇÕES DE CARGO e nos termos e condições de contratação (prova6-q64). Termo de confidencialidade se assina ANTES de conceder acesso, não depois.",
+        "Controle de acesso à rede: usar métodos apropriados de autenticação para usuários REMOTOS (transp15-q46). Encerrar sessão inativa por tempo é controle de acesso ao sistema operacional; restringir privilégios é gerenciamento de privilégios; relatar evento é gestão de incidentes.",
+        "Acordos de confidencialidade/não divulgação: a lista de elementos inclui duração esperada, propriedade da informação e da propriedade intelectual, ações ao encerrar o acordo e termos de devolução ou destruição da informação. Em prova6-q62 a banca considerou 'penalidades previstas para o infrator' como o item FORA da lista.",
+        "Classificação da informação: rotular as informações e as SAÍDAS dos sistemas conforme valor e sensibilidade (psjpn2018-q65). Rótulo vindo de outra organização deve ser avaliado e adequado ao esquema próprio, não simplesmente mantido.",
+        "Classificar é DECISÃO DE NEGÓCIO, com papel ativo dos gestores/proprietários da informação — não é tarefa do coordenador de TI, do profissional de segurança nem de empresa terceirizada (transp15-q45).",
+        "Nas questões literais de norma, o distrator típico troca uma palavra da definição oficial (risco→vulnerabilidade, continuidade→controle de acesso) ou desloca a responsabilidade para o setor errado."
+      ]
+    },
+    {
+      "heading": "Criptografia, hash, assinatura e certificado",
+      "items": [
+        "Simétrica: uma chave compartilhada, rápida, ideal para volume; problema é distribuir a chave. Exemplos: AES (cifra de bloco de 128 bits, com chaves de 128, 192 ou 256 bits), 3DES, ChaCha20.",
+        "Assimétrica: par pública/privada, lenta, usada para cifrar chaves, assinar e autenticar. Exemplos: RSA, ECC/ECDSA. Diffie-Hellman é acordo de chaves, não cifração de dados.",
+        "CONFIDENCIALIDADE em assimétrica: cifra com a chave PÚBLICA DO DESTINATÁRIO (só a privada dele abre).",
+        "ASSINATURA: cifra o hash com a chave PRIVADA DO REMETENTE (qualquer um confere com a pública dele). Dá integridade, autenticidade e irretratabilidade — nunca confidencialidade.",
+        "Hash: unidirecional, saída de tamanho fixo, não reversível, sem chave. SHA-256 (digest de 256 bits), SHA-3; MD5 e SHA-1 são considerados inseguros para uso criptográfico.",
+        "HMAC usa chave secreta junto do hash e serve para autenticidade de mensagem entre quem compartilha a chave.",
+        "Envelope digital: dados com chave simétrica de sessão + essa chave cifrada com a pública do destinatário. É o padrão híbrido, o mesmo que o TLS usa.",
+        "'SHA256RSA' num certificado = hash SHA-256 (digest de 256 bits) + RSA, que é ASSIMÉTRICO. O 256 é o digest, não o tamanho da chave RSA.",
+        "Certificado digital (X.509) vincula identidade a uma chave pública e é assinado pela Autoridade Certificadora. Revogação por LCR/CRL ou consulta OCSP.",
+        "ICP-Brasil: a AC imediatamente abaixo da AC Raiz tem seu certificado assinado APENAS pela AC Raiz. A Autoridade de Registro (AR) identifica e cadastra solicitantes; não assina certificados.",
+        "TLS: usa assimétrica no handshake (autenticar o servidor e estabelecer a chave de sessão) e simétrica para os dados. SSL está obsoleto."
+      ]
+    },
+    {
+      "heading": "Perímetro e operação: firewall, IDS/IPS e o arsenal de siglas",
+      "items": [
+        "Firewall: decide passagem de pacote por listas/regras de controle de acesso — é a resposta padrão para 'componente que avalia ingresso e egresso por regras'.",
+        "Stateless (filtro de pacotes): avalia cada pacote isoladamente por IP/porta/protocolo. Stateful: mantém tabela de estado das conexões e entende o contexto da sessão.",
+        "Proxy: intermedeia a conexão (normalmente camada de aplicação), com cache, autenticação e filtro de conteúdo. Proxy reverso fica na frente do servidor.",
+        "WAF: filtra tráfego HTTP/HTTPS para proteger a aplicação web (SQL injection, XSS). NGFW agrega inspeção profunda, identidade e controle por aplicação.",
+        "IDS detecta e alerta, fora do caminho do tráfego. IPS fica em linha e bloqueia. NIDS/NIPS na rede, HIDS/HIPS no host.",
+        "Detecção por ASSINATURA: pega o já conhecido, poucos falsos positivos, cega para zero-day. Por ANOMALIA/comportamento: pega o desconhecido, mais falsos positivos, exige linha de base.",
+        "DMZ é zona de rede segregada (topologia), não um equipamento de filtragem.",
+        "SIEM: agrega e correlaciona eventos e logs de várias fontes, dando visão holística e apoio à detecção. SOAR automatiza a resposta.",
+        "DLP: previne vazamento de dados sensíveis. CASB: controla o acesso a serviços em nuvem. EDR/XDR: detecção e resposta no endpoint. Antivírus: assinatura + heurística.",
+        "VPN: tunelamento encapsula o pacote inteiro dentro de outro, com criptografia (transp15-q48). IPsec com AH (integridade e autenticidade) ou ESP (confidencialidade + integridade), em modo transporte ou túnel."
+      ]
+    },
+    {
+      "heading": "Malware: uma linha por tipo",
+      "items": [
+        "Vírus: precisa de arquivo/programa hospedeiro e de execução para se replicar.",
+        "Worm: autorreplicante e autopropagante pela rede, sem precisar de hospedeiro nem de ação do usuário.",
+        "Trojan (cavalo de Troia): disfarça-se de software legítimo para obter acesso; não se autorreplica.",
+        "Ransomware: cifra ou bloqueia os dados e exige resgate. Variantes de dupla extorsão também exfiltram antes de cifrar.",
+        "Rootkit: oculta a presença do atacante e mantém acesso privilegiado, adulterando o próprio sistema.",
+        "Spyware: coleta informação sem consentimento. Keylogger (teclas) e screenlogger (tela) são espécies dele.",
+        "Bot/zumbi: máquina sob controle remoto que executa tarefas automatizadas em ataques coordenados; o conjunto é a BOTNET, comandada por servidores de comando e controle (C&C).",
+        "Backdoor: acesso alternativo que burla a autenticação. Adware: exibe publicidade. Código móvel: código transferido e executado no cliente (applet, script).",
+        "A palavra-chave 'engaja o computador em uma armada/exército sem o dono saber' é sempre BOT — não worm, não trojan."
+      ]
+    },
+    {
+      "heading": "Ataques e defesas correspondentes",
+      "items": [
+        "Phishing: isca em massa. Spear phishing: alvo específico. Whaling: executivo. Vishing (voz) e smishing (SMS). Defesa central é conscientização, não ferramenta.",
+        "Pharming corrompe a resolução de nomes (DNS ou arquivo hosts) e leva a vítima ao site falso mesmo digitando o endereço certo — sem clique em link, diferente do phishing. Defesa: DNSSEC, TLS com validação de certificado e proteção do resolvedor.",
+        "Engenharia social explora a pessoa, não a máquina: pretexto, urgência, autoridade, reciprocidade.",
+        "DoS exaure recurso a partir de uma origem; DDoS usa muitas origens (botnet). Ataques de amplificação/reflexão abusam de serviços UDP como DNS e NTP.",
+        "SQL injection: entrada não tratada concatenada na consulta. Defesa: consulta parametrizada/prepared statement, validação e menor privilégio no banco.",
+        "XSS: script injetado executa no navegador da vítima (refletido, armazenado ou baseado em DOM). Defesa: codificação de saída e CSP.",
+        "CSRF: induz o navegador já autenticado a enviar requisição indesejada. Defesa: token anti-CSRF e cookie SameSite.",
+        "Path traversal: '../' para sair do diretório permitido. MITM: interceptação no meio da comunicação. Defesa: TLS com validação de certificado.",
+        "Força bruta testa exaustivamente todas as combinações possíveis; ataque de dicionário testa uma lista de senhas prováveis (palavras, vazamentos, variações), sendo muito mais rápido; credential stuffing reusa pares usuário/senha já vazados. Defesa: MFA, bloqueio progressivo, hash de senha com sal e função lenta.",
+        "Zero-day: vulnerabilidade explorada antes de existir correção — assinatura não pega; detecção por comportamento e virtual patching ajudam."
+      ]
+    },
+    {
+      "heading": "Identidade, autenticação e controle de acesso",
+      "items": [
+        "Identificação (quem alega ser) → autenticação (prova) → autorização (o que pode) → auditoria/registro.",
+        "MFA: fatores de CATEGORIAS diferentes — conhecimento (senha, PIN), posse (token, OTP, smartcard), inerência (biometria). Senha + pergunta secreta é um fator só.",
+        "SSO: autentica uma vez e acessa várias aplicações. Não é OTP, não é senha única compartilhada.",
+        "SAML: asserções XML entre provedor de identidade (IdP) e provedor de serviço (SP); componentes incluem asserções, protocolos, ligações (bindings) e perfis. O Artifact Resolution Protocol passa mensagem por REFERÊNCIA, usando um artefato pequeno e de tamanho fixo.",
+        "OAuth 2.0 é autorização/delegação de acesso; OpenID Connect é a camada de autenticação sobre ele; Kerberos usa tíquetes emitidos por um centro de distribuição de chaves.",
+        "DAC: o proprietário do recurso concede acesso a seu critério. MAC: rótulos de sensibilidade definidos centralmente, sem discricionariedade do usuário.",
+        "RBAC: permissão vinculada ao PAPEL/função. ABAC: permissão calculada por COMBINAÇÃO DE ATRIBUTOS e contexto (usuário, recurso, ação, ambiente, localização) — é a resposta quando o enunciado fala em condições contextuais e ambientais.",
+        "Menor privilégio: só o necessário para a função. Necessidade de conhecer: acesso só a quem precisa daquele dado. Segregação de funções: quem executa não aprova.",
+        "Zero Trust: nenhuma confiança implícita por estar 'dentro da rede'; verificação contínua de identidade e dispositivo, microssegmentação e autorização por requisição.",
+        "MDM gerencia dispositivos móveis (política, inventário, apagamento remoto)."
+      ]
+    },
+    {
+      "heading": "Gestão: risco, backup, continuidade, desenvolvimento seguro e ameaças",
+      "items": [
+        "Análise/avaliação de risco: identificar ativos e ameaças, estimar probabilidade e impacto, priorizar e tratar. Pode ser qualitativa (escalas) ou quantitativa (valores monetários).",
+        "Backup completo: tudo. Incremental: o que mudou desde o ÚLTIMO BACKUP (de qualquer tipo) — cópia rápida, restauração exige o completo mais todos os incrementais. Diferencial: o que mudou desde o último COMPLETO — cópia maior, restauração exige o completo mais o último diferencial.",
+        "Regra 3-2-1: três cópias, dois tipos de mídia, uma fora do local. Backup só vale se o teste de restauração é feito.",
+        "RPO: quanto dado se aceita perder (olha para o passado, define frequência de backup). RTO: em quanto tempo o serviço deve voltar (define a solução de recuperação).",
+        "Continuidade: a análise de impacto no negócio (BIA) identifica processos críticos e fundamenta RTO/RPO; o plano de continuidade (PCN) cobre o negócio e o plano de recuperação de desastres (DRP) cobre a infraestrutura de TI. Referência: ISO 22301.",
+        "Desenvolvimento seguro: SAST analisa código-fonte sem executar; DAST testa a aplicação compilada em execução, de fora; IAST instrumenta a aplicação em execução; SCA analisa dependências de terceiros.",
+        "STRIDE (modelagem de ameaças): falsificação de identidade, adulteração, repúdio, divulgação de informação, negação de serviço e elevação de privilégio. DREAD é o esquema de pontuação/priorização.",
+        "MITRE ATT&CK: TÁTICA é o objetivo do adversário (por exemplo acesso a credenciais, persistência, movimentação lateral, exfiltração, impacto); TÉCNICA é como ele alcança o objetivo (por exemplo manipulação de conta, evasão do depurador). O conjunto de táticas varia por matriz e por versão do framework — não decore contagem.",
+        "Teste de intrusão (pentest): caixa-preta, caixa-branca ou caixa-cinza; ciclo de reconhecimento, varredura, exploração, pós-exploração e relatório. Diferente de varredura de vulnerabilidades, que só identifica e classifica.",
+        "Threat intelligence alimenta a defesa com indicadores e contexto de adversários; threat hunting é a busca proativa por comprometimento a partir de hipóteses, sem depender de alerta.",
+        "Nuvem: responsabilidade compartilhada — o provedor cuida da segurança DA nuvem, o cliente da segurança NA nuvem, e o limite muda entre IaaS, PaaS e SaaS. IoT amplia a superfície de ataque (senha padrão, firmware sem atualização, protocolo sem cifra)."
+      ]
+    }
+  ],
+  "mentalModels": [
+    {
+      "title": "Assinar é com a sua privada; cifrar é com a pública dele",
+      "body": "Toda questão de chave se resolve com uma pergunta: o objetivo é PROVAR QUEM SOU ou ESCONDER DE TERCEIROS? Provar quem sou (assinatura) usa a MINHA chave privada, porque só eu a tenho — e qualquer um confere com a minha pública. Esconder (confidencialidade, inclusive a chave de sessão do envelope digital) usa a chave PÚBLICA DO DESTINATÁRIO, porque só ele tem a privada correspondente. Se a alternativa oferecer 'chave pública do remetente' para confidencialidade, ela está garantindo o contrário do que promete: todo mundo abriria."
+    },
+    {
+      "title": "IDS assiste, IPS intervém",
+      "body": "Pense em duas pessoas na portaria. O IDS é a câmera com alarme: vê tudo, registra e avisa, mas não fecha a porta — fica fora do caminho do tráfego. O IPS é o segurança na roleta: está em linha, e por isso pode barrar, mas se ele errar (falso positivo) o serviço legítimo cai. Firewall é a lista de quem pode entrar, checada na entrada por regra. Se o enunciado fala em 'regras/listas que determinam se o pacote atravessa', é firewall; se fala em detectar e alertar, IDS; se fala em bloquear o que detectou, IPS."
+    },
+    {
+      "title": "Passivo escuta, ativo mexe",
+      "body": "Classifique o ataque pelo verbo antes de escolher o pilar. Monitorar, capturar, analisar tráfego, escutar: passivo, e a vítima é a CONFIDENCIALIDADE (o dado continua íntegro e disponível, só deixou de ser secreto). Alterar, inserir, apagar, atrasar, derrubar, se passar por outro: ativo, e as vítimas são integridade, disponibilidade e autenticidade. Ataque passivo é difícil de detectar e se combate com prevenção (criptografia); ativo é mais visível e se combate com detecção e resposta."
+    },
+    {
+      "title": "Quem classifica o dado é o dono do dado",
+      "body": "Em transp15-q45 a resposta é literal: classificar é DECISÃO DE NEGÓCIO, do proprietário/gestor da informação, com papel ativo do corpo gerencial. Em psjpn2018-q65 a correta é outra diretriz da norma (rotular informações e saídas dos sistemas conforme valor e sensibilidade), mas o mesmo princípio elimina os distratores que entregam a decisão à alta gerência ou ao setor de TI. TI, segurança e consultoria externa apenas implementam os controles que decorrem da classificação."
+    },
+    {
+      "title": "27001 é a régua, 27002 é o cardápio",
+      "body": "A 27001 diz o que a organização TEM DE FAZER para ter um SGSI (contexto, liderança, análise de risco, tratamento, monitoramento, melhoria) e é por ela que se obtém certificação. A 27002 é a lista de controles disponíveis, com diretrizes de implementação — você escolhe do cardápio o que o seu risco justificar. Se a questão fala em requisito, auditoria ou certificação, é 27001; se fala em controle, diretriz, código de prática ou 'convém que', é 27002."
+    }
+  ],
+  "patterns": [
+    {
+      "title": "A norma ISO 27002 dominou as provas antigas — e vem perdendo espaço",
+      "howToSpot": "Todas as 6 questões de 2010 e 2011 citam a NBR/ISO 27002 no próprio enunciado; em 2018 foram 2 de 12 e em 2023 apenas 1 de 8. Nas questões antigas a cobrança é literal: reproduzir a definição de segurança da informação da norma, dizer sob qual seção fica um controle, reconhecer o item que NÃO está na lista da norma. Nas recentes a norma aparece só para localizar um objetivo de controle (proteção contra malware fica em segurança nas operações). Ou seja: vale saber a estrutura e as frases canônicas da norma, mas o esforço marginal hoje rende mais no vocabulário técnico.",
+      "evidence": [
+        "prova07-q26",
+        "prova07-q27",
+        "prova07-q28",
+        "prova6-q62",
+        "prova6-q64",
+        "psjpn2018-q65",
+        "transp15-q46",
+        "transp23e6-q44"
+      ]
+    },
+    {
+      "title": "Criptografia é cobrada pela pergunta 'qual chave, de quem, para quê'",
+      "howToSpot": "Quatro questões, todas com o mesmo esqueleto: descreve-se o mecanismo e pede-se o elemento certo. Hash na validação de assinatura ICP-Brasil serve para integridade, e nunca para recuperar o documento (psjpn2018-q63). Envelope digital cifra a chave simétrica com a pública do destinatário (transp23e6-q41). SHA256RSA é hash de 256 bits com RSA assimétrico, e o 256 não é tamanho de chave (transp15-q50). Na hierarquia da ICP-Brasil, quem assina o certificado da AC subordinada é apenas a AC Raiz (transp15-q52). Os distratores erram sempre em um destes três pontos: trocam pública por privada, trocam remetente por destinatário, ou chamam RSA de simétrico.",
+      "evidence": [
+        "psjpn2018-q63",
+        "transp15-q50",
+        "transp15-q52",
+        "transp23e6-q41"
+      ]
+    },
+    {
+      "title": "'Qual é a solução/sigla?': definição direta com quatro siglas vizinhas",
+      "howToSpot": "É o formato dominante de 2018 e 2023. O enunciado descreve a função em uma frase e as alternativas são siglas do mesmo campo: SIEM contra CASB, WAF, DLP e proxy (transp23e6-q43); firewall contra proxy, DMZ, IDS e IPS (transp15-q47); ABAC contra RBAC, DAC, MAC e ACL (transp23e6-q39); DAST contra SAST, VAST, DREAD e STRIDE (transp23e6-q38); SSO contra OTP e siglas inventadas (psjpn2018-q66); NIST SP 800-61 contra 800-30, 800-34 e duas ISO (transp23e6-q42). Ganha quem sabe dizer a função de cada sigla em uma linha — profundidade não ajuda.",
+      "evidence": [
+        "transp15-q47",
+        "transp23e6-q43",
+        "transp23e6-q39",
+        "transp23e6-q38",
+        "psjpn2018-q66",
+        "transp23e6-q42"
+      ]
+    },
+    {
+      "title": "Distratores plausíveis: uns realmente inexistentes, outros existentes na categoria errada",
+      "howToSpot": "A banca preenche alternativas com termos plausíveis: uns realmente inexistentes — 'Unique Login Control', 'Unique-Auth Database' (psjpn2018-q66), 'reflexão segura' e 'inundação segura' como técnicas de VPN (transp15-q48), 'VAST' como técnica de teste de segurança (transp23e6-q38) —, outros EXISTENTES, mas na categoria errada: em transp23e6-q40, 'manipulação de conta', 'evasão do depurador', 'comunicação entre processos' e 'verificação de vulnerabilidade' são todos TÉCNICAS do ATT&CK, e a única TÁTICA (objetivo) é 'acesso à credencial'. Regra prática: primeiro elimine o que não existe; depois, no ATT&CK, elimine o que existe mas é técnica quando se pede tática. Mesmo cuidado com 'Rabbit' em transp15-q49: o termo circula na taxonomia clássica de malware, mas o comportamento descrito no enunciado (engajar a máquina em uma armada) é de bot.",
+      "evidence": [
+        "psjpn2018-q66",
+        "transp15-q48",
+        "transp15-q49",
+        "transp23e6-q38",
+        "transp23e6-q40"
+      ]
+    },
+    {
+      "title": "Pilar da segurança emparelhado com o ataque ou com o controle",
+      "howToSpot": "O enunciado dá um ataque ou um controle e pede o requisito afetado/protegido. Ataque passivo (monitoramento e análise de tráfego) ameaça principalmente a confidencialidade (psjpn2018-q64). O objetivo do controle de proteção contra código malicioso é a integridade do software e da informação (prova07-q27). As alternativas são exatamente os cinco nomes — confidencialidade, integridade, disponibilidade, autenticidade, irretratabilidade —, então não há como chutar: é preciso ter o pareamento decorado. Repare que a resposta pode não ser a mais intuitiva (malware afeta disponibilidade também, mas a norma declara integridade).",
+      "evidence": [
+        "psjpn2018-q64",
+        "prova07-q27"
+      ]
+    },
+    {
+      "title": "Classificação da informação: a resposta é sempre 'decisão de negócio, do proprietário'",
+      "howToSpot": "Duas questões, sete anos de distância, mesma tese. Em transp15-q45 a correta é 'decisão de negócios, com papel ativo do setor gerencial'; em psjpn2018-q65 a correta é rotular informações e saídas dos sistemas conforme valor e sensibilidade, e os distratores deslocam a responsabilidade para a alta gerência exclusivamente, para o setor de TI, ou inventam um 'princípio de equidade' de acesso entre cargos equivalentes — que contraria a necessidade de conhecer. Sempre que o assunto for classificação, desconfie de qualquer alternativa que tire a decisão das mãos do dono da informação.",
+      "evidence": [
+        "transp15-q45",
+        "psjpn2018-q65"
+      ]
+    },
+    {
+      "title": "Formatos-armadilha das provas antigas: asserção-razão e enunciado negativo",
+      "howToSpot": "Em prova6-q61 as duas afirmações são verdadeiras (é conveniente usar criptografia para proteger confidencialidade, integridade e autenticidade; chaves públicas dão método seguro de autenticação), mas a segunda cobre apenas uma das três propriedades e por isso não justifica a primeira — decisão entre as letras A e B. Em prova6-q62 pede-se o elemento que NÃO consta da lista da norma para acordos de confidencialidade. Nos dois casos o conteúdo era fácil e a perda vinha do formato. Julgue cada frase isoladamente antes de olhar o nexo, e circule o NÃO antes de ler as alternativas.",
+      "evidence": [
+        "prova6-q61",
+        "prova6-q62"
+      ]
+    },
+    {
+      "title": "2023 espalhou a área por sete subtópicos diferentes",
+      "howToSpot": "As 8 questões de 2023 cobriram sete subtópicos: desenvolvimento seguro (SDL/DAST), IAM com ABAC, MITRE ATT&CK, NIST SP 800-61, SIEM, IoT e — o único repetido — 9.19, com envelope digital e ISO 27002. Compare com 2010/2011, em que 6 de 6 eram norma. A leitura é direta: o Anexo IV atual (com CASB, EDR, SAST/DAST/IAST, threat hunting, STRIDE, ATT&CK, Zero Trust, nuvem, IoT) é grande e a banca está passeando por ele em largura, uma questão por tema. Cobertura ampla e superficial vence estudo profundo em poucos tópicos.",
+      "evidence": [
+        "transp23e6-q38",
+        "transp23e6-q39",
+        "transp23e6-q40",
+        "transp23e6-q41",
+        "transp23e6-q42",
+        "transp23e6-q43",
+        "transp23e6-q44",
+        "transp23e6-q61"
+      ]
+    }
+  ],
+  "tactics": [
+    {
+      "title": "Monte a tabela mental de siglas antes da prova",
+      "body": "Metade das questões recentes é 'descrição → sigla'. Escreva de memória, em uma linha cada: firewall, proxy, WAF, NGFW, DMZ, IDS, IPS, SIEM, SOAR, DLP, CASB, EDR/XDR, VPN, SSO, SAML, OAuth, OIDC, MFA, RBAC, ABAC, DAC, MAC, SAST, DAST, IAST, SCA, STRIDE, DREAD, ATT&CK, pentest, threat hunting, MDM. Se você consegue escrever a função de cada uma sem consultar, essas questões saem em trinta segundos e sobra tempo para as de norma."
+    },
+    {
+      "title": "Em toda questão de criptografia, escreva ao lado quem tem cada chave",
+      "body": "Antes de olhar as alternativas, anote: 'privada do remetente = assinar; pública do remetente = conferir assinatura; pública do destinatário = cifrar para ele; privada do destinatário = ele decifra'. Depois leia a alternativa e case. Esse rabisco de dez segundos resolve envelope digital, assinatura, TLS e validação de certificado, que juntos são o maior bloco de pontos da área."
+    },
+    {
+      "title": "Separe o que é norma do que é técnica antes de responder",
+      "body": "Quando o enunciado disser 'segundo a NBR/ISO 27002' ou 'conforme definido nessa norma', a resposta é a redação da norma, não o que é tecnicamente mais defensável. Foi assim em prova07-q27: malware afeta disponibilidade na prática, mas o objetivo declarado do controle é a integridade do software e da informação. Marque mentalmente 'modo norma' e busque a frase canônica; nas outras questões, volte para o 'modo técnico'."
+    },
+    {
+      "title": "Não decore contagens de framework: decore os nomes",
+      "body": "NIST CSF tem 5 funções na versão 1.1 e 6 na 2.0 (Governar entrou depois); o número de táticas do MITRE ATT&CK muda entre matrizes e versões; a quantidade de controles da ISO 27002 mudou entre 2013 e 2022. Se a alternativa depender de um número, prefira a que se sustenta pelos NOMES (Identificar, Proteger, Detectar, Responder, Recuperar, Governar) e desconfie de qualquer contagem apresentada sem a versão."
+    },
+    {
+      "title": "Nas questões de controle de acesso, procure a palavra 'contexto'",
+      "body": "O par RBAC x ABAC é decidido por uma palavra do enunciado. Se falar em papel, função, cargo, perfil: RBAC. Se falar em atributos, localização, horário, condições ambientais, contexto da requisição, política dinâmica: ABAC. DAC aparece quando o dono do recurso decide; MAC quando há rótulo de classificação imposto centralmente. ACL é a lista concreta amarrada a um recurso, sem lógica de política."
+    },
+    {
+      "title": "Estude os subtópicos que nunca caíram: são grandes e baratos",
+      "body": "Do Anexo IV desta área, nunca foram OBJETO de uma questão (no máximo apareceram como distrator): DLP, CASB, STRIDE e DREAD (distratores em transp23e6-q43 e transp23e6-q38), políticas de segurança (item de prova07-q28), EDR, gestão de vulnerabilidades, threat intel e threat hunting, teste de intrusão, ISO 31000, ISO 22301, Sarbanes-Oxley, MFA, MDM, segurança em nuvem e segurança física — estes últimos sem nenhuma aparição. Como a prova de 2023 andou em largura, com uma questão por tema e enunciado de definição, uma frase decorada por item desses vale tanto quanto horas gastas aprofundando criptografia."
+    }
+  ],
+  "trapWords": [
+    {
+      "term": "ISO/IEC 27001",
+      "confusedWith": "ISO/IEC 27002",
+      "distinction": "27001 traz os REQUISITOS do SGSI e é a norma certificável/auditável. 27002 é o código de prática, com o catálogo de controles e diretrizes de implementação. Ninguém se certifica em 27002."
+    },
+    {
+      "term": "NIST SP 800-61",
+      "confusedWith": "NIST SP 800-30 e 800-34",
+      "distinction": "800-61: ciclo de vida de resposta a incidentes. 800-30: avaliação/gestão de riscos. 800-34: planejamento de contingência de sistemas. Também não confunda com a ISO 27035, que trata de gestão de incidentes."
+    },
+    {
+      "term": "criptografia simétrica",
+      "confusedWith": "criptografia assimétrica",
+      "distinction": "Simétrica usa UMA chave compartilhada e é rápida (AES, 3DES). Assimétrica usa PAR pública/privada e é lenta (RSA, ECC). RSA é assimétrico — alternativa que o chame de simétrico está errada, sempre."
+    },
+    {
+      "term": "hash",
+      "confusedWith": "criptografia",
+      "distinction": "Hash é unidirecional, sem chave, com saída de tamanho fixo, e não permite recuperar o original. Criptografia é reversível com a chave certa. Hash na assinatura serve para integridade, nunca para recuperar o documento."
+    },
+    {
+      "term": "assinatura digital",
+      "confusedWith": "certificado digital",
+      "distinction": "A assinatura é o resultado de cifrar o hash do documento com a chave privada do signatário. O certificado é o documento emitido e assinado por uma AC que vincula uma identidade a uma chave pública. Um usa o outro, mas não são a mesma coisa."
+    },
+    {
+      "term": "envelope digital",
+      "confusedWith": "assinatura digital",
+      "distinction": "Envelope busca CONFIDENCIALIDADE: dados cifrados com chave simétrica e essa chave cifrada com a pública do destinatário. Assinatura busca integridade, autenticidade e irretratabilidade, cifrando o hash com a privada do remetente."
+    },
+    {
+      "term": "IDS",
+      "confusedWith": "IPS",
+      "distinction": "IDS fica fora do caminho do tráfego, detecta e ALERTA. IPS fica em linha e BLOQUEIA o tráfego identificado. Quem decide passagem de pacote por listas de regras, porém, é o firewall — não o IDS nem o IPS."
+    },
+    {
+      "term": "vírus",
+      "confusedWith": "worm",
+      "distinction": "Vírus precisa de um arquivo/programa hospedeiro e de execução para se replicar. Worm se autorreplica e se propaga sozinho pela rede, sem hospedeiro e sem ação do usuário."
+    },
+    {
+      "term": "bot / botnet",
+      "confusedWith": "worm e trojan",
+      "distinction": "Bot é a máquina zumbi sob controle remoto que executa tarefas automatizadas em ataques coordenados; botnet é o conjunto. Se o enunciado fala em 'engajar o computador em uma armada sem o dono saber', é bot — não worm nem trojan."
+    },
+    {
+      "term": "RBAC",
+      "confusedWith": "ABAC",
+      "distinction": "RBAC concede acesso pelo PAPEL/função do usuário. ABAC calcula o acesso por combinação de ATRIBUTOS e contexto (localização, recurso, ação, condições ambientais, políticas dinâmicas)."
+    },
+    {
+      "term": "DAC",
+      "confusedWith": "MAC",
+      "distinction": "DAC é discricionário: o PROPRIETÁRIO do recurso decide quem acessa. MAC é obrigatório: a decisão vem de rótulos de classificação definidos centralmente, e o usuário não pode afrouxá-los."
+    },
+    {
+      "term": "backup incremental",
+      "confusedWith": "backup diferencial",
+      "distinction": "Incremental copia o que mudou desde o último backup DE QUALQUER TIPO: cópia rápida, restauração exige o completo mais todos os incrementais. Diferencial copia o que mudou desde o último COMPLETO: cópia maior, restauração exige o completo mais o último diferencial."
+    },
+    {
+      "term": "RPO",
+      "confusedWith": "RTO",
+      "distinction": "RPO é o volume de dado que se aceita perder (olha para trás e define a frequência do backup). RTO é o tempo máximo para restabelecer o serviço (olha para frente e define a solução de recuperação)."
+    },
+    {
+      "term": "SAST",
+      "confusedWith": "DAST e IAST",
+      "distinction": "SAST analisa o código-fonte sem executar. DAST testa a aplicação compilada em execução, de fora, sem ver o código. IAST instrumenta a aplicação em execução, combinando as duas visões."
+    },
+    {
+      "term": "tática (MITRE ATT&CK)",
+      "confusedWith": "técnica (MITRE ATT&CK)",
+      "distinction": "Tática é o OBJETIVO do adversário (acesso a credenciais, persistência, movimentação lateral, exfiltração, impacto). Técnica é COMO ele alcança o objetivo (manipulação de conta, evasão do depurador). O enunciado que pede 'uma das táticas' quer o objetivo."
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "areaId": "ux",
+  "resumo": "<p><strong>Onde a área realmente pisou — e onde não pisou.</strong> São 9 questões no banco: 4 em acessibilidade e usabilidade (6.1), 2 em design thinking (6.10) e uma em cada um dos subtópicos de estilos de interação (6.3), prototipação (6.9) e MVP (6.8). 2010 e 2011 trouxeram 3 questões de fundamento de IHC; 2023 trouxe 5, de vocabulário de produto e design. Nunca caíram seis subtópicos: histórias de usuário (6.2), projeto centrado no usuário nomeado como tal (6.4), storytelling com dados (6.5), dashboards (6.6), interoperabilidade entre navegadores (6.7) e análise de personas (6.11) — e os nomes de Nielsen, da ISO 9241 e do INVEST jamais apareceram em enunciado. Com 50 questões de específicas para 8 áreas em 2026, isso é motivo para varrer o Anexo IV inteiro, não para apostar só no que já caiu.</p> <p><strong>Usabilidade e acessibilidade não são a mesma coisa, e as duas vêm antes do código.</strong> A ISO 9241-11 define usabilidade como a medida em que um sistema pode ser usado por usuários específicos para atingir objetivos específicos com <strong>eficácia, eficiência e satisfação</strong> em um <strong>contexto de uso</strong> específico. Acessibilidade é a possibilidade de uso por pessoas com deficiência ou com limitação situacional, em igualdade de condições. As duas não competem: em transp23e6-q33 a resposta correta é que ambas devem ser consideradas já na construção de <strong>protótipos</strong> e testadas <em>antes</em> da codificação. Alternativa que manda pensar acessibilidade depois de o software estar pronto, ou que trate as duas como conflitantes, está errada por definição.</p> <p><strong>Acessibilidade: WCAG, eMAG e o que o W3C publica.</strong> O WCAG, do W3C/WAI, é organizado em quatro princípios — <strong>Perceptível, Operável, Compreensível e Robusto</strong> (POUR) — com critérios de sucesso em três níveis de conformidade: A, AA e AAA. Contraste mínimo no nível AA: 4,5:1 para texto normal e 3:1 para texto grande; no AAA, 7:1 e 4,5:1. Diga a versão quando o fato depender dela: WCAG 2.0 (2008), 2.1 (2018, com critérios para móvel e entrada por toque) e 2.2 (2023). Na trinca do WAI, o WCAG trata do <em>conteúdo</em>, o ATAG das <em>ferramentas de autoria</em> e o UAAG dos <em>agentes de usuário</em> — foi a UAAG 2.0 que prova07-q11 citou. No governo brasileiro vale o <strong>eMAG</strong>, modelo de acessibilidade em governo eletrônico, versão especializada do WCAG e obrigatório para sítios do governo federal; transp15-q35 cobrou dele exatamente o contraste mínimo entre plano de fundo e primeiro plano, e os distratores eram práticas proibidas: impedir redimensionamento, diferenciar elementos só pela cor, provocar mudança automática de contexto, exigir CAPTCHA.</p> <p><strong>Usabilidade: heurísticas e avaliação.</strong> As <strong>10 heurísticas de Nielsen</strong> são visibilidade do status do sistema; correspondência entre o sistema e o mundo real; controle e liberdade do usuário; consistência e padrões; prevenção de erros; reconhecimento em vez de memorização; flexibilidade e eficiência de uso; estética e design minimalista; ajudar o usuário a reconhecer, diagnosticar e recuperar-se de erros; ajuda e documentação. Não confunda os métodos: <em>avaliação heurística</em> é inspeção feita por especialistas contra essa lista; <em>teste de usabilidade</em> é observação de usuários reais executando tarefas. Em prova07-q10 a atribuição correta da equipe é <strong>coletar tempos e taxas de sucesso</strong> por tarefa para gerar relatórios — e note o que a banca considerou errado: uniformizar a experiência dos participantes, sugerir o caminho mais curto e mandar o usuário ficar calado (o pensar-em-voz-alta é justamente o que se quer ouvir).</p> <table><tr><th>Artefato</th><th>O que mostra</th><th>Fidelidade</th></tr><tr><td>Wireframe</td><td>Estrutura e hierarquia da tela, sem cor nem identidade visual</td><td>Baixa</td></tr><tr><td>Mockup</td><td>Aparência final estática, com cor, tipografia e marca; não navega</td><td>Média/alta</td></tr><tr><td>Protótipo</td><td>Comportamento: navegação e interação, do papel ao clicável</td><td>Baixa a alta</td></tr></table> <p><strong>Produto: história de usuário, MVP e prototipação.</strong> A história de usuário segue o formato <strong>\"Como &lt;papel&gt;, quero &lt;ação&gt;, para &lt;benefício&gt;\"</strong>, vem acompanhada de <strong>critérios de aceitação</strong> (o que precisa ser verdade para ela estar pronta) e é avaliada pelo acrônimo <strong>INVEST</strong>: independente, negociável, valiosa, estimável, pequena e testável. O <strong>MVP</strong> é a versão mais simples do produto, entregue a usuários reais para validar uma ideia e coletar dados que orientem o direcionamento do negócio (transp23e6-q58) — não é a V1.0 completa, não é exclusividade de startup e não exige as mesmas tecnologias do produto final. Protótipo de <strong>alta fidelidade</strong> representa fielmente aparência e comportamento esperados, servindo de base próxima à codificação (transp23e6-q29); o de baixa fidelidade (papel, wireframe sem cor) serve para validar cedo e barato.</p> <p><strong>Design centrado no usuário e design thinking.</strong> A ISO 9241-210 descreve o projeto centrado no humano como quatro atividades iterativas: entender e especificar o contexto de uso, especificar os requisitos do usuário, produzir soluções de projeto e avaliar o projeto. O design thinking, no modelo da d.school, tem cinco etapas — <strong>empatizar, definir, idear, prototipar e testar</strong>; o Duplo Diamante do Design Council usa quatro fases (descobrir, definir, desenvolver, entregar). Ferramentas que já foram cobradas pelo nome: o <strong>mapa de empatia</strong>, com os quadrantes \"o que pensa e sente\", \"o que vê\", \"o que escuta\" e \"o que fala e faz\" (transp23e6-q34), e o <strong>brainwriting</strong>, geração de ideias escrita, em rodadas cronometradas, com troca de papéis entre os participantes (transp23e6-q30). Persona é personagem fictício construído a partir de pesquisa real; o mapa de jornada organiza fases, ações, pontos de contato, emoções e dores ao longo do uso. Storytelling com dados e dashboards também constam do Anexo IV desta área (6.5 e 6.6), mas estão desenvolvidos na área de Análise de Dados e Informações — estude-os lá.</p>",
+  "cheatsheet": [
+    {
+      "heading": "Usabilidade: definição, normas e atributos",
+      "items": [
+        "ISO 9241-11: usabilidade é a medida em que um sistema, produto ou serviço pode ser usado por usuários específicos para atingir objetivos específicos com EFICÁCIA, EFICIÊNCIA e SATISFAÇÃO em um CONTEXTO DE USO específico. Se a alternativa cita duas medidas, ou troca satisfação por 'manutenibilidade', está errada.",
+        "Eficácia = o usuário conseguiu concluir a tarefa (taxa de sucesso). Eficiência = com quanto recurso (tempo, passos, erros). Satisfação = percepção e conforto de uso.",
+        "ISO 9241-210: projeto centrado no humano em 4 atividades iterativas — entender e especificar o contexto de uso; especificar os requisitos do usuário; produzir soluções de projeto; avaliar o projeto contra os requisitos.",
+        "Os 5 atributos de qualidade de usabilidade de Nielsen: facilidade de aprendizado, eficiência de uso, facilidade de memorização, baixa taxa de erros (e recuperação) e satisfação subjetiva.",
+        "Usabilidade não é desempenho de software nem manutenibilidade nem compatibilidade entre dispositivos — foi exatamente essa troca o distrator de transp23e6-q33.",
+        "Vocabulário de Norman, que o Anexo IV não nomeia mas a literatura de 6.4 cobre: affordance (o que o objeto permite fazer), significante (a pista visível dessa possibilidade), restrição, mapeamento, feedback e modelo conceitual. Modelo mental do usuário é a expectativa que ele traz; o projeto acerta quando os dois coincidem."
+      ]
+    },
+    {
+      "heading": "As 10 heurísticas de Nielsen (nomeie todas)",
+      "items": [
+        "1. Visibilidade do status do sistema: o sistema informa o que está acontecendo, em tempo razoável.",
+        "2. Correspondência entre o sistema e o mundo real: linguagem e conceitos do usuário, não do desenvolvedor.",
+        "3. Controle e liberdade do usuário: saída de emergência, desfazer, cancelar.",
+        "4. Consistência e padrões: mesma coisa com o mesmo nome e no mesmo lugar; siga a convenção da plataforma.",
+        "5. Prevenção de erros: melhor evitar o erro do que avisar depois (confirmação, restrição de entrada, valores padrão).",
+        "6. Reconhecimento em vez de memorização: deixe a informação visível; não faça o usuário lembrar de uma tela para outra.",
+        "7. Flexibilidade e eficiência de uso: atalhos e aceleradores para o experiente, sem atrapalhar o novato.",
+        "8. Estética e design minimalista: só o que é relevante; cada elemento extra compete com o essencial.",
+        "9. Ajudar o usuário a reconhecer, diagnosticar e recuperar-se de erros: mensagem em linguagem clara, indicando o problema e a saída.",
+        "10. Ajuda e documentação: disponível, buscável, focada na tarefa e com passos concretos."
+      ]
+    },
+    {
+      "heading": "Acessibilidade: WCAG, eMAG e a família WAI",
+      "items": [
+        "WCAG — 4 princípios (POUR): PERCEPTÍVEL (texto alternativo, legenda, contraste), OPERÁVEL (teclado, tempo suficiente, sem convulsões, navegável), COMPREENSÍVEL (legível, previsível, com assistência de entrada), ROBUSTO (compatível com tecnologias assistivas e agentes de usuário).",
+        "Níveis de conformidade: A (mínimo), AA (o alvo prático e o exigido por boa parte da regulação) e AAA (mais rigoroso, não exigível para todo conteúdo). Versões: WCAG 2.0 (2008), 2.1 (2018) e 2.2 (2023) — cite a versão se a questão citar contagem de critérios.",
+        "Contraste (WCAG 2.x): AA exige 4,5:1 para texto normal e 3:1 para texto grande; AAA exige 7:1 e 4,5:1. Foi contraste mínimo entre fundo e primeiro plano que transp15-q35 cobrou do eMAG.",
+        "Família WAI: WCAG para o CONTEÚDO web; ATAG para as FERRAMENTAS DE AUTORIA; UAAG para os AGENTES DE USUÁRIO (navegador, player) — a UAAG 2.0 foi citada em prova07-q11. WAI-ARIA acrescenta papéis, estados e propriedades para componentes dinâmicos.",
+        "eMAG: Modelo de Acessibilidade em Governo Eletrônico, versão especializada do WCAG para o governo brasileiro e de observância obrigatória nos sítios do governo federal. Suas recomendações se organizam em seções de marcação, comportamento, conteúdo/informação, apresentação/design, multimídia e formulários.",
+        "Práticas que a banca marca como ERRADAS em acessibilidade (todas foram distratores de transp15-q35): impedir o redimensionamento da página; usar apenas cor para diferenciar elementos; provocar alteração automática de contexto; exigir CAPTCHA como solução de segurança.",
+        "Práticas certas: texto alternativo em imagem informativa; HTML semântico e hierarquia de cabeçalhos; operação completa por teclado com foco visível; legenda e transcrição para mídia; formulário com rótulo (label) associado e mensagem de erro clara; não depender só de cor; permitir zoom.",
+        "Testar em navegador de modo textual (ou com leitor de tela) é prática recomendada, porque revela dependência de recurso visual e de script — foi a correta de prova07-q11. Avaliação automática (por exemplo o ASES, do governo brasileiro) não substitui teste com pessoa com deficiência.",
+        "Base legal no Brasil: Lei Brasileira de Inclusão (nº 13.146/2015) exige acessibilidade de sítios da internet. Acessibilidade beneficia todos (curb-cut effect): legenda serve a ambiente ruidoso, contraste serve a sol na tela."
+      ]
+    },
+    {
+      "heading": "Métodos de avaliação: quem participa e o que se mede",
+      "items": [
+        "Teste de usabilidade: USUÁRIOS REAIS (ou representativos) executam TAREFAS definidas; mede-se taxa de sucesso, tempo por tarefa, número de erros e satisfação. Coletar tempo e taxa de sucesso para relatório é a atribuição correta da equipe (prova07-q10).",
+        "O que NÃO fazer no teste (distratores de prova07-q10): exigir que todos os participantes tenham o mesmo nível de experiência e já treinados; pedir que usem o menor número de comandos; mandar o usuário ficar em silêncio. O protocolo de pensar em voz alta existe justamente para revelar o modelo mental.",
+        "Avaliação heurística: INSPEÇÃO por especialistas contra as heurísticas, sem usuário; Nielsen sugere de 3 a 5 avaliadores. Percurso cognitivo (cognitive walkthrough) inspeciona a facilidade de aprendizado passo a passo.",
+        "Nielsen estima que cerca de 5 usuários por rodada revelem a maior parte dos problemas de usabilidade; melhor várias rodadas pequenas e iterativas que uma única grande.",
+        "SUS (System Usability Scale): questionário de 10 itens em escala Likert, resultado de 0 a 100, com média de referência em torno de 68. Não é percentual de acerto.",
+        "Outros métodos: card sorting (arquitetura de informação), teste A/B (comparação em produção), eye tracking, análise de tarefas, entrevista e pesquisa contextual. Teste moderado tem facilitador; não moderado é remoto e assíncrono.",
+        "Métrica objetiva (tempo, sucesso, erro) x métrica subjetiva (satisfação, SUS). A boa avaliação usa as duas."
+      ]
+    },
+    {
+      "heading": "Prototipação: wireframe, mockup e protótipo",
+      "items": [
+        "Wireframe: esqueleto da tela — blocos, hierarquia e posicionamento, sem cor e sem identidade visual. Mockup: representação estática com a aparência final (cor, tipografia, marca), mas sem interação. Protótipo: simula o COMPORTAMENTO, permitindo navegar e interagir.",
+        "Baixa fidelidade: papel (paper prototyping), rascunho, wireframe sem cor — barato, rápido, feito para ser descartado e criticado. Alta fidelidade: representa fielmente aparência e comportamento esperados, servindo de base próxima à codificação (transp23e6-q29).",
+        "Cuidado com a inversão: alta fidelidade NÃO se faz com paper prototyping nem se define como 'layout básico para validações iniciais' — essas descrições são de baixa fidelidade e foram os distratores de transp23e6-q29.",
+        "Protótipo descartável (throwaway) é jogado fora depois de esclarecer os requisitos; protótipo evolutivo vira o produto. 'Mago de Oz': o usuário acha que interage com o sistema, mas um humano responde por trás.",
+        "Validar cedo com usuário é sempre bom, mas não é o que DEFINE alta fidelidade — a fidelidade diz respeito ao quanto o artefato se aproxima do produto final, não a quando se testa.",
+        "Fidelidade alta cobra um preço: o usuário passa a comentar cor e detalhe visual em vez de fluxo, e a equipe resiste mais a mudar o que parece pronto."
+      ]
+    },
+    {
+      "heading": "Histórias de usuário, MVP e produto",
+      "items": [
+        "Formato: 'Como &lt;papel&gt;, quero &lt;ação&gt;, para &lt;benefício&gt;'. O 'para' é o que amarra a história ao valor — história sem benefício explícito é tarefa disfarçada.",
+        "Os 3 C: Card (o cartão com o texto curto), Conversation (a conversa que detalha) e Confirmation (a confirmação, isto é, os critérios de aceitação). A história não é especificação completa; é promessa de conversa.",
+        "Critérios de aceitação: condições verificáveis que dizem quando a história está pronta. Podem ser escritos em Dado/Quando/Então (Gherkin). 'Definição de pronto' (DoD) é do time e vale para todas as histórias; critério de aceitação é específico daquela história.",
+        "INVEST: Independente, Negociável, Valiosa, Estimável, Small (pequena) e Testável.",
+        "Hierarquia usual: épico > feature > história de usuário > tarefa. História de usuário não é caso de uso: o caso de uso descreve fluxos, passos e exceções em detalhe; a história é um lembrete curto e negociável de valor.",
+        "MVP: versão mais simples do produto, entregue a usuários reais para VALIDAR UMA IDEIA e coletar dados que orientem o direcionamento do negócio (transp23e6-q58). Serve também a empresas estabelecidas, não exige as mesmas tecnologias do produto final e não é a V1.0 completa.",
+        "MVP x protótipo x prova de conceito: o protótipo simula para aprender sobre a solução; a PoC verifica viabilidade técnica; o MVP é produto de verdade, em uso real, gerando aprendizado de mercado.",
+        "Ciclo do Lean Startup: construir, medir, aprender — e pivotar ou perseverar. Descoberta contínua de produto alimenta o backlog."
+      ]
+    },
+    {
+      "heading": "Design centrado no usuário, design thinking e pesquisa",
+      "items": [
+        "Design thinking (modelo d.school), 5 etapas: EMPATIZAR, DEFINIR, IDEAR, PROTOTIPAR, TESTAR. Iterativo, não linear — voltar etapas é esperado.",
+        "Duplo Diamante (Design Council), 4 fases: descobrir, definir, desenvolver, entregar; o primeiro diamante encontra o problema certo, o segundo encontra a solução certa. Divergir gera opções; convergir escolhe.",
+        "Mapa de empatia: 'o que pensa e sente', 'o que vê', 'o que escuta', 'o que fala e faz' (transp23e6-q34) — muitas versões acrescentam dores e ganhos. Não é ficha cadastral: idade, nome e hobby não são o conteúdo do mapa.",
+        "Brainwriting: cada participante ESCREVE ideias em papel em rodadas cronometradas e passa o papel ao colega, que lê e acrescenta, até o papel voltar ao autor; só depois o grupo avalia (transp23e6-q30). Brainstorming é oral e simultâneo; a escrita reduz o efeito do participante dominante.",
+        "Outras técnicas de ideação: Lotus Blossom (desdobramento de um tema central em pétalas), mapa mental, SCAMPER, Crazy 8s. 5 Porquês é análise de causa-raiz, não ideação.",
+        "Persona: personagem fictício representando um grupo de usuários, construído a partir de PESQUISA real (nome, objetivos, contexto, frustrações, comportamento). Proto-persona parte de suposições a validar; persona negativa é quem você decide NÃO atender. Persona não é público-alvo demográfico.",
+        "Mapa de jornada do usuário: fases da experiência, ações, pontos de contato, pensamentos, emoções, dores e oportunidades. Service blueprint acrescenta o que acontece nos bastidores (pessoas, sistemas, processos de apoio).",
+        "Pesquisa exploratória (entrevista, observação, pesquisa contextual) descobre necessidade; pesquisa avaliativa (teste de usabilidade, avaliação heurística) julga uma solução. Pesquisa qualitativa explica o porquê; quantitativa mede o quanto."
+      ]
+    },
+    {
+      "heading": "Interação web: estilos, interoperabilidade e remissões",
+      "items": [
+        "Estilos de interação em IHC — os CINCO canônicos (Shneiderman): linguagem de comandos, seleção em menus, preenchimento de formulários, manipulação direta e linguagem natural. WIMP (janelas, ícones, menus e apontadores) e WYSIWYG são paradigmas de interface tratados como estilos por parte da literatura — e foi assim que prova6-q41 os tratou. \"Linguagem polimórfica\" NÃO existe: foi o termo fabricado daquela questão (polimorfismo é orientação a objetos).",
+        "Interoperabilidade entre navegadores: aderir aos padrões do W3C, validar marcação, evitar recurso proprietário, usar detecção de funcionalidade (feature detection) em vez de detecção de navegador, e polyfill quando necessário.",
+        "Aprimoramento progressivo (progressive enhancement): comece com conteúdo e HTML que funcionam em qualquer agente e vá somando camadas de CSS e JavaScript. Degradação graciosa parte do recurso completo e garante um mínimo aceitável onde ele falta.",
+        "Depender de JavaScript para a navegação básica entre páginas prejudica acessibilidade e interoperabilidade — foi um distrator explícito de prova07-q11.",
+        "Design responsivo (layout fluido, media queries, imagens flexíveis) e abordagem mobile first tratam da variedade de telas; teste cross-browser cobre a variedade de agentes.",
+        "No governo brasileiro, a e-PING (Padrões de Interoperabilidade de Governo Eletrônico) fixa padrões de interoperabilidade, e o eMAG, os de acessibilidade.",
+        "Storytelling com dados (6.5) e organização de dados em relatórios e dashboards (6.6) constam do Anexo IV desta área, mas foram desenvolvidos na área de Análise de Dados e Informações para não duplicar — a regra prática lá é: uma mensagem por visual, gráfico escolhido pela pergunta e nada de ornamento."
+      ]
+    }
+  ],
+  "mentalModels": [
+    {
+      "title": "Usabilidade é para o uso; acessibilidade é para que ninguém fique fora",
+      "body": "Duas perguntas diferentes sobre a mesma tela. Usabilidade: 'quem consegue usar, usa bem?' — mede-se eficácia, eficiência e satisfação. Acessibilidade: 'quem, por deficiência ou limitação, corre risco de não conseguir usar de jeito nenhum?'. Não são opostas nem concorrentes: uma tela acessível costuma ser mais usável para todos, e o gabarito de transp23e6-q33 é justamente o que diz que as duas se pensam desde o protótipo e se testam antes da codificação. Sempre que a alternativa empurrar acessibilidade para depois do código, ou disser que ela conflita com usabilidade, elimine."
+    },
+    {
+      "title": "POUR: eu percebo, eu opero, eu compreendo, e continua funcionando",
+      "body": "Para decidir em que princípio do WCAG um critério se encaixa, transforme cada letra em uma frase na primeira pessoa. 'Eu percebo' cobre o que entra pelos sentidos: texto alternativo, legenda, contraste, não depender só de cor. 'Eu opero' cobre a ação: teclado, foco visível, tempo suficiente, sem armadilha de navegação. 'Eu compreendo' cobre o sentido: linguagem clara, comportamento previsível, mensagem de erro que ensina a corrigir. 'Robusto' é o que sobra: funciona com leitor de tela, com navegador diferente, com a tecnologia assistiva de amanhã."
+    },
+    {
+      "title": "Wireframe é planta, mockup é foto, protótipo é filme",
+      "body": "Três palavras que a banca troca de lugar. A planta (wireframe) mostra onde ficam as coisas, sem cor nem acabamento. A foto (mockup) mostra como vai ficar, bonita e parada. O filme (protótipo) mostra o que acontece quando você toca — navega, responde, erra. E fidelidade é um eixo separado desses três: um protótipo pode ser de papel (baixa) ou indistinguível do produto final (alta), como em transp23e6-q29. Fidelidade alta não significa qualidade melhor; significa proximidade do produto final, com o custo e a rigidez que isso traz."
+    },
+    {
+      "title": "Toda história de usuário responde três perguntas, e o critério fecha a quarta",
+      "body": "Quem? (papel) O quê? (ação) Para quê? (benefício). Se você não consegue preencher os três, não é história de usuário — é tarefa técnica. E a quarta pergunta, 'como eu sei que acabou?', é respondida pelos critérios de aceitação, não pelo texto da história. Guarde o par: o formato 'Como... quero... para...' descreve a intenção; o INVEST julga a qualidade do recorte; o critério de aceitação define o pronto."
+    },
+    {
+      "title": "MVP é aprendizado em uso real, não versão beta encurtada",
+      "body": "O que define o MVP não é 'ser pequeno', é 'ser suficiente para aprender'. Ele vai a usuários reais e devolve dado que confirma ou derruba uma hipótese de negócio — construir, medir, aprender. Por isso as três armadilhas de transp23e6-q58: MVP não é a V1.0 completa lançada ao grande público, não é exclusividade de startup (empresa estabelecida também testa hipótese) e não obriga a usar as mesmas tecnologias do produto final. Se o objetivo é só verificar se a tecnologia funciona, o nome é prova de conceito; se é só simular a experiência, é protótipo."
+    }
+  ],
+  "patterns": [
+    {
+      "title": "Acessibilidade e usabilidade é o maior bloco, e a correta é sempre a prática inclusiva e antecipada",
+      "howToSpot": "4 das 9 questões estão no subtópico 6.1, distribuídas em 2010, 2018 e 2023 — é o único assunto que a banca repetiu ao longo de todo o período. O desenho é constante: a alternativa correta é a boa prática (garantir contraste mínimo, testar em navegador de modo textual, coletar tempo e taxa de sucesso, tratar acessibilidade e usabilidade já no protótipo) e os distratores são práticas que tiram controle e percepção do usuário ou que empurram a preocupação para depois do código: impedir redimensionamento, diferenciar só por cor, mudar contexto automaticamente, exigir CAPTCHA, restringir conteúdo alternativo ao mínimo, pensar acessibilidade quando o software já está codificado. Não é preciso decorar número de critério do WCAG para acertar; é preciso reconhecer a prática que exclui.",
+      "evidence": [
+        "prova07-q10",
+        "prova07-q11",
+        "transp15-q35",
+        "transp23e6-q33"
+      ]
+    },
+    {
+      "title": "2023 pediu o NOME da ferramenta de design thinking a partir de uma descrição narrativa",
+      "howToSpot": "As duas questões de 6.10 são de 2023 e têm o mesmo mecanismo: o enunciado descreve minuciosamente uma dinâmica ou o conteúdo de um artefato e as alternativas são cinco nomes de técnicas vizinhas. Em transp23e6-q30, um parágrafo longo descreve rodadas cronometradas em que cada pessoa escreve ideias e passa o papel ao lado — é brainwriting, contra brainstorm, Lotus Blossom, mapa mental e 5 Porquês. Em transp23e6-q34, pergunta-se quais informações compõem o mapa de empatia, e a correta é o conjunto de quadrantes ('pensa e sente', 'vê', 'escuta', 'fala e faz'), enquanto os distratores misturam campos de ficha cadastral (idade, nome, formação, hobby). Ganha quem consegue escrever uma linha sobre cada ferramenta de design thinking e reconhecer os campos canônicos de cada artefato.",
+      "evidence": [
+        "transp23e6-q30",
+        "transp23e6-q34"
+      ]
+    },
+    {
+      "title": "Nos conceitos de produto e protótipo, o distrator restringe ou inverte a definição",
+      "howToSpot": "Nas questões de MVP e de prototipação as alternativas são frases inteiras sobre o mesmo conceito, e o erro vem em duas formas. Restrição indevida: o MVP seria 'inadequado para empresas já estabelecidas' ou 'necessariamente' feito com as mesmas tecnologias do produto final (transp23e6-q58); acessibilidade e usabilidade 'impedem' a aplicação conjunta (transp23e6-q33). Inversão de definição: descrever protótipo de ALTA fidelidade como paper prototyping, wireframe sem cor ou 'layout básico para validações iniciais' (transp23e6-q29) — são todas descrições de BAIXA fidelidade. Antes de escolher, pergunte se a frase acrescenta uma condição que a definição não tem, e se a característica descrita pertence ao polo oposto do conceito.",
+      "evidence": [
+        "transp23e6-q29",
+        "transp23e6-q33",
+        "transp23e6-q58"
+      ]
+    }
+  ],
+  "tactics": [
+    {
+      "title": "Área pouco representada: o edital manda mais que o histórico",
+      "body": "9 questões em quatro provas, concentradas em três subtópicos, não autorizam nenhuma previsão forte. Seis subtópicos do Anexo IV nunca apareceram: histórias de usuário (6.2), projeto centrado no usuário nomeado como tal (6.4), storytelling com dados (6.5), relatórios e dashboards (6.6), interoperabilidade entre navegadores (6.7) e análise de personas (6.11). Nielsen, ISO 9241 e INVEST nunca foram citados em enunciado — o que não é promessa de ausência, e sim um lembrete de que o custo de uma estreia é o mesmo ponto de uma repetição. Prepare uma frase de definição e uma lista canônica para cada subtópico, e trate isso como cobertura de seguro."
+    },
+    {
+      "title": "Decore as listas canônicas: o formato favorece quem nomeia",
+      "body": "Sete listas resolvem a maior parte do que essa área pode pedir: as 10 heurísticas de Nielsen; os 4 princípios do WCAG (POUR) e os 3 níveis (A, AA, AAA); as 3 medidas da ISO 9241-11 (eficácia, eficiência, satisfação); as 4 atividades da ISO 9241-210; as 5 etapas do design thinking da d.school; as 6 letras do INVEST; e os 4 quadrantes do mapa de empatia. Escreva-as de memória em papel na semana da prova. Se você sabe nomear, acerta 'qual das alternativas é uma heurística' e 'quais informações compõem o artefato' sem raciocinar."
+    },
+    {
+      "title": "Em acessibilidade, elimine tudo que retira controle ou percepção do usuário",
+      "body": "Não é preciso lembrar o número do critério. Passe cada alternativa por três filtros: ela impede o usuário de ajustar algo (zoom, tempo, redimensionamento, pausa)? Ela apoia a informação em um único canal sensorial (só cor, só áudio, só imagem sem alternativa)? Ela muda o estado da página sem que o usuário tenha pedido? Se sim para qualquer um, é distrator. Sobrou a alternativa que oferece alternativa, contraste, controle e previsibilidade: é o gabarito — foi assim em transp15-q35 e em prova07-q11."
+    },
+    {
+      "title": "No formato 'qual NÃO é', ataque primeiro o termo inventado",
+      "body": "Em prova6-q41 pede-se qual NÃO é estilo de interação, e quatro alternativas são termos reais e consagrados (linguagem de comandos, linguagem natural, WIMP, WYSIWYG) contra um termo fabricado a partir de outro campo ('linguagem polimórfica', de orientação a objetos). Circule o NÃO antes de ler as alternativas e procure o termo que você nunca viu naquele contexto — em vez de tentar justificar cada um dos quatro conhecidos. É uma única questão do banco nesse formato, mas o custo da tática é zero."
+    },
+    {
+      "title": "Antes de responder sobre protótipo, pergunte 'alta ou baixa?'",
+      "body": "Palavras que denunciam BAIXA fidelidade: papel, rascunho, wireframe sem cor, layout básico, validação inicial, descartável, barato. Palavras que denunciam ALTA: representa fielmente, próximo do produto final, cor e tipografia definidas, interação real, base para codificação. Anote na margem qual dos dois polos a questão pede e depois confira alternativa por alternativa — foi essa leitura que decidiu transp23e6-q29, em que três distratores descreviam baixa fidelidade."
+    },
+    {
+      "title": "Distribua o estudo pelos subtópicos, não pela sua curiosidade",
+      "body": "A área tem 11 subtópicos e a prova recente andou em largura: as cinco questões de 2023 se espalharam por quatro assuntos diferentes (acessibilidade/usabilidade, prototipação, MVP e design thinking, este com duas questões). Uma frase de definição por subtópico rende mais que um aprofundamento em um só. E não gaste tempo duplicando storytelling com dados e dashboards aqui: eles estão detalhados na área de Análise de Dados e Informações, cujos subtópicos os cobrem no mesmo nível de detalhe."
+    }
+  ],
+  "trapWords": [
+    {
+      "term": "usabilidade",
+      "confusedWith": "acessibilidade",
+      "distinction": "Usabilidade é o quanto usuários específicos atingem objetivos com eficácia, eficiência e satisfação em um contexto de uso. Acessibilidade é a possibilidade de uso por pessoas com deficiência ou limitação, em igualdade de condições. As duas se somam, não se opõem — e ambas se consideram desde o protótipo (transp23e6-q33)."
+    },
+    {
+      "term": "WCAG",
+      "confusedWith": "eMAG, ATAG e UAAG",
+      "distinction": "WCAG (W3C/WAI) é a diretriz para o CONTEÚDO web. ATAG é para FERRAMENTAS DE AUTORIA; UAAG, para AGENTES DE USUÁRIO como navegadores (citada em prova07-q11). eMAG é o modelo brasileiro de acessibilidade em governo eletrônico, versão especializada do WCAG e obrigatório no governo federal."
+    },
+    {
+      "term": "nível AA",
+      "confusedWith": "nível A e AAA",
+      "distinction": "A é o mínimo; AA é o alvo prático e o mais exigido por regulação; AAA é o mais rigoroso e não é exigível para todo o conteúdo. No contraste do WCAG 2.x: AA pede 4,5:1 (texto normal) e 3:1 (texto grande); AAA pede 7:1 e 4,5:1."
+    },
+    {
+      "term": "avaliação heurística",
+      "confusedWith": "teste de usabilidade",
+      "distinction": "Avaliação heurística é INSPEÇÃO feita por ESPECIALISTAS contra uma lista de heurísticas, sem usuário. Teste de usabilidade envolve USUÁRIOS REAIS executando tarefas, com medição de tempo, taxa de sucesso e erros (prova07-q10). Métodos distintos, com participantes distintos."
+    },
+    {
+      "term": "eficácia",
+      "confusedWith": "eficiência",
+      "distinction": "Na ISO 9241-11, eficácia é conseguir concluir a tarefa (completude e exatidão do resultado); eficiência é o recurso gasto para isso (tempo, passos, esforço). A terceira medida é satisfação — e são exatamente essas três, nem duas nem quatro."
+    },
+    {
+      "term": "wireframe",
+      "confusedWith": "mockup e protótipo",
+      "distinction": "Wireframe é a estrutura da tela sem cor nem identidade visual. Mockup é a aparência final estática, sem interação. Protótipo simula o comportamento e permite navegar. Fidelidade (baixa/alta) é um eixo separado: existe protótipo de papel e protótipo quase idêntico ao produto."
+    },
+    {
+      "term": "protótipo de alta fidelidade",
+      "confusedWith": "protótipo de baixa fidelidade",
+      "distinction": "Alta fidelidade representa fielmente aparência e comportamento esperados, servindo de base próxima à codificação (transp23e6-q29). Baixa fidelidade é papel, rascunho e wireframe sem cor, para validar cedo e barato. Paper prototyping e 'layout básico' são baixa fidelidade — nunca alta."
+    },
+    {
+      "term": "MVP",
+      "confusedWith": "protótipo e prova de conceito",
+      "distinction": "MVP é produto de verdade, em uso real, com o objetivo de validar hipótese de negócio e coletar dados (transp23e6-q58). Protótipo simula para aprender sobre a solução, sem ir a produção. Prova de conceito (PoC) verifica se a tecnologia é viável. MVP também não é a V1.0 completa."
+    },
+    {
+      "term": "história de usuário",
+      "confusedWith": "caso de uso",
+      "distinction": "História de usuário é um cartão curto e negociável no formato 'Como &lt;papel&gt;, quero &lt;ação&gt;, para &lt;benefício&gt;', complementado por conversa e critérios de aceitação. Caso de uso é a descrição detalhada de fluxo principal, fluxos alternativos e exceções, com ator e pré/pós-condições."
+    },
+    {
+      "term": "critério de aceitação",
+      "confusedWith": "definição de pronto (DoD)",
+      "distinction": "Critério de aceitação é específico de UMA história e diz quando aquela funcionalidade atende ao pedido. Definição de pronto é do TIME e vale para todo item (testado, revisado, documentado, integrado). Uma história pode cumprir seus critérios e ainda não estar 'pronta' pela DoD."
+    },
+    {
+      "term": "brainwriting",
+      "confusedWith": "brainstorming",
+      "distinction": "Brainwriting é escrito e em rodadas, com troca de papéis entre participantes, e a avaliação vem só no fim (transp23e6-q30). Brainstorming é oral e simultâneo, com adiamento do julgamento. A forma escrita reduz o peso do participante mais falante e do primeiro palpite."
+    },
+    {
+      "term": "mapa de empatia",
+      "confusedWith": "persona",
+      "distinction": "Mapa de empatia organiza a experiência subjetiva em quadrantes: o que o usuário pensa e sente, vê, escuta, fala e faz (transp23e6-q34). Persona é o personagem fictício consolidado (objetivos, contexto, frustrações, comportamento) baseado em pesquisa. Nome, idade e hobby são campos de persona, não conteúdo do mapa de empatia."
+    },
+    {
+      "term": "persona",
+      "confusedWith": "público-alvo",
+      "distinction": "Público-alvo é um recorte demográfico e estatístico de mercado. Persona é um personagem fictício e concreto, construído a partir de pesquisa real com usuários, com objetivos, contexto de uso e frustrações — serve para decidir projeto, não para segmentar campanha."
+    },
+    {
+      "term": "design thinking",
+      "confusedWith": "Duplo Diamante e projeto centrado no usuário (ISO 9241-210)",
+      "distinction": "Design thinking, no modelo da d.school, tem 5 etapas (empatizar, definir, idear, prototipar, testar). O Duplo Diamante tem 4 fases (descobrir, definir, desenvolver, entregar). A ISO 9241-210 descreve 4 atividades iterativas de projeto centrado no humano. São modelos diferentes: confira quantas etapas a alternativa oferece e a qual modelo ela se refere."
+    },
+    {
+      "term": "estilo de interação",
+      "confusedWith": "conceito de orientação a objetos",
+      "distinction": "Os cinco estilos canônicos (Shneiderman) são: linguagem de comandos, seleção em menus, preenchimento de formulários, manipulação direta e linguagem natural. WIMP e WYSIWYG são paradigmas de interface que parte da literatura trata como estilos — e prova6-q41 os tratou assim. 'Linguagem polimórfica' não existe em IHC: polimorfismo é orientação a objetos, e foi o termo fabricado daquela questão."
+    }
+  ]
+}
