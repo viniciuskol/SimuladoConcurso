@@ -2,6 +2,32 @@
   "version": 1,
   "entries": [
     {
+      "id": "psjpn2018-q55",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 55
+      },
+      "area": "eng-sw",
+      "subtopic": "5.1 Levantamento, análise e gerenciamento de requisitos",
+      "stem": "O processo de desenvolvimento de requisitos pode ser dividido em 4 etapas: elicitação, análise, especificação e validação. Qual prática da Engenharia de Requisitos está associada à etapa de análise?",
+      "images": null,
+      "alternatives": [
+        { "text": "Criar protótipos.", "key": "A" },
+        { "text": "Identificar casos de uso.", "key": "B" },
+        { "text": "Inspecionar documentos de requisitos.", "key": "C" },
+        { "text": "Definir critérios de aceitação.", "key": "D" },
+        { "text": "Registrar regras de negócio.", "key": "E" }
+      ],
+      "gabaritoLetter": "A",
+      "derivedLetter": "B",
+      "reviewRounds": [
+        { "round": 1, "conclusion": "diverge do gabarito", "note": "O agente de extração original leu o gabarito como 'B' e reportou concordância com sua derivação (também B, 'Identificar casos de uso' — modelagem de casos de uso é tipicamente uma atividade de análise). Um validador independente releu o PDF do gabarito diretamente (texto embutido + imagem da tabela) e confirmou duas vezes que a resposta impressa para a questão 55, coluna 3 (Analista de Sistemas Júnior Processos de Negócio), é 'A' ('Criar protótipos'), não 'B'. Isso é uma divergência genuína: prototipação é classicamente associada à etapa de elicitação (não de análise) na literatura de Engenharia de Requisitos, o que motivou a derivação B — mas o gabarito impresso diz A. Sem uma segunda fonte que explique por que a banca considerou 'criar protótipos' como prática de análise (e não de elicitação), fica em revisão." }
+      ],
+      "unresolved": true,
+      "annulled": false
+    },
+    {
       "id": "prova6-q23",
       "source": {
         "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
@@ -492,6 +518,102 @@
       "unresolved": true,
       "annulled": false,
       "area": "logica"
+    },
+    {
+      "id": "psjpn2018-q36",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 36
+      },
+      "subtopic": "7.2 Conceitos, fundamentos, técnicas e métodos de Business Intelligence (BI)",
+      "stem": "Uma das principais técnicas de controle de processos é o acompanhamento dos KPIs (Key Performance Indicators). Os KPIs são elementos-chave no acompanhamento de performance da empresa e dos processos que a compõem, por isso, é absolutamente importante ter KPIs bem configurados. Um KPI bem configurado apresenta as cinco seguintes características:",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "precisão, comparabilidade, eficiência, mensurabilidade e flexibilidade",
+          "key": "A"
+        },
+        {
+          "text": "precisão, conversibilidade, eficiência, mensurabilidade e confiabilidade",
+          "key": "B"
+        },
+        {
+          "text": "precisão, comparabilidade, limitação de tempo, maneabilidade e flexibilidade",
+          "key": "C"
+        },
+        {
+          "text": "pertinência, conversibilidade, eficiência, maneabilidade e confiabilidade",
+          "key": "D"
+        },
+        {
+          "text": "pertinência, comparabilidade, limitação de tempo, mensurabilidade e confiabilidade",
+          "key": "E"
+        }
+      ],
+      "gabaritoLetter": "E",
+      "derivedLetter": null,
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "não é possível derivar independentemente com confiança.",
+          "note": "A questão exige memorização de uma lista específica de \"cinco características de um KPI bem configurado\" de uma fonte/apostila determinada (termos como pertinência, comparabilidade, limitação de tempo, mensurabilidade, confiabilidade não constituem um framework universalmente padronizado, ao contrário de, por ex., critérios SMART). Não há como confirmar por dedução de conhecimento geral de BI/indicadores qual dentre as 5 alternativas (todas plausíveis combinações de termos similares) é a lista exata adotada pela banca, sem acesso à fonte específica usada na elaboração da questão."
+        }
+      ],
+      "unresolved": true,
+      "annulled": false,
+      "area": "analise-dados"
+    },
+    {
+      "id": "psjpn2018-q54",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 54
+      },
+      "subtopic": "7.2 Conceitos, fundamentos, técnicas e métodos de Business Intelligence (BI)",
+      "stem": "Considere o conjunto de dados a seguir, obtido a partir de uma base de dados de transações ocorridas em uma padaria, em uma determinada faixa de tempo. Nesse conjunto, indica-se a ocorrência de um determinado produto em cada transação [TABELA DE TRANSAÇÕES (produtos por transação) NÃO CAPTURADA NA EXTRAÇÃO DE TEXTO]. Em mineração de dados, a partir desse conjunto de dados, podem ser geradas regras de associação, as quais buscam conjuntos de itens frequentes que guardam entre si uma relação de causa e efeito. Essas regras são da forma X→Y, onde X é o antecedente da regra, e Y, seu consequente. A menção X,Y indica referência aos dois itens frequentes X e Y. Dois indicadores utilizados para averiguar a eficácia de regras de associação são o suporte e a confiança. Qual das regras a seguir possui confiança mínima de 80%, dado um suporte mínimo de 30%?",
+      "images": [
+        {
+          "id": "img1",
+          "path": null,
+          "alt": "Tabela com a lista de transações de uma padaria e os produtos presentes em cada transação, necessária para calcular suporte e confiança das regras de associação — não capturada na extração de texto (é gráfico/imagem nativa da página, situada entre duas linhas de texto sem conteúdo textual extraído no intervalo correspondente)."
+        }
+      ],
+      "alternatives": [
+        {
+          "text": "café, leite → pão",
+          "key": "A"
+        },
+        {
+          "text": "café, pão → manteiga",
+          "key": "B"
+        },
+        {
+          "text": "leite, pão → café",
+          "key": "C"
+        },
+        {
+          "text": "manteiga → café, pão",
+          "key": "D"
+        },
+        {
+          "text": "manteiga, pão → café",
+          "key": "E"
+        }
+      ],
+      "gabaritoLetter": "B",
+      "derivedLetter": null,
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "não é possível derivar independentemente sem a tabela de transações.",
+          "note": "O cálculo de suporte e confiança de regras de associação depende diretamente da tabela de ocorrência de produtos por transação, que é gráfico/imagem nativa da página (confirmado: no HTML fonte há uma lacuna vertical de texto entre a frase \"...em cada transação.\" e \"Em mineração de dados...\" exatamente onde a tabela deveria estar, sem nenhum div de texto correspondente). Requer reconstrução da tabela a partir do PDF/imagem em fase posterior antes de qualquer tentativa de verificação independente."
+        }
+      ],
+      "unresolved": true,
+      "annulled": false,
+      "area": "analise-dados"
     }
   ]
 }

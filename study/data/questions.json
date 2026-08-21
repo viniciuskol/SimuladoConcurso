@@ -1176,6 +1176,1231 @@
       "area": "logica",
       "correctKey": "C",
       "explanationSummary": "Sendo P='o freio falhou' e Q='houve manutenção', a proposição é P→¬Q, que pela equivalência do condicional material é logicamente equivalente a ¬P∨¬Q, ou seja, 'o freio da bicicleta não falhou ou não houve manutenção'."
+    },
+    {
+      "id": "psjpn2018-q21",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 21
+      },
+      "area": "gestao-proj",
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "Um projeto simples de desenvolvimento de software foi modelado em 8 atividades. Cada atividade foi identificada com uma letra. A seguir, foram determinados os predecessores de cada atividade e ainda a duração prevista de cada uma. O projeto pode ser descrito pela seguinte tabela:\n\nAtividade S — Predecessores: – — Duração Prevista: 4\nAtividade T — Predecessores: S — Duração Prevista: 5\nAtividade V — Predecessores: S — Duração Prevista: 2\nAtividade W — Predecessores: T — Duração Prevista: 6\nAtividade X — Predecessores: V — Duração Prevista: 7\nAtividade Y — Predecessores: S — Duração Prevista: 10\nAtividade Z — Predecessores: W,X,Y — Duração Prevista: 2\n\nQual é o caminho crítico do projeto?",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "S,T,W,Z",
+          "key": "A"
+        },
+        {
+          "text": "S,V,X,Z",
+          "key": "B",
+          "explanation": "Esse caminho tem duração 4+2+7+2 = 15 dias, menor que os 17 dias do caminho S-T-W-Z, logo não é o caminho crítico."
+        },
+        {
+          "text": "S,Y,Z",
+          "key": "C",
+          "explanation": "Esse caminho tem duração 4+10+2 = 16 dias, inferior aos 17 dias do caminho S-T-W-Z, portanto não é o mais longo (crítico)."
+        },
+        {
+          "text": "T,W",
+          "key": "D",
+          "explanation": "Um caminho crítico deve ir do início ao fim do projeto; T e W não incluem a atividade inicial (S) nem a final (Z), não representando um caminho completo do projeto."
+        },
+        {
+          "text": "V,X",
+          "key": "E",
+          "explanation": "Da mesma forma que a alternativa D, esse conjunto não representa um caminho completo do início (S) ao fim (Z) do projeto."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "O caminho crítico é o caminho mais longo do início ao fim do projeto. Calculando as durações: S-T-W-Z = 4+5+6+2 = 17 dias; S-V-X-Z = 4+2+7+2 = 15 dias; S-Y-Z = 4+10+2 = 16 dias. O caminho mais longo, e portanto crítico, é S,T,W,Z, com 17 dias."
+    },
+    {
+      "id": "psjpn2018-q22",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 22
+      },
+      "area": "gestao-proj",
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "Uma das principais metodologias de gerência de projeto é o Gerenciamento de Valor Agregado. Usando essa técnica, no meio de um projeto, um gerente de projetos determinou que seu valor planejado (VP) era de R$ 1.150.000,00, enquanto seu valor agregado (VA) era de R$ 1.000.000,00. Ao mesmo tempo, seu custo real (CR) era de R$ 1.200.000,00. A partir desses valores, qual a variação de custo (VC)?",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "– R$ 200.000,00",
+          "key": "A"
+        },
+        {
+          "text": "– R$ 150.000,00",
+          "key": "B",
+          "explanation": "Esse valor corresponde à variação de prazo (VPr = VA – VP = 1.000.000 – 1.150.000 = –150.000), não à variação de custo."
+        },
+        {
+          "text": "– R$ 50.000,00",
+          "key": "C",
+          "explanation": "Não corresponde a nenhuma fórmula padrão do Gerenciamento de Valor Agregado com os valores fornecidos."
+        },
+        {
+          "text": "R$ 150.000,00",
+          "key": "D",
+          "explanation": "É o valor absoluto da variação de prazo (VPr), com sinal trocado; não é a variação de custo."
+        },
+        {
+          "text": "R$ 200.000,00",
+          "key": "E",
+          "explanation": "É o valor absoluto correto da variação de custo, mas com sinal invertido: como o custo real superou o valor agregado, a variação de custo é negativa (desfavorável)."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "A variação de custo (VC) é calculada por VC = VA – CR = 1.000.000,00 – 1.200.000,00 = – R$ 200.000,00, indicando desempenho de custo desfavorável (custo real acima do valor agregado)."
+    },
+    {
+      "id": "psjpn2018-q23",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 23
+      },
+      "area": "gestao-proj",
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "Ao controlar e monitorar um projeto de desenvolvimento de um sistema de acompanhamento de vendas, um gerente determinou, após a coleta de dados por meio de um relatório informal de seus subalternos diretos, o grau de progresso da implementação dos casos de uso previstos. Essa é uma atividade de",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "avaliação",
+          "key": "A",
+          "explanation": "Avaliação envolve julgar a qualidade ou o valor do que foi feito, e não apenas coletar dados sobre o progresso."
+        },
+        {
+          "text": "correção",
+          "key": "B",
+          "explanation": "Correção é a ação de resolver desvios já identificados, uma etapa posterior à simples coleta e apuração do grau de progresso."
+        },
+        {
+          "text": "direção",
+          "key": "C",
+          "explanation": "Direção está relacionada a conduzir e orientar a equipe na execução do trabalho, não à coleta de dados de progresso."
+        },
+        {
+          "text": "medição",
+          "key": "D"
+        },
+        {
+          "text": "organização",
+          "key": "E",
+          "explanation": "Organização refere-se à estruturação de recursos e responsabilidades, não à apuração do progresso das atividades."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "D",
+      "explanationSummary": "Coletar dados sobre o grau de progresso das atividades (implementação dos casos de uso) é uma atividade de medição, etapa central do processo de monitoramento e controle do projeto."
+    },
+    {
+      "id": "psjpn2018-q24",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 24
+      },
+      "area": "gestao-proj",
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "Foi solicitada a um gerente de projeto a descrição parcial de um projeto de desenvolvimento de software usando a metodologia conhecida como Estrutura Analítica de Projeto (EAP). Para a realização eficaz dessa tarefa, o gerente deve considerar que",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "a EAP deve ter sempre a mesma profundidade em todos seus ramos, para manter os pacotes de trabalho no mesmo nível de abstração.",
+          "key": "A",
+          "explanation": "A EAP não precisa ter a mesma profundidade em todos os ramos; ramos diferentes podem ter níveis de detalhamento distintos, de acordo com a complexidade de cada parte do trabalho."
+        },
+        {
+          "text": "os entregáveis não devem ser representados na EAP, que deve ser em fases do ciclo de vida do projeto.",
+          "key": "B",
+          "explanation": "Os entregáveis devem, sim, ser representados na EAP como seus componentes; organizá-la apenas por fases do ciclo de vida contraria a orientação a entregáveis que caracteriza a EAP."
+        },
+        {
+          "text": "produtos, serviços ou resultados verificáveis devem ser usados como componentes da EAP.",
+          "key": "C"
+        },
+        {
+          "text": "os subprojetos contratados devem ficar fora da EAP, pois não representam o trabalho da equipe.",
+          "key": "D",
+          "explanation": "Subprojetos contratados devem, sim, constar na EAP, pois representam parte do escopo total do projeto, ainda que executados por terceiros."
+        },
+        {
+          "text": "os pacotes de trabalho devem aparecer no segundo nível da EAP, para que sejam corretamente divididos em unidades menores, que podem ter seu custo e duração estimados.",
+          "key": "E",
+          "explanation": "Os pacotes de trabalho aparecem no nível mais baixo (mais detalhado) da EAP, não necessariamente no segundo nível."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "C",
+      "explanationSummary": "A EAP (Estrutura Analítica do Projeto) deve ser organizada com base em produtos, serviços ou resultados verificáveis (entregáveis) como seus componentes, decompondo o escopo total do projeto em partes gerenciáveis."
+    },
+    {
+      "id": "psjpn2018-q25",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 25
+      },
+      "area": "gestao-proj",
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "Uma empresa que produz equipamentos foi surpreendida pela entrada no mercado de um novo competidor com preços mais baratos. Por causa disso, teve de iniciar um projeto para diminuir seus custos de produção e poder, também, baixar seus preços. Esse contexto de iniciação de projeto pode ser definido como:",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Satisfação de requisitos regulatórios, legais ou sociais.",
+          "key": "A",
+          "explanation": "A situação descrita não decorre de exigência regulatória, legal ou social, mas de uma resposta a uma pressão competitiva de mercado."
+        },
+        {
+          "text": "Satisfação de pedidos ou necessidades das partes interessadas.",
+          "key": "B",
+          "explanation": "Não se trata de atender a um pedido específico de uma parte interessada, mas de uma reação estratégica da própria empresa às condições de mercado."
+        },
+        {
+          "text": "Implementação, modificação de estratégias de negócio ou de tecnologias.",
+          "key": "C"
+        },
+        {
+          "text": "Criação, melhoria ou correção de produtos, processos ou serviços.",
+          "key": "D",
+          "explanation": "Embora o projeto envolva reduzir custos, o elemento central do enunciado é a resposta estratégica da empresa à mudança do ambiente competitivo, o que caracteriza modificação de estratégia de negócio, e não apenas melhoria de produto/processo isolada."
+        },
+        {
+          "text": "Diminuição do risco de negócio da organização.",
+          "key": "E",
+          "explanation": "O contexto não é definido em termos de gestão de risco de negócio, mas de uma resposta estratégica a uma mudança competitiva do mercado."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "C",
+      "explanationSummary": "O PMBOK classifica a iniciação de projetos, entre outras causas, pela necessidade de implementar ou modificar estratégias de negócio (ou tecnológicas) da organização. A entrada de um concorrente com preços menores leva a empresa a reagir estrategicamente, iniciando um projeto para reduzir custos e competir em preço — uma modificação de estratégia de negócio."
+    },
+    {
+      "id": "psjpn2018-q33",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 33
+      },
+      "area": "gestao-proj",
+      "subtopic": "2.1 Scrum e Kanban",
+      "stem": "Em determinado momento, uma empresa automobilística sentiu a necessidade de coordenar a produção com as diferentes solicitações de demanda por veículos — modelos e cores, entre outros. Para se adequar a esse cenário, migrou de uma abordagem tradicional, dos sistemas de produção empurrada, para uma abordagem de sistemas de produção puxada, que tem como caraterística principal a(o)",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "escolha dos fornecedores realizada com base no preço e não em sua responsividade.",
+          "key": "A",
+          "explanation": "Escolher fornecedores com base apenas no preço, sem considerar responsividade, é característica de sistemas de produção empurrada (que priorizam custo/eficiência de escala), não de sistemas puxados."
+        },
+        {
+          "text": "efetivação do processo de contagens físicas realizada no final do exercício, abrangendo todos os itens de estoque de uma só vez.",
+          "key": "B",
+          "explanation": "Contagens físicas realizadas apenas no final do exercício, abrangendo todo o estoque de uma vez, são típicas de sistemas tradicionais (empurrados), não de sistemas puxados."
+        },
+        {
+          "text": "busca da melhoria dos processos de planejamento de vendas e produção, baseando-se no balanceamento entre demandas (mercado) e disponibilidade de produto (produção e suprimento).",
+          "key": "C",
+          "explanation": "Balancear demanda e disponibilidade de produto ao longo de um horizonte de planejamento é característica de planejamento agregado de produção (típico de sistemas empurrados/MRP), e não a característica definidora de um sistema puxado."
+        },
+        {
+          "text": "liberação de qualquer movimento de produção somente à medida que a necessidade é sinalizada pelo usuário da peça ou do componente em fabricação e não autorização para os centros de trabalho produzirem os lotes apenas para manterem operários e equipamentos ocupados.",
+          "key": "D"
+        },
+        {
+          "text": "horizonte de planejamento, normalmente de um ano, dividido em semanas, e consideração das informações sobre o produto final, ou seja, quais os componentes e quando serão agregados ou transformados no produto final planejado.",
+          "key": "E",
+          "explanation": "Um horizonte de planejamento fixo, dividido em semanas e baseado em previsão do produto final, é característico do planejamento de sistemas empurrados (como MRP), que empurram a produção com base em previsões, e não em sinalização real da demanda."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "D",
+      "explanationSummary": "A característica central de um sistema de produção puxada (pull, como em JIT/Kanban) é que a liberação da produção só ocorre quando a necessidade real é sinalizada pelo elo seguinte da cadeia (usuário da peça/componente), evitando produzir apenas para manter recursos ocupados — ao contrário dos sistemas empurrados, que produzem com base em previsões."
+    },
+    {
+      "id": "psjpn2018-q42",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 42
+      },
+      "area": "arq-dados",
+      "subtopic": "1.22 Data Lakes e Soluções para Big Data",
+      "stem": "A principal definição de Big Data parte de três características, conhecidas como 3 V do Big Data, a saber: velocidade, variedade e volume. O termo velocidade refere-se, principalmente, à",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "necessidade das aplicações de gerar respostas rapidamente, a partir de grandes massas de dados.",
+          "key": "A",
+          "explanation": "Gerar respostas rapidamente a partir de grandes massas de dados está mais relacionado ao desempenho/processamento analítico do que à definição do V 'velocidade', que se refere à taxa com que os dados são gerados e precisam ser processados."
+        },
+        {
+          "text": "existência de um alto fluxo de dados na entrada.",
+          "key": "B"
+        },
+        {
+          "text": "necessidade de gerar aplicações rapidamente, em função da demanda do negócio.",
+          "key": "C",
+          "explanation": "A velocidade de desenvolvimento de aplicações em função da demanda do negócio é uma questão de agilidade de TI, não a definição do V 'velocidade' do Big Data."
+        },
+        {
+          "text": "importância da facilidade de manipular cubos de visualização de dados, rapidamente.",
+          "key": "D",
+          "explanation": "Facilidade de manipular cubos de visualização está relacionada a ferramentas de OLAP/BI, não à característica de velocidade do Big Data."
+        },
+        {
+          "text": "rapidez com que os dados se tornam inválidos com o tempo.",
+          "key": "E",
+          "explanation": "A validade temporal dos dados (dados se tornarem obsoletos) está mais relacionada a qualidade/atualidade de dados do que à definição do V 'velocidade'."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "No contexto dos 3 Vs do Big Data, 'velocidade' refere-se, principalmente, à alta taxa (fluxo) com que os dados são gerados e chegam aos sistemas, exigindo capacidade de ingestão e processamento próximo do tempo real."
+    },
+    {
+      "id": "psjpn2018-q43",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 43
+      },
+      "area": "arq-dados",
+      "subtopic": "1.7 Modelagem dimensional",
+      "stem": "Em relação ao uso de modelos de dados em data warehouses, Inmon (2005) declara que o modelo de dados por trás do modelo relacional é em um nível razoavelmente alto de abstração, enquanto o modelo de processo por trás do modelo multidimensional não é de nenhuma forma abstrato. Nesse contexto, o modelo",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "multidimensional deve ser adotado também para as aplicações de processamento de transações da empresa, pela sua forma otimizada.",
+          "key": "A",
+          "explanation": "O modelo multidimensional não é indicado para processamento de transações (OLTP); ele é otimizado para consultas analíticas, não para o volume de pequenas transações do dia a dia."
+        },
+        {
+          "text": "multidimensional é altamente eficiente, podendo, por meio de um modelo único, servir a todas as comunidades de usuários dentro de uma empresa.",
+          "key": "B",
+          "explanation": "O modelo multidimensional é otimizado para uma comunidade/necessidade específica de análise, e não para servir de forma eficiente e única a todas as comunidades de usuários de uma empresa."
+        },
+        {
+          "text": "relacional é adequado para o acesso de um usuário ou comunidade de usuários únicos, por causa de suas otimizações inerentes.",
+          "key": "C",
+          "explanation": "É o modelo multidimensional, e não o relacional, que é tipicamente voltado ao acesso otimizado de uma comunidade específica de usuários, por causa de sua estrutura de estrela."
+        },
+        {
+          "text": "relacional é altamente flexível, mas não tem o desempenho otimizado para nenhum usuário.",
+          "key": "D"
+        },
+        {
+          "text": "relacional é mais adequado aos data marts, nos níveis de departamento ou subdepartamento, onde os dados têm escopo menor.",
+          "key": "E",
+          "explanation": "Data marts costumam ser modelados de forma multidimensional (não relacional/normalizada), justamente para otimizar o desempenho de consultas analíticas de um departamento específico."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "D",
+      "explanationSummary": "Segundo a argumentação de Inmon citada no enunciado, o modelo relacional (por trás do modelo de dados corporativo/EDW) é altamente flexível e genérico, servindo a múltiplos usos, mas não é otimizado para o desempenho de nenhuma comunidade de usuários específica — ao contrário do modelo multidimensional, que é otimizado, porém menos flexível."
+    },
+    {
+      "id": "psjpn2018-q44",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 44
+      },
+      "area": "arq-dados",
+      "subtopic": "1.7 Modelagem dimensional",
+      "stem": "Ao construir um modelo de dados para um data warehouse de sua empresa, um desenvolvedor viu-se às voltas com três tabelas relacionais: venda, cliente e vendedor. Ao fazer uma transformação para o modelo estrela, ele deve organizar:",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "venda, como tabela fato; cliente e vendedor, como tabelas dimensão",
+          "key": "A"
+        },
+        {
+          "text": "cliente e vendedor, como tabelas fato; venda, como tabela dimensão",
+          "key": "B",
+          "explanation": "Cliente e vendedor são entidades descritivas (contexto) da venda, não eventos mensuráveis; devem ser tabelas dimensão, e venda, a tabela fato."
+        },
+        {
+          "text": "cliente, como tabela fato; venda e vendedor, como tabelas dimensão",
+          "key": "C",
+          "explanation": "Cliente é uma entidade descritiva, não um evento a ser medido; não deve ser a tabela fato."
+        },
+        {
+          "text": "vendedor e venda, como tabelas fato; cliente, como tabela dimensão",
+          "key": "D",
+          "explanation": "Vendedor é uma dimensão (entidade descritiva), não deve ser tratado como tabela fato junto com venda."
+        },
+        {
+          "text": "vendedor, como tabela fato; cliente e venda, como tabelas dimensão",
+          "key": "E",
+          "explanation": "Vendedor é uma dimensão, não a tabela fato; e venda, sendo o evento mensurável (transação), deve ser a tabela fato, não uma dimensão."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "No modelo estrela, a tabela fato registra os eventos mensuráveis (aqui, as vendas), enquanto as tabelas dimensão descrevem o contexto desses eventos (cliente e vendedor). Logo, venda é a tabela fato, e cliente e vendedor são as tabelas dimensão."
+    },
+    {
+      "id": "psjpn2018-q45",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 45
+      },
+      "area": "eng-sw",
+      "subtopic": "5.4 Verificação, validação e teste",
+      "stem": "Ao longo do desenvolvimento de um software, um gerente de projeto percebeu que havia dificuldades para garantir que os produtos gerados refletissem adequadamente os requisitos especificados. Investigando mais, concluiu que seu processo de desenvolvimento precisaria ser melhorado. Decidiu, então, implantar em sua equipe um processo de suporte de software que realizasse atividades específicas para confirmar, com evidência objetiva, que os requisitos especificados fossem cumpridos. O processo implantado por esse gerente é o de",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "auditoria",
+          "key": "A",
+          "explanation": "Auditoria é um processo de avaliação de conformidade organizacional/processual mais amplo, geralmente conduzido por terceiros, e não o processo específico de confirmar, com evidência objetiva, o cumprimento de requisitos especificados."
+        },
+        {
+          "text": "garantia de qualidade",
+          "key": "B",
+          "explanation": "Garantia da qualidade foca em assegurar que os processos de desenvolvimento sejam seguidos adequadamente, e não especificamente em confirmar, com evidência objetiva, que requisitos especificados foram cumpridos."
+        },
+        {
+          "text": "resolução de problemas",
+          "key": "C",
+          "explanation": "Resolução de problemas trata da identificação e correção de problemas encontrados, uma atividade diferente da confirmação formal de cumprimento de requisitos."
+        },
+        {
+          "text": "validação",
+          "key": "D",
+          "explanation": "Validação confirma que o sistema atende às necessidades e expectativas do usuário/cliente; o processo descrito, focado em confirmar o cumprimento dos requisitos especificados, corresponde à verificação, não à validação."
+        },
+        {
+          "text": "verificação",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "E",
+      "explanationSummary": "O processo de suporte de software que confirma, com evidência objetiva, que os requisitos especificados foram cumpridos é a Verificação (conforme normas como a ISO/IEC/IEEE 12207), distinta da Validação, que confirma que o sistema atende às necessidades do usuário."
+    },
+    {
+      "id": "psjpn2018-q46",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 46
+      },
+      "area": "eng-sw",
+      "subtopic": "5.3 Modelos, metodologias, técnicas e ferramentas de análise e projeto (estruturado e orientado a objetos)",
+      "stem": "Ao ler um conjunto de casos de usos para um sistema novo, um desenvolvedor de software percebeu que eles descreviam como o gerente financeiro e o gerente administrativo colaboravam em um fluxo de tarefas que levava à criação do relatório anual da empresa. Para mapear esse fluxo de tarefas de forma adequada, o desenvolvedor deve escolher o diagrama UML de",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "atividades",
+          "key": "A"
+        },
+        {
+          "text": "sequência",
+          "key": "B",
+          "explanation": "O diagrama de sequência foca na ordem temporal de troca de mensagens entre objetos, sendo mais adequado para modelar interações de um cenário específico, não o fluxo de tarefas entre papéis."
+        },
+        {
+          "text": "colaboração",
+          "key": "C",
+          "explanation": "O diagrama de colaboração foca em interações entre objetos, não no fluxo sequencial/paralelo de tarefas de um processo de negócio."
+        },
+        {
+          "text": "estados",
+          "key": "D",
+          "explanation": "O diagrama de estados modela os diferentes estados de um objeto ao longo de seu ciclo de vida, não o fluxo de tarefas entre atores."
+        },
+        {
+          "text": "casos de uso",
+          "key": "E",
+          "explanation": "O diagrama de casos de uso descreve funcionalidades do sistema do ponto de vista do usuário, mas não detalha o fluxo de tarefas entre os papéis envolvidos."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "O diagrama de atividades da UML é o mais adequado para mapear o fluxo de tarefas (workflow) entre diferentes papéis/atores até a conclusão de um processo, como a colaboração entre gerentes na criação de um relatório."
+    },
+    {
+      "id": "psjpn2018-q48",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 48
+      },
+      "area": "gestao-ti",
+      "subtopic": "4.1 Conceitos, segmentos e mercado de tecnologia da informação",
+      "stem": "O aperfeiçoamento do fluxo de informações representa cada vez mais valor para as organizações. O desenvolvimento de sistemas de informação, com capacidade cada vez maior de lidar com sistemas complexos, tem auxiliado nessa tarefa. Um exemplo desses sistemas, os chamados Sistemas de Planejamento de Recursos Empresariais ou Sistemas Integrados de Gestão (Enterprise Resource Planning - ERP) possuem recursos que, resumidamente, viabilizam a",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "identificação das capacidades dos centros de trabalho, facilitando a alocação das ordens de produção.",
+          "key": "A",
+          "explanation": "Essa descrição corresponde a sistemas de MRP/planejamento da capacidade de produção, não à característica central e abrangente dos sistemas ERP."
+        },
+        {
+          "text": "integração de uma família de módulos de software que executam as atividades empresariais envolvidas nos procedimentos de contato com o público.",
+          "key": "B",
+          "explanation": "ERP não se limita a módulos de atendimento ao público; sua característica central é integrar processos de negócio de toda a empresa, não apenas os de contato com clientes."
+        },
+        {
+          "text": "integração e automatização, num único sistema interfuncional, de processos de negócios das diversas funções de uma empresa.",
+          "key": "C"
+        },
+        {
+          "text": "simplificação dos processos de produção, dos projetos de produtos e da organização fabril.",
+          "key": "D",
+          "explanation": "Simplificação de processos de produção e projeto de produtos é uma característica de sistemas de PLM/MRP, não a definição abrangente de ERP."
+        },
+        {
+          "text": "produção da quantidade necessária de itens com qualidade absoluta, sem excesso e com rapidez, transportando o produto para o lugar certo no tempo desejado.",
+          "key": "E",
+          "explanation": "Essa descrição corresponde a objetivos de sistemas de gestão da produção just-in-time, não à definição geral de ERP."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "C",
+      "explanationSummary": "Sistemas ERP (Enterprise Resource Planning) têm como característica central integrar e automatizar, em um único sistema interfuncional, os processos de negócio das diversas áreas/funções de uma empresa (finanças, produção, vendas, RH etc.)."
+    },
+    {
+      "id": "psjpn2018-q49",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 49
+      },
+      "area": "gestao-ti",
+      "subtopic": "4.3 Conceitos e perspectivas da tecnologia",
+      "stem": "A Tecnologia da Informação no século XXI propiciou avanços de tal ordem que a forma pela qual as organizações estruturam seus negócios modificou-se profundamente. Um exemplo que corrobora essa afirmação é a adoção, por parte das organizações,",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "da técnica de virtualização, que cria camadas de máquinas virtuais em uma máquina lógica real e, com isso, vários equipamentos físicos aparentam ser um único lógico.",
+          "key": "A",
+          "explanation": "A descrição de virtualização está invertida: a virtualização cria múltiplas máquinas virtuais lógicas a partir de uma máquina física real, e não o contrário."
+        },
+        {
+          "text": "das aplicações mashup, tecnologia de gerenciamento da informação que combina dados de múltiplas fontes e publica o resultado de forma organizada.",
+          "key": "B"
+        },
+        {
+          "text": "das private clouds, que oferecem estrutura de armazenamento de dados e aplicações nos servidores do provedor do serviço, em vez dos da companhia contratante.",
+          "key": "C",
+          "explanation": "Essa descrição corresponde à nuvem pública, não à privada: nas private clouds a infraestrutura é dedicada à própria organização contratante, e não hospedada de forma compartilhada nos servidores do provedor."
+        },
+        {
+          "text": "dos Master Data Management (MDM), que servem como interface entre os sistemas integrados de gestão e os modelos de aplicação web feeds, screen scrapping e SOAP.",
+          "key": "D",
+          "explanation": "MDM trata da governança e consistência dos dados-mestre da organização, e não de servir como interface entre sistemas integrados e tecnologias como feeds, screen scraping ou SOAP."
+        },
+        {
+          "text": "dos silos de dados, que integram em sua estrutura dados de um setor específico da organização no processo de tomada de decisões, normalmente de cunho tático.",
+          "key": "E",
+          "explanation": "Silos de dados são, por definição, bases de dados isoladas e não integradas; a descrição de integração de dados contradiz o próprio conceito de silo."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "As aplicações mashup são uma tecnologia de gerenciamento da informação que combina (integra) dados de múltiplas fontes distintas e publica o resultado de forma organizada, exemplificando como a TI do século XXI reestruturou a forma de organizar e apresentar informações de negócio."
+    },
+    {
+      "id": "psjpn2018-q50",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 50
+      },
+      "area": "eng-sw",
+      "subtopic": "5.1 Levantamento, análise e gerenciamento de requisitos",
+      "stem": "Um analista em treinamento apresenta a seguinte descrição para alguns requisitos de um sistema on-line para venda de bilhetes de uma rede de cinemas em que cada cinema apresenta mais de um filme, e cada filme é apresentado em mais de um cinema com lugares marcados. Quando o usuário entrar no site da rede, um menu é apresentado com os filmes e cinemas disponíveis. O usuário seleciona o filme a que deseja assistir e entra com o número de cartão de crédito. A validade do cartão é verificada e o bilhete é emitido. O sistema encerra a operação com a mensagem: obrigado, divirta-se. Embora haja falhas nessa descrição ainda incipiente, o instrutor solicitou que o analista a estendesse com exemplos de possíveis requisitos não funcionais para o sistema. Qual é a sentença que NÃO atende à solicitação do instrutor?",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "O tempo máximo de espera do sistema para a inserção do número do cartão de crédito deve ser maior do que oito segundos e menor do que 15 segundos.",
+          "key": "A",
+          "explanation": "Definir um intervalo de tempo aceitável para uma operação do sistema é um requisito de desempenho, um exemplo válido de requisito não funcional."
+        },
+        {
+          "text": "O sistema deve estar disponível por 99,5% do tempo durante as 24 horas do dia, sete dias por semana.",
+          "key": "B",
+          "explanation": "Definir um percentual mínimo de disponibilidade do sistema é um requisito de disponibilidade, um exemplo válido de requisito não funcional."
+        },
+        {
+          "text": "O formato do bilhete deve seguir o padrão definido na legislação municipal pertinente.",
+          "key": "C",
+          "explanation": "Exigir conformidade com uma legislação é um requisito de conformidade regulatória, um exemplo válido de requisito não funcional."
+        },
+        {
+          "text": "O usuário deve selecionar o cinema em que deseja assistir ao filme.",
+          "key": "D"
+        },
+        {
+          "text": "O sistema deve ser compatível com operação em smartphone.",
+          "key": "E",
+          "explanation": "Exigir compatibilidade com determinada plataforma (smartphone) é um requisito de portabilidade, um exemplo válido de requisito não funcional."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "D",
+      "explanationSummary": "'O usuário deve selecionar o cinema em que deseja assistir ao filme' descreve uma funcionalidade do sistema (uma ação que ele deve permitir/realizar), sendo, portanto, um requisito funcional, e não um exemplo de requisito não funcional, como pedido pelo instrutor."
+    },
+    {
+      "id": "psjpn2018-q51",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 51
+      },
+      "area": "eng-sw",
+      "subtopic": "5.2 Ciclo de vida de sistemas e seus paradigmas",
+      "stem": "O chefe dos desenvolvedores de sistemas de uma empresa acompanhou o seguinte diálogo entre um de seus subordinados, um usuário e o diretor de operações. Diretor – Acho que já poderíamos começar o desenvolvimento daquele sistema que o departamento de esportes pediu. Usuário – Não é cedo demais? Ainda não temos todas as funcionalidades bem definidas. Desenvolvedor – É verdade, mas acho que já é possível especificar e implementar algumas funcionalidades mais importantes e construir uma primeira versão até o final do mês. Depois acrescentaríamos outras funcionalidades à medida que as fôssemos construindo, gerando, a partir da experiência do uso, versões sucessivas e cada vez mais completas. Diretor – Acho isso ótimo, assim já teremos uma noção do impacto que o sistema poderá causar no desempenho dos atletas. Comecemos logo, não temos um efetivo tão grande em TI. Usuário – OK, vamos em frente, mas não contem nada para aquele especialista em risco. Já temos muito trabalho pela frente. Nossa estrutura ainda não suporta esse tipo de cuidado; se entrarmos nessa, o projeto vai atrasar. E mantenham o contato e o foco no objetivo: um produto simples, mas de qualidade. A partir desse episódio e refletindo sobre o que ouvira, o chefe dos desenvolvedores deverá optar pelo modelo de processo de software",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "RAD",
+          "key": "A",
+          "explanation": "RAD (Rapid Application Development) enfatiza ciclos muito curtos de desenvolvimento com forte uso de prototipação e ferramentas CASE, o que não é o foco central do diálogo, voltado à entrega gradual de funcionalidades em versões sucessivas."
+        },
+        {
+          "text": "incremental",
+          "key": "B"
+        },
+        {
+          "text": "cascata",
+          "key": "C",
+          "explanation": "O modelo em cascata exige que todas as fases (incluindo especificação completa de requisitos) sejam concluídas sequencialmente antes da entrega, o que contradiz a proposta do desenvolvedor de implementar apenas parte das funcionalidades primeiro."
+        },
+        {
+          "text": "espiral",
+          "key": "D",
+          "explanation": "O modelo em espiral tem como característica central a análise formal e cíclica de riscos a cada iteração; no diálogo, o usuário explicitamente decide não considerar o especialista em risco, o que é incompatível com o modelo espiral."
+        },
+        {
+          "text": "baseado em componentes",
+          "key": "E",
+          "explanation": "Não há, no diálogo, menção a reuso ou montagem de componentes de software preexistentes, característica central desse modelo."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "A entrega de uma primeira versão com funcionalidades essenciais, seguida da adição de outras funcionalidades em versões sucessivas construídas a partir da experiência de uso, é a característica central do modelo de processo de software incremental."
+    },
+    {
+      "id": "psjpn2018-q56",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 56
+      },
+      "area": "arq-dados",
+      "subtopic": "1.10 Linguagem de consulta estruturada (SQL)",
+      "stem": "Uma empresa que comercializa álbuns de figurinhas (cromos) possui um banco de dados para controlar a fabricação de cromos, com as tabelas a seguir:\n\nCREATE TABLE ALBUM (\n  COD CHAR(5) NOT NULL,\n  NOME VARCHAR2(4000) NOT NULL,\n  CONSTRAINT ALBUM_PK PRIMARY KEY (COD))\n\nCREATE TABLE CROMO (\n  COD NUMBER(5) NOT NULL,\n  NUMERO NUMBER(4) NOT NULL,\n  DESCRICAO VARCHAR2(500) NOT NULL,\n  COD_ALBUM CHAR(5) NOT NULL,\n  CONSTRAINT CROMO_PK PRIMARY KEY (COD),\n  CONSTRAINT CROMO_FK FOREIGN KEY (COD_ALBUM) REFERENCES ALBUM (COD))\n\nCREATE TABLE FABRICACAO (\n  NUM_FAB NUMBER(5) NOT NULL,\n  QUANTIDADE NUMBER(5) NOT NULL,\n  DATA DATE NOT NULL,\n  COD_CROMO NUMBER(5) NOT NULL,\n  CONSTRAINT FABRICACAO_PK PRIMARY KEY (NUM_FAB),\n  CONSTRAINT FABRICACAO_FK FOREIGN KEY (COD_CROMO) REFERENCES CROMO (COD))\n\nO gerente de produção dessa empresa deseja obter um relatório que exiba, para cada álbum comercializado, o nome do álbum, o número de cada um de seus cromos e o somatório da quantidade fabricada de cada um deles. Qual consulta irá fornecer o relatório que o gerente de produção deseja?",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "SELECT A.NOME, B.NUMERO, COALESCE (SUM (C.QUANTIDADE),0) \"QTD FABR\" FROM ALBUM A, CROMO B LEFT JOIN FABRICACAO C ON B.COD = C.COD_CROMO GROUP BY A.NOME, B.NUMERO ORDER BY A.NOME, B.NUMERO",
+          "key": "A",
+          "explanation": "A cláusula FROM usa vírgula entre ALBUM e CROMO sem nenhuma condição de junção entre elas, gerando um produto cartesiano entre álbuns e cromos antes do LEFT JOIN com fabricação, o que produz combinações inválidas."
+        },
+        {
+          "text": "SELECT A.NOME, B.NUMERO, COALESCE (SUM (C.QUANTIDADE),0) \"QTD FABR\" FROM ALBUM A INNER JOIN CROMO B ON A.COD = B.COD_ALBUM LEFT JOIN FABRICACAO C ON B.COD = C.COD_CROMO GROUP BY A.NOME, B.NUMERO ORDER BY A.NOME, B.NUMERO",
+          "key": "B"
+        },
+        {
+          "text": "SELECT A.NOME, B.NUMERO, COALESCE (SUM (C.QUANTIDADE),0) \"QTD FABR\" FROM ALBUM A, CROMO B RIGHT JOIN FABRICACAO C ON B.COD = C.COD_CROMO WHERE A.COD = B.COD_ALBUM GROUP BY A.NOME, B.NUMERO ORDER BY A.NOME, B.NUMERO",
+          "key": "C",
+          "explanation": "O uso de RIGHT JOIN a partir de FABRICACAO preserva apenas os cromos que possuem ao menos um registro de fabricação, excluindo do resultado os cromos nunca fabricados — justamente os casos em que o COALESCE deveria exibir zero."
+        },
+        {
+          "text": "SELECT A.NOME, B.NUMERO, COALESCE (SUM (C.QUANTIDADE),0) \"QTD FABR\" FROM ALBUM A, CROMO B FULL OUTER JOIN FABRICACAO C ON B.COD = C.COD_CROMO GROUP BY A.NOME, B.NUMERO ORDER BY A.NOME, B.NUMERO",
+          "key": "D",
+          "explanation": "Assim como na alternativa A, a junção entre ALBUM e CROMO é feita por vírgula, sem condição, gerando produto cartesiano antes do FULL OUTER JOIN com fabricação."
+        },
+        {
+          "text": "SELECT A.NOME, B.NUMERO, COALESCE (SUM (C.QUANTIDADE),0) \"QTD FABR\" FROM ALBUM A, CROMO B, FABRICACAO C WHERE A.COD = B.COD_ALBUM AND B.COD = C.COD_CROMO GROUP BY A.NOME, B.NUMERO ORDER BY A.NOME, B.NUMERO",
+          "key": "E",
+          "explanation": "O uso de junção implícita apenas com WHERE entre as três tabelas (equivalente a inner join) exclui os cromos que nunca foram fabricados, pois não há registro correspondente em FABRICACAO para satisfazer a condição de junção."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "A consulta correta precisa unir ALBUM a CROMO pela chave estrangeira (INNER JOIN, já que todo cromo pertence a um álbum) e depois unir o resultado a FABRICACAO com LEFT JOIN, para preservar na saída os cromos que nunca foram fabricados (exibindo 0 via COALESCE) — exatamente o que a alternativa B faz."
+    },
+    {
+      "id": "psjpn2018-q58",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 58
+      },
+      "area": "arq-dados",
+      "subtopic": "1.4 Normalização das estruturas de dados",
+      "stem": "Um estagiário da área de administração de banco de dados recebeu a tarefa de normalizar as tabelas de um esquema de BD que será usado em um sistema que, em breve, irá entrar em produção. Há alguns dias ele foi chamado por um analista de banco de dados para que enumerasse o que foi feito no esquema, tendo em vista garantir que todas as tabelas atendam à 3ª forma normal (3FN). Ao ser questionado pelo analista, ele respondeu o seguinte: Todas as colunas definidas são atômicas. Foram definidas chaves primárias para todas as tabelas. Todas as colunas que fazem parte de alguma chave primária foram definidas como NOT NULL. Não há chave primária composta em tabela alguma. Todas as dependências funcionais transitivas foram eliminadas. Nessas condições, para garantir que todas as tabelas desse esquema atendam à 3FN,",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "é necessário estender a restrição de NOT NULL para as demais colunas.",
+          "key": "A",
+          "explanation": "Estender a restrição de NOT NULL a outras colunas não é uma exigência da terceira forma normal; NOT NULL trata de integridade de dados, não de dependências funcionais."
+        },
+        {
+          "text": "é necessário criar chaves estrangeiras para implementar as relações.",
+          "key": "B",
+          "explanation": "Criar chaves estrangeiras para implementar relacionamentos é uma boa prática de integridade referencial, mas não é uma condição exigida pela definição da 3FN."
+        },
+        {
+          "text": "é necessário eliminar as dependências funcionais parciais existentes.",
+          "key": "C",
+          "explanation": "Dependências funcionais parciais só podem ocorrer quando há chave primária composta; como o enunciado afirma que nenhuma tabela tem chave primária composta, não pode haver dependências parciais a eliminar (a 2FN já está automaticamente satisfeita)."
+        },
+        {
+          "text": "é necessário eliminar todas as colunas multivaloradas existentes.",
+          "key": "D",
+          "explanation": "Eliminar colunas multivaloradas é uma exigência da 1FN (atomicidade), que já foi garantida, segundo o enunciado, pois todas as colunas definidas são atômicas."
+        },
+        {
+          "text": "nada mais precisa ser feito.",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "E",
+      "explanationSummary": "Como todas as colunas são atômicas (1FN), não há chaves primárias compostas (o que garante automaticamente a 2FN, pois dependências parciais só existem em relação a chaves compostas) e as dependências funcionais transitivas já foram eliminadas (condição da 3FN), as tabelas já atendem à 3FN — nada mais precisa ser feito."
+    },
+    {
+      "id": "psjpn2018-q63",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 63
+      },
+      "area": "seg-info",
+      "subtopic": "9.19 ISO 27002, criptografia, certificação e assinatura digital",
+      "stem": "A Infraestrutura de Chaves Públicas Brasileira regula a validação de uma assinatura digital ICP-Brasil, realizada sobre um documento eletrônico, com o estabelecimento de alguns critérios. Um desses critérios utiliza resultados hash do documento, que têm como uma de suas finalidades",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "facilitar a criptografia do documento original.",
+          "key": "A",
+          "explanation": "O hash não é usado para facilitar a criptografia do documento original; ele é um resumo criptográfico de tamanho fixo usado para checar integridade, e não para cifrar o conteúdo."
+        },
+        {
+          "text": "assegurar a integridade do conteúdo digital, mostrando que não houve alteração desse conteúdo desde a criação da assinatura digital pelo signatário.",
+          "key": "B"
+        },
+        {
+          "text": "assegurar a autoria, decifrando a assinatura digital com a chave criptográfica secreta, contida no certificado digital do signatário.",
+          "key": "C",
+          "explanation": "A autoria é assegurada pela chave privada do signatário no processo de assinatura, e não por \"decifrar\" a assinatura com uma chave secreta contida no certificado (que armazena a chave pública, não a secreta)."
+        },
+        {
+          "text": "proporcionar a recuperação do documento original com a aplicação da chave secreta do destinatário sobre o hash.",
+          "key": "D",
+          "explanation": "O hash não permite a recuperação do documento original; é uma função de sentido único (não reversível), não podendo o documento original ser recuperado a partir dele."
+        },
+        {
+          "text": "proporcionar a recuperação do documento original com a aplicação da chave pública do remetente sobre o hash.",
+          "key": "E",
+          "explanation": "Da mesma forma, hash não permite recuperar o documento original nem envolve a chave pública do remetente para essa finalidade; hash é irreversível por definição."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "O hash (resumo criptográfico) do documento, comparado antes e depois da verificação, tem como finalidade assegurar a integridade do conteúdo, comprovando que ele não foi alterado desde o momento em que a assinatura digital foi criada."
+    },
+    {
+      "id": "psjpn2018-q64",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 64
+      },
+      "area": "seg-info",
+      "subtopic": "9.4 Ataques (DDoS, SQL Injection, XSS, CSRF, Path Traversal etc.)",
+      "stem": "Os sistemas computacionais estão sujeitos a ataques tanto passivos quanto ativos. Ataques passivos, tais como o monitoramento ou a análise de tráfego, ameaçam principalmente os requisitos de",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "confidencialidade",
+          "key": "A"
+        },
+        {
+          "text": "irretratabilidade",
+          "key": "B",
+          "explanation": "Irretratabilidade (não repúdio) é comprometida por ataques que permitem negar a autoria de uma ação, não por monitoramento passivo de tráfego."
+        },
+        {
+          "text": "autenticidade",
+          "key": "C",
+          "explanation": "Autenticidade é ameaçada por ataques que permitem a um atacante se passar por outra entidade (spoofing), não por monitoramento passivo."
+        },
+        {
+          "text": "disponibilidade",
+          "key": "D",
+          "explanation": "Disponibilidade é ameaçada por ataques ativos, como DDoS, que impedem o acesso ao serviço, e não por ataques passivos, que apenas observam o tráfego sem interrompê-lo."
+        },
+        {
+          "text": "integridade",
+          "key": "E",
+          "explanation": "Integridade é ameaçada por ataques ativos que alteram dados em trânsito ou armazenados; o monitoramento/análise de tráfego passivo não altera os dados, apenas os observa."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "Ataques passivos, como monitoramento e análise de tráfego, não alteram nem interrompem a comunicação — apenas capturam/observam informações, o que ameaça principalmente a confidencialidade dos dados."
+    },
+    {
+      "id": "psjpn2018-q65",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 65
+      },
+      "area": "seg-info",
+      "subtopic": "9.18 Classificação de informações",
+      "stem": "A norma ISO 27002 estabelece que o objetivo da classificação das informações (atribuição de grau de confidencialidade) é a garantia de que os ativos de informação receberão um nível de proteção adequado. Ainda segundo a norma, as informações devem ser classificadas para indicar a necessidade, as prioridades e o grau de proteção. Com base nesse objetivo, a norma estabelece diretrizes para essa classificação, entre as quais se inclui a de",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "atribuir o processo de revisão do nível de confidencialidade de um documento à alta gerência.",
+          "key": "A",
+          "explanation": "A norma não determina que a revisão do nível de confidencialidade seja atribuída exclusivamente à alta gerência; a responsabilidade pela classificação deve ser do proprietário da informação (owner), de qualquer nível adequado."
+        },
+        {
+          "text": "manter a responsabilidade pela atribuição do nível de confidencialidade de um documento com o setor de TI.",
+          "key": "B",
+          "explanation": "A responsabilidade pela atribuição do nível de confidencialidade deve ser do proprietário da informação, não necessariamente do setor de TI."
+        },
+        {
+          "text": "manter os rótulos de classificação originais nos documentos oriundos de outras organizações.",
+          "key": "C",
+          "explanation": "A norma recomenda avaliar e, quando necessário, adaptar os rótulos originais de documentos de outras organizações ao esquema de classificação próprio, e não simplesmente mantê-los sem análise."
+        },
+        {
+          "text": "manter o princípio de equidade que garante aos funcionários com funções similares o mesmo direito de acesso às informações classificadas.",
+          "key": "D",
+          "explanation": "A norma não trata de um princípio geral de 'equidade de acesso' entre funcionários de funções similares; o acesso deve ser concedido segundo a necessidade de conhecer (need-to-know), não por equivalência de cargo."
+        },
+        {
+          "text": "rotular as informações e as saídas geradas pelos sistemas que tratam dados confidenciais, segundo seu valor e sensibilidade para a organização.",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "E",
+      "explanationSummary": "Entre as diretrizes de classificação de informações da ISO 27002 está rotular as informações e as saídas geradas pelos sistemas que tratam dados classificados, de acordo com seu valor e sensibilidade para a organização, de forma a garantir o nível de proteção adequado."
+    },
+    {
+      "id": "psjpn2018-q66",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 66
+      },
+      "area": "seg-info",
+      "subtopic": "9.8 SSO",
+      "stem": "Em ambientes computacionais, muitas aplicações que oferecem funcionalidades distintas são usadas simultaneamente pelos usuários. Para possibilitar esse uso simultâneo, sem que o usuário tenha de fazer autenticações distintas em cada uma das aplicações, os administradores podem implantar uma infraestrutura de autenticação com suporte a",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Unique Login Control (ULC)",
+          "key": "A",
+          "explanation": "Não é um termo/tecnologia padrão de infraestrutura de autenticação; o conceito consagrado para autenticação única entre múltiplas aplicações é o Single Sign-On (SSO)."
+        },
+        {
+          "text": "Single Sign-On (SSO)",
+          "key": "B"
+        },
+        {
+          "text": "One-Time Password (OTP)",
+          "key": "C",
+          "explanation": "OTP é uma senha de uso único usada como fator de autenticação (geralmente em MFA), não uma infraestrutura que evita autenticações repetidas em múltiplas aplicações."
+        },
+        {
+          "text": "One-Time Token (OTT)",
+          "key": "D",
+          "explanation": "Não é o termo padrão para esse conceito; tokens de uso único são mecanismos de autenticação pontual, não uma infraestrutura de autenticação única entre aplicações."
+        },
+        {
+          "text": "Unique-Auth Database (UAD)",
+          "key": "E",
+          "explanation": "Não é um termo/tecnologia padrão da área de segurança da informação."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "O Single Sign-On (SSO) é a infraestrutura de autenticação que permite que um usuário se autentique uma única vez e obtenha acesso a múltiplas aplicações distintas, sem repetir o processo de autenticação em cada uma delas."
+    },
+    {
+      "id": "psjpn2018-q67",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 67
+      },
+      "area": "logica",
+      "subtopic": "8.3 A lógica sentencial",
+      "stem": "Dado um número inteiro qualquer, então, ou ele é par, ou é ímpar. Diante dessa premissa, considere a seguinte sentença: Se dois números inteiros são pares, então a soma desses números é um número inteiro par. Essa sentença é logicamente equivalente à sentença",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Se dois números inteiros são ímpares, então, a soma desses números é um número inteiro ímpar.",
+          "key": "A",
+          "explanation": "Essa alternativa apresenta a proposição inversa (troca P por não-P e Q por não-Q), que não é logicamente equivalente à sentença original — apenas a contrapositiva é equivalente a uma implicação P→Q."
+        },
+        {
+          "text": "Se algum entre dois números é ímpar, então, a soma desses números é ímpar.",
+          "key": "B",
+          "explanation": "Essa sentença troca a ordem da implicação: a sentença equivalente correta parte da negação do consequente (soma ímpar) para a negação do antecedente ('algum é ímpar'), e não o contrário."
+        },
+        {
+          "text": "Se a soma de dois números inteiros é ímpar, então, algum desses números é ímpar.",
+          "key": "C"
+        },
+        {
+          "text": "Se a soma de dois números é ímpar, então, esses dois números são ímpares.",
+          "key": "D",
+          "explanation": "A negação de 'os dois números são pares' (por De Morgan) é 'ao menos um é ímpar', não 'os dois são ímpares'; por exemplo, 3 (ímpar) + 4 (par) = 7 (ímpar), mostrando que nem sempre os dois são ímpares."
+        },
+        {
+          "text": "Se a soma de dois números é par, então, esses dois números são pares.",
+          "key": "E",
+          "explanation": "Essa é a sentença original 'ao contrário' com pares no lugar de ímpares; não decorre da contrapositiva da sentença original."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "C",
+      "explanationSummary": "A contrapositiva de uma implicação P→Q é logicamente equivalente a ela e é dada por ¬Q→¬P. Aqui, P = 'os dois números são pares' e Q = 'a soma é par'. A negação de Q é 'a soma é ímpar', e a negação de P (por De Morgan) é 'algum dos números é ímpar' (não necessariamente os dois). Logo: 'Se a soma de dois números inteiros é ímpar, então algum desses números é ímpar.'"
+    },
+    {
+      "id": "psjpn2018-q68",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 68
+      },
+      "area": "logica",
+      "subtopic": "8.8 Valores-verdade",
+      "stem": "Sejam p e q duas proposições lógicas simples tais que o valor lógico da implicação (~p) → (~q) é FALSO. O valor lógico da proposição p˅(~q) é igual ao valor lógico da proposição",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "(~q) → p",
+          "key": "A",
+          "explanation": "Com p falso e q verdadeiro, (~q)→p equivale a F→F = V, diferente do valor de p˅(~q), que é F."
+        },
+        {
+          "text": "(~q) → (~p)",
+          "key": "B",
+          "explanation": "Com p falso e q verdadeiro, (~q)→(~p) equivale a F→V = V, diferente de F."
+        },
+        {
+          "text": "(~p) ˅ (~q)",
+          "key": "C",
+          "explanation": "Com p falso e q verdadeiro, (~p)˅(~q) equivale a V˅F = V, diferente de F."
+        },
+        {
+          "text": "(~p) ˄ q",
+          "key": "D",
+          "explanation": "Com p falso e q verdadeiro, (~p)˄q equivale a V˄V = V, diferente de F."
+        },
+        {
+          "text": "p ˄ q",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "E",
+      "explanationSummary": "Como (~p)→(~q) é falsa, e uma implicação só é falsa quando o antecedente é verdadeiro e o consequente é falso, temos ~p=V e ~q=F, ou seja, p=Falso e q=Verdadeiro. Logo, p˅(~q) = F˅F = Falso. Avaliando as alternativas com p=F e q=V, apenas p˄q = F˄V = Falso tem o mesmo valor lógico."
+    },
+    {
+      "id": "psjpn2018-q69",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 69
+      },
+      "area": "logica",
+      "subtopic": "8.2 Argumentos",
+      "stem": "Considere o seguinte argumento, no qual a conclusão foi omitida: Premissa 1: p → [(~r) ˅ (~s)]; Premissa 2: [p ˅ (~q)] ˄ [q ˅ (~p)]; Premissa 3: r ˄ s; Conclusão: XXXXXXXXXX. Uma conclusão que torna o argumento acima válido é",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "~(p ˅ q)",
+          "key": "A"
+        },
+        {
+          "text": "(~q) ˄ p",
+          "key": "B",
+          "explanation": "Com p=Falso, (~q)˄p = (~q)˄F é sempre Falso, independentemente de q, não sendo garantidamente verdadeira a partir das premissas."
+        },
+        {
+          "text": "(~p) ˄ q",
+          "key": "C",
+          "explanation": "Como as premissas obrigam q=Falso (pois p≡q e p=Falso), (~p)˄q = V˄F = Falso, não podendo ser a conclusão de um argumento válido cujas premissas são verdadeiras."
+        },
+        {
+          "text": "p ˄ q",
+          "key": "D",
+          "explanation": "Com p=Falso e q=Falso, p˄q = Falso, não podendo ser conclusão de um argumento válido com premissas verdadeiras."
+        },
+        {
+          "text": "p ˅ q",
+          "key": "E",
+          "explanation": "Com p=Falso e q=Falso, p˅q = Falso, não podendo ser conclusão de um argumento válido com premissas verdadeiras."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "Da premissa 3 (r˄s), tem-se r e s verdadeiros, logo (~r)˅(~s) é falso. Para que a premissa 1 seja verdadeira com o consequente falso, p precisa ser falso. Da premissa 2 (equivalente a p↔q), com p falso, segue que q também é falso. Assim, p e q são ambos falsos, tornando verdadeira a conclusão ~(p˅q)."
+    },
+    {
+      "id": "psjpn2018-q70",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 70
+      },
+      "area": "logica",
+      "subtopic": "8.6 Sistemas dedutivos",
+      "stem": "Considere o seguinte argumento: Premissa 1: [(~A) ˄ (~G)] → (~P); Premissa 2: P; Conclusão: A ˅ G. A validade do argumento pode ser deduzida, respectivamente, a partir da aplicação das regras de inferência",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "Paradoxo e Contingência",
+          "key": "A",
+          "explanation": "Não há paradoxo nem contingência envolvidos; o argumento é uma dedução válida por regras de inferência padrão."
+        },
+        {
+          "text": "Contraposição e Absurdo",
+          "key": "B",
+          "explanation": "Não se aplica diretamente a regra de 'contraposição' isolada nem a técnica de redução ao absurdo para obter a conclusão a partir das premissas dadas."
+        },
+        {
+          "text": "Modus Ponens e Contradição",
+          "key": "C",
+          "explanation": "Modus Ponens exigiria que o antecedente ((~A)˄(~G)) fosse verdadeiro; aqui, é o consequente (~P) que é contraditado pela premissa 2, caracterizando Modus Tollens, não Modus Ponens."
+        },
+        {
+          "text": "Modus Tollens e Lei de De Morgan",
+          "key": "D"
+        },
+        {
+          "text": "Silogismo Conjuntivo e Silogismo hipotético",
+          "key": "E",
+          "explanation": "Não há uma cadeia de condicionais (silogismo hipotético) nem uma conjunção sendo simplificada (silogismo conjuntivo) envolvida nesta dedução específica."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "D",
+      "explanationSummary": "Como P é verdadeiro (premissa 2), ~P é falso; aplicando Modus Tollens à premissa 1, conclui-se que [(~A)˄(~G)] é falso, ou seja, ¬[(~A)˄(~G)]. Aplicando a Lei de De Morgan a essa negação, obtém-se A˅G, exatamente a conclusão do argumento."
     }
   ]
 }

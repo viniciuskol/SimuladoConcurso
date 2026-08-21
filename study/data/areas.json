@@ -151,6 +151,36 @@
         "9.20 Segurança em nuvem",
         "9.21 Segurança em IoT"
       ]
+    },
+    {
+      "id": "portugues",
+      "num": 9,
+      "label": "Língua Portuguesa",
+      "sourceNote": "Conhecimentos Gerais (Fase 2), comum a todas as ênfases — não faz parte do Anexo IV Ênfase 5, mas do bloco de Conhecimentos Básicos do Edital 04/2026.",
+      "topics": [
+        "P.1 Compreensão de textos",
+        "P.2 Ortografia oficial",
+        "P.3 Mecanismos de coesão textual",
+        "P.4 Significação das palavras",
+        "P.5 Emprego de tempos e modos verbais",
+        "P.6 Emprego das classes de palavras",
+        "P.7 Coordenação e subordinação",
+        "P.8 Emprego dos sinais de pontuação",
+        "P.9 Concordância verbal e nominal",
+        "P.10 Regência verbal e nominal",
+        "P.11 Emprego do sinal indicativo de crase",
+        "P.12 Colocação dos pronomes átonos"
+      ]
+    },
+    {
+      "id": "ingles",
+      "num": 10,
+      "label": "Língua Inglesa",
+      "sourceNote": "Conhecimentos Gerais (Fase 2), comum a todas as ênfases — não faz parte do Anexo IV Ênfase 5, mas do bloco de Conhecimentos Básicos do Edital 04/2026.",
+      "topics": [
+        "I.1 Compreensão de texto escrito em língua inglesa",
+        "I.2 Itens gramaticais relevantes para a compreensão dos conteúdos semânticos"
+      ]
     }
   ]
 }
