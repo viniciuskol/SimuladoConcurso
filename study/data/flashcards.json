@@ -18,8 +18,8 @@
     {
       "id": "fc-arq-dados-003",
       "area": "arq-dados",
-      "front": "É permitido valor NULL em uma coluna de chave estrangeira?",
-      "back": "Sim. A integridade referencial exige que a FK aponte para um valor existente OU seja nula; proibir NULL depende de um NOT NULL explícito.",
+      "front": "Que valor uma chave estrangeira pode ter além de uma chave existente na tabela referenciada?",
+      "back": "NULL. A integridade referencial exige valor existente OU nulo; proibir NULL depende de um NOT NULL explícito.",
       "sourceQuestionId": "prova07-q3"
     },
     {
@@ -33,7 +33,7 @@
       "id": "fc-arq-dados-005",
       "area": "arq-dados",
       "front": "Quando uma tabela pode violar a 2FN?",
-      "back": "Somente quando a chave primária é composta, pois a 2FN proíbe dependência parcial (não-chave dependendo de parte da chave). PK de coluna única já satisfaz a 2FN.",
+      "back": "Somente quando a chave é composta, pois a 2FN proíbe dependência parcial (não-chave dependendo de parte da chave). Se a única chave candidata tem uma coluna, a 2FN está satisfeita — é assim que a banca cobra.",
       "sourceQuestionId": "psjpn2018-q58"
     },
     {
@@ -102,7 +102,7 @@
       "id": "fc-arq-dados-015",
       "area": "arq-dados",
       "front": "A que equivale a condição WHERE x >= ALL (SELECT y FROM T)?",
-      "back": "A comparar x com o valor máximo de y em T. E, sem DISTINCT, o resultado da consulta preserva as repetições.",
+      "back": "A comparar x com o valor máximo de y em T (quando a subconsulta retorna linhas e não há NULL). Foi o que prova07-q2 cobrou: max(R2.pno)=2, logo a condição virou pno >= 2.",
       "sourceQuestionId": "prova07-q2"
     },
     {
@@ -142,15 +142,15 @@
     {
       "id": "fc-arq-dados-021",
       "area": "arq-dados",
-      "front": "Qual técnica de tuning é resposta correta para reduzir o custo de junções internas frequentes?",
+      "front": "Que técnica de tuning reduz o custo de junções internas frequentes?",
       "back": "Desnormalizar as tabelas envolvidas, aceitando redundância controlada em troca de menos junções.",
       "sourceQuestionId": "transp23e6-q45"
     },
     {
       "id": "fc-arq-dados-022",
       "area": "arq-dados",
-      "front": "O otimizador de consultas de um SGBD relacional cria tabelas ou índices?",
-      "back": "Não. Ele escolhe plano de execução, método de acesso e ordem/algoritmo de junção usando estatísticas e seletividade; criar objetos é decisão de projeto/DBA.",
+      "front": "Que decisões cabem ao otimizador de consultas de um SGBD relacional?",
+      "back": "Escolher o plano de execução, o método de acesso (varredura x índice) e a ordem/algoritmo de junção, com base em estatísticas e seletividade. Criar tabelas ou índices não é função dele, e sim decisão de projeto/DBA.",
       "sourceQuestionId": "transp23e6-q51"
     },
     {
@@ -254,7 +254,7 @@
       "id": "fc-gestao-proj-001",
       "area": "gestao-proj",
       "front": "Em que a estrutura do PMBOK 7ª edição difere da 6ª?",
-      "back": "A 7ª é baseada em princípios: 12 princípios de gerenciamento e 8 domínios de desempenho. A 6ª e anteriores são baseadas em processos: 5 grupos de processos e 10 áreas de conhecimento."
+      "back": "A 7ª é baseada em princípios (princípios de gerenciamento + domínios de desempenho); a 6ª e anteriores são baseadas em processos (grupos de processos + áreas de conhecimento)."
     },
     {
       "id": "fc-gestao-proj-002",
@@ -279,8 +279,8 @@
     {
       "id": "fc-gestao-proj-005",
       "area": "gestao-proj",
-      "front": "Qual é a estrutura de ciclo de vida genérica de qualquer projeto segundo o PMBOK?",
-      "back": "Início do projeto, organização e preparação, execução do trabalho do projeto e encerramento do projeto.",
+      "front": "Qual é a estrutura de ciclo de vida genérica de um projeto no PMBOK 4ª/5ª edição?",
+      "back": "Início do projeto, organização e preparação, execução do trabalho do projeto e encerramento do projeto. A 7ª edição não usa essa estrutura de quatro fases.",
       "sourceQuestionId": "prova6-q21"
     },
     {
@@ -294,7 +294,7 @@
       "id": "fc-gestao-proj-007",
       "area": "gestao-proj",
       "front": "Quais restrições fundamentais o PMBOK manda determinar e equilibrar desde as fases iniciais?",
-      "back": "Escopo, cronograma, custo, qualidade e recursos (com o risco permeando todas).",
+      "back": "Escopo, cronograma, custo, qualidade e recursos — resposta literal de transp15-q66. O PMBOK 5/6 lista o risco como sexta restrição concorrente.",
       "sourceQuestionId": "transp15-q66"
     },
     {
@@ -336,7 +336,7 @@
       "id": "fc-gestao-proj-013",
       "area": "gestao-proj",
       "front": "Qual processo formaliza a aceitação das entregas concluídas pelo cliente ou patrocinador?",
-      "back": "Validar (verificar) o escopo — típico de fim de fase e do encerramento sob contrato. Controlar a qualidade trata da conformidade técnica.",
+      "back": "Validar o escopo (chamado 'Verificar o Escopo' até o PMBOK 4ª edição) — típico de fim de fase e do encerramento sob contrato. Controlar a qualidade trata da conformidade técnica.",
       "sourceQuestionId": "transp15-q67"
     },
     {
@@ -398,8 +398,7 @@
       "id": "fc-gestao-proj-022",
       "area": "gestao-proj",
       "front": "Como se calculam os índices de desempenho de custo e de prazo?",
-      "back": "IDC (CPI) = VA/CR e IDP (SPI) = VA/VP. Valor menor que 1 indica desempenho desfavorável.",
-      "sourceQuestionId": "transp15-q62"
+      "back": "IDC (CPI) = VA/CR e IDP (SPI) = VA/VP. Valor menor que 1 indica desempenho desfavorável."
     },
     {
       "id": "fc-gestao-proj-023",
@@ -439,8 +438,7 @@
       "id": "fc-gestao-proj-028",
       "area": "gestao-proj",
       "front": "Quais são as três responsabilidades (papéis) do Scrum?",
-      "back": "Product Owner, Scrum Master e Desenvolvedores.",
-      "sourceQuestionId": "transp23e6-q65"
+      "back": "Product Owner, Scrum Master e Desenvolvedores."
     },
     {
       "id": "fc-gestao-proj-029",
@@ -474,7 +472,7 @@
       "id": "fc-gestao-proj-033",
       "area": "gestao-proj",
       "front": "O que é o Program Increment (PI) no SAFe?",
-      "back": "Um período fixo de tempo (timebox, tipicamente 8 a 12 semanas) durante o qual um conjunto de equipes entrega valor ao cliente.",
+      "back": "Um período fixo de tempo (timebox, tipicamente 8 a 12 semanas) durante o qual um conjunto de equipes entrega valor ao cliente. Chamado Program Increment até o SAFe 5 (termo usado na prova de 2023) e renomeado Planning Interval no SAFe 6.0.",
       "sourceQuestionId": "transp23e6-q68"
     },
     {

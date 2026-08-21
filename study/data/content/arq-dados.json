@@ -1,12 +1,12 @@
 {
   "areaId": "arq-dados",
-  "resumo": "<p><strong>Onde a prova realmente mora.</strong> Nas provas antigas da Transpetro/Cesgranrio esta é a área mais pesada (33 questões no banco) e ela se concentra em cinco blocos: <em>modelagem dimensional / data warehouse</em> (6 questões), <em>SQL</em> (6), <em>modelo relacional e álgebra relacional</em> (4), <em>integração de dados / ETL</em> (4) e <em>normalização</em> (3). O resto vem em doses de uma questão: metadados, ACID, transações e recuperação, performance, NoSQL, grafos/documentos, data lake e modelagem conceitual. A prova de 2023 (Ênfase 6) mudou o tom: menos cálculo, mais <em>definição correta</em> — o enunciado descreve um conceito e as quatro alternativas erradas descrevem conceitos <em>vizinhos</em>.</p><p><strong>Modelagem em três níveis.</strong> Conceitual: entidades, atributos e relacionamentos, <strong>independente de SGBD</strong> (é a resposta padrão). Lógica: já compromete com o modelo de dados (tabelas, chaves, tipos), mas sem detalhes de armazenamento. Física: índices, particionamento, tablespaces, desempenho. Independência de dados vem da arquitetura de três esquemas (externo, conceitual, interno): a independência <em>lógica</em> isola as visões de mudanças no esquema conceitual; a <em>física</em> isola o conceitual de mudanças no armazenamento. Engenharia reversa é o caminho inverso: partir do esquema físico existente para reconstruir o modelo lógico/conceitual.</p><p><strong>Modelo relacional.</strong> Superchave: qualquer conjunto de atributos que identifica a tupla. <strong>Chave candidata = superchave mínima</strong> (nenhum subconjunto próprio identifica) — e <em>pode ser composta</em>; a banca já usou duas vezes o distrator 'superchave mínima é composta por uma única coluna'. Atributos que participam de alguma chave candidata são <strong>atributos primos (primários)</strong>. Chave primária é a candidata escolhida; as demais são alternativas. Integridade de entidade: PK não nula e única. Integridade referencial: a FK só aponta para valor existente na chave referenciada <em>ou</em> é nula — <strong>NULL em FK é permitido</strong> salvo NOT NULL explícito. Álgebra relacional: unários são <strong>seleção, projeção e renomeação</strong>; binários são união, diferença, interseção, produto cartesiano, junções e <strong>divisão</strong>. A divisão R1(sno,pno) ÷ R2(pno) devolve os <code>sno</code> que se relacionam com <em>todos</em> os <code>pno</code> de R2, e em SQL aparece como o padrão de <strong>duplo NOT EXISTS</strong>.</p><p><strong>Normalização.</strong> 1FN: atributos atômicos, sem grupos repetitivos. 2FN: 1FN + nenhuma dependência funcional <em>parcial</em> da chave — só pode ser violada se a PK for <strong>composta</strong>; PK de coluna única já garante a 2FN. 3FN: 2FN + nenhuma dependência <em>transitiva</em> (atributo não-chave determinando outro não-chave). BCNF: todo determinante é superchave. 4FN: elimina dependências multivaloradas. Objetivo declarado da normalização é <strong>eliminar redundância e preservar integridade</strong> — não economizar espaço nem acelerar consulta (a banca usa esses dois como distratores). O inverso é técnica legítima de tuning: <strong>desnormalizar</strong> tabelas envolvidas em junções internas frequentes.</p><p><strong>SQL.</strong> DDL: CREATE/ALTER/DROP/TRUNCATE. DML: INSERT/UPDATE/DELETE (+ SELECT, às vezes chamado DQL). DCL: GRANT/REVOKE — <code>WITH GRANT OPTION</code> permite repassar o privilégio, e o REVOKE derruba em cascata o que foi repassado, <em>mas não</em> privilégios concedidos direto pelo DBA. TCL: COMMIT/ROLLBACK/SAVEPOINT. Nas questões de 'qual consulta atende ao relatório', a diferença entre as alternativas está em (a) junção por vírgula sem condição, gerando produto cartesiano, (b) INNER onde deveria ser <strong>LEFT JOIN</strong>, (c) UNION/INTERSECT aplicados a linhas diferentes em vez de um predicado por linha. Autojunção (<code>f1.filho = f2.pai</code>) é o padrão para 'netos de'; <code>&gt;= ALL</code> equivale a comparar com o máximo.</p><p><strong>Transações.</strong> ACID: <strong>A</strong>tomicidade (tudo ou nada), <strong>C</strong>onsistência (estado válido antes e depois), <strong>I</strong>solamento (concorrentes não interferem), <strong>D</strong>urabilidade (efeito confirmado sobrevive a falha). Níveis de isolamento SQL: read uncommitted, read committed, repeatable read, serializable — combatendo, em ordem, leitura suja, leitura não repetível e leitura fantasma. Recuperação: <em>log</em> (write-ahead logging, com undo/redo) ou <strong>paginação sombra</strong>, que mantém duas tabelas de páginas (corrente e sombra) sobre páginas de tamanho fixo e dispensa log para desfazer.</p><p><strong>Performance.</strong> Índices (B-árvore, hash, bitmap) aceleram leitura e penalizam escrita; função aplicada na coluna invalida o índice. O <strong>otimizador</strong> escolhe plano de execução, método de acesso e ordem de junção usando estatísticas e seletividade — mas <em>não</em> cria tabelas nem altera o esquema. Serializar todas as transações não é otimização: é o contrário.</p><p><strong>Analítico.</strong> Data warehouse (Inmon): orientado a assunto, integrado, <strong>não volátil</strong> e variável no tempo. Modelo estrela: fato central com as medidas, dimensões desnormalizadas em volta, menos junções e <strong>melhor desempenho</strong>, hierarquias implícitas. Floco de neve: dimensões normalizadas, hierarquias explícitas, manutenção mais fácil, mais junções. Top-down (Inmon) parte de um DW corporativo normalizado; bottom-up (Kimball) parte de data marts dimensionais integrados por dimensões conformadas, com investimento inicial menor. Camadas: fontes OLTP → <strong>data staging area</strong> (onde o ETL limpa, integra, converte, condensa e deriva) → área de apresentação. Data lake armazena dados estruturados, semiestruturados e não estruturados <strong>no formato original</strong> (schema-on-read), ao contrário do DW (schema-on-write). Big data: volume, variedade e velocidade — e 'velocidade' é <em>alto fluxo de dados na entrada</em>, não rapidez de resposta.</p><p><strong>Não relacionais.</strong> NoSQL em quatro famílias: chave-valor, documento (JSON/BSON, esquema flexível), família de colunas e grafo (vértices e arestas, travessia eficiente; Cypher usa <code>MATCH ... RETURN</code>). Teorema CAP: sob partição, escolhe-se entre consistência e disponibilidade; daí o BASE (disponibilidade básica, estado leve, consistência eventual) em contraste com ACID. Banco em memória mantém os dados na RAM para latência baixíssima, com durabilidade obtida por log/snapshot em disco. Metadados descrevem os dados: esquemas, tipos, restrições, no catálogo do SGBD — nunca os dados de negócio em si. Qualidade de dados e MDM tratam de dado mestre (cliente, produto, fornecedor) e de referência, buscando o registro único e confiável.</p>",
+  "resumo": "<p><strong>Onde a prova realmente mora.</strong> Nas provas antigas da Transpetro/Cesgranrio esta é a segunda área mais pesada de Conhecimentos Específicos (33 questões no banco, contra 35 de Gerenciamento de Projetos) e ela se concentra em cinco blocos: <em>modelagem dimensional / data warehouse</em> (6 questões), <em>SQL</em> (6), <em>modelo relacional e álgebra relacional</em> (4), <em>integração de dados / ETL</em> (4) e <em>normalização</em> (3). O resto vem em doses de uma ou duas questões: performance e data lake/big data com duas cada; metadados, ACID, transações e recuperação, NoSQL, grafos/documentos e modelagem conceitual com uma cada. A prova de 2023 mudou o tom: menos cálculo, mais <em>definição correta</em> — o enunciado descreve um conceito e as erradas descrevem conceitos <em>vizinhos</em>.</p><p><strong>Modelagem em três níveis.</strong> Conceitual: entidades, atributos e relacionamentos, <strong>independente de SGBD</strong> (é a resposta padrão). Lógica: compromete-se com tabelas, chaves e tipos, sem detalhes de armazenamento. Física: índices, particionamento, desempenho. Na arquitetura de três esquemas (externo, conceitual, interno), a independência <em>lógica</em> isola as visões de mudanças no esquema conceitual; a <em>física</em> isola o conceitual de mudanças no armazenamento. Engenharia reversa é o caminho inverso: do esquema físico existente para o modelo lógico/conceitual.</p><p><strong>Modelo relacional.</strong> Superchave: conjunto de atributos que identifica a tupla. <strong>Chave candidata = superchave mínima</strong> (nenhum subconjunto próprio identifica) — e <em>pode ser composta</em>; a banca já usou duas vezes o distrator 'superchave mínima é composta por uma única coluna'. Atributos que participam de alguma chave candidata são <strong>atributos primos (primários)</strong>. Chave primária é a candidata escolhida; as demais são alternativas. Integridade de entidade: PK não nula e única. Referencial: a FK aponta para valor existente <em>ou</em> é nula — <strong>NULL em FK é permitido</strong> salvo NOT NULL explícito. Álgebra relacional: unários são <strong>seleção, projeção e renomeação</strong>; binários são união, diferença, interseção, produto cartesiano, junções e <strong>divisão</strong>. A divisão R1(sno,pno) ÷ R2(pno) devolve os <code>sno</code> que se relacionam com <em>todos</em> os <code>pno</code> de R2, e em SQL aparece como o padrão de <strong>duplo NOT EXISTS</strong>.</p><p><strong>Normalização.</strong> 1FN: atributos atômicos, sem grupos repetitivos. 2FN: 1FN + nenhuma dependência funcional <em>parcial</em> da chave — só pode ser violada se houver chave <strong>composta</strong>; se a única chave candidata tem uma coluna, a 2FN já está garantida. 3FN: 2FN + nenhuma dependência <em>transitiva</em> (atributo não-chave determinando outro não-chave). BCNF: todo determinante é superchave. 4FN: elimina dependências multivaloradas. Objetivo declarado da normalização é <strong>eliminar redundância e preservar integridade</strong> — não economizar espaço nem acelerar consulta (a banca usa esses dois como distratores). O inverso é técnica legítima de tuning: <strong>desnormalizar</strong> tabelas envolvidas em junções internas frequentes.</p><p><strong>SQL.</strong> DDL: CREATE/ALTER/DROP/TRUNCATE. DML: INSERT/UPDATE/DELETE (+SELECT). DCL: GRANT/REVOKE — <code>WITH GRANT OPTION</code> permite repassar o privilégio, e o REVOKE derruba em cascata o que foi repassado, <em>mas não</em> privilégios concedidos direto pelo DBA. TCL: COMMIT/ROLLBACK/SAVEPOINT. Nas questões de 'qual consulta atende ao relatório', a diferença entre as alternativas está em (a) junção por vírgula sem condição, gerando produto cartesiano, (b) INNER onde deveria ser <strong>LEFT JOIN</strong>, (c) UNION/INTERSECT aplicados a linhas diferentes em vez de um predicado por linha. Autojunção (<code>f1.filho = f2.pai</code>) é o padrão para 'netos de'; <code>&gt;= ALL</code> equivale a comparar com o máximo.</p><p><strong>Transações.</strong> ACID: <strong>A</strong>tomicidade (tudo ou nada), <strong>C</strong>onsistência (estado válido antes e depois), <strong>I</strong>solamento (concorrentes não interferem), <strong>D</strong>urabilidade (efeito confirmado sobrevive a falha). Níveis de isolamento SQL, do mais fraco ao mais forte: read uncommitted (permite leitura suja, não repetível e fantasma), read committed (elimina a leitura suja), repeatable read (elimina também a leitura não repetível) e serializable (elimina também a leitura fantasma). Recuperação: <em>log</em> (write-ahead logging, com undo/redo) ou <strong>paginação sombra</strong>, que mantém duas tabelas de páginas (corrente e sombra) sobre páginas de tamanho fixo, dispensando log.</p><p><strong>Performance.</strong> Índices aceleram leitura e penalizam escrita; função aplicada na coluna indexada invalida o índice. O <strong>otimizador</strong> escolhe plano de execução, método de acesso e ordem de junção usando estatísticas e seletividade — mas <em>não</em> cria tabelas nem altera o esquema. Serializar todas as transações não é otimização: é o contrário.</p><p><strong>Analítico.</strong> Data warehouse (Inmon): orientado a assunto, integrado, <strong>não volátil</strong> e variável no tempo. Modelo estrela: fato central com as medidas, dimensões desnormalizadas em volta, menos junções e <strong>melhor desempenho</strong>, hierarquias implícitas. Floco de neve: dimensões normalizadas, hierarquias explícitas, manutenção mais fácil, mais junções. Top-down (Inmon) parte de um DW corporativo normalizado; bottom-up (Kimball) parte de data marts dimensionais integrados por dimensões conformadas, com investimento inicial menor. Camadas: fontes OLTP → <strong>data staging area</strong> (onde o ETL limpa, integra, converte, condensa e deriva) → área de apresentação. Data lake guarda dados estruturados, semiestruturados e não estruturados <strong>no formato original</strong> (schema-on-read); o DW é schema-on-write. Big data: volume, variedade e velocidade — e 'velocidade' é <em>alto fluxo na entrada</em>, não rapidez de resposta.</p><p><strong>Não relacionais.</strong> NoSQL em quatro famílias: chave-valor, documento (JSON/BSON, esquema flexível), família de colunas e grafo (vértices e arestas, travessia eficiente; Cypher usa <code>MATCH ... RETURN</code>). Teorema CAP: sob partição, escolhe-se entre consistência e disponibilidade — daí o BASE (consistência eventual) em contraste com ACID. Banco em memória mantém os dados na RAM, com durabilidade por log/snapshot em disco. Metadados descrevem os dados: esquemas, tipos, restrições, no catálogo do SGBD — nunca os dados de negócio em si. Qualidade de dados e MDM tratam do dado mestre (cliente, produto, fornecedor) e do de referência, buscando o registro único e confiável.</p>",
   "cheatsheet": [
     {
       "heading": "Formas normais (decorar em uma linha cada)",
       "items": [
         "1FN: atributos atômicos, sem grupo repetitivo.",
-        "2FN: 1FN + sem dependência parcial — só é violável com chave primária COMPOSTA.",
+        "2FN: 1FN + sem dependência parcial — só é violável quando existe chave COMPOSTA; chave candidata de uma coluna já satisfaz a 2FN.",
         "3FN: 2FN + sem dependência transitiva (não-chave → não-chave).",
         "BCNF: todo determinante é superchave (trata a anomalia que sobra na 3FN com chaves sobrepostas).",
         "4FN: sem dependência multivalorada independente.",
@@ -50,7 +50,7 @@
       "heading": "ACID, isolamento e recuperação",
       "items": [
         "Atomicidade = tudo ou nada. Consistência = estado válido. Isolamento = concorrentes não se veem. Durabilidade = persiste após falha.",
-        "Read uncommitted → leitura suja | read committed → leitura não repetível | repeatable read → fantasma | serializable → nada disso.",
+        "Anomalia que cada nível ainda PERMITE: read uncommitted permite leitura suja (e as outras duas) | read committed permite leitura não repetível e fantasma | repeatable read permite só fantasma | serializable não permite nenhuma.",
         "Log (WAL): grava o registro de alteração antes de aplicar a página; permite undo e redo.",
         "Paginação sombra: tabela de páginas com n entradas (i-ésima aponta para a i-ésima página), duplicada em corrente + sombra; páginas de tamanho FIXO; dispensa log.",
         "Commit em duas fases (2PC) é para transação distribuída, não para recuperação local."
@@ -76,7 +76,9 @@
         "Top-down (Inmon): DW corporativo normalizado primeiro, data marts depois. Bottom-up (Kimball): data marts dimensionais integrados por dimensões conformadas, menor investimento inicial.",
         "Camadas: OLTP → Data Staging Area (ETL) → área de apresentação/data marts → BI.",
         "ETL faz filtragem, integração, conversão, condensação e derivação, de fontes internas E externas ao OLTP.",
-        "ROLAP (relacional com cara multidimensional), MOLAP (cubo próprio), HOLAP (híbrido)."
+        "ROLAP (relacional com cara multidimensional), MOLAP (cubo próprio), HOLAP (híbrido).",
+        "Granularidade = o que uma linha do fato representa (mais fina = mais volume e mais detalhe).",
+        "SCD (dimensão que muda lentamente): tipo 1 sobrescreve (perde histórico), tipo 2 cria nova linha versionada (preserva histórico), tipo 3 guarda a coluna do valor anterior."
       ]
     },
     {
@@ -92,14 +94,18 @@
       ]
     },
     {
-      "heading": "Metadados, qualidade e dados mestres",
+      "heading": "Metadados, qualidade de dados e avaliação de modelos (1.8)",
       "items": [
         "Metadado é dado sobre o dado: esquema de tabela, tipo de coluna, restrição, índice, estatística, linhagem.",
         "NÃO são metadados: dados de negócio (total de vendas), backup, código-fonte da aplicação, senhas de SO.",
         "Tipos: metadado de negócio (glossário), técnico (esquema), operacional (execução de carga, linhagem).",
         "Dado mestre: entidade central e persistente (cliente, produto, fornecedor, ativo). Dado de referência: domínios/listas (UF, moeda, CFOP). Dado transacional: o evento.",
         "MDM busca o registro único e confiável (golden record) e reconciliação entre sistemas.",
-        "Dimensões de qualidade: completude, exatidão, consistência, unicidade, validade, atualidade."
+        "Dimensões de qualidade: completude, exatidão, consistência, unicidade, validade, atualidade.",
+        "Avaliar um modelo de dados = verificar completude em relação aos requisitos (toda informação pedida tem onde ser armazenada) e ausência de elementos sem uso.",
+        "Verificar a correção das cardinalidades e da obrigatoriedade de cada relacionamento contra as regras de negócio declaradas.",
+        "Verificar ausência de redundância e de anomalias de inserção/alteração/exclusão (é o que a normalização atesta), além de aderência ao padrão de nomenclatura adotado.",
+        "Verificar a rastreabilidade entre conceitual, lógico e físico (cada entidade/atributo tem origem e destino identificáveis) e submeter o modelo a revisão por pares/walkthrough."
       ]
     }
   ],
@@ -110,7 +116,7 @@
     },
     {
       "title": "Fato é verbo, dimensão é substantivo",
-      "body": "Na hora de montar o estrela, pergunte: isso é algo que ACONTECE e pode ser somado (venda, embarque, atendimento)? É fato. Ou é algo que DESCREVE quem/onde/quando (cliente, vendedor, produto, tempo)? É dimensão. Cliente nunca é fato; venda nunca é dimensão."
+      "body": "Na hora de montar o estrela, pergunte: isso é algo que ACONTECE e pode ser somado (venda, embarque, atendimento)? É fato. Ou é algo que DESCREVE quem/onde/quando (cliente, vendedor, produto, tempo)? É dimensão. Cliente é dimensão, venda é fato — a única nuance é o número da venda/pedido, que entra no fato como dimensão degenerada."
     },
     {
       "title": "Estrela é rápida, floco é limpo",
@@ -128,25 +134,23 @@
   "patterns": [
     {
       "title": "Modelagem dimensional e data warehouse são o assunto mais recorrente da área",
-      "howToSpot": "Seis das 33 questões do banco são de modelagem dimensional, e ainda há ETL e big data em volta. O eixo é sempre o mesmo: quem é fato e quem é dimensão, estrela x floco de neve, top-down x bottom-up e as quatro características de Inmon. As alternativas erradas trocam o papel das tabelas (cliente como fato), atribuem ao relacional o que é do multidimensional (e vice-versa), ou negam uma das características canônicas do DW — em especial afirmando que o DW é volátil ou que a dimensão tempo é opcional.",
+      "howToSpot": "Seis das 33 questões do banco são de modelagem dimensional, e ainda há ETL e big data em volta. O eixo é sempre o mesmo: quem é fato e quem é dimensão, estrela x floco de neve, top-down x bottom-up e as quatro características de Inmon. As alternativas erradas trocam o papel das tabelas (cliente como fato), atribuem ao relacional o que é do multidimensional (e vice-versa), ou negam uma das características canônicas do DW — em especial afirmando que o DW é volátil ou que a dimensão tempo é opcional. A camada de staging (transp15-q22) e o ETL (prova07-q43) orbitam o mesmo assunto, mas são cobrados pelo lado da arquitetura de integração.",
       "evidence": [
         "psjpn2018-q43",
         "psjpn2018-q44",
         "prova07-q42",
         "prova07-q44",
         "prova07-q46",
-        "prova07-q48",
-        "transp15-q22"
+        "prova07-q48"
       ]
     },
     {
       "title": "SQL vem como 'qual consulta produz este relatório' com cinco variantes quase idênticas",
-      "howToSpot": "As alternativas diferem em uma junção só. Leia primeiro o FROM: vírgula entre tabelas sem condição de igualdade no WHERE = produto cartesiano (descarte). Depois pergunte se o relatório precisa mostrar o registro sem correspondente — se o enunciado pede somatório que pode ser zero, ou 'para cada X', então é LEFT JOIN, e INNER/RIGHT/junção implícita ficam erradas. Por fim, desconfie de INTERSECT/UNION usados para simular um predicado composto em uma mesma linha e de NOT IN que acaba incluindo quem não tem nenhum registro.",
+      "howToSpot": "As alternativas diferem em uma junção só. Leia primeiro o FROM: vírgula entre tabelas sem condição de igualdade no WHERE = produto cartesiano (descarte). Depois pergunte se o relatório precisa mostrar o registro sem correspondente — se o enunciado pede somatório que pode ser zero, ou 'para cada X', então é LEFT JOIN, e INNER/RIGHT/junção implícita ficam erradas. Por fim, desconfie de INTERSECT/UNION usados para simular um predicado composto em uma mesma linha e de NOT IN que acaba incluindo quem não tem nenhum registro. Variante mais rara: em vez de escolher a consulta, o enunciado dá a consulta e pede o resultado (prova07-q2, com >= ALL e repetições).",
       "evidence": [
         "psjpn2018-q56",
         "transp15-q38",
-        "transp23e6-q49",
-        "prova07-q2"
+        "transp23e6-q49"
       ]
     },
     {
@@ -160,11 +164,10 @@
     },
     {
       "title": "Normalização testada em notação simbólica de dependências funcionais",
-      "howToSpot": "O enunciado dá esquemas T1/T2/T3 com dependências do tipo x2→x1, x1→x3 e pergunta qual está na 3FN — ou descreve o que um estagiário já fez e pergunta o que falta. Método: descubra a chave (o determinante que fecha todos os atributos), então procure dependência de subconjunto próprio da chave (parcial, viola 2FN) e dependência não-chave→não-chave (transitiva, viola 3FN). Distrator favorito: mandar eliminar dependências parciais quando o enunciado já disse que nenhuma tabela tem chave composta.",
+      "howToSpot": "O enunciado dá esquemas T1/T2/T3 com dependências do tipo x2→x1, x1→x3 e pergunta qual está na 3FN — ou descreve o que um estagiário já fez e pergunta o que falta. Método: descubra a chave (o determinante que fecha todos os atributos), então procure dependência de subconjunto próprio da chave (parcial, viola 2FN) e dependência não-chave→não-chave (transitiva, viola 3FN). Distrator favorito: mandar eliminar dependências parciais quando o enunciado já disse que nenhuma tabela tem chave composta. Em 2023 o mesmo tema veio sem simbologia, só pelo objetivo da normalização (transp23e6-q64): eliminar duplicação e preservar integridade.",
       "evidence": [
         "psjpn2018-q58",
-        "transp15-q42",
-        "transp23e6-q64"
+        "transp15-q42"
       ]
     },
     {
@@ -230,7 +233,7 @@
     },
     {
       "title": "Estude os subtópicos ainda não cobrados: são a fronteira provável de 2026",
-      "body": "O Anexo IV lista NoSQL, ACID, banco em memória, dados mestres e de referência, data lake, documentos e grafos — assuntos que só entraram no banco a partir de 2023, e com uma questão cada. Como o edital é o mesmo e a tendência da última prova foi definição conceitual, esses itens são candidatos naturais a estreia: garanta a definição canônica de cada um em uma frase, que é o formato que a banca usa."
+      "body": "O Anexo IV lista NoSQL, ACID, banco em memória, dados mestres e de referência, data lake, documentos e grafos. Desses, só data lake/big data (2018 e 2023, 2 questões) e NoSQL, ACID, metadados e documentos/grafos (2023, 1 questão cada) já foram cobrados; banco em memória, MDM e dados de referência nunca apareceram. Como o edital é o mesmo e a tendência da última prova foi definição conceitual, esses itens são candidatos naturais a estreia: garanta a definição canônica de cada um em uma frase, que é o formato que a banca usa."
     }
   ],
   "trapWords": [
@@ -247,7 +250,7 @@
     {
       "term": "dependência funcional parcial (2FN)",
       "confusedWith": "dependência funcional transitiva (3FN)",
-      "distinction": "Parcial é não-chave dependendo de PARTE da chave — impossível quando a chave tem uma coluna só. Transitiva é não-chave dependendo de outro NÃO-CHAVE."
+      "distinction": "Parcial é não-chave dependendo de PARTE da chave — impossível quando a chave é de uma única coluna. Transitiva é não-chave dependendo de outro NÃO-CHAVE."
     },
     {
       "term": "integridade referencial",
@@ -267,7 +270,7 @@
     {
       "term": "tabela fato",
       "confusedWith": "tabela dimensão",
-      "distinction": "Fato guarda o evento mensurável e as métricas (venda, embarque); dimensão guarda o contexto descritivo (cliente, vendedor, tempo). Cliente como fato é sempre erro."
+      "distinction": "Fato guarda o evento mensurável e as métricas (venda, embarque); dimensão guarda o contexto descritivo (cliente, vendedor, tempo). O identificador da transação (número do pedido) fica no próprio fato, como dimensão degenerada."
     },
     {
       "term": "esquema estrela",
