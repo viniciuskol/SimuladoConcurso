@@ -1,4 +1,501 @@
 {
   "version": 1,
-  "cards": []
+  "cards": [
+    {
+      "id": "fc-arq-dados-001",
+      "area": "arq-dados",
+      "front": "O que define uma chave candidata no modelo relacional?",
+      "back": "É uma superchave mínima: identifica unicamente a tupla e nenhum subconjunto próprio dela faz isso. Pode ser composta por mais de um atributo.",
+      "sourceQuestionId": "prova6-q57"
+    },
+    {
+      "id": "fc-arq-dados-002",
+      "area": "arq-dados",
+      "front": "Como se chama o atributo que participa de alguma chave candidata?",
+      "back": "Atributo primo (ou atributo primário). Os que não participam de nenhuma chave candidata são atributos não primos.",
+      "sourceQuestionId": "prova6-q57"
+    },
+    {
+      "id": "fc-arq-dados-003",
+      "area": "arq-dados",
+      "front": "É permitido valor NULL em uma coluna de chave estrangeira?",
+      "back": "Sim. A integridade referencial exige que a FK aponte para um valor existente OU seja nula; proibir NULL depende de um NOT NULL explícito.",
+      "sourceQuestionId": "prova07-q3"
+    },
+    {
+      "id": "fc-arq-dados-004",
+      "area": "arq-dados",
+      "front": "Qual a exigência da 1FN?",
+      "back": "Todos os atributos devem ser atômicos, sem grupos repetitivos nem colunas multivaloradas.",
+      "sourceQuestionId": "psjpn2018-q58"
+    },
+    {
+      "id": "fc-arq-dados-005",
+      "area": "arq-dados",
+      "front": "Quando uma tabela pode violar a 2FN?",
+      "back": "Somente quando a chave primária é composta, pois a 2FN proíbe dependência parcial (não-chave dependendo de parte da chave). PK de coluna única já satisfaz a 2FN.",
+      "sourceQuestionId": "psjpn2018-q58"
+    },
+    {
+      "id": "fc-arq-dados-006",
+      "area": "arq-dados",
+      "front": "O que a 3FN elimina?",
+      "back": "As dependências funcionais transitivas: nenhum atributo não-chave pode determinar outro atributo não-chave.",
+      "sourceQuestionId": "transp15-q42"
+    },
+    {
+      "id": "fc-arq-dados-007",
+      "area": "arq-dados",
+      "front": "Qual a condição da forma normal de Boyce-Codd (BCNF)?",
+      "back": "Todo determinante de uma dependência funcional não trivial deve ser superchave da relação."
+    },
+    {
+      "id": "fc-arq-dados-008",
+      "area": "arq-dados",
+      "front": "Qual é o objetivo principal da normalização?",
+      "back": "Eliminar duplicação/redundância de dados e preservar a integridade. Não é economizar espaço nem acelerar consultas.",
+      "sourceQuestionId": "transp23e6-q64"
+    },
+    {
+      "id": "fc-arq-dados-009",
+      "area": "arq-dados",
+      "front": "Quais operadores da álgebra relacional são unários?",
+      "back": "Seleção (filtra linhas), projeção (escolhe colunas) e renomeação. Todos os demais (união, diferença, interseção, produto cartesiano, junções, divisão) são binários.",
+      "sourceQuestionId": "transp23e6-q26"
+    },
+    {
+      "id": "fc-arq-dados-010",
+      "area": "arq-dados",
+      "front": "O que a divisão relacional R1(sno,pno) ÷ R2(pno) retorna?",
+      "back": "Os valores de sno cujo conjunto de pno associados contém TODOS os pno presentes em R2.",
+      "sourceQuestionId": "prova07-q1"
+    },
+    {
+      "id": "fc-arq-dados-011",
+      "area": "arq-dados",
+      "front": "Qual construção SQL implementa a divisão relacional?",
+      "back": "O padrão de duplo NOT EXISTS: não existe elemento do divisor para o qual não exista o par correspondente na relação dividida.",
+      "sourceQuestionId": "prova6-q56"
+    },
+    {
+      "id": "fc-arq-dados-012",
+      "area": "arq-dados",
+      "front": "Em um relatório que deve exibir também os itens sem nenhuma ocorrência (somando zero), qual junção usar?",
+      "back": "LEFT JOIN a partir da tabela principal, combinado com COALESCE(SUM(x),0). INNER JOIN ou junção implícita por WHERE eliminaria esses itens.",
+      "sourceQuestionId": "psjpn2018-q56"
+    },
+    {
+      "id": "fc-arq-dados-013",
+      "area": "arq-dados",
+      "front": "Que erro a cláusula FROM A a, B b sem condição de igualdade produz?",
+      "back": "Um produto cartesiano entre A e B, combinando todas as linhas — erro plantado com frequência nas alternativas longas de SQL.",
+      "sourceQuestionId": "psjpn2018-q56"
+    },
+    {
+      "id": "fc-arq-dados-014",
+      "area": "arq-dados",
+      "front": "Como uma consulta SQL obtém os netos de alguém em uma tabela Familia(pai, filho)?",
+      "back": "Autojunção ligando f1.filho a f2.pai e filtrando f1.pai; o resultado sai em f2.filho.",
+      "sourceQuestionId": "transp23e6-q49"
+    },
+    {
+      "id": "fc-arq-dados-015",
+      "area": "arq-dados",
+      "front": "A que equivale a condição WHERE x >= ALL (SELECT y FROM T)?",
+      "back": "A comparar x com o valor máximo de y em T. E, sem DISTINCT, o resultado da consulta preserva as repetições.",
+      "sourceQuestionId": "prova07-q2"
+    },
+    {
+      "id": "fc-arq-dados-016",
+      "area": "arq-dados",
+      "front": "O que acontece com privilégios repassados quando o DBA executa REVOKE?",
+      "back": "O REVOKE cascateia sobre o que foi repassado via WITH GRANT OPTION, mas não afeta privilégios que o DBA concedeu diretamente a outro usuário.",
+      "sourceQuestionId": "prova6-q58"
+    },
+    {
+      "id": "fc-arq-dados-017",
+      "area": "arq-dados",
+      "front": "Qual propriedade ACID garante que a transação é executada por completo ou não é executada de forma alguma?",
+      "back": "Atomicidade.",
+      "sourceQuestionId": "transp23e6-q53"
+    },
+    {
+      "id": "fc-arq-dados-018",
+      "area": "arq-dados",
+      "front": "Qual propriedade ACID garante que os efeitos de uma transação confirmada sobrevivem a uma falha do sistema?",
+      "back": "Durabilidade.",
+      "sourceQuestionId": "transp23e6-q53"
+    },
+    {
+      "id": "fc-arq-dados-019",
+      "area": "arq-dados",
+      "front": "Qual nível de isolamento SQL elimina leitura suja, leitura não repetível e leitura fantasma?",
+      "back": "Serializable. Read uncommitted permite os três; read committed elimina a leitura suja; repeatable read elimina também a leitura não repetível."
+    },
+    {
+      "id": "fc-arq-dados-020",
+      "area": "arq-dados",
+      "front": "Como funciona a técnica de recuperação por paginação sombra?",
+      "back": "Mantém um catálogo (tabela de páginas) com n entradas, onde a i-ésima aponta para a i-ésima página em disco, duplicado em versão corrente e sombra; usa páginas de tamanho fixo e dispensa log para desfazer.",
+      "sourceQuestionId": "prova07-q4"
+    },
+    {
+      "id": "fc-arq-dados-021",
+      "area": "arq-dados",
+      "front": "Qual técnica de tuning é resposta correta para reduzir o custo de junções internas frequentes?",
+      "back": "Desnormalizar as tabelas envolvidas, aceitando redundância controlada em troca de menos junções.",
+      "sourceQuestionId": "transp23e6-q45"
+    },
+    {
+      "id": "fc-arq-dados-022",
+      "area": "arq-dados",
+      "front": "O otimizador de consultas de um SGBD relacional cria tabelas ou índices?",
+      "back": "Não. Ele escolhe plano de execução, método de acesso e ordem/algoritmo de junção usando estatísticas e seletividade; criar objetos é decisão de projeto/DBA.",
+      "sourceQuestionId": "transp23e6-q51"
+    },
+    {
+      "id": "fc-arq-dados-023",
+      "area": "arq-dados",
+      "front": "O que caracteriza a modelagem conceitual de dados?",
+      "back": "Define entidades, atributos e relacionamentos de forma independente de qualquer SGBD, sem tratar de índices, partições ou armazenamento.",
+      "sourceQuestionId": "transp23e6-q63"
+    },
+    {
+      "id": "fc-arq-dados-024",
+      "area": "arq-dados",
+      "front": "Qual a diferença entre independência lógica e independência física de dados?",
+      "back": "A lógica isola as visões externas de mudanças no esquema conceitual; a física isola o esquema conceitual de mudanças na forma de armazenamento."
+    },
+    {
+      "id": "fc-arq-dados-025",
+      "area": "arq-dados",
+      "front": "O que são metadados em um SGBD relacional?",
+      "back": "Dados sobre os dados: esquemas de tabelas, tipos de colunas, restrições, índices e estatísticas. Não incluem dados de negócio, backups nem código-fonte da aplicação.",
+      "sourceQuestionId": "transp23e6-q50"
+    },
+    {
+      "id": "fc-arq-dados-026",
+      "area": "arq-dados",
+      "front": "Quais as quatro características de um data warehouse segundo Inmon?",
+      "back": "Orientado a assunto, integrado, não volátil e variável no tempo. Volatilidade é justamente o que o DW NÃO tem.",
+      "sourceQuestionId": "prova07-q46"
+    },
+    {
+      "id": "fc-arq-dados-027",
+      "area": "arq-dados",
+      "front": "No esquema estrela, o que vira tabela fato e o que vira dimensão?",
+      "back": "Fato é o evento mensurável (a venda); dimensões são as entidades descritivas que dão contexto (cliente, vendedor, produto, tempo).",
+      "sourceQuestionId": "psjpn2018-q44"
+    },
+    {
+      "id": "fc-arq-dados-028",
+      "area": "arq-dados",
+      "front": "Por que o esquema estrela tem melhor desempenho que o floco de neve?",
+      "back": "Porque mantém as dimensões desnormalizadas, exigindo menos junções nas consultas analíticas.",
+      "sourceQuestionId": "prova07-q48"
+    },
+    {
+      "id": "fc-arq-dados-029",
+      "area": "arq-dados",
+      "front": "Qual esquema dimensional representa hierarquias explicitamente e facilita a manutenção das dimensões?",
+      "back": "O floco de neve (snowflake), por manter as dimensões normalizadas.",
+      "sourceQuestionId": "prova07-q48"
+    },
+    {
+      "id": "fc-arq-dados-030",
+      "area": "arq-dados",
+      "front": "Qual a diferença entre as abordagens top-down e bottom-up de construção de data warehouse?",
+      "back": "Top-down (Inmon) começa pelo DW corporativo normalizado e deriva data marts; bottom-up (Kimball) começa por data marts em esquema estrela, com menor investimento inicial.",
+      "sourceQuestionId": "prova07-q42"
+    },
+    {
+      "id": "fc-arq-dados-031",
+      "area": "arq-dados",
+      "front": "Como se chama a camada onde os dados extraídos do OLTP são temporariamente armazenados e transformados antes da carga no DW?",
+      "back": "Data Staging Area.",
+      "sourceQuestionId": "transp15-q22"
+    },
+    {
+      "id": "fc-arq-dados-032",
+      "area": "arq-dados",
+      "front": "Quais tarefas caracterizam o processo de ETL?",
+      "back": "Filtragem, integração, conversão, condensação e derivação dos dados de entrada, que podem vir de fontes internas e também externas ao OLTP.",
+      "sourceQuestionId": "prova07-q43"
+    },
+    {
+      "id": "fc-arq-dados-033",
+      "area": "arq-dados",
+      "front": "Nos 3 Vs do Big Data, a que se refere a velocidade?",
+      "back": "Ao alto fluxo (taxa) com que os dados são gerados e chegam ao sistema — não à rapidez da resposta das consultas.",
+      "sourceQuestionId": "psjpn2018-q42"
+    },
+    {
+      "id": "fc-arq-dados-034",
+      "area": "arq-dados",
+      "front": "O que diferencia o armazenamento em um data lake do de um data warehouse?",
+      "back": "O data lake guarda dados estruturados, semiestruturados e não estruturados no formato original, aplicando estrutura na leitura (schema-on-read); o DW exige a modelagem antes da carga (schema-on-write).",
+      "sourceQuestionId": "transp23e6-q52"
+    },
+    {
+      "id": "fc-arq-dados-035",
+      "area": "arq-dados",
+      "front": "Qual característica típica identifica um banco de dados orientado a documentos?",
+      "back": "Armazenar registros em JSON ou BSON, permitindo dados semiestruturados e esquema flexível.",
+      "sourceQuestionId": "transp23e6-q46"
+    },
+    {
+      "id": "fc-arq-dados-036",
+      "area": "arq-dados",
+      "front": "Qual cláusula da linguagem Cypher busca padrões em um banco de grafos?",
+      "back": "MATCH, combinada com RETURN (ex.: MATCH (p:Pessoa)-[:AMIGO_DE]->(a) WHERE p.nome = 'Alice' RETURN a). FIND não existe em Cypher.",
+      "sourceQuestionId": "transp23e6-q48"
+    },
+    {
+      "id": "fc-gestao-proj-001",
+      "area": "gestao-proj",
+      "front": "Em que a estrutura do PMBOK 7ª edição difere da 6ª?",
+      "back": "A 7ª é baseada em princípios: 12 princípios de gerenciamento e 8 domínios de desempenho. A 6ª e anteriores são baseadas em processos: 5 grupos de processos e 10 áreas de conhecimento."
+    },
+    {
+      "id": "fc-gestao-proj-002",
+      "area": "gestao-proj",
+      "front": "Quais são os 8 domínios de desempenho do PMBOK 7ª edição?",
+      "back": "Partes interessadas; equipe; abordagem de desenvolvimento e ciclo de vida; planejamento; trabalho do projeto; entrega; medição; incerteza."
+    },
+    {
+      "id": "fc-gestao-proj-003",
+      "area": "gestao-proj",
+      "front": "Quais são os cinco grupos de processos do PMBOK 6ª edição?",
+      "back": "Iniciação, planejamento, execução, monitoramento e controle, e encerramento.",
+      "sourceQuestionId": "transp23e6-q55"
+    },
+    {
+      "id": "fc-gestao-proj-004",
+      "area": "gestao-proj",
+      "front": "Qual grupo de processos monitora, rastreia e revisa o progresso e implementa medidas corretivas?",
+      "back": "O grupo de monitoramento e controle.",
+      "sourceQuestionId": "transp23e6-q70"
+    },
+    {
+      "id": "fc-gestao-proj-005",
+      "area": "gestao-proj",
+      "front": "Qual é a estrutura de ciclo de vida genérica de qualquer projeto segundo o PMBOK?",
+      "back": "Início do projeto, organização e preparação, execução do trabalho do projeto e encerramento do projeto.",
+      "sourceQuestionId": "prova6-q21"
+    },
+    {
+      "id": "fc-gestao-proj-006",
+      "area": "gestao-proj",
+      "front": "Como o PMBOK define projeto?",
+      "back": "Esforço temporário empreendido para criar um produto, serviço ou resultado exclusivo.",
+      "sourceQuestionId": "prova6-q21"
+    },
+    {
+      "id": "fc-gestao-proj-007",
+      "area": "gestao-proj",
+      "front": "Quais restrições fundamentais o PMBOK manda determinar e equilibrar desde as fases iniciais?",
+      "back": "Escopo, cronograma, custo, qualidade e recursos (com o risco permeando todas).",
+      "sourceQuestionId": "transp15-q66"
+    },
+    {
+      "id": "fc-gestao-proj-008",
+      "area": "gestao-proj",
+      "front": "Que documento autoriza formalmente um projeto e designa o gerente de projeto?",
+      "back": "O termo de abertura do projeto (project charter).",
+      "sourceQuestionId": "transp15-q62"
+    },
+    {
+      "id": "fc-gestao-proj-009",
+      "area": "gestao-proj",
+      "front": "Que informações a Declaração de Trabalho do Projeto deve referenciar?",
+      "back": "A necessidade de negócio, a descrição do escopo do produto e o plano estratégico da organização.",
+      "sourceQuestionId": "prova6-q22"
+    },
+    {
+      "id": "fc-gestao-proj-010",
+      "area": "gestao-proj",
+      "front": "O que é a EAP segundo o PMBOK?",
+      "back": "Uma representação hierárquica do escopo do trabalho do projeto, decomposto em partes menores e mais gerenciáveis.",
+      "sourceQuestionId": "transp23e6-q67"
+    },
+    {
+      "id": "fc-gestao-proj-011",
+      "area": "gestao-proj",
+      "front": "Que tipo de item deve ser usado como componente da EAP?",
+      "back": "Produtos, serviços ou resultados verificáveis, isto é, as entregas — e não riscos, custos, premissas ou nomes da equipe.",
+      "sourceQuestionId": "psjpn2018-q24"
+    },
+    {
+      "id": "fc-gestao-proj-012",
+      "area": "gestao-proj",
+      "front": "Em que nível da EAP fica o pacote de trabalho?",
+      "back": "No nível mais baixo de cada ramo, onde custo e duração podem ser estimados; ramos diferentes podem ter profundidades diferentes.",
+      "sourceQuestionId": "psjpn2018-q24"
+    },
+    {
+      "id": "fc-gestao-proj-013",
+      "area": "gestao-proj",
+      "front": "Qual processo formaliza a aceitação das entregas concluídas pelo cliente ou patrocinador?",
+      "back": "Validar (verificar) o escopo — típico de fim de fase e do encerramento sob contrato. Controlar a qualidade trata da conformidade técnica.",
+      "sourceQuestionId": "transp15-q67"
+    },
+    {
+      "id": "fc-gestao-proj-014",
+      "area": "gestao-proj",
+      "front": "O que o encerramento de um projeto produz?",
+      "back": "O aceite formal do patrocinador, a transição do produto/serviço/resultado final, o registro de lições aprendidas e a atualização dos ativos de processos organizacionais.",
+      "sourceQuestionId": "prova07-q21"
+    },
+    {
+      "id": "fc-gestao-proj-015",
+      "area": "gestao-proj",
+      "front": "O que é o caminho crítico de um projeto?",
+      "back": "O caminho mais longo do início ao fim da rede, com folga total zero; ele determina a duração mínima do projeto.",
+      "sourceQuestionId": "psjpn2018-q21"
+    },
+    {
+      "id": "fc-gestao-proj-016",
+      "area": "gestao-proj",
+      "front": "Se duas atividades atrasam 2 dias cada e apenas uma está no caminho crítico, quanto o projeto atrasa?",
+      "back": "2 dias. O atraso na atividade com folga é absorvido até o limite dessa folga, e só o atraso na atividade crítica empurra o término.",
+      "sourceQuestionId": "prova07-q14"
+    },
+    {
+      "id": "fc-gestao-proj-017",
+      "area": "gestao-proj",
+      "front": "Qual a fórmula do tempo esperado no PERT?",
+      "back": "te = (otimista + 4 x mais provável + pessimista) / 6, uma média ponderada de três estimativas probabilísticas.",
+      "sourceQuestionId": "prova07-q12"
+    },
+    {
+      "id": "fc-gestao-proj-018",
+      "area": "gestao-proj",
+      "front": "O que distingue o CPM do PERT?",
+      "back": "O CPM é determinístico e enfatiza a relação tempo-custo; o PERT trabalha com estimativas probabilísticas de duração.",
+      "sourceQuestionId": "prova07-q12"
+    },
+    {
+      "id": "fc-gestao-proj-019",
+      "area": "gestao-proj",
+      "front": "Qual a diferença entre crashing e fast tracking?",
+      "back": "Crashing adiciona recursos ao caminho crítico e aumenta o custo; fast tracking sobrepõe atividades sequenciais e aumenta o risco de retrabalho."
+    },
+    {
+      "id": "fc-gestao-proj-020",
+      "area": "gestao-proj",
+      "front": "Qual a fórmula da variação de custo (VC) no gerenciamento de valor agregado?",
+      "back": "VC = VA - CR (valor agregado menos custo real). Resultado negativo indica desempenho de custo desfavorável.",
+      "sourceQuestionId": "psjpn2018-q22"
+    },
+    {
+      "id": "fc-gestao-proj-021",
+      "area": "gestao-proj",
+      "front": "Qual a fórmula da variação de prazo (VPr) no gerenciamento de valor agregado?",
+      "back": "VPr = VA - VP (valor agregado menos valor planejado). É o distrator clássico das questões que pedem variação de custo.",
+      "sourceQuestionId": "psjpn2018-q22"
+    },
+    {
+      "id": "fc-gestao-proj-022",
+      "area": "gestao-proj",
+      "front": "Como se calculam os índices de desempenho de custo e de prazo?",
+      "back": "IDC (CPI) = VA/CR e IDP (SPI) = VA/VP. Valor menor que 1 indica desempenho desfavorável.",
+      "sourceQuestionId": "transp15-q62"
+    },
+    {
+      "id": "fc-gestao-proj-023",
+      "area": "gestao-proj",
+      "front": "Quais os pesos baixo/médio/alto do IFPUG para contagem de pontos de função?",
+      "back": "Entrada externa 3/4/6; saída externa 4/5/7; consulta externa 3/4/6; arquivo lógico interno 7/10/15; arquivo de interface externa 5/7/10.",
+      "sourceQuestionId": "transp15-q30"
+    },
+    {
+      "id": "fc-gestao-proj-024",
+      "area": "gestao-proj",
+      "front": "Na tabela de estruturas organizacionais do PMBOK, o que caracteriza a matricial forte?",
+      "back": "Autoridade do gerente de projeto moderada a alta, disponibilidade de recursos moderada a alta, orçamento controlado pelo gerente de projeto e papel em tempo integral.",
+      "sourceQuestionId": "prova6-q29"
+    },
+    {
+      "id": "fc-gestao-proj-025",
+      "area": "gestao-proj",
+      "front": "Em uma organização funcional, quem controla o orçamento do projeto?",
+      "back": "O gerente funcional. O gerente de projeto tem pouca ou nenhuma autoridade e atua em tempo parcial.",
+      "sourceQuestionId": "prova6-q29"
+    },
+    {
+      "id": "fc-gestao-proj-026",
+      "area": "gestao-proj",
+      "front": "Em qual estrutura matricial o gerente de projeto tem alto grau de influência sobre o projeto?",
+      "back": "Na matriz forte. Na fraca a autoridade é limitada e na balanceada é baixa a moderada; matriz invertida não existe no PMBOK.",
+      "sourceQuestionId": "transp23e6-q69"
+    },
+    {
+      "id": "fc-gestao-proj-027",
+      "area": "gestao-proj",
+      "front": "Quais são os três tipos de escritório de projetos (PMO)?",
+      "back": "De suporte (consultivo: modelos, treinamento, repositório), de controle (exige conformidade à metodologia) e diretivo (assume a gerência dos projetos)."
+    },
+    {
+      "id": "fc-gestao-proj-028",
+      "area": "gestao-proj",
+      "front": "Quais são as três responsabilidades (papéis) do Scrum?",
+      "back": "Product Owner, Scrum Master e Desenvolvedores.",
+      "sourceQuestionId": "transp23e6-q65"
+    },
+    {
+      "id": "fc-gestao-proj-029",
+      "area": "gestao-proj",
+      "front": "Quando ocorre a Retrospectiva da Sprint?",
+      "back": "Depois da Revisão da Sprint (Sprint Review) e antes do Planejamento da Sprint seguinte, encerrando o ciclo daquela Sprint.",
+      "sourceQuestionId": "transp15-q28"
+    },
+    {
+      "id": "fc-gestao-proj-030",
+      "area": "gestao-proj",
+      "front": "Qual escala numérica é usada nos baralhos de Planning Poker para pontos de história?",
+      "back": "Uma sequência de Fibonacci modificada: 0, 1, 2, 3, 5, 8, 13, 20, 40 e 100.",
+      "sourceQuestionId": "transp15-q31"
+    },
+    {
+      "id": "fc-gestao-proj-031",
+      "area": "gestao-proj",
+      "front": "Qual a diferença marcante entre Scrum e Kanban?",
+      "back": "O Scrum organiza o trabalho em iterações de duração fixa (sprints); o Kanban é fluxo contínuo, sem timebox fixo, governado por limites de trabalho em progresso (WIP).",
+      "sourceQuestionId": "transp23e6-q65"
+    },
+    {
+      "id": "fc-gestao-proj-032",
+      "area": "gestao-proj",
+      "front": "O que caracteriza um sistema de produção puxada?",
+      "back": "A produção só é liberada quando o elo seguinte sinaliza necessidade real da peça, em vez de produzir por previsão para manter recursos ocupados.",
+      "sourceQuestionId": "psjpn2018-q33"
+    },
+    {
+      "id": "fc-gestao-proj-033",
+      "area": "gestao-proj",
+      "front": "O que é o Program Increment (PI) no SAFe?",
+      "back": "Um período fixo de tempo (timebox, tipicamente 8 a 12 semanas) durante o qual um conjunto de equipes entrega valor ao cliente.",
+      "sourceQuestionId": "transp23e6-q68"
+    },
+    {
+      "id": "fc-gestao-proj-034",
+      "area": "gestao-proj",
+      "front": "O que é o ART no SAFe?",
+      "back": "Agile Release Train: o conjunto de equipes ágeis que planeja no PI Planning e entrega valor de forma sincronizada dentro de um PI.",
+      "sourceQuestionId": "transp23e6-q68"
+    },
+    {
+      "id": "fc-gestao-proj-035",
+      "area": "gestao-proj",
+      "front": "Qual a diferença entre gestão de projeto e gestão de produto?",
+      "back": "O projeto é temporário e termina na entrega, medido por escopo, prazo e custo; o produto tem ciclo de vida contínuo e é gerido por valor e resultados de negócio, sem data de encerramento."
+    },
+    {
+      "id": "fc-gestao-proj-036",
+      "area": "gestao-proj",
+      "front": "O que caracteriza o modelo de ciclo de vida em cascata?",
+      "back": "Fases executadas de forma sequencial e linear, cada uma dependendo da conclusão da anterior, com requisitos definidos no início.",
+      "sourceQuestionId": "transp23e6-q54"
+    }
+  ]
 }

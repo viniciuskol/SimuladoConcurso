@@ -1,0 +1,319 @@
+{
+  "areaId": "gestao-proj",
+  "resumo": "<p><strong>Onde a prova realmente mora.</strong> É a área mais numerosa do banco (35 questões) e 18 delas estão no item 3 do Anexo IV, 'processos, grupos de processos e áreas de conhecimento'. Depois vêm 'modelos e características' (6: PERT/CPM, pontos de função, cascata), 'PMBOK 7ª edição' (4), 'Scrum e Kanban' (4), 'projetos e a organização' (2) e SAFe (1). Duas consequências: você tem de saber a máquina de processos do PMBOK apesar de a 7ª edição ser baseada em princípios; e as provas de 2010/2011 citam o <strong>PMBOK 4ª edição</strong> com todas as letras — nunca responda por memória de edição sem ler qual o enunciado invoca.</p><p><strong>A armadilha das edições.</strong> O edital cobra ao mesmo tempo o item 2.4 (PMBOK 7ª edição) e o item 3 (processos, grupos de processos e áreas de conhecimento) — que é vocabulário da 6ª e anteriores. As duas estruturas coexistem na prova:</p><table><tr><th>PMBOK 6ª ed. (2017) e anteriores</th><th>PMBOK 7ª ed. (2021)</th></tr><tr><td>Baseado em <strong>processos</strong>: 49 processos, 5 grupos de processos, 10 áreas de conhecimento</td><td>Baseado em <strong>princípios</strong>: 12 princípios de gerenciamento de projetos e 8 domínios de desempenho</td></tr><tr><td>Grupos: iniciação, planejamento, execução, monitoramento e controle, encerramento</td><td>Domínios de desempenho: partes interessadas; equipe; abordagem de desenvolvimento e ciclo de vida; planejamento; trabalho do projeto; entrega; medição; incerteza</td></tr><tr><td>Áreas: integração, escopo, cronograma, custos, qualidade, recursos, comunicações, riscos, aquisições, partes interessadas</td><td>Eixos centrais: entrega de <strong>valor</strong>, sistema de entrega de valor, adaptação (tailoring), modelos/métodos/artefatos</td></tr><tr><td>Prescritivo por entradas, ferramentas e técnicas, saídas (ITTO)</td><td>Descritivo e agnóstico de abordagem: serve a preditivo, híbrido e ágil sem trocar de estrutura</td></tr></table><p>Os 12 princípios da 7ª edição, em uma palavra cada: guardião (stewardship), equipe, partes interessadas, valor, pensamento sistêmico, liderança, adaptação (tailoring), qualidade, complexidade, risco, adaptabilidade e resiliência, e possibilitar a mudança. O que <em>não</em> mudou entre edições: projeto é esforço <strong>temporário</strong> para criar produto, serviço ou resultado <strong>exclusivo</strong>; o ciclo de vida genérico é início do projeto, organização e preparação, execução do trabalho e encerramento; e as restrições a equilibrar são escopo, cronograma, custo, qualidade e recursos (com risco atravessando todas).</p><p><strong>Escopo e EAP.</strong> A declaração de escopo descreve projeto e produto, entregas, justificativas e objetivos quantificáveis. A EAP (WBS) é a <strong>decomposição hierárquica do escopo do trabalho</strong> orientada a <em>entregas verificáveis</em> — não a riscos, custos ou equipe. Ramos podem ter profundidades diferentes, subprojetos contratados entram na EAP e o <strong>pacote de trabalho</strong> fica no nível mais baixo de cada ramo. <em>Validar o escopo</em> é obter o aceite formal das entregas concluídas (fim de fase, encerramento sob contrato); não confundir com <em>controlar a qualidade</em>, que verifica conformidade técnica.</p><p><strong>Cronograma e custo.</strong> Caminho crítico é o caminho mais longo do início ao fim (folga total zero): some as durações de cada caminho completo e pegue o maior; atraso em atividade com folga só afeta o projeto no que excede a folga. PERT é probabilístico, com te=(O+4M+P)/6; CPM é determinístico e enfatiza tempo-custo. Compressão: <em>crashing</em> (mais recursos, mais custo) e <em>fast tracking</em> (paralelizar, mais risco). Valor agregado: VC = VA − CR, VPr = VA − VP, IDC = VA/CR, IDP = VA/VP; negativo (ou índice &lt; 1) é desfavorável. Pesos IFPUG baixo/médio/alto: EI 3/4/6, EO 4/5/7, EQ 3/4/6, ALI 7/10/15, AIE 5/7/10.</p><p><strong>Projetos e a organização.</strong> A tabela de estruturas organizacionais é cobrada literalmente:</p><table><tr><th>Estrutura</th><th>Autoridade do GP</th><th>Disponibilidade de recursos</th><th>Orçamento</th><th>Papel do GP</th></tr><tr><td>Funcional</td><td>Pouca ou nenhuma</td><td>Pouca ou nenhuma</td><td>Gerente funcional</td><td>Tempo parcial</td></tr><tr><td>Matricial fraca</td><td>Limitada</td><td>Limitada</td><td>Gerente funcional</td><td>Tempo parcial</td></tr><tr><td>Matricial balanceada</td><td>Baixa a moderada</td><td>Baixa a moderada</td><td>Misto</td><td>Tempo integral (equipe administrativa em tempo parcial)</td></tr><tr><td>Matricial forte</td><td>Moderada a alta</td><td>Moderada a alta</td><td>Gerente de projetos</td><td>Tempo integral</td></tr><tr><td>Projetizada</td><td>Alta a quase total</td><td>Alta a quase total</td><td>Gerente de projetos</td><td>Tempo integral</td></tr></table><p>O <strong>escritório de projetos (PMO)</strong> tem três tipos: de suporte (modelos, treinamento, repositório; controle baixo), de controle (exige conformidade à metodologia) e diretivo (assume a gerência dos projetos; controle alto). Hierarquia: portfólio alinha à estratégia, programa reúne projetos com benefícios interdependentes, projeto entrega o resultado.</p><p><strong>Ágil.</strong> Scrum: três responsabilidades (Product Owner, Scrum Master, Desenvolvedores), cinco eventos (Sprint, Planning, Daily de 15 minutos, Review, Retrospectiva) e três artefatos com seus compromissos (Product Backlog/Meta do Produto, Sprint Backlog/Meta da Sprint, Incremento/Definição de Pronto). A Retrospectiva vem <strong>depois</strong> da Review e antes do Planning da Sprint seguinte. Estimativa por pontos de história com Planning Poker em escala de Fibonacci modificada (0,1,2,3,5,8,13,20,40,100). Kanban: visualizar o fluxo, <strong>limitar o WIP</strong>, gerenciar o fluxo, políticas explícitas, laços de feedback e melhoria contínua; sem sprints, com métricas de lead time, cycle time e throughput; é sistema <em>puxado</em> — produz quando o elo seguinte sinaliza necessidade, ao contrário do empurrado, baseado em previsão. SAFe: o <strong>ART (Agile Release Train)</strong> planeja no PI Planning e entrega valor dentro do <strong>PI (Program/Planning Increment)</strong>, timebox de tipicamente 8 a 12 semanas, encerrado no Inspect &amp; Adapt.</p><p><strong>Projeto x produto.</strong> Projeto é temporário e termina na entrega, otimizando escopo, prazo e custo; produto tem ciclo de vida contínuo e é gerido por valor e resultados de negócio (roadmap, backlog, métricas de uso), sem data de encerramento. O Product Owner responde pelo valor do produto; o gerente de projeto, pela entrega do esforço. Quando um trabalho novo não se sobrepõe ao que está em curso e exige competências distintas, a resposta do PMBOK é abrir um <strong>novo projeto com termo de abertura próprio</strong>.</p>",
+  "cheatsheet": [
+    {
+      "heading": "PMBOK 7 (2021) — o que decorar",
+      "items": [
+        "Estrutura: 12 PRINCÍPIOS + 8 DOMÍNIOS DE DESEMPENHO (não mais grupos de processos e áreas de conhecimento).",
+        "8 domínios: partes interessadas; equipe; abordagem de desenvolvimento e ciclo de vida; planejamento; trabalho do projeto; entrega; medição; incerteza.",
+        "12 princípios: guardião (stewardship); equipe; partes interessadas; valor; pensamento sistêmico; liderança; adaptação (tailoring); qualidade; complexidade; risco; adaptabilidade e resiliência; possibilitar a mudança.",
+        "Eixos: entrega de valor (sistema de entrega de valor), tailoring, modelos/métodos/artefatos.",
+        "É descritiva e agnóstica: serve a preditivo, híbrido e ágil."
+      ]
+    },
+    {
+      "heading": "PMBOK 6 e anteriores — a máquina de processos",
+      "items": [
+        "5 grupos de processos: iniciação, planejamento, execução, monitoramento e controle, encerramento. 10 áreas de conhecimento, 49 processos (6ª ed.).",
+        "10 áreas: integração, escopo, cronograma, custos, qualidade, recursos, comunicações, riscos, aquisições, partes interessadas.",
+        "Monitoramento e controle é o grupo que acompanha, revisa e regula o progresso e aplica ação corretiva.",
+        "Encerramento: aceite do patrocinador, transição do produto/serviço/resultado, lições aprendidas, atualização dos ativos de processos organizacionais.",
+        "Ciclo de vida genérico (vale em qualquer edição): início do projeto → organização e preparação → execução do trabalho → encerramento.",
+        "Termo de abertura (project charter) autoriza formalmente o projeto e designa o gerente. Declaração de trabalho referencia necessidade de negócio, descrição do escopo do produto e plano estratégico.",
+        "Restrições a equilibrar: escopo, cronograma, custo, qualidade e recursos (com risco permeando)."
+      ]
+    },
+    {
+      "heading": "Escopo e EAP",
+      "items": [
+        "EAP = decomposição hierárquica do escopo do TRABALHO, orientada a entregas/produtos verificáveis.",
+        "Pacote de trabalho fica no nível mais baixo do ramo (não obrigatoriamente no 2º nível); ramos podem ter profundidades diferentes.",
+        "Subprojeto contratado entra na EAP; risco, orçamento, premissas e equipe NÃO são conteúdo da EAP.",
+        "Regra dos 100%: a EAP contém todo o escopo e só o escopo.",
+        "Validar o escopo = aceite formal das entregas pelo cliente/patrocinador (fim de fase, encerramento).",
+        "Controlar a qualidade = conformidade técnica. Não confundir com validar escopo.",
+        "Declaração de escopo: descrição do projeto e do produto, entregas, justificativas, objetivos quantificáveis, critérios de aceitação, exclusões."
+      ]
+    },
+    {
+      "heading": "Cronograma: caminho crítico, PERT e CPM",
+      "items": [
+        "Caminho crítico = caminho mais longo do início ao fim; folga total zero. Sempre inclui a primeira e a última atividade.",
+        "Método: liste todos os caminhos completos, some as durações, pegue o maior.",
+        "Folga total = data mais tarde − data mais cedo. Atraso menor que a folga não afeta o término.",
+        "PERT: probabilístico, três estimativas; te = (O + 4M + P)/6; desvio-padrão = (P − O)/6.",
+        "CPM: determinístico, foco na relação tempo-custo.",
+        "Compressão: crashing = mais recursos, mais custo; fast tracking = paralelizar, mais risco.",
+        "Análise da rede do cronograma engloba caminho crítico, cadeia crítica, cenário e-se (what-if) e nivelamento/otimização de recursos."
+      ]
+    },
+    {
+      "heading": "Valor agregado (EVM) e medição",
+      "items": [
+        "VP (PV) = planejado; VA (EV) = agregado (trabalho realmente feito, medido em valor); CR (AC) = custo real.",
+        "VC = VA − CR (custo). VPr = VA − VP (prazo). Negativo = desfavorável.",
+        "IDC (CPI) = VA/CR. IDP (SPI) = VA/VP. Menor que 1 = desfavorável.",
+        "Pegadinha: trocar VC por VPr. Se a conta pedir CUSTO, o CR entra; se pedir PRAZO, o VP entra.",
+        "Pontos de função IFPUG (baixo/médio/alto): EI 3/4/6 | EO 4/5/7 | EQ 3/4/6 | ALI 7/10/15 | AIE 5/7/10.",
+        "Eficiência de mão de obra = horas realizadas / horas planejadas."
+      ]
+    },
+    {
+      "heading": "Estruturas organizacionais e PMO",
+      "items": [
+        "Funcional: autoridade do GP pouca ou nenhuma; orçamento com o gerente funcional; GP em tempo parcial.",
+        "Matricial fraca: autoridade limitada (GP mais coordenador/facilitador); orçamento com o gerente funcional.",
+        "Matricial balanceada: autoridade baixa a moderada; orçamento misto; equipe administrativa em tempo parcial.",
+        "Matricial forte: autoridade moderada a alta; disponibilidade de recursos moderada a alta; orçamento com o GP.",
+        "Projetizada: autoridade alta a quase total; GP em tempo integral e dedicado.",
+        "PMO de suporte (consultivo, modelos e treinamento) | de controle (exige conformidade) | diretivo (assume a gerência dos projetos).",
+        "Portfólio (alinhamento estratégico) > programa (benefícios interdependentes) > projeto (entrega)."
+      ]
+    },
+    {
+      "heading": "Scrum",
+      "items": [
+        "Responsabilidades: Product Owner (valor e Product Backlog), Scrum Master (eficácia do Scrum), Desenvolvedores.",
+        "Eventos: Sprint (contêiner, até 1 mês), Sprint Planning, Daily Scrum (15 min), Sprint Review, Sprint Retrospective.",
+        "Ordem no fim da Sprint: Review → RETROSPECTIVA → Planning da próxima Sprint.",
+        "Artefatos e compromissos: Product Backlog/Meta do Produto; Sprint Backlog/Meta da Sprint; Incremento/Definição de Pronto.",
+        "Estimativa: pontos de história com Planning Poker em Fibonacci modificada (0,1,2,3,5,8,13,20,40,100).",
+        "Acompanhamento típico: burndown/burnup e velocidade da equipe."
+      ]
+    },
+    {
+      "heading": "Kanban, sistema puxado e ágil em escala",
+      "items": [
+        "Práticas: visualizar o fluxo; limitar o WIP; gerenciar o fluxo; tornar políticas explícitas; laços de feedback; melhorar colaborativamente.",
+        "Sem iterações de duração fixa: fluxo contínuo, entrega sob demanda.",
+        "Métricas: lead time, cycle time, throughput, diagrama de fluxo cumulativo. Lei de Little: WIP = throughput x lead time.",
+        "Puxado (pull): produz só quando o elo seguinte sinaliza necessidade real. Empurrado (push): produz por previsão, para manter recursos ocupados.",
+        "Scrum x Kanban: sprint de duração fixa e papéis definidos (Scrum) x fluxo contínuo sem timebox nem papéis obrigatórios (Kanban).",
+        "ART (Agile Release Train): conjunto de equipes ágeis que entregam valor de forma sincronizada.",
+        "PI (Program/Planning Increment): timebox fixo, tipicamente 8 a 12 semanas, no qual o ART entrega valor ao cliente.",
+        "PI Planning abre o PI (planejamento conjunto de todas as equipes do trem); Inspect &amp; Adapt o encerra.",
+        "Papéis típicos: Release Train Engineer, Product Management, System Architect, Business Owners.",
+        "Níveis/configurações: Essential, Large Solution, Portfolio e Full.",
+        "Outras abordagens de escala citadas na literatura: LeSS, Nexus, Scrum@Scale, Spotify (modelo, não framework)."
+      ]
+    },
+    {
+      "heading": "Projeto x produto",
+      "items": [
+        "Projeto: temporário, escopo definido, termina na entrega; sucesso medido por escopo/prazo/custo/valor entregue.",
+        "Produto: ciclo de vida contínuo (concepção, crescimento, maturidade, declínio); sucesso medido por resultados de negócio e uso.",
+        "Gerente de projeto entrega o esforço; product owner/product manager decide o que maximiza valor e evolui o roadmap.",
+        "Trabalho novo, sem sobreposição e com competências distintas: abre-se NOVO projeto (novo termo de abertura), não se replaneja o atual.",
+        "Cascata: fases sequenciais e lineares, cada uma dependendo da conclusão da anterior; requisitos definidos no início.",
+        "Ágil/iterativo: aceita mudança de requisitos, entrega incrementos; híbrido combina os dois."
+      ]
+    }
+  ],
+  "mentalModels": [
+    {
+      "title": "Duas gramáticas do PMBOK, uma pergunta antes de responder",
+      "body": "Antes de escolher a alternativa, identifique a gramática que o enunciado usa. Se ele fala em processo, entrada, saída, ferramenta, grupo ou área de conhecimento, você está na 6ª edição ou anterior — responda com a máquina de processos. Se fala em princípio, domínio de desempenho, valor ou tailoring, é a 7ª. Provas de 2010/2011 dizem 'PMBOK 4ª edição' com todas as letras: aceite o vocabulário da época e não corrija a banca."
+    },
+    {
+      "title": "EAP é substantivo, cronograma é verbo",
+      "body": "A EAP lista COISAS entregues (módulo migrado, manual publicado, ambiente configurado); o cronograma lista AÇÕES com duração e sequência. Toda alternativa que colocar sequência, dependência, risco, custo ou equipe dentro da EAP está descrevendo outro artefato."
+    },
+    {
+      "title": "Caminho crítico: o maior sempre ganha, e folga absorve atraso",
+      "body": "Some cada caminho completo do início ao fim e escolha o maior — é o crítico, com folga zero. Se a questão atrasar duas atividades, só a que está no caminho crítico empurra o projeto; a outra é absorvida até o limite da folga. É por isso que 2 + 2 dias de atraso pode dar apenas 2 dias no total."
+    },
+    {
+      "title": "VC olha o bolso, VPr olha o calendário",
+      "body": "Duas fórmulas, um único ponto de referência: o VA. Custo compara com o dinheiro que saiu (VC = VA − CR); prazo compara com o dinheiro que devia ter sido agregado (VPr = VA − VP). Sinal negativo é sempre notícia ruim. A banca já ofereceu as duas contas nas alternativas e ainda o valor certo com o sinal invertido."
+    },
+    {
+      "title": "Puxar é responder ao sinal; empurrar é responder à previsão",
+      "body": "Kanban e JIT liberam trabalho quando o próximo elo pede (sinal real de necessidade). MRP e produção empurrada liberam trabalho porque a previsão diz que vai vender e porque há gente e máquina ociosas. Qualquer alternativa com 'horizonte de planejamento de um ano dividido em semanas' ou 'manter operários e equipamentos ocupados' descreve o empurrado."
+    }
+  ],
+  "patterns": [
+    {
+      "title": "Mais da metade das questões cobra a máquina de processos do PMBOK — inclusive edições antigas",
+      "howToSpot": "As provas de 2010 e 2011 pedem entradas, saídas e ferramentas de processos específicos (Coletar os Requisitos, Mobilizar a Equipe, Desenvolver o Cronograma, Encerrar o Projeto ou Fase, Controle Integrado de Mudanças) citando o PMBOK 4ª edição. Os distratores deslocam um item verdadeiro para o processo errado: decomposição (que é de Criar a EAP) aparece em Coletar os Requisitos; análise da variação (que é de controle) aparece em coleta; pedido de mudança aparece como entrada quando é saída. A defesa é saber a qual processo pertence cada ferramenta, mais do que decorar listas soltas.",
+      "evidence": [
+        "prova6-q22",
+        "prova6-q26",
+        "prova6-q27",
+        "prova6-q28",
+        "prova6-q30",
+        "prova6-q24"
+      ]
+    },
+    {
+      "title": "Bloco de cálculo garantido: caminho crítico, valor agregado, pontos de função e razão simples",
+      "howToSpot": "Em toda prova aparecem uma ou duas questões de conta pura. Os formatos vistos: tabela de atividades com predecessores para achar caminho crítico (e o efeito de atrasos com folga), VP/VA/CR para calcular variação de custo, tabela IFPUG baixo/médio/alto para pontos de função não ajustados, e razão de horas realizadas sobre planejadas. São pontos altamente previsíveis — vale decorar os pesos do IFPUG e as quatro fórmulas do EVM antes da prova.",
+      "evidence": [
+        "psjpn2018-q21",
+        "psjpn2018-q22",
+        "transp15-q30",
+        "transp15-q64",
+        "prova07-q14"
+      ]
+    },
+    {
+      "title": "A tabela de estruturas organizacionais é cobrada célula por célula",
+      "howToSpot": "A banca escolhe uma célula da tabela de influência organizacional e monta cinco afirmações, quatro delas com a célula trocada: orçamento controlado pelo GP na funcional, autoridade total na matricial fraca, pessoal administrativo em tempo integral na balanceada, GP em tempo parcial na projetizada. Em 2023 a mesma tabela voltou de forma direta ('alto grau de influência do gerente de projeto' = matriz forte), com 'matriz invertida' como alternativa inexistente. Decore a progressão: funcional → fraca → balanceada → forte → projetizada, com autoridade e recursos crescendo monotonicamente.",
+      "evidence": [
+        "prova6-q29",
+        "transp23e6-q69"
+      ]
+    },
+    {
+      "title": "EAP é assunto perene, sempre pela definição estrutural",
+      "howToSpot": "Três provas diferentes cobraram a EAP: o que se insere nela (escopo e entregas), o que a caracteriza (representação hierárquica do escopo do trabalho, dividido em partes menores e gerenciáveis) e o que é boa prática (componentes são produtos, serviços ou resultados verificáveis). Os distratores oferecem artefatos vizinhos — diagrama de rede, plano estratégico, matriz de riscos, técnica de estimativa de custos — ou regras falsas: profundidade igual em todos os ramos, pacote de trabalho no segundo nível, subprojeto contratado fora da EAP.",
+      "evidence": [
+        "psjpn2018-q24",
+        "transp15-q63",
+        "transp23e6-q67"
+      ]
+    },
+    {
+      "title": "Encerramento e aceite formal aparecem em quase toda prova",
+      "howToSpot": "O eixo é sempre 'quem aceita o quê'. Verificar/validar o escopo é obter o aceite formal do cliente ou patrocinador para as entregas que atendem aos critérios de aceitação; o encerramento produz a transição do produto, as lições aprendidas e a atualização dos ativos de processos organizacionais. Nas alternativas erradas entram controle de custos, qualidade dos testes, matriz de responsabilidades e pagamento a fornecedor — assuntos reais, mas de outros processos. Em cenário de fim de fase, a resposta é Validar o Escopo, não Controle de Qualidade nem Análise de Riscos.",
+      "evidence": [
+        "prova07-q15",
+        "prova07-q21",
+        "transp15-q67",
+        "prova6-q27"
+      ]
+    },
+    {
+      "title": "Scrum e Kanban são cobrados por inversão de papéis e por ordem de eventos",
+      "howToSpot": "O formato é sempre um par trocado: 'Kanban enfatiza reuniões diárias enquanto o Scrum não usa', 'Kanban exige Product Owner e o Scrum não', 'Scrum usa listas individuais e Kanban usa burndown'. A resposta correta é a única em que cada característica está com o seu dono — e a diferença canônica é sprint de duração fixa (Scrum) contra fluxo contínuo sem timebox (Kanban). No caso dos eventos, a pergunta é posicional: a Retrospectiva vem depois da Review e antes do Planning da Sprint seguinte, e o distrator troca por Daily.",
+      "evidence": [
+        "transp23e6-q65",
+        "transp15-q28",
+        "transp15-q31",
+        "psjpn2018-q33"
+      ]
+    },
+    {
+      "title": "Questão-cenário em que a resposta é o nome do processo formal",
+      "howToSpot": "O enunciado descreve uma situação de gestão (chegou trabalho novo sem sobreposição e com outra competência técnica; a fase de construção acabou adiantada; a empresa reage à entrada de um concorrente mais barato) e pede a melhor atitude ou a classificação correta. A resposta é sempre o instrumento formal do PMBOK: desenvolver o termo de abertura (trabalho novo é projeto novo), validar o escopo (fim de fase), modificação de estratégia de negócio (contexto de iniciação). Os distratores propõem replanejar custo ou cronograma do projeto atual — atalho errado quando o novo trabalho tem identidade própria.",
+      "evidence": [
+        "transp15-q62",
+        "transp15-q67",
+        "psjpn2018-q25"
+      ]
+    },
+    {
+      "title": "Alternativas longas com absurdo plantado nas questões conceituais",
+      "howToSpot": "Nas questões abertas sobre conceitos de gerência ('tem-se que...', 'um escopo de projeto é...'), a banca escreve parágrafos longos e enterra neles uma afirmação insustentável: novos requisitos 'não influenciam em nada' o projeto, diferenças de produtividade explicadas por 'aspectos étnicos', gerente de projeto 'sem precisar saber negociar', escopo que 'ignora requisitos do usuário final', gerente funcional liberando recursos 'em empresa projetizada'. Marque a alternativa sóbria e descritiva — normalmente a que fala de aceite, lições aprendidas e ativos de processos organizacionais.",
+      "evidence": [
+        "prova07-q20",
+        "prova07-q21",
+        "prova07-q12",
+        "transp23e6-q54"
+      ]
+    }
+  ],
+  "tactics": [
+    {
+      "title": "Leia primeiro qual edição o enunciado invoca",
+      "body": "Circule a expressão 'PMBOK 4ª edição', 'segundo o PMBOK' ou 'princípios/domínios de desempenho'. Se a prova citar edição antiga e você responder com a lógica da 7ª (ou vice-versa), erra questão que sabia. Quando o enunciado só diz 'segundo o PMBOK' e o conteúdo é ITTO ou grupo de processos, responda pelo modelo de processos; se o conteúdo é princípio, valor ou tailoring, responda pela 7ª."
+    },
+    {
+      "title": "Nas questões de caminho crítico, escreva os caminhos antes de olhar as alternativas",
+      "body": "Liste todos os caminhos completos do início ao fim com suas somas (ex.: S-T-W-Z = 17; S-Y-Z = 16; S-V-X-Z = 15). Isso já elimina as alternativas que apresentam trechos incompletos (sem a primeira ou a última atividade), que são distratores frequentes, e dá de graça a resposta da pergunta de atraso: só o atraso na atividade crítica soma ao prazo total."
+    },
+    {
+      "title": "Decore as quatro fórmulas do EVM e os pesos do IFPUG",
+      "body": "São dois blocos pequenos que garantem pontos quase certos: VC = VA − CR, VPr = VA − VP, IDC = VA/CR, IDP = VA/VP; e EI 3/4/6, EO 4/5/7, EQ 3/4/6, ALI 7/10/15, AIE 5/7/10. Ao calcular EVM, confira o sinal antes de marcar: a banca oferece o mesmo número com sinal invertido e a variação do outro indicador."
+    },
+    {
+      "title": "Em questões de Scrum/Kanban, cheque a quem pertence cada metade da frase",
+      "body": "As alternativas são pares 'X faz A, enquanto Y faz B'. Anote o dono real de A e de B: daily = Scrum, Product Owner = Scrum, burndown = Scrum, limite de WIP e fluxo contínuo = Kanban, sprint = Scrum. Se qualquer metade estiver com o dono errado, a alternativa cai inteira — não existe alternativa meio certa nesse formato."
+    },
+    {
+      "title": "Reconstrua a tabela organizacional na folha de rascunho",
+      "body": "No início da prova, escreva a sequência funcional → matricial fraca → balanceada → forte → projetizada com autoridade e disponibilidade de recursos crescendo. Qualquer questão de estrutura, PMO ou influência do gerente se resolve consultando essa linha, e você evita o erro de dar autoridade alta à matricial fraca ou orçamento ao GP na funcional."
+    },
+    {
+      "title": "Cubra explicitamente os subtópicos que o banco ainda não cobrou",
+      "body": "SAFe apareceu uma única vez (Program Increment), Kanban quase sempre por comparação com Scrum, e o PMO, produto x projeto e os 12 princípios/8 domínios da 7ª edição ainda não apareceram. Como o edital de 2026 lista todos, prepare uma definição de uma frase para cada: PI e ART, os três tipos de PMO, a diferença projeto/produto e o par 12 princípios + 8 domínios. É o formato exato que a banca usou em 2023 para os assuntos novos."
+    }
+  ],
+  "trapWords": [
+    {
+      "term": "PMBOK 7ª edição",
+      "confusedWith": "PMBOK 6ª edição e anteriores",
+      "distinction": "A 7ª é baseada em princípios: 12 princípios + 8 domínios de desempenho. A 6ª e anteriores são baseadas em processos: 5 grupos de processos + 10 áreas de conhecimento (49 processos na 6ª). O edital cobra as duas."
+    },
+    {
+      "term": "grupo de processos",
+      "confusedWith": "área de conhecimento",
+      "distinction": "Grupo é o momento lógico (iniciação, planejamento, execução, monitoramento e controle, encerramento). Área é o tema gerenciado (escopo, custos, riscos...). Cada processo pertence a um grupo E a uma área."
+    },
+    {
+      "term": "validar o escopo",
+      "confusedWith": "controlar a qualidade",
+      "distinction": "Validar o escopo obtém o ACEITE FORMAL do cliente/patrocinador para as entregas. Controlar a qualidade verifica a CONFORMIDADE TÉCNICA. A qualidade vem antes; o aceite fecha a fase."
+    },
+    {
+      "term": "termo de abertura (project charter)",
+      "confusedWith": "declaração de escopo",
+      "distinction": "O termo de abertura autoriza o projeto e designa o gerente, em alto nível. A declaração de escopo detalha entregas, critérios de aceitação e exclusões, já no planejamento."
+    },
+    {
+      "term": "EAP (WBS)",
+      "confusedWith": "cronograma / diagrama de rede",
+      "distinction": "A EAP decompõe o ESCOPO em entregas verificáveis, sem prazo nem sequência. O diagrama de rede e o cronograma tratam de atividades, dependências e datas."
+    },
+    {
+      "term": "variação de custo (VC)",
+      "confusedWith": "variação de prazo (VPr)",
+      "distinction": "VC = VA − CR (envolve o custo real). VPr = VA − VP (envolve o planejado). Confundir as duas é o distrator número um das questões de valor agregado."
+    },
+    {
+      "term": "PERT",
+      "confusedWith": "CPM",
+      "distinction": "PERT é probabilístico (otimista, mais provável, pessimista, média ponderada). CPM é determinístico e enfatiza a relação tempo-custo. Nenhum dos dois ignora a estimativa pessimista."
+    },
+    {
+      "term": "crashing",
+      "confusedWith": "fast tracking",
+      "distinction": "Crashing adiciona recursos ao caminho crítico e aumenta o CUSTO. Fast tracking sobrepõe atividades que eram sequenciais e aumenta o RISCO/retrabalho."
+    },
+    {
+      "term": "matricial fraca",
+      "confusedWith": "matricial forte",
+      "distinction": "Na fraca o gerente de projeto tem autoridade limitada (papel de coordenador/facilitador) e o orçamento fica com o gerente funcional. Na forte, autoridade moderada a alta e o orçamento é do gerente de projeto."
+    },
+    {
+      "term": "PMO diretivo",
+      "confusedWith": "PMO de suporte",
+      "distinction": "O diretivo assume a gerência dos projetos (controle alto). O de suporte é consultivo: fornece modelos, treinamento e repositório de lições aprendidas (controle baixo). No meio fica o de controle, que exige conformidade à metodologia."
+    },
+    {
+      "term": "Sprint Review",
+      "confusedWith": "Sprint Retrospective",
+      "distinction": "Review inspeciona o INCREMENTO com as partes interessadas e adapta o Product Backlog. Retrospectiva inspeciona o PROCESSO (pessoas, interações, ferramentas) e ocorre depois da Review, antes do Planning seguinte."
+    },
+    {
+      "term": "Product Owner",
+      "confusedWith": "Scrum Master / gerente de projeto",
+      "distinction": "O PO responde pelo valor do produto e pelo Product Backlog. O Scrum Master é responsável pela eficácia do Scrum (não é chefe da equipe). O gerente de projeto responde pela entrega do esforço temporário — papel que o Scrum não define."
+    },
+    {
+      "term": "sistema puxado (pull)",
+      "confusedWith": "sistema empurrado (push)",
+      "distinction": "Puxado libera produção quando o elo seguinte sinaliza necessidade real (Kanban, JIT). Empurrado produz por previsão e para manter recursos ocupados (MRP, planejamento agregado com horizonte fixo)."
+    },
+    {
+      "term": "gestão de projeto",
+      "confusedWith": "gestão de produto",
+      "distinction": "Projeto é temporário e termina na entrega, medido por escopo/prazo/custo. Produto tem ciclo de vida contínuo, medido por resultado de negócio e uso, e evolui por roadmap sem data de encerramento."
+    },
+    {
+      "term": "modelo em cascata",
+      "confusedWith": "modelo iterativo/ágil",
+      "distinction": "Cascata é sequencial e linear: cada fase depende da conclusão da anterior e os requisitos são fechados no início. Iterativo/ágil aceita mudança de requisitos e entrega incrementos em ciclos curtos."
+    }
+  ]
+}
