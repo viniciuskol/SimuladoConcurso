@@ -89,13 +89,14 @@
       "heading": "Ataques e defesas correspondentes",
       "items": [
         "Phishing: isca em massa. Spear phishing: alvo específico. Whaling: executivo. Vishing (voz) e smishing (SMS). Defesa central é conscientização, não ferramenta.",
+        "Phishing engana com mensagem/site falso; pharming corrompe a resolução de nomes (DNS ou arquivo hosts) e leva a vítima ao site falso mesmo digitando o endereço certo — sem clique em link. Defesa: DNSSEC, TLS com validação de certificado e proteção do resolvedor.",
         "Engenharia social explora a pessoa, não a máquina: pretexto, urgência, autoridade, reciprocidade.",
         "DoS exaure recurso a partir de uma origem; DDoS usa muitas origens (botnet). Ataques de amplificação/reflexão abusam de serviços UDP como DNS e NTP.",
         "SQL injection: entrada não tratada concatenada na consulta. Defesa: consulta parametrizada/prepared statement, validação e menor privilégio no banco.",
         "XSS: script injetado executa no navegador da vítima (refletido, armazenado ou baseado em DOM). Defesa: codificação de saída e CSP.",
         "CSRF: induz o navegador já autenticado a enviar requisição indesejada. Defesa: token anti-CSRF e cookie SameSite.",
         "Path traversal: '../' para sair do diretório permitido. MITM: interceptação no meio da comunicação. Defesa: TLS com validação de certificado.",
-        "Força bruta e ataque de dicionário atacam a senha; credential stuffing reusa credenciais vazadas. Defesa: MFA, bloqueio progressivo, hash de senha com sal e função lenta.",
+        "Força bruta testa exaustivamente todas as combinações possíveis; ataque de dicionário testa uma lista de senhas prováveis (palavras, vazamentos, variações), sendo muito mais rápido; credential stuffing reusa pares usuário/senha já vazados. Defesa: MFA, bloqueio progressivo, hash de senha com sal e função lenta.",
         "Zero-day: vulnerabilidade explorada antes de existir correção — assinatura não pega; detecção por comportamento e virtual patching ajudam."
       ]
     },
@@ -146,7 +147,7 @@
     },
     {
       "title": "Quem classifica o dado é o dono do dado",
-      "body": "Nas duas questões de classificação da informação a resposta foi a mesma ideia: classificar é DECISÃO DE NEGÓCIO, tomada pelo proprietário/gestor da informação, com papel ativo do corpo gerencial. TI, o profissional de segurança e a consultoria externa apenas implementam os controles que decorrem da classificação. Sempre que uma alternativa entregar a decisão ao coordenador de TI, ao agente de segurança física ou a um terceiro contratado, ela é falsa."
+      "body": "Em transp15-q45 a resposta é literal: classificar é DECISÃO DE NEGÓCIO, do proprietário/gestor da informação, com papel ativo do corpo gerencial. Em psjpn2018-q65 a correta é outra diretriz da norma (rotular informações e saídas dos sistemas conforme valor e sensibilidade), mas o mesmo princípio elimina os distratores que entregam a decisão à alta gerência ou ao setor de TI. TI, segurança e consultoria externa apenas implementam os controles que decorrem da classificação."
     },
     {
       "title": "27001 é a régua, 27002 é o cardápio",
@@ -191,8 +192,8 @@
       ]
     },
     {
-      "title": "Distratores com nomes que não existem no vocabulário da área",
-      "howToSpot": "A banca preenche alternativas com termos plausíveis mas inexistentes (ou existentes com outro sentido): 'Unique Login Control', 'Unique-Auth Database', 'One-Time Token' (psjpn2018-q66); 'reflexão segura' e 'inundação segura' como técnicas de VPN (transp15-q48); 'Rabbit' como tipo de malware (transp15-q49); 'VAST' como técnica de teste de segurança (transp23e6-q38); 'verificação de vulnerabilidade' e 'comunicação entre processos' como táticas do ATT&CK (transp23e6-q40). Se você nunca viu o termo em material sério, provavelmente ele não existe — e isso costuma eliminar duas alternativas de graça.",
+      "title": "Distratores plausíveis: uns realmente inexistentes, outros existentes na categoria errada",
+      "howToSpot": "A banca preenche alternativas com termos plausíveis: uns realmente inexistentes — 'Unique Login Control', 'Unique-Auth Database' (psjpn2018-q66), 'reflexão segura' e 'inundação segura' como técnicas de VPN (transp15-q48), 'VAST' como técnica de teste de segurança (transp23e6-q38) —, outros EXISTENTES, mas na categoria errada: em transp23e6-q40, 'manipulação de conta', 'evasão do depurador', 'comunicação entre processos' e 'verificação de vulnerabilidade' são todos TÉCNICAS do ATT&CK, e a única TÁTICA (objetivo) é 'acesso à credencial'. Regra prática: primeiro elimine o que não existe; depois, no ATT&CK, elimine o que existe mas é técnica quando se pede tática. Mesmo cuidado com 'Rabbit' em transp15-q49: o termo circula na taxonomia clássica de malware, mas o comportamento descrito no enunciado (engajar a máquina em uma armada) é de bot.",
       "evidence": [
         "psjpn2018-q66",
         "transp15-q48",
@@ -227,7 +228,7 @@
     },
     {
       "title": "2023 espalhou a área por sete subtópicos diferentes",
-      "howToSpot": "As 8 questões de 2023 cobriram desenvolvimento seguro (SDL/DAST), IAM com ABAC, MITRE ATT&CK, envelope digital, NIST SP 800-61, SIEM, ISO 27002 e IoT — praticamente uma por subtópico, sem repetição. Compare com 2010/2011, em que 6 de 6 eram norma. A leitura é direta: o Anexo IV atual (com CASB, EDR, SAST/DAST/IAST, threat hunting, STRIDE, ATT&CK, Zero Trust, nuvem, IoT) é grande e a banca está passeando por ele em largura, uma questão por tema. Cobertura ampla e superficial vence estudo profundo em poucos tópicos.",
+      "howToSpot": "As 8 questões de 2023 cobriram sete subtópicos: desenvolvimento seguro (SDL/DAST), IAM com ABAC, MITRE ATT&CK, NIST SP 800-61, SIEM, IoT e — o único repetido — 9.19, com envelope digital e ISO 27002. Compare com 2010/2011, em que 6 de 6 eram norma. A leitura é direta: o Anexo IV atual (com CASB, EDR, SAST/DAST/IAST, threat hunting, STRIDE, ATT&CK, Zero Trust, nuvem, IoT) é grande e a banca está passeando por ele em largura, uma questão por tema. Cobertura ampla e superficial vence estudo profundo em poucos tópicos.",
       "evidence": [
         "transp23e6-q38",
         "transp23e6-q39",
@@ -263,7 +264,7 @@
     },
     {
       "title": "Estude os subtópicos que nunca caíram: são grandes e baratos",
-      "body": "Do Anexo IV desta área, nunca apareceram no banco: DLP, CASB, EDR, gestão de vulnerabilidades, threat intel e threat hunting, teste de intrusão, STRIDE, ISO 31000, ISO 22301, Sarbanes-Oxley, políticas de segurança, MFA, MDM, segurança em nuvem e segurança física. Como a prova de 2023 andou em largura, com uma questão por tema e enunciado de definição, uma frase decorada por item desses vale tanto quanto horas gastas aprofundando criptografia."
+      "body": "Do Anexo IV desta área, nunca foram OBJETO de uma questão (no máximo apareceram como distrator): DLP, CASB, STRIDE e DREAD (distratores em transp23e6-q43 e transp23e6-q38), políticas de segurança (item de prova07-q28), EDR, gestão de vulnerabilidades, threat intel e threat hunting, teste de intrusão, ISO 31000, ISO 22301, Sarbanes-Oxley, MFA, MDM, segurança em nuvem e segurança física — estes últimos sem nenhuma aparição. Como a prova de 2023 andou em largura, com uma questão por tema e enunciado de definição, uma frase decorada por item desses vale tanto quanto horas gastas aprofundando criptografia."
     }
   ],
   "trapWords": [

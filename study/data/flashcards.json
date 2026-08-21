@@ -526,8 +526,8 @@
     {
       "id": "fc-eng-sw-005",
       "area": "eng-sw",
-      "front": "A engenharia de requisitos elimina a volatilidade dos requisitos?",
-      "back": "Não. Ela gerencia a volatilidade por meio de controle de mudanças e rastreabilidade; requisitos evoluem naturalmente ao longo do projeto.",
+      "front": "O que a engenharia de requisitos faz com a volatilidade dos requisitos?",
+      "back": "Gerencia, não elimina: controle de mudanças e rastreabilidade absorvem a evolução natural dos requisitos ao longo do projeto.",
       "sourceQuestionId": "prova07-q49"
     },
     {
@@ -588,14 +588,14 @@
       "id": "fc-eng-sw-014",
       "area": "eng-sw",
       "front": "Quais são as três características canônicas do Processo Unificado?",
-      "back": "Dirigido por casos de uso, centrado em arquitetura, iterativo e incremental.",
+      "back": "Dirigido por casos de uso; centrado em arquitetura; e iterativo e incremental (esta última conta como uma característica só).",
       "sourceQuestionId": "prova07-q51"
     },
     {
       "id": "fc-eng-sw-015",
       "area": "eng-sw",
-      "front": "'Guiado por testes de aceitação' é característica do Processo Unificado?",
-      "back": "Não — é o distrator clássico. O Processo Unificado é dirigido por casos de uso, não por testes de aceitação.",
+      "front": "Por qual artefato o Processo Unificado é dirigido?",
+      "back": "Por casos de uso — \"use case driven\". \"Guiado por testes de aceitação\" é o distrator clássico e não é característica do RUP.",
       "sourceQuestionId": "prova07-q51"
     },
     {
@@ -663,7 +663,7 @@
       "id": "fc-eng-sw-025",
       "area": "eng-sw",
       "front": "Quantos tipos de diagrama tem a UML 2.5 e como se dividem?",
-      "back": "14 tipos: 7 estruturais (classes, objetos, componentes, estrutura composta, pacotes, implantação, perfil) e 7 comportamentais (casos de uso, atividades, máquina de estados, sequência, comunicação, tempo, visão geral de interação)."
+      "back": "14 tipos, divididos em 7 estruturais e 7 comportamentais. Em UML 2.0 eram 13 — se a questão citar número, verifique a versão."
     },
     {
       "id": "fc-eng-sw-026",
@@ -708,8 +708,8 @@
     {
       "id": "fc-eng-sw-032",
       "area": "eng-sw",
-      "front": "Alguma técnica de verificação e validação assegura a inexistência de erros no software?",
-      "back": "Não. V&V aumenta a confiança e reduz defeitos, mas nunca prova ausência de erros — alternativa que promete isso está errada.",
+      "front": "O que V&V garante e o que não garante quanto a defeitos?",
+      "back": "Aumenta a confiança e reduz defeitos, mas nunca prova a ausência de erros — alternativa que promete inexistência de erros está errada.",
       "sourceQuestionId": "prova07-q56"
     },
     {
@@ -739,6 +739,18 @@
       "back": "Integração contínua: build e testes automáticos a cada integração no repositório. Entrega contínua: artefato sempre pronto, com liberação decidida por pessoa. Implantação contínua: promoção automática até produção."
     },
     {
+      "id": "fc-eng-sw-037",
+      "area": "eng-sw",
+      "front": "Quais são os 7 diagramas ESTRUTURAIS da UML 2.5?",
+      "back": "Classes, objetos, componentes, estrutura composta, pacotes, implantação e perfil."
+    },
+    {
+      "id": "fc-eng-sw-038",
+      "area": "eng-sw",
+      "front": "Quais são os 7 diagramas COMPORTAMENTAIS da UML 2.5?",
+      "back": "Casos de uso, atividades, máquina de estados, sequência, comunicação, tempo e visão geral de interação."
+    },
+    {
       "id": "fc-seg-info-001",
       "area": "seg-info",
       "front": "Qual requisito de segurança é principalmente ameaçado por ataques passivos como monitoramento e análise de tráfego?",
@@ -754,7 +766,7 @@
     {
       "id": "fc-seg-info-003",
       "area": "seg-info",
-      "front": "Segundo a NBR/ISO 27002, para que serve proteger a informação contra ameaças?",
+      "front": "Segundo a NBR/ISO 27002, quais são os quatro objetivos da segurança da informação?",
       "back": "Para garantir a continuidade do negócio, minimizar o risco ao negócio e maximizar o retorno sobre os investimentos e as oportunidades de negócio.",
       "sourceQuestionId": "prova07-q26"
     },
