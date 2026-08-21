@@ -1579,6 +1579,210 @@
           "note": "Mesmo problema de extração da Q69 desta prova (e precedente já documentado em prova6-q63/66/67/69): os conectivos lógicos (¬, ∨, ∧, →) das cinco fórmulas proposicionais são desenhados como vetor/Type3 na fonte do PDF, não capturáveis como texto. As cinco alternativas restaram apenas com as letras de variáveis proposicionais (P, Q) sem os conectivos entre elas, tornando inviável confirmar de forma independente qual fórmula é uma contradição sem reconstrução visual a partir do PDF original. Mantido em revisão, com o gabarito oficial (B) registrado para referência."
         }
       ]
+    },
+    {
+      "id": "transp23e6-q21",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 21
+      },
+      "area": "arq-dados",
+      "subtopic": "1.1 Modelagem de dados (conceitual, lógica e física)",
+      "stem": "Os conjuntos a seguir representam o estado de um banco de dados relacional.\n\nA = { a1, a2, a3 }\nB = { b1, b2 }\nC = { c1, c2, c3 }\nR = { (a1, b1), (a1, b2), (a2, b1), (a2, b2), (a3, b1) }\nS = { (b1, c2), (b2, c3) }\n\nAdmita que os elementos dos conjuntos acima sejam instâncias das entidades ou das relações de mesmo nome presentes no diagrama E-R a partir do qual o esquema do banco de dados acima foi obtido, e que as regras definidas nesse diagrama E-R são preservadas pelo banco de dados em questão. Nesse contexto, qual diagrama E-R tem suas regras preservadas pelo banco de dados acima? [As cinco alternativas são diagramas E-R com entidades A, B e C ligadas pelos relacionamentos R e S, cada um com uma combinação diferente de cardinalidades mínima/máxima (0,1)/(1,1)/(0,n) em cada extremidade — a extração de texto capturou os valores de cardinalidade presentes em cada diagrama, mas não a posição/associação exata de cada par de cardinalidade a qual extremidade (A, B ou C) de qual relacionamento (R ou S) ele pertence.]",
+      "images": [
+        {
+          "id": "img1",
+          "path": null,
+          "alt": "Cinco diagramas E-R (alternativas A-E) com entidades A, B, C conectadas pelos relacionamentos R (entre A e B) e S (entre B e C); cada diagrama atribui uma combinação diferente de cardinalidades (0,1), (1,1) ou (0,n) a cada extremidade das relações R e S. Os textos de cardinalidade foram extraídos como uma sequência solta de valores por alternativa (ex.: alternativa A = '(0,1)(0,n)(0,1)(1,1)'), sem preservar de forma confiável a associação entre cada valor e a extremidade/entidade a que pertence no diagrama vetorial original."
+        }
+      ],
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "Diagrama E-R com cardinalidades (0,1), (0,n), (0,1), (1,1) distribuídas entre as extremidades de R e S (associação exata às entidades não recuperável do texto extraído)."
+        },
+        {
+          "key": "B",
+          "text": "Diagrama E-R com cardinalidades (0,1), (0,1), (0,n), (1,1) distribuídas entre as extremidades de R e S (associação exata às entidades não recuperável do texto extraído)."
+        },
+        {
+          "key": "C",
+          "text": "Diagrama E-R com cardinalidades (0,1), (0,1), (0,n), (0,1) distribuídas entre as extremidades de R e S (associação exata às entidades não recuperável do texto extraído)."
+        },
+        {
+          "key": "D",
+          "text": "Diagrama E-R com cardinalidades (0,1), (0,n), (1,n), (0,1) distribuídas entre as extremidades de R e S (associação exata às entidades não recuperável do texto extraído)."
+        },
+        {
+          "key": "E",
+          "text": "Diagrama E-R com cardinalidades (1,1), (0,n), (0,n), (1,1) distribuídas entre as extremidades de R e S (associação exata às entidades não recuperável do texto extraído)."
+        }
+      ],
+      "gabaritoLetter": "D",
+      "derivedLetter": "não determinável com confiança sem o diagrama original",
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "depende de diagrama vetorial não capturado",
+          "note": "É possível inferir parcialmente as cardinalidades reais a partir das instâncias de R e S dadas no enunciado (ex.: em R, a1 e a2 aparecem cada um associado a 2 elementos de B, e b1 aparece associado a 3 elementos de A, sugerindo participação 'muitos' em ambos os lados de R; em S, cada b aparece associado a exatamente 1 c e cada c a no máximo 1 b, sugerindo cardinalidade próxima de (0,1)/(1,1) em S). Isso é compatível em espírito com a alternativa D do gabarito oficial (que combina (0,1)/(1,n) em R e (0,1) em S), mas a extração de texto das cinco alternativas apresenta apenas uma lista solta de pares de cardinalidade por diagrama, sem preservar de forma confiável qual par pertence a qual extremidade/entidade em cada uma das cinco opções (a posição espacial exata dos rótulos no diagrama vetorial do PDF foi perdida). Sem reconstrução visual direta do PDF original, não é possível confirmar com alta confiança que a combinação e associação exatas da alternativa D (e não de uma das outras quatro, que usam os mesmos números em outras posições) é a única compatível com os dados de R e S. Gabarito oficial (fonte: Gabarito Cesgranrio Transpetro 2023.2, Edital nº 2, alterado em 9/01/2024, Prova 6): D."
+        }
+      ],
+      "unresolved": true,
+      "annulled": false
+    },
+    {
+      "id": "transp23e6-q22",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 22
+      },
+      "area": "arq-dados",
+      "subtopic": "1.1 Modelagem de dados (conceitual, lógica e física)",
+      "stem": "Sejam A, B e D conjuntos não vazios, diferentes entre si e que atendam às seguintes propriedades: 1. [relação de inclusão/participação entre A e D, símbolo não capturado na extração de texto]; 2. [relação de inclusão/participação entre B e D, símbolo não capturado]; 3. [relação de inclusão/participação entre B e A, símbolo não capturado]; 4. [relação de inclusão/participação entre B, A e D, símbolo não capturado]. Admita, ainda, que esses conjuntos correspondam às entidades de mesmo nome de um diagrama Entidade-Relacionamento (E-R). Qual diagrama E-R satisfaz todas as propriedades apresentadas? [As cinco alternativas (A-E) são diagramas E-R puramente gráficos, com as entidades A, B, D e indicação textual residual \"total e compartilhada\" junto de uma delas; nenhum outro texto alternativo foi extraído para as cinco opções.]",
+      "images": [
+        {
+          "id": "img1",
+          "path": null,
+          "alt": "Enunciado com quatro propriedades de inclusão/participação entre os conjuntos A, B e D expressas por símbolos de conjunto (⊆/⊂) que não foram capturados como texto (apenas espaços em branco entre as letras); e cinco alternativas (A-E) que são diagramas E-R inteiramente gráficos/vetoriais, das quais só se recuperou o texto residual '(A)(B)ABD total e compartilhada' na primeira página e nenhum texto significativo nas demais (C, D, E) além dos rótulos das letras."
+        }
+      ],
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "(diagrama E-R A — elemento gráfico/vetorial, não capturado como texto além do rótulo da alternativa)"
+        },
+        {
+          "key": "B",
+          "text": "(diagrama E-R B, com indicação textual residual \"total e compartilhada\" associada a uma das entidades — demais elementos gráficos não capturados)"
+        },
+        {
+          "key": "C",
+          "text": "(diagrama E-R C — elemento gráfico/vetorial, não capturado como texto além do rótulo da alternativa)"
+        },
+        {
+          "key": "D",
+          "text": "(diagrama E-R D — elemento gráfico/vetorial, não capturado como texto além do rótulo da alternativa)"
+        },
+        {
+          "key": "E",
+          "text": "(diagrama E-R E — elemento gráfico/vetorial, não capturado como texto além do rótulo da alternativa)"
+        }
+      ],
+      "gabaritoLetter": "E",
+      "derivedLetter": "não determinável sem os diagramas",
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "depende de imagem/diagrama não capturado",
+          "note": "Tanto os símbolos de inclusão de conjuntos usados nas quatro propriedades do enunciado (provavelmente ⊆ ou ⊂ entre pares de letras) quanto as cinco alternativas de resposta (diagramas E-R inteiramente gráficos) são elementos vetoriais da página não capturados na extração de texto. Apenas um fragmento textual residual ('total e compartilhada', terminologia de participação em generalização/especialização E-R) sobrevive, associado a uma das entidades em uma das alternativas, insuficiente para reconstruir a questão. Mantida em revisão, com o gabarito oficial (fonte: Gabarito Cesgranrio Transpetro 2023.2, Edital nº 2, alterado em 9/01/2024, Prova 6) registrado para referência: E."
+        }
+      ],
+      "unresolved": true,
+      "annulled": false
+    },
+    {
+      "id": "transp23e6-q27",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 27
+      },
+      "area": "arq-dados",
+      "subtopic": "1.1 Modelagem de dados (conceitual, lógica e física)",
+      "stem": "A Figura a seguir exibe um diagrama E-R, que representa o modelo conceitual de um banco de dados. [Diagrama com entidades R, S, T e um relacionamento W entre as três, com cardinalidades (0,n) e (1,1) nas extremidades — posições exatas não capturadas com segurança na extração de texto.] Esse modelo conceitual deu origem a um esquema relacional cujas tabelas, que representam o mapeamento das entidades R, S e T, são mostradas a seguir. A notação usada para descrevê-las representa suas respectivas chaves primárias, por meio de nomes de colunas sublinhados.\n\nR (RX)\nS (SX)\nT (TX)\n\nQual tabela representa, adequadamente, a relação W, de modo a preservar as restrições existentes no diagrama E-R?",
+      "images": [
+        {
+          "id": "img1",
+          "path": null,
+          "alt": "As cinco alternativas mostram todas o mesmo texto solto 'W (RX, SX, TX, W1)'; a diferença real entre elas está em qual subconjunto de {RX, SX, TX} aparece sublinhado (indicando a chave primária composta da tabela W), formatação de sublinhado que não é preservada pela extração de texto simples, tornando as cinco alternativas indistinguíveis no texto capturado."
+        }
+      ],
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "W (RX, SX, TX, W1) — com uma combinação de colunas sublinhadas (chave primária) não distinguível das demais alternativas no texto extraído"
+        },
+        {
+          "key": "B",
+          "text": "W (RX, SX, TX, W1) — com uma combinação de colunas sublinhadas (chave primária) não distinguível das demais alternativas no texto extraído"
+        },
+        {
+          "key": "C",
+          "text": "W (RX, SX, TX, W1) — com uma combinação de colunas sublinhadas (chave primária) não distinguível das demais alternativas no texto extraído"
+        },
+        {
+          "key": "D",
+          "text": "W (RX, SX, TX, W1) — com uma combinação de colunas sublinhadas (chave primária) não distinguível das demais alternativas no texto extraído"
+        },
+        {
+          "key": "E",
+          "text": "W (RX, SX, TX, W1) — com uma combinação de colunas sublinhadas (chave primária) não distinguível das demais alternativas no texto extraído"
+        }
+      ],
+      "gabaritoLetter": "C",
+      "derivedLetter": "não determinável sem a formatação de sublinhado original",
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "depende de formatação (sublinhado de chave primária) perdida na extração de texto",
+          "note": "As cinco alternativas têm exatamente o mesmo texto de colunas ('W (RX, SX, TX, W1)'); a diferença entre elas está inteiramente em qual subconjunto dessas colunas está sublinhado no PDF original, indicando a chave primária (possivelmente composta) da tabela que representa o relacionamento W. Essa formatação de sublinhado não é preservada pela extração de texto (`<div class=\"t\">` não carrega decoração de sublinhado nesta extração), tornando as cinco opções indistinguíveis sem inspeção visual direta do PDF. O diagrama E-R (cardinalidades entre R, S, T e W) também não foi capturado com posições confiáveis. Gabarito oficial (fonte: Gabarito Cesgranrio Transpetro 2023.2, Edital nº 2, alterado em 9/01/2024, Prova 6): C."
+        }
+      ],
+      "unresolved": true,
+      "annulled": false
+    },
+    {
+      "id": "transp23e6-q28",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 28
+      },
+      "area": "logica",
+      "subtopic": "8.3 A lógica sentencial",
+      "stem": "A seguir são apresentadas as três premissas de um argumento.\n\nPremissa 1: [fórmula proposicional envolvendo as variáveis A, D e E, com os conectivos de negação, disjunção e implicação — os glifos ¬, ∨, → foram capturados fora de ordem/posição em relação às letras, tornando a fórmula original irrecuperável com segurança]\nPremissa 2: [fórmula envolvendo D e E, com negação e conjunção, mesma limitação]\nPremissa 3: [fórmula envolvendo A e B, com negação e disjunção, mesma limitação]\n\nQual conclusão torna válido o argumento?",
+      "images": [
+        {
+          "id": "img1",
+          "path": null,
+          "alt": "Três fórmulas de lógica proposicional (premissas 1-3) cujos conectivos (¬, ∨, ∧, →) foram extraídos do PDF como caracteres soltos, deslocados de sua posição correta em relação às variáveis proposicionais (A, B, D, E), tornando impossível reconstruir com segurança qual conectivo liga quais variáveis e em que ordem/precedência, embora, diferentemente de provas anteriores, os glifos em si (e não apenas espaços vazios) tenham sido parcialmente capturados como texto."
+        }
+      ],
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "¬D (leitura tentativa; posição do conectivo de negação em relação à variável D não confirmada no texto extraído)"
+        },
+        {
+          "key": "B",
+          "text": "E"
+        },
+        {
+          "key": "C",
+          "text": "¬A (leitura tentativa; posição do conectivo de negação em relação à variável A não confirmada no texto extraído)"
+        },
+        {
+          "key": "D",
+          "text": "B"
+        },
+        {
+          "key": "E",
+          "text": "¬B (leitura tentativa; posição do conectivo de negação em relação à variável B não confirmada no texto extraído)"
+        }
+      ],
+      "gabaritoLetter": "D",
+      "derivedLetter": "não determinável com segurança sem reconstrução visual das fórmulas",
+      "reviewRounds": [
+        {
+          "round": 1,
+          "conclusion": "símbolos lógicos capturados fora de posição/ordem",
+          "note": "Diferentemente de casos anteriores (prova6-q63/66/67/69, prova07-q22-25, transp15-q69/70), em que os glifos lógicos eram vetor/Type3 totalmente ausentes do texto, aqui os conectivos (¬, ∨, ∧, →) aparecem no texto extraído, mas deslocados/fora de ordem em relação às variáveis (ex.: trecho bruto da Premissa 1: '()()()ADE¬→¬∨', da Premissa 2: '()DE∧¬', da Premissa 3: '()AB¬∨'), provavelmente por causa de sobrescritos/posicionamento absoluto dos glifos na fonte que não corresponde à ordem de leitura lógica capturada. Não é possível reconstruir com confiança a estrutura exata de cada premissa (qual variável é negada, qual é o antecedente/consequente da implicação) sem inspeção visual direta do PDF original. Gabarito oficial (fonte: Gabarito Cesgranrio Transpetro 2023.2, Edital nº 2, alterado em 9/01/2024, Prova 6): D."
+        }
+      ],
+      "unresolved": true,
+      "annulled": false
     }
   ]
 }

@@ -8379,6 +8379,3142 @@
       },
       "correctKey": "E",
       "explanationSummary": "Segundo o PMBOK, Validar o Escopo é o processo de formalizar a aceitação das entregas concluídas, sendo tipicamente realizado ao final de uma fase (como a construção), antes de se avançar para as fases seguintes (teste e implantação)."
+    },
+    {
+      "id": "transp23e6-q1",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 1
+      },
+      "area": "portugues",
+      "subtopic": "P.1 Compreensão de textos",
+      "stem": "O fragmento de abertura da crônica \"Estou me vendo debaixo de uma árvore, lendo a pequena história da literatura brasileira.\" (parágrafo 1) faz referência a uma",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "previsão",
+          "explanation": "A narradora não está antecipando algo que ainda vai ocorrer; ela relembra uma cena vivida."
+        },
+        {
+          "key": "B",
+          "text": "fantasia",
+          "explanation": "Não há elemento de imaginação ou invenção: a cena narrada corresponde a uma lembrança real da narradora."
+        },
+        {
+          "key": "C",
+          "text": "esperança",
+          "explanation": "O trecho não expressa desejo por algo futuro, e sim a evocação de uma lembrança passada."
+        },
+        {
+          "key": "D",
+          "text": "expectativa",
+          "explanation": "Expectativa remete a algo que se espera que aconteça; o trecho remete ao passado, não ao futuro."
+        },
+        {
+          "key": "E",
+          "text": "reminiscência"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "E",
+      "explanationSummary": "A crônica é construída como uma lembrança de infância evocada pela narradora adulta (\"Estou me vendo debaixo de uma árvore...\"); \"me vendo\" indica que ela relembra uma cena vivida, caracterizando uma reminiscência."
+    },
+    {
+      "id": "transp23e6-q2",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 2
+      },
+      "area": "portugues",
+      "subtopic": "P.1 Compreensão de textos",
+      "stem": "No texto, as palavras que marcam o sentimento de insegurança vivenciado pela narradora ao conversar com seu pai são:",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "confissão (parágrafo 7) e andar (parágrafo 8)",
+          "explanation": "Essas palavras aparecem associadas à fala do pai e ao hábito dele de mudar de lugar, não ao estado de insegurança da narradora durante a conversa."
+        },
+        {
+          "key": "B",
+          "text": "rodeios (parágrafo 4) e gaguejar (parágrafo 6)"
+        },
+        {
+          "key": "C",
+          "text": "cabecinha (parágrafo 7) e mudar (parágrafo 8)",
+          "explanation": "São palavras ditas pelo pai (recomendação e hábito dele), não indícios do estado emocional da narradora durante a fala."
+        },
+        {
+          "key": "D",
+          "text": "sepultura (parágrafo 3) e renegar (parágrafo 7)",
+          "explanation": "Referem-se ao conteúdo do soneto de Bilac e à fala do pai sobre a língua, não a sinais de insegurança da narradora ao falar."
+        },
+        {
+          "key": "E",
+          "text": "severidade (parágrafo 7) e esquecer (parágrafo 5)",
+          "explanation": "Descrevem a postura do pai (severidade) e um comentário dele, não o comportamento inseguro da narradora."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "\"Rodeios\" (parágrafo 4) descreve a narradora se aproximando do assunto de forma indireta, e \"gaguejar\" (parágrafo 6) descreve-a hesitando ao falar; ambas marcam diretamente a insegurança da narradora durante a conversa com o pai."
+    },
+    {
+      "id": "transp23e6-q3",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 3
+      },
+      "area": "portugues",
+      "subtopic": "P.1 Compreensão de textos",
+      "stem": "De acordo com o texto, na opinião do pai, a filha deveria",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "aprender a língua da avó.",
+          "explanation": "O pai apenas menciona que a avó era italiana, sem recomendar que a filha aprendesse essa língua."
+        },
+        {
+          "key": "B",
+          "text": "valorizar a língua materna."
+        },
+        {
+          "key": "C",
+          "text": "escrever em idiomas diversos.",
+          "explanation": "O pai defende o contrário: que a filha continue escrevendo e valorizando a própria língua, sem precisar migrar para outros idiomas."
+        },
+        {
+          "key": "D",
+          "text": "ler outros poemas de Olavo Bilac.",
+          "explanation": "O pai comenta o soneto que a filha já estava lendo, mas não recomenda a leitura de outras obras de Bilac."
+        },
+        {
+          "key": "E",
+          "text": "estudar história da literatura brasileira.",
+          "explanation": "Esse é o livro que a filha já lia no início da crônica, não uma recomendação feita pelo pai na conversa."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "O pai diz explicitamente: \"Feio é isso, filha, isso de querer renegar a própria língua (...) Renegar a língua é renegar o país\", deixando clara sua defesa de que a filha valorize a língua materna."
+    },
+    {
+      "id": "transp23e6-q4",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 4
+      },
+      "area": "portugues",
+      "subtopic": "P.1 Compreensão de textos",
+      "stem": "Ao ler os versos de Olavo Bilac, o \"quase\" susto da narradora, mencionado no parágrafo 2, foi motivado pela",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "possibilidade de seus escritos não serem conhecidos."
+        },
+        {
+          "key": "B",
+          "text": "falta de conhecimento sobre a localização do Lácio.",
+          "explanation": "Embora a narradora mencione não saber onde ficava o Lácio, isso é apresentado como um detalhe irrelevante, sem relação com o susto."
+        },
+        {
+          "key": "C",
+          "text": "necessidade de aprender uma língua diferente.",
+          "explanation": "Esse desejo surge só mais adiante na crônica, como consequência da associação entre língua portuguesa e sepultura, não como causa do susto inicial."
+        },
+        {
+          "key": "D",
+          "text": "surpresa com a postura pessimista do poeta.",
+          "explanation": "O susto da narradora está ligado ao sentido que ela atribui à palavra \"sepultura\" para o destino de seus próprios escritos, não a um julgamento sobre o tom do poeta."
+        },
+        {
+          "key": "E",
+          "text": "abordagem da temática da morte.",
+          "explanation": "A palavra \"sepultura\" dispara o susto, mas o que perturba a narradora é o que isso significa para seus próprios textos, não o tema da morte em si."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "A narradora associa \"sepultura\" ao destino de seus próprios escritos em português, temendo que, por escrever nessa língua, seus textos \"morram\" (não sejam lidos/conhecidos); é essa possibilidade que a assusta, como confirma a pergunta que ela faz ao pai a seguir."
+    },
+    {
+      "id": "transp23e6-q5",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 5
+      },
+      "area": "portugues",
+      "subtopic": "P.11 Emprego do sinal indicativo de crase",
+      "stem": "O emprego do acento grave em \"soneto à língua portuguesa\" (parágrafo 2) explica-se a partir do entendimento de que Olavo Bilac escreveu um soneto",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "em língua portuguesa",
+          "explanation": "O soneto é escrito em português, mas a crase em \"à língua portuguesa\" não marca o idioma de composição, e sim o destinatário da homenagem."
+        },
+        {
+          "key": "B",
+          "text": "com a língua portuguesa",
+          "explanation": "A preposição \"com\" não corresponde ao valor de \"endereçado a\" que a crase (a + a) expressa nesse contexto."
+        },
+        {
+          "key": "C",
+          "text": "para a língua portuguesa"
+        },
+        {
+          "key": "D",
+          "text": "sobre a língua portuguesa",
+          "explanation": "O soneto não apenas discorre sobre a língua como um tema externo: ele se dirige a ela, tratando-a como interlocutora (\"És, a um tempo, esplendor e sepultura\")."
+        },
+        {
+          "key": "E",
+          "text": "por causa da língua portuguesa",
+          "explanation": "Não se trata de uma motivação/causa, mas de destinação: o soneto é dedicado/dirigido à língua portuguesa."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "C",
+      "explanationSummary": "A crase em \"à língua portuguesa\" resulta da fusão da preposição \"a\" com o artigo \"a\", com valor de destinação: o soneto de Bilac é dedicado/dirigido à língua portuguesa, que é tratada como interlocutora dos versos."
+    },
+    {
+      "id": "transp23e6-q6",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 6
+      },
+      "area": "portugues",
+      "subtopic": "P.3 Mecanismos de coesão textual",
+      "stem": "A palavra que funciona como um mecanismo de coesão textual, retomando um antecedente, em:",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "\"parei quase num susto depois que li os primeiros versos\". (parágrafo 2)",
+          "explanation": "\"que\" nessa ocorrência é conjunção integrante/temporal, não pronome retomando um antecedente nominal."
+        },
+        {
+          "key": "B",
+          "text": "\"Não esquecer que a minha avó, Pedrina Perucchi, era italiana\". (parágrafo 5)",
+          "explanation": "\"que\" introduz uma oração subordinada substantiva (objeto direto de \"esquecer\"), sem retomar um antecedente."
+        },
+        {
+          "key": "C",
+          "text": "\"ficou olhando a borboleta que entrou na varanda\" (parágrafo 7)"
+        },
+        {
+          "key": "D",
+          "text": "\"Sempre que meu pai queria mudar de assunto ele mudava de lugar\". (parágrafo 8)",
+          "explanation": "\"que\" faz parte da locução conjuntiva \"sempre que\" (valor temporal), não retoma um antecedente nominal."
+        },
+        {
+          "key": "E",
+          "text": "\"quando me avisaram lá do pequeno hotel em Jacareí que ele tinha morrido\". (parágrafo 9)",
+          "explanation": "\"que\" introduz uma oração subordinada substantiva objetiva direta, sem função anafórica de retomada."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "C",
+      "explanationSummary": "Em \"a borboleta que entrou na varanda\", o pronome relativo \"que\" retoma o antecedente \"borboleta\", funcionando como mecanismo de coesão referencial (anáfora), diferente dos demais \"que\" do texto, que são conjunções."
+    },
+    {
+      "id": "transp23e6-q7",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 7
+      },
+      "area": "portugues",
+      "subtopic": "P.8 Emprego dos sinais de pontuação",
+      "stem": "A frase em que as vírgulas estão empregadas com a mesma função que em \"Não esquecer que a minha avó, Pedrina Perucchi, era italiana\" (parágrafo 5) é:",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "Mude de lugar, meu pai, porque a morte vai chegar.",
+          "explanation": "As vírgulas isolam um vocativo (\"meu pai\"), não um aposto explicativo que renomeia/identifica o termo anterior."
+        },
+        {
+          "key": "B",
+          "text": "A filha, preocupada e triste, questionava a própria língua materna.",
+          "explanation": "As vírgulas isolam um adjunto adnominal/aposto de caráter qualificativo (estado da filha), não uma identificação nominal como em \"Pedrina Perucchi\"."
+        },
+        {
+          "key": "C",
+          "text": "A língua portuguesa, embora inculta, constrói belos textos literários.",
+          "explanation": "As vírgulas isolam uma oração subordinada concessiva intercalada, e não um aposto que identifica o termo anterior pelo nome."
+        },
+        {
+          "key": "D",
+          "text": "Os poemas, textos de uma beleza sem igual, encantam seus leitores."
+        },
+        {
+          "key": "E",
+          "text": "Colocou os óculos e, caminhando pela sala, revelou a beleza do poema.",
+          "explanation": "As vírgulas isolam uma oração reduzida de gerúndio intercalada, função distinta da de um aposto identificador."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "D",
+      "explanationSummary": "Em \"a minha avó, Pedrina Perucchi, era italiana\", as vírgulas isolam um aposto que identifica/nomeia o termo anterior (\"a minha avó\" = \"Pedrina Perucchi\"); a mesma função ocorre em \"Os poemas, textos de uma beleza sem igual, encantam seus leitores\", em que o aposto caracteriza/identifica \"os poemas\"."
+    },
+    {
+      "id": "transp23e6-q8",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 8
+      },
+      "area": "portugues",
+      "subtopic": "P.5 Emprego de tempos e modos verbais",
+      "stem": "Considerando-se a correlação adequada entre tempos e modos verbais, a alternativa que, respeitando a norma-padrão, completa o período iniciado pelo trecho \"A autora também teria sido lida se...\" é",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "escrever seus contos em outra língua.",
+          "explanation": "O infinitivo não estabelece a correlação de tempo/modo exigida pela oração condicional introduzida por \"se\" combinada com o futuro do pretérito composto da oração principal."
+        },
+        {
+          "key": "B",
+          "text": "escrevera seus contos em outra língua.",
+          "explanation": "O mais-que-perfeito do indicativo não é a forma verbal exigida após \"se\" para expressar hipótese irreal do passado nesse tipo de período condicional."
+        },
+        {
+          "key": "C",
+          "text": "tiver escrito seus contos em outra língua.",
+          "explanation": "O futuro composto do subjuntivo indica hipótese ainda realizável no futuro, incompatível com a referência a um fato passado e já encerrado (a autora, falecida, e sua obra)."
+        },
+        {
+          "key": "D",
+          "text": "teria escrito seus contos em outra língua.",
+          "explanation": "A oração introduzida por \"se\" pede o pretérito imperfeito do subjuntivo, não o futuro do pretérito, que é a forma própria da oração principal (\"teria sido lida\"), não da subordinada condicional."
+        },
+        {
+          "key": "E",
+          "text": "tivesse escrito seus contos em outra língua."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "E",
+      "explanationSummary": "Períodos condicionais que expressam uma hipótese irreal do passado seguem o padrão \"se\" + pretérito imperfeito do subjuntivo (tivesse escrito) na oração subordinada, combinado com o futuro do pretérito composto (teria sido lida) na oração principal."
+    },
+    {
+      "id": "transp23e6-q9",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 9
+      },
+      "area": "portugues",
+      "subtopic": "P.7 Coordenação e subordinação",
+      "stem": "No parágrafo 6, \"nossa língua é sepultura mesmo, tudo o que a gente fizer vai para debaixo da terra, desaparece!\", o segmento em destaque pode articular-se com o segmento anterior, sem alteração do sentido original, empregando-se o conector",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "quando",
+          "explanation": "Introduziria uma relação temporal, incompatível com a relação de consequência/conclusão que o segundo segmento estabelece com o primeiro."
+        },
+        {
+          "key": "B",
+          "text": "portanto"
+        },
+        {
+          "key": "C",
+          "text": "enquanto",
+          "explanation": "Introduziria uma relação de simultaneidade ou de contraste temporal, o que não corresponde à relação de consequência entre as duas afirmações."
+        },
+        {
+          "key": "D",
+          "text": "embora",
+          "explanation": "Introduziria uma relação de concessão/contraste, mas as duas afirmações não se opõem: a segunda decorre logicamente da primeira."
+        },
+        {
+          "key": "E",
+          "text": "ou",
+          "explanation": "Introduziria uma relação de alternância entre as ideias, incompatível com o sentido de consequência entre elas."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "O segundo segmento (\"tudo o que a gente fizer vai para debaixo da terra, desaparece\") é apresentado como consequência/conclusão do primeiro (\"nossa língua é sepultura mesmo\"), relação que o conector \"portanto\" expressa sem alterar o sentido original."
+    },
+    {
+      "id": "transp23e6-q10",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 10
+      },
+      "area": "portugues",
+      "subtopic": "P.4 Significação das palavras",
+      "stem": "Em \"O soneto é muito bonito, disse me encarando com severidade\" (parágrafo 7), a palavra que pode substituir severidade, sem alteração no sentido da frase, é",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "firmeza"
+        },
+        {
+          "key": "B",
+          "text": "rispidez",
+          "explanation": "Indicaria grosseria/aspereza no tom, tom mais agressivo do que a seriedade afetuosa com que o pai fala com a filha na cena."
+        },
+        {
+          "key": "C",
+          "text": "discrição",
+          "explanation": "Não expressa a seriedade/firmeza da expressão facial do pai ao repreender a filha; refere-se a comedimento, não ao tom sério de quem fala com autoridade."
+        },
+        {
+          "key": "D",
+          "text": "desgosto",
+          "explanation": "Indicaria descontentamento/mágoa, sentimento diferente do tom sério e firme, mas afetuoso, com que o pai orienta a filha."
+        },
+        {
+          "key": "E",
+          "text": "incompreensão",
+          "explanation": "Não corresponde ao sentido de seriedade/firmeza expresso por \"severidade\"; o pai compreende bem a filha, apenas fala com ela de forma firme."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "\"Severidade\", nesse contexto, expressa o tom sério e firme (mas não hostil) com que o pai fala à filha ao corrigi-la; \"firmeza\" é o sinônimo que preserva esse sentido sem indicar agressividade ou grosseria."
+    },
+    {
+      "id": "transp23e6-q11",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 11
+      },
+      "area": "ingles",
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "The main idea of the text is to",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "disapprove space technology.",
+          "explanation": "The text presents space technology in a consistently positive light, highlighting benefits rather than disapproving of it."
+        },
+        {
+          "key": "B",
+          "text": "relate space technology to diseases.",
+          "explanation": "The text discusses sustainability and connectivity in transport, with no mention of diseases."
+        },
+        {
+          "key": "C",
+          "text": "figure out the costs of space technology.",
+          "explanation": "The text mentions falling costs only briefly, as one point among several benefits, not as its main purpose."
+        },
+        {
+          "key": "D",
+          "text": "list potential dangers of space technology.",
+          "explanation": "The text focuses on benefits and practical results, not on dangers or risks."
+        },
+        {
+          "key": "E",
+          "text": "describe space technology improvements."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "E",
+      "explanationSummary": "The text systematically describes advances in space technology (satcoms, Earth Observation data, SODOR) and their practical, sustainability-related benefits for transport, which characterizes it as a description of technological improvements."
+    },
+    {
+      "id": "transp23e6-q12",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 12
+      },
+      "area": "ingles",
+      "subtopic": "I.2 Itens gramaticais relevantes para a compreensão dos conteúdos semânticos",
+      "stem": "In the fragment in the first paragraph of the text \"However, others are already delivering practical results\", the word However can be associated with the idea of",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "time",
+          "explanation": "\"However\" does not mark a temporal relation; it contrasts two situations."
+        },
+        {
+          "key": "B",
+          "text": "condition",
+          "explanation": "\"However\" does not introduce a conditional clause."
+        },
+        {
+          "key": "C",
+          "text": "emphasis",
+          "explanation": "\"However\" is not used to emphasize a point, but to contrast it with what was said before."
+        },
+        {
+          "key": "D",
+          "text": "opposition"
+        },
+        {
+          "key": "E",
+          "text": "accumulation",
+          "explanation": "\"However\" does not add information cumulatively; it contrasts the previous idea (projects still in planning) with a new one (practical results already delivered)."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "D",
+      "explanationSummary": "\"However\" contrasts the idea that some projects \"are still in the planning stages\" with the fact that \"others are already delivering practical results\", which is a relation of opposition/contrast."
+    },
+    {
+      "id": "transp23e6-q13",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 13
+      },
+      "area": "ingles",
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "From the fragment in the second paragraph of the text \"connectivity that can reach into situations where terrestrial technologies struggle to deliver\", it can be concluded that terrestrial technologies can present data problems related to their",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "price",
+          "explanation": "The fragment discusses reach/coverage of connectivity, not the price of terrestrial technologies."
+        },
+        {
+          "key": "B",
+          "text": "safety",
+          "explanation": "The fragment concerns delivering connectivity/data, not safety issues of terrestrial technologies."
+        },
+        {
+          "key": "C",
+          "text": "choice",
+          "explanation": "The fragment does not discuss choosing among terrestrial technologies."
+        },
+        {
+          "key": "D",
+          "text": "marketing",
+          "explanation": "The fragment is about technical delivery of connectivity, not about marketing terrestrial technologies."
+        },
+        {
+          "key": "E",
+          "text": "transmission"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "E",
+      "explanationSummary": "The fragment states that terrestrial technologies \"struggle to deliver\" connectivity in certain situations, which relates to their ability to transmit data/signal, i.e., a transmission problem."
+    },
+    {
+      "id": "transp23e6-q14",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 14
+      },
+      "area": "ingles",
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "From the fragment in the second paragraph of the text \"Right now, the satellite supplier market is booming, driving down the cost of access to satellites\", one can infer that the more access to the satellite supplier market is feasible,",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "the lower its price will be."
+        },
+        {
+          "key": "B",
+          "text": "the higher its price will be.",
+          "explanation": "This contradicts the text, which states that increased market access is \"driving down the cost\", i.e., lowering the price."
+        },
+        {
+          "key": "C",
+          "text": "the better its quality will be.",
+          "explanation": "The fragment addresses cost/price, not quality of the satellite service."
+        },
+        {
+          "key": "D",
+          "text": "the poorer its quality will be.",
+          "explanation": "The fragment does not associate greater market access with worse quality."
+        },
+        {
+          "key": "E",
+          "text": "the more reliable its quality will be.",
+          "explanation": "The fragment is about cost reduction, not about reliability of quality."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "The text explicitly states that the booming satellite supplier market is \"driving down the cost of access to satellites\", so greater feasibility of access is directly associated with lower prices."
+    },
+    {
+      "id": "transp23e6-q15",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 15
+      },
+      "area": "ingles",
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "The fragment in the third paragraph of the text \"The Satellites for Digitalization of Railways (SODOR) project will provide low latency\" means that",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "low volume of data will be conveyed within hours.",
+          "explanation": "Low latency concerns delay, not data volume, and does not imply hours-long delivery times."
+        },
+        {
+          "key": "B",
+          "text": "low volume of data will be interrupted for a few minutes.",
+          "explanation": "Low latency does not imply interruption of data delivery."
+        },
+        {
+          "key": "C",
+          "text": "low volume of data will be communicated within minutes.",
+          "explanation": "Low latency implies near real-time delivery (much faster than minutes), not merely \"within minutes\"."
+        },
+        {
+          "key": "D",
+          "text": "high volume of data will be transmitted with minimal delay."
+        },
+        {
+          "key": "E",
+          "text": "high volume of data will be transferred after a few minutes.",
+          "explanation": "Low latency implies minimal delay, which contradicts a delay \"of a few minutes\"."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "D",
+      "explanationSummary": "Low latency, combined with the passage's description of \"near real-time data\" guiding operational decisions, indicates transmission of large amounts of monitoring data with minimal delay."
+    },
+    {
+      "id": "transp23e6-q16",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 16
+      },
+      "area": "ingles",
+      "subtopic": "I.2 Itens gramaticais relevantes para a compreensão dos conteúdos semânticos",
+      "stem": "In the fragment in the fourth paragraph of the text \"a sustainable future for road vehicles. Right now, the transport sector contributes around 14% of the UK's greenhouse gas emissions, of which 91% is from road vehicles\", the word which refers to",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "road vehicles",
+          "explanation": "Road vehicles are what the 91% refers to as the source, not the antecedent of \"which\"."
+        },
+        {
+          "key": "B",
+          "text": "transport sector",
+          "explanation": "The transport sector is the subject contributing the 14%, not the antecedent of \"of which\"."
+        },
+        {
+          "key": "C",
+          "text": "United Kingdom",
+          "explanation": "The UK is mentioned as a possessive modifier (\"UK's\"), not the antecedent of \"which\"."
+        },
+        {
+          "key": "D",
+          "text": "sustainable future",
+          "explanation": "This is the topic of the paragraph, not the noun phrase that \"which\" replaces."
+        },
+        {
+          "key": "E",
+          "text": "greenhouse gas emissions"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "E",
+      "explanationSummary": "The structure \"14% of the UK's greenhouse gas emissions, of which 91% is from road vehicles\" uses \"which\" to refer back to \"greenhouse gas emissions\", meaning 91% of those emissions come from road vehicles."
+    },
+    {
+      "id": "transp23e6-q17",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 17
+      },
+      "area": "ingles",
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "From the fifth paragraph of the text, one can infer that models for wind and solar production can provide sources of",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "unreliable power",
+          "explanation": "The text states the models will help manage \"a consistent flow of green energy\", the opposite of unreliable power."
+        },
+        {
+          "key": "B",
+          "text": "intermittent energy",
+          "explanation": "Although wind and solar are naturally variable, the text emphasizes that the forecasting models help achieve a consistent flow, not intermittency."
+        },
+        {
+          "key": "C",
+          "text": "constant power flow"
+        },
+        {
+          "key": "D",
+          "text": "scarce energy sources",
+          "explanation": "The paragraph discusses managing supply for a growing renewable network, not scarcity."
+        },
+        {
+          "key": "E",
+          "text": "dangerous power sources",
+          "explanation": "There is no mention of danger associated with wind and solar production in the paragraph."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "C",
+      "explanationSummary": "The paragraph states that \"EO data will be critical in future forecasting models for wind and solar production, to help manage a consistent flow of green energy\", directly indicating constant power flow."
+    },
+    {
+      "id": "transp23e6-q18",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 18
+      },
+      "area": "ingles",
+      "subtopic": "I.2 Itens gramaticais relevantes para a compreensão dos conteúdos semânticos",
+      "stem": "In the fragment in the sixth paragraph of the text \"Satellite communications will also be pivotal\", the word pivotal can be replaced, with no change in meaning, by",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "tricky",
+          "explanation": "\"Tricky\" means difficult/complicated, which contradicts the positive, central role attributed to satellite communications in the sentence."
+        },
+        {
+          "key": "B",
+          "text": "erratic",
+          "explanation": "\"Erratic\" means unpredictable/irregular, the opposite of the crucial and reliable role described for satellite communications."
+        },
+        {
+          "key": "C",
+          "text": "essential"
+        },
+        {
+          "key": "D",
+          "text": "haphazard",
+          "explanation": "\"Haphazard\" means random/unplanned, which contradicts the deliberate, central role satellite communications are said to play."
+        },
+        {
+          "key": "E",
+          "text": "problematic",
+          "explanation": "\"Problematic\" implies difficulty/trouble, the opposite of the positive, central role described for satellite communications."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "C",
+      "explanationSummary": "\"Pivotal\" means central/crucial to something; in context, it means satellite communications will be essential to the growing electricity network of wind and solar installations."
+    },
+    {
+      "id": "transp23e6-q19",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 19
+      },
+      "area": "ingles",
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "From the seventh paragraph of the text, one can infer that automated driving will have the benefits of",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "human drivers",
+          "explanation": "The paragraph discusses automated driving replacing/supporting human driving through connectivity, not benefits from human drivers themselves."
+        },
+        {
+          "key": "B",
+          "text": "space technology"
+        },
+        {
+          "key": "C",
+          "text": "terrestrial connectivity",
+          "explanation": "The paragraph specifically emphasizes satellite (space) connectivity as essential for automated driving, not terrestrial connectivity."
+        },
+        {
+          "key": "D",
+          "text": "traffic controlled by people",
+          "explanation": "The paragraph discusses continuous connectivity supporting automated systems, not human-controlled traffic."
+        },
+        {
+          "key": "E",
+          "text": "20th century designed cars",
+          "explanation": "The paragraph discusses future, increasingly automated vehicles, not older car designs."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "The paragraph states that satellite technology \"will increasingly be a part of the vehicles themselves, particularly when automated driving becomes more mainstream\", supporting real-time updates and communications essential to automated driving."
+    },
+    {
+      "id": "transp23e6-q20",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 20
+      },
+      "area": "ingles",
+      "subtopic": "I.1 Compreensão de texto escrito em língua inglesa",
+      "stem": "In the eighth paragraph of the text, the author states that, for the last 40 years, the company where he works has been",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "embedded in antipollution laws.",
+          "explanation": "The paragraph mentions space engineering, not involvement with antipollution legislation."
+        },
+        {
+          "key": "B",
+          "text": "dedicated to space travel medicine.",
+          "explanation": "The paragraph does not mention medicine; it discusses space engineering and sustainability/business benefits."
+        },
+        {
+          "key": "C",
+          "text": "involved with cutting-edge space industry."
+        },
+        {
+          "key": "D",
+          "text": "concerned with the Earth's polar ice caps.",
+          "explanation": "The paragraph does not mention polar ice caps."
+        },
+        {
+          "key": "E",
+          "text": "engaged in antinuclear weapon campaigns.",
+          "explanation": "The paragraph does not mention weapons or nuclear issues."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "C",
+      "explanationSummary": "The paragraph states \"we have been deeply embedded in the space engineering for more than 40 years – and we continue to be involved with the state-of-the-art technologies\", indicating long-standing involvement with cutting-edge space industry."
+    },
+    {
+      "id": "transp23e6-q23",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 23
+      },
+      "area": "eng-sw",
+      "subtopic": "5.4 Verificação, validação e teste",
+      "stem": "O principal objetivo dos testes estáticos é o de reduzir os defeitos de um software por meio da redução de defeitos na documentação a partir da qual o software foi desenvolvido. Uma das técnicas mais importantes para a execução de testes estáticos é a de",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "regressão",
+          "explanation": "Teste de regressão é uma técnica de teste dinâmico, executada sobre o software em execução após alterações, não uma técnica de teste estático."
+        },
+        {
+          "key": "B",
+          "text": "walk-through"
+        },
+        {
+          "key": "C",
+          "text": "análise do valor limite",
+          "explanation": "É uma técnica de projeto de casos de teste dinâmico (caixa-preta), aplicada à execução do software, não uma técnica de teste estático."
+        },
+        {
+          "key": "D",
+          "text": "análise de casos de uso",
+          "explanation": "Refere-se a uma técnica de levantamento/análise de requisitos, não a uma técnica de revisão/teste estático de documentação."
+        },
+        {
+          "key": "E",
+          "text": "particionamento de equivalência",
+          "explanation": "É uma técnica de projeto de casos de teste dinâmico (caixa-preta), não uma revisão estática de documentos."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "Walk-through é uma técnica clássica de teste estático (revisão), em que a documentação/código é examinada por pares sem execução do software, reduzindo defeitos antes da fase de execução."
+    },
+    {
+      "id": "transp23e6-q24",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 24
+      },
+      "area": "eng-sw",
+      "subtopic": "5.1 Levantamento, análise e gerenciamento de requisitos",
+      "stem": "Uma empresa está desenvolvendo um software para lançar mísseis de plataformas móveis e rastreá-los até os alvos. A equipe que irá desenvolver esse software criou uma lista contendo vários requisitos que foram obtidos durante um encontro com técnicos da área militar. Dentre os requisitos funcionais dessa lista, está o de que",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "a velocidade planejada de um míssil deve ser calculada segundo a equação v(t) = vo + at."
+        },
+        {
+          "key": "B",
+          "text": "a interface com os operadores do centro de controle deve fornecer imagens por meio de câmeras de alta resolução e de infravermelho.",
+          "explanation": "Descreve um atributo de qualidade da interface (usabilidade/capacidade do hardware), característico de requisito não funcional, não uma função computada pelo sistema."
+        },
+        {
+          "key": "C",
+          "text": "as novas versões do software não poderão ser carregadas nas plataformas de lançamento enquanto houver mísseis no ar.",
+          "explanation": "É uma restrição operacional de segurança/disponibilidade, típica de requisito não funcional, não uma função que o sistema executa."
+        },
+        {
+          "key": "D",
+          "text": "o atraso máximo no envio de um comando tem de ser de um milésimo de segundo.",
+          "explanation": "É um requisito de desempenho (tempo de resposta), característico de requisito não funcional."
+        },
+        {
+          "key": "E",
+          "text": "os dados devem trafegar de forma criptografada no padrão AES com 256 bits.",
+          "explanation": "É um requisito de segurança, característico de requisito não funcional, não uma função do sistema."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "Requisitos funcionais descrevem funções/cálculos que o sistema deve executar; calcular a velocidade planejada segundo v(t) = vo + at é uma função computacional do software, enquanto as demais alternativas descrevem atributos de qualidade (desempenho, segurança, disponibilidade) próprios de requisitos não funcionais."
+    },
+    {
+      "id": "transp23e6-q25",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 25
+      },
+      "area": "eng-sw",
+      "subtopic": "5.2 Ciclo de vida de sistemas e seus paradigmas",
+      "stem": "Alguns modelos de ciclo de vida de software se caracterizam por serem processos de desenvolvimento sequenciais, isto é, cada fase do processo deve ser concluída antes do início da próxima. Nessa categoria de processos, estão os modelos",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "incremental e em cascata",
+          "explanation": "O modelo incremental entrega o produto em incrementos sucessivos, não seguindo uma única sequência linear e completa de fases como o modelo estritamente sequencial descrito."
+        },
+        {
+          "key": "B",
+          "text": "iterativo e em espiral",
+          "explanation": "Ambos são processos iterativos, que repetem ciclos de fases, contrariando a definição de processo estritamente sequencial dada no enunciado."
+        },
+        {
+          "key": "C",
+          "text": "ágil e em espiral",
+          "explanation": "Métodos ágeis são iterativos e incrementais por definição, e o modelo em espiral também é iterativo, contrariando a ideia de sequência estrita."
+        },
+        {
+          "key": "D",
+          "text": "em V e em cascata"
+        },
+        {
+          "key": "E",
+          "text": "em V e incremental",
+          "explanation": "O modelo incremental não é estritamente sequencial, pois divide o desenvolvimento em incrementos que se repetem."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "D",
+      "explanationSummary": "Os modelos em cascata e em V seguem fases predefinidas executadas em sequência linear, cada uma dependendo da conclusão da anterior, o que os caracteriza como processos de desenvolvimento sequenciais."
+    },
+    {
+      "id": "transp23e6-q26",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 26
+      },
+      "area": "arq-dados",
+      "subtopic": "1.3 O modelo Relacional",
+      "stem": "A Álgebra Relacional possui vários operadores binários. Dentre os operadores listados abaixo, o único NÃO binário é a(o)",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "divisão",
+          "explanation": "A divisão relacional opera sobre duas relações (binário)."
+        },
+        {
+          "key": "B",
+          "text": "projeção"
+        },
+        {
+          "key": "C",
+          "text": "junção natural",
+          "explanation": "A junção natural combina duas relações (binário)."
+        },
+        {
+          "key": "D",
+          "text": "junção externa esquerda",
+          "explanation": "A junção externa esquerda combina duas relações (binário)."
+        },
+        {
+          "key": "E",
+          "text": "produto cartesiano",
+          "explanation": "O produto cartesiano opera sobre duas relações (binário)."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "A projeção é um operador unário: opera sobre uma única relação, selecionando um subconjunto de seus atributos/colunas; todos os demais operadores listados (divisão, junção natural, junção externa esquerda, produto cartesiano) combinam duas relações."
+    },
+    {
+      "id": "transp23e6-q29",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 29
+      },
+      "area": "ux",
+      "subtopic": "6.9 Prototipação",
+      "stem": "Ao desenvolver protótipos de alta fidelidade de um software, é necessário",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "aplicar a técnica de paper prototyping.",
+          "explanation": "Paper prototyping é uma técnica típica de protótipos de baixa fidelidade, não de alta fidelidade."
+        },
+        {
+          "key": "B",
+          "text": "realizar a primeira validação com algum usuário ou com algum cliente do protótipo criado.",
+          "explanation": "A primeira validação com usuários costuma ocorrer ainda em protótipos de baixa fidelidade, mais rápidos e baratos de ajustar, e não é o que define especificamente um protótipo de alta fidelidade."
+        },
+        {
+          "key": "C",
+          "text": "definir o wireframe das telas do software sem o uso das cores da solução.",
+          "explanation": "Wireframes sem cores são característicos de protótipos de baixa fidelidade, não de alta fidelidade."
+        },
+        {
+          "key": "D",
+          "text": "fornecer um layout básico que permita algumas validações iniciais de maneira digital.",
+          "explanation": "Um layout básico corresponde a um protótipo de fidelidade baixa/média, não de alta fidelidade."
+        },
+        {
+          "key": "E",
+          "text": "oferecer protótipos de telas que representam de maneira fiel o que é esperado pelos usuários para que assim sejam codificadas."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "E",
+      "explanationSummary": "Protótipos de alta fidelidade se caracterizam por representar de maneira fiel a aparência e o comportamento esperados do produto final, servindo de base próxima à codificação, diferentemente dos protótipos de baixa fidelidade (papel, wireframes sem cor)."
+    },
+    {
+      "id": "transp23e6-q30",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 30
+      },
+      "area": "ux",
+      "subtopic": "6.10 Design thinking",
+      "stem": "Uma equipe de uma empresa de jogos composta por seis membros precisava decidir qual seria o novo diferencial a ser incluído no jogo mais rentável da empresa. A fim de pensar em novas ideias, um dos membros da equipe propôs usarem uma técnica de criatividade dividida em rodadas (p.ex. cinco minutos por rodada). Na primeira rodada, cada membro da equipe deve escrever em um papel, que cada um deles deve ter recebido, novas ideias para o jogo. Ao terminar o tempo da primeira rodada, cada um deve passar para seu colega localizado ao lado o papel em que escreveu. Com a troca realizada, cada membro da equipe estará com outro papel, que já possui algumas ideias escritas. Na nova rodada, eles poderão lê-las e escrever novas ideias. Ao final da segunda rodada, repete-se a mesma abordagem de trocar o papel e iniciar uma nova rodada para a escrita de novas ideias, até que o dono do papel da primeira rodada volte a tê-lo. Por fim, os papéis são recolhidos e as ideias são apresentadas ao grupo, que irá classificá-las em boas ou impraticáveis. Qual a técnica de criatividade descrita?",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "Brainstorm",
+          "explanation": "Brainstorm é uma técnica de geração livre e verbal de ideias em grupo, sem a dinâmica estruturada de rodadas cronometradas com troca de papéis escritos."
+        },
+        {
+          "key": "B",
+          "text": "Brainwriting"
+        },
+        {
+          "key": "C",
+          "text": "Lotus Blossom",
+          "explanation": "Lotus Blossom organiza ideias em torno de um tema central expandido em pétalas, sem a dinâmica de rodadas cronometradas com troca de papéis descrita."
+        },
+        {
+          "key": "D",
+          "text": "Mapa mental",
+          "explanation": "Mapa mental é uma técnica individual/gráfica de organização de ideias em torno de ramificações, não uma dinâmica de rodadas com troca de papéis entre participantes."
+        },
+        {
+          "key": "E",
+          "text": "5 Porquês",
+          "explanation": "5 Porquês é uma técnica de investigação de causa raiz de um problema, não uma técnica de geração de ideias em rodadas com troca de papéis."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "Brainwriting é a técnica de geração de ideias em que cada participante escreve suas ideias em papel e as passa para o colega ao lado em rodadas cronometradas, permitindo construir sobre as ideias anteriores antes da avaliação final em grupo."
+    },
+    {
+      "id": "transp23e6-q31",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 31
+      },
+      "area": "eng-sw",
+      "subtopic": "5.4 Verificação, validação e teste",
+      "stem": "Uma equipe de desenvolvimento pretende convidar um conjunto de representantes dos usuários finais de uma solução, que aparentemente está completamente desenvolvida, para testar sua última versão antes de disponibilizá-la no mercado. Caso essa versão seja aprovada, será colocada em produção. A situação descrita faz referência aos testes",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "unitários",
+          "explanation": "Testes unitários são executados por desenvolvedores sobre unidades isoladas de código, não por usuários finais sobre a versão completa antes do lançamento."
+        },
+        {
+          "key": "B",
+          "text": "de aceitação"
+        },
+        {
+          "key": "C",
+          "text": "de desempenho",
+          "explanation": "Testes de desempenho avaliam tempo de resposta/carga do sistema, não a aprovação de usuários finais para liberação ao mercado."
+        },
+        {
+          "key": "D",
+          "text": "de integração",
+          "explanation": "Testes de integração verificam a interação entre componentes/módulos, tarefa da equipe técnica, não uma validação por usuários finais antes do lançamento."
+        },
+        {
+          "key": "E",
+          "text": "de sistema",
+          "explanation": "Testes de sistema validam o sistema como um todo do ponto de vista técnico, geralmente conduzidos pela equipe de testes, não pelos usuários finais para aprovação de lançamento."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "Testes de aceitação são realizados por representantes dos usuários finais (ou clientes) sobre a versão praticamente completa do software, com o objetivo de aprová-la (ou não) para entrar em produção — exatamente a situação descrita."
+    },
+    {
+      "id": "transp23e6-q32",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 32
+      },
+      "area": "eng-sw",
+      "subtopic": "5.3 Modelos, metodologias, técnicas e ferramentas de análise e projeto (estruturado e orientado a objetos)",
+      "stem": "Um desenvolvedor pretende criar três métodos com o mesmo nome em uma mesma classe, mas com parâmetros diferentes. Para essa tarefa, utilizará uma técnica que faz parte do paradigma de orientação a objetos. Qual o nome da técnica a ser usada pelo desenvolvedor?",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "Herança",
+          "explanation": "Herança permite que uma classe derive características de outra, não a criação de múltiplos métodos de mesmo nome com assinaturas diferentes na mesma classe."
+        },
+        {
+          "key": "B",
+          "text": "Interface",
+          "explanation": "Interface define um contrato de métodos a ser implementado por classes, não a técnica de múltiplas assinaturas de um mesmo método em uma classe."
+        },
+        {
+          "key": "C",
+          "text": "Instanciação",
+          "explanation": "Instanciação é o processo de criar objetos a partir de uma classe, sem relação com a definição de métodos com o mesmo nome e parâmetros diferentes."
+        },
+        {
+          "key": "D",
+          "text": "Sobrecarga"
+        },
+        {
+          "key": "E",
+          "text": "Sobrescrita",
+          "explanation": "Sobrescrita (override) ocorre quando uma subclasse redefine um método já existente na superclasse com a mesma assinatura, e não múltiplos métodos de mesmo nome com parâmetros diferentes na mesma classe."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "D",
+      "explanationSummary": "Sobrecarga (overloading) é a técnica orientada a objetos que permite definir múltiplos métodos com o mesmo nome em uma mesma classe, desde que suas listas de parâmetros sejam diferentes."
+    },
+    {
+      "id": "transp23e6-q33",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 33
+      },
+      "area": "ux",
+      "subtopic": "6.1 Conceitos de acessibilidade e usabilidade",
+      "stem": "A respeito de acessibilidade e usabilidade, verifica-se que",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "usabilidade é uma característica voltada a definir o desempenho e a manutenibilidade de uma solução para diferentes dispositivos.",
+          "explanation": "Usabilidade se refere à facilidade de uso pelo usuário, não a desempenho técnico ou manutenibilidade do software."
+        },
+        {
+          "key": "B",
+          "text": "acessibilidade é uma característica que deve ser pensada a partir do momento em que um software se encontra codificado e pronto para testes com usuários finais.",
+          "explanation": "Acessibilidade deve ser considerada desde as fases iniciais de projeto/prototipação, não apenas após a codificação estar concluída."
+        },
+        {
+          "key": "C",
+          "text": "acessibilidade e usabilidade devem ser pensadas a partir da fase de codificação de um software.",
+          "explanation": "Ambas devem ser consideradas desde as fases de concepção e prototipação, antes da codificação, e não apenas a partir dela."
+        },
+        {
+          "key": "D",
+          "text": "acessibilidade e usabilidade são características conflitantes que impedem a aplicação de ambas em um mesmo software.",
+          "explanation": "Acessibilidade e usabilidade são características complementares, não conflitantes; é plenamente possível e desejável aplicá-las conjuntamente."
+        },
+        {
+          "key": "E",
+          "text": "acessibilidade e usabilidade são características que devem ser consideradas para a construção de protótipos em um processo de desenvolvimento de software, as quais devem ser testadas antes da codificação."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "E",
+      "explanationSummary": "Acessibilidade e usabilidade devem ser incorporadas desde a fase de prototipação e validadas com testes antes da codificação, e não tratadas como preocupações conflitantes ou postergadas para depois do software já codificado."
+    },
+    {
+      "id": "transp23e6-q34",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 34
+      },
+      "area": "ux",
+      "subtopic": "6.10 Design thinking",
+      "stem": "O mapa de empatia é uma ferramenta muito utilizada em Design Thinking, e nele há informações importantes sobre o usuário que devem ser consideradas. Quais são essas informações?",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "idade, nome, desejos, dores, animais preferidos.",
+          "explanation": "Esses itens não correspondem aos quadrantes clássicos do mapa de empatia (pensa e sente, escuta, vê, fala e faz)."
+        },
+        {
+          "key": "B",
+          "text": "tecnologias preferidas, formação, o que pensa e sente.",
+          "explanation": "Inclui apenas parcialmente um quadrante do mapa de empatia, misturado com itens de perfil demográfico que não são sua estrutura padrão."
+        },
+        {
+          "key": "C",
+          "text": "idade, nome, hobbies e dispositivos tecnológicos que possui.",
+          "explanation": "Esses itens são dados de perfil/persona, não os quadrantes do mapa de empatia."
+        },
+        {
+          "key": "D",
+          "text": "o que ele pensa e sente, o que ele escuta, o que ele vê, o que ele fala e faz."
+        },
+        {
+          "key": "E",
+          "text": "formação acadêmica, necessidades, local em que trabalha, e local em que nasceu.",
+          "explanation": "Esses itens são dados de perfil demográfico/profissional, não os quadrantes do mapa de empatia."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "D",
+      "explanationSummary": "O mapa de empatia é estruturado classicamente nos quadrantes \"pensa e sente\", \"escuta\", \"vê\" e \"fala e faz\", que descrevem a experiência subjetiva do usuário e orientam decisões de design centradas nele."
+    },
+    {
+      "id": "transp23e6-q35",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 35
+      },
+      "area": "logica",
+      "subtopic": "8.1 Sentido lógico-matemático convencional dos conectivos",
+      "stem": "A seguinte afirmação é consequência lógica de \"Todo profissional de um posto de saúde é médico ou enfermeiro.\":",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "Todo médico de um posto de saúde também é enfermeiro.",
+          "explanation": "Não é consequência lógica: a premissa afirma uma disjunção (médico OU enfermeiro), não que todo médico seja também enfermeiro."
+        },
+        {
+          "key": "B",
+          "text": "Se alguém não é médico e não é enfermeiro, então não é um profissional de um posto de saúde."
+        },
+        {
+          "key": "C",
+          "text": "Nenhum enfermeiro de um posto de saúde é um médico.",
+          "explanation": "Não é consequência lógica: a premissa (disjunção) não exclui que a mesma pessoa seja médica e enfermeira."
+        },
+        {
+          "key": "D",
+          "text": "Alguns profissionais de um posto de saúde não são médicos e não são enfermeiros.",
+          "explanation": "Contradiz diretamente a premissa, que afirma que TODO profissional é médico ou enfermeiro."
+        },
+        {
+          "key": "E",
+          "text": "Profissionais de um posto de saúde não podem ser médicos e enfermeiros ao mesmo tempo.",
+          "explanation": "Não é consequência lógica: a premissa não afirma exclusividade entre ser médico e ser enfermeiro."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "A premissa \"todo profissional X é médico(M) ou enfermeiro(E)\" equivale a X→(M∨E); sua contrapositiva, logicamente equivalente, é ¬(M∨E)→¬X, ou seja, \"se alguém não é médico e não é enfermeiro, então não é profissional de um posto de saúde\", que é exatamente a alternativa B."
+    },
+    {
+      "id": "transp23e6-q37",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 37
+      },
+      "area": "logica",
+      "subtopic": "8.2 Argumentos",
+      "stem": "Armando, Beto e Carlos têm diferentes profissões: professor, médico e advogado, não necessariamente nessa ordem. Cada um deles exerce uma profissão diferente. Um deles veste branco, outro veste verde e o terceiro veste azul. Sabe-se que o professor veste branco; o advogado é o Carlos; o médico não veste verde e não é o Armando. Com base nas informações apresentadas, constata-se o seguinte:",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "Armando veste branco; Beto veste verde; Carlos veste azul.",
+          "explanation": "Contradiz a restrição de que o médico não veste verde: nessa alternativa Beto (o médico, já que Carlos é advogado e Armando não é médico) vestiria verde."
+        },
+        {
+          "key": "B",
+          "text": "Armando veste azul; Beto é o professor e veste branco; Carlos é o advogado e veste verde.",
+          "explanation": "Se Beto é o professor, o médico teria de ser Armando (já que Carlos é advogado), o que contradiz a restrição de que o médico não é o Armando."
+        },
+        {
+          "key": "C",
+          "text": "Armando é o advogado e veste branco; Beto é o médico e veste azul; Carlos é o professor e veste verde.",
+          "explanation": "Contradiz o dado de que o advogado é o Carlos, não o Armando."
+        },
+        {
+          "key": "D",
+          "text": "Armando é o professor e veste branco; Carlos é o advogado e veste azul; Beto é o médico e veste verde.",
+          "explanation": "Contradiz a restrição de que o médico (Beto, nessa distribuição) não veste verde."
+        },
+        {
+          "key": "E",
+          "text": "Armando é o professor e veste branco; Beto é o médico; Carlos veste verde."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "E",
+      "explanationSummary": "Como o advogado é Carlos e o médico não é Armando, o médico só pode ser Beto, restando a Armando a profissão de professor (que veste branco); como o médico (Beto) não veste verde, resta-lhe o azul, e a Carlos (advogado) o verde — exatamente a distribuição da alternativa E, a única consistente com todas as restrições."
+    },
+    {
+      "id": "transp23e6-q38",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 38
+      },
+      "area": "seg-info",
+      "subtopic": "9.5 Técnicas de desenvolvimento seguro (SAST/DAST/IAST)",
+      "stem": "As práticas de SDL (Security Development Lifecycle) recomendam ações importantes que devem ser adotadas por projetistas, arquitetos e programadores durante o processo de desenvolvimento de um software. Um teste muito utilizado é a análise em tempo de execução do software totalmente compilado, permitindo a verificação das funcionalidades que podem apenas ser testadas quando todos os componentes estão integrados e em execução. Esse tipo de teste é conhecido como",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "SAST",
+          "explanation": "SAST (Static Application Security Testing) analisa o código-fonte estaticamente, sem executar o software, o contrário do que descreve o enunciado."
+        },
+        {
+          "key": "B",
+          "text": "DAST"
+        },
+        {
+          "key": "C",
+          "text": "VAST",
+          "explanation": "VAST não é uma sigla padrão de técnica de teste de segurança de software equivalente à descrita no enunciado."
+        },
+        {
+          "key": "D",
+          "text": "DREAD",
+          "explanation": "DREAD é um modelo de classificação/priorização de riscos de ameaças, não uma técnica de teste em tempo de execução."
+        },
+        {
+          "key": "E",
+          "text": "STRIDE",
+          "explanation": "STRIDE é um modelo de modelagem de ameaças, não uma técnica de teste dinâmico do software compilado em execução."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "DAST (Dynamic Application Security Testing) avalia o software totalmente compilado em execução, permitindo identificar vulnerabilidades que só se manifestam com todos os componentes integrados e em funcionamento, exatamente como descrito no enunciado."
+    },
+    {
+      "id": "transp23e6-q39",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 39
+      },
+      "area": "seg-info",
+      "subtopic": "9.10 Gestão de Identidade e acesso (RBAC e ABAC)",
+      "stem": "O controle de acesso é um componente crítico de um IAM (Identity and Access Management), que é projetado para controlar recursos que um usuário está autorizado a acessar. Considere uma organização na qual os administradores devem definir permissões com base em uma combinação de atributos, de modo que um usuário possa ter diferentes níveis de acesso com base em sua localização, no recurso que está sendo acessado, no contexto da requisição de acesso e, em alguns casos, nas condições ambientes em relação a políticas, a regras ou a relacionamentos que descrevem as operações permitidas. Nesse caso, a organização deve optar por um IAM que use a abordagem",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "ABAC"
+        },
+        {
+          "key": "B",
+          "text": "RBAC",
+          "explanation": "RBAC concede acesso com base em papéis/funções do usuário, e não em uma combinação flexível de múltiplos atributos contextuais (localização, recurso, condições ambientais)."
+        },
+        {
+          "key": "C",
+          "text": "DAC",
+          "explanation": "DAC (Discretionary Access Control) baseia-se na decisão discricionária do proprietário do recurso, não em uma combinação de atributos contextuais."
+        },
+        {
+          "key": "D",
+          "text": "MAC",
+          "explanation": "MAC (Mandatory Access Control) baseia-se em rótulos de sensibilidade/classificação fixos definidos centralmente, não em combinações dinâmicas de atributos contextuais."
+        },
+        {
+          "key": "E",
+          "text": "ACL",
+          "explanation": "ACLs definem permissões associadas diretamente a usuários/recursos específicos, sem a lógica de combinação flexível de atributos contextuais descrita."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "ABAC (Attribute-Based Access Control) concede acesso com base em uma combinação de atributos — como localização, recurso, contexto da requisição e condições ambientais —, exatamente o modelo descrito no enunciado."
+    },
+    {
+      "id": "transp23e6-q40",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 40
+      },
+      "area": "seg-info",
+      "subtopic": "9.15 Framework Mitre ATT&CK",
+      "stem": "A MITRE ATT&CK® é uma referência a respeito de táticas e de técnicas adversárias. Profissionais da área de segurança precisam conhecer essa referência para implantar controles de segurança que assegurem a proteção dos sistemas de informação da organização. Dentre as táticas adversárias listadas na MITRE ATT&CK®, está a(o)",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "verificação de vulnerabilidade",
+          "explanation": "Não corresponde a uma das táticas (categorias de objetivo do atacante) listadas na matriz MITRE ATT&CK."
+        },
+        {
+          "key": "B",
+          "text": "comunicação entre processos",
+          "explanation": "É uma técnica genérica de sistemas operacionais, não uma das táticas nomeadas na matriz MITRE ATT&CK."
+        },
+        {
+          "key": "C",
+          "text": "manipulação de conta",
+          "explanation": "\"Manipulação de conta\" é uma técnica específica dentro de táticas como Persistência/Escalonamento de Privilégio, não o nome de uma tática da matriz."
+        },
+        {
+          "key": "D",
+          "text": "evasão do depurador",
+          "explanation": "É uma técnica específica de evasão de defesa, não uma das táticas nomeadas na matriz MITRE ATT&CK."
+        },
+        {
+          "key": "E",
+          "text": "acesso à credencial"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "E",
+      "explanationSummary": "Credential Access (\"acesso à credencial\") é uma das táticas oficialmente listadas na matriz MITRE ATT&CK®, representando o objetivo do atacante de roubar credenciais como nomes de usuário e senhas."
+    },
+    {
+      "id": "transp23e6-q41",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 41
+      },
+      "area": "seg-info",
+      "subtopic": "9.19 ISO 27002, criptografia, certificação e assinatura digital",
+      "stem": "O envelope digital é um esquema de criptografia padrão para implementar a confidencialidade de dados durante o envio de uma mensagem para um destinatário. Nesse esquema, criptografam-se os dados utilizando-se um algoritmo de criptografia simétrica. Já a chave secreta usada nesse esquema é criptografada utilizando-se um algoritmo de criptografia assimétrica com a chave",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "privada do remetente",
+          "explanation": "A chave privada do remetente é usada para assinar digitalmente, não para criptografar a chave simétrica no envelope digital."
+        },
+        {
+          "key": "B",
+          "text": "privada do destinatário",
+          "explanation": "A chave privada do destinatário é usada para decriptografar a chave simétrica, não para criptografá-la no momento do envio."
+        },
+        {
+          "key": "C",
+          "text": "pública do remetente",
+          "explanation": "A chave pública do remetente permitiria que qualquer pessoa que a possua decriptografe a chave simétrica, não garantindo confidencialidade para o destinatário específico."
+        },
+        {
+          "key": "D",
+          "text": "pública do destinatário"
+        },
+        {
+          "key": "E",
+          "text": "pública de um terceiro confiável",
+          "explanation": "O envelope digital não depende de um terceiro confiável para a criptografia da chave simétrica; a chave pública usada é a do próprio destinatário da mensagem."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "D",
+      "explanationSummary": "No envelope digital, a chave secreta (simétrica) é criptografada com a chave pública do destinatário, de modo que apenas ele, usando sua chave privada correspondente, consiga decriptografá-la e, com ela, decriptografar os dados."
+    },
+    {
+      "id": "transp23e6-q42",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 42
+      },
+      "area": "seg-info",
+      "subtopic": "9.11 Gerenciamento de resposta a incidente (NIST SP 800-61)",
+      "stem": "O processo de resposta a incidentes não é uma atividade linear que se inicia quando um incidente é detectado e que termina com sua erradicação e recuperação. Há uma reação a uma ocorrência identificada e, por meio dessa reação, são feitas a classificação, a investigação e a contenção do incidente. Um Ciclo de Vida de Resposta a Incidentes está definido na publicação do",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "NIST SP 800-30",
+          "explanation": "NIST SP 800-30 trata de gestão de riscos, não do ciclo de vida de resposta a incidentes."
+        },
+        {
+          "key": "B",
+          "text": "NIST SP 800-34",
+          "explanation": "NIST SP 800-34 trata de planejamento de contingência de sistemas de TI, não especificamente do ciclo de vida de resposta a incidentes."
+        },
+        {
+          "key": "C",
+          "text": "NIST SP 800-61"
+        },
+        {
+          "key": "D",
+          "text": "ISO 27033-5",
+          "explanation": "ISO 27033-5 trata de segurança de redes (VPNs), não do ciclo de vida de resposta a incidentes."
+        },
+        {
+          "key": "E",
+          "text": "ISO 27034-1",
+          "explanation": "ISO 27034-1 trata de segurança de aplicações, não do ciclo de vida de resposta a incidentes."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "C",
+      "explanationSummary": "O NIST SP 800-61 (\"Computer Security Incident Handling Guide\") define o Ciclo de Vida de Resposta a Incidentes, com fases de preparação, detecção e análise, contenção/erradicação/recuperação, e atividades pós-incidente."
+    },
+    {
+      "id": "transp23e6-q43",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 43
+      },
+      "area": "seg-info",
+      "subtopic": "9.2 Operação de segurança (Firewall, Proxy, IPS/IDS, DLP, CASB, SIEM, Antivírus, EDR, WAF, Gestão de vulnerabilidades, Monitoração, Backup)",
+      "stem": "Organizações constantemente enfrentam ameaças cibernéticas que podem causar danos e prejuízos graves. Há uma solução de software muita utilizada, que fornece uma visão holística da segurança da informação de uma organização, agregando e analisando eventos e logs de segurança de várias fontes em toda a infraestrutura de TI. A solução de software descrita é o",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "CASB",
+          "explanation": "CASB atua no controle de segurança de acesso a serviços em nuvem, não na agregação e análise centralizada de logs/eventos de toda a infraestrutura."
+        },
+        {
+          "key": "B",
+          "text": "WAF",
+          "explanation": "WAF protege aplicações web contra ataques específicos na camada de aplicação, não fornece a visão holística de agregação/análise de logs de toda a infraestrutura."
+        },
+        {
+          "key": "C",
+          "text": "DLP",
+          "explanation": "DLP foca na prevenção de perda/vazamento de dados sensíveis, não na agregação e análise centralizada de eventos e logs de segurança."
+        },
+        {
+          "key": "D",
+          "text": "SIEM"
+        },
+        {
+          "key": "E",
+          "text": "Proxy",
+          "explanation": "Proxy intermedeia e filtra tráfego de rede, não realiza a agregação e análise centralizada de eventos e logs de segurança de toda a infraestrutura."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "D",
+      "explanationSummary": "SIEM (Security Information and Event Management) é a solução que agrega e correlaciona eventos e logs de segurança de múltiplas fontes da infraestrutura de TI, fornecendo uma visão holística da segurança da organização."
+    },
+    {
+      "id": "transp23e6-q44",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 44
+      },
+      "area": "seg-info",
+      "subtopic": "9.19 ISO 27002, criptografia, certificação e assinatura digital",
+      "stem": "As organizações podem usar a Norma ABNT ISO 27002 como uma referência para a seleção de controles dentro do processo de um SGSI (Sistema de Gestão de Segurança da Informação). Conforme definido nessa norma, assegurar que as informações e os recursos de processamento da informação estejam protegidos contra malware é um dos objetivos listados para o contexto da segurança",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "nas operações"
+        },
+        {
+          "key": "B",
+          "text": "nas comunicações",
+          "explanation": "A proteção contra malware é listada na ISO 27002 sob os controles de segurança nas operações, não nos controles de segurança de comunicações/redes."
+        },
+        {
+          "key": "C",
+          "text": "em recursos humanos",
+          "explanation": "A ISO 27002 trata segurança em recursos humanos como controles relacionados a contratação, treinamento e desligamento de pessoal, não à proteção contra malware."
+        },
+        {
+          "key": "D",
+          "text": "no controle de acesso",
+          "explanation": "Controle de acesso trata da gestão de permissões e autenticação, não especificamente da proteção contra malware."
+        },
+        {
+          "key": "E",
+          "text": "física e do ambiente",
+          "explanation": "Segurança física e do ambiente trata da proteção de instalações e equipamentos, não da proteção contra malware."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "Na ISO/IEC 27002, o controle de proteção contra malware está listado entre os controles de \"segurança nas operações\", cujo objetivo é assegurar que as informações e os recursos de processamento estejam protegidos contra software malicioso."
+    },
+    {
+      "id": "transp23e6-q45",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 45
+      },
+      "area": "arq-dados",
+      "subtopic": "1.17 Melhoria de performance de banco de dados",
+      "stem": "Para melhorar o desempenho de um banco de dados, um Administrador de Banco de Dados (DBA) pode realizar uma série de ações. Uma ação que pode contribuir significativamente para a otimização do desempenho de um sistema de banco de dados relacionais é",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "executar todas as transações de maneira sequencial ou serial, pois é a única forma de garantir a correção da execução concorrente.",
+          "explanation": "Execução puramente serial elimina a concorrência e degrada gravemente o desempenho; o controle de concorrência (isolamento) garante correção sem exigir execução serial."
+        },
+        {
+          "key": "B",
+          "text": "desnormalizar as tabelas envolvidas em operações de junção interna frequentes."
+        },
+        {
+          "key": "C",
+          "text": "substituir todos os SELECT por SELECT DISTINCT, evitando repetições.",
+          "explanation": "SELECT DISTINCT normalmente aumenta o custo de processamento (ordenação/remoção de duplicatas), prejudicando, e não melhorando, o desempenho."
+        },
+        {
+          "key": "D",
+          "text": "usar sempre a cláusula ORDER BY para ordenar os resultados exibidos.",
+          "explanation": "Ordenar resultados com ORDER BY adiciona custo de processamento à consulta e não é uma técnica de otimização de desempenho."
+        },
+        {
+          "key": "E",
+          "text": "fragmentar os índices existentes nas colunas mais acessadas.",
+          "explanation": "Fragmentar índices tende a piorar, não melhorar, a eficiência de busca; a prática recomendada é reorganizar/reconstruir índices fragmentados."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "Desnormalizar tabelas frequentemente envolvidas em junções internas reduz o número de junções necessárias nas consultas mais comuns, sendo uma técnica reconhecida de otimização de desempenho em bancos relacionais, ao custo de alguma redundância controlada."
+    },
+    {
+      "id": "transp23e6-q46",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 46
+      },
+      "area": "arq-dados",
+      "subtopic": "1.23 Diferenciação entre bancos relacionais, multidimensionais, documentos e grafos",
+      "stem": "Cada tipo de sistema de gerenciamento de banco de dados – relacional, orientado a documentos e orientado a grafos – possui características únicas que os tornam mais adequados para certos tipos de aplicações. A esse respeito, é uma característica típica dos bancos de dados orientados a documentos",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "utilizar a linguagem SQL para realização de consultas, sendo estruturados em relações matemáticas.",
+          "explanation": "Descreve bancos de dados relacionais, não orientados a documentos."
+        },
+        {
+          "key": "B",
+          "text": "utilizar a estrutura de vértices e arestas para representar as entidades e os relacionamentos entre elas, permitindo uma navegação eficiente entre os nós relacionados.",
+          "explanation": "Descreve bancos de dados orientados a grafos, não a documentos."
+        },
+        {
+          "key": "C",
+          "text": "ser otimizados para consultas que exploram as relações entre entidades, por meio de nós e arestas.",
+          "explanation": "Descreve bancos de dados orientados a grafos, não a documentos."
+        },
+        {
+          "key": "D",
+          "text": "armazenar os dados no formato JSON ou BSON, permitindo que dados semiestruturados sejam armazenados e consultados de forma flexível."
+        },
+        {
+          "key": "E",
+          "text": "enfatizar, prioritariamente, a normalização de dados, segregando dados relacionados em tabelas distintas interligadas através de chaves estrangeiras.",
+          "explanation": "Descreve o modelo relacional normalizado, característica que os bancos orientados a documentos tipicamente evitam em favor de estruturas denormalizadas e flexíveis."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "D",
+      "explanationSummary": "Bancos de dados orientados a documentos armazenam registros tipicamente em formato JSON ou BSON, permitindo estruturas semiestruturadas e flexíveis, sem exigir um esquema rígido normalizado como no modelo relacional."
+    },
+    {
+      "id": "transp23e6-q48",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 48
+      },
+      "area": "arq-dados",
+      "subtopic": "1.18 Bancos de dados NoSQL",
+      "stem": "Considere um banco de dados orientado a grafos que contém nós que representam Pessoas e nós que representam relacionamentos AMIGO_DE, ligando pessoas amigas entre si. Qual das consultas, em linguagem Cypher, retorna todos os amigos de uma pessoa chamada Alice?",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "MATCH (p:Pessoa)-[:AMIGO_DE]->(amigo) WHERE p.nome = 'Alice' RETURN amigo"
+        },
+        {
+          "key": "B",
+          "text": "MATCH (p:Pessoa)<-[:AMIGO_DE]-(amigo) WHERE p.nome = 'Alice' RETURN amigo",
+          "explanation": "Inverte o sentido do relacionamento (busca quem tem Alice como amigo em vez dos amigos de Alice); dependendo da direção de modelagem do grafo, retorna um conjunto diferente do pedido."
+        },
+        {
+          "key": "C",
+          "text": "MATCH (p:Pessoa {nome: 'Alice'})-[:INIMIGO_DE]->(inimigo) RETURN inimigo",
+          "explanation": "Utiliza o tipo de relacionamento INIMIGO_DE, que não existe no grafo descrito (que possui apenas relacionamentos AMIGO_DE)."
+        },
+        {
+          "key": "D",
+          "text": "SELECT * FROM Pessoas WHERE nome = 'Alice'",
+          "explanation": "É uma consulta SQL, não Cypher, e não expressa a travessia do relacionamento AMIGO_DE exigida pela pergunta."
+        },
+        {
+          "key": "E",
+          "text": "FIND (p:Pessoa {nome: 'Alice'})-[:AMIGO_DE]->(amigo) RETURN amigo",
+          "explanation": "\"FIND\" não é uma cláusula válida da linguagem Cypher; a cláusula correta de busca de padrões é \"MATCH\"."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "A consulta Cypher correta usa MATCH para localizar o nó Pessoa com nome Alice e percorrer o relacionamento de saída [:AMIGO_DE] até os nós amigo, retornando-os — exatamente a alternativa A."
+    },
+    {
+      "id": "transp23e6-q49",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 49
+      },
+      "area": "arq-dados",
+      "subtopic": "1.10 Linguagem de consulta estruturada (SQL)",
+      "stem": "Considere a tabela Familia, apresentada abaixo, que possui as colunas Pai e Filho e uma instância exemplo que permite ilustrar as informações contidas nessa tabela.\n\nPai | Filho\nAndre | Carlos\nAndre | Claudio\nBruno | Diego\nBruno | Daniel\nCarlos | Eriko\nCarlos | Fabio\nDaniel | Gustavo\nDiego | Heleno\nEriko | Isidoro\nFabio | João\n\nUma consulta SQL feita para exibir os nomes dos netos de Carlos retorna os nomes Isidoro e João. A expressão, em linguagem SQL, dessa consulta é",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "SELECT f2.filho FROM Familia f1 INNER JOIN Familia f2 ON f1.filho = f2.pai WHERE f1.pai = 'Carlos';"
+        },
+        {
+          "key": "B",
+          "text": "SELECT f1.pai FROM Familia f1 INNER JOIN Familia f2 ON f1.pai = f2.filho WHERE f1.filho = 'Carlos';",
+          "explanation": "Retorna a coluna f1.pai filtrando por f1.filho = 'Carlos', o que devolveria os pais de Carlos (ou de quem tem Carlos como filho), não os netos de Carlos."
+        },
+        {
+          "key": "C",
+          "text": "SELECT f1.pai FROM Familia f1 INNER JOIN Familia f2 ON f1.filho = f2.pai WHERE f1.pai = 'Carlos';",
+          "explanation": "Retorna a própria coluna f1.pai (sempre \"Carlos\", pela cláusula WHERE), e não os filhos dos filhos de Carlos."
+        },
+        {
+          "key": "D",
+          "text": "SELECT f2.filho FROM Familia f1 INNER JOIN Familia f2 ON f1.pai = f2.pai WHERE f1.pai = 'Carlos';",
+          "explanation": "A junção usa f1.pai = f2.pai (mesmo pai), retornando os próprios filhos de Carlos (Eriko, Fabio), e não os netos."
+        },
+        {
+          "key": "E",
+          "text": "SELECT f2.filho FROM Familia f1 INNER JOIN Familia f2 ON f1.filho = f2.filho WHERE f1.pai = 'Carlos';",
+          "explanation": "A junção usa f1.filho = f2.filho (mesmo filho), o que não encadeia uma geração adicional para chegar aos netos."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "Ao juntar a tabela Familia consigo mesma ligando f1.filho (filho de Carlos) com f2.pai (papel de pai na segunda ocorrência), e filtrando f1.pai = 'Carlos', obtém-se em f2.filho os filhos dos filhos de Carlos — Isidoro (filho de Eriko) e João (filho de Fabio) —, ou seja, os netos de Carlos."
+    },
+    {
+      "id": "transp23e6-q50",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 50
+      },
+      "area": "arq-dados",
+      "subtopic": "1.6 Metadados",
+      "stem": "Em um Sistema de Gerenciamento de Banco de Dados (SGBD) relacional, um banco de metadados é um repositório especializado que armazena informações sobre os dados que estão armazenados no banco de dados propriamente dito. Em geral, os metadados ajudam os desenvolvedores, os administradores de banco de dados e outras partes interessadas a entender, a gerenciar e a trabalhar eficientemente com o banco de dados. Dentre as informações típicas que são encontradas nos metadados de um banco de dados relacional, está(ão)",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "a quantidade total de vendas realizadas, registrada pelas transações.",
+          "explanation": "É um dado de negócio armazenado nas tabelas (dado propriamente dito), não um metadado sobre a estrutura do banco."
+        },
+        {
+          "key": "B",
+          "text": "as senhas de usuários e suas permissões de sistema operacional.",
+          "explanation": "Não é esse tipo de informação (credenciais de sistema operacional) que compõe tipicamente os metadados de um SGBD relacional."
+        },
+        {
+          "key": "C",
+          "text": "o código-fonte dos aplicativos que acessam o banco de dados.",
+          "explanation": "O código-fonte das aplicações externas não é armazenado como metadado do SGBD."
+        },
+        {
+          "key": "D",
+          "text": "os backups dos dados armazenados nas tabelas.",
+          "explanation": "Backups são cópias dos próprios dados, não metadados sobre a estrutura do banco."
+        },
+        {
+          "key": "E",
+          "text": "os esquemas de tabelas, incluindo os tipos de dados e as restrições de colunas."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "E",
+      "explanationSummary": "Metadados de um banco de dados relacional descrevem a estrutura dos dados propriamente ditos, incluindo esquemas de tabelas, tipos de dados das colunas e restrições de integridade — informações \"sobre os dados\", e não os dados de negócio em si."
+    },
+    {
+      "id": "transp23e6-q51",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 51
+      },
+      "area": "arq-dados",
+      "subtopic": "1.17 Melhoria de performance de banco de dados",
+      "stem": "Em um Sistema Gerenciador de Banco de Dados Relacional (SGBD-R), o otimizador de consultas é um componente que possui uma série de tarefas e de atividades cruciais para assegurar que as consultas sejam processadas de maneira eficiente. NÃO representa uma funcionalidade típica do otimizador de consultas",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "escolher o plano de execução mais eficiente para uma consulta, a partir de vários planos possíveis.",
+          "explanation": "É exatamente uma das funções centrais do otimizador de consultas."
+        },
+        {
+          "key": "B",
+          "text": "escolher entre diferentes métodos de acesso a dados (por exemplo, varredura sequencial, uso de índice) para processar uma consulta.",
+          "explanation": "É uma função típica do otimizador de consultas, ao decidir a estratégia de acesso mais eficiente."
+        },
+        {
+          "key": "C",
+          "text": "utilizar estatísticas sobre os dados armazenados para avaliar a seletividade de diferentes predicados em uma consulta.",
+          "explanation": "É uma função típica do otimizador de consultas, baseada em estatísticas para estimar custos."
+        },
+        {
+          "key": "D",
+          "text": "ser responsável por criar novas tabelas no banco de dados, com base nas consultas mais realizadas."
+        },
+        {
+          "key": "E",
+          "text": "avaliar frequentemente diferentes estratégias de junção para decidir a ordem em que as relações são acessadas e combinadas.",
+          "explanation": "É uma função típica do otimizador de consultas, ao decidir a ordem e o método de junção entre relações."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "D",
+      "explanationSummary": "O otimizador de consultas escolhe planos de execução eficientes para consultas já formuladas, mas não cria novas tabelas no banco de dados; essa é uma atividade de modelagem/administração, não uma função do otimizador."
+    },
+    {
+      "id": "transp23e6-q52",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 52
+      },
+      "area": "arq-dados",
+      "subtopic": "1.22 Data Lakes e Soluções para Big Data",
+      "stem": "A respeito do uso de Data Lakes como solução para o gerenciamento e análise de Big Data, constata-se que eles",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "convertem dados não estruturados em estruturados durante o processo de ingestão.",
+          "explanation": "Data Lakes armazenam os dados no formato original (schema-on-read), sem exigir conversão para formato estruturado na ingestão."
+        },
+        {
+          "key": "B",
+          "text": "permitem o armazenamento de dados em formatos estruturados, semiestruturados e não estruturados, oferecendo flexibilidade na análise e no processamento de diferentes tipos de dados."
+        },
+        {
+          "key": "C",
+          "text": "são geralmente implementados usando apenas sistemas de arquivos convencionais devido à sua eficiência em armazenar grandes volumes de dados.",
+          "explanation": "Data Lakes tipicamente usam armazenamento distribuído/em nuvem (como object storage), não apenas sistemas de arquivos convencionais."
+        },
+        {
+          "key": "D",
+          "text": "são adequados apenas para armazenar grandes volumes de dados não estruturados.",
+          "explanation": "Data Lakes armazenam também dados estruturados e semiestruturados, não apenas não estruturados."
+        },
+        {
+          "key": "E",
+          "text": "são inadequados em soluções de Big Data por não suportarem alguns tipos de dados.",
+          "explanation": "Data Lakes são, ao contrário, uma solução amplamente adotada e adequada para Big Data justamente por sua flexibilidade de tipos de dados."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "Uma das principais características dos Data Lakes é a capacidade de armazenar dados estruturados, semiestruturados e não estruturados em seu formato original, oferecendo flexibilidade de análise e processamento."
+    },
+    {
+      "id": "transp23e6-q53",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 53
+      },
+      "area": "arq-dados",
+      "subtopic": "1.14 Propriedades de banco de dados (ACID)",
+      "stem": "As propriedades ACID são cruciais para garantir a confiabilidade das transações em um Sistema Gerenciador de Banco de Dados Relacional (SGBD-R). Cada letra da sigla ACID refere-se a uma propriedade específica. A descrição das quatro propriedades ACID é a seguinte:",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "Atomicidade: o banco de dados deve permanecer em um estado consistente após a transação. Consistência: uma transação é dividida em várias subtransações menores. Isolamento: os resultados de uma transação são permanentes. Durabilidade: as transações simultâneas são isoladas umas das outras.",
+          "explanation": "Troca as definições entre as quatro propriedades: a descrição atribuída à Atomicidade é, na verdade, da Consistência; a da Consistência, da Atomicidade; a do Isolamento, da Durabilidade; e a da Durabilidade, do Isolamento."
+        },
+        {
+          "key": "B",
+          "text": "Atomicidade: uma transação é dividida em várias subtransações menores. Consistência: o banco de dados não necessita manter a integridade após cada transação. Isolamento: as transações podem ser misturadas entre si. Durabilidade: os resultados de uma transação podem ser desfeitos quando necessário.",
+          "explanation": "Inverte o sentido de todas as propriedades ACID, descrevendo o oposto do que cada uma garante."
+        },
+        {
+          "key": "C",
+          "text": "Atomicidade: uma transação deve ser tratada como uma única unidade, que é executada completamente ou não é executada de todo. Consistência: o banco de dados deve permanecer em um estado consistente após a transação. Isolamento: as transações simultâneas são isoladas umas das outras. Durabilidade: os efeitos de uma transação executada com sucesso são permanentes e persistem mesmo em caso de falha do sistema."
+        },
+        {
+          "key": "D",
+          "text": "Atomicidade: as transações simultâneas são isoladas umas das outras. Consistência: uma transação deve ser tratada como uma única unidade, que é executada completamente ou não é executada de todo. Isolamento: o banco de dados deve permanecer em um estado consistente após a transação. Durabilidade: uma transação é dividida em várias subtransações menores.",
+          "explanation": "Desloca cada definição para a propriedade errada (a de Atomicidade pertence ao Isolamento, a de Consistência à Atomicidade, a de Isolamento à Consistência, e a de Durabilidade não corresponde a nenhuma das quatro propriedades reais)."
+        },
+        {
+          "key": "E",
+          "text": "Atomicidade: os resultados de uma transação são permanentes. Consistência: as transações simultâneas são isoladas umas das outras. Isolamento: uma transação deve ser tratada como uma única unidade, que é executada completamente ou não é executada de todo. Durabilidade: o banco de dados deve permanecer em um estado consistente após a transação.",
+          "explanation": "Desloca cada definição para a propriedade errada (a de Atomicidade pertence à Durabilidade, a de Consistência ao Isolamento, a de Isolamento à Atomicidade, e a de Durabilidade à Consistência)."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "C",
+      "explanationSummary": "A alternativa C descreve corretamente as quatro propriedades ACID: Atomicidade (tudo ou nada), Consistência (estado consistente preservado), Isolamento (transações concorrentes isoladas) e Durabilidade (efeitos permanentes mesmo após falhas)."
+    },
+    {
+      "id": "transp23e6-q54",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 54
+      },
+      "area": "gestao-proj",
+      "subtopic": "2.7 Modelos e características",
+      "stem": "Em gerenciamento de projetos e produtos, os modelos de ciclo de vida descrevem como um projeto ou produto é planejado, desenvolvido, executado e encerrado. Dentre os modelos de ciclo de vida mais comuns, há o modelo em cascata, em que",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "é adotada a filosofia de que as mudanças nos requisitos são inevitáveis, e que a equipe deve estar preparada para se adaptar a elas.",
+          "explanation": "Descreve a filosofia de modelos ágeis, que aceitam mudanças de requisitos, e não a do modelo em cascata, que assume requisitos definidos previamente."
+        },
+        {
+          "key": "B",
+          "text": "é adotada uma abordagem iterativa, e as fases são executadas de forma sequencial, permitindo revisões e ajustes contínuos ao longo do processo.",
+          "explanation": "O modelo em cascata não é iterativo nem permite revisões contínuas entre fases; cada fase é concluída antes de avançar, sem retorno regular."
+        },
+        {
+          "key": "C",
+          "text": "é dividido o projeto em uma série de iterações curtas e fixas, chamadas de sprints, e cada iteração resulta em um incremento do produto.",
+          "explanation": "Descreve o modelo Scrum (ágil), não o modelo em cascata."
+        },
+        {
+          "key": "D",
+          "text": "é realizada a fase de levantamento de requisitos durante todo o projeto, permitindo que as suas definições sejam revisadas e revisitadas constantemente.",
+          "explanation": "No modelo em cascata, o levantamento de requisitos é concluído em uma fase inicial específica, não revisitado continuamente ao longo de todo o projeto."
+        },
+        {
+          "key": "E",
+          "text": "são realizadas fases do projeto de forma sequencial e linear, com cada fase dependendo da conclusão da fase anterior."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "E",
+      "explanationSummary": "O modelo em cascata caracteriza-se pela execução sequencial e linear das fases do projeto, sendo que cada fase só se inicia após a conclusão completa da fase anterior, sem sobreposição ou iteração."
+    },
+    {
+      "id": "transp23e6-q55",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 55
+      },
+      "area": "gestao-proj",
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "O gerenciamento de projetos envolve processos que são realizados de forma sequencial a partir da definição e da autorização formal para um novo projeto. A sequência correta de tais processos é:",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "Iniciação do Projeto, Monitoramento do Projeto, Controle do Projeto.",
+          "explanation": "Omite a fase de Planejamento e trata Monitoramento e Controle como processos separados e sequenciais, quando na prática ocorrem de forma conjunta e contínua, não imediatamente após a Iniciação."
+        },
+        {
+          "key": "B",
+          "text": "Iniciação do Projeto, Planejamento do Projeto, Encerramento do Projeto."
+        },
+        {
+          "key": "C",
+          "text": "Planejamento do Escopo, Definição do Escopo, Encerramento do Escopo.",
+          "explanation": "Restringe a sequência a subprocessos do escopo, sem representar a sequência dos grupos de processos do gerenciamento do projeto como um todo, começando pela iniciação formal."
+        },
+        {
+          "key": "D",
+          "text": "Planejamento do Projeto, Execução do Projeto, Monitoramento e Controle do Projeto.",
+          "explanation": "Omite a Iniciação do Projeto, etapa que formalmente autoriza e antecede o planejamento."
+        },
+        {
+          "key": "E",
+          "text": "Monitoramento e Controle do Escopo, Execução do Escopo, Iniciação do Escopo.",
+          "explanation": "Apresenta os grupos de processos em ordem invertida, com o Monitoramento e Controle antes da Execução e da própria Iniciação."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "A partir da autorização formal de um novo projeto, os grupos de processos de gerenciamento de projetos seguem a sequência Iniciação, Planejamento (...), Encerramento, que é a ordem relativa corretamente representada, em subconjunto, pela alternativa B."
+    },
+    {
+      "id": "transp23e6-q56",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 56
+      },
+      "area": "analise-dados",
+      "subtopic": "7.6 Conceitos de data warehouse",
+      "stem": "Nos tempos atuais, o uso massivo de sistemas de informação em praticamente todas as áreas tem como consequência a geração de muitos dados. Nesse contexto de tecnologia da informação, um Data Warehouse é uma estrutura de armazenamento de dados fundamental que possui a característica de",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "armazenar somente dados brutos não processados, sem permitir a criação de relatórios ou análises.",
+          "explanation": "Um Data Warehouse é justamente estruturado para suportar relatórios e análises, não apenas armazenar dados brutos sem tratamento."
+        },
+        {
+          "key": "B",
+          "text": "consolidar dados de diversas fontes em apenas um local, permitindo análises multidimensionais."
+        },
+        {
+          "key": "C",
+          "text": "focar exclusivamente dados operacionais de curto prazo, excluindo dados históricos.",
+          "explanation": "Um Data Warehouse é caracterizado por manter dados históricos (não volátil, variante no tempo), o contrário do que descreve a alternativa."
+        },
+        {
+          "key": "D",
+          "text": "ser otimizado apenas para transações de alta velocidade, sem suportar consultas complexas.",
+          "explanation": "Data Warehouses são otimizados para consultas analíticas complexas (OLAP), não para transações operacionais de alta velocidade (OLTP)."
+        },
+        {
+          "key": "E",
+          "text": "trabalhar apenas com dados estruturados, não sendo capaz de lidar com dados semi-estruturados ou não estruturados.",
+          "explanation": "Soluções modernas de Data Warehouse (e arquiteturas correlatas, como data lakehouses) podem incorporar dados semiestruturados, ainda que o núcleo relacional tradicional priorize dados estruturados; a alternativa B descreve mais precisamente a característica fundamental do conceito."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "A característica fundamental de um Data Warehouse é consolidar dados provenientes de diversas fontes em um repositório único, orientado a assuntos, permitindo análises multidimensionais para apoio à tomada de decisão."
+    },
+    {
+      "id": "transp23e6-q57",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 57
+      },
+      "area": "gestao-ti",
+      "subtopic": "4.6 Lei Geral de Proteção de Dados Pessoais - LGPD (Lei nº 13.709/2018)",
+      "stem": "A necessidade de proteção de dados gerou a necessidade de legislação sobre o assunto por todo o mundo. No Brasil, a Lei Geral de Proteção de Dados (LGPD) regulamenta esse tema. A respeito da LGPD, tem-se que ela",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "é aplicada apenas a empresas localizadas no Brasil, não tendo extraterritorialidade.",
+          "explanation": "A LGPD tem aplicação extraterritorial, alcançando também o tratamento de dados de titulares no Brasil por empresas fora do país, em determinadas condições."
+        },
+        {
+          "key": "B",
+          "text": "é aplicada ao tratamento de dados pessoais coletados tanto por pessoas físicas quanto por pessoas jurídicas em território nacional."
+        },
+        {
+          "key": "C",
+          "text": "é aplicada ao tratamento de dados pessoais, incluindo aqueles coletados por pessoa natural, para fins exclusivamente particulares e não econômicos.",
+          "explanation": "A LGPD expressamente NÃO se aplica ao tratamento de dados realizado por pessoa natural para fins exclusivamente particulares e não econômicos."
+        },
+        {
+          "key": "D",
+          "text": "exige o consentimento do titular apenas para tratamento dos dados pessoais sensíveis.",
+          "explanation": "A LGPD prevê o consentimento (e outras bases legais) para dados pessoais em geral, não apenas para dados sensíveis."
+        },
+        {
+          "key": "E",
+          "text": "estabelece que a revogação do consentimento é sumária, e que os dados não devem ser mantidos, mesmo que anonimizados e para fins de pesquisa.",
+          "explanation": "A LGPD permite a manutenção de dados anonimizados para fins de pesquisa mesmo após a revogação do consentimento, contrariando o que a alternativa afirma."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "A LGPD se aplica ao tratamento de dados pessoais realizado por pessoas físicas ou jurídicas, de direito público ou privado, no território nacional, independentemente do meio, do país de sede da entidade ou do país em que estejam os dados."
+    },
+    {
+      "id": "transp23e6-q58",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 58
+      },
+      "area": "ux",
+      "subtopic": "6.8 Mínimo Produto Viável (MVP)",
+      "stem": "Em qualquer negócio, é necessário compreender as necessidades dos usuários de forma a atendê-los adequadamente. Nesse sentido, o conceito de Produto Mínimo Viável (MVP) passou a ser muito utilizado no desenvolvimento de produtos de softwares, sendo que, nessa área, o MVP é",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "a versão mais simples de um produto, que será criada e disponibilizada aos usuários para validar uma ideia e coletar dados imprescindíveis para validar o direcionamento do negócio."
+        },
+        {
+          "key": "B",
+          "text": "muito utilizado em startups que desejam criar um novo produto, sendo, porém, inadequado para empresas já estabelecidas testarem novas ideias, pois sua plataforma de usuários já fornece as informações necessárias para o lançamento de novos produtos.",
+          "explanation": "O MVP é útil tanto para startups quanto para empresas já estabelecidas que desejam validar novas ideias antes de investimentos maiores, e não é restrito a organizações sem base de usuários."
+        },
+        {
+          "key": "C",
+          "text": "o primeiro lançamento de um novo produto de software destinado ao grande público, correspondendo à V1.0 desse software lançado no mercado, e os esforços destinados à sua construção devem ser compatíveis para garantir alta manutenibilidade.",
+          "explanation": "O MVP não equivale necessariamente a um lançamento V1.0 completo destinado ao grande público; seu objetivo é validar hipóteses com o mínimo de esforço, não maximizar manutenibilidade de longo prazo."
+        },
+        {
+          "key": "D",
+          "text": "uma versão necessariamente reduzida de um produto de software, implementado com a utilização das mesmas tecnologias que serão usadas no produto final.",
+          "explanation": "O MVP não precisa necessariamente usar as mesmas tecnologias do produto final; muitas vezes é construído com soluções mais simples e rápidas, focadas em validação."
+        },
+        {
+          "key": "E",
+          "text": "a versão de um produto de software lançado no mercado após uma validação de hipóteses, realizada na etapa de pesquisas, durante o processo de ideação desse produto.",
+          "explanation": "Inverte a lógica do MVP: ele é a própria versão usada para validar hipóteses no mercado, e não algo lançado somente depois de uma validação já concluída na fase de ideação."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "O MVP é a versão mais simples possível de um produto, criada e entregue a usuários reais para validar uma ideia de negócio e coletar dados essenciais que orientem o direcionamento futuro do produto, com o mínimo de esforço de construção."
+    },
+    {
+      "id": "transp23e6-q59",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 59
+      },
+      "area": "gestao-ti",
+      "subtopic": "4.1 Conceitos, segmentos e mercado de tecnologia da informação",
+      "stem": "Em uma organização, é fundamental que a TI atenda aos objetivos e às necessidades da organização, alinhando-se aos seus requisitos regulatórios e éticos. O conceito que se refere ao conjunto de processos, políticas e estratégias para garantir que isso ocorra é a(o)",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "estratégia de marketing",
+          "explanation": "Estratégia de marketing trata da promoção e comercialização de produtos/serviços, não do alinhamento da TI aos objetivos e requisitos regulatórios da organização."
+        },
+        {
+          "key": "B",
+          "text": "gestão de serviços de TI",
+          "explanation": "Gestão de serviços de TI foca na entrega e suporte operacional de serviços de TI, sendo mais restrita do que o conjunto amplo de processos e políticas de alinhamento estratégico/regulatório descrito."
+        },
+        {
+          "key": "C",
+          "text": "governança corporativa"
+        },
+        {
+          "key": "D",
+          "text": "gerenciamento de projetos",
+          "explanation": "Gerenciamento de projetos trata da execução de iniciativas específicas e temporárias, não do conjunto abrangente de processos e políticas de alinhamento contínuo da TI à organização."
+        },
+        {
+          "key": "E",
+          "text": "planejamento de recursos humanos",
+          "explanation": "Planejamento de recursos humanos trata da gestão de pessoas, não do conjunto de processos e políticas que alinham a TI aos objetivos e requisitos regulatórios da organização."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "C",
+      "explanationSummary": "Governança corporativa (e, no contexto de TI, a governança de TI) refere-se ao conjunto de processos, políticas e estratégias que asseguram que a TI atenda aos objetivos organizacionais e aos requisitos regulatórios e éticos."
+    },
+    {
+      "id": "transp23e6-q60",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 60
+      },
+      "area": "gestao-ti",
+      "subtopic": "4.2 Princípios de economia da inovação",
+      "stem": "Existe uma prática de atribuir um valor monetário aos recursos utilizados na produção de inovações, considerando-se fatores como tempo, esforço, conhecimento e riscos. O conceito referente a essa prática é o de",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "economia circular",
+          "explanation": "Economia circular trata da reutilização e reaproveitamento de recursos e materiais em ciclos produtivos, não da atribuição de valor monetário aos recursos usados na produção de inovações."
+        },
+        {
+          "key": "B",
+          "text": "custo de oportunidade"
+        },
+        {
+          "key": "C",
+          "text": "externalidade negativa",
+          "explanation": "Externalidade negativa refere-se a um efeito colateral prejudicial de uma atividade econômica sobre terceiros, não à valoração dos recursos empregados na produção de inovações."
+        },
+        {
+          "key": "D",
+          "text": "elasticidade da demanda",
+          "explanation": "Elasticidade da demanda mede a sensibilidade da quantidade demandada a variações de preço, não a valoração de recursos usados na inovação."
+        },
+        {
+          "key": "E",
+          "text": "oferta e demanda",
+          "explanation": "Oferta e demanda descreve a interação entre disponibilidade e procura de um bem no mercado, não a atribuição de valor monetário aos recursos consumidos na produção de inovações."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "B",
+      "explanationSummary": "Atribuir um valor monetário aos recursos empregados (tempo, esforço, conhecimento, riscos) na produção de uma inovação corresponde ao conceito econômico de custo de oportunidade: o valor do que se deixou de obter ao alocar esses recursos a essa finalidade."
+    },
+    {
+      "id": "transp23e6-q61",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 61
+      },
+      "area": "seg-info",
+      "subtopic": "9.21 Segurança em IoT",
+      "stem": "Atualmente é comum a integração de dispositivos físicos, sensores, software e outras tecnologias para criar uma rede de objetos conectados que podem trocar dados e informações entre si, permitindo a coleta, análise e tomada de decisões baseadas em dados. Tal integração está associada ao conceito de",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "blockchain",
+          "explanation": "Blockchain é uma estrutura de registro distribuído e imutável de transações, não a integração de dispositivos físicos e sensores em rede."
+        },
+        {
+          "key": "B",
+          "text": "inteligência artificial",
+          "explanation": "Inteligência artificial refere-se a sistemas capazes de simular capacidades cognitivas, não especificamente à integração física de dispositivos e sensores em rede."
+        },
+        {
+          "key": "C",
+          "text": "internet das coisas"
+        },
+        {
+          "key": "D",
+          "text": "processamento paralelo",
+          "explanation": "Processamento paralelo refere-se à execução simultânea de tarefas computacionais, não à integração de dispositivos físicos conectados em rede."
+        },
+        {
+          "key": "E",
+          "text": "realidade aumentada",
+          "explanation": "Realidade aumentada refere-se à sobreposição de elementos digitais ao mundo físico percebido pelo usuário, não à integração de dispositivos e sensores em rede."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Classificação de área feita por proximidade temática: a taxonomia das 8 áreas oficiais não possui um tópico de \"IoT\" genérico; o único ponto de contato é o subtópico 9.21 \"Segurança em IoT\" (seg-info), usado aqui por ser a única menção a IoT em toda a taxonomia, ainda que a questão trate da definição geral do conceito, não de sua segurança especificamente — julgamento documentado em extraction-progress.md."
+      },
+      "correctKey": "C",
+      "explanationSummary": "A integração de dispositivos físicos, sensores e software em uma rede de objetos conectados capazes de trocar dados e apoiar decisões corresponde ao conceito de Internet das Coisas (IoT)."
+    },
+    {
+      "id": "transp23e6-q62",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 62
+      },
+      "area": "analise-dados",
+      "subtopic": "7.5 Conceitos de OLAP e suas operações",
+      "stem": "Em sistemas de Business Intelligence (BI), o OLAP (Processamento Analítico Online) é uma tecnologia que permite a análise multidimensional de dados, possibilitando insights valiosos para a tomada de decisões estratégicas. Sobre essa tecnologia, verifica-se que a operação de",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "\"Slice\" permite a visualização de um subconjunto de dados de um cubo OLAP, por meio da seleção de um ou mais membros de uma dimensão específica.",
+          "explanation": "Descreve corretamente a operação Slice em si, mas a alternativa correta pedida é a que descreve corretamente a operação de Drill-Down; a definição de Slice normalmente refere-se à seleção de um único valor de uma dimensão (um \"corte\"), tornando essa formulação com \"um ou mais membros\" imprecisa em relação à definição clássica de Slice."
+        },
+        {
+          "key": "B",
+          "text": "\"Roll-Up\" permite a criação de agregações de dados em níveis hierárquicos mais baixos.",
+          "explanation": "Roll-Up agrega dados para níveis hierárquicos mais altos (mais resumidos), não mais baixos; a definição está invertida."
+        },
+        {
+          "key": "C",
+          "text": "\"Pivot\" permite a criação de novas dimensões com base nas existentes em um cubo OLAP.",
+          "explanation": "Pivot (rotação) reorganiza a forma de visualização dos eixos/dimensões já existentes no cubo, sem criar novas dimensões."
+        },
+        {
+          "key": "D",
+          "text": "\"Drill-Through\" permite a criação de agregações de dados em níveis hierárquicos mais altos.",
+          "explanation": "Essa descrição corresponde à operação de Roll-Up, não à de Drill-Through, que tipicamente permite acessar os dados detalhados de origem por trás de um valor agregado."
+        },
+        {
+          "key": "E",
+          "text": "\"Drill-Down\" permite mover-se de visualização de informações resumidas e agregadas para visualização de níveis mais detalhados."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "E",
+      "explanationSummary": "Drill-Down é a operação OLAP que permite navegar de uma visão resumida/agregada de dados para níveis hierárquicos mais detalhados, exatamente como descrito na alternativa E."
+    },
+    {
+      "id": "transp23e6-q63",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 63
+      },
+      "area": "arq-dados",
+      "subtopic": "1.1 Modelagem de dados (conceitual, lógica e física)",
+      "stem": "A modelagem de dados é uma etapa importante e essencial em qualquer projeto de desenvolvimento ou de manutenção de software. Dentre as modelagens utilizadas em projetos de banco de dados, está a modelagem conceitual, que",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "descreve detalhes técnicos de implementação, como índices e partições de tabelas.",
+          "explanation": "Descreve a modelagem física, não a conceitual, que é independente de detalhes de implementação."
+        },
+        {
+          "key": "B",
+          "text": "envolve a otimização de consultas e a escolha de índices apropriados para melhorar o desempenho.",
+          "explanation": "Trata de aspectos de modelagem física/otimização de desempenho, não da modelagem conceitual."
+        },
+        {
+          "key": "C",
+          "text": "prioriza o projeto da estrutura física das tabelas e dos relacionamentos no banco de dados.",
+          "explanation": "Descreve a modelagem física, não a conceitual."
+        },
+        {
+          "key": "D",
+          "text": "é uma representação visual dos detalhes internos de armazenamento de dados em disco.",
+          "explanation": "Descreve a modelagem física, não a conceitual."
+        },
+        {
+          "key": "E",
+          "text": "é independente do Sistema de Gerenciamento de Banco de Dados (SGBD), envolvendo a definição de entidades, de atributos e de relacionamentos."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "E",
+      "explanationSummary": "A modelagem conceitual representa entidades, atributos e relacionamentos de forma abstrata e independente de qualquer SGBD específico, sendo a etapa inicial da modelagem de dados, anterior às modelagens lógica e física."
+    },
+    {
+      "id": "transp23e6-q64",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 64
+      },
+      "area": "arq-dados",
+      "subtopic": "1.4 Normalização das estruturas de dados",
+      "stem": "A normalização é um processo muito utilizado na organização de bancos de dados. A esse respeito, o objetivo principal da normalização das estruturas de dados em bancos de dados relacionais é",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "eliminar as duplicações de dados e garantir que cada informação seja armazenada em uma única tabela."
+        },
+        {
+          "key": "B",
+          "text": "aumentar a redundância dos dados, garantindo que informações essenciais sejam armazenadas em várias tabelas.",
+          "explanation": "A normalização busca reduzir a redundância de dados, e não aumentá-la."
+        },
+        {
+          "key": "C",
+          "text": "reduzir a quantidade de dados armazenados no banco de dados, resultando em uma economia de espaço de armazenamento.",
+          "explanation": "O objetivo principal da normalização é a integridade/consistência dos dados por meio da eliminação de redundâncias, não primariamente a economia de espaço."
+        },
+        {
+          "key": "D",
+          "text": "simplificar as consultas complexas e otimizar a recuperação de informações do banco de dados, resultando em um melhor desempenho.",
+          "explanation": "A normalização pode, em alguns casos, aumentar a complexidade das consultas (mais junções) em vez de simplificá-las; seu foco principal é a integridade dos dados, não o desempenho de consultas."
+        },
+        {
+          "key": "E",
+          "text": "criar uma representação visual da estrutura física dos dados no disco, facilitando o acesso direto e rápido às informações armazenadas.",
+          "explanation": "Descreve um aspecto de modelagem física/armazenamento, não o objetivo da normalização."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "O objetivo principal da normalização é eliminar duplicações de dados e garantir que cada informação seja armazenada de forma não redundante, tipicamente em uma única tabela, preservando a integridade dos dados."
+    },
+    {
+      "id": "transp23e6-q65",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 65
+      },
+      "area": "gestao-proj",
+      "subtopic": "2.1 Scrum e Kanban",
+      "stem": "Em ambientes ágeis de gerenciamento de projetos, tanto o Scrum quanto o Kanban têm como objetivo aprimorar a eficiência e a colaboração da equipe. Uma diferença marcante, porém, entre as duas abordagens é que o",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "Scrum utiliza iterações fixas de tempo (sprints), enquanto o Kanban não possui limite de tempo fixo."
+        },
+        {
+          "key": "B",
+          "text": "Scrum organiza as tarefas em listas individuais, enquanto o Kanban utiliza burndown charts para rastrear o progresso.",
+          "explanation": "Inverte as ferramentas típicas: burndown charts são associados ao Scrum, enquanto o Kanban é tipicamente associado ao quadro Kanban com limites de WIP, não a listas individuais."
+        },
+        {
+          "key": "C",
+          "text": "Scrum prioriza a entrega a partir dos requisitos acordados em contrato, enquanto o Kanban foca em iterações bem definidas para alcançar os objetivos do projeto.",
+          "explanation": "Não corresponde às características reais de nenhuma das duas abordagens: nem o Scrum se baseia em requisitos contratuais fixos, nem o Kanban se organiza em iterações bem definidas (sprints)."
+        },
+        {
+          "key": "D",
+          "text": "Kanban enfatiza reuniões diárias (daily stand-ups), enquanto o Scrum não faz uso desse tipo de reunião.",
+          "explanation": "Inverte a associação: as reuniões diárias (daily scrum/stand-up) são um evento característico do Scrum, não uma prática que o diferencia do Kanban nesse sentido."
+        },
+        {
+          "key": "E",
+          "text": "Kanban requer um Product Owner responsável pela definição das histórias de usuário, enquanto o Scrum não tem essa função.",
+          "explanation": "Inverte os papéis: o Product Owner é um papel definido do Scrum, e o Kanban, em sua forma mais pura, não exige esse papel formal."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "Uma diferença central entre as duas abordagens ágeis é que o Scrum organiza o trabalho em sprints de duração fixa, enquanto o Kanban é um fluxo contínuo de trabalho, sem iterações de tempo fixo predefinidas."
+    },
+    {
+      "id": "transp23e6-q66",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 66
+      },
+      "area": "gestao-ti",
+      "subtopic": "4.5 Conceitos, disciplinas, técnicas e ferramentas de gerenciamento de serviços de TI",
+      "stem": "No contexto do gerenciamento de serviços de TI, os Indicadores-Chave de Desempenho (KPIs) desempenham um papel crucial na avaliação e otimização dos serviços. A respeito dos KPIs, verifica-se que são",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "métricas técnicas específicas usadas apenas para avaliar o desempenho de hardware.",
+          "explanation": "KPIs de gerenciamento de serviços de TI abrangem métricas de negócio e de serviço, não se restringindo apenas ao desempenho de hardware."
+        },
+        {
+          "key": "B",
+          "text": "usados exclusivamente para monitorar a disponibilidade de serviços, não estando relacionados à qualidade.",
+          "explanation": "KPIs também medem qualidade, satisfação do cliente e outros aspectos, não apenas disponibilidade."
+        },
+        {
+          "key": "C",
+          "text": "aplicados apenas em organizações de pequeno porte.",
+          "explanation": "KPIs são aplicáveis a organizações de qualquer porte, não sendo uma prática restrita a pequenas organizações."
+        },
+        {
+          "key": "D",
+          "text": "selecionados com base nas necessidades de negócios e ajudam a medir o sucesso do serviço."
+        },
+        {
+          "key": "E",
+          "text": "isentos da influência de ferramentas de monitoramento em sua definição ou em seu rastreamento.",
+          "explanation": "Ferramentas de monitoramento são normalmente essenciais para coletar dados e rastrear KPIs na prática, não estando os KPIs isentos dessa influência."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "D",
+      "explanationSummary": "KPIs devem ser selecionados a partir das necessidades e objetivos de negócio da organização, servindo como métricas que ajudam a avaliar se o serviço de TI está alcançando o sucesso esperado."
+    },
+    {
+      "id": "transp23e6-q67",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 67
+      },
+      "area": "gestao-proj",
+      "subtopic": "2.4 PMBOK 7ª edição",
+      "stem": "Uma ferramenta muito utilizada no contexto de gerenciamento de projetos é a Estrutura Analítica do Projeto (EAP). De acordo com o PMBOK, a EAP é um(a)",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "documento que descreve a sequência e as dependências lógicas entre as atividades do projeto.",
+          "explanation": "Descreve o diagrama de rede/cronograma do projeto, não a EAP, que organiza o escopo do trabalho, não a sequência temporal das atividades."
+        },
+        {
+          "key": "B",
+          "text": "plano estratégico que define os objetivos e as metas do projeto, juntamente com as estratégias para alcançá-los.",
+          "explanation": "Descreve um plano estratégico geral, não a EAP, que é uma decomposição hierárquica do escopo do trabalho."
+        },
+        {
+          "key": "C",
+          "text": "análise detalhada dos riscos identificados em um projeto, incluindo sua probabilidade e impacto.",
+          "explanation": "Descreve um registro/matriz de riscos, não a EAP."
+        },
+        {
+          "key": "D",
+          "text": "representação hierárquica do escopo do trabalho do projeto, dividido em partes menores e mais gerenciáveis."
+        },
+        {
+          "key": "E",
+          "text": "técnica de estimativa de custos que leva em consideração os recursos humanos e materiais necessários para o projeto.",
+          "explanation": "Descreve uma técnica de estimativa de custos, não a EAP em si, ainda que a EAP possa servir de base para estimativas."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "D",
+      "explanationSummary": "A Estrutura Analítica do Projeto (EAP/WBS) é, segundo o PMBOK, uma decomposição hierárquica do escopo total do trabalho a ser realizado pela equipe do projeto, dividindo-o em partes menores e mais gerenciáveis."
+    },
+    {
+      "id": "transp23e6-q68",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 68
+      },
+      "area": "gestao-proj",
+      "subtopic": "2.3 Práticas ágeis em escala e metodologia SAFe",
+      "stem": "A abordagem SAFe (Scaled Agile Framework) pode ser fundamental para garantir o sucesso de um projeto. Nessa abordagem, o Program Increment (PI) refere-se a um(a)",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "conjunto de rituais diários que as equipes Agile realizam para sincronizar suas atividades.",
+          "explanation": "Descreve reuniões diárias (daily stand-ups), não o Program Increment, que é um período mais amplo, não um ritual diário."
+        },
+        {
+          "key": "B",
+          "text": "evento periódico que fornece uma oportunidade para a revisão e o ajuste do backlog do produto.",
+          "explanation": "Descreve mais um evento de refinamento/revisão de backlog, não o Program Increment em si, que é o período de tempo fixo dentro do qual diversos desses eventos ocorrem."
+        },
+        {
+          "key": "C",
+          "text": "período fixo de tempo durante o qual um conjunto de equipes entrega ao cliente um valor."
+        },
+        {
+          "key": "D",
+          "text": "plano detalhado de entregas que documenta todas as etapas de um projeto em escala.",
+          "explanation": "Descreve um artefato de planejamento, não o próprio período de tempo que caracteriza o Program Increment."
+        },
+        {
+          "key": "E",
+          "text": "prática de planejamento estratégico para alinhar os projetos do portfólio com a estratégia de negócios.",
+          "explanation": "Descreve uma prática de nível de portfólio/estratégia, mais ampla e distinta do conceito específico de Program Increment."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "C",
+      "explanationSummary": "No SAFe, o Program Increment (PI) é um período de tempo fixo (timebox), geralmente de 8 a 12 semanas, durante o qual um conjunto (Agile Release Train) de equipes ágeis planeja, desenvolve e entrega incrementos de valor ao cliente."
+    },
+    {
+      "id": "transp23e6-q69",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 69
+      },
+      "area": "gestao-proj",
+      "subtopic": "2.4 PMBOK 7ª edição",
+      "stem": "No contexto de gerenciamento de projetos, a matriz organizacional tem um papel importante na definição da autoridade do gerente de projeto e na influência que ele pode exercer sobre o projeto. Caracteriza-se por um alto grau de influência do gerente de projeto sobre o projeto a matriz",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "composta",
+          "explanation": "A estrutura composta combina características de estruturas funcionais e matriciais, sem representar necessariamente o maior grau de influência do gerente de projeto."
+        },
+        {
+          "key": "B",
+          "text": "fraca",
+          "explanation": "Na matriz fraca, o gerente de projeto tem baixa autoridade, geralmente atuando mais como coordenador do que como gerente pleno."
+        },
+        {
+          "key": "C",
+          "text": "forte"
+        },
+        {
+          "key": "D",
+          "text": "balanceada",
+          "explanation": "Na matriz balanceada, a autoridade é compartilhada de forma mais equilibrada entre o gerente de projeto e o gerente funcional, sem o alto grau de influência do gerente de projeto característico da matriz forte."
+        },
+        {
+          "key": "E",
+          "text": "invertida",
+          "explanation": "\"Matriz invertida\" não é uma das estruturas organizacionais matriciais clássicas descritas pelo PMBOK."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "C",
+      "explanationSummary": "Na estrutura de matriz forte, o gerente de projeto tem alto grau de autoridade e influência sobre o projeto, aproximando-se das características de uma estrutura puramente projetizada, mesmo dentro de uma organização matricial."
+    },
+    {
+      "id": "transp23e6-q70",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 70
+      },
+      "area": "gestao-proj",
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "No contexto do gerenciamento de projetos, há um grupo de processos responsável por monitorar, rastrear e revisar o progresso de um projeto, além de implementar medidas corretivas quando necessário. Trata-se do grupo de processos de",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "controle"
+        },
+        {
+          "key": "B",
+          "text": "encerramento",
+          "explanation": "O grupo de encerramento finaliza formalmente o projeto ou fase, não é responsável por monitorar/revisar progresso continuamente e implementar ações corretivas durante a execução."
+        },
+        {
+          "key": "C",
+          "text": "execução",
+          "explanation": "O grupo de execução realiza o trabalho definido no plano de gerenciamento do projeto, mas o monitoramento/revisão do progresso e implementação de ações corretivas é atribuição do grupo de monitoramento e controle."
+        },
+        {
+          "key": "D",
+          "text": "iniciação",
+          "explanation": "O grupo de iniciação define e autoriza formalmente o início do projeto ou fase, não o acompanhamento contínuo do progresso."
+        },
+        {
+          "key": "E",
+          "text": "planejamento",
+          "explanation": "O grupo de planejamento estabelece o escopo, os objetivos e o curso de ação do projeto, não o monitoramento contínuo do progresso e ações corretivas."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "A",
+        "independentlyDerivedAnswer": "A",
+        "agree": true,
+        "confidence": "high",
+        "notes": ""
+      },
+      "correctKey": "A",
+      "explanationSummary": "O grupo de processos de monitoramento e controle é responsável por acompanhar, revisar e regular o progresso e o desempenho do projeto, identificando desvios e implementando as ações corretivas necessárias."
     }
   ]
 }
