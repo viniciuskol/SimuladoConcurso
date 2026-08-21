@@ -19,98 +19,199 @@
 </div>
 <script type="module">
 import { loadJSON, showFetchHelp } from "./shared/data-loader.js";
-import { dueCards, rateCard } from "./shared/storage.js";
+import { dueCards, rateCard, statsByArea, srsSummary } from "./shared/storage.js";
 
 const app = document.getElementById("app");
-let AREAS = [], CARDS = [], CONTENT = {};
+let AREAS = [], CARDS = [], QCOUNT = {}, CONTENT = {};
+
+const esc = s => String(s ?? "").replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
 
 async function init() {
   try {
     AREAS = (await loadJSON("data/areas.json")).areas;
-    CARDS = (await loadJSON("data/flashcards.json")).cards;
+    CARDS = (await loadJSON("data/flashcards.json")).cards || [];
   } catch (e) {
     showFetchHelp(app);
     return;
   }
+  try {
+    const qs = (await loadJSON("data/questions.json")).questions || [];
+    for (const q of qs) QCOUNT[q.area] = (QCOUNT[q.area] || 0) + 1;
+  } catch { /* contagem é opcional */ }
   renderHome();
 }
 
 async function loadAreaContent(areaId) {
-  if (CONTENT[areaId]) return CONTENT[areaId];
-  try {
-    CONTENT[areaId] = await loadJSON(`data/content/${areaId}.json`);
-  } catch {
-    CONTENT[areaId] = null;
-  }
+  if (areaId in CONTENT) return CONTENT[areaId];
+  try { CONTENT[areaId] = await loadJSON(`data/content/${areaId}.json`); }
+  catch { CONTENT[areaId] = null; }
   return CONTENT[areaId];
 }
 
+function cardsOf(areaId) { return CARDS.filter(c => c.area === areaId); }
+
+/* ---------- Home ---------- */
+
 function renderHome() {
   const due = dueCards(CARDS);
+  const stats = Object.fromEntries(statsByArea(AREAS).map(s => [s.id, s]));
+  const srs = srsSummary(CARDS);
+
+  const areaRow = a => {
+    const nq = QCOUNT[a.id] || 0;
+    const nc = cardsOf(a.id).length;
+    const st = stats[a.id];
+    const acc = st && st.total ? `${st.pct}% no simulado` : "sem tentativas";
+    return `<button class="btn area-row" data-area="${a.id}">
+      <span class="alt-key">${a.num ?? "•"}</span>
+      <span class="alt-text">
+        <strong>${esc(a.label)}</strong>
+        <span class="muted block">${nq} questões · ${nc} cards · ${acc}</span>
+      </span>
+    </button>`;
+  };
+
   app.innerHTML = `
     <h1>Área de estudo</h1>
     <div class="card">
-      <h2>Revisão de flashcards</h2>
-      <p class="muted">${due.length} card(s) devido(s) hoje, de ${CARDS.length} no total.</p>
-      ${due.length ? `<button class="btn primary" id="review">Revisar agora</button>` : `<p class="muted">Nada pendente agora.</p>`}
+      <h2>Revisão espaçada</h2>
+      <p class="muted">${due.length} card(s) para hoje · ${CARDS.length} no total · ${srs.seen} já vistos.</p>
+      ${due.length
+        ? `<button class="btn primary" id="review-all">Revisar agora (misturando áreas)</button>
+           <p class="muted">Intercalação: misturar áreas na mesma sessão fixa mais do que estudar em bloco.</p>`
+        : `<p class="muted">Nada devido agora. ${CARDS.length ? "Volte amanhã — ou entre numa área e revise à força." : ""}</p>`}
     </div>
     <div class="card">
       <h2>Conteúdo por área</h2>
-      ${AREAS.map(a => `<button class="btn" data-area="${a.id}">${a.label}</button>`).join("")}
+      <div class="alt-list">${AREAS.map(areaRow).join("")}</div>
+    </div>
+    <div class="card">
+      <h2>Como usar</h2>
+      <ul class="tight">
+        <li><strong>Leia o resumo</strong> da área uma vez, sem tentar memorizar.</li>
+        <li><strong>Vá para os flashcards</strong> e tente responder <em>antes</em> de revelar — o esforço de lembrar é o que fixa.</li>
+        <li><strong>Erre no simulado</strong> e volte para a área do erro: é o ciclo mais rápido de aprendizado.</li>
+        <li><strong>Padrões da banca</strong> e <strong>palavras-armadilha</strong> de cada área valem mais que releitura do resumo.</li>
+      </ul>
     </div>
   `;
-  const reviewBtn = document.getElementById("review");
-  if (reviewBtn) reviewBtn.addEventListener("click", () => startReview(due));
-  app.querySelectorAll("[data-area]").forEach(btn =>
-    btn.addEventListener("click", () => renderArea(btn.dataset.area)));
+  const rb = document.getElementById("review-all");
+  if (rb) rb.addEventListener("click", () => startReview(shuffle(due), "Revisão geral"));
+  app.querySelectorAll("[data-area]").forEach(b =>
+    b.addEventListener("click", () => renderArea(b.dataset.area)));
 }
+
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+  return a;
+}
+
+/* ---------- Área ---------- */
 
 async function renderArea(areaId) {
   const area = AREAS.find(a => a.id === areaId);
   const content = await loadAreaContent(areaId);
+  const cards = cardsOf(areaId);
+  const due = dueCards(cards);
+
+  const sections = [];
+  if (content) {
+    if (content.resumo) sections.push(sec("Resumo", content.resumo));
+    for (const c of content.cheatsheet || [])
+      sections.push(sec(`📌 ${esc(c.heading)}`, `<ul class="tight">${(c.items || []).map(i => `<li>${i}</li>`).join("")}</ul>`));
+    for (const m of content.mentalModels || [])
+      sections.push(sec(`🧠 ${esc(m.title)}`, `<p>${m.body}</p>`, "accent"));
+    if ((content.patterns || []).length)
+      sections.push(sec("🎯 Padrões da banca nesta área",
+        (content.patterns).map(p => `<div class="sub">
+            <strong>${esc(p.title)}</strong>
+            <p>${p.howToSpot || ""}</p>
+            ${(p.evidence || []).length ? `<p class="muted">Visto em: ${p.evidence.map(e => esc(e)).join(", ")}</p>` : ""}
+          </div>`).join("")));
+    if ((content.tactics || []).length)
+      sections.push(sec("⏱ Táticas de prova",
+        (content.tactics).map(t => `<div class="sub"><strong>${esc(t.title)}</strong><p>${t.body || ""}</p></div>`).join("")));
+    if ((content.trapWords || []).length)
+      sections.push(sec("⚠ Palavras-armadilha",
+        `<div class="trap-list">${content.trapWords.map(t => `<div class="sub">
+            <strong>${esc(t.term)}</strong> <span class="muted">× ${esc(t.confusedWith)}</span>
+            <p>${t.distinction || ""}</p></div>`).join("")}</div>`));
+  }
+
   app.innerHTML = `
     <button class="btn" id="back">← Voltar</button>
-    <h1>${area.label}</h1>
-    ${!content ? `<div class="empty-state">Conteúdo de estudo desta área ainda não foi escrito. Volte em breve.</div>` : `
-      <div class="card"><h2>Resumo</h2>${content.resumo || ""}</div>
-      ${(content.cheatsheet || []).map(c => `<div class="card"><h3>${c.heading}</h3><ul>${(c.items || []).map(i => `<li>${i}</li>`).join("")}</ul></div>`).join("")}
-      ${(content.mentalModels || []).map(m => `<div class="card"><h3>🧠 ${m.title}</h3><p>${m.body}</p></div>`).join("")}
-      ${(content.patterns || []).map(p => `<div class="card"><h3>⚠ ${p.title}</h3><p>${p.howToSpot || ""}</p></div>`).join("")}
-    `}
+    <h1>${esc(area.label)}</h1>
+    <div class="card">
+      <p class="muted">${QCOUNT[areaId] || 0} questões reais no banco · ${cards.length} flashcards (${due.length} devidos)</p>
+      ${cards.length ? `<button class="btn primary" id="rev-area">Flashcards desta área</button>` : ""}
+      <details class="explain"><summary>Subtópicos do edital (Anexo IV)</summary>
+        <ul class="tight">${(area.topics || []).map(t => `<li>${esc(t)}</li>`).join("")}</ul>
+      </details>
+    </div>
+    ${content ? sections.join("") : `<div class="empty-state">Conteúdo de estudo desta área ainda não foi escrito.</div>`}
   `;
   document.getElementById("back").addEventListener("click", renderHome);
+  const rb = document.getElementById("rev-area");
+  if (rb) rb.addEventListener("click", () =>
+    startReview(shuffle(due.length ? due : cards), area.label, () => renderArea(areaId)));
 }
 
-function startReview(queue) {
+function sec(title, html, cls = "") {
+  return `<div class="card ${cls}"><h2>${title}</h2>${html}</div>`;
+}
+
+/* ---------- Flashcards ---------- */
+
+function startReview(queue, label, onDone) {
+  const done = onDone || renderHome;
+  if (!queue.length) { done(); return; }
   let idx = 0;
+  const areaLabel = id => (AREAS.find(a => a.id === id) || {}).label || id;
+
   const showCard = () => {
-    if (idx >= queue.length) { renderHome(); return; }
+    if (idx >= queue.length) {
+      app.innerHTML = `<div class="card"><h2>Sessão concluída</h2>
+        <p class="muted">${queue.length} card(s) revisado(s) — ${esc(label)}.</p>
+        <button class="btn primary" id="home">Voltar</button></div>`;
+      document.getElementById("home").addEventListener("click", done);
+      return;
+    }
     const c = queue[idx];
     app.innerHTML = `
+      <div class="progressbar"><div style="width:${(idx / queue.length) * 100}%"></div></div>
       <div class="card">
-        <p class="muted">Card ${idx + 1} de ${queue.length}</p>
+        <p class="muted">Card ${idx + 1} de ${queue.length} · ${esc(areaLabel(c.area))}</p>
         <h2>${c.front}</h2>
-        <button class="btn primary" id="reveal">Mostrar resposta</button>
-      </div>`;
-    document.getElementById("reveal").addEventListener("click", () => {
-      app.innerHTML = `
-        <div class="card">
-          <h2>${c.front}</h2>
-          <p>${c.back}</p>
-          <div style="display:flex;gap:8px">
-            <button class="btn" data-r="1">Errei</button>
-            <button class="btn" data-r="2">Difícil</button>
-            <button class="btn" data-r="3">Bom</button>
-            <button class="btn" data-r="4">Fácil</button>
-          </div>
-        </div>`;
-      app.querySelectorAll("[data-r]").forEach(b => b.addEventListener("click", () => {
-        rateCard(c.id, Number(b.dataset.r));
-        idx += 1;
-        showCard();
-      }));
-    });
+      </div>
+      <button class="btn primary" id="reveal">Mostrar resposta</button>
+      <p class="muted">Tente formular a resposta em voz alta antes de revelar.</p>`;
+    document.getElementById("reveal").addEventListener("click", reveal);
   };
+
+  const reveal = () => {
+    const c = queue[idx];
+    app.innerHTML = `
+      <div class="progressbar"><div style="width:${(idx / queue.length) * 100}%"></div></div>
+      <div class="card">
+        <p class="muted">${esc(areaLabel(c.area))}</p>
+        <h2>${c.front}</h2>
+        <div class="answer">${c.back}</div>
+        ${c.sourceQuestionId ? `<p class="muted">Origem: questão ${esc(c.sourceQuestionId)}</p>` : ""}
+      </div>
+      <div class="alt-list rate-row">
+        <button class="btn" data-r="1">Errei</button>
+        <button class="btn" data-r="2">Difícil</button>
+        <button class="btn" data-r="3">Bom</button>
+        <button class="btn" data-r="4">Fácil</button>
+      </div>`;
+    app.querySelectorAll("[data-r]").forEach(b => b.addEventListener("click", () => {
+      rateCard(c.id, Number(b.dataset.r));
+      idx += 1;
+      showCard();
+    }));
+  };
+
   showCard();
 }
 

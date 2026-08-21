@@ -71,3 +71,10 @@ export function rateCard(cardId, rating) {
   state[cardId] = { interval, easeFactor, reps, dueDate: due.toISOString().slice(0, 10) };
   saveSRS(state);
 }
+
+// Resumo do estado de revisão espaçada (quantos cards já foram vistos ao menos uma vez).
+export function srsSummary(cards) {
+  const state = loadSRS();
+  const seen = cards.filter(c => state[c.id]).length;
+  return { seen, total: cards.length };
+}

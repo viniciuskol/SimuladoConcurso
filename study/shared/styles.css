@@ -186,3 +186,18 @@ details.explain li {
   .app { padding: 24px 16px; }
   .stem-card { font-size: 1.1rem; }
 }
+
+/* ---- estudo.html ---- */
+.area-row { align-items: center; }
+.muted.block { display: block; margin-top: 2px; }
+ul.tight { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 7px; }
+.card.accent { border-left: 3px solid var(--accent); }
+.card .sub { background: var(--surface-2); border-radius: 8px; padding: 10px 12px; margin-top: 10px; }
+.card .sub p { margin: 6px 0 0; }
+.card .sub strong { line-height: 1.35; }
+.card table { width: 100%; border-collapse: collapse; font-size: 0.92rem; display: block; overflow-x: auto; }
+.card th, .card td { border: 1px solid var(--surface-2); padding: 7px 9px; text-align: left; vertical-align: top; }
+.card th { background: var(--surface-2); }
+.answer { background: var(--surface-2); border-radius: 8px; padding: 12px; margin-top: 10px; line-height: 1.55; }
+.rate-row { flex-direction: row; }
+.rate-row .btn { justify-content: center; text-align: center; font-size: 0.92rem; padding: 14px 6px; }
