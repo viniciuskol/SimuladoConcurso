@@ -139,36 +139,49 @@ export function planItemKey(blockN, text) {
   return `b${Number(blockN) || 0}#${h.toString(36)}`;
 }
 
+// A memória é a fonte de verdade da sessão, com escrita passante para o
+// localStorage: se a gravação falhar (cota estourada, modo privado), o estado
+// marcado continua valendo em TODOS os toggles seguintes, e não só no primeiro.
+let planCache = null;
+
 // Devolve SEMPRE um mapa { chave: true } utilizável. JSON inválido, array no lugar
 // de objeto, null e valores que não sejam `true` são descartados em silêncio — o
 // mesmo endurecimento de loadAttempts, para storage editado à mão não quebrar a tela.
 export function loadPlanChecks() {
+  if (planCache) return { ...planCache };
+  let out = {};
   try {
     const v = JSON.parse(localStorage.getItem(PLAN_KEY));
-    if (!v || typeof v !== "object" || Array.isArray(v)) return {};
-    const out = {};
-    for (const k of Object.keys(v)) if (v[k] === true && typeof k === "string") out[k] = true;
-    return out;
-  } catch { return {}; }
+    if (v && typeof v === "object" && !Array.isArray(v)) {
+      for (const k of Object.keys(v)) if (v[k] === true) out[k] = true;
+    }
+  } catch { out = {}; }
+  planCache = out;
+  return { ...out };
 }
 
-// Marca/desmarca um item e devolve o estado já saneado. Só grava `true`: item
+// Marca/desmarca um item e devolve o estado já saneado. Só guarda `true`: item
 // desmarcado sai do mapa, então o storage não cresce com lixo.
 export function setPlanCheck(key, done) {
   const state = loadPlanChecks();
   if (done) state[String(key)] = true;
   else delete state[String(key)];
-  // Cota estourada ou modo privado não pode derrubar a tela: a marcação da sessão
-  // continua valendo em memória mesmo se a gravação falhar.
+  planCache = state;   // vale mesmo se o localStorage recusar a gravação abaixo
   try { localStorage.setItem(PLAN_KEY, JSON.stringify(state)); } catch { /* ignora */ }
-  return state;
+  return { ...state };
 }
 
-// Progresso de um bloco do plano: { done, total }. Bloco sem checklist dá 0 de 0.
+// Progresso de um bloco: { done, total }. Conta CHAVES ÚNICAS, não itens — dois
+// itens de texto idêntico compartilham a mesma chave e não podem valer 2 de 2 com
+// uma caixa marcada. Bloco sem checklist dá 0 de 0.
 export function planProgress(block, state) {
   const checks = state || loadPlanChecks();
   const items = Array.isArray(block && block.checklist) ? block.checklist : [];
-  let done = 0;
-  for (const it of items) if (checks[planItemKey(block.n, it)]) done += 1;
-  return { done, total: items.length };
+  const all = new Set(), done = new Set();
+  for (const it of items) {
+    const k = planItemKey(block && block.n, it);
+    all.add(k);
+    if (checks[k]) done.add(k);
+  }
+  return { done: done.size, total: all.size };
 }

@@ -2262,6 +2262,153 @@
       "area": "logica",
       "front": "Como funciona uma prova por absurdo (redução ao absurdo) e o que ela permite concluir?",
       "back": "Para provar a conclusão C a partir das premissas, acrescente a NEGAÇÃO da conclusão (~C) ao conjunto de premissas e derive uma contradição (uma fórmula da forma p ∧ ~p, ou um par de linhas contraditórias). Se premissas + ~C são insatisfatíveis, então ~C é incompatível com as premissas e C é consequência lógica delas: premissas ⊨ C. O que se nega é a conclusão, não uma premissa; e a contradição derivada é o que fecha a prova — sem contradição, nada foi provado. Mesma ideia da regra ~p → contradição, logo p."
+    },
+    {
+      "id": "fc-portugues-028",
+      "area": "portugues",
+      "front": "Que relação 'à medida que' expressa, e qual locução ocupa o lugar dela quando a ideia é causa?",
+      "back": "'À medida que' marca proporção: uma coisa varia conforme a outra ('à medida que o preço sobe, o consumo cai'). Quando a ideia é causa, a locução é 'na medida em que'. As duas não são intercambiáveis, e a mistura 'à medida em que' não existe na norma-padrão."
+    },
+    {
+      "id": "fc-portugues-029",
+      "area": "portugues",
+      "front": "Em que contextos a crase é facultativa?",
+      "back": "Antes de nome próprio feminino de pessoa ('escrevi a/à Maria'), antes de pronome possessivo feminino ('entreguei a/à minha irmã') e depois de 'até' ('até a/à porta'). Nesses casos as duas grafias estão corretas, então acentuar ou não acentuar não é, por si, erro."
+    },
+    {
+      "id": "fc-portugues-030",
+      "area": "portugues",
+      "front": "Quando 'a distância' recebe acento grave?",
+      "back": "Pela regra tradicional, que é a cobrada, quando o termo vem determinado: 'à distância de 200 metros'. Sem determinante, escreve-se sem crase: 'viu o navio a distância'. Parte da tradição gramatical e o uso consagrado ('ensino à distância') aceitam a crase mesmo sem determinante, então o determinante é o critério seguro, não uma proibição absoluta."
+    },
+    {
+      "id": "fc-portugues-031",
+      "area": "portugues",
+      "front": "Como decidir se há crase antes de nome de lugar, como em 'vou a/à Bahia'?",
+      "back": "Pelo teste da volta: se você volta DA Bahia, o lugar admite artigo e a crase entra ('vou à Bahia'); se volta DE Roma, não há artigo nem crase ('vou a Roma'). Topônimo normalmente sem artigo passa a ter quando é determinado: 'vou à Roma dos Césares'."
+    },
+    {
+      "id": "fc-portugues-032",
+      "area": "portugues",
+      "front": "Em que casos entra vírgula antes de 'e', e em que caso ela não entra?",
+      "back": "Entra quando os sujeitos das orações são diferentes ('O preço caiu, e a demanda cresceu'), na enumeração de orações coordenadas encerrada por 'e', e quando o 'e' tem valor adversativo ou aparece repetido em polissíndeto. No 'e' aditivo simples, ligando termos ou orações de mesmo sujeito, não se usa vírgula: 'Estudou a matéria e fez o simulado'."
+    },
+    {
+      "id": "fc-portugues-033",
+      "area": "portugues",
+      "front": "Como fica o verbo quando o sujeito é 'mais de um'?",
+      "back": "No singular: 'Mais de um mandato foi exercido' — pluralizar é o erro da alternativa A de transp15-q10. A exceção é a ideia de reciprocidade ou a repetição da expressão: 'mais de um deputado se agrediram', 'mais de um jornalista, mais de um político compareceram'.",
+      "sourceQuestionId": "transp15-q10"
+    },
+    {
+      "id": "fc-portugues-034",
+      "area": "portugues",
+      "front": "Com que termo o verbo concorda quando o sujeito é uma porcentagem?",
+      "back": "Com especificador, a concordância é facultativa: '20% da população migrou' (com o especificador) e '20% da população migraram' (com o numeral) são ambos aceitos. Sem especificador, o verbo concorda com o próprio número: '1% votou', '30% votaram'. Por isso não se descarta uma alternativa só porque ela concordou com o numeral."
+    },
+    {
+      "id": "fc-portugues-035",
+      "area": "portugues",
+      "front": "Quais dessas palavras variam na concordância nominal: 'anexo', 'obrigado' e 'menos'?",
+      "back": "'Anexo' e 'obrigado' são adjetivos e concordam com o substantivo a que se referem: 'seguem os documentos anexos', 'ela disse obrigada'. 'Menos' é invariável em qualquer contexto ('menos pessoas', 'menos água'), e a locução 'em anexo' também não varia."
+    },
+    {
+      "id": "fc-portugues-036",
+      "area": "portugues",
+      "front": "Que concordâncias admite o sujeito composto posposto ao verbo?",
+      "back": "Duas: o plural ('Chegaram o diretor e o assessor') ou a concordância com o núcleo mais próximo ('Chegou o diretor e o assessor'). Anteposto ao verbo, o sujeito composto pede o plural."
+    },
+    {
+      "id": "fc-portugues-037",
+      "area": "portugues",
+      "front": "Que sentido 'assistir' tem com a preposição 'a' e que sentido tem sem ela?",
+      "back": "Com 'a', significa ver ou presenciar: 'assistir ao jogo'. Sem preposição, significa prestar assistência: 'o médico assistiu o paciente'. No sentido de presenciar, a tradição pede 'assistir a ele', não 'assistir-lhe'."
+    },
+    {
+      "id": "fc-portugues-038",
+      "area": "portugues",
+      "front": "Como distinguir adjunto adnominal de complemento nominal em construções como 'o amor da mãe'?",
+      "back": "Se o termo pratica a ação, é adjunto adnominal: 'o amor DA MÃE' equivale a 'a mãe ama'. Se sofre a ação, é complemento nominal: 'o amor AO PRÓXIMO' equivale a 'alguém ama o próximo'. O adjunto indica posse, qualidade ou origem; o complemento completa o sentido de substantivo abstrato, adjetivo ou advérbio."
+    },
+    {
+      "id": "fc-portugues-039",
+      "area": "portugues",
+      "front": "Como separar a coordenada explicativa da subordinada causal quando as duas vêm com 'pois' ou 'porque'?",
+      "back": "A explicativa justifica o ato de dizer e costuma seguir imperativo ou suposição: 'Traga o guarda-chuva, pois vai chover'. A causal dá a causa real do fato enunciado: 'Não saí porque chovia'. Só na explicativa cabe a paráfrase 'digo isso porque...'."
+    },
+    {
+      "id": "fc-ingles-026",
+      "area": "ingles",
+      "front": "Em 'Unless costs fall further, coal will remain competitive', que ideia 'unless' introduz?",
+      "back": "Condição negativa, equivalente a 'if... not': a menos que os custos caiam mais, o carvão continua competitivo. A negação já está no próprio conectivo, por isso o verbo depois dele fica na afirmativa; não é contraste nem causa."
+    },
+    {
+      "id": "fc-ingles-027",
+      "area": "ingles",
+      "front": "Em 'the project was delayed but eventually came on stream', o que 'eventually' informa?",
+      "back": "Que a coisa aconteceu no final, depois de algum tempo — 'por fim'. Não corresponde a 'eventualmente' no sentido de ocasionalmente, que em inglês é 'occasionally' ou 'from time to time'."
+    },
+    {
+      "id": "fc-ingles-028",
+      "area": "ingles",
+      "front": "Em 'Ultimately, Brazil's ability to avoid Dutch disease will depend not just on how the money is spent', que valor tem 'Ultimately'?",
+      "back": "Valor de conclusão: em última análise, no fim das contas. Não marca tempo recente nem acrescenta informação nova, e foi por isso que a troca por 'Furthermore' entrou como alternativa errada em prova6-q17.",
+      "sourceQuestionId": "prova6-q17"
+    },
+    {
+      "id": "fc-ingles-029",
+      "area": "ingles",
+      "front": "Em 'the country's oil industry has so far been big enough to become a government cash cow', o que 'so far' informa?",
+      "back": "Que o quadro vale até agora, do passado até o presente — e é essa leitura que pede o present perfect ao lado. Não equivale a 'meanwhile' (enquanto isso), troca oferecida como distrator em prova6-q17.",
+      "sourceQuestionId": "prova6-q17"
+    },
+    {
+      "id": "fc-ingles-030",
+      "area": "ingles",
+      "front": "Em 'the fleet has hardly changed since 2010', o que 'hardly' faz com o sentido do verbo?",
+      "back": "Nega quase por completo: a frota quase não mudou. 'Hardly' não significa 'duramente' (hard, harshly) e, por já ser negativo, não vem acompanhado de 'not'."
+    },
+    {
+      "id": "fc-ingles-031",
+      "area": "ingles",
+      "front": "Por que 'despite the fall in prices' funciona e 'despite prices fell' não?",
+      "back": "Porque 'despite' e 'in spite of' são preposições e pedem substantivo ou forma em -ing ('despite falling prices'). Para uma oração com sujeito e verbo, o concessivo tem de ser 'although', 'though' ou 'even though': 'although prices fell'."
+    },
+    {
+      "id": "fc-ingles-032",
+      "area": "ingles",
+      "front": "Em 'cheap gas could undermine investment in renewables', o que 'undermine' faz com o investimento?",
+      "back": "Enfraquece, mina pela base — o prefixo 'under-' marca a ação por baixo. É o oposto de 'boost' e 'strengthen', e não tem relação com 'underline' (sublinhar)."
+    },
+    {
+      "id": "fc-ingles-033",
+      "area": "ingles",
+      "front": "Em 'the technologies deployed so far', que oração o particípio 'deployed' está resumindo?",
+      "back": "Uma relativa passiva reduzida: 'the technologies that have been deployed so far' — as tecnologias que foram implantadas até agora. Perceber isso evita ler 'deployed' como o verbo principal da frase."
+    },
+    {
+      "id": "fc-ingles-034",
+      "area": "ingles",
+      "front": "Em 'the global energy system is being reshaped by four major forces', quem age e quem sofre a ação?",
+      "back": "As quatro forças agem: o agente da passiva vem depois de 'by'. O sistema energético global é quem sofre a reformulação. Quando não há 'by', a frase simplesmente não nomeia o agente — em geral porque ele é desconhecido, genérico ou irrelevante — e o sujeito continua sendo o paciente."
+    },
+    {
+      "id": "fc-ingles-035",
+      "area": "ingles",
+      "front": "Em 'Some producers cut output, and others may do so next year', o que 'do so' retoma?",
+      "back": "O predicado inteiro anterior, 'cut output'. 'Do so', 'does' e 'did' substituem verbo mais complementos, nunca um substantivo — logo o antecedente é uma ação, não uma coisa."
+    },
+    {
+      "id": "fc-ingles-036",
+      "area": "ingles",
+      "front": "Que diferença de sentido separa 'the fields, which are offshore, need new rigs' de 'the fields which are offshore need new rigs'?",
+      "back": "Com vírgulas (non-defining), a informação só comenta e vale para todos os campos. Sem vírgulas (defining), ela restringe: apenas os campos offshore precisam de sondas novas. Em oração non-defining não se usa 'that'."
+    },
+    {
+      "id": "fc-ingles-037",
+      "area": "ingles",
+      "front": "Em 'the company is investing upstream rather than downstream', a que etapas do setor de óleo e gás o texto se refere?",
+      "back": "'Upstream' é exploração e produção, a ponta do poço; 'downstream' é refino, distribuição e venda ao consumidor. O transporte e a estocagem entre as duas pontas são o 'midstream'."
     }
   ]
 }

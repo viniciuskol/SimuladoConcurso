@@ -204,19 +204,16 @@ function renderPlan() {
   const cur = currentBlock();
   const areaLabel = id => (AREAS.find(a => a.id === id) || {}).label || id;
   let checks = loadPlanChecks();
-  const flat = [];   // um registro por checkbox, na ordem do DOM
 
   const blockCard = b => {
     const items = (b.checklist || []).map(text => {
-      const key = planItemKey(b.n, text);
-      flat.push({ blockN: b.n, key });
-      const done = !!checks[key];
+      const done = !!checks[planItemKey(b.n, text)];
       return `<li class="plan-item${done ? " done" : ""}">
         <label><input type="checkbox" class="plan-chk"${done ? " checked" : ""}><span>${esc(text)}</span></label>
       </li>`;
     }).join("");
     const prog = planProgress(b, checks);
-    return `<div class="card ${cur && cur.n === b.n ? "accent" : ""}">
+    return `<div class="card plan-block ${cur && cur.n === b.n ? "accent" : ""}">
         <h2>${esc(b.label)}</h2>
         <p class="muted">${esc(b.weeks)}${cur && cur.n === b.n ? " · agora" : ""} · ${(b.focus || []).map(f => esc(areaLabel(f))).join(", ")}</p>
         <p>${esc(b.goal || "")}</p>
@@ -244,22 +241,34 @@ function renderPlan() {
     </div>`;
   document.getElementById("back").addEventListener("click", renderHome);
 
-  const boxes = [...app.querySelectorAll(".plan-chk")];
-  const progs = [...app.querySelectorAll(".plan-prog")];
-  const refresh = () => {
-    PLAN.blocks.forEach((b, bi) => {
-      const p = planProgress(b, checks);
-      if (progs[bi]) progs[bi].textContent = `${p.done} de ${p.total}`;
-    });
+  /* Cada bloco é lido dentro do SEU card (.plan-block): o número de progresso e as
+     caixas vêm do mesmo nó, sem casar bloco com elemento por posição global. */
+  const wired = [...app.querySelectorAll(".card.plan-block")].map((el, bi) => {
+    const b = PLAN.blocks[bi];
+    const boxes = [...el.querySelectorAll(".plan-chk")];
+    boxes.forEach((box, i) => { box.dataset.key = planItemKey(b.n, (b.checklist || [])[i]); });
+    return { b, boxes, prog: el.querySelector(".plan-prog") };
+  });
+
+  // Re-sincroniza tudo a partir do estado: itens de texto idêntico compartilham
+  // chave, então marcar um tem de marcar o outro e o progresso conta uma vez só.
+  const sync = () => {
+    for (const w of wired) {
+      const p = planProgress(w.b, checks);
+      if (w.prog) w.prog.textContent = `${p.done} de ${p.total}`;
+      for (const box of w.boxes) {
+        const on = !!checks[box.dataset.key];
+        box.checked = on;
+        box.closest(".plan-item").classList.toggle("done", on);
+      }
+    }
   };
-  boxes.forEach((box, i) => {
-    box.dataset.key = flat[i].key;
+
+  for (const w of wired) for (const box of w.boxes)
     box.addEventListener("change", () => {
       checks = setPlanCheck(box.dataset.key, box.checked);
-      box.closest(".plan-item").classList.toggle("done", box.checked);
-      refresh();
+      sync();
     });
-  });
 }
 
 function renderPriority(stats) {
