@@ -1,46 +1,46 @@
 # STATUS — checkpoint
 
-> **Duas trilhas, dois status.** Este arquivo é o do fluxo de **extração/simulado**.
-> O status da trilha de **estudo** (conteúdo por área, flashcards, plano, estudo.html)
-> está em `study/_internal/STATUS-ESTUDO.md`. Não misturar os dois: eles avançam em
-> ritmos diferentes e o conflito de merge deste arquivo veio justamente de sobrepor um ao outro.
+**Quando:** 2026-08-22. Checkpoint de rotina antes de uma pausa (limite de uso de IA da sessão, 5h) — não houve erro nem trabalho perdido; a árvore de trabalho está limpa e o último commit já foi enviado ao GitHub.
 
+## Onde parou — sprint de resolução de diagramas/fórmulas da review-queue
 
-**Quando:** 2026-08-22, madrugada. **Limite SEMANAL de uso de IA atingido** (não é só o limite de 5h/sessão) — reseta às 04:00 BRT (America/Sao_Paulo). Isso é mais restritivo que os checkpoints anteriores: nada de subagentes/loop até o reset.
+Contexto: seguindo o plano em `~/.claude/plans/vou-fazer-um-concurso-compiled-wreath.md`, a fase de conteúdo (resumos/cheatsheets/flashcards) está a cargo de outra sessão/bot — este trabalho ficou focado em resolver os itens de `study/_internal/review-queue.json` que dependiam de diagramas/tabelas/fórmulas não capturados na extração de texto original, usando a técnica de reler o PDF nativo de cada prova via `Read` **sem** o parâmetro `pages` (que falha neste ambiente por falta de `poppler`/`pdftoppm`, mas ler o PDF inteiro sem esse parâmetro retorna o render visual completo).
 
-## Onde parou — foco atual: passages (textos-base) no simulado
+**Já commitado e no ar (GitHub Pages):**
+- `study/data/questions.json`: **356 questões confirmadas**.
+- `study/_internal/review-queue.json`: **25 itens pendentes**.
+- Último commit: `2942548` — "Resolve transp23e6-q21/q22/q28 via PDF nativo; q27 permanece bloqueada por formatação" (já enviado a `origin/main`).
+- Nesta sessão (desde o checkpoint anterior), foram promovidos: `psjpn2018-q54`, `transp15-q41`, `transp23e6-q21`, `transp23e6-q22`, `transp23e6-q28` — cada um com verificação independente documentada em `verification.notes`.
+- Vários itens foram **deliberadamente mantidos em revisão** mesmo após a releitura visual completa, porque a derivação independente diverge do gabarito de forma genuína e bem fundamentada (não por falta de dados): `transp15-q39`, `transp15-q40`, `transp15-q69`, `transp15-q70` (esta última tem divergência confirmada por tabela-verdade — o gabarito registrado é matematicamente incompatível com "contradição"), e `transp23e6-q27` (dedução lógica da chave primária concluída, mas as 5 alternativas têm texto idêntico e a diferença real está em sublinhados perdidos na extração).
 
-Contexto da tarefa em andamento (pedido do usuário): várias questões de `portugues`/`ingles` (e possivelmente algumas de Conhecimentos Específicos) remetem a um texto-base ("Texto I"/"Texto II"/"Text I"/"Text II") que nunca foi capturado na extração original — só o enunciado da pergunta foi salvo. Adicionamos um campo opcional `passage` ao schema para guardar esse texto, e a UI (`simulado.html`) já foi atualizada para exibi-lo (repetindo-o em toda questão que dependa dele, mesmo se a questão anterior já mostrou o mesmo texto — comportamento pedido explicitamente pelo usuário).
+**Distribuição atual dos 25 itens restantes em `review-queue.json`** (por prefixo de prova):
+- `prova07`: 10 (majoritariamente divergências genuínas não ligadas a diagrama, já documentadas — ver `extraction-progress.md`)
+- `transp15`: 5 (q39, q40, q69, q70 documentados como divergência genuína; verificar se resta algum outro)
+- `prova6`: 5 (inclui q23/q54, já com 2 rodadas de revisão, ver notas)
+- `psjpn2018`: 2
+- `petro08`: 2 (inclui q55, diagrama UML com multiplicidade ainda ambígua)
+- `transp23e6`: 1 (q27)
 
-**Já commitado e no ar (GitHub Pages, `https://viniciuskol.github.io/SimuladoConcurso/`):**
-- Schema + UI + CSS para `passage` (`study/data/README.md`, `study/simulado.html`, `study/shared/styles.css`) — commit `99ce70d`.
-- Backfill do campo `passage` para as provas `prova_6` (id prefix `prova6-`) e `analista_de_sistemas_junior_processos_de_negocio2018` (id prefix `psjpn2018-`) — 35 de 40 questões Q1-20 dessas duas provas já têm `passage`; as 5 sem passage em `psjpn2018` são questões de gramática pura, corretamente sem texto-base (documentado em `extraction-progress.md`). Commits `ed18e83` + `f094337`.
+## O que falta (em ordem sugerida)
 
-**NÃO commitado / NÃO feito ainda (falhou por limite semanal, sem escrever nada — `git status` confirma working tree limpo):**
-- Backfill de `passage` para `cesgranrio-2018-transpetro` (id prefix `transp15-`, Q1-20) e `cesgranrio-2023-transpetro` Ênfase 6 (id prefix `transp23e6-`, Q1-20) — **nada foi escrito**, precisa rodar do zero.
-- Backfill de `passage` para `cesgranrio-2012-petrobras` (id prefix `petro2012-`, Q1-20) e `petrobras0208_gabsup` (id prefix `petrobras0208-` ou equivalente — checar o prefixo real usado, Q1-20) — nem começou.
-- **Importante**: `tarde_prova_07` NÃO tem seção de Português/Inglês (documentado em `extraction-progress.md`), então não precisa de passage nessa prova.
-- Nenhuma questão de Conhecimentos Específicos foi revisada ainda quanto a depender de um texto-base compartilhado (ex.: "considere o texto/caso a seguir para responder às questões X e Y") — vale uma checagem rápida ao retomar, embora a maior parte dos casos identificados até agora tenha sido só em `portugues`/`ingles`.
+1. Revisar os 10 itens de `prova07` (a maioria não é diagrama — ver `extraction-progress.md` para o motivo de cada um estar em revisão) e decidir se merecem uma 3ª rodada ou se ficam definitivamente `unresolved`.
+2. Revisar os 5 itens de `prova6` (q23/q54 já em rodada 2; ver se há algo novo a tentar) e os 2 de `psjpn2018`/2 de `petro08`.
+3. Considerar se vale uma 3ª rodada geral nos itens marcados como "divergência genuína com o gabarito" (transp15-q39/q40/q69/q70) — por exemplo, buscar uma segunda fonte externa para o gabarito de `cesgranrio-2018-transpetro`, já que o gabarito local usado para essa prova vem de uma fonte externa (estudegratis.com.br), não do material oficial da pasta `provas e gabaritos/`.
+4. Depois de esgotar o backlog de diagramas/divergências, retomar o restante do plano original (fase de conteúdo já está com outra sessão; não duplicar esse trabalho).
 
-Também pendente de outra sessão (não relacionado ao passage, mas relevante): a fase de conteúdo (`content/<area-id>.json`, `flashcards.json`) já avançou bastante em outra branch/sessão que foi mesclada via PR (`8c2f6b5`) — não interfere com o trabalho de passage.
+## Regras que devem continuar valendo ao retomar
 
-## O que falta (em ordem)
-
-1. **Retomar o backfill de `passage`** para os 4 prefixos restantes: `transp15-`, `transp23e6-`, `petro2012-`, e o prefixo da prova `petrobras0208` (confirmar o prefixo exato lendo `study/data/questions.json`). Usar o mesmo padrão de agente/prompt já usado para `prova6-`/`psjpn2018-` (ver histórico da conversa) — ler `study/data/README.md` para a convenção do campo, ler exemplos já feitos (`prova6-q1`) para o formato exato, e trabalhar SEMPRE em grupos sequenciais (nunca dois agentes escrevendo em `questions.json` ao mesmo tempo — risco de perda de escrita).
-2. Após o backfill completo: validar uma amostra contra as fontes originais (como fiz manualmente para `prova6-q1`, conferindo até casos de hifenização entre spans), commitar e dar push (o deploy do GitHub Pages dispara automático).
-3. Checar rapidamente se alguma questão de Conhecimentos Específicos também depende de texto-base compartilhado não capturado.
-4. Voltar para o restante do rollout do plano original (ver plano em `~/.claude/plans/vou-fazer-um-concurso-compiled-wreath.md`): diagramas pendentes na `review-queue.json`, e revisão da 2ª rodada dos itens `unresolved` que ainda não passaram por ela.
-
-## Infraestrutura já configurada (não precisa refazer)
-
-- Repositório tornado **público** (era privado, GitHub Pages não funciona em privado no plano free) — decisão explícita do usuário.
-- Workflow `.github/workflows/deploy-pages.yml` publica `study/` como raiz do site a cada push em `main` que toque `study/**`, via Actions (`upload-pages-artifact` + `deploy-pages`). Site: `https://viniciuskol.github.io/SimuladoConcurso/simulado.html`.
-- `gh auth` da conta `viniciuskol` já tem o escopo `workflow` necessário.
+- `provas e gabaritos/` é **somente leitura** — nunca escrever/mover/renomear nada lá. Sempre checar `git status --short "provas e gabaritos"` (esperado vazio) antes de cada commit.
+- Schema de `questions.json`: `area`, `correctKey` (obrigatório), `alternatives[].key`, `explanationSummary`, `explanation` plano em cada alternativa errada, bloco `verification` documentando a derivação independente.
+- **Nunca forçar uma resposta para bater com o gabarito**: se a derivação independente genuinamente diverge ou não alcança confiança alta, o item fica em `review-queue.json` com uma nota `round: N` detalhada — não é promovido.
+- Sequência de git obrigatória a cada lote validado: `git stash -u` → `git pull origin main` → `git stash pop` → revalidar os dois JSONs (`python -c "import json; json.load(...)"`) → checar `provas e gabaritos/` intocada → `git add` dos arquivos específicos → commit descritivo (`Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>`) → `git push origin main`.
 
 ## Comando exato para retomar
 
-Não é um `/loop` desta vez — é continuação direta da tarefa de passage. Ao retomar, diga algo como:
+Este trabalho não estava sendo rodado como um `/loop` autônomo nesta sessão (foi continuação manual direta), mas caso o usuário queira retomar via loop supervisionado, o prompt original (documentado em memória de sessões anteriores) é:
 
 ```
-Continue o backfill do campo "passage" nas provas que ainda faltam (transp15-, transp23e6-, petro2012-, e a prova petrobras0208), seguindo o mesmo padrão já usado para prova6-/psjpn2018- (ver STATUS.md e o histórico da conversa). Depois valide, commit e push.
+/loop Gerencie, como manager, um ciclo contínuo de dev+validate para o app de estudo Transpetro 2026 em C:\project\Cesgranrio\provas\study\ (plano completo em C:\Users\vinic\.claude\plans\vou-fazer-um-concurso-compiled-wreath.md). Escopo atual: 10 áreas em study/data/areas.json (8 técnicas do Anexo IV Ênfase 5 + portugues/ingles). A cada ciclo: (1) escolha a próxima unidade de trabalho pendente conforme o rollout do plano e study/_internal/extraction-progress.md — priorize resolver os itens de review-queue.json que ainda dependem de diagramas/fórmulas ou que têm divergência com o gabarito não totalmente esclarecida (ver lista acima); (2) lance 1 subagent 'dev' para implementar essa unidade, sempre reforçando que 'provas e gabaritos/' é somente leitura e que o schema deve seguir os nomes de campo já usados em study/data/questions.json; (3) lance 1 subagent 'validator' independente para checar o trabalho contra a fonte original, o schema/invariantes em study/data/README.md, e duplicação de ids; (4) se o validator apontar problemas, aplique os fixes e valide de novo; (5) ao final do ciclo, git add/commit/push seguindo a sequência stash/pull/pop; (6) relate em 2-3 linhas o que melhorou. Continue os ciclos até esgotar o limite de uso de IA da sessão. Antes de qualquer risco de estourar o limite, faça um commit de checkpoint e atualize study/_internal/STATUS.md com onde parou. Nunca escrever/mover/renomear nada dentro de 'provas e gabaritos/' — só leitura ali.
 ```
+
+Se preferir continuação manual direta (sem o `/loop`), basta dizer algo como: "Continue resolvendo o backlog da review-queue, seguindo o STATUS.md" — o contexto e as regras acima já bastam para retomar exatamente de onde parou.
