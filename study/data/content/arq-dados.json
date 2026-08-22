@@ -328,7 +328,7 @@
       "url": "https://www.postgresql.org/docs/current/mvcc.html",
       "kind": "guia",
       "free": true,
-      "why": "Transações, níveis de isolamento e ACID na prática (1.14, 1.16 e 1.17); em inglês, é a fonte canônica do produto."
+      "why": "Transações, níveis de isolamento, ACID e bloqueios (1.14 e 1.16); em inglês, é a fonte canônica do produto."
     },
     {
       "title": "Dimensional Modeling Techniques",

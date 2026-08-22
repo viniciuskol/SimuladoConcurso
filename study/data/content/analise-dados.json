@@ -307,7 +307,7 @@
       "url": "https://support.microsoft.com/pt-BR/Excel/excel-functions-by-category",
       "kind": "guia",
       "free": true,
-      "why": "Referência oficial de funções de planilha (PROCX, SOMASE, tabela dinâmica etc.) para o 7.9, em português."
+      "why": "Referência oficial das funções de planilha (PROCX, SOMASE, SE, ÍNDICE/CORRESP etc.) para o 7.9, em português."
     },
     {
       "title": "Dados estruturados x dados não estruturados",
@@ -316,6 +316,14 @@
       "kind": "artigo",
       "free": true,
       "why": "Diferença, exemplos e onde cada tipo é armazenado — 7.4 e apoio ao 7.3 (mapeamento de fontes), em português."
+    },
+    {
+      "title": "Introdução a dashboards para designers do Power BI",
+      "publisher": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/pt-br/power-bi/create-reports/service-dashboards",
+      "kind": "guia",
+      "free": true,
+      "why": "Diferença dashboard x relatório, blocos fixados e leitura para decisão — 7.8 e 7.10, em português."
     }
   ]
 }

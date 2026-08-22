@@ -391,6 +391,14 @@
       "kind": "curso",
       "free": true,
       "why": "Alternativa gratuita ao PMBOK (pago) para 2.4 e para o item 3 — grupos de processos de iniciação, planejamento, execução e controle, em português."
+    },
+    {
+      "title": "Gestão de projetos (curso aberto)",
+      "publisher": "Câmara dos Deputados / ENAP — Escola Virtual de Governo",
+      "url": "https://www.escolavirtual.gov.br/curso/787",
+      "kind": "curso",
+      "free": true,
+      "why": "Influência da estrutura organizacional e ciclo de vida do projeto — cobre 2.5 (projetos e a organização), em português."
     }
   ]
 }

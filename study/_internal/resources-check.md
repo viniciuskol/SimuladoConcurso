@@ -113,3 +113,43 @@ optou-se pelo PDF oficial em português (A15), que cobre o mesmo conteúdo.
 | R32 | https://www.interaction-design.org/literature/topics/design-thinking | 200 (redir. p/ ixdf.org) | Título casa, mas material com paywall parcial e menos canônico que A31; preterido, não usado. |
 | R33 | https://www.storytellingwithdata.com/books/ | 200 | Página de venda de livros; não é material didático aberto — descartado para não prometer conteúdo. |
 | R34 | https://www.escolavirtual.gov.br/curso/153 | 200 (LGPD, curso aberto) | Verificado e válido, mas preterido para não empilhar 3 cursos EVG em gestao-ti. |
+
+## Nota de ambiente (adendo — D8 do review, 2026-08-22)
+
+Também respondem 403 a UA de robô, mas 200 em navegador: www.computer.org (SWEBOK),
+www.w3.org/TR/ (Cloudflare; 200 com UA Safari) e, intermitentemente, www.nngroup.com.
+Não são links quebrados — não trocar nem remover por causa de um 403 em curl com UA padrão.
+
+## Segunda rodada de verificação (D7 — fechar lacunas do Anexo IV, 2026-08-22)
+
+Aprovados e incorporados:
+
+| # | URL | HTTP | URL efetiva | Título extraído | Área / lacuna fechada |
+|---|-----|------|-------------|-----------------|-----------------------|
+| A61 | https://www.ireb.org/en/downloads/ | 200 | https://ireb.org/en/downloads | Downloads – IREB ("Download Center / All public IREB...") | eng-sw — 5.1 requisitos |
+| A62 | https://learn.microsoft.com/pt-br/power-bi/create-reports/service-dashboards | 200 | (mesma) | Introdução a dashboards para designers do Power BI | analise-dados — 7.8/7.10 |
+| A63 | https://www.escolavirtual.gov.br/curso/787 | 200 | (mesma) | Escola Virtual Gov — "Gestão de projetos / Curso Aberto"; corpo confirma "a influência da estrutura organizacional, o ciclo de vida do projeto" | gestao-proj — 2.5 |
+| A64 | https://www.escolavirtual.gov.br/curso/416 | 200 | (mesma) | Escola Virtual Gov — "Gestão da Inovação no Setor Público / Curso Aberto" | gestao-ti — parte de 4.2 |
+
+Rejeitados nesta rodada:
+
+| # | URL | HTTP / resultado | Motivo |
+|---|-----|------------------|--------|
+| R35 | https://learn.microsoft.com/pt-br/power-bi/create-reports/power-bi-visualization-best-practices | 404 "Conteúdo não encontrado" | Página inexistente. |
+| R36 | https://learn.microsoft.com/pt-br/power-bi/guidance/report-design-tips | 404 | Página inexistente. |
+| R37 | https://www.ipea.gov.br/portal/categorias/45-todas-as-editorias/macroeconomia/13191-inovacao | 200 mas título "Despachos internos - Ipea" | Conteúdo não é o anunciado (4.4 seguiu sem fonte). |
+| R38 | https://www.finep.gov.br/ | 200 (home institucional "Home - Finep") | Portal institucional, não material didático de 4.4. |
+| R39 | https://www.escolavirtual.gov.br/curso/809 | 200 ("Gerenciamento de Portfólio de Projetos de Transformação Digital") | Verificado e válido, mas é portfólio, não PMO (2.6); preterido para o 787, que casa com 2.5. |
+
+## Lacunas do Anexo IV que permanecem abertas (pauta de ciclo futuro)
+
+- `1.6` metadados e `1.21` qualidade/dados mestres: só o DAMA-DMBOK, **pago** — decisão do
+  manager (D6) foi aceitar assim; alternativa gratuita fica para um ciclo futuro.
+- `1.19` ETL/integração e `1.20` banco em memória: sem link (arq-dados já no teto de 7).
+- `2.6`/`2.7` escritório de projetos e modelos de PMO: nada gratuito e canônico verificado
+  (pmi.org devolve 403 em todas as URLs).
+- `4.4` ciência, pesquisa, desenvolvimento e indústria: sem fonte — MCTI e IBGE/PINTEC com
+  muro anti-bot, OECD com Cloudflare, Ipea/Finep sem página didática que casasse.
+- `6.2`, `6.3`, `6.5` (storytelling com dados) e `6.6`: ux já no teto de 7.
+- `9.6` VPN, `9.7` MDM, `9.19`–`9.21` criptografia/nuvem/IoT: seg-info já no teto de 7.
+- `P.1` compreensão de textos: coberto só indiretamente (Ciberdúvidas/Senado).

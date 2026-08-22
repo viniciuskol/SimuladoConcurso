@@ -223,3 +223,26 @@ www.w3.org/TR/ (Cloudflare; 200 com UA Safari) e, intermitentemente, www.nngroup
 numeração do Anexo IV correta em todos os 59 `why`; `free:false` e alternativas gratuitas
 corretas; nenhuma fonte proibida pelo brief; escape de HTML (`esc`) correto em
 `title/publisher/kind/why`; `rel="noopener noreferrer"` presente.
+
+---
+
+## Aplicação pelo DEV (2026-08-22)
+
+- **D1** — resolvido pelo manager em `estudo.html` (não tocado por mim).
+- **D2** aplicado — `eng-sw.resources` BSTQB: novo `title` "Material de Apoio ao Estudo —
+  técnicas de teste (PDFs)" e `why` reescrito para os PDFs que a página realmente tem.
+- **D3** aplicado — `arq-dados` PostgreSQL MVCC: `why` agora fala de 1.14 e 1.16 (sem 1.17).
+- **D4** aplicado — `analise-dados` Excel: `why` sem "tabela dinâmica"; link mantido (7.9).
+- **D5** aplicado — `eng-sw` SWEBOK: `why` com V4.0a e "download gratuito por formulário".
+- **D6** — decisão do manager acatada: DMBOK fica como `free:false`; lacuna de 1.6/1.21
+  registrada em `resources-check.md` (seção "Lacunas ... abertas").
+- **D7** aplicado parcialmente — 4 links novos, todos verificados nesta rodada (A61–A64 no
+  `resources-check.md`): IREB/CPRE → 5.1; Power BI dashboards (pt-BR) → 7.8/7.10;
+  EVG 787 → 2.5; EVG 416 → parte de 4.2. 5 candidatos rejeitados (R35–R39). As demais
+  lacunas ficaram abertas: 1.19, 1.20, 2.6/2.7, 4.4, 6.2/6.3/6.5/6.6, 9.6/9.7, 9.19–9.21
+  e P.1 — as três últimas porque ux e seg-info já estão no teto de 7 links por área.
+- **D8** aplicado — nota de bloqueio por user-agent acrescentada ao `resources-check.md`.
+
+Estado final: 63 links (analise-dados 6, arq-dados 7, eng-sw 6, gestao-proj 7, gestao-ti 7,
+ingles 5, logica 5, portugues 6, seg-info 7, ux 7); 63 URLs únicas; 6 chaves em todos os
+itens; `python3 study/_internal/check.py` → PROBLEMAS: 0.

@@ -317,6 +317,14 @@
       "kind": "curso",
       "free": true,
       "why": "Cobre 4.1 a 4.3 (segmentos e perspectivas da tecnologia, inovação aplicada ao governo) — o pedaço mais órfão do Anexo IV nesta área."
+    },
+    {
+      "title": "Gestão da Inovação no Setor Público (curso aberto)",
+      "publisher": "ENAP / Escola Virtual de Governo",
+      "url": "https://www.escolavirtual.gov.br/curso/416",
+      "kind": "curso",
+      "free": true,
+      "why": "Conceitos, processos e ecossistemas de inovação — cobre parte do 4.2 (princípios de economia da inovação), em português."
     }
   ]
 }
