@@ -1,84 +1,84 @@
 # STATUS — trilha de ESTUDO (Transpetro 2026, Ênfase 5)
 
-**Atualizado:** 2026-08-22, ~10:25Z (07:25 BRT) — fim do alvo do loop (08:00 BRT).
-Branch `claude/transpetro-2026-study-mwb8lp`, em dia com o remoto.
-Escopo: material de estudo (`study/data/content/`, `flashcards.json`, `plan.json`,
-`estudo.html`). O **simulado** (`simulado.html`, `questions.json`) é de outro fluxo e não
-é alterado aqui — só lido como evidência.
+**Atualizado:** 2026-08-22, ~17:00Z. Branch **main** (o merge da trilha foi feito).
+Trabalho **pausado a pedido do usuário**. Escopo: material de estudo
+(`study/data/content/`, `flashcards.json`, `plan.json`, `estudo.html`). O simulado
+(`simulado.html`, `questions.json`) é de outro fluxo e não é alterado aqui.
 
-## Onde está (7 ciclos fechados, todos com validação independente)
+## Onde está
 
-| ciclo | entrega | veredito final |
-|---|---|---|
-| 1 | conteúdo de arq-dados e gestao-proj + 72 cards | aprovado após 2 rodadas (3 críticos) |
-| 2 | conteúdo de eng-sw e seg-info + 74 cards | aprovado (0 críticos, 15 fixes) |
-| 3 | conteúdo de gestao-ti, ux, analise-dados + 84 cards | aprovado (1 crítico: sanção inexistente na LGPD) |
-| 4 | conteúdo de logica, portugues, ingles + 62 cards | aprovado (4 críticos) |
-| 5 | `plan.json` — plano até 29/11, padrões transversais + 16 cards de lógica | aprovado (2 críticos) |
-| 6 | rebalanceamento do deck (+34) e auditoria retroativa dos 4 arquivos antigos | aprovado (0 críticos) |
-| 7 | tela "Revisar meus erros" | aprovado (1 crítico: XSS por atributo) |
-| — | material de apoio: 63 links verificados | aprovado (0 críticos) |
-
-Estado dos artefatos: **10/10 áreas** com resumo, cheatsheet, modelos mentais, padrões
-da banca com evidência em questão real, táticas, palavras-armadilha e material de apoio;
-**deck de 342 flashcards** com SM-2; plano de 6 blocos cobrindo 22/08 → 29/11;
-`estudo.html` com prioridades, plano, revisão de erros e flashcards por área ou
-intercalados. `python3 study/_internal/check.py` → **0 problemas**.
+**Ciclos 1 a 9: fechados e validados.** 10/10 áreas do Anexo IV com resumo, cheatsheet,
+modelos mentais, padrões com evidência em questão real, táticas, palavras-armadilha e
+material de apoio (63 links verificados por requisição real). Deck: **367 flashcards**
+com SM-2. Plano de 6 blocos até 29/11, com checklist marcável e persistente. Tela de
+revisão de erros com gabarito e explicação. `python3 study/_internal/check.py` → 0
+problemas.
 
 **Deploy:** https://claude.ai/code/artifact/60250752-b1bd-41ae-aeb3-4238ccdccfe1
-(privado). Gerado por `_internal/build-standalone.py` a partir dos mesmos arquivos do
-repo — republicar depois de qualquer mudança de conteúdo:
-`python3 study/_internal/build-standalone.py <saida>.html` e republicar no MESMO caminho
-de arquivo para manter a URL.
+**ATENÇÃO: está desatualizado** — foi publicado antes do ciclo 10. Para republicar:
+`python3 study/_internal/build-standalone.py <scratchpad>/estudo-standalone.html` e
+republicar **no mesmo caminho de arquivo** para manter a URL.
 
-## O que falta
+## Ciclo 10 — aplicado, validado uma vez, confirmação INTERROMPIDA
 
-1. **Lacunas de material** (detalhe em `_internal/resources-check.md`):
-   - **PMBOK 7 e itens do PMI (2.4/2.6/2.7): ENCERRADO por decisão do usuário** — pmi.org
-     dá 403 em toda URL, inclusive com UA de navegador. Não tentar mais; o assunto está
-     coberto pela alternativa gratuita verificada e pelo conteúdo de `gestao-proj`.
-   - Abertas: Manual de Redação da Presidência, economia da inovação com fonte primária
-     brasileira (4.4), alternativa gratuita ao DMBOK (1.6/1.21). Regra do usuário: se a
-     fonte estiver bloqueada de forma dura, encerrar e registrar em vez de insistir.
-2. **`fc-logica-020`** agrupa três regras triviais num card — decisão consciente de
-   manter; revisitar se incomodar no uso.
-3. **Redução ao absurdo** está no cheatsheet de logica mas não tem card no deck.
-4. **Sinks equivalentes em `simulado.html`** — o validador do ciclo 7 observou que a
-   página do simulado tem padrões de interpolação parecidos com o XSS que corrigimos
-   aqui, sem vetor hoje. É do outro fluxo; vale avisar quem cuida dele.
-5. Ideias de próximo ciclo: (a) link do simulado para a tela de erros (exige mexer no
-   simulado, fora do meu escopo); (b) mostrar alternativas e gabarito na tela de erros;
-   (c) mais cards de portugues e ingles, hoje 27 e 25 para 10 questões de prova cada.
+Objetivo: sincronizar o material com o banco, que passou de 235 para **360 questões**.
 
-## Regra permanente do usuário
+- 1ª passada: ~150 afirmações quantitativas conferidas, **119 corrigidas**, 10 afirmações
+  de ausência que viraram falsas, 101 evidences novos, 14 patterns novos.
+- Validação independente **reprovou**: 2 críticos, 11 médios, 4 baixos — e identificou a
+  causa raiz, que é de processo: **o banco mudou durante o ciclo** (351 → 360), então
+  números certos ao serem escritos ficaram velhos ao serem lidos.
+- 2ª passada: os 2 críticos e os 13 grupos numéricos corrigidos, todos recalculados
+  contra o disco no momento da edição; 4 evidences removidos (1 corrompido, 3 frouxos),
+  8 acrescentados; impressão digital do banco gravada no fim de
+  `_internal/recount-cycle10.md` (HEAD, 360 questões, contagem por área, one-liner de
+  verificação).
+- **A confirmação da 2ª passada foi interrompida** (parada pedida pelo usuário). Ela
+  alcançou a primeira medição e confirmou: **o banco segue em 360, sem entrada nem saída**
+  desde a auditoria anterior. Os 13 grupos e os 8 evidences novos **não** foram
+  reconferidos por terceiro.
 
-**Sempre pausar aos 80% da janela de 5h**: não lançar subagent novo, commitar
-checkpoint, atualizar este arquivo, avisar em 2-3 linhas. Há um supervisor a cada 5h
-(push + e-mail) que lê este arquivo e manda o resumo de retomada.
+**Consequência prática:** os números do material são os mais corretos que já foram, mas a
+2ª passada carece de confirmação independente. Ao retomar, a **primeira** tarefa é
+terminar essa confirmação (o prompt está no histórico; o relatório em
+`_internal/review-cycle10.md`).
 
-## Protocolo de contexto (economia de tokens do manager)
+## Fila (tarefas, em ordem de valor)
 
-Está no fim de `_internal/content-brief.md`: o **validador escreve o relatório completo
-no arquivo** `_internal/review-<ciclo>.md` e responde ao manager em ≤12 linhas; o **dev
-lê o arquivo** e responde em ≤10 linhas. O manager verifica estado com
-`python3 study/_internal/check.py` em vez de abrir artefatos.
+1. Terminar a confirmação do ciclo 10 (acima).
+2. **Texto-base na revisão de erros** — 103 questões têm campo `passage`; Português e
+   Inglês são 120 das 360 e quase todas de interpretação: revisar erro sem o texto é
+   inútil. Decidir escape × render e incluir no build do deploy.
+3. **`check.py` conferir número em prosa** contra o banco, e comparar a impressão digital
+   — nenhum dos 13 defeitos numéricos do ciclo 10 seria pego pela bateria atual.
+4. **Rebalancear o deck** contra o banco novo: logica 27 cards / 22 questões e gestao-ti
+   42 / 12, contra gestao-proj 36 / 55 e portugues 39 / 60.
+5. 4 lacunas de flashcard (needn't × mustn't, ponto e vírgula/reticências, conotação e
+   figuras) e paginação da tela de erros.
+6. Avisar o fluxo do simulado sobre os sinks de interpolação em `simulado.html` (mesma
+   classe do XSS corrigido no `estudo.html`) e sobre a reextração de `prova07-q22`, cuja
+   perda de símbolos lógicos deixou três tautologias entre as alternativas.
 
-## Fecho de ciclo (regra do usuário)
+**Encerrado por decisão:** links do PMI/PMBOK (403 duro, inclusive com UA de navegador).
+Regra: fonte bloqueada de forma dura se encerra e se registra, não vira pendência eterna.
 
-Sempre que um ciclo é **validado**, sincronizar antes de publicar — o fluxo do simulado
-empurra para o mesmo branch, então commitar sem `pull` antes convida divergência:
+## Regras permanentes do usuário
+
+- **Pausar sempre aos 80% da janela de 5h**: sem lançar subagent novo, com commit de
+  checkpoint e este arquivo atualizado antes.
+- **Fecho de ciclo sempre pelo script**: `MSG_FILE=/tmp/msg.txt study/_internal/sync-commit.sh`
+  — ele faz check.py, stash, pull --rebase, pop, commit e push. O outro fluxo empurra para
+  a mesma branch, e o pull já evitou divergência três vezes.
+- Supervisor a cada 5h (push + e-mail) lendo este arquivo.
+
+## Protocolo de contexto
+
+No fim de `_internal/content-brief.md`: o validador escreve o relatório no arquivo
+`_internal/review-<ciclo>.md` e responde em ≤12 linhas; o dev lê o arquivo e responde em
+≤10. O manager confere estado com `check.py` em vez de abrir artefatos.
+
+## Comando exato para retomar
 
 ```
-MSG_FILE=/tmp/msg.txt study/_internal/sync-commit.sh
-```
-
-O script faz, em ordem: `check.py` (aborta se reprovar) → `stash -u` se houver trabalho
-sujo → `pull --rebase` → `stash pop` (para e avisa se der conflito, sem perder nada) →
-`commit` → `push` com até 5 tentativas e backoff, refazendo o `pull --rebase` entre elas.
-Depois, se o conteúdo mudou, regenerar e republicar o artifact no MESMO caminho de arquivo.
-
-## Comando exato para retomar o loop
-
-```
-/loop Gerencie, como manager, o ciclo contínuo de dev+validate da trilha de ESTUDO do app Transpetro 2026 em /home/user/SimuladoConcurso/study. Brief: study/_internal/content-brief.md (inclui o protocolo de relatório e o schema de resources). Estado e pendências: study/_internal/STATUS-ESTUDO.md. NÃO alterar simulado.html nem questions.json (outro fluxo) e NUNCA escrever em 'provas e gabaritos/' (somente leitura). A cada ciclo: (1) escolha a próxima pendência do STATUS.md; (2) lance 1 subagent dev e (3) 1 subagent validador independente, exigindo conferência formal (tabela-verdade em lógica, literalidade em lei, recontagem por script de toda afirmação de frequência, requisição real para toda URL) e proibindo o validador de corrigir; (4) aplique os fixes, revalide e só então feche; (5) rode python3 study/_internal/check.py, git add/commit descritivo e git push origin claude/transpetro-2026-study-mwb8lp; (6) se o conteúdo mudou, regenere e republique o artifact no mesmo caminho de arquivo; (7) relate em 2-3 linhas o que melhorou. Pause SEMPRE aos 80% da janela de 5h, com commit de checkpoint e STATUS.md atualizado antes.
+/loop Gerencie, como manager, o ciclo de dev+validate da trilha de ESTUDO em /home/user/SimuladoConcurso/study, na branch main. Brief: study/_internal/content-brief.md. Estado e fila: study/_internal/STATUS-ESTUDO.md. NÃO alterar simulado.html nem questions.json (outro fluxo) e NUNCA escrever em 'provas e gabaritos/'. PRIMEIRA tarefa: terminar a confirmação independente da 2ª passada do ciclo 10 (relatório em study/_internal/review-cycle10.md). A cada ciclo: 1 subagent dev + 1 validador independente, exigindo conferência formal (tabela-verdade em lógica, literalidade em lei, recontagem por script de toda afirmação de frequência, requisição real para toda URL) e proibindo o validador de corrigir; aplique os fixes, revalide, feche com study/_internal/sync-commit.sh, regenere e republique o artifact no mesmo caminho de arquivo, e relate em 2-3 linhas. Pause sempre aos 80% da janela de 5h.
 ```
