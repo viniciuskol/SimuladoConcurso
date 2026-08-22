@@ -19,12 +19,15 @@
 </div>
 <script type="module">
 import { loadJSON, showFetchHelp } from "./shared/data-loader.js";
-import { dueCards, rateCard, statsByArea, srsSummary } from "./shared/storage.js";
+import { dueCards, rateCard, statsByArea, srsSummary, wrongByArea } from "./shared/storage.js";
 
 const app = document.getElementById("app");
-let AREAS = [], CARDS = [], QCOUNT = {}, CONTENT = {}, PLAN = null;
+let AREAS = [], CARDS = [], QCOUNT = {}, CONTENT = {}, PLAN = null, QBYID = {};
 
-const esc = s => String(s ?? "").replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+// Escapa também " e ' porque o mesmo esc() é usado em valor de ATRIBUTO, onde
+// escapar só &<> deixa quebrar o atributo. Em texto, &quot;/&#39; renderizam como "/'.
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c =>
+  ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
 async function init() {
   try {
@@ -37,7 +40,8 @@ async function init() {
   try { PLAN = await loadJSON("data/plan.json"); } catch { /* plano é opcional */ }
   try {
     const qs = (await loadJSON("data/questions.json")).questions || [];
-    for (const q of qs) QCOUNT[q.area] = (QCOUNT[q.area] || 0) + 1;
+    // Mesmo carregamento serve à contagem por área e à tela de erros (índice por id).
+    for (const q of qs) { QCOUNT[q.area] = (QCOUNT[q.area] || 0) + 1; QBYID[q.id] = q; }
   } catch { /* contagem é opcional */ }
   renderHome();
 }
@@ -51,19 +55,50 @@ async function loadAreaContent(areaId) {
 
 function cardsOf(areaId) { return CARDS.filter(c => c.area === areaId); }
 
+function areaLabelOf(id) { return (AREAS.find(a => a.id === id) || {}).label || id; }
+
+/* Visão de erros: o agregado do storage, cruzado com as questões carregadas.
+   Erro cujo questionId não existe mais em questions.json é ignorado em silêncio
+   (a prova pode ter sido reindexada) — e grupo que fica vazio desaparece. */
+function errorView() {
+  const raw = wrongByArea();
+  // A área confiável é a da questão em questions.json, não a que ficou gravada na
+  // tentativa: o histórico pode ser antigo, de outra taxonomia, ou editado à mão.
+  const items = raw.groups
+    .flatMap(g => g.items)
+    .filter(it => QBYID[it.questionId])
+    .map(it => ({ ...it, area: QBYID[it.questionId].area }));
+  const byArea = new Map();
+  for (const it of items) {
+    if (!byArea.has(it.area)) byArea.set(it.area, []);
+    byArea.get(it.area).push(it);
+  }
+  const groups = [...byArea.entries()]
+    .map(([area, list]) => ({ area, items: list.sort((x, y) => y.lastWrong - x.lastWrong) }))
+    .sort((x, y) => y.items.length - x.items.length || areaLabelOf(x.area).localeCompare(areaLabelOf(y.area)));
+  return {
+    groups,
+    attempts: raw.attempts,
+    attemptsShown: items.reduce((t, it) => t + it.wrong, 0),
+    wrongTotal: items.length,
+    recovered: items.filter(it => it.recovered).length
+  };
+}
+
 /* ---------- Home ---------- */
 
 function renderHome() {
   const due = dueCards(CARDS);
   const stats = Object.fromEntries(statsByArea(AREAS).map(s => [s.id, s]));
   const srs = srsSummary(CARDS);
+  const err = errorView();
 
-  const areaRow = a => {
+  const areaRow = (a, i) => {
     const nq = QCOUNT[a.id] || 0;
     const nc = cardsOf(a.id).length;
     const st = stats[a.id];
     const acc = st && st.total ? `${st.pct}% no simulado` : "sem tentativas";
-    return `<button class="btn area-row" data-area="${a.id}">
+    return `<button class="btn area-row" data-i="${i}">
       <span class="alt-key">${a.num ?? "•"}</span>
       <span class="alt-text">
         <strong>${esc(a.label)}</strong>
@@ -81,6 +116,16 @@ function renderHome() {
         ? `<button class="btn primary" id="review-all">Revisar agora (misturando áreas)</button>
            <p class="muted">Intercalação: misturar áreas na mesma sessão fixa mais do que estudar em bloco.</p>`
         : `<p class="muted">Nada devido agora. ${CARDS.length ? "Volte amanhã — ou entre numa área e revise à força." : ""}</p>`}
+    </div>
+    <div class="card">
+      <h2>Revisar meus erros</h2>
+      ${err.attempts
+        ? `<p class="muted">${err.wrongTotal} questão(ões) distinta(s) errada(s) em ${err.groups.length} área(s), de ${err.attempts} tentativa(s) no histórico total.</p>
+           <p class="muted">${err.recovered} dela(s) você já acertou numa tentativa posterior — acertar depois de errar é o sinal que interessa.</p>
+           ${err.wrongTotal
+             ? `<button class="btn primary" id="open-errors">Abrir revisão dos erros</button>`
+             : `<p class="muted">Nenhum erro pendente no histórico. Faça mais um simulado para ter material de revisão.</p>`}`
+        : `<p class="muted">Sem tentativas registradas ainda: faça um <a href="simulado.html">simulado</a> primeiro e os erros aparecem aqui, agrupados por área.</p>`}
     </div>
     ${PLAN ? `<div class="card accent">
       <h2>Plano até a prova</h2>
@@ -112,8 +157,11 @@ function renderHome() {
   if (pb) pb.addEventListener("click", renderPlan);
   const rb = document.getElementById("review-all");
   if (rb) rb.addEventListener("click", () => startReview(shuffle(due), "Revisão geral"));
-  app.querySelectorAll("[data-area]").forEach(b =>
-    b.addEventListener("click", () => renderArea(b.dataset.area)));
+  const eb = document.getElementById("open-errors");
+  if (eb) eb.addEventListener("click", renderErrors);
+  // O id da área vai pelo closure, não por atributo: nada de dado no HTML.
+  app.querySelectorAll("[data-i]").forEach(b =>
+    b.addEventListener("click", () => renderArea(AREAS[Number(b.dataset.i)].id)));
 }
 
 function daysToExam() {
@@ -194,10 +242,86 @@ function shuffle(arr) {
   return a;
 }
 
+/* ---------- Revisar meus erros ---------- */
+
+// O `stem` vem de arquivo local, mas aqui ele é cortado em ~140 caracteres:
+// truncar HTML no meio geraria markup quebrado, então tiro as tags e escapo o
+// texto — assim nenhum `<script>` sobrevive nem por acidente.
+function trunc(s, n = 140) {
+  const t = String(s ?? "").replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+  return esc(t.length > n ? t.slice(0, n).replace(/\s+\S*$/, "") + "…" : t);
+}
+
+function fmtDate(ts) {
+  if (!ts) return "";
+  const d = new Date(ts);
+  return isNaN(d) ? "" : d.toLocaleDateString("pt-BR");
+}
+
+function renderErrors() {
+  const err = errorView();
+  const max = Math.max(...err.groups.map(g => g.items.length), 1);
+
+  const group = (g, i) => {
+    const nc = cardsOf(g.area).length;
+    const rec = g.items.filter(it => it.recovered).length;
+    return `<div class="card">
+      <h2>${esc(areaLabelOf(g.area))}</h2>
+      <p class="muted">${g.items.length} questão(ões) errada(s)${rec ? ` · ${rec} já recuperada(s) depois` : ""}</p>
+      <div class="area-bar">
+        <span class="track"><div style="width:${Math.round((g.items.length / max) * 100)}%"></div></span>
+        <span class="pct">${g.items.length}</span>
+      </div>
+      <div class="alt-list">
+        <button class="btn" data-sum="${i}">📘 Ver o resumo da área</button>
+        ${nc ? `<button class="btn" data-fc="${i}">🃏 Revisar os ${nc} flashcards desta área</button>`
+             : `<p class="muted">Sem flashcards nesta área ainda.</p>`}
+      </div>
+      <details class="explain">
+        <summary>${g.items.length === 1 ? "Ver a questão que errei" : `Ver as ${g.items.length} questões que errei`}</summary>
+        ${g.items.map(it => {
+          const q = QBYID[it.questionId];
+          return `<div class="sub">
+            <strong>Questão ${esc(it.questionId)}</strong>
+            <span class="muted">${it.wrong > 1 ? ` · errada ${it.wrong}×` : ""}${it.lastWrong ? ` · último erro ${esc(fmtDate(it.lastWrong))}` : ""}${it.recovered ? " · acertada depois ✓" : ""}</span>
+            ${q.subtopic ? `<span class="muted block">${esc(q.subtopic)}</span>` : ""}
+            <p>${trunc(q.stem)}</p>
+          </div>`;
+        }).join("")}
+      </details>
+    </div>`;
+  };
+
+  app.innerHTML = `
+    <button class="btn" id="back">← Voltar</button>
+    <h1>Revisar meus erros</h1>
+    <div class="card">
+      <p class="muted">${err.wrongTotal} questão(ões) distinta(s) errada(s) · ${err.attemptsShown} erro(s) somando as repetições · ${err.recovered} já acertada(s) numa tentativa posterior</p>
+      <p class="muted">Áreas em ordem: quem mais te derruba primeiro. Dentro de cada área, o erro mais recente vem primeiro.</p>
+    </div>
+    ${err.groups.length
+      ? err.groups.map(group).join("")
+      : `<div class="card"><p class="muted">Nenhum erro registrado. Faça um <a href="simulado.html">simulado</a> e volte aqui.</p></div>`}
+  `;
+  document.getElementById("back").addEventListener("click", renderHome);
+  // Só o índice do grupo trafega por atributo; o id da área vem do closure.
+  app.querySelectorAll("[data-sum]").forEach(b => {
+    const area = err.groups[Number(b.dataset.sum)].area;
+    b.addEventListener("click", () => renderArea(area, renderErrors));
+  });
+  // Sessão forçada: usa todos os cards da área, mesmo que nenhum esteja devido hoje.
+  app.querySelectorAll("[data-fc]").forEach(b => {
+    const area = err.groups[Number(b.dataset.fc)].area;
+    b.addEventListener("click", () => startReview(
+      shuffle(cardsOf(area)), `${areaLabelOf(area)} — erros`, renderErrors));
+  });
+}
+
 /* ---------- Área ---------- */
 
-async function renderArea(areaId) {
-  const area = AREAS.find(a => a.id === areaId);
+async function renderArea(areaId, onBack = renderHome) {
+  // Id de área desconhecido (histórico antigo) não pode congelar a tela.
+  const area = AREAS.find(a => a.id === areaId) || { id: areaId, label: areaId, topics: [] };
   const content = await loadAreaContent(areaId);
   const cards = cardsOf(areaId);
   const due = dueCards(cards);
@@ -238,10 +362,10 @@ async function renderArea(areaId) {
     </div>
     ${content ? sections.join("") : `<div class="empty-state">Conteúdo de estudo desta área ainda não foi escrito.</div>`}
   `;
-  document.getElementById("back").addEventListener("click", renderHome);
+  document.getElementById("back").addEventListener("click", onBack);
   const rb = document.getElementById("rev-area");
   if (rb) rb.addEventListener("click", () =>
-    startReview(shuffle(due.length ? due : cards), area.label, () => renderArea(areaId)));
+    startReview(shuffle(due.length ? due : cards), area.label, () => renderArea(areaId, onBack)));
 }
 
 function sec(title, html, cls = "") {
@@ -266,6 +390,7 @@ function startReview(queue, label, onDone) {
     }
     const c = queue[idx];
     app.innerHTML = `
+      <button class="btn" id="quit">← Sair da sessão</button>
       <div class="progressbar"><div style="width:${(idx / queue.length) * 100}%"></div></div>
       <div class="card">
         <p class="muted">Card ${idx + 1} de ${queue.length} · ${esc(areaLabel(c.area))}</p>
@@ -274,11 +399,13 @@ function startReview(queue, label, onDone) {
       <button class="btn primary" id="reveal">Mostrar resposta</button>
       <p class="muted">Tente formular a resposta em voz alta antes de revelar.</p>`;
     document.getElementById("reveal").addEventListener("click", reveal);
+    document.getElementById("quit").addEventListener("click", done);
   };
 
   const reveal = () => {
     const c = queue[idx];
     app.innerHTML = `
+      <button class="btn" id="quit">← Sair da sessão</button>
       <div class="progressbar"><div style="width:${(idx / queue.length) * 100}%"></div></div>
       <div class="card">
         <p class="muted">${esc(areaLabel(c.area))}</p>
@@ -292,6 +419,7 @@ function startReview(queue, label, onDone) {
         <button class="btn" data-r="3">Bom</button>
         <button class="btn" data-r="4">Fácil</button>
       </div>`;
+    document.getElementById("quit").addEventListener("click", done);
     app.querySelectorAll("[data-r]").forEach(b => b.addEventListener("click", () => {
       rateCard(c.id, Number(b.dataset.r));
       idx += 1;

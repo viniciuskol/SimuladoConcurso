@@ -1,9 +1,15 @@
 const ATTEMPTS_KEY = "transpetro2026:attempts";
 const SRS_KEY = "transpetro2026:srs";
 
+// Devolve SEMPRE um array de tentativas utilizáveis. JSON válido mas não-array
+// (ex.: {"a":1}), item que não é objeto, ou item sem questionId/area são descartados
+// em silêncio — assim statsByArea e wrongByArea nunca estouram com storage estranho.
 export function loadAttempts() {
-  try { return JSON.parse(localStorage.getItem(ATTEMPTS_KEY)) || []; }
-  catch { return []; }
+  try {
+    const v = JSON.parse(localStorage.getItem(ATTEMPTS_KEY));
+    if (!Array.isArray(v)) return [];
+    return v.filter(a => a && typeof a === "object" && a.questionId && a.area);
+  } catch { return []; }
 }
 
 export function recordAttempt(entry) {
@@ -77,4 +83,40 @@ export function srsSummary(cards) {
   const state = loadSRS();
   const seen = cards.filter(c => state[c.id]).length;
   return { seen, total: cards.length };
+}
+
+// Agrega o histórico de tentativas do simulado do ponto de vista do erro.
+// Uma questão errada N vezes conta como UM erro (com `wrong` = N); `recovered`
+// marca quem foi acertada em tentativa POSTERIOR ao último erro — o sinal que
+// interessa. Só acrescenta; não altera nenhuma função acima.
+export function wrongByArea() {
+  const attempts = loadAttempts()   // já vem saneado (array de objetos com questionId e area)
+    .slice()
+    .sort((a, b) => (a.timestamp || 0) - (b.timestamp || 0));
+  const byQ = new Map();
+  for (const at of attempts) {
+    let e = byQ.get(at.questionId);
+    if (!e) {
+      e = { questionId: at.questionId, area: at.area, wrong: 0, lastWrong: 0, recovered: false };
+      byQ.set(at.questionId, e);
+    }
+    if (at.area) e.area = at.area;
+    if (at.correct) { if (e.wrong) e.recovered = true; }
+    else { e.wrong += 1; e.lastWrong = at.timestamp || 0; e.recovered = false; }
+  }
+  const wrong = [...byQ.values()].filter(e => e.wrong > 0);
+  const byArea = new Map();
+  for (const e of wrong) {
+    if (!byArea.has(e.area)) byArea.set(e.area, []);
+    byArea.get(e.area).push(e);
+  }
+  const groups = [...byArea.entries()]
+    .map(([area, items]) => ({ area, items: items.sort((x, y) => y.lastWrong - x.lastWrong) }))
+    .sort((x, y) => y.items.length - x.items.length || String(x.area).localeCompare(String(y.area)));
+  return {
+    groups,
+    attempts: attempts.length,
+    wrongTotal: wrong.length,
+    recovered: wrong.filter(e => e.recovered).length
+  };
 }
