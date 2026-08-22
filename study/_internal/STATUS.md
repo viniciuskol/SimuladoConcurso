@@ -1,26 +1,40 @@
 # STATUS — checkpoint
 
-**Quando:** 2026-08-21, sessão em andamento. Loop pausado a pedido explícito do usuário ("parar um pouco"), não por limite de sessão — checkpoint feito por precaução (supervisor de 5h também disparou nesse momento).
+**Quando:** 2026-08-22, madrugada. **Limite SEMANAL de uso de IA atingido** (não é só o limite de 5h/sessão) — reseta às 04:00 BRT (America/Sao_Paulo). Isso é mais restritivo que os checkpoints anteriores: nada de subagentes/loop até o reset.
 
-## Onde parou
+## Onde parou — foco atual: passages (textos-base) no simulado
 
-- **Fase de extração das 7 provas está tecnicamente completa** (todas as provas de `provas e gabaritos/` foram processadas ao menos uma vez): prova_6, tarde_prova_07, analista_de_sistemas_junior_processos_de_negocio2018, cesgranrio-2018-transpetro, cesgranrio-2023-transpetro (Ênfase 6), cesgranrio-2012-petrobras, e por último `petrobras0208_gabsup` (a mais antiga do banco, prova de 2008 — atenção: os nomes de arquivo `petrobras0208_gabsup.html/.pdf` e `petrobras0208_gabsup_gabarito.pdf` estão invertidos em relação ao que o nome sugere: o par `_gabsup` é o GABARITO multi-cargo, e o arquivo `_gabarito.pdf` é a PROVA completa — documentado em `extraction-progress.md`).
-- **A extração de `petrobras0208_gabsup` (50 confirmadas + 4 em revisão + 16 descartadas) está no working tree, NÃO commitada e NÃO validada por um validator agent independente.** Isso é diferente do checkpoint anterior: ali faltava só validação; aqui, além de faltar validação, as mudanças nem foram commitadas ainda — foram deixadas assim deliberadamente porque o usuário pediu pausa antes que eu pudesse rodar o validator + commit.
-- Estado dos arquivos modificados no working tree: `study/_internal/extraction-progress.md`, `study/_internal/review-queue.json`, `study/data/questions.json`. **`provas e gabaritos/` confirmado intocado** (`git status` limpo nessa pasta).
-- Totais atuais do banco (contando a extração não commitada de petrobras0208): **339 questões confirmadas, 42 em revisão, 109 descartadas**, somando as 7 provas.
+Contexto da tarefa em andamento (pedido do usuário): várias questões de `portugues`/`ingles` (e possivelmente algumas de Conhecimentos Específicos) remetem a um texto-base ("Texto I"/"Texto II"/"Text I"/"Text II") que nunca foi capturado na extração original — só o enunciado da pergunta foi salvo. Adicionamos um campo opcional `passage` ao schema para guardar esse texto, e a UI (`simulado.html`) já foi atualizada para exibi-lo (repetindo-o em toda questão que dependa dele, mesmo se a questão anterior já mostrou o mesmo texto — comportamento pedido explicitamente pelo usuário).
 
-## O que falta
+**Já commitado e no ar (GitHub Pages, `https://viniciuskol.github.io/SimuladoConcurso/`):**
+- Schema + UI + CSS para `passage` (`study/data/README.md`, `study/simulado.html`, `study/shared/styles.css`) — commit `99ce70d`.
+- Backfill do campo `passage` para as provas `prova_6` (id prefix `prova6-`) e `analista_de_sistemas_junior_processos_de_negocio2018` (id prefix `psjpn2018-`) — 35 de 40 questões Q1-20 dessas duas provas já têm `passage`; as 5 sem passage em `psjpn2018` são questões de gramática pura, corretamente sem texto-base (documentado em `extraction-progress.md`). Commits `ed18e83` + `f094337`.
 
-1. **Prioridade imediata ao retomar**: decidir se comita a extração pendente de `petrobras0208_gabsup` como está (sem validação — arriscado, o dev agent já cometeu erros de schema/gabarito em ciclos anteriores que só o validator pegou) ou rodar o validator agent primeiro (recomendado, mesmo padrão dos ciclos anteriores) antes de commitar.
-2. Após validar/commitar petrobras0208: a fase de extração das 7 provas está encerrada. Próxima fase do plano: `study/data/content/<area-id>.json` (resumos/cheatsheets/modelos mentais/"padrões identificados nas provas" por área) e `study/data/flashcards.json`, usando só evidência de questões já `confirmed` em `questions.json` — ver seção E/G do plano em `~/.claude/plans/vou-fazer-um-concurso-compiled-wreath.md`.
-3. Reconstruir diagramas pendentes na `review-queue.json` (CPM, UML, Gantt, ER) — via SVG à mão ou (opção melhor, descoberta em investigação anterior) screenshot headless do Chrome/Edge instalados no ambiente + crop com Pillow, para desbloquear os itens que dependem disso.
-4. Rodar a 2ª rodada de revisão nos itens `unresolved` da `review-queue.json` que ainda não passaram por 2 rodadas (critério de parada da seção F do plano) — vários já foram resolvidos em rodada 2 durante ciclos anteriores (ex.: `petro2012-q36`), outros ainda não.
-5. Considerar atualizar `study/simulado.html`/`study/estudo.html` conforme necessário para as novas áreas `portugues`/`ingles` (a UI já lista todas as áreas de `areas.json` dinamicamente, então deve funcionar sem mudança de código — mas vale um teste manual rápido no navegador).
+**NÃO commitado / NÃO feito ainda (falhou por limite semanal, sem escrever nada — `git status` confirma working tree limpo):**
+- Backfill de `passage` para `cesgranrio-2018-transpetro` (id prefix `transp15-`, Q1-20) e `cesgranrio-2023-transpetro` Ênfase 6 (id prefix `transp23e6-`, Q1-20) — **nada foi escrito**, precisa rodar do zero.
+- Backfill de `passage` para `cesgranrio-2012-petrobras` (id prefix `petro2012-`, Q1-20) e `petrobras0208_gabsup` (id prefix `petrobras0208-` ou equivalente — checar o prefixo real usado, Q1-20) — nem começou.
+- **Importante**: `tarde_prova_07` NÃO tem seção de Português/Inglês (documentado em `extraction-progress.md`), então não precisa de passage nessa prova.
+- Nenhuma questão de Conhecimentos Específicos foi revisada ainda quanto a depender de um texto-base compartilhado (ex.: "considere o texto/caso a seguir para responder às questões X e Y") — vale uma checagem rápida ao retomar, embora a maior parte dos casos identificados até agora tenha sido só em `portugues`/`ingles`.
+
+Também pendente de outra sessão (não relacionado ao passage, mas relevante): a fase de conteúdo (`content/<area-id>.json`, `flashcards.json`) já avançou bastante em outra branch/sessão que foi mesclada via PR (`8c2f6b5`) — não interfere com o trabalho de passage.
+
+## O que falta (em ordem)
+
+1. **Retomar o backfill de `passage`** para os 4 prefixos restantes: `transp15-`, `transp23e6-`, `petro2012-`, e o prefixo da prova `petrobras0208` (confirmar o prefixo exato lendo `study/data/questions.json`). Usar o mesmo padrão de agente/prompt já usado para `prova6-`/`psjpn2018-` (ver histórico da conversa) — ler `study/data/README.md` para a convenção do campo, ler exemplos já feitos (`prova6-q1`) para o formato exato, e trabalhar SEMPRE em grupos sequenciais (nunca dois agentes escrevendo em `questions.json` ao mesmo tempo — risco de perda de escrita).
+2. Após o backfill completo: validar uma amostra contra as fontes originais (como fiz manualmente para `prova6-q1`, conferindo até casos de hifenização entre spans), commitar e dar push (o deploy do GitHub Pages dispara automático).
+3. Checar rapidamente se alguma questão de Conhecimentos Específicos também depende de texto-base compartilhado não capturado.
+4. Voltar para o restante do rollout do plano original (ver plano em `~/.claude/plans/vou-fazer-um-concurso-compiled-wreath.md`): diagramas pendentes na `review-queue.json`, e revisão da 2ª rodada dos itens `unresolved` que ainda não passaram por ela.
+
+## Infraestrutura já configurada (não precisa refazer)
+
+- Repositório tornado **público** (era privado, GitHub Pages não funciona em privado no plano free) — decisão explícita do usuário.
+- Workflow `.github/workflows/deploy-pages.yml` publica `study/` como raiz do site a cada push em `main` que toque `study/**`, via Actions (`upload-pages-artifact` + `deploy-pages`). Site: `https://viniciuskol.github.io/SimuladoConcurso/simulado.html`.
+- `gh auth` da conta `viniciuskol` já tem o escopo `workflow` necessário.
 
 ## Comando exato para retomar
 
-Reinvocar o mesmo loop (ajustar a primeira unidade de trabalho para "validar petrobras0208 antes de tudo"):
+Não é um `/loop` desta vez — é continuação direta da tarefa de passage. Ao retomar, diga algo como:
 
 ```
-/loop Gerencie, como manager, um ciclo contínuo de dev+validate para o app de estudo Transpetro 2026 em C:\project\Cesgranrio\provas\study\ (plano completo em C:\Users\vinic\.claude\plans\vou-fazer-um-concurso-compiled-wreath.md). Escopo atual: 10 áreas em study/data/areas.json (8 técnicas do Anexo IV Ênfase 5 + portugues/ingles). PRIMEIRO: valide de forma completa a extração pendente (não commitada) de petrobras0208_gabsup em study/data/questions.json/study/_internal/review-queue.json (50 confirmadas + 4 em revisão) antes de qualquer outra coisa — aplique fixes se necessário e só então git add/commit/push. Depois disso, a fase de extração das 7 provas estará completa; passe para a próxima fase do rollout: content/<area-id>.json e flashcards.json por área, usando só evidência de questions.json, e depois os diagramas pendentes na review-queue. A cada ciclo: lance 1 subagent 'dev' e 1 subagent 'validator' independente por unidade de trabalho, sempre reforçando que 'provas e gabaritos/' é somente leitura e que o schema deve seguir os nomes de campo já usados em study/data/questions.json (area/correctKey obrigatório/alternatives[].key/explanationSummary/explanation obrigatório em toda alternativa errada); aplique fixes e revalide antes de fechar o ciclo; ao final, git add/commit descritivo + git push origin main; relate em 2-3 linhas o que melhorou. Continue até 08:00 BRT. Antes de qualquer risco de estourar o limite de sessão, repita este checkpoint. Nunca escrever/mover/renomear nada dentro de 'provas e gabaritos/' — só leitura ali.
+Continue o backfill do campo "passage" nas provas que ainda faltam (transp15-, transp23e6-, petro2012-, e a prova petrobras0208), seguindo o mesmo padrão já usado para prova6-/psjpn2018- (ver STATUS.md e o histórico da conversa). Depois valide, commit e push.
 ```
