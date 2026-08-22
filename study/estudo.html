@@ -19,7 +19,8 @@
 </div>
 <script type="module">
 import { loadJSON, showFetchHelp } from "./shared/data-loader.js";
-import { dueCards, rateCard, statsByArea, srsSummary, wrongByArea } from "./shared/storage.js";
+import { dueCards, rateCard, statsByArea, srsSummary, wrongByArea,
+         planItemKey, loadPlanChecks, setPlanCheck, planProgress } from "./shared/storage.js";
 
 const app = document.getElementById("app");
 let AREAS = [], CARDS = [], QCOUNT = {}, CONTENT = {}, PLAN = null, QBYID = {};
@@ -97,6 +98,8 @@ function renderHome() {
   const stats = Object.fromEntries(statsByArea(AREAS).map(s => [s.id, s]));
   const srs = srsSummary(CARDS);
   const err = errorView();
+  const cur = currentBlock();
+  const curProg = cur ? planProgress(cur) : { done: 0, total: 0 };
 
   const areaRow = (a, i) => {
     const nq = QCOUNT[a.id] || 0;
@@ -134,7 +137,9 @@ function renderHome() {
     </div>
     ${PLAN ? `<div class="card accent">
       <h2>Plano até a prova</h2>
-      <p class="muted">${daysToExam()} dias para 29/11/2026.${currentBlock() ? ` Bloco atual: <strong>${esc(currentBlock().label)}</strong> (${esc(currentBlock().weeks)}).` : ""}</p>
+      <p class="muted">${daysToExam()} dias para 29/11/2026.${cur ? ` Bloco atual: <strong>${esc(cur.label)}</strong> (${esc(cur.weeks)}).` : ""}</p>
+      ${cur ? `<p class="muted">Checklist do bloco atual: <strong>${curProg.done} de ${curProg.total}</strong> concluído(s).</p>
+               <div class="progressbar"><div style="width:${curProg.total ? Math.round((curProg.done / curProg.total) * 100) : 0}%"></div></div>` : ""}
       <button class="btn primary" id="open-plan">Abrir o plano</button>
     </div>` : ""}
     <div class="card">
@@ -190,20 +195,42 @@ function currentBlock() {
   return null;
 }
 
+/* O checklist é marcável e persistente. Nada de dado em atributo por string de
+   template (foi assim que nasceu o XSS de um ciclo anterior): o HTML sai só com
+   classes fixas e todo texto por esc(); a chave de cada item é colada depois via
+   dataset, na mesma ordem em que os <li> foram gerados, e o clique vem de
+   addEventListener. */
 function renderPlan() {
   const cur = currentBlock();
   const areaLabel = id => (AREAS.find(a => a.id === id) || {}).label || id;
+  let checks = loadPlanChecks();
+  const flat = [];   // um registro por checkbox, na ordem do DOM
+
+  const blockCard = b => {
+    const items = (b.checklist || []).map(text => {
+      const key = planItemKey(b.n, text);
+      flat.push({ blockN: b.n, key });
+      const done = !!checks[key];
+      return `<li class="plan-item${done ? " done" : ""}">
+        <label><input type="checkbox" class="plan-chk"${done ? " checked" : ""}><span>${esc(text)}</span></label>
+      </li>`;
+    }).join("");
+    const prog = planProgress(b, checks);
+    return `<div class="card ${cur && cur.n === b.n ? "accent" : ""}">
+        <h2>${esc(b.label)}</h2>
+        <p class="muted">${esc(b.weeks)}${cur && cur.n === b.n ? " · agora" : ""} · ${(b.focus || []).map(f => esc(areaLabel(f))).join(", ")}</p>
+        <p>${esc(b.goal || "")}</p>
+        <p class="muted plan-prog">${prog.done} de ${prog.total}</p>
+        <ul class="plan-list">${items}</ul>
+      </div>`;
+  };
+
   app.innerHTML = `
     <button class="btn" id="back">← Voltar</button>
     <h1>Plano até 29/11/2026</h1>
     <div class="card"><p class="muted">${esc(PLAN.sourceNote || "")}</p></div>
-    ${PLAN.blocks.map(b => `
-      <div class="card ${cur && cur.n === b.n ? "accent" : ""}">
-        <h2>${esc(b.label)}</h2>
-        <p class="muted">${esc(b.weeks)}${cur && cur.n === b.n ? " · agora" : ""} · ${(b.focus || []).map(f => esc(areaLabel(f))).join(", ")}</p>
-        <p>${esc(b.goal || "")}</p>
-        <ul class="tight">${(b.checklist || []).map(i => `<li>${esc(i)}</li>`).join("")}</ul>
-      </div>`).join("")}
+    <div class="card"><p class="muted">Marque cada item ao concluir: as marcações ficam salvas neste navegador e sobrevivem a recarregar a página.</p></div>
+    ${PLAN.blocks.map(blockCard).join("")}
     <div class="card">
       <h2>🎯 O que a banca repete entre áreas</h2>
       ${(PLAN.crossPatterns || []).map(p => `<div class="sub">
@@ -216,6 +243,23 @@ function renderPlan() {
       ${(PLAN.examDay || []).map(e => `<div class="sub"><strong>${esc(e.title)}</strong><p>${esc(e.body)}</p></div>`).join("")}
     </div>`;
   document.getElementById("back").addEventListener("click", renderHome);
+
+  const boxes = [...app.querySelectorAll(".plan-chk")];
+  const progs = [...app.querySelectorAll(".plan-prog")];
+  const refresh = () => {
+    PLAN.blocks.forEach((b, bi) => {
+      const p = planProgress(b, checks);
+      if (progs[bi]) progs[bi].textContent = `${p.done} de ${p.total}`;
+    });
+  };
+  boxes.forEach((box, i) => {
+    box.dataset.key = flat[i].key;
+    box.addEventListener("change", () => {
+      checks = setPlanCheck(box.dataset.key, box.checked);
+      box.closest(".plan-item").classList.toggle("done", box.checked);
+      refresh();
+    });
+  });
 }
 
 function renderPriority(stats) {

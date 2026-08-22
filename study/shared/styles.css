@@ -220,3 +220,12 @@ a.btn.res strong { display: block; }
 details.q-review > summary { overflow-wrap: anywhere; }
 details.q-review > summary .muted { color: var(--text-dim); font-weight: 400; }
 .alt-text { overflow-wrap: anywhere; }
+
+/* Checklist do plano: item concluído fica marcado sem virar ilegível — cor um
+   pouco mais apagada e risco fino, mantendo contraste de leitura. */
+ul.plan-list { margin: 10px 0 0; padding-left: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.plan-item { background: var(--surface-2); border-radius: 8px; }
+.plan-item label { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; cursor: pointer; line-height: 1.45; }
+.plan-item input { accent-color: var(--accent); width: 18px; height: 18px; margin: 2px 0 0; flex: 0 0 auto; }
+.plan-item.done > label > span { color: var(--text-dim); text-decoration: line-through; text-decoration-thickness: 1px; }
+.plan-prog { font-weight: 600; margin: 10px 0 0; }

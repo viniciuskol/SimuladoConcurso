@@ -120,3 +120,55 @@ export function wrongByArea() {
     recovered: wrong.filter(e => e.recovered).length
   };
 }
+
+/* ---------- Checklist do plano ---------- */
+
+const PLAN_KEY = "transpetro2026:plan";
+
+// A chave de um item é um hash curto do PRÓPRIO TEXTO (FNV-1a 32 bits em base36),
+// prefixado pelo número do bloco — nunca o índice: assim reordenar o checklist não
+// migra marcação para o item errado, e item cujo texto for reescrito num ciclo
+// futuro gera outra chave e volta desmarcado em vez de herdar a marcação do vizinho.
+export function planItemKey(blockN, text) {
+  let h = 0x811c9dc5;
+  const s = String(text ?? "");
+  for (let i = 0; i < s.length; i++) {
+    h ^= s.charCodeAt(i);
+    h = Math.imul(h, 0x01000193) >>> 0;
+  }
+  return `b${Number(blockN) || 0}#${h.toString(36)}`;
+}
+
+// Devolve SEMPRE um mapa { chave: true } utilizável. JSON inválido, array no lugar
+// de objeto, null e valores que não sejam `true` são descartados em silêncio — o
+// mesmo endurecimento de loadAttempts, para storage editado à mão não quebrar a tela.
+export function loadPlanChecks() {
+  try {
+    const v = JSON.parse(localStorage.getItem(PLAN_KEY));
+    if (!v || typeof v !== "object" || Array.isArray(v)) return {};
+    const out = {};
+    for (const k of Object.keys(v)) if (v[k] === true && typeof k === "string") out[k] = true;
+    return out;
+  } catch { return {}; }
+}
+
+// Marca/desmarca um item e devolve o estado já saneado. Só grava `true`: item
+// desmarcado sai do mapa, então o storage não cresce com lixo.
+export function setPlanCheck(key, done) {
+  const state = loadPlanChecks();
+  if (done) state[String(key)] = true;
+  else delete state[String(key)];
+  // Cota estourada ou modo privado não pode derrubar a tela: a marcação da sessão
+  // continua valendo em memória mesmo se a gravação falhar.
+  try { localStorage.setItem(PLAN_KEY, JSON.stringify(state)); } catch { /* ignora */ }
+  return state;
+}
+
+// Progresso de um bloco do plano: { done, total }. Bloco sem checklist dá 0 de 0.
+export function planProgress(block, state) {
+  const checks = state || loadPlanChecks();
+  const items = Array.isArray(block && block.checklist) ? block.checklist : [];
+  let done = 0;
+  for (const it of items) if (checks[planItemKey(block.n, it)]) done += 1;
+  return { done, total: items.length };
+}
