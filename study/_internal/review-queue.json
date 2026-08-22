@@ -390,57 +390,6 @@
       "area": "analise-dados"
     },
     {
-      "id": "prova07-q6",
-      "source": {
-        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
-        "year": 2010,
-        "originalNumber": 6
-      },
-      "area": "arq-dados",
-      "subtopic": "1.1 Modelagem de dados (conceitual, lógica e física)",
-      "stem": "Um modelador de banco de dados foi incumbido de criar um modelo conceitual para a situação a seguir.\n\n\"Representantes trabalham em empresas. Cada empresa usa o seu depósito particular, que armazena um conjunto de produtos. É preciso saber que representantes estão associados a que produtos\".\n\nDurante a modelagem inicial dessa situação, o modelador construiu o modelo conceitual acima [DIAGRAMA DE CLASSES UML 2.0 COM AS CLASSES Representante, Empresa, Depósito e Produto, RELACIONADAS PELAS ASSOCIAÇÕES 'Trabalha em', 'Usa' e 'Armazena' — AS MULTIPLICIDADES EXATAS DE CADA EXTREMIDADE NÃO FORAM CAPTURADAS COM SEGURANÇA NA EXTRAÇÃO DE TEXTO], utilizando a notação do diagrama de classes da UML 2.0.\n\nNesse contexto, analise as afirmações a seguir.\n\nA consulta \"Que representantes estão associados a que produtos\" é respondida pelo modelo conceitual apresentado.\n\nPORQUE\n\nA determinação de quais depósitos armazenam quais produtos pode ser respondida pelo modelo conceitual apresentado.\n\nA esse respeito, conclui-se que",
-      "images": [
-        {
-          "id": "img1",
-          "path": null,
-          "alt": "Diagrama de classes UML 2.0 com as classes Representante, Empresa, Depósito e Produto, ligadas pelas associações 'Trabalha em', 'Usa' e 'Armazena'; os números de multiplicidade (1, 0..*, 1..* etc.) foram capturados como texto solto, sem associação clara e confiável a qual extremidade de qual relação pertence cada valor."
-        }
-      ],
-      "alternatives": [
-        {
-          "key": "A",
-          "text": "as duas afirmações são verdadeiras e a segunda justifica a primeira."
-        },
-        {
-          "key": "B",
-          "text": "as duas afirmações são verdadeiras e a segunda não justifica a primeira."
-        },
-        {
-          "key": "C",
-          "text": "a primeira afirmação é verdadeira e a segunda é falsa."
-        },
-        {
-          "key": "D",
-          "text": "a primeira afirmação é falsa e a segunda é verdadeira."
-        },
-        {
-          "key": "E",
-          "text": "as duas afirmações são falsas."
-        }
-      ],
-      "gabaritoLetter": "D",
-      "derivedLetter": "A",
-      "reviewRounds": [
-        {
-          "round": 1,
-          "conclusion": "diverge do gabarito / depende de multiplicidades não confirmadas",
-          "note": "Assumindo que cada Empresa usa exatamente 1 Depósito (associação 'Usa' com multiplicidade 1:1) e que Representante-Empresa e Depósito-Produto permitem navegação de muitos para muitos, seria possível encadear Representante→Empresa→Depósito→Produto e responder à consulta da primeira afirmação, levando à derivação (A) (ambas verdadeiras, a segunda parte do encadeamento que justifica a primeira). O gabarito indica (D) (primeira falsa, segunda verdadeira), o que sugere que as multiplicidades reais do diagrama impedem essa navegação seguir de forma determinística (por exemplo, se 'Trabalha em' ou 'Usa' não garantem uma associação funcional unívoca entre Representante e Empresa, ou entre Empresa e Depósito, a consulta da primeira afirmação não seria respondível apenas com o modelo, mesmo que a segunda — sobre Depósito-Produto — seja diretamente respondível pela associação 'Armazena'). Sem certeza sobre as multiplicidades exatas capturadas do diagrama original, a divergência não foi resolvida nesta sessão."
-        }
-      ],
-      "unresolved": true,
-      "annulled": false
-    },
-    {
       "id": "prova07-q13",
       "source": {
         "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
@@ -486,6 +435,11 @@
           "round": 1,
           "conclusion": "não é possível derivar independentemente sem o diagrama de rede do cronograma.",
           "note": "O texto extraído contém apenas rótulos isolados 'Atividade: N / Duração: D dias' para os números 1 a 15 (mais F e I, provavelmente Fim e Início), sem as arestas/setas de precedência que definem a topologia da rede — essas são vetor gráfico nativo da página. Sem a estrutura de dependências entre atividades não é possível calcular folgas livres/totais de forma independente."
+        },
+        {
+          "round": 2,
+          "conclusion": "diagrama agora visível, mas rede complexa (15 atividades) não computada com confiança nesta rodada",
+          "note": "A rede de precedências (15 atividades, com nós I/F de início/fim) foi lida via releitura visual do PDF-fonte, mas a topologia de setas entre as 15 atividades é complexa o suficiente (múltiplos ramos e convergências) que não foi recalculada com confiança suficiente nesta rodada para confirmar qual das 5 alternativas de folga (atividades 3, 7, 9, 13, 14) está correta. Requer uma 3ª rodada com tempo dedicado a rastrear cada seta individualmente a partir da imagem."
         }
       ],
       "unresolved": true,
@@ -537,57 +491,6 @@
           "round": 1,
           "conclusion": "não é possível derivar independentemente com confiança.",
           "note": "A extração de texto capturou os números da planilha de Gantt e da tabela de indicadores (BCWS, BCWP, ACWP, variação de cronograma, SPI) de forma solta, sem a estrutura de colunas que permita associar com certeza cada número à tarefa/data corretas — a planilha de Gantt em si é um gráfico nativo da página. Sem essa reconstrução confiável, o cálculo de SPI/variação para validar cada linha da tabela ficaria sujeito a erro de leitura dos dados de entrada."
-        }
-      ],
-      "unresolved": true,
-      "annulled": false
-    },
-    {
-      "id": "prova07-q22",
-      "source": {
-        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
-        "year": 2010,
-        "originalNumber": 22
-      },
-      "area": "logica",
-      "subtopic": "8.3 A lógica sentencial",
-      "stem": "Qual das seguintes proposições é uma tautologia? [AS CINCO FÓRMULAS PROPOSICIONAIS DAS ALTERNATIVAS (envolvendo P, Q e os conectivos ∨, ∧, →, ¬) NÃO FORAM CAPTURADAS NA EXTRAÇÃO DE TEXTO — os glifos dos conectivos são desenhados como vetor gráfico/Type3 na página original, não como texto.]",
-      "images": [
-        {
-          "id": "img1",
-          "path": null,
-          "alt": "Cinco fórmulas proposicionais envolvendo P e Q com conectivos lógicos (∨, ∧, →, ¬) renderizados como glifos vetoriais na página original, não extraíveis como texto (confirmado por inspeção do HTML fonte: os espaços reservados aos conectivos aparecem vazios entre as letras P e Q)."
-        }
-      ],
-      "alternatives": [
-        {
-          "key": "A",
-          "text": "(q → p) → (p → (q → p))  [conectivos não confirmados no texto-fonte]"
-        },
-        {
-          "key": "B",
-          "text": "(p → q) → (q → p)  [conectivos não confirmados no texto-fonte]"
-        },
-        {
-          "key": "C",
-          "text": "(¬p ∨ q) → (¬q ∨ p)  [conectivos não confirmados no texto-fonte]"
-        },
-        {
-          "key": "D",
-          "text": "¬p → (¬p ∨ q)  [conectivos não confirmados no texto-fonte]"
-        },
-        {
-          "key": "E",
-          "text": "(p ∨ q ∨ ¬q) → (p ∨ q ∨ ¬p)  [conectivos não confirmados no texto-fonte]"
-        }
-      ],
-      "gabaritoLetter": "A",
-      "derivedLetter": null,
-      "reviewRounds": [
-        {
-          "round": 1,
-          "conclusion": "não é possível derivar independentemente: os conectivos lógicos das cinco fórmulas são vetor gráfico na página original e não foram capturados pela extração de texto.",
-          "note": "Requer reconstrução visual das fórmulas a partir do PDF em fase posterior, a partir de inspeção do glifo/posição exata de cada conectivo, antes de qualquer tentativa de verificação independente."
         }
       ],
       "unresolved": true,
@@ -921,108 +824,6 @@
           "round": 1,
           "conclusion": "diverge do gabarito",
           "note": "Pela definição clássica de Inmon, um data warehouse é caracterizado por quatro atributos: orientado a assuntos, integrado, não volátil e variável no tempo (time-variant) — o que levou à derivação (A) 'orientado a assuntos', uma das quatro características mais citadas na literatura. O gabarito indica (B) 'temporário', que contraria a literatura padrão (data warehouses são tipicamente descritos como repositórios de dados históricos de longo prazo, não temporários/efêmeros) — a menos que a intenção da banca fosse uma tradução livre de 'time-variant' (variável no tempo) como 'temporário' (relativo ao tempo), o que seria uma leitura não convencional do termo em português. Divergência não resolvida nesta sessão; mantida em revisão."
-        }
-      ],
-      "unresolved": true,
-      "annulled": false
-    },
-    {
-      "id": "prova07-q50",
-      "source": {
-        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
-        "year": 2010,
-        "originalNumber": 50
-      },
-      "area": "eng-sw",
-      "subtopic": "5.3 Modelos, metodologias, técnicas e ferramentas de análise e projeto (estruturado e orientado a objetos)",
-      "stem": "A análise do diagrama de classes em notação UML 2.0 apresentado acima [DIAGRAMA NÃO CAPTURADO NA EXTRAÇÃO DE TEXTO, envolvendo classes/interfaces V, W, X, Y, Z, T e um relacionamento <<create>>] indica que",
-      "images": [
-        {
-          "id": "img1",
-          "path": null,
-          "alt": "Diagrama de classes UML 2.0 com uma interface (<<interface>> V), classes W, X, Y, Z, T, uma relação <<create>> e uma multiplicidade '1' — a topologia exata (quem implementa/herda/associa quem, e o sentido das setas) é vetor gráfico nativo da página, não capturada na extração de texto."
-        }
-      ],
-      "alternatives": [
-        {
-          "key": "A",
-          "text": "há um erro de sintaxe, pois não foi especificado o sentido da navegação entre Y e X."
-        },
-        {
-          "key": "B",
-          "text": "a quantidade de interfaces que Y implementa é 1 (um)."
-        },
-        {
-          "key": "C",
-          "text": "Y é subclasse de W."
-        },
-        {
-          "key": "D",
-          "text": "objetos da classe T podem utilizar serviços oferecidos por objetos da classe Y."
-        },
-        {
-          "key": "E",
-          "text": "objetos da classe Z criam objetos da classe Y."
-        }
-      ],
-      "gabaritoLetter": "D",
-      "derivedLetter": null,
-      "reviewRounds": [
-        {
-          "round": 1,
-          "conclusion": "não é possível derivar independentemente sem o diagrama de classes UML.",
-          "note": "Apenas rótulos isolados (<<interface>> V, <<create>>, Z, Y, W, T, X, 1) foram capturados como texto, sem as linhas/setas de associação, herança, implementação ou dependência que definem as relações entre as classes — essas são vetor gráfico nativo da página."
-        }
-      ],
-      "unresolved": true,
-      "annulled": false
-    },
-    {
-      "id": "prova07-q52",
-      "source": {
-        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
-        "year": 2010,
-        "originalNumber": 52
-      },
-      "area": "eng-sw",
-      "subtopic": "5.3 Modelos, metodologias, técnicas e ferramentas de análise e projeto (estruturado e orientado a objetos)",
-      "stem": "O diagrama de sequência em notação UML 2.0 acima apresenta uma interação entre objetos das classes C1, C2, C3 e C4 [DIAGRAMA NÃO CAPTURADO COM CLAREZA NA EXTRAÇÃO DE TEXTO — apenas rótulos parciais de mensagens (msg00 a msg04), um bloco 'alt' com guardas [val<0]/[val>0], e os objetos :C1, :C2, :C3, :C4, :Actor0]. Ao fazer a leitura considerando apenas as informações desse diagrama, verifica-se que, para determinado cenário da interação em questão,",
-      "images": [
-        {
-          "id": "img1",
-          "path": null,
-          "alt": "Diagrama de sequência UML 2.0 com objetos :Actor0, :C1, :C2, :C3, :C4, mensagens numeradas (1:msg00(val), 2:msg01(val), 2.1:msg02(), 2.1.1:msg03(), 2.2:msg04()) e um bloco combinado 'alt' com guardas [val<0] e [val>0] — as linhas de vida e as setas exatas de envio/retorno entre os objetos são vetor gráfico nativo da página, não capturadas com precisão suficiente para determinar remetente/destinatário de cada mensagem."
-        }
-      ],
-      "alternatives": [
-        {
-          "key": "A",
-          "text": "a quantidade de mensagens enviadas pelo objeto da classe C2 é 2 (dois)."
-        },
-        {
-          "key": "B",
-          "text": "o envio de msg02 implica invocação de uma operação definida na classe C1."
-        },
-        {
-          "key": "C",
-          "text": "o envio de msg03 resulta na execução iterativa de uma operação definida na classe C3."
-        },
-        {
-          "key": "D",
-          "text": "os objetos apresentados no diagrama já existem antes do início da interação."
-        },
-        {
-          "key": "E",
-          "text": "há o envio em paralelo de, pelo menos, duas mensagens."
-        }
-      ],
-      "gabaritoLetter": "D",
-      "derivedLetter": null,
-      "reviewRounds": [
-        {
-          "round": 1,
-          "conclusion": "não é possível derivar independentemente sem a topologia exata do diagrama de sequência (remetente e destinatário de cada mensagem numerada).",
-          "note": "A numeração das mensagens (1, 2, 2.1, 2.1.1, 2.2) sugere aninhamento dentro do bloco 'alt', mas sem as linhas de vida e setas exatas não é possível confirmar com segurança qual classe envia/recebe cada mensagem, nem se há criação de objetos ou paralelismo."
         }
       ],
       "unresolved": true,

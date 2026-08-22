@@ -3,7 +3,7 @@
 | Prova fonte | Páginas lidas | Candidatas lidas | Relevantes (mantidas) | Confirmadas | Em revisão | Descartadas |
 |---|---|---|---|---|---|---|
 | prova_6_analista_de_sistemas_junior_processos_de_negocio.html | 19 | 70 | 54 | 49 | 5 | 16 |
-| tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html | 21 | 70 | 50 | 36 | 14 | 20 |
+| tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html | 21 | 70 | 50 | 40 | 10 | 20 |
 | analista_de_sistemas_junior_processos_de_negocio2018.html | 71 | 70 | 48 | 45 | 3 | 22 |
 | cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html | 21 | 70 | 52 | 46 | 6 | 18 |
 | cesgranrio-2023-transpetro-...-enfase-6-processos-de-negocios-prova.html | 19 | 70 | 68 | 64 | 4 | 2 |
@@ -170,3 +170,13 @@ A prova_6 também tem uma versão em PDF nativo (`prova_6_analista_de_sistemas_j
 2 itens permanecem em revisão, agora com o diagrama/fórmula documentado mas ainda sem confiança suficiente para promover:
 - **prova6-q23** (rede CPM: Comunicação→Planejamento→Modelagem→Construção/Documentação→Implantação): a releitura visual esclareceu a topologia geral da rede, mas o recálculo independente do término mais cedo do projeto e da folga da atividade de Documentação não reproduziu exatamente os valores implícitos no gabarito (III apenas) — provavelmente por uma imprecisão residual na leitura exata do ramo de Documentação. Documentado em detalhe na entrada da fila de revisão para uma 3ª rodada futura.
 - **prova6-q54** (diagrama de classes UML com pacotes p1/p2, atributos com visibilidade +w/-x/#y/~z, generalização entre pacotes): a derivação independente pelas regras padrão de visibilidade UML/OO ("w e y, apenas") diverge do gabarito ("y, apenas"), sem explicação encontrada para a diferença — divergência genuína, mantida em revisão.
+
+## Resolução de diagramas da tarde_prova_07 via PDF nativo (2026-08-22)
+
+A tarde_prova_07 também tem PDF nativo. 4 itens foram promovidos:
+- **prova07-q6** (modelo conceitual Empresa/Representante/Depósito/Produto): não há relação direta Representante-Produto no modelo (só uma cadeia indireta via Empresa/Depósito que não captura associações específicas) — a primeira afirmação é falsa; a segunda (Depósito-Produto via "Armazena") é verdadeira e direta. Concorda com o gabarito D.
+- **prova07-q22** (5 fórmulas candidatas a tautologia): a alternativa A tem a forma X→Y onde Y=p→(q→p) é ela própria uma tautologia, logo X→Y é sempre verdadeira — concordando com o gabarito A. (Nota: a alternativa D também parece tautológica por inspeção simples, ambiguidade não resolvida, mas não compromete a confirmação de A.)
+- **prova07-q50** (diagrama de classes UML com interface V, classes T/X/Y/Z/W e notação de bola/lollipop): a notação bola-e-soquete entre T, a interface X e Y indica que T consome serviços que Y fornece via X — concorda com o gabarito D.
+- **prova07-q52** (diagrama de sequência UML com fragmento "alt"): nenhuma mensagem de criação aparece no diagrama, logo todos os objetos já existem antes da interação, pela convenção UML — concorda com o gabarito D.
+
+1 item permanece em revisão: **prova07-q13** (rede de precedências com 15 atividades) — diagrama agora visível, mas topologia complexa demais para recalcular com confiança nesta rodada; requer 3ª rodada dedicada. Os demais itens de `tarde_prova_07` na fila (q19, q23, q24, q25, q29, q41, q45, q47, q54) não foram tratados nesta rodada: alguns têm fórmulas com conectivos ainda corrompidos mesmo na releitura visual (q23, q24, q25), e outros (q19, q29, q41, q45, q47, q54) não dependem de diagrama — são divergências textuais/conceituais genuínas fora do escopo desta rodada focada em diagramas.
