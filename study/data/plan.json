@@ -5,7 +5,7 @@
   "crossPatterns": [
     {
       "title": "A alternativa errada descreve corretamente o conceito VIZINHO",
-      "body": "É o distrator que mais se repete nas áreas técnicas do banco — está em arquitetura de dados, engenharia de software, governança, segurança e UX — e ele não tem erro interno: a frase está certa, só responde outra pergunta. Pergunta-se característica de banco de documentos e as erradas definem grafo e relacional; pergunta-se o que o cascata enfatiza e as erradas definem espiral, prototipação e incremental; pergunta-se a solução de correlação de logs e as alternativas são cinco siglas vizinhas nuas, sem descrição — SIEM contra CASB, WAF, DLP e proxy (transp23e6-q43), firewall contra proxy, DMZ, IDS e IPS (transp15-q47): ali o vizinho não vem definido, vem só nomeado, e o que decide é saber a função de cada sigla; descreve-se uma dinâmica de design thinking e as alternativas são cinco nomes de técnicas do mesmo campo. Defesa: releia o COMANDO depois de escolher, e pergunte 'de que conceito esta alternativa é a definição?'. Se ela é a definição perfeita de outra coisa, é o distrator. Estudar por pares vizinhos (estrela x floco de neve, verificação x validação, SAST x DAST, RBAC x ABAC, MVP x protótipo) vale mais que estudar por lista.",
+      "body": "É o distrator que mais se repete nas áreas técnicas do banco — está em arquitetura de dados, engenharia de software, gestão de projetos, segurança e UX — e ele não tem erro interno: a frase está certa, só responde outra pergunta. Pergunta-se característica de banco de documentos e as erradas definem grafo e relacional; pergunta-se o que o cascata enfatiza e as erradas definem espiral, prototipação e incremental; pergunta-se a solução de correlação de logs e as alternativas são cinco siglas vizinhas nuas, sem descrição — SIEM contra CASB, WAF, DLP e proxy (transp23e6-q43), firewall contra proxy, DMZ, IDS e IPS (transp15-q47): ali o vizinho não vem definido, vem só nomeado, e o que decide é saber a função de cada sigla; descreve-se uma dinâmica de design thinking e as alternativas são cinco nomes de técnicas do mesmo campo. Defesa: releia o COMANDO depois de escolher, e pergunte 'de que conceito esta alternativa é a definição?'. Se ela é a definição perfeita de outra coisa, é o distrator. Estudar por pares vizinhos (estrela x floco de neve, verificação x validação, SAST x DAST, RBAC x ABAC, MVP x protótipo) vale mais que estudar por lista.",
       "evidence": [
         "transp23e6-q46",
         "transp23e6-q53",
@@ -13,7 +13,8 @@
         "transp15-q27",
         "transp23e6-q43",
         "transp15-q47",
-        "transp23e6-q30"
+        "transp23e6-q30",
+        "prova07-q20"
       ]
     },
     {
@@ -32,7 +33,7 @@
     },
     {
       "title": "Termo fabricado: a sigla ou o nome não existe no vocabulário da área",
-      "body": "A banca preenche alternativas com termos que soam técnicos e não existem: \"Unique Login Control (ULC)\" e \"Unique-Auth Database (UAD)\" contra Single Sign-On (psjpn2018-q66); \"reflexão segura\" e \"inundação segura\" contra tunelamento (transp15-q48). Fora das alternativas, a sigla inventada também aparece no próprio enunciado: \"DDS – Dynamic Data Storage\" na segunda assertiva de prova6-q47. Se você conhece o vocabulário da área, essas alternativas se eliminam sem raciocínio. Defesa: marque na primeira passada as alternativas cujo NOME você nunca viu — mas NUNCA descarte só por estranheza, porque a banca usa muito mais o oposto: termo real, da categoria errada (SAST/DAST contra DREAD e STRIDE, que são modelagem de ameaças e não teste, em transp23e6-q38). Estranheza levanta suspeita; só o conhecimento da categoria decide.",
+      "body": "A banca preenche alternativas com termos que soam técnicos e não existem: \"Unique Login Control (ULC)\" e \"Unique-Auth Database (UAD)\" contra Single Sign-On (psjpn2018-q66); \"reflexão segura\" e \"inundação segura\" contra tunelamento (transp15-q48). Fora das alternativas, a sigla inventada também aparece no próprio enunciado: \"DDS – Dynamic Data Storage\" na segunda assertiva de prova6-q47. Se você conhece o vocabulário da área, essas alternativas se eliminam sem raciocínio. Defesa: marque na primeira passada as alternativas cujo NOME você nunca viu — mas NUNCA descarte só por estranheza, porque a banca usa muito mais o oposto: termo real, da categoria errada — em transp23e6-q38 pede-se um teste e as alternativas trazem DREAD e STRIDE, que existem e estão no edital, mas no item 9.14 (modelagem de ameaças), ao lado do único nome de fato inventado ali, \"VAST\" como técnica de teste. Estranheza levanta suspeita; só o conhecimento da categoria decide.",
       "evidence": [
         "prova6-q47",
         "psjpn2018-q66",
@@ -47,7 +48,6 @@
         "transp23e6-q66",
         "transp23e6-q57",
         "transp23e6-q58",
-        "prova07-q20",
         "prova6-q12",
         "transp15-q14",
         "prova6-q18",
@@ -68,7 +68,7 @@
     },
     {
       "title": "Lista de itens I-II-III(-IV): julgue cada item antes de olhar as combinações",
-      "body": "O formato atravessa áreas técnicas e Português, com três ou quatro itens. Há dois desenhos e é preciso saber os dois. (1) Armadilha de detalhe: dois itens são a teoria bem escrita e um inverte um detalhe local — \"superchave mínima tem uma única coluna\" (prova07-q3), o papel de uma palavra no trecho citado (prova6-q9), o método de estimativa atribuído à fase errada (prova07-q17). (2) Todas corretas: o gabarito é \"I, II, III e IV\" e a armadilha é o candidato duvidar de um item que estava certo (prova07-q66 e prova07-q70, as duas de ERP/sistemas de informação, as duas com gabarito \"todas\"). Defesa que serve aos dois desenhos: julgue cada item por escrito, com V ou F, ANTES de olhar as combinações de alternativas — ver \"apenas I\" na lista faz duvidar do item II que você já tinha aprovado. E desconfie do item que fala de exclusividade, minimalidade ou quantidade: é onde a inversão mora quando ela existe.",
+      "body": "O formato atravessa áreas técnicas e Português, com três ou quatro itens. Há dois desenhos e é preciso saber os dois. (1) Armadilha de detalhe: um ou dois itens invertem um detalhe local e o resto é a teoria bem escrita — \"superchave mínima tem uma única coluna\" (prova07-q3, gabarito \"I e III\"), o papel de uma palavra no trecho citado (prova6-q9), o método de estimativa atribuído à fase errada (prova07-q17, gabarito \"III e IV\"). (2) Todas corretas: o gabarito é \"I, II, III e IV\" e a armadilha é o candidato duvidar de um item que estava certo (prova07-q66 e prova07-q70, as duas de ERP/sistemas de informação, as duas com gabarito \"todas\"). Defesa que serve aos dois desenhos: julgue cada item por escrito, com V ou F, ANTES de olhar as combinações de alternativas — ver \"apenas I\" na lista faz duvidar do item II que você já tinha aprovado. E desconfie do item que fala de exclusividade, minimalidade ou quantidade: é onde a inversão mora quando ela existe.",
       "evidence": [
         "prova07-q3",
         "prova07-q66",
@@ -207,7 +207,7 @@
         "Escrever verificação x validação, caixa-branca x caixa-preta, teste de aceitação x de sistema e SAST x DAST em uma linha cada, sem consultar",
         "Fazer uma tabela de ciclos de vida (cascata, incremental, espiral, prototipação, Processo Unificado, ágil) com a característica que só ele tem, e checar contra prova07-q51 e prova07-q53",
         "Listar as bases legais e os direitos do titular da LGPD e escrever 5 questões próprias sobre elas (o subtópico está no edital e tem só 1 questão histórica)",
-        "Refazer as duas asserção-razão da área (prova07-q65, prova07-q68) explicando por escrito por que o nexo falha"
+        "Refazer as três asserção-razão do bloco (prova07-q65 e prova07-q68 em governança, prova07-q55 em engenharia de software) explicando por escrito por que o nexo falha"
       ]
     },
     {
@@ -236,7 +236,7 @@
         "portugues",
         "ingles"
       ],
-      "goal": "Converter 20 das 70 questões — quase 29% da prova — em bloco de alto acerto, tratando os dois idiomas como técnica de leitura e checklist, não como cultura geral. São 3 semanas para 20 questões certas do edital — mais tempo por questão que qualquer bloco técnico, cujas fatias são projeção.",
+      "goal": "Converter 20 das 70 questões — quase 29% da prova — em bloco de alto acerto, tratando os dois idiomas como técnica de leitura e checklist, não como cultura geral. São 3 semanas para 20 questões que o edital garante: 0,15 semana por questão, praticamente o mesmo que os blocos 1 e 3 (0,16), e sem a incerteza das fatias técnicas, que são todas projeção.",
       "checklist": [
         "Fechar os 27 cards de portugues e os 25 de ingles com 2 rodadas de acerto",
         "Refazer as 40 questões de portugues do banco separando-as por formato (espelho no texto, cinco frases novas, conectivo substituto, antecedente, interpretação) e anotando o checklist que resolve cada formato",
@@ -267,7 +267,7 @@
         "Fazer 2 simulados completos de 70 questões, cronometrados de ponta a ponta e na ordem de ataque planejada (inglês, português, técnicas), com pelo menos 4 dias entre eles",
         "Depois de cada simulado, classificar TODO erro em uma de três causas — não sabia, sabia e li errado, sabia e errei a conta — e tratar cada causa de um jeito diferente",
         "Reler os crossPatterns deste plano e, para cada um, apontar uma questão do simulado em que ele apareceu (se um padrão não apareceu, dizer isso por escrito)",
-        "Rodar o deck completo (292 cards + 16 novos de lógica) em modo intercalado, retirando só os cards com 3 acertos consecutivos",
+        "Rodar o deck completo (308 cards, já com os 16 de lógica) em modo intercalado, retirando só os cards com 3 acertos consecutivos",
         "Refazer, sem consultar, todas as questões erradas nos dois simulados, e considerar o bloco fechado quando o refazimento tiver acerto >= 90%",
         "Na última semana, nada de conteúdo novo: só cards, questões erradas e a folha de fórmulas/siglas; dormir cedo nas duas noites anteriores à prova"
       ]
