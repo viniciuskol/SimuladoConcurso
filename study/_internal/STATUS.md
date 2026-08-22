@@ -63,6 +63,20 @@ no arquivo** `_internal/review-<ciclo>.md` e responde ao manager em ≤12 linhas
 lê o arquivo** e responde em ≤10 linhas. O manager verifica estado com
 `python3 study/_internal/check.py` em vez de abrir artefatos.
 
+## Fecho de ciclo (regra do usuário)
+
+Sempre que um ciclo é **validado**, sincronizar antes de publicar — o fluxo do simulado
+empurra para o mesmo branch, então commitar sem `pull` antes convida divergência:
+
+```
+MSG_FILE=/tmp/msg.txt study/_internal/sync-commit.sh
+```
+
+O script faz, em ordem: `check.py` (aborta se reprovar) → `stash -u` se houver trabalho
+sujo → `pull --rebase` → `stash pop` (para e avisa se der conflito, sem perder nada) →
+`commit` → `push` com até 5 tentativas e backoff, refazendo o `pull --rebase` entre elas.
+Depois, se o conteúdo mudou, regenerar e republicar o artifact no MESMO caminho de arquivo.
+
 ## Comando exato para retomar o loop
 
 ```
