@@ -152,7 +152,7 @@ function renderPlan() {
         <ul class="tight">${(b.checklist || []).map(i => `<li>${esc(i)}</li>`).join("")}</ul>
       </div>`).join("")}
     <div class="card">
-      <h2>🎯 O que a banca faz em todas as áreas</h2>
+      <h2>🎯 O que a banca repete entre áreas</h2>
       ${(PLAN.crossPatterns || []).map(p => `<div class="sub">
         <strong>${esc(p.title)}</strong><p>${esc(p.body)}</p>
         ${(p.evidence || []).length ? `<p class="muted">Visto em: ${p.evidence.map(e => esc(e)).join(", ")}</p>` : ""}

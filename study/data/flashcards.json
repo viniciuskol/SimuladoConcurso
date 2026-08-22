@@ -1955,6 +1955,103 @@
       "area": "ingles",
       "front": "Qual a escala de certeza dos modais em inglês, do mais forte ao mais fraco?",
       "back": "will / must (dedução) > should, is likely to, is expected to, is projected to > can, may > could, might. Reconhecer essa escala é o que impede aceitar alternativa absoluta para texto hedged."
+    },
+    {
+      "id": "fc-logica-011",
+      "area": "logica",
+      "front": "Qual é a tabela-verdade da bicondicional p ↔ q?",
+      "back": "VV=V, VF=F, FV=F, FF=V — é verdadeira exatamente quando os dois lados têm o MESMO valor. Equivale a (p→q) ∧ (q→p) e também a (p∧q) ∨ (~p∧~q)."
+    },
+    {
+      "id": "fc-logica-012",
+      "area": "logica",
+      "front": "Qual é a tabela-verdade da disjunção exclusiva p ⊻ q (\"ou p ou q, mas não ambos\")?",
+      "back": "VV=F, VF=V, FV=V, FF=F — verdadeira exatamente quando os lados têm valores DIFERENTES. É a negação da bicondicional; o \"ou\" comum (∨) admite os dois verdadeiros."
+    },
+    {
+      "id": "fc-logica-013",
+      "area": "logica",
+      "front": "Qual é a negação de p ↔ q?",
+      "back": "~(p ↔ q) ≡ p ⊻ q ≡ (p ∧ ~q) ∨ (~p ∧ q): a negação afirma que os lados têm valores diferentes. Não é ~p ↔ ~q, que é equivalente à original."
+    },
+    {
+      "id": "fc-logica-014",
+      "area": "logica",
+      "front": "Como a tabela-verdade classifica uma fórmula, e quantas linhas ela tem?",
+      "back": "Com n proposições simples distintas, a tabela tem 2^n linhas (uma por valoração). Tautologia = V em todas; contradição = F em todas; contingência = V em algumas e F em outras. Isso é a decidibilidade da lógica sentencial: o procedimento é finito e sempre conclui."
+    },
+    {
+      "id": "fc-logica-015",
+      "area": "logica",
+      "front": "Qual a diferença entre uma fórmula satisfatível e uma fórmula válida?",
+      "back": "Satisfatível = verdadeira em AO MENOS uma valoração (tautologias e contingências). Válida = verdadeira em TODAS (é a tautologia). Insatisfatível = contradição. \"Satisfatível\" é mais fraco que \"válida\": toda válida é satisfatível, a volta não vale."
+    },
+    {
+      "id": "fc-logica-016",
+      "area": "logica",
+      "front": "Qual a diferença entre forma normal disjuntiva (FND) e conjuntiva (FNC)?",
+      "back": "FND é disjunção de conjunções de literais, como (p∧~q) ∨ (~p∧q); FNC é conjunção de disjunções de literais, como (p∨~q) ∧ (~p∨q). Roteiro para chegar às duas: elimine ↔ e →, empurre as negações até os literais com De Morgan e distribua."
+    },
+    {
+      "id": "fc-logica-017",
+      "area": "logica",
+      "front": "O que diz a regra do silogismo hipotético?",
+      "back": "p→q ; q→r ⊢ p→r — é a transitividade da condicional. Encadeia duas implicações e descarta o termo do meio. Cuidado: não vale encadear ao contrário (de p→q e r→q nada se conclui sobre p e r)."
+    },
+    {
+      "id": "fc-logica-018",
+      "area": "logica",
+      "front": "O que diz a regra do silogismo disjuntivo?",
+      "back": "p∨q ; ~p ⊢ q — negando um lado da disjunção, o outro fica. Funciona com o \"ou\" inclusivo, porque a disjunção verdadeira exige ao menos um lado verdadeiro, e esse lado não pode ser p."
+    },
+    {
+      "id": "fc-logica-019",
+      "area": "logica",
+      "front": "O que diz a regra do dilema construtivo?",
+      "back": "p→q ; r→s ; p∨r ⊢ q∨s — duas condicionais mais a disjunção dos antecedentes garantem a disjunção dos consequentes. A versão destrutiva é: p→q ; r→s ; ~q∨~s ⊢ ~p∨~r."
+    },
+    {
+      "id": "fc-logica-020",
+      "area": "logica",
+      "front": "O que dizem as regras de simplificação, adição e conjunção?",
+      "back": "Simplificação: p∧q ⊢ p (e também ⊢ q). Adição: p ⊢ p∨q, para qualquer q. Conjunção: p ; q ⊢ p∧q. São válidas e triviais — a armadilha é a inversa: de p∨q NÃO se conclui p, e de p NÃO se conclui p∧q."
+    },
+    {
+      "id": "fc-logica-021",
+      "area": "logica",
+      "front": "O que é a absorção em lógica?",
+      "back": "Como regra de inferência: p→q ⊢ p→(p∧q) (se p já implica q, p implica p e q juntos). Como lei de equivalência: p ∨ (p∧q) ≡ p e p ∧ (p∨q) ≡ p — o termo composto é absorvido e desaparece."
+    },
+    {
+      "id": "fc-logica-022",
+      "area": "logica",
+      "front": "O que diz a equivalência de exportação (ou importação)?",
+      "back": "(p∧q) → r ≡ p → (q → r). Duas premissas conjugadas levando a r é o mesmo que assumir uma e depois a outra. É o que autoriza a prova condicional: descarregar uma hipótese por vez."
+    },
+    {
+      "id": "fc-logica-023",
+      "area": "logica",
+      "front": "Quais são as leis distributivas da lógica sentencial?",
+      "back": "p ∧ (q∨r) ≡ (p∧q) ∨ (p∧r) e p ∨ (q∧r) ≡ (p∨q) ∧ (p∨r). Cada conectivo distribui sobre o outro — é esse passo que transforma uma fórmula em FND ou em FNC depois de eliminadas as condicionais."
+    },
+    {
+      "id": "fc-logica-024",
+      "area": "logica",
+      "front": "Qual é a negação de ∃x P(x)?",
+      "back": "~∃x P(x) ≡ ∀x ~P(x): se não existe x com a propriedade, então todo x não a tem. Simetricamente, ~∀x P(x) ≡ ∃x ~P(x). A negação atravessa o quantificador trocando o seu tipo e desce até o predicado."
+    },
+    {
+      "id": "fc-logica-025",
+      "area": "logica",
+      "front": "Qual a diferença entre variável livre e variável ligada?",
+      "back": "Ligada é a variável no escopo de um quantificador; livre é a que não está. Em \"x > 3\" o x é livre e a fórmula é uma sentença ABERTA, sem valor-verdade (logo não é proposição); em \"∀x (x > 3)\" o x é ligado e a fórmula é uma sentença, com valor-verdade."
+    },
+    {
+      "id": "fc-logica-026",
+      "area": "logica",
+      "front": "Qual a diferença entre \"B é consequência lógica de A\" e \"A é equivalente a B\"?",
+      "back": "Consequência lógica é de mão única: toda valoração que torna A verdadeira torna B verdadeira (A ⊨ B, ou seja, A→B é tautologia). Equivalência é mão dupla: A ⊨ B e B ⊨ A, tabelas idênticas. Toda equivalente é consequência; o contrário não — se o comando pedir \"consequência lógica\", o gabarito pode ser uma afirmação mais fraca, que não equivale à original.",
+      "sourceQuestionId": "transp23e6-q35"
     }
   ]
 }
