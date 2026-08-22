@@ -174,6 +174,14 @@ por qualquer checagem que só olhasse o código HTTP — o que os desmascara é 
 (`text/html` onde se esperava PDF), o tamanho pequeno demais para o documento prometido, e o
 corpo com o script do desafio. Continuar exigindo conferência de conteúdo, não só de status.
 
-**Lacunas mantidas:** PMBOK 7 (2.4), escritório de projetos e modelos (2.6/2.7), Manual de
-Redação da Presidência (Português), economia da inovação com fonte primária brasileira (4.4),
-gestão de dados mestres e metadados sem o DMBOK pago (1.6/1.21).
+**PMBOK 7 (2.4) e itens do PMI (2.6/2.7): ENCERRADO por decisão do usuário em 22/08.** O
+pmi.org devolve 403 em toda URL, inclusive com user-agent de navegador, e não é bloqueio de UA.
+Não tentar mais. O assunto fica coberto pela alternativa gratuita já verificada em
+`gestao-proj` (curso da Escola Virtual de Governo) e pelo conteúdo do próprio
+`content/gestao-proj.json`, que trata PMBOK 6 x 7 em detalhe. Registrar aqui evita que um
+ciclo futuro gaste tempo redescobrindo o bloqueio.
+
+**Lacunas ainda abertas:** Manual de Redação da Presidência (Português), economia da inovação
+com fonte primária brasileira (4.4), gestão de dados mestres e metadados sem o DMBOK pago
+(1.6/1.21). Mesma regra do PMBOK vale se qualquer uma se mostrar bloqueada de forma dura:
+encerrar e registrar, em vez de insistir.

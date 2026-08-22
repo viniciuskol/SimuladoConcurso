@@ -33,10 +33,13 @@ de arquivo para manter a URL.
 
 ## O que falta
 
-1. **Lacunas de material assumidas** (registradas em `_internal/resources-check.md`):
-   1.6/1.21 só tem o DMBOK pago; 2.6/2.7 sem link porque pmi.org devolve 403 em toda
-   URL; 4.4 depende de MCTI/IBGE (captcha) e OECD (Cloudflare); PMBOK 7 e Manual de
-   Redação da Presidência seguem sem link. Tentar de outra rede num ciclo futuro.
+1. **Lacunas de material** (detalhe em `_internal/resources-check.md`):
+   - **PMBOK 7 e itens do PMI (2.4/2.6/2.7): ENCERRADO por decisão do usuário** — pmi.org
+     dá 403 em toda URL, inclusive com UA de navegador. Não tentar mais; o assunto está
+     coberto pela alternativa gratuita verificada e pelo conteúdo de `gestao-proj`.
+   - Abertas: Manual de Redação da Presidência, economia da inovação com fonte primária
+     brasileira (4.4), alternativa gratuita ao DMBOK (1.6/1.21). Regra do usuário: se a
+     fonte estiver bloqueada de forma dura, encerrar e registrar em vez de insistir.
 2. **`fc-logica-020`** agrupa três regras triviais num card — decisão consciente de
    manter; revisitar se incomodar no uso.
 3. **Redução ao absurdo** está no cheatsheet de logica mas não tem card no deck.
