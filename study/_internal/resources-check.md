@@ -153,3 +153,27 @@ Rejeitados nesta rodada:
 - `6.2`, `6.3`, `6.5` (storytelling com dados) e `6.6`: ux já no teto de 7.
 - `9.6` VPN, `9.7` MDM, `9.19`–`9.21` criptografia/nuvem/IoT: seg-info já no teto de 7.
 - `P.1` compreensão de textos: coberto só indiretamente (Ciberdúvidas/Senado).
+
+## Nova tentativa nas lacunas — 2026-08-22, com user-agent de navegador
+
+Motivo: descobrimos que 3 URLs respondiam 403 a robô e 200 a navegador (computer.org,
+w3.org/TR/WCAG22, nngroup). Testei se as lacunas eram do mesmo tipo. **Não são** — as três
+seguem inacessíveis, e uma delas de um jeito que engana verificador ingênuo:
+
+| URL | resultado com UA de Safari |
+|---|---|
+| `pmi.org/standards/pmbok` | **403** ("Error \| PMI") — bloqueio real, não é UA |
+| `pmi.org/learning/library` | **403** — idem |
+| `gov.br/planalto/.../manual-de-redacao` | **200 FALSO** — 50 KB de desafio anti-bot F5/TSPD (`window["bobcmn"]`), sem conteúdo |
+| `www4.planalto.gov.br/.../manual-de-redacao.pdf` | **200 FALSO** — 16 KB, mesmo desafio; `content_type: text/html`, não PDF |
+| `gov.br/secretariageral/pt-br/manual-de-redacao` | **404** |
+| `ibge.gov.br/.../pesquisa-de-inovacao` | **403** Cloudflare ("Just a moment...") |
+
+**Lição para os próximos ciclos:** status 200 não basta. Os dois casos do Planalto passariam
+por qualquer checagem que só olhasse o código HTTP — o que os desmascara é o `content_type`
+(`text/html` onde se esperava PDF), o tamanho pequeno demais para o documento prometido, e o
+corpo com o script do desafio. Continuar exigindo conferência de conteúdo, não só de status.
+
+**Lacunas mantidas:** PMBOK 7 (2.4), escritório de projetos e modelos (2.6/2.7), Manual de
+Redação da Presidência (Português), economia da inovação com fonte primária brasileira (4.4),
+gestão de dados mestres e metadados sem o DMBOK pago (1.6/1.21).
