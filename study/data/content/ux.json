@@ -257,5 +257,63 @@
       "confusedWith": "conceito de orientação a objetos",
       "distinction": "Os cinco estilos canônicos (Shneiderman) são: linguagem de comandos, seleção em menus, preenchimento de formulários, manipulação direta e linguagem natural. WIMP e WYSIWYG são paradigmas de interface que parte da literatura trata como estilos — e prova6-q41 os tratou assim. 'Linguagem polimórfica' não existe em IHC: polimorfismo é orientação a objetos, e foi o termo fabricado daquela questão."
     }
+  ],
+  "resources": [
+    {
+      "title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+      "publisher": "W3C",
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "kind": "norma",
+      "free": true,
+      "why": "Fonte primária do 6.1 (acessibilidade): princípios POUR, critérios A/AA/AAA; canônica só em inglês."
+    },
+    {
+      "title": "eMAG — Modelo de Acessibilidade em Governo Eletrônico",
+      "publisher": "Governo Federal / Programa de Governo Eletrônico Brasileiro",
+      "url": "https://emag.governoeletronico.gov.br/",
+      "kind": "norma",
+      "free": true,
+      "why": "Versão brasileira e em português das diretrizes de acessibilidade (6.1) — é o que a banca cobra em questão de portal público."
+    },
+    {
+      "title": "10 Usability Heuristics for User Interface Design",
+      "publisher": "Nielsen Norman Group",
+      "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+      "kind": "artigo",
+      "free": true,
+      "why": "As 10 heurísticas de Nielsen na fonte original (6.1 usabilidade e 6.4 projeto centrado no usuário); em inglês."
+    },
+    {
+      "title": "Personas Make Users Memorable for Product Team Members",
+      "publisher": "Nielsen Norman Group",
+      "url": "https://www.nngroup.com/articles/persona/",
+      "kind": "artigo",
+      "free": true,
+      "why": "O que é e o que não é persona, e como se constrói a partir de pesquisa — 6.11."
+    },
+    {
+      "title": "UX Prototypes: Low Fidelity vs. High Fidelity",
+      "publisher": "Nielsen Norman Group",
+      "url": "https://www.nngroup.com/articles/ux-prototype-hi-lo-fidelity/",
+      "kind": "artigo",
+      "free": true,
+      "why": "Fidelidade, interatividade e quando usar cada protótipo — 6.9 (e a diferença entre protótipo e MVP do 6.8)."
+    },
+    {
+      "title": "Design Thinking 101",
+      "publisher": "Nielsen Norman Group",
+      "url": "https://www.nngroup.com/articles/design-thinking/",
+      "kind": "artigo",
+      "free": true,
+      "why": "As fases empatizar-definir-idear-prototipar-testar e os espaços divergente/convergente — 6.10."
+    },
+    {
+      "title": "Ferramentas e teste — Aprendendo desenvolvimento web",
+      "publisher": "MDN Web Docs (Mozilla)",
+      "url": "https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Extensions/Testing",
+      "kind": "guia",
+      "free": true,
+      "why": "Teste cross-browser, feature detection e degradação graciosa (6.7 interoperabilidade entre navegadores), em português."
+    }
   ]
 }

@@ -987,6 +987,1428 @@
       "area": "seg-info",
       "front": "Quantas funções tem o NIST Cybersecurity Framework?",
       "back": "Cinco na versão 1.1 — Identificar, Proteger, Detectar, Responder e Recuperar — e seis na versão 2.0, que acrescentou Governar."
+    },
+    {
+      "id": "fc-gestao-ti-001",
+      "area": "gestao-ti",
+      "front": "Qual é a definição técnica de sistema de informação (SI)?",
+      "back": "Conjunto de componentes inter-relacionados que coletam, processam, armazenam e distribuem informações para apoiar a tomada de decisão, a coordenação e o controle da organização.",
+      "sourceQuestionId": "prova07-q65"
+    },
+    {
+      "id": "fc-gestao-ti-002",
+      "area": "gestao-ti",
+      "front": "Qual é a diferença entre SI e TI?",
+      "back": "TI é o hardware e o software de que a empresa precisa. SI é o arranjo mais amplo, que inclui a tecnologia mais as pessoas e a organização (processos, cultura, estrutura).",
+      "sourceQuestionId": "prova07-q65"
+    },
+    {
+      "id": "fc-gestao-ti-003",
+      "area": "gestao-ti",
+      "front": "Quais são as três dimensões que compõem um sistema de informação?",
+      "back": "Organização, pessoas e tecnologia — todas parte integrante do sistema. Nenhuma se sobrepõe às outras.",
+      "sourceQuestionId": "prova07-q69"
+    },
+    {
+      "id": "fc-gestao-ti-004",
+      "area": "gestao-ti",
+      "front": "Qual é a característica central de um sistema ERP?",
+      "back": "Integrar e automatizar, em um único sistema interfuncional, os processos de negócio das diversas funções da empresa (finanças, produção, vendas, RH).",
+      "sourceQuestionId": "psjpn2018-q48"
+    },
+    {
+      "id": "fc-gestao-ti-005",
+      "area": "gestao-ti",
+      "front": "O que é workflow?",
+      "back": "A automação de um processo de negócio, no todo ou em parte, em que documentos, informação e tarefas passam de um ponto a outro segundo uma sequência previamente definida.",
+      "sourceQuestionId": "prova07-q68"
+    },
+    {
+      "id": "fc-gestao-ti-006",
+      "area": "gestao-ti",
+      "front": "Quais são os objetivos organizacionais dos sistemas de informação, na lista de Laudon?",
+      "back": "Excelência operacional; novos produtos, serviços e modelos de negócio; relacionamento estreito com clientes e fornecedores; melhor tomada de decisão; vantagem competitiva; sobrevivência.",
+      "sourceQuestionId": "prova07-q70"
+    },
+    {
+      "id": "fc-gestao-ti-007",
+      "area": "gestao-ti",
+      "front": "Que conceito reúne os processos, políticas e estratégias que garantem que a TI atenda aos objetivos e aos requisitos regulatórios e éticos da organização?",
+      "back": "Governança — e atenção ao rótulo: em transp23e6-q59 a Cesgranrio deu como correta \"governança CORPORATIVA\", pondo \"gestão de serviços de TI\" como distrator. Guarde os dois rótulos ligados a \"avaliar, dirigir e monitorar\".",
+      "sourceQuestionId": "transp23e6-q59"
+    },
+    {
+      "id": "fc-gestao-ti-008",
+      "area": "gestao-ti",
+      "front": "O que caracteriza uma aplicação mashup?",
+      "back": "É uma tecnologia de gerenciamento da informação que combina dados de múltiplas fontes distintas e publica o resultado de forma organizada.",
+      "sourceQuestionId": "psjpn2018-q49"
+    },
+    {
+      "id": "fc-gestao-ti-009",
+      "area": "gestao-ti",
+      "front": "Que inovação viabilizou aplicações entregues online, sob demanda e por assinatura (SaaS)?",
+      "back": "Computação em nuvem. Virtualização é a técnica subjacente, não o modelo de entrega do serviço.",
+      "sourceQuestionId": "transp15-q56"
+    },
+    {
+      "id": "fc-gestao-ti-010",
+      "area": "gestao-ti",
+      "front": "Quais são as quatro dimensões do gerenciamento de serviços no ITIL 4?",
+      "back": "Organizações e pessoas; informação e tecnologia; parceiros e fornecedores; fluxos de valor e processos."
+    },
+    {
+      "id": "fc-gestao-ti-011",
+      "area": "gestao-ti",
+      "front": "Quantas atividades tem a cadeia de valor de serviço do ITIL 4, e quais são?",
+      "back": "Seis, combináveis em qualquer ordem: planejar, melhorar, engajar, desenhar e fazer a transição, obter/construir, entregar e suportar."
+    },
+    {
+      "id": "fc-gestao-ti-012",
+      "area": "gestao-ti",
+      "front": "Quantas práticas o ITIL 4 define e como se dividem?",
+      "back": "34 práticas: 14 gerais de gerenciamento, 17 de gerenciamento de serviço e 3 de gerenciamento técnico."
+    },
+    {
+      "id": "fc-gestao-ti-013",
+      "area": "gestao-ti",
+      "front": "Qual é a diferença de vocabulário entre ITIL v3 e ITIL 4?",
+      "back": "ITIL v3 fala em PROCESSOS organizados em cinco estágios do ciclo de vida do serviço. ITIL 4 fala em PRÁTICAS, quatro dimensões, sete princípios orientadores e cadeia de valor de serviço."
+    },
+    {
+      "id": "fc-gestao-ti-014",
+      "area": "gestao-ti",
+      "front": "No COBIT 2019, qual domínio contém os objetivos de governança?",
+      "back": "Apenas o EDM (Avaliar, Dirigir e Monitorar). APO, BAI, DSS e MEA são domínios de objetivos de gestão."
+    },
+    {
+      "id": "fc-gestao-ti-015",
+      "area": "gestao-ti",
+      "front": "Qual a diferença entre SLA, OLA e UC?",
+      "back": "SLA é o acordo com o cliente/negócio. OLA é o acordo interno entre áreas do próprio provedor. UC (contrato de apoio) é o contrato com fornecedor externo."
+    },
+    {
+      "id": "fc-gestao-ti-016",
+      "area": "gestao-ti",
+      "front": "Qual é a diferença entre incidente e problema no gerenciamento de serviços?",
+      "back": "Incidente é a interrupção não planejada ou a queda de qualidade do serviço (o sintoma). Problema é a causa, ou possível causa, de um ou mais incidentes."
+    },
+    {
+      "id": "fc-gestao-ti-017",
+      "area": "gestao-ti",
+      "front": "Como se selecionam os KPIs de um serviço de TI?",
+      "back": "Com base nas necessidades de negócio da organização; eles ajudam a medir o sucesso do serviço. Não são apenas métricas de hardware nem só de disponibilidade.",
+      "sourceQuestionId": "transp23e6-q66"
+    },
+    {
+      "id": "fc-gestao-ti-018",
+      "area": "gestao-ti",
+      "front": "Que conceito econômico corresponde a atribuir valor monetário ao tempo, esforço, conhecimento e risco empregados em uma inovação?",
+      "back": "Custo de oportunidade: o valor do que se deixou de obter ao alocar esses recursos àquela finalidade.",
+      "sourceQuestionId": "transp23e6-q60"
+    },
+    {
+      "id": "fc-gestao-ti-019",
+      "area": "gestao-ti",
+      "front": "Em que hipóteses a LGPD se aplica, quanto a território e sede do agente?",
+      "back": "Aplica-se independentemente do país da sede do agente ou de onde estejam os dados, bastando que o tratamento ocorra em território nacional, vise ofertar bens ou serviços a pessoas aqui localizadas, ou envolva dados coletados aqui.",
+      "sourceQuestionId": "transp23e6-q57"
+    },
+    {
+      "id": "fc-gestao-ti-020",
+      "area": "gestao-ti",
+      "front": "Em que situações a LGPD NÃO se aplica?",
+      "back": "Tratamento por pessoa natural para fins exclusivamente particulares e não econômicos; fins exclusivamente jornalístico e artístico; fins exclusivamente acadêmicos (mas aqui aplicam-se os arts. 7º e 11); e fins exclusivos de segurança pública, defesa nacional, segurança do Estado e investigação/repressão penal.",
+      "sourceQuestionId": "transp23e6-q57"
+    },
+    {
+      "id": "fc-gestao-ti-021",
+      "area": "gestao-ti",
+      "front": "Quais dados a LGPD classifica como pessoais sensíveis?",
+      "back": "Origem racial ou étnica, convicção religiosa, opinião política, filiação a sindicato ou a organização religiosa/filosófica/política, dado de saúde ou vida sexual, e dado genético ou biométrico vinculado a pessoa natural."
+    },
+    {
+      "id": "fc-gestao-ti-022",
+      "area": "gestao-ti",
+      "front": "Qual a diferença entre controlador e operador na LGPD?",
+      "back": "Controlador toma as decisões sobre o tratamento (finalidade e meios). Operador realiza o tratamento em nome do controlador. Ambos são agentes de tratamento."
+    },
+    {
+      "id": "fc-gestao-ti-023",
+      "area": "gestao-ti",
+      "front": "Quem é o encarregado na LGPD, e o que ele não faz?",
+      "back": "É o indicado pelo controlador e pelo operador para ser canal entre controlador, titulares e ANPD. Ele não fiscaliza nem aplica sanções — isso é da ANPD."
+    },
+    {
+      "id": "fc-gestao-ti-024",
+      "area": "gestao-ti",
+      "front": "Que lugar o consentimento ocupa entre as bases legais do art. 7º da LGPD?",
+      "back": "É apenas uma das dez bases legais do art. 7º — ao lado de obrigação legal, execução de contrato, políticas públicas, tutela da saúde, legítimo interesse, proteção do crédito e outras. Não é a regra geral."
+    },
+    {
+      "id": "fc-gestao-ti-025",
+      "area": "gestao-ti",
+      "front": "Que bases legais NÃO podem ser usadas para tratar dado pessoal sensível?",
+      "back": "Legítimo interesse e proteção do crédito. Dado sensível segue as hipóteses próprias do art. 11, com consentimento específico e destacado ou dispensa expressa."
+    },
+    {
+      "id": "fc-gestao-ti-026",
+      "area": "gestao-ti",
+      "front": "Que ressalva o art. 18 faz especificamente para a portabilidade?",
+      "back": "A portabilidade a outro fornecedor de serviço ou produto é o único inciso que fala em \"requisição expressa\" e depende de regulamentação da ANPD, observados segredo comercial e industrial."
+    },
+    {
+      "id": "fc-gestao-ti-027",
+      "area": "gestao-ti",
+      "front": "Qual é o limite da multa simples prevista na LGPD?",
+      "back": "Até 2% do faturamento da pessoa jurídica no Brasil no último exercício, excluídos os tributos, limitada a R$ 50 milhões por infração. Quem aplica é a ANPD, após processo administrativo."
+    },
+    {
+      "id": "fc-ux-001",
+      "area": "ux",
+      "front": "Como a ISO 9241-11 define usabilidade?",
+      "back": "Medida em que um sistema pode ser usado por usuários específicos para atingir objetivos específicos com eficácia, eficiência e satisfação, em um contexto de uso específico."
+    },
+    {
+      "id": "fc-ux-002",
+      "area": "ux",
+      "front": "Em que momento do desenvolvimento acessibilidade e usabilidade devem ser tratadas?",
+      "back": "Desde a construção dos protótipos, sendo testadas antes da codificação. Não são características conflitantes nem preocupações posteriores ao código.",
+      "sourceQuestionId": "transp23e6-q33"
+    },
+    {
+      "id": "fc-ux-003",
+      "area": "ux",
+      "front": "Quais são os quatro princípios do WCAG (POUR)?",
+      "back": "Perceptível, Operável, Compreensível e Robusto."
+    },
+    {
+      "id": "fc-ux-004",
+      "area": "ux",
+      "front": "Quais são os níveis de conformidade do WCAG?",
+      "back": "A (mínimo), AA (alvo prático, exigido por boa parte da regulação) e AAA (mais rigoroso, não exigível para todo conteúdo)."
+    },
+    {
+      "id": "fc-ux-005",
+      "area": "ux",
+      "front": "Qual é o contraste mínimo exigido no nível AA do WCAG 2.x?",
+      "back": "4,5:1 para texto normal e 3:1 para texto grande. No nível AAA, 7:1 e 4,5:1."
+    },
+    {
+      "id": "fc-ux-006",
+      "area": "ux",
+      "front": "O que é o eMAG?",
+      "back": "O Modelo de Acessibilidade em Governo Eletrônico: versão especializada do WCAG para o governo brasileiro, de observância obrigatória nos sítios do governo federal.",
+      "sourceQuestionId": "transp15-q35"
+    },
+    {
+      "id": "fc-ux-007",
+      "area": "ux",
+      "front": "Que exigência o eMAG faz sobre plano de fundo e primeiro plano?",
+      "back": "Garantir um contraste mínimo entre o plano de fundo e o primeiro plano, para legibilidade por usuários com baixa visão.",
+      "sourceQuestionId": "transp15-q35"
+    },
+    {
+      "id": "fc-ux-008",
+      "area": "ux",
+      "front": "Qual a diferença entre WCAG, ATAG e UAAG?",
+      "back": "WCAG trata do conteúdo web; ATAG, das ferramentas de autoria; UAAG, dos agentes de usuário (navegadores e players).",
+      "sourceQuestionId": "prova07-q11"
+    },
+    {
+      "id": "fc-ux-009",
+      "area": "ux",
+      "front": "Que prática de teste é recomendada para verificar acessibilidade de páginas web?",
+      "back": "Testar o acesso em navegador de modo textual (ou com leitor de tela), o que revela dependência de recurso visual e de script.",
+      "sourceQuestionId": "prova07-q11"
+    },
+    {
+      "id": "fc-ux-010",
+      "area": "ux",
+      "front": "Qual heurística de Nielsen exige saída de emergência, desfazer e cancelar?",
+      "back": "Controle e liberdade do usuário."
+    },
+    {
+      "id": "fc-ux-011",
+      "area": "ux",
+      "front": "Qual heurística de Nielsen manda deixar a informação visível em vez de exigir que o usuário lembre de uma tela para outra?",
+      "back": "Reconhecimento em vez de memorização."
+    },
+    {
+      "id": "fc-ux-012",
+      "area": "ux",
+      "front": "Qual a diferença entre avaliação heurística e teste de usabilidade?",
+      "back": "Avaliação heurística é inspeção feita por especialistas contra uma lista de heurísticas, sem usuário. Teste de usabilidade envolve usuários reais executando tarefas definidas."
+    },
+    {
+      "id": "fc-ux-013",
+      "area": "ux",
+      "front": "Que dados a equipe deve coletar em um teste de usabilidade?",
+      "back": "Tempos e taxas de sucesso por tarefa, para consolidar em relatório de resultados — além de observação qualitativa.",
+      "sourceQuestionId": "prova07-q10"
+    },
+    {
+      "id": "fc-ux-014",
+      "area": "ux",
+      "front": "Por que é errado pedir que o participante fique em silêncio durante um teste de usabilidade?",
+      "back": "Porque a verbalização (pensar em voz alta) é justamente o que revela o modelo mental do usuário. Também é errado uniformizar a experiência dos participantes ou sugerir o caminho mais curto.",
+      "sourceQuestionId": "prova07-q10"
+    },
+    {
+      "id": "fc-ux-015",
+      "area": "ux",
+      "front": "Qual a diferença entre wireframe, mockup e protótipo?",
+      "back": "Wireframe mostra a estrutura da tela, sem cor nem identidade visual. Mockup mostra a aparência final, estática. Protótipo simula o comportamento e permite navegar/interagir."
+    },
+    {
+      "id": "fc-ux-016",
+      "area": "ux",
+      "front": "O que caracteriza um protótipo de alta fidelidade?",
+      "back": "Representar de maneira fiel a aparência e o comportamento esperados do produto, servindo de base próxima à codificação.",
+      "sourceQuestionId": "transp23e6-q29"
+    },
+    {
+      "id": "fc-ux-017",
+      "area": "ux",
+      "front": "Qual é o formato canônico de uma história de usuário?",
+      "back": "Como [papel], quero [ação], para [benefício]. O 'para' amarra a história ao valor entregue."
+    },
+    {
+      "id": "fc-ux-018",
+      "area": "ux",
+      "front": "O que significa o acrônimo INVEST para histórias de usuário?",
+      "back": "Independente, Negociável, Valiosa, Estimável, Small (pequena) e Testável."
+    },
+    {
+      "id": "fc-ux-019",
+      "area": "ux",
+      "front": "Qual a diferença entre critério de aceitação e definição de pronto (DoD)?",
+      "back": "Critério de aceitação é específico de uma história e diz se aquela funcionalidade atende ao pedido. Definição de pronto é do time e vale para todo item do backlog."
+    },
+    {
+      "id": "fc-ux-020",
+      "area": "ux",
+      "front": "O que é um MVP?",
+      "back": "A versão mais simples do produto, criada e disponibilizada a usuários reais para validar uma ideia e coletar dados que orientem o direcionamento do negócio.",
+      "sourceQuestionId": "transp23e6-q58"
+    },
+    {
+      "id": "fc-ux-021",
+      "area": "ux",
+      "front": "Quem pode usar MVP e com que tecnologias ele pode ser construído?",
+      "back": "Qualquer organização, inclusive empresas já estabelecidas, e com quaisquer tecnologias — não precisa ser a pilha do produto final. O MVP também não é a V1.0 completa lançada ao grande público.",
+      "sourceQuestionId": "transp23e6-q58"
+    },
+    {
+      "id": "fc-ux-022",
+      "area": "ux",
+      "front": "Quais são as cinco etapas do design thinking no modelo da d.school?",
+      "back": "Empatizar, definir, idear, prototipar e testar — de forma iterativa."
+    },
+    {
+      "id": "fc-ux-023",
+      "area": "ux",
+      "front": "Quais são as quatro fases do Duplo Diamante do Design Council?",
+      "back": "Descobrir, definir, desenvolver e entregar; o primeiro diamante busca o problema certo, o segundo a solução certa."
+    },
+    {
+      "id": "fc-ux-024",
+      "area": "ux",
+      "front": "Que informações compõem o mapa de empatia?",
+      "back": "O que o usuário pensa e sente, o que vê, o que escuta, e o que fala e faz. Muitas versões acrescentam dores e ganhos — nome, idade e hobby não fazem parte.",
+      "sourceQuestionId": "transp23e6-q34"
+    },
+    {
+      "id": "fc-ux-025",
+      "area": "ux",
+      "front": "Que técnica de criatividade usa rodadas cronometradas em que cada participante escreve ideias e passa o papel ao colega?",
+      "back": "Brainwriting. A avaliação das ideias só ocorre depois de os papéis voltarem aos autores e serem recolhidos.",
+      "sourceQuestionId": "transp23e6-q30"
+    },
+    {
+      "id": "fc-ux-026",
+      "area": "ux",
+      "front": "Qual a diferença entre persona e público-alvo?",
+      "back": "Público-alvo é um recorte demográfico e estatístico. Persona é um personagem fictício e concreto, com objetivos, contexto e frustrações, construído a partir de pesquisa real com usuários."
+    },
+    {
+      "id": "fc-ux-027",
+      "area": "ux",
+      "front": "Quais são os estilos de interação reconhecidos em IHC?",
+      "back": "Linguagem de comandos, linguagem natural, seleção em menus, preenchimento de formulários, manipulação direta. WIMP e WYSIWYG são paradigmas de interface que parte da literatura trata como estilos. \"Linguagem polimórfica\" não existe: polimorfismo é orientação a objetos.",
+      "sourceQuestionId": "prova6-q41"
+    },
+    {
+      "id": "fc-analise-dados-001",
+      "area": "analise-dados",
+      "front": "Qual é a cadeia dado → informação → conhecimento → inteligência?",
+      "back": "Dado é o registro bruto sem contexto; informação é o dado contextualizado; conhecimento é a informação interpretada que permite agir; inteligência é o conhecimento aplicado à decisão."
+    },
+    {
+      "id": "fc-analise-dados-002",
+      "area": "analise-dados",
+      "front": "Quais são as quatro características de um data warehouse segundo Inmon?",
+      "back": "Orientado a assunto, integrado, não volátil e variável no tempo."
+    },
+    {
+      "id": "fc-analise-dados-003",
+      "area": "analise-dados",
+      "front": "Qual característica define o data warehouse quanto à origem dos dados que ele reúne?",
+      "back": "Consolidar dados de diversas fontes em um só local, permitindo análises multidimensionais.",
+      "sourceQuestionId": "transp23e6-q56"
+    },
+    {
+      "id": "fc-analise-dados-004",
+      "area": "analise-dados",
+      "front": "Qual a diferença entre data warehouse e data mart?",
+      "back": "O DW é corporativo e cobre múltiplos assuntos. O data mart é um recorte por assunto ou departamento, menor e mais rápido de entregar."
+    },
+    {
+      "id": "fc-analise-dados-005",
+      "area": "analise-dados",
+      "front": "O que distingue o ODS de um data warehouse?",
+      "back": "O ODS integra dados operacionais com granularidade detalhada, é volátil e serve consulta corrente. O DW é não volátil e guarda histórico."
+    },
+    {
+      "id": "fc-analise-dados-006",
+      "area": "analise-dados",
+      "front": "Que status a área de staging tem na arquitetura de um data warehouse?",
+      "back": "É componente opcional: sua utilização é decisão de projeto. Foi por isso que a afirmação que a chamava de 'indispensável' foi considerada falsa.",
+      "sourceQuestionId": "prova6-q47"
+    },
+    {
+      "id": "fc-analise-dados-007",
+      "area": "analise-dados",
+      "front": "O que significa 'latência de dados' como requisito de data warehouse?",
+      "back": "A rapidez de entrega dos dados ao usuário final — quão fresco o dado chega ao ambiente de BI. Não é o tempo de uma consulta nem o tempo da carga inicial.",
+      "sourceQuestionId": "prova6-q53"
+    },
+    {
+      "id": "fc-analise-dados-008",
+      "area": "analise-dados",
+      "front": "Como se opõem OLTP e OLAP?",
+      "back": "OLTP é transacional: normalizado, escrita intensa, dado atual, consultas curtas. OLAP é analítico: dimensional, leitura intensa, dado histórico e agregado, consultas grandes e ad hoc."
+    },
+    {
+      "id": "fc-analise-dados-009",
+      "area": "analise-dados",
+      "front": "O que caracteriza MOLAP, ROLAP e HOLAP?",
+      "back": "MOLAP acessa apenas estruturas multidimensionais próprias; ROLAP constrói a visão multidimensional sobre banco relacional; HOLAP é híbrido e acessa tanto relacional quanto multidimensional.",
+      "sourceQuestionId": "prova6-q49"
+    },
+    {
+      "id": "fc-analise-dados-010",
+      "area": "analise-dados",
+      "front": "O que faz a operação OLAP de drill down?",
+      "back": "Move a visualização de informações resumidas e agregadas para níveis mais detalhados, descendo a hierarquia da dimensão.",
+      "sourceQuestionId": "transp23e6-q62"
+    },
+    {
+      "id": "fc-analise-dados-011",
+      "area": "analise-dados",
+      "front": "O que faz a operação de roll up (drill up)?",
+      "back": "Agrega os dados subindo para um nível hierárquico MAIS ALTO. Alternativa que fala em 'níveis mais baixos' inverteu o sentido.",
+      "sourceQuestionId": "transp23e6-q62"
+    },
+    {
+      "id": "fc-analise-dados-012",
+      "area": "analise-dados",
+      "front": "Qual a diferença entre slice e dice?",
+      "back": "Slice fixa um valor de UMA dimensão e reduz a dimensionalidade do cubo. Dice filtra faixas ou vários membros em DUAS OU MAIS dimensões, devolvendo um subcubo."
+    },
+    {
+      "id": "fc-analise-dados-013",
+      "area": "analise-dados",
+      "front": "O que faz a operação de pivot em um cubo OLAP?",
+      "back": "Gira os eixos da apresentação, trocando linha por coluna. Não cria dimensões novas.",
+      "sourceQuestionId": "transp23e6-q62"
+    },
+    {
+      "id": "fc-analise-dados-014",
+      "area": "analise-dados",
+      "front": "Qual a diferença entre drill across e drill through?",
+      "back": "Drill across cruza duas tabelas de fatos por dimensões conformadas. Drill through desce do agregado até o registro detalhado na base de origem."
+    },
+    {
+      "id": "fc-analise-dados-015",
+      "area": "analise-dados",
+      "front": "O que é uma medida semiaditiva, e qual exemplo típico?",
+      "back": "A que soma em algumas dimensões mas não no tempo: saldo, estoque, número de assinantes. Somam-se entre filiais, jamais entre meses."
+    },
+    {
+      "id": "fc-analise-dados-016",
+      "area": "analise-dados",
+      "front": "Por que um percentual é medida não aditiva?",
+      "back": "Porque somar percentuais não produz número com significado em nenhuma dimensão. Numa tabela com um 'percentual trimestral' por linha e três linhas, há três medidas não aditivas.",
+      "sourceQuestionId": "prova6-q46"
+    },
+    {
+      "id": "fc-analise-dados-017",
+      "area": "analise-dados",
+      "front": "Quais são os quatro tipos de análise, em ordem crescente de valor?",
+      "back": "Descritiva (o que aconteceu), diagnóstica (por que aconteceu), preditiva (o que deve acontecer) e prescritiva (o que fazer)."
+    },
+    {
+      "id": "fc-analise-dados-018",
+      "area": "analise-dados",
+      "front": "Quais tarefas de mineração de dados são supervisionadas e quais não são?",
+      "back": "Supervisionadas: classificação (rótulo categórico) e regressão (valor numérico). Não supervisionadas: agrupamento/clusterização e associação."
+    },
+    {
+      "id": "fc-analise-dados-019",
+      "area": "analise-dados",
+      "front": "Que relação existe entre mineração de dados e KDD?",
+      "back": "Mineração é apenas a etapa de aplicação dos algoritmos dentro do KDD, que inclui seleção, pré-processamento, transformação, mineração e interpretação/avaliação. Não são sinônimos."
+    },
+    {
+      "id": "fc-analise-dados-020",
+      "area": "analise-dados",
+      "front": "Quais são as seis fases do CRISP-DM?",
+      "back": "Entendimento do negócio, entendimento dos dados, preparação dos dados, modelagem, avaliação e implantação."
+    },
+    {
+      "id": "fc-analise-dados-021",
+      "area": "analise-dados",
+      "front": "Quando a mediana descreve melhor o valor típico que a média?",
+      "back": "Quando há valores extremos ou distribuição assimétrica (salário, tempo de atendimento), porque a média é sensível a outliers e a mediana resiste a eles."
+    },
+    {
+      "id": "fc-analise-dados-022",
+      "area": "analise-dados",
+      "front": "O que uma correlação alta entre duas variáveis autoriza concluir — e o que não autoriza?",
+      "back": "Autoriza afirmar associação, nada mais: pode haver variável de confusão, causalidade em sentido inverso ou coincidência. Para afirmar causa é preciso experimento (teste A/B) ou desenho quase experimental."
+    },
+    {
+      "id": "fc-analise-dados-023",
+      "area": "analise-dados",
+      "front": "Qual a diferença entre métrica, indicador e KPI?",
+      "back": "Métrica é a medida bruta; indicador é a medida com significado e regra de cálculo; KPI é o indicador vinculado a um objetivo, com meta e responsável."
+    },
+    {
+      "id": "fc-analise-dados-024",
+      "area": "analise-dados",
+      "front": "Que gráfico usar para comparar categorias e para mostrar evolução no tempo?",
+      "back": "Barras para comparar categorias; linhas para evolução no tempo. Quando o valor exato importa mais que o padrão, use tabela."
+    },
+    {
+      "id": "fc-analise-dados-025",
+      "area": "analise-dados",
+      "front": "Quais boas práticas orientam a construção de um visual em dashboard?",
+      "back": "Uma mensagem por visual; título que afirma a conclusão; escala do eixo de barras começando em zero (além de ordenar categorias por valor e usar cor com propósito)."
+    },
+    {
+      "id": "fc-analise-dados-026",
+      "area": "analise-dados",
+      "front": "Quais são as dimensões clássicas de qualidade de dados?",
+      "back": "Completude, exatidão/acurácia, consistência, validade, unicidade, atualidade e integridade."
+    },
+    {
+      "id": "fc-analise-dados-027",
+      "area": "analise-dados",
+      "front": "Que formato de planilha é adequado para análise em ferramentas de BI?",
+      "back": "Tabela plana: uma linha por registro, uma coluna por atributo, cabeçalho único, sem células mescladas, sem totais no meio dos dados e com tipo consistente por coluna."
+    },
+    {
+      "id": "fc-ux-028",
+      "area": "ux",
+      "front": "Quais práticas de design o eMAG rejeita explicitamente?",
+      "back": "Impedir o redimensionamento da página, diferenciar elementos apenas por cor, provocar automaticamente alterações de contexto e recorrer a CAPTCHA como solução de segurança.",
+      "sourceQuestionId": "transp15-q35"
+    },
+    {
+      "id": "fc-analise-dados-028",
+      "area": "analise-dados",
+      "front": "Que gráfico usar para mostrar relação entre duas variáveis e para mostrar distribuição?",
+      "back": "Dispersão para relação entre duas variáveis; histograma ou boxplot para distribuição. Composição vai em barras empilhadas ou pizza com poucas fatias."
+    },
+    {
+      "id": "fc-gestao-ti-028",
+      "area": "gestao-ti",
+      "front": "Quantos objetivos o COBIT 2019 define, e em quantos domínios?",
+      "back": "40 objetivos de governança e gestão, distribuídos em 5 domínios: EDM (governança) e APO, BAI, DSS e MEA (gestão). No COBIT 5 eram 37 processos."
+    },
+    {
+      "id": "fc-logica-001",
+      "area": "logica",
+      "front": "Qual é a negação de \"se p, então q\"?",
+      "back": "É a conjunção p ∧ ~q — \"p e não q\". Não é \"se p então não q\" nem \"se não p então não q\": a condicional só falha na linha V→F, e negá-la é afirmar exatamente essa linha.",
+      "sourceQuestionId": "psjpn2018-q68"
+    },
+    {
+      "id": "fc-logica-002",
+      "area": "logica",
+      "front": "Das três variações de p→q (recíproca, inversa, contrapositiva), qual é equivalente à original?",
+      "back": "Só a contrapositiva ~q→~p (inverteu E negou). A recíproca q→p e a inversa ~p→~q são equivalentes entre si, mas nenhuma equivale à original. Cuidado quando a frase já traz um \"não\": em prova6-q65 a frase é P→~Q, cuja contrapositiva é Q→~P.",
+      "sourceQuestionId": "prova6-q65"
+    },
+    {
+      "id": "fc-logica-003",
+      "area": "logica",
+      "front": "Como se reescreve uma condicional como disjunção?",
+      "back": "p→q ≡ ~p ∨ q: nega o antecedente e troca por \"ou\". Em prova6-q65, \"se o freio falhou, então não houve manutenção\" (P→~Q) virou ~P ∨ ~Q, \"o freio não falhou ou não houve manutenção\" — o gabarito.",
+      "sourceQuestionId": "prova6-q65"
+    },
+    {
+      "id": "fc-logica-004",
+      "area": "logica",
+      "front": "O que dizem as duas leis de De Morgan?",
+      "back": "~(p ∧ q) ≡ ~p ∨ ~q e ~(p ∨ q) ≡ ~p ∧ ~q: negar distribui a negação e troca o conectivo. Em psjpn2018-q70 foi ela que levou de ~(~A ∧ ~G) para A ∨ G.",
+      "sourceQuestionId": "psjpn2018-q70"
+    },
+    {
+      "id": "fc-logica-005",
+      "area": "logica",
+      "front": "Qual a diferença entre Modus Ponens e Modus Tollens?",
+      "back": "Ponens afirma o antecedente e conclui o consequente (p→q, p ⊢ q). Tollens nega o consequente e conclui a negação do antecedente (p→q, ~q ⊢ ~p). As duas são válidas; trocar os nomes é a armadilha de psjpn2018-q70.",
+      "sourceQuestionId": "psjpn2018-q70"
+    },
+    {
+      "id": "fc-logica-006",
+      "area": "logica",
+      "front": "Quais são as duas falácias formais da condicional, e por que são inválidas?",
+      "back": "Afirmação do consequente (p→q, q ⊢ p) e negação do antecedente (p→q, ~p ⊢ ~q). Ambas caem com p=F e q=V: premissas verdadeiras e conclusão falsa. As duas tratam p→q como se fosse p↔q."
+    },
+    {
+      "id": "fc-logica-007",
+      "area": "logica",
+      "front": "Qual é a negação de \"todo A é B\"?",
+      "back": "\"Algum A não é B\" — basta um contraexemplo. Nunca \"nenhum A é B\": essas duas são contrárias, não contraditórias, e podem ser as duas falsas ao mesmo tempo.",
+      "sourceQuestionId": "transp23e6-q35"
+    },
+    {
+      "id": "fc-logica-008",
+      "area": "logica",
+      "front": "Como se traduzem \"todo A é B\", \"algum A é B\" e \"nenhum A é B\" em lógica de predicados?",
+      "back": "∀x(A(x)→B(x)), ∃x(A(x)∧B(x)) e ∀x(A(x)→~B(x)). Universal vira condicional, existencial vira conjunção — trocar um conectivo pelo outro é o erro clássico.",
+      "sourceQuestionId": "transp23e6-q35"
+    },
+    {
+      "id": "fc-logica-009",
+      "area": "logica",
+      "front": "Quando o enunciado diz que uma condicional é FALSA, o que fica determinado?",
+      "back": "Tudo: antecedente V e consequente F, a única linha em que ela é falsa. Em psjpn2018-q68, \"(~p)→(~q) é falso\" força ~p=V e ~q=F, logo p=F e q=V — sem montar tabela.",
+      "sourceQuestionId": "psjpn2018-q68"
+    },
+    {
+      "id": "fc-logica-010",
+      "area": "logica",
+      "front": "O que define um argumento válido?",
+      "back": "A impossibilidade de ter todas as premissas verdadeiras e a conclusão falsa. É propriedade da forma: pode haver premissas falsas com forma válida, e conclusão verdadeira com forma inválida. Um único contraexemplo prova a invalidade.",
+      "sourceQuestionId": "psjpn2018-q69"
+    },
+    {
+      "id": "fc-portugues-001",
+      "area": "portugues",
+      "front": "Quando o pronome \"se\" faz o verbo concordar com o termo seguinte?",
+      "back": "Quando o verbo é transitivo direto: aí o \"se\" é apassivador e o complemento é o sujeito. Por isso 'enviam-se vídeos' e 'evidenciaram-se atitudes' (plural), mas 'desenvolveu-se a ideia' (singular).",
+      "sourceQuestionId": "psjpn2018-q9"
+    },
+    {
+      "id": "fc-portugues-002",
+      "area": "portugues",
+      "front": "Por que 'Necessita-se de políticos mais compromissados' fica no singular?",
+      "back": "Porque 'necessitar de' é transitivo indireto: o \"se\" é índice de indeterminação do sujeito, não apassivador. Sem sujeito para concordar, o verbo trava na 3ª pessoa do singular.",
+      "sourceQuestionId": "transp15-q10"
+    },
+    {
+      "id": "fc-portugues-003",
+      "area": "portugues",
+      "front": "Como fica o verbo \"fazer\" indicando tempo decorrido, e por quê?",
+      "back": "Sempre no singular: \"Faz quinze anos que ele entrou na vida pública\". \"Fazer\" de tempo decorrido é impessoal, não tem sujeito — e o mesmo vale para \"Há quinze anos\". \"Fazem quinze anos\" é o erro plantado no distrator.",
+      "sourceQuestionId": "transp15-q10"
+    },
+    {
+      "id": "fc-portugues-004",
+      "area": "portugues",
+      "front": "Como fica o verbo \"haver\" com sentido de existir, e o que acontece com o auxiliar?",
+      "back": "No singular: \"Havia mais de trinta deputados\". \"Haver\" existencial é impessoal, e transmite a invariabilidade ao auxiliar de locução (\"deve haver\", \"pode haver\").",
+      "sourceQuestionId": "transp15-q10"
+    },
+    {
+      "id": "fc-portugues-005",
+      "area": "portugues",
+      "front": "Qual a diferença de concordância entre \"haver\" existencial e \"existir\"?",
+      "back": "\"Haver\" existencial é impessoal e trava no singular (\"havia trinta deputados\"); \"existir\" tem sujeito e concorda com ele (\"existiam trinta deputados\")."
+    },
+    {
+      "id": "fc-portugues-006",
+      "area": "portugues",
+      "front": "Qual é o teste rápido para decidir se cabe crase?",
+      "back": "Trocar o termo feminino por um masculino equivalente. Se sair 'ao', tem crase ('atentas à fatura' → 'atentos ao extrato'). Se sair 'o' ou 'a', não tem.",
+      "sourceQuestionId": "psjpn2018-q5"
+    },
+    {
+      "id": "fc-portugues-007",
+      "area": "portugues",
+      "front": "Por que 'à partir daquela conversa' está errado?",
+      "back": "Porque 'partir' é verbo, e não existe crase antes de verbo. Escreve-se sempre 'a partir de', sem acento — o mesmo valendo para 'a fim de'.",
+      "sourceQuestionId": "transp15-q9"
+    },
+    {
+      "id": "fc-portugues-008",
+      "area": "portugues",
+      "front": "Que condição o substantivo plural precisa satisfazer para haver crase antes dele?",
+      "back": "Precisa estar determinado, para que apareça o artigo no plural: \"assistimos às apresentações da noite\". Indeterminado, só a preposição: \"assistimos a apresentações inflamadas\", sem acento.",
+      "sourceQuestionId": "transp15-q9"
+    },
+    {
+      "id": "fc-portugues-009",
+      "area": "portugues",
+      "front": "Que fusão gera o acento em 'em referência àqueles pensamentos'?",
+      "back": "A preposição 'a', exigida por 'em referência a', mais o demonstrativo 'aqueles': a + aqueles = àqueles. Vale igual para àquela, àquilo e à qual.",
+      "sourceQuestionId": "transp15-q9"
+    },
+    {
+      "id": "fc-portugues-010",
+      "area": "portugues",
+      "front": "Por que 'soneto à língua portuguesa' leva acento grave?",
+      "back": "Porque há preposição 'a' com valor de destinação (soneto dedicado a alguém) mais o artigo feminino 'a' de 'língua'. Preposição + artigo = crase.",
+      "sourceQuestionId": "transp23e6-q5"
+    },
+    {
+      "id": "fc-portugues-011",
+      "area": "portugues",
+      "front": "Que classes de palavras obrigam próclise?",
+      "back": "Negação (não, nunca, jamais), advérbio sem vírgula, pronome relativo, indefinido ou interrogativo, e conjunção subordinativa — inclusive o 'que'. Ex.: 'nunca se afastara', 'para que se adote'.",
+      "sourceQuestionId": "psjpn2018-q8"
+    },
+    {
+      "id": "fc-portugues-012",
+      "area": "portugues",
+      "front": "O que desliga o poder de atração de um advérbio anteposto ao verbo?",
+      "back": "Uma vírgula depois dele: \"Entre os numerosos usuários da internet, constata-se...\" — com o adjunto isolado por vírgula, a ênclise volta a ser correta.",
+      "sourceQuestionId": "psjpn2018-q8"
+    },
+    {
+      "id": "fc-portugues-013",
+      "area": "portugues",
+      "front": "Por que 'Diria-lhe para evitar a política' é errado?",
+      "back": "Porque com futuro do presente e futuro do pretérito a ênclise é vedada na norma-padrão: usa-se mesóclise ('Dir-lhe-ia') ou próclise, se houver palavra atrativa.",
+      "sourceQuestionId": "transp15-q8"
+    },
+    {
+      "id": "fc-portugues-014",
+      "area": "portugues",
+      "front": "Que posição de pronome oblíquo átono a norma-padrão proíbe no início de período, e qual é a saída?",
+      "back": "Proíbe a próclise em início de período (\"Se atormentou...\"). A saída é a ênclise: \"Atormentou-se com aquela crise\".",
+      "sourceQuestionId": "transp15-q8"
+    },
+    {
+      "id": "fc-portugues-015",
+      "area": "portugues",
+      "front": "Em que três posições a vírgula nunca pode entrar?",
+      "back": "Entre sujeito e verbo, entre verbo e seu complemento, e antes da oração substantiva que completa o verbo ('mostram que, muitas economias...'). Foram os erros plantados nos distratores.",
+      "sourceQuestionId": "psjpn2018-q4"
+    },
+    {
+      "id": "fc-portugues-016",
+      "area": "portugues",
+      "front": "Que função têm as vírgulas em 'minha avó, Pedrina Perucchi, era italiana'?",
+      "back": "Isolam um aposto explicativo, que identifica o termo anterior. O concorrente típico é o vocativo, que chama o interlocutor e não tem relação sintática com o resto.",
+      "sourceQuestionId": "transp23e6-q7"
+    },
+    {
+      "id": "fc-portugues-017",
+      "area": "portugues",
+      "front": "Dois-pontos com valor explicativo equivalem a que conjunção?",
+      "back": "A 'porque': o que vem depois deles justifica o que veio antes. Foi a substituição cobrada no trecho sobre a compra que atende à necessidade de status.",
+      "sourceQuestionId": "psjpn2018-q7"
+    },
+    {
+      "id": "fc-portugues-018",
+      "area": "portugues",
+      "front": "Que relação estabelece o 'como' no início de um período, com verbo no subjuntivo?",
+      "back": "Causa, equivalendo a 'porque' ou 'já que': 'Como adorasse a mulher, não se vexava de dizê-lo'. Não é comparação nesse contexto.",
+      "sourceQuestionId": "transp15-q2"
+    },
+    {
+      "id": "fc-portugues-019",
+      "area": "portugues",
+      "front": "Que tipo de antecedente o pronome relativo 'onde' pode retomar?",
+      "back": "Só lugar físico ('a região onde se concentra a elite'). Para referência abstrata use 'em que' ou 'no qual'; 'aonde' só com verbo de movimento.",
+      "sourceQuestionId": "prova6-q10"
+    },
+    {
+      "id": "fc-portugues-020",
+      "area": "portugues",
+      "front": "Como distinguir o 'que' pronome relativo do 'que' conjunção integrante?",
+      "back": "O relativo retoma um antecedente e exerce função sintática na oração que introduz ('a borboleta que entrou'). O integrante não retoma nada e apenas liga uma oração substantiva ao verbo anterior.",
+      "sourceQuestionId": "transp23e6-q6"
+    },
+    {
+      "id": "fc-portugues-021",
+      "area": "portugues",
+      "front": "Que diferença de sentido a vírgula cria na oração adjetiva?",
+      "back": "Sem vírgula (restritiva), limita o antecedente a uma parte: 'os alunos que estudaram passaram'. Entre vírgulas (explicativa), comenta e vale para todo o antecedente: todos estudaram e todos passaram."
+    },
+    {
+      "id": "fc-portugues-022",
+      "area": "portugues",
+      "front": "Qual é o equivalente de 'fora usada' na voz passiva sintética?",
+      "back": "'Se usara'. A conversão tem de preservar o tempo verbal — 'se usou', 'se usava' e 'se usaria' mudam o tempo e, com ele, o sentido.",
+      "sourceQuestionId": "prova6-q8"
+    },
+    {
+      "id": "fc-portugues-023",
+      "area": "portugues",
+      "front": "Que correlação verbal expressa hipótese irreal do passado?",
+      "back": "'Se' + mais-que-perfeito composto do subjuntivo na subordinada + futuro do pretérito composto na principal: 'se tivesse escrito..., teria sido lida'.",
+      "sourceQuestionId": "transp23e6-q8"
+    },
+    {
+      "id": "fc-portugues-024",
+      "area": "portugues",
+      "front": "Entre ganhar, pagar e ver, qual tem SÓ particípio irregular?",
+      "back": "'Ver' — só 'visto' circula na língua-padrão. Ganhar e pagar são abundantes (ganhado/ganho, pagado/pago), com a forma regular usada com ter/haver e a curta com ser/estar.",
+      "sourceQuestionId": "prova6-q6"
+    },
+    {
+      "id": "fc-portugues-025",
+      "area": "portugues",
+      "front": "Qual a regência de 'necessitar' na norma-padrão, e o efeito disso no pronome relativo?",
+      "back": "Rege 'de'; logo o relativo tem de vir preposicionado: 'aparelhos DE QUE elas não necessitam'. A versão sem preposição soa natural na fala e é justamente o erro.",
+      "sourceQuestionId": "psjpn2018-q10"
+    },
+    {
+      "id": "fc-portugues-026",
+      "area": "portugues",
+      "front": "Que regência têm 'referir' e 'confessar'?",
+      "back": "Bitransitiva: algo (objeto direto) a alguém (objeto indireto com 'a') — 'referir o fato a alguém', 'confessou-me que trazia uma carcoma'.",
+      "sourceQuestionId": "transp15-q7"
+    },
+    {
+      "id": "fc-portugues-027",
+      "area": "portugues",
+      "front": "Como escolher entre porque, por que, porquê e por quê?",
+      "back": "'Porque' = conjunção (causa/explicação). 'Por que' = preposição + pronome, em pergunta ou com antecedente. 'Porquê' = substantivo, vem com artigo. 'Por quê' = forma tônica no fim da frase.",
+      "sourceQuestionId": "prova6-q4"
+    },
+    {
+      "id": "fc-ingles-001",
+      "area": "ingles",
+      "front": "Que pista lexical nas alternativas de inglês sinaliza erro por excesso, e qual é a exceção obrigatória?",
+      "back": "Linguagem absoluta: certainly, definitely, surely, absolutely, inevitable, undeniable, e o \"only\"/\"all\" que endurece a afirmação. No banco, 16 alternativas erradas as usam e nenhuma correta — mas 5 dessas ocorrências são só o andaime \"only Text I / only Text II / all\", em que \"only\" pode ser gabarito. Serve como desempate, não como atalho.",
+      "sourceQuestionId": "transp15-q20"
+    },
+    {
+      "id": "fc-ingles-002",
+      "area": "ingles",
+      "front": "Em uma questão de inglês, 'given that' pode ser substituído por quê?",
+      "back": "Por 'taking into account that' — é premissa considerada, valor de causa/consideração. Não é concessivo, então even though e despite the fact that estão errados.",
+      "sourceQuestionId": "transp15-q13"
+    },
+    {
+      "id": "fc-ingles-003",
+      "area": "ingles",
+      "front": "Iniciando frase e seguido de contraste, 'Still' equivale a quê?",
+      "back": "A 'Nevertheless' / 'However' — ainda assim. Dentro da frase, junto ao verbo, 'still' é temporal (= ainda). A posição decide o valor.",
+      "sourceQuestionId": "psjpn2018-q17"
+    },
+    {
+      "id": "fc-ingles-004",
+      "area": "ingles",
+      "front": "O que significa 'take hold' em 'Dutch disease and the oil curse will take hold'?",
+      "back": "Firmar-se, instalar-se e tornar-se difícil de reverter. Nada a ver com segurar algo fisicamente.",
+      "sourceQuestionId": "prova6-q16"
+    },
+    {
+      "id": "fc-ingles-005",
+      "area": "ingles",
+      "front": "O que significa 'account for' em 'India accounting for almost one-third of global growth'?",
+      "back": "Responder por / corresponder a uma parcela (\"India accounting for almost one-third of global growth\"). Atenção ao gabarito da banca em psjpn2018-q15: ela aceitou \"being the reason for\" — o distrator era \"being blamed for\" (culpa).",
+      "sourceQuestionId": "psjpn2018-q15"
+    },
+    {
+      "id": "fc-ingles-006",
+      "area": "ingles",
+      "front": "O que significa 'forging ahead' em 'Solar is forging ahead in global power markets'?",
+      "back": "Avançando de forma firme e constante (progressing steadily). Os distratores oferecem o sentido oposto: declining, falling, slowing down.",
+      "sourceQuestionId": "psjpn2018-q15"
+    },
+    {
+      "id": "fc-ingles-007",
+      "area": "ingles",
+      "front": "Com economia ou produção como sujeito, o que significa 'pick up'?",
+      "back": "Melhorar, ganhar ritmo, aumentar — 'as economic growth has picked up'. Não é 'pegar'; e os distratores oferecem declined, deteriorated, stabilized.",
+      "sourceQuestionId": "transp15-q16"
+    },
+    {
+      "id": "fc-ingles-008",
+      "area": "ingles",
+      "front": "O que significa 'driven by' em 'driven not least by the levels of air pollution'?",
+      "back": "Impulsionado, motivado ou causado por. Distratores usam 'delayed by' e 'hindered by', que invertem o sentido.",
+      "sourceQuestionId": "transp15-q16"
+    },
+    {
+      "id": "fc-ingles-009",
+      "area": "ingles",
+      "front": "O que significa 'pivotal' em 'Satellite communications will also be pivotal'?",
+      "back": "Essencial, crucial, central. É avaliação positiva e forte, o que já elimina tricky, erratic, haphazard e problematic.",
+      "sourceQuestionId": "transp23e6-q18"
+    },
+    {
+      "id": "fc-ingles-010",
+      "area": "ingles",
+      "front": "Em texto econômico, o que significa 'flat'?",
+      "back": "Estável, sem crescimento ('growth remained flat'). Não é sinônimo de 'high' — foi exatamente essa a afirmação falsa cobrada.",
+      "sourceQuestionId": "transp15-q18"
+    },
+    {
+      "id": "fc-ingles-011",
+      "area": "ingles",
+      "front": "O que significa 'rife'?",
+      "back": "Disseminado, generalizado, abundante — geralmente de algo negativo ('speculation is rife'). É quase o oposto de 'scarce'.",
+      "sourceQuestionId": "transp15-q18"
+    },
+    {
+      "id": "fc-ingles-012",
+      "area": "ingles",
+      "front": "Que tipo de variação \"surge\" expressa, e qual verbo/substantivo está próximo dele?",
+      "back": "Um aumento súbito e forte (\"a surge in demand\"); como verbo, disparar. É próximo de \"increase\", \"rise\" e \"soar\" — e não é \"surgir\" (to arise, to emerge). A questão apresentou \"surge\" e \"increase\" como antônimos, o que é falso.",
+      "sourceQuestionId": "transp15-q18"
+    },
+    {
+      "id": "fc-ingles-013",
+      "area": "ingles",
+      "front": "O que significa 'thriving' em 'a thriving solar industry'?",
+      "back": "Prosperando, crescendo com sucesso — próximo de 'developing' nesse contexto, e o oposto de estagnado.",
+      "sourceQuestionId": "transp15-q18"
+    },
+    {
+      "id": "fc-ingles-014",
+      "area": "ingles",
+      "front": "O que \"realise/realize\" significa em inglês, e como se diz \"realizar\" (executar)?",
+      "back": "Significa perceber, dar-se conta — por isso \"realise\" e \"understand\" são sinônimos. \"Realizar\" no sentido de executar é carry out, perform ou achieve.",
+      "sourceQuestionId": "prova6-q14"
+    },
+    {
+      "id": "fc-ingles-015",
+      "area": "ingles",
+      "front": "Qual a relação entre 'curb' e 'foster'?",
+      "back": "São antônimos: 'curb' é conter, restringir; 'foster' é fomentar, promover. Foi o único par realmente antônimo da questão.",
+      "sourceQuestionId": "prova6-q14"
+    },
+    {
+      "id": "fc-ingles-016",
+      "area": "ingles",
+      "front": "O que significa 'undisputed', e qual seu sinônimo cobrado na prova?",
+      "back": "Incontestável, indiscutível — sinônimo de \"irrefutable\" (psjpn2018-q14). Distratores da questão: \"disturbed\", \"stagnation\", \"restrain\", \"unnecessary\".",
+      "sourceQuestionId": "psjpn2018-q14"
+    },
+    {
+      "id": "fc-ingles-017",
+      "area": "ingles",
+      "front": "Em 'the SODOR project will provide low latency', o que 'low latency' garante?",
+      "back": "Transmissão de grande volume de dados com atraso mínimo. Latência é atraso, não volume — três distratores trocavam latência por 'low volume of data'.",
+      "sourceQuestionId": "transp23e6-q15"
+    },
+    {
+      "id": "fc-ingles-018",
+      "area": "ingles",
+      "front": "O que significa 'claimed' em texto jornalístico?",
+      "back": "Alegado, afirmado sem comprovação (ou reivindicado). Não é 'hidden' nem 'comprovado'; e o substantivo 'claim' é alegação, não reclamação (complaint).",
+      "sourceQuestionId": "transp15-q18"
+    },
+    {
+      "id": "fc-ingles-019",
+      "area": "ingles",
+      "front": "Em \"output from America's producing areas\", o que \"output\" significa e qual é o par oposto?",
+      "back": "Produção, volume produzido — em texto de energia é sempre esse sentido, não \"saída de dispositivo\". O par oposto é \"input\" (insumo).",
+      "sourceQuestionId": "transp15-q14"
+    },
+    {
+      "id": "fc-ingles-020",
+      "area": "ingles",
+      "front": "Em texto de energia, o que \"the grid\" designa?",
+      "back": "A rede elétrica de transmissão e distribuição — não \"grade\" nem \"mapa\". Termo do campo semântico de transição energética que ainda não apareceu nas provas do banco, mas é previsível em texto de renováveis."
+    },
+    {
+      "id": "fc-ingles-021",
+      "area": "ingles",
+      "front": "Qual costuma ser o antecedente de expressões como 'that shift' ou 'this trend'?",
+      "back": "Uma oração ou um trecho inteiro, não uma palavra isolada. Em 'that shift', o antecedente era a mudança da indústria pesada movida a carvão para uma economia de serviços.",
+      "sourceQuestionId": "transp15-q15"
+    },
+    {
+      "id": "fc-ingles-022",
+      "area": "ingles",
+      "front": "Em '14% of the UK's greenhouse gas emissions, of which 91% is from road vehicles', a que 'which' se refere?",
+      "back": "A 'greenhouse gas emissions', o substantivo imediatamente anterior: 91% dessas emissões vêm de veículos rodoviários.",
+      "sourceQuestionId": "transp23e6-q16"
+    },
+    {
+      "id": "fc-ingles-023",
+      "area": "ingles",
+      "front": "Em textos de previsão, o present simple ('wind becomes the leading source after 2030') expressa quê?",
+      "back": "Futuro projetado. Já o present continuous ('are changing') descreve processo em curso agora — foi essa diferença que decidiu a questão de referência temporal.",
+      "sourceQuestionId": "psjpn2018-q16"
+    },
+    {
+      "id": "fc-ingles-024",
+      "area": "ingles",
+      "front": "O que \"offset\" faz em \"a comparable increase in 2018 would offset most of the current OPEC production cuts\"?",
+      "back": "Compensa, anula o efeito de algo — o aumento da produção de shale cancelaria os cortes da OPEP. Como substantivo, \"offset\" é compensação (também em \"carbon offset\").",
+      "sourceQuestionId": "transp15-q14"
+    },
+    {
+      "id": "fc-ingles-025",
+      "area": "ingles",
+      "front": "Qual a escala de certeza dos modais em inglês, do mais forte ao mais fraco?",
+      "back": "will / must (dedução) > should, is likely to, is expected to, is projected to > can, may > could, might. Reconhecer essa escala é o que impede aceitar alternativa absoluta para texto hedged."
+    },
+    {
+      "id": "fc-logica-011",
+      "area": "logica",
+      "front": "Qual é a tabela-verdade da bicondicional p ↔ q?",
+      "back": "VV=V, VF=F, FV=F, FF=V — é verdadeira exatamente quando os dois lados têm o MESMO valor. Equivale a (p→q) ∧ (q→p) e também a (p∧q) ∨ (~p∧~q)."
+    },
+    {
+      "id": "fc-logica-012",
+      "area": "logica",
+      "front": "Qual é a tabela-verdade da disjunção exclusiva p ⊻ q (\"ou p ou q, mas não ambos\")?",
+      "back": "VV=F, VF=V, FV=V, FF=F — verdadeira exatamente quando os lados têm valores DIFERENTES. É a negação da bicondicional; o \"ou\" comum (∨) admite os dois verdadeiros."
+    },
+    {
+      "id": "fc-logica-013",
+      "area": "logica",
+      "front": "Qual é a negação de p ↔ q?",
+      "back": "~(p ↔ q) ≡ p ⊻ q ≡ (p ∧ ~q) ∨ (~p ∧ q): a negação afirma que os lados têm valores diferentes. Não é ~p ↔ ~q, que é equivalente à original."
+    },
+    {
+      "id": "fc-logica-014",
+      "area": "logica",
+      "front": "Como a tabela-verdade classifica uma fórmula, e quantas linhas ela tem?",
+      "back": "Com n proposições simples distintas, a tabela tem 2^n linhas (uma por valoração). Tautologia = V em todas; contradição = F em todas; contingência = V em algumas e F em outras. Isso é a decidibilidade da lógica sentencial: o procedimento é finito e sempre conclui."
+    },
+    {
+      "id": "fc-logica-015",
+      "area": "logica",
+      "front": "Qual a diferença entre uma fórmula satisfatível e uma fórmula válida?",
+      "back": "Satisfatível = verdadeira em AO MENOS uma valoração (tautologias e contingências). Válida = verdadeira em TODAS (é a tautologia). Insatisfatível = contradição. \"Satisfatível\" é mais fraco que \"válida\": toda válida é satisfatível, a volta não vale."
+    },
+    {
+      "id": "fc-logica-016",
+      "area": "logica",
+      "front": "Qual a diferença entre forma normal disjuntiva (FND) e conjuntiva (FNC)?",
+      "back": "FND é disjunção de conjunções de literais, como (p∧~q) ∨ (~p∧q); FNC é conjunção de disjunções de literais, como (p∨~q) ∧ (~p∨q). Roteiro para chegar às duas: elimine ↔ e →, empurre as negações até os literais com De Morgan e distribua."
+    },
+    {
+      "id": "fc-logica-017",
+      "area": "logica",
+      "front": "O que diz a regra do silogismo hipotético?",
+      "back": "p→q ; q→r ⊢ p→r — é a transitividade da condicional. Encadeia duas implicações e descarta o termo do meio. Cuidado: não vale encadear ao contrário (de p→q e r→q nada se conclui sobre p e r)."
+    },
+    {
+      "id": "fc-logica-018",
+      "area": "logica",
+      "front": "O que diz a regra do silogismo disjuntivo?",
+      "back": "p∨q ; ~p ⊢ q — negando um lado da disjunção, o outro fica. Funciona com o \"ou\" inclusivo, porque a disjunção verdadeira exige ao menos um lado verdadeiro, e esse lado não pode ser p."
+    },
+    {
+      "id": "fc-logica-019",
+      "area": "logica",
+      "front": "O que diz a regra do dilema construtivo?",
+      "back": "p→q ; r→s ; p∨r ⊢ q∨s — duas condicionais mais a disjunção dos antecedentes garantem a disjunção dos consequentes. A versão destrutiva é: p→q ; r→s ; ~q∨~s ⊢ ~p∨~r."
+    },
+    {
+      "id": "fc-logica-020",
+      "area": "logica",
+      "front": "O que dizem as regras de simplificação, adição e conjunção?",
+      "back": "Simplificação: p∧q ⊢ p (e também ⊢ q). Adição: p ⊢ p∨q, para qualquer q. Conjunção: p ; q ⊢ p∧q. São válidas e triviais — a armadilha é a inversa: de p∨q NÃO se conclui p, e de p NÃO se conclui p∧q."
+    },
+    {
+      "id": "fc-logica-021",
+      "area": "logica",
+      "front": "O que é a absorção em lógica?",
+      "back": "Como regra de inferência: p→q ⊢ p→(p∧q) (se p já implica q, p implica p e q juntos). Como lei de equivalência: p ∨ (p∧q) ≡ p e p ∧ (p∨q) ≡ p — o termo composto é absorvido e desaparece."
+    },
+    {
+      "id": "fc-logica-022",
+      "area": "logica",
+      "front": "O que diz a equivalência de exportação (ou importação)?",
+      "back": "(p∧q) → r ≡ p → (q → r). Duas premissas conjugadas levando a r é o mesmo que assumir uma e depois a outra. É o que autoriza a prova condicional: descarregar uma hipótese por vez."
+    },
+    {
+      "id": "fc-logica-023",
+      "area": "logica",
+      "front": "Quais são as leis distributivas da lógica sentencial?",
+      "back": "p ∧ (q∨r) ≡ (p∧q) ∨ (p∧r) e p ∨ (q∧r) ≡ (p∨q) ∧ (p∨r). Cada conectivo distribui sobre o outro — é esse passo que transforma uma fórmula em FND ou em FNC depois de eliminadas as condicionais."
+    },
+    {
+      "id": "fc-logica-024",
+      "area": "logica",
+      "front": "Qual é a negação de ∃x P(x)?",
+      "back": "~∃x P(x) ≡ ∀x ~P(x): se não existe x com a propriedade, então todo x não a tem. O espelho é ~∀x P(x) ≡ ∃x ~P(x), a forma simbólica do card da negação de \"todo A é B\". A negação atravessa o quantificador trocando o seu tipo e desce até o predicado."
+    },
+    {
+      "id": "fc-logica-025",
+      "area": "logica",
+      "front": "Qual a diferença entre variável livre e variável ligada?",
+      "back": "Ligada é a variável no escopo de um quantificador; livre é a que não está. Em \"x > 3\" o x é livre e a fórmula é uma sentença ABERTA, sem valor-verdade (logo não é proposição); em \"∀x (x > 3)\" o x é ligado e a fórmula é uma sentença, com valor-verdade."
+    },
+    {
+      "id": "fc-logica-026",
+      "area": "logica",
+      "front": "Qual a diferença entre \"B é consequência lógica de A\" e \"A é equivalente a B\"?",
+      "back": "Consequência lógica é de mão única: toda valoração que torna A verdadeira torna B verdadeira (A ⊨ B, ou seja, A→B é tautologia). Equivalência é mão dupla: A ⊨ B e B ⊨ A, tabelas idênticas. Toda equivalente é consequência; o contrário não — se o comando pedir \"consequência lógica\", o gabarito pode ser uma afirmação mais fraca, que não equivale à original.",
+      "sourceQuestionId": "transp23e6-q35"
+    },
+    {
+      "id": "fc-gestao-ti-029",
+      "area": "gestao-ti",
+      "front": "Que consentimento a LGPD exige para tratar dados pessoais de crianças?",
+      "back": "Consentimento específico e em destaque de pelo menos um dos pais ou do responsável legal (art. 14) — e essa exigência é só para CRIANÇA: para adolescente a lei não pede consentimento parental, só que o tratamento seja no melhor interesse do menor."
+    },
+    {
+      "id": "fc-gestao-ti-030",
+      "area": "gestao-ti",
+      "front": "Em que caso a LGPD permite coletar dados de criança sem o consentimento dos pais?",
+      "back": "Quando a coleta for necessária para contatar os pais ou o responsável legal — e aí os dados podem ser usados uma única vez e sem armazenamento — ou quando for necessária para a proteção da criança. Em nenhum caso podem ser repassados a terceiro sem aquele consentimento."
+    },
+    {
+      "id": "fc-gestao-ti-031",
+      "area": "gestao-ti",
+      "front": "Que prática a LGPD veda expressamente em jogos e aplicações de internet dirigidos a crianças?",
+      "back": "Condicionar a participação da criança em jogo, aplicação de internet ou outra atividade ao fornecimento de informações pessoais além das estritamente necessárias à atividade (art. 14). É a vedação de dados excedentes: querer o CPF da criança para liberar um jogo já viola o dispositivo."
+    },
+    {
+      "id": "fc-gestao-ti-032",
+      "area": "gestao-ti",
+      "front": "Quantas hipóteses de transferência internacional de dados a LGPD prevê, e quem decide se um país tem grau de proteção adequado?",
+      "back": "São nove hipóteses fechadas, no art. 33 — fora delas a transferência é vedada. O reconhecimento de que um país ou organismo internacional oferece grau de proteção adequado é competência da ANPD, não do controlador."
+    },
+    {
+      "id": "fc-gestao-ti-033",
+      "area": "gestao-ti",
+      "front": "Que garantias o controlador pode oferecer para viabilizar uma transferência internacional pela LGPD?",
+      "back": "Cláusulas contratuais específicas para aquela transferência, cláusulas-padrão contratuais, normas corporativas globais, ou selos, certificados e códigos de conduta regularmente emitidos. O controlador tem de oferecer e comprovar o cumprimento dos princípios, dos direitos do titular e do regime da lei."
+    },
+    {
+      "id": "fc-gestao-ti-034",
+      "area": "gestao-ti",
+      "front": "Quais são os prazos das sanções de suspensão previstas no art. 52 da LGPD, e qual delas admite proibição total?",
+      "back": "A suspensão parcial do funcionamento do banco de dados e a suspensão da atividade de tratamento são de até 6 meses, prorrogáveis por igual período. A proibição do exercício de atividades de tratamento é a única que pode ser parcial ou total."
+    },
+    {
+      "id": "fc-gestao-ti-035",
+      "area": "gestao-ti",
+      "front": "Além dos fins particulares, jornalísticos, artísticos, acadêmicos e de segurança pública, que outra hipótese o art. 4º da LGPD deixa fora da lei?",
+      "back": "Dados provenientes de fora do território nacional que não sejam objeto de comunicação, de uso compartilhado com agentes de tratamento brasileiros nem de transferência internacional para país diverso do de proveniência — desde que o país de origem ofereça grau de proteção adequado ao da lei."
+    },
+    {
+      "id": "fc-gestao-ti-036",
+      "area": "gestao-ti",
+      "front": "Por que dado pseudonimizado continua sendo dado pessoal para a LGPD, e dado anonimizado não?",
+      "back": "A pseudonimização apenas substitui o identificador por um código, mantendo a reidentificação possível com informação adicional guardada em separado. A anonimização, pela definição legal, retira a possibilidade de associação direta ou indireta ao indivíduo por meios técnicos razoáveis, e o dado sai do alcance da lei."
+    },
+    {
+      "id": "fc-gestao-ti-037",
+      "area": "gestao-ti",
+      "front": "Que princípio da LGPD limita o tratamento ao mínimo de dados indispensável à finalidade?",
+      "back": "O princípio da necessidade: os dados tratados devem ser pertinentes, proporcionais e não excessivos em relação à finalidade declarada. É diferente da finalidade, que exige propósito legítimo, específico e informado ao titular."
+    },
+    {
+      "id": "fc-gestao-ti-038",
+      "area": "gestao-ti",
+      "front": "Que direito a LGPD garante ao titular diante de uma decisão tomada unicamente por tratamento automatizado?",
+      "back": "O direito de solicitar a revisão da decisão, quando ela afete seus interesses — inclusive decisões de perfil pessoal, profissional, de consumo e de crédito. A redação vigente não exige que essa revisão seja feita por pessoa natural."
+    },
+    {
+      "id": "fc-gestao-ti-039",
+      "area": "gestao-ti",
+      "front": "Quem o controlador deve comunicar quando ocorre incidente de segurança com dados pessoais?",
+      "back": "A ANPD e o titular, quando o incidente possa acarretar risco ou dano relevante aos titulares, em prazo razoável definido pela autoridade. A ANPD pode determinar medidas como ampla divulgação do fato na imprensa."
+    },
+    {
+      "id": "fc-gestao-ti-040",
+      "area": "gestao-ti",
+      "front": "No ITIL 4, qual a diferença entre utilidade e garantia de um serviço?",
+      "back": "Utilidade é o serviço servir ao propósito (fit for purpose): entrega a funcionalidade que o consumidor precisa. Garantia é servir ao uso (fit for use): desempenho, capacidade, continuidade e segurança suficientes."
+    },
+    {
+      "id": "fc-gestao-ti-041",
+      "area": "gestao-ti",
+      "front": "Quais são os cinco componentes do Sistema de Valor de Serviço do ITIL 4?",
+      "back": "Princípios orientadores, governança, cadeia de valor de serviço, práticas e melhoria contínua. O SVS recebe oportunidade e demanda de um lado e entrega valor do outro."
+    },
+    {
+      "id": "fc-gestao-ti-042",
+      "area": "gestao-ti",
+      "front": "Quantos princípios o COBIT 2019 define para o sistema de governança, e como isso mudou em relação ao COBIT 5?",
+      "back": "Seis princípios para o sistema de governança — entre eles fornecer valor às partes interessadas, abordagem holística e governança distinta da gestão. O COBIT 5 trazia 5 princípios e 7 habilitadores."
+    },
+    {
+      "id": "fc-ux-029",
+      "area": "ux",
+      "front": "O que são os 3 C de uma história de usuário?",
+      "back": "Card (o cartão com o texto curto), Conversation (a conversa que detalha o pedido) e Confirmation (os critérios de aceitação). A história é promessa de conversa, não especificação completa."
+    },
+    {
+      "id": "fc-ux-030",
+      "area": "ux",
+      "front": "Qual a diferença entre história de usuário e caso de uso?",
+      "back": "O caso de uso descreve fluxo principal, passos e exceções em detalhe, como documento de análise. A história de usuário é um lembrete curto e negociável de valor, que será detalhado em conversa com o time."
+    },
+    {
+      "id": "fc-ux-031",
+      "area": "ux",
+      "front": "Qual é a estrutura Gherkin para escrever um critério de aceitação?",
+      "back": "Dado (o contexto inicial), Quando (a ação ou evento) e Então (o resultado observável esperado). O formato torna o critério verificável e automatizável em teste."
+    },
+    {
+      "id": "fc-ux-032",
+      "area": "ux",
+      "front": "Quais são as quatro atividades do projeto centrado no humano da ISO 9241-210?",
+      "back": "Entender e especificar o contexto de uso; especificar os requisitos do usuário; produzir soluções de projeto; avaliar o projeto contra os requisitos. São iterativas: a avaliação realimenta as anteriores."
+    },
+    {
+      "id": "fc-ux-033",
+      "area": "ux",
+      "front": "Qual a diferença entre affordance e significante, no vocabulário de Norman?",
+      "back": "Affordance é a possibilidade de ação que a relação entre objeto e usuário oferece. Significante é a pista perceptível que comunica essa possibilidade, como a seta, o rótulo ou a sombra do botão."
+    },
+    {
+      "id": "fc-ux-034",
+      "area": "ux",
+      "front": "Que técnica garante interoperabilidade entre navegadores melhor do que identificar o navegador do usuário?",
+      "back": "Detecção de funcionalidade (feature detection): testar se o recurso existe no agente e oferecer alternativa ou polyfill quando não existe. Detectar navegador por identificação envelhece mal e quebra em versões novas."
+    },
+    {
+      "id": "fc-ux-035",
+      "area": "ux",
+      "front": "Qual a diferença entre aprimoramento progressivo e degradação graciosa?",
+      "back": "O aprimoramento progressivo começa por conteúdo e HTML que funcionam em qualquer agente e soma camadas de CSS e JavaScript. A degradação graciosa parte da experiência completa e garante um mínimo aceitável onde os recursos faltam."
+    },
+    {
+      "id": "fc-ux-036",
+      "area": "ux",
+      "front": "O que distingue proto-persona e persona negativa de uma persona comum?",
+      "back": "A proto-persona é construída a partir de suposições da equipe e precisa ser validada por pesquisa. A persona negativa descreve quem a equipe decide deliberadamente NÃO atender, para evitar decisões de produto que a atendam."
+    },
+    {
+      "id": "fc-ux-037",
+      "area": "ux",
+      "front": "Qual a diferença entre mapa de jornada do usuário e service blueprint?",
+      "back": "O mapa de jornada registra fases, ações, pontos de contato, pensamentos, emoções e dores do usuário. O service blueprint acrescenta o que acontece nos bastidores: pessoas, sistemas e processos de apoio que sustentam cada ponto de contato."
+    },
+    {
+      "id": "fc-ux-038",
+      "area": "ux",
+      "front": "Como funciona o SUS (System Usability Scale) e como se lê seu resultado?",
+      "back": "Questionário de 10 itens em escala Likert respondido pelo usuário após a tarefa, convertido em um escore de 0 a 100. A média de referência fica em torno de 68 — e o escore não é percentual de acerto nem nota da interface."
+    },
+    {
+      "id": "fc-analise-dados-029",
+      "area": "analise-dados",
+      "front": "Qual é a definição de Business Intelligence, e qual é o seu objetivo final?",
+      "back": "É o conjunto de conceitos, métodos, processos e ferramentas que converte dado operacional em informação e conhecimento. O objetivo é apoiar a tomada de decisão: relatório e painel são meio, não fim."
+    },
+    {
+      "id": "fc-analise-dados-030",
+      "area": "analise-dados",
+      "front": "Qual a diferença entre ETL e ELT?",
+      "back": "No ETL a transformação ocorre antes da carga, em ferramenta intermediária. No ELT o dado bruto é carregado primeiro e transformado no destino, aproveitando o poder de processamento do armazém ou do lake. ELT não significa carga sem transformação."
+    },
+    {
+      "id": "fc-analise-dados-031",
+      "area": "analise-dados",
+      "front": "Sem catálogo e sem qualidade, no que degenera um data lake — e o que o lakehouse tenta resolver?",
+      "back": "Degenera em data swamp: dado bruto que ninguém acha, entende ou confia. O lakehouse tenta juntar a governança e o esquema do data warehouse com a flexibilidade e o custo do lake."
+    },
+    {
+      "id": "fc-analise-dados-032",
+      "area": "analise-dados",
+      "front": "O que é o grão (granularidade) de uma tabela de fatos?",
+      "back": "É o que uma única linha do fato representa — uma venda, um item de venda, um dia por produto por loja. Definir o grão é a primeira decisão do modelo: grão mais fino permite mais análise e custa mais volume."
+    },
+    {
+      "id": "fc-analise-dados-033",
+      "area": "analise-dados",
+      "front": "Como se avalia a força de uma regra de associação em mineração de dados?",
+      "back": "Por suporte (frequência do conjunto de itens na base), confiança (probabilidade do consequente dado o antecedente) e lift (quanto a regra supera o que se esperaria ao acaso). O algoritmo clássico é o Apriori."
+    },
+    {
+      "id": "fc-analise-dados-034",
+      "area": "analise-dados",
+      "front": "Por que a acurácia engana na avaliação de um classificador sobre base desbalanceada?",
+      "back": "Porque prever sempre a classe majoritária já produz acurácia altíssima sem capturar nada do fenômeno raro. Nesses casos olhe precisão, revocação e F1 sobre a classe de interesse, lendo a matriz de confusão."
+    },
+    {
+      "id": "fc-analise-dados-035",
+      "area": "analise-dados",
+      "front": "O que é o paradoxo de Simpson na leitura de dados agregados?",
+      "back": "É quando a mesma base mostra uma tendência no total e a tendência oposta em cada subgrupo, porque a agregação esconde a composição dos grupos. Por isso se confere o dado segmentado antes de concluir a partir do total."
+    },
+    {
+      "id": "fc-analise-dados-036",
+      "area": "analise-dados",
+      "front": "Quando o coeficiente de variação é preferível ao desvio-padrão?",
+      "back": "Quando se comparam séries de escalas ou unidades diferentes, porque o coeficiente de variação é o desvio-padrão dividido pela média e vira número relativo. O desvio-padrão só é comparável entre séries da mesma unidade e magnitude."
+    },
+    {
+      "id": "fc-analise-dados-037",
+      "area": "analise-dados",
+      "front": "Qual a diferença entre indicador leading e indicador lagging?",
+      "back": "O leading (direcionador) antecipa o resultado e ainda permite agir — número de propostas enviadas, taxa de conversão do funil. O lagging mede o que já ocorreu — receita, evasão do mês. Painel só com lagging avisa tarde."
+    },
+    {
+      "id": "fc-analise-dados-038",
+      "area": "analise-dados",
+      "front": "Como muda o conteúdo de um dashboard estratégico, tático e operacional?",
+      "back": "O estratégico traz poucos indicadores agregados comparados à meta; o tático mostra desvio por área e período para a gerência; o operacional traz detalhe, alta frequência de atualização e alerta. Errar o público do painel é o defeito mais comum."
+    },
+    {
+      "id": "fc-logica-027",
+      "area": "logica",
+      "front": "Como funciona uma prova por absurdo (redução ao absurdo) e o que ela permite concluir?",
+      "back": "Para provar a conclusão C a partir das premissas, acrescente a NEGAÇÃO da conclusão (~C) ao conjunto de premissas e derive uma contradição (uma fórmula da forma p ∧ ~p, ou um par de linhas contraditórias). Se premissas + ~C são insatisfatíveis, então ~C é incompatível com as premissas e C é consequência lógica delas: premissas ⊨ C. O que se nega é a conclusão, não uma premissa; e a contradição derivada é o que fecha a prova — sem contradição, nada foi provado. Mesma ideia da regra ~p → contradição, logo p."
+    },
+    {
+      "id": "fc-portugues-028",
+      "area": "portugues",
+      "front": "Que relação 'à medida que' expressa, e qual locução ocupa o lugar dela quando a ideia é causa?",
+      "back": "'À medida que' marca proporção: uma coisa varia conforme a outra ('à medida que o preço sobe, o consumo cai'). Quando a ideia é causa, a locução é 'na medida em que'. As duas não são intercambiáveis, e a mistura 'à medida em que' não existe na norma-padrão."
+    },
+    {
+      "id": "fc-portugues-029",
+      "area": "portugues",
+      "front": "Em que contextos a crase é facultativa?",
+      "back": "Antes de nome próprio feminino de pessoa ('escrevi a/à Maria'), antes de pronome possessivo feminino ('entreguei a/à minha irmã') e depois de 'até' ('até a/à porta'). Nesses casos as duas grafias estão corretas, então acentuar ou não acentuar não é, por si, erro."
+    },
+    {
+      "id": "fc-portugues-030",
+      "area": "portugues",
+      "front": "Quando 'a distância' recebe acento grave?",
+      "back": "Pela regra tradicional, que é a cobrada, quando o termo vem determinado: 'à distância de 200 metros'. Sem determinante, escreve-se sem crase: 'viu o navio a distância'. Parte da tradição gramatical e o uso consagrado ('ensino à distância') aceitam a crase mesmo sem determinante, então o determinante é o critério seguro, não uma proibição absoluta."
+    },
+    {
+      "id": "fc-portugues-031",
+      "area": "portugues",
+      "front": "Como decidir se há crase antes de nome de lugar, como em 'vou a/à Bahia'?",
+      "back": "Pelo teste da volta: se você volta DA Bahia, o lugar admite artigo e a crase entra ('vou à Bahia'); se volta DE Roma, não há artigo nem crase ('vou a Roma'). Topônimo normalmente sem artigo passa a ter quando é determinado: 'vou à Roma dos Césares'."
+    },
+    {
+      "id": "fc-portugues-032",
+      "area": "portugues",
+      "front": "Em que casos entra vírgula antes de 'e', e em que caso ela não entra?",
+      "back": "Entra quando os sujeitos das orações são diferentes ('O preço caiu, e a demanda cresceu'), na enumeração de orações coordenadas encerrada por 'e', e quando o 'e' tem valor adversativo ou aparece repetido em polissíndeto. No 'e' aditivo simples, ligando termos ou orações de mesmo sujeito, não se usa vírgula: 'Estudou a matéria e fez o simulado'."
+    },
+    {
+      "id": "fc-portugues-033",
+      "area": "portugues",
+      "front": "Como fica o verbo quando o sujeito é 'mais de um'?",
+      "back": "No singular: 'Mais de um mandato foi exercido' — pluralizar é o erro da alternativa A de transp15-q10. A exceção é a ideia de reciprocidade ou a repetição da expressão: 'mais de um deputado se agrediram', 'mais de um jornalista, mais de um político compareceram'.",
+      "sourceQuestionId": "transp15-q10"
+    },
+    {
+      "id": "fc-portugues-034",
+      "area": "portugues",
+      "front": "Com que termo o verbo concorda quando o sujeito é uma porcentagem?",
+      "back": "Com especificador, a concordância é facultativa: '20% da população migrou' (com o especificador) e '20% da população migraram' (com o numeral) são ambos aceitos. Sem especificador, o verbo concorda com o próprio número: '1% votou', '30% votaram'. Por isso não se descarta uma alternativa só porque ela concordou com o numeral."
+    },
+    {
+      "id": "fc-portugues-035",
+      "area": "portugues",
+      "front": "Quais dessas palavras variam na concordância nominal: 'anexo', 'obrigado' e 'menos'?",
+      "back": "'Anexo' e 'obrigado' são adjetivos e concordam com o substantivo a que se referem: 'seguem os documentos anexos', 'ela disse obrigada'. 'Menos' é invariável em qualquer contexto ('menos pessoas', 'menos água'), e a locução 'em anexo' também não varia."
+    },
+    {
+      "id": "fc-portugues-036",
+      "area": "portugues",
+      "front": "Que concordâncias admite o sujeito composto posposto ao verbo?",
+      "back": "Duas: o plural ('Chegaram o diretor e o assessor') ou a concordância com o núcleo mais próximo ('Chegou o diretor e o assessor'). Anteposto ao verbo, o sujeito composto pede o plural."
+    },
+    {
+      "id": "fc-portugues-037",
+      "area": "portugues",
+      "front": "Que sentido 'assistir' tem com a preposição 'a' e que sentido tem sem ela?",
+      "back": "Com 'a', significa ver ou presenciar: 'assistir ao jogo'. Sem preposição, significa prestar assistência: 'o médico assistiu o paciente'. No sentido de presenciar, a tradição pede 'assistir a ele', não 'assistir-lhe'."
+    },
+    {
+      "id": "fc-portugues-038",
+      "area": "portugues",
+      "front": "Como distinguir adjunto adnominal de complemento nominal em construções como 'o amor da mãe'?",
+      "back": "Se o termo pratica a ação, é adjunto adnominal: 'o amor DA MÃE' equivale a 'a mãe ama'. Se sofre a ação, é complemento nominal: 'o amor AO PRÓXIMO' equivale a 'alguém ama o próximo'. O adjunto indica posse, qualidade ou origem; o complemento completa o sentido de substantivo abstrato, adjetivo ou advérbio."
+    },
+    {
+      "id": "fc-portugues-039",
+      "area": "portugues",
+      "front": "Como separar a coordenada explicativa da subordinada causal quando as duas vêm com 'pois' ou 'porque'?",
+      "back": "A explicativa justifica o ato de dizer e costuma seguir imperativo ou suposição: 'Traga o guarda-chuva, pois vai chover'. A causal dá a causa real do fato enunciado: 'Não saí porque chovia'. Só na explicativa cabe a paráfrase 'digo isso porque...'."
+    },
+    {
+      "id": "fc-ingles-026",
+      "area": "ingles",
+      "front": "Em 'Unless costs fall further, coal will remain competitive', que ideia 'unless' introduz?",
+      "back": "Condição negativa, equivalente a 'if... not': a menos que os custos caiam mais, o carvão continua competitivo. A negação já está no próprio conectivo, por isso o verbo depois dele fica na afirmativa; não é contraste nem causa."
+    },
+    {
+      "id": "fc-ingles-027",
+      "area": "ingles",
+      "front": "Em 'the project was delayed but eventually came on stream', o que 'eventually' informa?",
+      "back": "Que a coisa aconteceu no final, depois de algum tempo — 'por fim'. Não corresponde a 'eventualmente' no sentido de ocasionalmente, que em inglês é 'occasionally' ou 'from time to time'."
+    },
+    {
+      "id": "fc-ingles-028",
+      "area": "ingles",
+      "front": "Em 'Ultimately, Brazil's ability to avoid Dutch disease will depend not just on how the money is spent', que valor tem 'Ultimately'?",
+      "back": "Valor de conclusão: em última análise, no fim das contas. Não marca tempo recente nem acrescenta informação nova, e foi por isso que a troca por 'Furthermore' entrou como alternativa errada em prova6-q17.",
+      "sourceQuestionId": "prova6-q17"
+    },
+    {
+      "id": "fc-ingles-029",
+      "area": "ingles",
+      "front": "Em 'the country's oil industry has so far been big enough to become a government cash cow', o que 'so far' informa?",
+      "back": "Que o quadro vale até agora, do passado até o presente — e é essa leitura que pede o present perfect ao lado. Não equivale a 'meanwhile' (enquanto isso), troca oferecida como distrator em prova6-q17.",
+      "sourceQuestionId": "prova6-q17"
+    },
+    {
+      "id": "fc-ingles-030",
+      "area": "ingles",
+      "front": "Em 'the fleet has hardly changed since 2010', o que 'hardly' faz com o sentido do verbo?",
+      "back": "Nega quase por completo: a frota quase não mudou. 'Hardly' não significa 'duramente' (hard, harshly) e, por já ser negativo, não vem acompanhado de 'not'."
+    },
+    {
+      "id": "fc-ingles-031",
+      "area": "ingles",
+      "front": "Por que 'despite the fall in prices' funciona e 'despite prices fell' não?",
+      "back": "Porque 'despite' e 'in spite of' são preposições e pedem substantivo ou forma em -ing ('despite falling prices'). Para uma oração com sujeito e verbo, o concessivo tem de ser 'although', 'though' ou 'even though': 'although prices fell'."
+    },
+    {
+      "id": "fc-ingles-032",
+      "area": "ingles",
+      "front": "Em 'cheap gas could undermine investment in renewables', o que 'undermine' faz com o investimento?",
+      "back": "Enfraquece, mina pela base — o prefixo 'under-' marca a ação por baixo. É o oposto de 'boost' e 'strengthen', e não tem relação com 'underline' (sublinhar)."
+    },
+    {
+      "id": "fc-ingles-033",
+      "area": "ingles",
+      "front": "Em 'the technologies deployed so far', que oração o particípio 'deployed' está resumindo?",
+      "back": "Uma relativa passiva reduzida: 'the technologies that have been deployed so far' — as tecnologias que foram implantadas até agora. Perceber isso evita ler 'deployed' como o verbo principal da frase."
+    },
+    {
+      "id": "fc-ingles-034",
+      "area": "ingles",
+      "front": "Em 'the global energy system is being reshaped by four major forces', quem age e quem sofre a ação?",
+      "back": "As quatro forças agem: o agente da passiva vem depois de 'by'. O sistema energético global é quem sofre a reformulação. Quando não há 'by', a frase simplesmente não nomeia o agente — em geral porque ele é desconhecido, genérico ou irrelevante — e o sujeito continua sendo o paciente."
+    },
+    {
+      "id": "fc-ingles-035",
+      "area": "ingles",
+      "front": "Em 'Some producers cut output, and others may do so next year', o que 'do so' retoma?",
+      "back": "O predicado inteiro anterior, 'cut output'. 'Do so', 'does' e 'did' substituem verbo mais complementos, nunca um substantivo — logo o antecedente é uma ação, não uma coisa."
+    },
+    {
+      "id": "fc-ingles-036",
+      "area": "ingles",
+      "front": "Que diferença de sentido separa 'the fields, which are offshore, need new rigs' de 'the fields which are offshore need new rigs'?",
+      "back": "Com vírgulas (non-defining), a informação só comenta e vale para todos os campos. Sem vírgulas (defining), ela restringe: apenas os campos offshore precisam de sondas novas. Em oração non-defining não se usa 'that'."
+    },
+    {
+      "id": "fc-ingles-037",
+      "area": "ingles",
+      "front": "Em 'the company is investing upstream rather than downstream', a que etapas do setor de óleo e gás o texto se refere?",
+      "back": "'Upstream' é exploração e produção, a ponta do poço; 'downstream' é refino, distribuição e venda ao consumidor. O transporte e a estocagem entre as duas pontas são o 'midstream'."
     }
   ]
 }

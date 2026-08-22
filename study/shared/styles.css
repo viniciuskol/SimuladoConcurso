@@ -220,3 +220,30 @@ ul.tight { margin: 0; padding-left: 20px; display: flex; flex-direction: column;
 .rate-row { flex-direction: row; }
 .rate-row .btn { justify-content: center; text-align: center; font-size: 0.92rem; padding: 14px 6px; }
 .card code { background: var(--surface-2); padding: 1px 5px; border-radius: 4px; font-size: 0.92em; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+.prio-label { flex: 0 0 41%; font-size: 0.88rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.area-bar .pct { width: 68px; }
+a.btn.res { text-decoration: none; align-items: flex-start; }
+a.btn.res strong { display: block; }
+
+/* Revisão do erro: as alternativas reaproveitam .btn/.alt-key/.alt-text do
+   simulado, mas aqui são <div> de leitura — sem clique, logo sem afordância de
+   clique (cursor e hover neutralizados). */
+.alt-list.review .btn { cursor: default; }
+.alt-list.review .btn:hover { border-color: var(--surface-2); }
+.alt-list.review .btn.correct, .alt-list.review .btn.correct:hover { border-color: var(--ok); }
+.tag-ok { color: var(--ok); white-space: nowrap; font-size: 0.85rem; }
+.q-stem { white-space: pre-wrap; overflow-wrap: anywhere; margin: 10px 0; }
+.review-h { font-weight: 600; margin: 14px 0 4px; }
+.q-src { margin-top: 12px; overflow-wrap: anywhere; }
+details.q-review > summary { overflow-wrap: anywhere; }
+details.q-review > summary .muted { color: var(--text-dim); font-weight: 400; }
+.alt-text { overflow-wrap: anywhere; }
+
+/* Checklist do plano: item concluído fica marcado sem virar ilegível — cor um
+   pouco mais apagada e risco fino, mantendo contraste de leitura. */
+ul.plan-list { margin: 10px 0 0; padding-left: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.plan-item { background: var(--surface-2); border-radius: 8px; }
+.plan-item label { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; cursor: pointer; line-height: 1.45; }
+.plan-item input { accent-color: var(--accent); width: 18px; height: 18px; margin: 2px 0 0; flex: 0 0 auto; }
+.plan-item.done > label > span { color: var(--text-dim); text-decoration: line-through; text-decoration-thickness: 1px; }
+.plan-prog { font-weight: 600; margin: 10px 0 0; }

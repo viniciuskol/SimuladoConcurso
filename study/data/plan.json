@@ -1,0 +1,280 @@
+{
+  "version": 1,
+  "examDate": "2026-11-29",
+  "sourceNote": "Edital nº 04/2026 TRANSPETRO/PSP/TERRA, Ênfase 5. 50 questões de Conhecimentos Específicos nas 8 áreas do Anexo IV + 10 de Português + 10 de Inglês. A duração da prova não consta das fontes disponíveis neste repositório — todo tempo DE PROVA abaixo é falado em proporção, não em minutos. As fatias por área citadas nos blocos são a contagem das 235 questões das provas antigas (155 técnicas), usada como PROXY histórico para priorizar o estudo — não é a distribuição da prova de 2026, que o edital não detalha por área. O Anexo IV atual é mais largo que as provas antigas, então ux, analise-dados e logica provavelmente estão subrepresentadas no proxy.",
+  "crossPatterns": [
+    {
+      "title": "A alternativa errada descreve corretamente o conceito VIZINHO",
+      "body": "É o distrator que mais se repete nas áreas técnicas do banco — está em arquitetura de dados, engenharia de software, gestão de projetos, segurança e UX — e ele não tem erro interno: a frase está certa, só responde outra pergunta. Pergunta-se característica de banco de documentos e as erradas definem grafo e relacional; pergunta-se o que o cascata enfatiza e as erradas definem espiral, prototipação e incremental; pergunta-se a solução de correlação de logs e as alternativas são cinco siglas vizinhas nuas, sem descrição — SIEM contra CASB, WAF, DLP e proxy (transp23e6-q43), firewall contra proxy, DMZ, IDS e IPS (transp15-q47): ali o vizinho não vem definido, vem só nomeado, e o que decide é saber a função de cada sigla; descreve-se uma dinâmica de design thinking e as alternativas são cinco nomes de técnicas do mesmo campo. Defesa: releia o COMANDO depois de escolher, e pergunte 'de que conceito esta alternativa é a definição?'. Se ela é a definição perfeita de outra coisa, é o distrator. Estudar por pares vizinhos (estrela x floco de neve, verificação x validação, SAST x DAST, RBAC x ABAC, MVP x protótipo) vale mais que estudar por lista.",
+      "evidence": [
+        "transp23e6-q46",
+        "transp23e6-q53",
+        "prova07-q53",
+        "transp15-q27",
+        "transp23e6-q43",
+        "transp15-q47",
+        "transp23e6-q30",
+        "prova07-q20"
+      ]
+    },
+    {
+      "title": "Enunciado negativo: NÃO, EXCEPT, 'o único que não'",
+      "body": "Aparece em 6 das 10 áreas do banco — arquitetura de dados, engenharia de software, UX, segurança, Português e Inglês (em maiúsculas: EXCEPT) — e em nenhuma questão de gestão de projetos, governança, análise de dados ou lógica. Onde aparece, quatro alternativas são verdadeiras e a resposta é a falsa — quem lê no automático marca a primeira frase correta e perde a questão que sabia. Defesa mecânica: circule o NÃO/EXCEPT antes de ler as alternativas, e escreva V ou F ao lado de cada uma; a resposta é a única F. Em inglês, o EXCEPT inverte também a lógica do 'responda com o dedo no texto': a correta é a que NÃO tem apoio no trecho. Nunca marque questão negativa sem ter julgado as cinco.",
+      "evidence": [
+        "transp23e6-q26",
+        "transp23e6-q51",
+        "prova07-q51",
+        "prova07-q67",
+        "psjpn2018-q50",
+        "prova6-q20",
+        "psjpn2018-q16",
+        "prova6-q62"
+      ]
+    },
+    {
+      "title": "Termo fabricado: a sigla ou o nome não existe no vocabulário da área",
+      "body": "A banca preenche alternativas com termos que soam técnicos e não existem: \"Unique Login Control (ULC)\" e \"Unique-Auth Database (UAD)\" contra Single Sign-On (psjpn2018-q66); \"reflexão segura\" e \"inundação segura\" contra tunelamento (transp15-q48). Fora das alternativas, a sigla inventada também aparece no próprio enunciado: \"DDS – Dynamic Data Storage\" na segunda assertiva de prova6-q47. Se você conhece o vocabulário da área, essas alternativas se eliminam sem raciocínio. Defesa: marque na primeira passada as alternativas cujo NOME você nunca viu — mas NUNCA descarte só por estranheza, porque a banca usa muito mais o oposto: termo real, da categoria errada — em transp23e6-q38 pede-se um teste e as alternativas trazem DREAD e STRIDE, que existem e estão no edital, mas no item 9.14 (modelagem de ameaças), ao lado do único nome de fato inventado ali, \"VAST\" como técnica de teste. Estranheza levanta suspeita; só o conhecimento da categoria decide.",
+      "evidence": [
+        "prova6-q47",
+        "psjpn2018-q66",
+        "transp15-q48",
+        "transp23e6-q38"
+      ]
+    },
+    {
+      "title": "Absoluto e restrição indevida ('apenas', 'somente', 'exclusivamente', 'nunca', 'não influencia em nada')",
+      "body": "Duas caras do mesmo padrão. Nas questões conceituais, a correta é a afirmação abrangente e os distratores estreitam o alcance: KPI 'apenas de hardware', 'exclusivamente disponibilidade', MVP 'inadequado para empresas já estabelecidas' ou 'necessariamente' com as mesmas tecnologias do produto final, novos requisitos que 'não influenciam em nada' o projeto. Em inglês o mesmo filtro é ainda mais forte: no banco inteiro, nenhuma alternativa correta usa certainly, definitely, surely, absolutely, inevitable ou undeniable, e o texto com hedging (may, is likely to, is projected to) nunca sustentou alternativa absoluta. Exceção obrigatória de saber de cor: nas questões 'Comparing Texts I and II', 'only Text I' e 'only Text II' são a estrutura fixa da questão e podem ser o gabarito — ali o 'only' não conta como excesso (o mesmo para 'the whole world', expressão neutra). Nas técnicas a régua tem exceção: em psjpn2018-q43 o gabarito é a alternativa absoluta ('não tem o desempenho otimizado para nenhum usuário') e em transp15-q52 é 'apenas pela Autoridade Certificadora Raiz'. Absoluto é ordem de conferir primeiro, não licença para descartar; só elimine quando souber que a afirmação é falsa no mérito.",
+      "evidence": [
+        "transp23e6-q66",
+        "transp23e6-q57",
+        "transp23e6-q58",
+        "prova6-q12",
+        "transp15-q14",
+        "prova6-q18",
+        "psjpn2018-q20",
+        "prova07-q21",
+        "psjpn2018-q43",
+        "transp15-q52"
+      ]
+    },
+    {
+      "title": "Asserção-razão com PORQUE: duas frases verdadeiras que não se justificam",
+      "body": "Formato concentrado nas provas de 2010 e 2011, e sempre com as mesmas cinco alternativas. O erro típico do candidato é parar na primeira metade: julga as duas frases verdadeiras e marca 'as duas são verdadeiras e a segunda justifica a primeira' sem testar o nexo. São 8 ocorrências no banco e os quatro gabaritos possíveis aparecem: 3 são 'verdadeiras, mas a segunda NÃO justifica' (definição de SI e definição de TI são independentes; criptografia protege confidencialidade, integridade e autenticidade, e a frase sobre chave pública cobre só uma dessas três), 2 são 'a segunda justifica' (prova6-q24, em gestão de projetos, e prova6-q10, em Português), 2 têm a primeira frase falsa e 1 tem as duas falsas. Não existe chute padrão neste formato: 'não justifica' é a resposta mais frequente, não a provável. Defesa: julgue V/F cada frase isoladamente e só então pergunte 'a segunda é a CAUSA da primeira?'. Se a segunda é um caso particular, ou fala de outro objeto, não justifica.",
+      "evidence": [
+        "prova07-q65",
+        "prova07-q68",
+        "prova6-q61",
+        "prova6-q47",
+        "prova07-q55",
+        "prova6-q24",
+        "prova6-q10"
+      ]
+    },
+    {
+      "title": "Lista de itens I-II-III(-IV): julgue cada item antes de olhar as combinações",
+      "body": "O formato atravessa áreas técnicas e Português, com três ou quatro itens. Há dois desenhos e é preciso saber os dois. (1) Armadilha de detalhe: um ou dois itens invertem um detalhe local e o resto é a teoria bem escrita — \"superchave mínima tem uma única coluna\" (prova07-q3, gabarito \"I e III\"), o papel de uma palavra no trecho citado (prova6-q9), o método de estimativa atribuído à fase errada (prova07-q17, gabarito \"III e IV\"). (2) Todas corretas: o gabarito é \"I, II, III e IV\" e a armadilha é o candidato duvidar de um item que estava certo (prova07-q66 e prova07-q70, as duas de ERP/sistemas de informação, as duas com gabarito \"todas\"). Defesa que serve aos dois desenhos: julgue cada item por escrito, com V ou F, ANTES de olhar as combinações de alternativas — ver \"apenas I\" na lista faz duvidar do item II que você já tinha aprovado. E desconfie do item que fala de exclusividade, minimalidade ou quantidade: é onde a inversão mora quando ela existe.",
+      "evidence": [
+        "prova07-q3",
+        "prova07-q66",
+        "prova07-q70",
+        "prova6-q9",
+        "prova07-q17"
+      ]
+    },
+    {
+      "title": "Enunciado-cenário longo cuja resposta é o nome canônico de um processo ou ferramenta",
+      "body": "Meia página de narrativa — um diálogo entre diretor e desenvolvedor, uma dinâmica de rodadas cronometradas de ideias, a empresa reagindo a um concorrente mais barato, aplicações que passam a ser vendidas por assinatura — e a resposta depende de uma única frase-chave. O resto do texto é ambientação e distração. Defesa: leia o COMANDO primeiro (última linha do enunciado), volte ao texto caçando a frase que carrega a característica pedida — em psjpn2018-q51, a fala sobre acrescentar novas funcionalidades à medida que fossem sendo construídas; em transp15-q56, a menção a serviços prestados online, sob demanda e mediante assinatura — e ignore o resto. Cenário longo não significa questão difícil: significa uma palavra escondida.",
+      "evidence": [
+        "psjpn2018-q51",
+        "transp23e6-q31",
+        "transp15-q62",
+        "psjpn2018-q25",
+        "transp23e6-q30",
+        "transp15-q56"
+      ]
+    },
+    {
+      "title": "A prova cita a versão antiga do framework ou da norma",
+      "body": "O histórico cobra edições que já não são as do edital: 'Segundo o PMBOK 4ª Edição' com todas as letras, entradas/saídas/ferramentas de processos nomeados, e a NBR ISO 27002 citada no enunciado em 6 de 6 questões de 2010/2011 (com cobrança literal de seções e controles). O edital atual pede PMBOK 7ª edição, e a 7ª é por princípios e domínios de desempenho, não pela máquina de processos das edições anteriores (49 processos na 6ª, 42 na 4ª que as provas antigas citam). Consequência prática: estude a 7ª como base conceitual, mas mantenha a máquina de grupos de processos e áreas de conhecimento na memória, porque é dela que sai a maior parte das questões antigas — e o Anexo IV ainda lista 'processos, grupos de processos e áreas de conhecimento' explicitamente. Se o enunciado nomear a edição, responda pela edição nomeada, não pela mais nova.",
+      "evidence": [
+        "prova6-q22",
+        "prova6-q26",
+        "prova07-q26",
+        "prova6-q64",
+        "transp15-q46"
+      ]
+    },
+    {
+      "title": "Cálculo é bloco pequeno, isolado e de retorno alto",
+      "body": "Conta pura aparece pouco e concentrada: caminho crítico/folga em tabela de atividades, valor agregado, pontos de função, razão simples em gestão de projetos; divisão relacional sobre instâncias pequenas e contagem de medidas não aditivas do lado dos dados. As provas de 2011 e 2023 não trouxeram nenhuma questão de conta em gestão de projetos. Leitura tática: são poucas questões, o procedimento é fechado e decorável, e o erro quase nunca é conceitual — é aritmético ou de leitura de tabela. Vale treinar até virar receita, mas não vale planejar a área em cima delas.",
+      "evidence": [
+        "psjpn2018-q21",
+        "psjpn2018-q22",
+        "transp15-q30",
+        "transp15-q64",
+        "prova07-q14",
+        "prova07-q1",
+        "prova6-q46"
+      ]
+    },
+    {
+      "title": "2023 encurtou o enunciado e virou 'definição direta'",
+      "body": "Comparando as provas: 2010/2011 usam asserção-razão, listas I-II-III, associação de colunas e cálculo; 2023 quase abandona esses formatos e passa a pedir, em dois ou três períodos, o nome canônico de um conceito — walkthrough, requisito funcional, teste de aceitação, sobrecarga, envelope digital, ABAC, SIEM, contrapositiva. E espalha: as 8 questões de segurança de 2023 cobriram sete subtópicos diferentes, contra 6 de 6 em norma nas provas antigas. Aposta razoável para 2026: cobertura larga com profundidade média, e o retorno vem de saber MUITOS conceitos pela definição exata, não de dominar poucos a fundo. Isso muda o estudo: prefira varrer o Anexo IV inteiro com definições precisas a esgotar um subtópico.",
+      "evidence": [
+        "transp23e6-q23",
+        "transp23e6-q25",
+        "transp23e6-q32",
+        "transp23e6-q39",
+        "transp23e6-q42",
+        "transp23e6-q44",
+        "transp23e6-q61",
+        "transp23e6-q35",
+        "transp23e6-q41"
+      ]
+    }
+  ],
+  "examDay": [
+    {
+      "title": "Ordem de ataque: Inglês, Português, técnicas conhecidas, técnicas caras",
+      "body": "Comece pelo bloco de Inglês. São 10 questões cuja resolução depende de leitura com o dedo no texto e de um filtro quase mecânico (absolutos, referência, conectivo), e é o bloco que mais sofre com pressa e cansaço — fazê-lo no início compra rendimento. Depois Português, também 10 e com checklist fixo por assunto. Só então as 50 de Conhecimentos Específicos, e dentro delas primeiro as áreas em que você chega firme, deixando para o fim as que exigem construção (SQL com cinco variantes, caminho crítico, divisão relacional, problema de associação com pistas). Motivo: 20 das 70 questões estão nos Conhecimentos Gerais — pelo proxy histórico, peso comparável ao de arquitetura de dados somada a gestão de projetos — não são um apêndice."
+    },
+    {
+      "title": "Orçamento de tempo por questão: pense em proporção, e faça três passadas",
+      "body": "A duração oficial da prova não está nas fontes deste repositório — não trabalhe com um número de minutos inventado; no dia, divida o tempo impresso no caderno por 70 e use isso como unidade. Regra de proporção: uma questão de definição direta deve custar menos de meia unidade, e é essa sobra que financia as de cálculo e de SQL, que custam duas ou três. Faça três passadas: (1) resolva tudo o que sai em menos de uma unidade e marque no caderno; (2) volte nas caras, com o tempo já medido; (3) reserve o equivalente a cinco unidades no fim para transcrever o gabarito e revisar as questões negativas. Nunca deixe a transcrição para os últimos minutos."
+    },
+    {
+      "title": "Questão de cálculo: leia a tabela duas vezes, resolva no rascunho, confira a unidade",
+      "body": "Nas questões de conta o erro raramente é de conceito. Antes de calcular, transcreva os dados para o rascunho na sua própria organização (atividades e predecessores, valores de VP/VA/CR, contagem de funções) — copiar já detecta a linha lida errada. Resolva inteiro no rascunho e só então procure o valor entre as alternativas; se o seu resultado não aparece, não force o mais próximo: releia o que foi pedido (folga total x livre, IDP x IDC, prazo x custo). E confira a unidade e o sinal antes de marcar. Se o cálculo passar de duas unidades de tempo, abandone com marca e volte na segunda passada."
+    },
+    {
+      "title": "Quando chutar e quando pular",
+      "body": "Não há penalidade por erro em prova objetiva de múltipla escolha, então nenhuma questão fica em branco no gabarito — o chute é obrigatório no fim. O que se decide durante a prova é onde investir. Pule (com marca visível) quando: você não reconhece nenhum dos cinco termos; o enunciado tem tabela ou diagrama que exige reconstrução; ou você já eliminou duas alternativas e travou. Chute na hora, sem voltar, quando não há eliminação possível — releitura não cria conhecimento e consome a unidade de outra questão. Chute informado: prefira a alternativa abrangente à restritiva, descarte a que contém absoluto, e em questão negativa prefira a que soa 'quase certa mas exagerada'."
+    },
+    {
+      "title": "Régua dos absolutos em inglês, com a exceção do 'only Text I/II'",
+      "body": "No bloco de inglês, sublinhe o hedging do texto (may, might, could, suggests, is likely to, is projected to) e os absolutos das alternativas (certainly, definitely, surely, absolutely, inevitable, undeniable, all, only). No banco de questões, nenhuma alternativa correta carrega absoluto e o texto com hedging nunca sustentou uma alternativa dura — é o desempate mais confiável do bloco. A exceção que precisa estar decorada: nas questões 'Comparing Texts I and II', as cinco alternativas são estrutura fixa — 'only Text I...', 'only Text II...', 'neither Text I nor Text II...', 'both Text I and Text II...' e uma mista — e ali 'only' pode ser o gabarito. Nessas, o trabalho é verificação dupla: 'only' exige confirmar no texto citado E desconfirmar no outro. Mesma ressalva para 'the whole world', que é expressão neutra."
+    },
+    {
+      "title": "Antes de marcar: releia o comando e cace o NÃO",
+      "body": "Duas conferências de cinco segundos que salvam questões já resolvidas. (1) Releia a última linha do enunciado: a alternativa que você escolheu responde exatamente àquilo, ou é a definição perfeita de um conceito vizinho? (2) Confirme se o comando tem NÃO, EXCEPT, 'incorreta' ou 'única que não' — se tiver, sua marcação precisa ser a alternativa FALSA. Em questões de dois itens ('mean, respectively', duas expressões, dois pares), valide as duas metades separadamente: a banca monta distrator que acerta a primeira e erra a segunda."
+    }
+  ],
+  "blocks": [
+    {
+      "n": 1,
+      "label": "Bloco 1 — Dados: modelagem, SQL e o eixo dimensional",
+      "weeks": "semanas 1-2 (22/08 a 04/09)",
+      "focus": [
+        "arq-dados",
+        "analise-dados"
+      ],
+      "goal": "Fechar o eixo de dados do banco (39 questões entre as duas áreas) com modelagem dimensional, normalização e SQL na ponta da língua.",
+      "checklist": [
+        "Fechar os 36 cards de arq-dados e os 38 de analise-dados com 2 rodadas de acerto em dias diferentes",
+        "Refazer as 6 questões de modelagem dimensional (psjpn2018-q43, psjpn2018-q44, prova07-q42, prova07-q44, prova07-q46, prova07-q48) sem olhar a explicação",
+        "Escrever de memória as três primeiras formas normais com um exemplo próprio de violação de cada, e resolver psjpn2018-q58 e transp15-q42 pelo método da chave",
+        "Reescrever as 3 questões de SQL (psjpn2018-q56, transp15-q38, transp23e6-q49) explicando por que cada uma das 4 alternativas erradas está errada",
+        "Montar a tabela de pares vizinhos da área (relacional x documento x grafo x multidimensional, estrela x floco, top-down x bottom-up, ROLAP x MOLAP x HOLAP) e recitá-la sem consultar",
+        "Rodar um mini-simulado só com as 39 questões das duas áreas e sair dele com acerto >= 80%"
+      ]
+    },
+    {
+      "n": 2,
+      "label": "Bloco 2 — Projetos, produto e usuário",
+      "weeks": "semanas 3-5 (05/09 a 25/09)",
+      "focus": [
+        "gestao-proj",
+        "ux"
+      ],
+      "goal": "Dominar a máquina de processos do PMBOK e o vocabulário ágil/UX, que juntos são a maior fatia histórica (44 questões).",
+      "checklist": [
+        "Fechar os 36 cards de gestao-proj e os 38 de ux com 2 rodadas de acerto",
+        "Desenhar de memória a matriz grupos de processos x áreas de conhecimento e marcar onde a 7ª edição trocou processos por princípios e domínios de desempenho",
+        "Resolver as 5 questões de cálculo (psjpn2018-q21, psjpn2018-q22, transp15-q30, transp15-q64, prova07-q14) duas vezes, cronometrando, até o procedimento virar receita",
+        "Reconstruir a tabela de influência organizacional (funcional, matricial fraca/balanceada/forte, projetizada) célula por célula e conferir contra prova6-q29 e transp23e6-q69",
+        "Escrever a diferença canônica Scrum x Kanban em uma frase e checar contra transp23e6-q65 e transp15-q28",
+        "Listar em uma folha as ferramentas de design thinking com uma linha de descrição cada (brainwriting, personas, jornada, MVP, protótipo) e acertar transp23e6-q30 e transp23e6-q34 de cabeça"
+      ]
+    },
+    {
+      "n": 3,
+      "label": "Bloco 3 — Engenharia de software e governança de TI",
+      "weeks": "semanas 6-7 (26/09 a 09/10)",
+      "focus": [
+        "eng-sw",
+        "gestao-ti"
+      ],
+      "goal": "Fixar V&V, ciclos de vida e o núcleo de sistemas de informação/LGPD, com atenção aos pares vizinhos que a banca inverte.",
+      "checklist": [
+        "Fechar os 38 cards de eng-sw e os 42 de gestao-ti com 2 rodadas de acerto",
+        "Refazer as 8 questões de teste e V&V (psjpn2018-q45, prova07-q16, prova07-q18, prova07-q56, transp15-q24, transp15-q25, transp23e6-q23, transp23e6-q31) e classificar cada uma no seu recorte (definição, atividade, técnica, nível, revisão)",
+        "Escrever verificação x validação, caixa-branca x caixa-preta, teste de aceitação x de sistema e SAST x DAST em uma linha cada, sem consultar",
+        "Fazer uma tabela de ciclos de vida (cascata, incremental, espiral, prototipação, Processo Unificado, ágil) com a característica que só ele tem, e checar contra prova07-q51 e prova07-q53",
+        "Listar as bases legais e os direitos do titular da LGPD e escrever 5 questões próprias sobre elas (o subtópico está no edital e tem só 1 questão histórica)",
+        "Refazer as três asserção-razão do bloco (prova07-q65 e prova07-q68 em governança, prova07-q55 em engenharia de software) explicando por escrito por que o nexo falha"
+      ]
+    },
+    {
+      "n": 4,
+      "label": "Bloco 4 — Segurança da informação e lógica",
+      "weeks": "semanas 8-9 (10/10 a 23/10)",
+      "focus": [
+        "seg-info",
+        "logica"
+      ],
+      "goal": "Cobrir o Anexo IV de segurança em largura (é o subtópico mais espalhado da prova de 2023) e transformar lógica em pontos garantidos.",
+      "checklist": [
+        "Fechar os 36 cards de seg-info e os 26 de logica (10 antigos + 16 novos) com 2 rodadas de acerto",
+        "Montar o glossário de siglas do item 9.2 e 9.5 (firewall, proxy, IPS/IDS, DLP, CASB, SIEM, antivírus, EDR, WAF, SAST/DAST/IAST) com uma frase de função cada, e acertar transp23e6-q43, transp15-q47 e transp23e6-q38 sem consultar",
+        "Escrever de memória, com a forma simbólica ao lado, as 14 regras e equivalências (Modus Ponens, Modus Tollens, silogismo hipotético e disjuntivo, dilema construtivo e destrutivo, simplificação, adição, conjunção, absorção, De Morgan, contraposição, exportação, distributivas) e as duas falácias formais",
+        "Refazer as 7 questões de logica (prova6-q65, psjpn2018-q67, psjpn2018-q68, psjpn2018-q69, psjpn2018-q70, transp23e6-q35, transp23e6-q37) resolvendo cada uma pelo método mais curto possível, e justificando por que escolheu tabela, linha única ou equivalência",
+        "Construir e conferir por tabela-verdade uma tautologia, uma contradição e uma contingência próprias, e converter uma fórmula com → e ↔ para FND e para FNC",
+        "Fazer o pareamento ataque/controle x pilar (confidencialidade, integridade, disponibilidade) para 10 itens do Anexo IV e checar contra psjpn2018-q64 e prova07-q27"
+      ]
+    },
+    {
+      "n": 5,
+      "label": "Bloco 5 — Conhecimentos Gerais: Português e Inglês",
+      "weeks": "semanas 10-12 (24/10 a 13/11)",
+      "focus": [
+        "portugues",
+        "ingles"
+      ],
+      "goal": "Converter 20 das 70 questões — quase 29% da prova — em bloco de alto acerto, tratando os dois idiomas como técnica de leitura e checklist, não como cultura geral. São 3 semanas para 20 questões que o edital garante: 0,15 semana por questão, praticamente o mesmo que os blocos 1 e 3 (0,16), e sem a incerteza das fatias técnicas, que são todas projeção.",
+      "checklist": [
+        "Fechar os 27 cards de portugues e os 25 de ingles com 2 rodadas de acerto",
+        "Refazer as 40 questões de portugues do banco separando-as por formato (espelho no texto, cinco frases novas, conectivo substituto, antecedente, interpretação) e anotando o checklist que resolve cada formato",
+        "Rodar as 7 questões de 'cinco frases novas' (psjpn2018-q4, psjpn2018-q5, psjpn2018-q8, psjpn2018-q9, transp15-q8, transp15-q9, transp15-q10) aplicando o checklist do assunto anunciado, sem leitura intuitiva",
+        "Treinar 4 textos de inglês completos com skimming cronometrado de 3 minutos antes de olhar as questões, e conferir se o skimming já entregou a questão global",
+        "Passar as 40 questões de ingles pela régua dos absolutos e conferir a exceção 'only Text I/II' nas duas questões comparativas (prova6-q18, psjpn2018-q20)",
+        "Montar listas de vocabulário por campo semântico do setor (exploração, mercado, transição energética, dados/TI, verbos de tendência), sempre em frase, e revisá-las 3 vezes no bloco"
+      ]
+    },
+    {
+      "n": 6,
+      "label": "Bloco 6 — Revisão geral e simulados cronometrados",
+      "weeks": "semanas 13-14 + véspera (14/11 a 29/11)",
+      "focus": [
+        "arq-dados",
+        "gestao-proj",
+        "gestao-ti",
+        "eng-sw",
+        "ux",
+        "analise-dados",
+        "logica",
+        "seg-info",
+        "portugues",
+        "ingles"
+      ],
+      "goal": "Sair da fase de aprender e entrar na de executar: dois simulados completos cronometrados, com revisão dirigida só ao que errou.",
+      "checklist": [
+        "Fazer 2 simulados completos de 70 questões, cronometrados de ponta a ponta e na ordem de ataque planejada (inglês, português, técnicas), com pelo menos 4 dias entre eles",
+        "Depois de cada simulado, classificar TODO erro em uma de três causas — não sabia, sabia e li errado, sabia e errei a conta — e tratar cada causa de um jeito diferente",
+        "Reler os crossPatterns deste plano e, para cada um, apontar uma questão do simulado em que ele apareceu (se um padrão não apareceu, dizer isso por escrito)",
+        "Rodar o deck completo (367 cards, já com os 16 de lógica e os 34 do ciclo 6) em modo intercalado, retirando só os cards com 3 acertos consecutivos",
+        "Refazer, sem consultar, todas as questões erradas nos dois simulados, e considerar o bloco fechado quando o refazimento tiver acerto >= 90%",
+        "Na última semana, nada de conteúdo novo: só cards, questões erradas e a folha de fórmulas/siglas; dormir cedo nas duas noites anteriores à prova"
+      ]
+    }
+  ]
+}

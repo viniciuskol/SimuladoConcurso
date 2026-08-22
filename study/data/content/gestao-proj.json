@@ -146,8 +146,8 @@
       ]
     },
     {
-      "title": "Bloco de cálculo garantido: caminho crítico, valor agregado, pontos de função e razão simples",
-      "howToSpot": "As provas de 2010 e 2018 traziam uma ou duas questões de conta pura; as de 2011 e 2023 não trouxeram nenhuma. É um bloco pequeno, barato de decorar e de retorno garantido quando aparece — mas não conte com ele para fechar a área. Os formatos vistos: tabela de atividades com predecessores para achar caminho crítico (e o efeito de atrasos com folga), VP/VA/CR para calcular variação de custo, tabela IFPUG baixo/médio/alto para pontos de função não ajustados, e razão de horas realizadas sobre planejadas. São pontos altamente previsíveis — vale decorar os pesos do IFPUG e as quatro fórmulas do EVM antes da prova.",
+      "title": "Bloco de cálculo: pequeno, decorável e intermitente — não garantido",
+      "howToSpot": "As provas de 2010 e 2018 traziam uma ou duas questões de conta pura; as de 2011 e 2023 não trouxeram nenhuma. É um bloco pequeno, barato de decorar e de retorno garantido quando aparece — mas não conte com ele para fechar a área. Os formatos vistos: tabela de atividades com predecessores para achar caminho crítico (e o efeito de atrasos com folga), VP/VA/CR para calcular variação de custo, tabela IFPUG baixo/médio/alto para pontos de função não ajustados, e razão de horas realizadas sobre planejadas. São procedimentos fechados e baratos de decorar (os pesos do IFPUG e as quatro fórmulas do EVM cabem em meia folha de rascunho), mas duas das cinco provas do banco não trouxeram nenhuma questão de conta nesta área — inclusive a de 2023, a mais recente. Trate como bônus a treinar até virar receita, não como base do planejamento da área.",
       "evidence": [
         "psjpn2018-q21",
         "psjpn2018-q22",
@@ -206,6 +206,37 @@
       "evidence": [
         "prova07-q20",
         "prova07-q21"
+      ]
+    },
+    {
+      "title": "Asserção-razão apareceu na área uma vez — e com o nexo VÁLIDO",
+      "howToSpot": "Só prova6-q24 usa o formato nesta área, com as cinco alternativas fixas. Julgue cada frase isoladamente e só depois teste o nexo. Atenção: aqui o gabarito foi “as duas são verdadeiras e a segunda justifica a primeira” (letra A) — o plano de gerenciamento é elaborado progressivamente E o Controle Integrado de Mudanças é justamente o mecanismo que incorpora as atualizações aprovadas, logo é causa. Não entre no formato com a regra “quase sempre não justifica”: no banco inteiro são 8 ocorrências e “não justifica” é só 3 delas; em gestão de projetos o nexo existia.",
+      "evidence": [
+        "prova6-q24"
+      ]
+    },
+    {
+      "title": "Lista I-II-III é o formato mais comum da área — e um dos gabaritos é “todas”",
+      "howToSpot": "Quatro questões usam o desenho, sempre com as mesmas cinco combinações (“I, apenas / III, apenas / I e II / II e III / I, II e III”). Duas variantes: (1) TODAS CORRETAS — prova6-q26 (cadeia crítica, cenário e-se e nivelamento de recursos são TODAS técnicas de Análise da Rede do Cronograma, gabarito “I, II e III”); (2) ITENS DESLOCADOS para o processo errado — prova6-q28 põe Análise da Variação (que é de controle) e Decomposição (que é de Criar a EAP) entre técnicas de Coletar os Requisitos, gabarito “III e IV”; prova07-q17 inverte um detalhe da contagem por LOC e embaralha as categorias de pontos de função, gabarito “III e IV”; prova6-q27 tira o “registro da situação da configuração final” das saídas de Encerrar o Projeto, gabarito “I e II”. Defesa que serve às duas: escreva V ou F ao lado de cada item ANTES de olhar as combinações — ver “apenas I” na lista faz duvidar do item que você já tinha aprovado — e desconfie do item que fala de quantidade, exclusividade ou fase. Variante irmã em prova07-q14: os itens I-II-III são três PERGUNTAS e cada alternativa traz as três respostas de uma vez, então uma resposta parcial já elimina a alternativa inteira.",
+      "evidence": [
+        "prova6-q26",
+        "prova6-q27",
+        "prova6-q28",
+        "prova07-q17",
+        "prova07-q14"
+      ]
+    },
+    {
+      "title": "2023 abandonou a máquina de ITTOs e passou a pedir definição em uma frase",
+      "howToSpot": "Nenhuma das 7 questões de 2023 pede entrada, saída ou ferramenta de processo: pedem o que é o modelo em cascata, a sequência dos grupos de processos, a diferença Scrum x Kanban, o que é a EAP, o que é Program Increment no SAFe, qual estrutura dá alto grau de influência ao gerente de projeto e qual grupo monitora e controla. Nenhuma tem cálculo, lista I-II-III ou asserção-razão — formatos que dominam as 14 questões de 2010/2011. Duas consequências: (a) SAFe, PMO, produto x projeto e os 12 princípios/8 domínios da 7ª edição são candidatos de estreia no MESMO formato, uma frase de definição cada; (b) os ITTOs continuam valendo, mas para as questões antigas — não organize o estudo da área só em cima deles.",
+      "evidence": [
+        "transp23e6-q54",
+        "transp23e6-q55",
+        "transp23e6-q65",
+        "transp23e6-q67",
+        "transp23e6-q68",
+        "transp23e6-q69",
+        "transp23e6-q70"
       ]
     }
   ],
@@ -310,6 +341,64 @@
       "term": "modelo em cascata",
       "confusedWith": "modelo iterativo/ágil",
       "distinction": "Cascata é sequencial e linear: cada fase depende da conclusão da anterior e os requisitos são fechados no início. Iterativo/ágil aceita mudança de requisitos e entrega incrementos em ciclos curtos."
+    }
+  ],
+  "resources": [
+    {
+      "title": "O Guia do Scrum (2020) — versão em português do Brasil",
+      "publisher": "Ken Schwaber e Jeff Sutherland / scrumguides.org",
+      "url": "https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-PortugueseBR-3.0.pdf",
+      "kind": "norma",
+      "free": true,
+      "why": "Fonte primária do Scrum para o 2.1 — papéis, eventos e artefatos exatamente como a banca cobra; tradução oficial em português."
+    },
+    {
+      "title": "The Kanban Guide / Open Guide to Kanban",
+      "publisher": "Kanban Guides",
+      "url": "https://kanbanguides.org/",
+      "kind": "norma",
+      "free": true,
+      "why": "Definição aberta de Kanban (WIP, fluxo, métricas) para a metade Kanban do 2.1; em inglês, é o guia de referência."
+    },
+    {
+      "title": "SAFe — Scaled Agile Framework",
+      "publisher": "Scaled Agile, Inc.",
+      "url": "https://framework.scaledagile.com/",
+      "kind": "guia",
+      "free": true,
+      "why": "Site oficial do framework para 2.3 (ágil em escala): níveis, ARTs, PI Planning; conteúdo em inglês."
+    },
+    {
+      "title": "Product vs Feature Teams",
+      "publisher": "Silicon Valley Product Group (Marty Cagan)",
+      "url": "https://www.svpg.com/product-vs-feature-teams/",
+      "kind": "artigo",
+      "free": true,
+      "why": "Artigo de referência para 2.2 (gestão de produto vs. gestão de projeto) e para o papel do PO; em inglês."
+    },
+    {
+      "title": "User Stories: What They Are, How to Write Them, and Examples",
+      "publisher": "Mountain Goat Software (Mike Cohn)",
+      "url": "https://www.mountaingoatsoftware.com/agile/user-stories",
+      "kind": "artigo",
+      "free": true,
+      "why": "Histórias de usuário, INVEST e critérios de aceite — apoio ao backlog do 2.1; em inglês, do autor que consolidou a técnica."
+    },
+    {
+      "title": "Gerenciamento de Projetos na Prática (curso aberto)",
+      "publisher": "ENAP / Escola Virtual de Governo",
+      "url": "https://www.escolavirtual.gov.br/curso/680",
+      "kind": "curso",
+      "free": true,
+      "why": "Alternativa gratuita ao PMBOK (pago) para 2.4 e para o item 3 — grupos de processos de iniciação, planejamento, execução e controle, em português."
+    },
+    {
+      "title": "Gestão de projetos (curso aberto)",
+      "publisher": "Câmara dos Deputados / ENAP — Escola Virtual de Governo",
+      "url": "https://www.escolavirtual.gov.br/curso/787",
+      "kind": "curso",
+      "free": true,
+      "why": "Influência da estrutura organizacional e ciclo de vida do projeto — cobre 2.5 (projetos e a organização), em português."
     }
   ]
 }

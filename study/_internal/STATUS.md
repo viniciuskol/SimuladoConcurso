@@ -1,5 +1,11 @@
 # STATUS — checkpoint
 
+> **Duas trilhas, dois status.** Este arquivo é o do fluxo de **extração/simulado**.
+> O status da trilha de **estudo** (conteúdo por área, flashcards, plano, estudo.html)
+> está em `study/_internal/STATUS-ESTUDO.md`. Não misturar os dois: eles avançam em
+> ritmos diferentes e o conflito de merge deste arquivo veio justamente de sobrepor um ao outro.
+
+
 **Quando:** 2026-08-22, madrugada. **Limite SEMANAL de uso de IA atingido** (não é só o limite de 5h/sessão) — reseta às 04:00 BRT (America/Sao_Paulo). Isso é mais restritivo que os checkpoints anteriores: nada de subagentes/loop até o reset.
 
 ## Onde parou — foco atual: passages (textos-base) no simulado

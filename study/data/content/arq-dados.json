@@ -183,7 +183,7 @@
     },
     {
       "title": "'Superchave mínima tem uma única coluna' é distrator reincidente",
-      "howToSpot": "Aparece tanto em item de assertiva (I, II, III) quanto em alternativa direta. Toda vez que uma opção ligar minimalidade a coluna única, ela é falsa: chave candidata composta continua sendo superchave mínima. No mesmo pacote costuma vir a falsa afirmação de que NULL é proibido em coluna com integridade referencial — também falsa, pois NULL em FK é permitido sem NOT NULL explícito.",
+      "howToSpot": "Aparece tanto em item de assertiva (I, II, III) quanto em alternativa direta. Toda vez que uma opção ligar minimalidade a coluna única, ela é falsa: chave candidata composta continua sendo superchave mínima. No mesmo pacote costuma vir a falsa afirmação de que NULL é proibido em coluna com integridade referencial — também falsa, pois NULL em FK é permitido sem NOT NULL explícito. É também o único item I-II-III-IV da área (prova07-q3) e o gabarito é PARCIAL — “I e III”, nunca “todas”: o desenho “todas corretas” do banco só ocorre em gestão e governança de TI e em gestão de projetos.",
       "evidence": [
         "prova6-q57",
         "prova07-q3"
@@ -225,7 +225,7 @@
     },
     {
       "title": "Cheque prioritariamente palavras absolutas",
-      "body": "Nas alternativas longas de DW, big data e NoSQL, a chave costuma ser um absoluto plantado: 'apenas', 'somente', 'sempre', 'única forma', 'todas as comunidades de usuários', 'opcional'. Data lake 'apenas para não estruturado', ETL considerando 'somente OLTP', dimensão tempo 'opcional', execução serial como 'única forma' de garantir correção — todas falsas por causa do absoluto."
+      "body": "Nas alternativas longas de DW, big data e NoSQL, a chave costuma ser um absoluto plantado: 'apenas', 'somente', 'sempre', 'única forma', 'todas as comunidades de usuários', 'opcional'. Data lake 'apenas para não estruturado', ETL considerando 'somente OLTP', dimensão tempo 'opcional', execução serial como 'única forma' de garantir correção — todas falsas por causa do absoluto. Exceção que a torna segura: absoluto é sinal para VERIFICAR, não para descartar. Em psjpn2018-q43 o gabarito é justamente a alternativa absoluta (“o modelo relacional é altamente flexível, mas não tem o desempenho otimizado para nenhum usuário”) — enquanto o distrator B da mesma questão usa “todas as comunidades de usuários”. As duas são absolutas; o que decide é o conteúdo. Use o absoluto para escolher por onde começar a conferir, e só elimine quando souber que a afirmação é falsa no mérito."
     },
     {
       "title": "Reserve tempo para as questões de cálculo, mas não comece por elas",
@@ -311,6 +311,64 @@
       "term": "banco orientado a documentos",
       "confusedWith": "banco orientado a grafos",
       "distinction": "Documento: JSON/BSON, semiestruturado, esquema flexível. Grafo: vértices e arestas, otimizado para travessia de relacionamentos (Cypher, MATCH ... RETURN)."
+    }
+  ],
+  "resources": [
+    {
+      "title": "PostgreSQL — Documentation, Chapter 2: The SQL Language",
+      "publisher": "PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/tutorial-sql.html",
+      "kind": "guia",
+      "free": true,
+      "why": "SQL, DDL e DML (1.10 a 1.12) direto na documentação de um SGBD relacional de referência; só existe em inglês."
+    },
+    {
+      "title": "PostgreSQL — Documentation, Chapter 13: Concurrency Control",
+      "publisher": "PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/mvcc.html",
+      "kind": "guia",
+      "free": true,
+      "why": "Transações, níveis de isolamento, ACID e bloqueios (1.14 e 1.16); em inglês, é a fonte canônica do produto."
+    },
+    {
+      "title": "Dimensional Modeling Techniques",
+      "publisher": "Kimball Group",
+      "url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/",
+      "kind": "guia",
+      "free": true,
+      "why": "Material aberto do próprio Kimball sobre fato, dimensão, star schema e SCD — base do 1.7 (modelagem dimensional); em inglês."
+    },
+    {
+      "title": "What Is NoSQL? NoSQL Databases Explained",
+      "publisher": "MongoDB",
+      "url": "https://www.mongodb.com/resources/basics/databases/nosql-explained",
+      "kind": "guia",
+      "free": true,
+      "why": "Tipos de NoSQL, agregados e trade-offs de consistência para 1.18 e 1.23 (comparação com o relacional)."
+    },
+    {
+      "title": "Graph database concepts",
+      "publisher": "Neo4j",
+      "url": "https://neo4j.com/docs/getting-started/appendix/graphdb-concepts/",
+      "kind": "guia",
+      "free": true,
+      "why": "Nós, relacionamentos e propriedades — o lado 'grafos' do 1.23, na documentação do fabricante."
+    },
+    {
+      "title": "O que é um data lake?",
+      "publisher": "Amazon Web Services",
+      "url": "https://aws.amazon.com/pt/what-is/data-lake/",
+      "kind": "guia",
+      "free": true,
+      "why": "Data lake vs. data warehouse e arquitetura de Big Data (1.22), em português."
+    },
+    {
+      "title": "DAMA-DMBOK — Data Management Body of Knowledge",
+      "publisher": "DAMA International",
+      "url": "https://dama.org/learning-resources/dama-data-management-body-of-knowledge-dmbok/",
+      "kind": "livro",
+      "free": false,
+      "why": "Referência canônica (paga) de metadados, qualidade de dados e dados mestres — 1.6 e 1.21; a página em si explica o escopo de cada área de conhecimento."
     }
   ]
 }

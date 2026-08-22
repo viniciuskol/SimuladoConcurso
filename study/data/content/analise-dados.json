@@ -275,5 +275,55 @@
       "confusedWith": "KPI",
       "distinction": "Indicador é a medida com significado e regra de cálculo. KPI é o indicador vinculado a um objetivo, com meta e responsável — 'chave' quer dizer que alguém decide algo com ele. Painel cheio de indicador sem meta não é painel de KPI."
     }
+  ],
+  "resources": [
+    {
+      "title": "Processamento analítico online (OLAP)",
+      "publisher": "Microsoft Learn — Azure Architecture Center",
+      "url": "https://learn.microsoft.com/pt-br/azure/architecture/data-guide/relational-data/online-analytical-processing",
+      "kind": "guia",
+      "free": true,
+      "why": "Cubo, agregação e operações OLAP em português — 7.5 e apoio ao 7.7."
+    },
+    {
+      "title": "Kimball DW/BI Lifecycle Methodology",
+      "publisher": "Kimball Group",
+      "url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dw-bi-lifecycle-method/",
+      "kind": "guia",
+      "free": true,
+      "why": "Ciclo de vida de um projeto de DW/BI (requisitos, arquitetura, ETL, BI) — 7.2 e 7.6; em inglês, material aberto do Kimball Group."
+    },
+    {
+      "title": "O que é o Power BI?",
+      "publisher": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/pt-br/power-bi/fundamentals/power-bi-overview",
+      "kind": "guia",
+      "free": true,
+      "why": "Ferramenta de BI de ponta a ponta (dataset, relatório, dashboard, workspace) para 7.8 e 7.10, em português."
+    },
+    {
+      "title": "Funções do Excel (por categoria)",
+      "publisher": "Microsoft Support",
+      "url": "https://support.microsoft.com/pt-BR/Excel/excel-functions-by-category",
+      "kind": "guia",
+      "free": true,
+      "why": "Referência oficial das funções de planilha (PROCX, SOMASE, SE, ÍNDICE/CORRESP etc.) para o 7.9, em português."
+    },
+    {
+      "title": "Dados estruturados x dados não estruturados",
+      "publisher": "Amazon Web Services",
+      "url": "https://aws.amazon.com/pt/compare/the-difference-between-structured-data-and-unstructured-data/",
+      "kind": "artigo",
+      "free": true,
+      "why": "Diferença, exemplos e onde cada tipo é armazenado — 7.4 e apoio ao 7.3 (mapeamento de fontes), em português."
+    },
+    {
+      "title": "Introdução a dashboards para designers do Power BI",
+      "publisher": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/pt-br/power-bi/create-reports/service-dashboards",
+      "kind": "guia",
+      "free": true,
+      "why": "Diferença dashboard x relatório, blocos fixados e leitura para decisão — 7.8 e 7.10, em português."
+    }
   ]
 }

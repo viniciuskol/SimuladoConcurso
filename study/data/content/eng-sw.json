@@ -164,7 +164,7 @@
     },
     {
       "title": "Enunciado-caso: um diálogo ou uma narrativa longa que esconde uma única palavra-chave",
-      "howToSpot": "A Cesgranrio monta cenários de meia página (o diálogo do diretor com o desenvolvedor, os casos de uso do relatório anual, o software de mísseis, a versão a ser aprovada por representantes dos usuários) e a resposta depende de uma frase só. Em psjpn2018-q51 a chave é dupla: 'versões sucessivas e cada vez mais completas' aponta incremental, e a recusa do especialista em risco elimina espiral. Em psjpn2018-q46 a chave é 'fluxo de tarefas' entre dois papéis, que dá atividades. Em transp23e6-q31, 'representantes dos usuários finais' + 'antes de disponibilizar no mercado' dá aceitação. Tática: leia o cenário buscando o termo técnico disfarçado e ignore o resto do texto.",
+      "howToSpot": "A Cesgranrio monta cenários de meia página (o diálogo do diretor com o desenvolvedor, os casos de uso do relatório anual, o software de mísseis, a versão a ser aprovada por representantes dos usuários) e a resposta depende de uma frase só. Em psjpn2018-q51 a chave é dupla: 'versões sucessivas e cada vez mais completas' aponta incremental, e a recusa do especialista em risco elimina espiral. Em psjpn2018-q46 a chave é 'fluxo de tarefas' entre dois papéis, que dá atividades. Em transp23e6-q31, 'representantes dos usuários finais' + 'antes de disponibilizar no mercado' dá aceitação. Tática: leia o cenário buscando o termo técnico disfarçado — mas confira o SINAL de cada marcador antes de descartar o resto do texto, porque em psjpn2018-q51 a palavra “risco” está lá justamente para atrair quem decide por palavra isolada.",
       "evidence": [
         "psjpn2018-q51",
         "psjpn2018-q46",
@@ -222,7 +222,7 @@
   "tactics": [
     {
       "title": "Antes de escolher o modelo de processo, procure a palavra que elimina",
-      "body": "Nas questões de ciclo de vida, cada modelo tem um marcador exclusivo no enunciado. 'Risco' → espiral. 'Versões sucessivas cada vez mais completas', 'entregas parciais' → incremental. 'Cada fase concluída antes da próxima' → cascata (ou V, se houver nível de teste espelhado). 'Concepção, elaboração, construção, transição' → Processo Unificado. 'Protótipo descartado depois' → prototipação. 'Componentes prontos' → baseado em componentes. Ache o marcador e não leia o resto do diálogo."
+      "body": "Nas questões de ciclo de vida, cada modelo tem um marcador exclusivo no enunciado. “Risco” aponta espiral SE o enunciado disser que o risco é analisado a cada ciclo — e aponta o contrário se disser que o risco foi deliberadamente ignorado: em psjpn2018-q51 o usuário pede para “não contar nada para aquele especialista em risco” e o gabarito é incremental, com espiral de distrator. 'Versões sucessivas cada vez mais completas', 'entregas parciais' → incremental. 'Cada fase concluída antes da próxima' → cascata (ou V, se houver nível de teste espelhado). 'Concepção, elaboração, construção, transição' → Processo Unificado. 'Protótipo descartado depois' → prototipação. 'Componentes prontos' → baseado em componentes. Ache o marcador, mas leia a frase inteira em que ele aparece: o marcador só vale com o sinal certo. Nunca decida por palavra isolada em enunciado-diálogo."
     },
     {
       "title": "Em questão de UML, converta a pergunta em uma das cinco perguntas canônicas",
@@ -320,6 +320,56 @@
       "term": "integração contínua",
       "confusedWith": "entrega e implantação contínuas",
       "distinction": "Integração contínua = build e testes automáticos a cada integração no repositório. Entrega contínua = artefato sempre pronto, promoção decidida por pessoa. Implantação contínua = promoção automática até produção."
+    }
+  ],
+  "resources": [
+    {
+      "title": "Manifesto para Desenvolvimento Ágil de Software",
+      "publisher": "agilemanifesto.org",
+      "url": "https://agilemanifesto.org/iso/ptbr/manifesto.html",
+      "kind": "norma",
+      "free": true,
+      "why": "Fonte primária dos 4 valores e 12 princípios para o 5.2 (paradigmas de ciclo de vida), na tradução oficial em português."
+    },
+    {
+      "title": "SWEBOK — Software Engineering Body of Knowledge",
+      "publisher": "IEEE Computer Society",
+      "url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+      "kind": "guia",
+      "free": true,
+      "why": "Corpo de conhecimento que organiza requisitos, arquitetura, projeto, teste e manutenção (5.1 a 5.4); V4.0a, download gratuito por formulário, só em inglês."
+    },
+    {
+      "title": "Unified Modeling Language (UML) 2.5.1 — especificação",
+      "publisher": "Object Management Group (OMG)",
+      "url": "https://www.omg.org/spec/UML/",
+      "kind": "norma",
+      "free": true,
+      "why": "Fonte primária dos diagramas de classes, casos de uso, sequência e estados usados no 5.3 (análise e projeto OO); em inglês."
+    },
+    {
+      "title": "Material de Apoio ao Estudo — técnicas de teste (PDFs)",
+      "publisher": "BSTQB — Brazilian Software Testing Qualifications Board",
+      "url": "https://bstqb.qa/material-de-apoio-ao-estudo/",
+      "kind": "guia",
+      "free": true,
+      "why": "PDFs curtos do representante oficial do ISTQB no Brasil sobre valor limite, tabela de decisão, transição de estado, pirâmide e quadrantes de teste — 5.4, em português."
+    },
+    {
+      "title": "Pro Git (tradução parcial para português)",
+      "publisher": "git-scm.com / Apress (CC BY-NC-SA)",
+      "url": "https://git-scm.com/book/pt-br/v2",
+      "kind": "livro",
+      "free": true,
+      "why": "Controle de versão, branches e fluxo de trabalho — parte concreta do 5.5 (ambientes de desenvolvimento)."
+    },
+    {
+      "title": "Download Center — CPRE: syllabi e handbooks de Engenharia de Requisitos",
+      "publisher": "IREB — International Requirements Engineering Board",
+      "url": "https://ireb.org/en/downloads",
+      "kind": "guia",
+      "free": true,
+      "why": "Syllabus e materiais gratuitos de levantamento, análise e gerenciamento de requisitos (5.1), o subtópico que só tinha o SWEBOK; em inglês."
     }
   ]
 }

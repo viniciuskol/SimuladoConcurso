@@ -72,3 +72,55 @@ mas aí é resumo/cheatsheet, não `pattern`.
 
 Português do Brasil, tom direto de quem está ensinando alguém que vai fazer a prova.
 Densidade alta, zero enchimento. Pode usar tabelas em `resumo` quando comparar coisas.
+
+## Protocolo de relatório (obrigatório — economia de contexto do manager)
+
+O manager orquestra vários ciclos numa sessão e não pode carregar relatório
+longo no contexto. Portanto:
+
+**Agente VALIDADOR:**
+1. Escreva o relatório completo **direto no arquivo** `study/_internal/review-<ciclo>.md`
+   (você tem permissão de escrita só nesse arquivo). Numere os defeitos e inclua, para
+   cada um: caminho do campo, severidade, texto atual e **texto de correção pronto para
+   colar**. É esse arquivo que o dev vai ler — não o manager.
+2. **Responda ao manager em no máximo 12 linhas**, só com: veredito, contagem por
+   severidade, a lista dos ids dos defeitos com um rótulo de 5-8 palavras cada, e
+   qualquer coisa que exija decisão do manager. Nada de citar texto de correção na
+   resposta, nada de repetir a seção "o que passou limpo" — isso mora no arquivo.
+
+**Agente DEV:**
+1. Leia o relatório no arquivo. Não peça ao manager que cole o conteúdo.
+2. Aplique os fixes e **responda em no máximo 10 linhas**: itens aplicados por bloco,
+   o que mudou além do sugerido e por quê, contagens finais, e o que ficou pendente.
+   Não recite o texto que você colou.
+
+**Ambos:** se algo exigir decisão do manager, diga em uma linha o que é e quais são as
+duas opções — não escreva um ensaio de justificativa.
+
+## Campo `resources` (materiais didáticos por área)
+
+Cada `content/<area>.json` pode ter um array `resources` com material de apoio real:
+
+```json
+"resources": [
+  { "title": "Lei nº 13.709/2018 (LGPD) — texto compilado",
+    "publisher": "Planalto",
+    "url": "https://www.planalto.gov.br/...",
+    "kind": "norma",          // norma | guia | artigo | curso | livro | video | prova
+    "free": true,
+    "why": "1 linha: para que subtópico do Anexo IV isso serve" }
+]
+```
+
+**Regra inviolável: nenhuma URL entra sem verificação por requisição real.** Nada de
+URL "de memória". Para cada link: fazer a requisição, exigir HTTP 200 e conferir que o
+conteúdo é o que se diz que é (título/trecho). O que não resolver, ou resolver para
+página diferente, **não entra** — link quebrado num material de estudo é pior que
+ausência de link. Registrar o status verificado em `study/_internal/resources-check.md`.
+
+Preferências, nesta ordem: fonte **primária e oficial** (lei no Planalto, norma do
+órgão, especificação do W3C, guia do fabricante do framework) > publicação institucional
+gratuita > artigo de referência reconhecido. Material pago pode entrar, mas com
+`free: false` e sem prometer acesso gratuito. Evitar link profundo que apodrece; preferir
+a URL canônica estável. Nada de blog de conteúdo raso, agregador de apostila pirata ou
+PDF de terceiro que redistribui norma paga.
