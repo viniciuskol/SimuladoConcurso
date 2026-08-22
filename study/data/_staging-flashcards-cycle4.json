@@ -2,6 +2,75 @@
   "version": 1,
   "cards": [
     {
+      "id": "fc-logica-001",
+      "area": "logica",
+      "front": "Qual é a negação de \"se p, então q\"?",
+      "back": "É a conjunção p ∧ ~q — \"p e não q\". Não é \"se p então não q\" nem \"se não p então não q\": a condicional só falha na linha V→F, e negá-la é afirmar exatamente essa linha.",
+      "sourceQuestionId": "psjpn2018-q68"
+    },
+    {
+      "id": "fc-logica-002",
+      "area": "logica",
+      "front": "Das três variações de p→q (recíproca, inversa, contrapositiva), qual é equivalente à original?",
+      "back": "Só a contrapositiva ~q→~p (inverteu E negou). A recíproca q→p e a inversa ~p→~q são equivalentes entre si, mas nenhuma equivale à original. Cuidado quando a frase já traz um \"não\": em prova6-q65 a frase é P→~Q, cuja contrapositiva é Q→~P.",
+      "sourceQuestionId": "prova6-q65"
+    },
+    {
+      "id": "fc-logica-003",
+      "area": "logica",
+      "front": "Como se reescreve uma condicional como disjunção?",
+      "back": "p→q ≡ ~p ∨ q: nega o antecedente e troca por \"ou\". Em prova6-q65, \"se o freio falhou, então não houve manutenção\" (P→~Q) virou ~P ∨ ~Q, \"o freio não falhou ou não houve manutenção\" — o gabarito.",
+      "sourceQuestionId": "prova6-q65"
+    },
+    {
+      "id": "fc-logica-004",
+      "area": "logica",
+      "front": "O que dizem as duas leis de De Morgan?",
+      "back": "~(p ∧ q) ≡ ~p ∨ ~q e ~(p ∨ q) ≡ ~p ∧ ~q: negar distribui a negação e troca o conectivo. Em psjpn2018-q70 foi ela que levou de ~(~A ∧ ~G) para A ∨ G.",
+      "sourceQuestionId": "psjpn2018-q70"
+    },
+    {
+      "id": "fc-logica-005",
+      "area": "logica",
+      "front": "Qual a diferença entre Modus Ponens e Modus Tollens?",
+      "back": "Ponens afirma o antecedente e conclui o consequente (p→q, p ⊢ q). Tollens nega o consequente e conclui a negação do antecedente (p→q, ~q ⊢ ~p). As duas são válidas; trocar os nomes é a armadilha de psjpn2018-q70.",
+      "sourceQuestionId": "psjpn2018-q70"
+    },
+    {
+      "id": "fc-logica-006",
+      "area": "logica",
+      "front": "Quais são as duas falácias formais da condicional, e por que são inválidas?",
+      "back": "Afirmação do consequente (p→q, q ⊢ p) e negação do antecedente (p→q, ~p ⊢ ~q). Ambas caem com p=F e q=V: premissas verdadeiras e conclusão falsa. As duas tratam p→q como se fosse p↔q."
+    },
+    {
+      "id": "fc-logica-007",
+      "area": "logica",
+      "front": "Qual é a negação de \"todo A é B\"?",
+      "back": "\"Algum A não é B\" — basta um contraexemplo. Nunca \"nenhum A é B\": essas duas são contrárias, não contraditórias, e podem ser as duas falsas ao mesmo tempo.",
+      "sourceQuestionId": "transp23e6-q35"
+    },
+    {
+      "id": "fc-logica-008",
+      "area": "logica",
+      "front": "Como se traduzem \"todo A é B\", \"algum A é B\" e \"nenhum A é B\" em lógica de predicados?",
+      "back": "∀x(A(x)→B(x)), ∃x(A(x)∧B(x)) e ∀x(A(x)→~B(x)). Universal vira condicional, existencial vira conjunção — trocar um conectivo pelo outro é o erro clássico.",
+      "sourceQuestionId": "transp23e6-q35"
+    },
+    {
+      "id": "fc-logica-009",
+      "area": "logica",
+      "front": "Quando o enunciado diz que uma condicional é FALSA, o que fica determinado?",
+      "back": "Tudo: antecedente V e consequente F, a única linha em que ela é falsa. Em psjpn2018-q68, \"(~p)→(~q) é falso\" força ~p=V e ~q=F, logo p=F e q=V — sem montar tabela.",
+      "sourceQuestionId": "psjpn2018-q68"
+    },
+    {
+      "id": "fc-logica-010",
+      "area": "logica",
+      "front": "O que define um argumento válido?",
+      "back": "A impossibilidade de ter todas as premissas verdadeiras e a conclusão falsa. É propriedade da forma: pode haver premissas falsas com forma válida, e conclusão verdadeira com forma inválida. Um único contraexemplo prova a invalidade.",
+      "sourceQuestionId": "psjpn2018-q69"
+    },
+    {
       "id": "fc-portugues-001",
       "area": "portugues",
       "front": "Quando o pronome \"se\" faz o verbo concordar com o termo seguinte?",
@@ -18,22 +87,22 @@
     {
       "id": "fc-portugues-003",
       "area": "portugues",
-      "front": "'Fazem quinze anos que ele entrou na vida pública' está correto?",
-      "back": "Não. 'Fazer' indicando tempo decorrido é impessoal e fica no singular: 'Faz quinze anos'. O mesmo vale para 'haver' de tempo ('Há quinze anos').",
+      "front": "Como fica o verbo \"fazer\" indicando tempo decorrido, e por quê?",
+      "back": "Sempre no singular: \"Faz quinze anos que ele entrou na vida pública\". \"Fazer\" de tempo decorrido é impessoal, não tem sujeito — e o mesmo vale para \"Há quinze anos\". \"Fazem quinze anos\" é o erro plantado no distrator.",
       "sourceQuestionId": "transp15-q10"
     },
     {
       "id": "fc-portugues-004",
       "area": "portugues",
-      "front": "'Haviam mais de trinta deputados no plenário' está correto?",
-      "back": "Não. 'Haver' com sentido de existir é impessoal: 'Havia mais de trinta deputados'. A impessoalidade também passa ao auxiliar ('deve haver').",
+      "front": "Como fica o verbo \"haver\" com sentido de existir, e o que acontece com o auxiliar?",
+      "back": "No singular: \"Havia mais de trinta deputados\". \"Haver\" existencial é impessoal, e transmite a invariabilidade ao auxiliar de locução (\"deve haver\", \"pode haver\").",
       "sourceQuestionId": "transp15-q10"
     },
     {
       "id": "fc-portugues-005",
       "area": "portugues",
-      "front": "O verbo 'existir' é impessoal como o 'haver' existencial?",
-      "back": "Não. 'Existir' tem sujeito e concorda normalmente: 'existiam trinta deputados'. Só o 'haver' existencial (e o 'fazer' de tempo) travam no singular."
+      "front": "Qual a diferença de concordância entre \"haver\" existencial e \"existir\"?",
+      "back": "\"Haver\" existencial é impessoal e trava no singular (\"havia trinta deputados\"); \"existir\" tem sujeito e concorda com ele (\"existiam trinta deputados\")."
     },
     {
       "id": "fc-portugues-006",
@@ -52,8 +121,8 @@
     {
       "id": "fc-portugues-008",
       "area": "portugues",
-      "front": "Cabe crase em 'assistimos a apresentações inflamadas'?",
-      "back": "Não: diante de plural indeterminado o 'a' é só preposição. Com o substantivo determinado, o artigo aparece no plural e a crase também: 'assistimos às apresentações da noite'.",
+      "front": "Que condição o substantivo plural precisa satisfazer para haver crase antes dele?",
+      "back": "Precisa estar determinado, para que apareça o artigo no plural: \"assistimos às apresentações da noite\". Indeterminado, só a preposição: \"assistimos a apresentações inflamadas\", sem acento.",
       "sourceQuestionId": "transp15-q9"
     },
     {
@@ -80,8 +149,8 @@
     {
       "id": "fc-portugues-012",
       "area": "portugues",
-      "front": "Advérbio antes do verbo sempre atrai o pronome átono?",
-      "back": "Não: se vier seguido de vírgula, perde o poder de atração e a ênclise fica correta — 'Entre os numerosos usuários da internet, constata-se...'.",
+      "front": "O que desliga o poder de atração de um advérbio anteposto ao verbo?",
+      "back": "Uma vírgula depois dele: \"Entre os numerosos usuários da internet, constata-se...\" — com o adjunto isolado por vírgula, a ênclise volta a ser correta.",
       "sourceQuestionId": "psjpn2018-q8"
     },
     {
@@ -94,8 +163,8 @@
     {
       "id": "fc-portugues-014",
       "area": "portugues",
-      "front": "Pode-se iniciar um período com pronome oblíquo átono?",
-      "back": "Não, na norma-padrão. 'Se atormentou com aquela crise' é erro; o correto é 'Atormentou-se com aquela crise'.",
+      "front": "Que posição de pronome oblíquo átono a norma-padrão proíbe no início de período, e qual é a saída?",
+      "back": "Proíbe a próclise em início de período (\"Se atormentou...\"). A saída é a ênclise: \"Atormentou-se com aquela crise\".",
       "sourceQuestionId": "transp15-q8"
     },
     {
@@ -191,8 +260,8 @@
     {
       "id": "fc-ingles-001",
       "area": "ingles",
-      "front": "Que pista lexical nas alternativas quase sempre marca erro nas provas de inglês?",
-      "back": "Linguagem absoluta: certainly, definitely, surely, only, all, never, must. No banco, 16 alternativas erradas usam essas palavras e nenhuma alternativa correta usa — os textos são hedged (may, might, is likely to).",
+      "front": "Que pista lexical nas alternativas de inglês sinaliza erro por excesso, e qual é a exceção obrigatória?",
+      "back": "Linguagem absoluta: certainly, definitely, surely, absolutely, inevitable, undeniable, e o \"only\"/\"all\" que endurece a afirmação. No banco, 16 alternativas erradas as usam e nenhuma correta — mas 5 dessas ocorrências são só o andaime \"only Text I / only Text II / all\", em que \"only\" pode ser gabarito. Serve como desempate, não como atalho.",
       "sourceQuestionId": "transp15-q20"
     },
     {
@@ -220,7 +289,7 @@
       "id": "fc-ingles-005",
       "area": "ingles",
       "front": "O que significa 'account for' em 'India accounting for almost one-third of global growth'?",
-      "back": "Responder por, corresponder a uma parcela de algo. O distrator típico é 'being blamed for' (ser culpado por), que agrega juízo negativo inexistente.",
+      "back": "Responder por / corresponder a uma parcela (\"India accounting for almost one-third of global growth\"). Atenção ao gabarito da banca em psjpn2018-q15: ela aceitou \"being the reason for\" — o distrator era \"being blamed for\" (culpa).",
       "sourceQuestionId": "psjpn2018-q15"
     },
     {
@@ -268,8 +337,8 @@
     {
       "id": "fc-ingles-012",
       "area": "ingles",
-      "front": "'Surge' e 'increase' são antônimos ou próximos?",
-      "back": "Próximos: 'surge' é um aumento súbito e forte. A afirmação de que seriam antônimos foi distrator. E 'surge' não é 'surgir' (to arise, to emerge).",
+      "front": "Que tipo de variação \"surge\" expressa, e qual verbo/substantivo está próximo dele?",
+      "back": "Um aumento súbito e forte (\"a surge in demand\"); como verbo, disparar. É próximo de \"increase\", \"rise\" e \"soar\" — e não é \"surgir\" (to arise, to emerge). A questão apresentou \"surge\" e \"increase\" como antônimos, o que é falso.",
       "sourceQuestionId": "transp15-q18"
     },
     {
@@ -282,8 +351,8 @@
     {
       "id": "fc-ingles-014",
       "area": "ingles",
-      "front": "Em inglês, 'realise/realize' significa 'realizar'?",
-      "back": "Não: significa perceber, dar-se conta — por isso 'realise' e 'understand' aparecem como par de sinônimos. Para 'realizar' use carry out, perform, achieve.",
+      "front": "O que \"realise/realize\" significa em inglês, e como se diz \"realizar\" (executar)?",
+      "back": "Significa perceber, dar-se conta — por isso \"realise\" e \"understand\" são sinônimos. \"Realizar\" no sentido de executar é carry out, perform ou achieve.",
       "sourceQuestionId": "prova6-q14"
     },
     {
@@ -297,7 +366,7 @@
       "id": "fc-ingles-016",
       "area": "ingles",
       "front": "O que significa 'undisputed', e qual seu sinônimo cobrado na prova?",
-      "back": "Incontestável, indiscutível — sinônimo de 'irrefutable'. Não confundir com 'undisputed' no sentido de 'sem disputa esportiva'.",
+      "back": "Incontestável, indiscutível — sinônimo de \"irrefutable\" (psjpn2018-q14). Distratores da questão: \"disturbed\", \"stagnation\", \"restrain\", \"unnecessary\".",
       "sourceQuestionId": "psjpn2018-q14"
     },
     {
@@ -317,16 +386,15 @@
     {
       "id": "fc-ingles-019",
       "area": "ingles",
-      "front": "O que a primeira questão de inglês (a de número 11) pede nas quatro provas?",
-      "back": "A função global do texto: propósito, intenção comunicativa ou ideia central. A resposta começa por um verbo de função (describe, present an overview, speculate, argue, discuss).",
-      "sourceQuestionId": "transp15-q11"
+      "front": "Em \"output from America's producing areas\", o que \"output\" significa e qual é o par oposto?",
+      "back": "Produção, volume produzido — em texto de energia é sempre esse sentido, não \"saída de dispositivo\". O par oposto é \"input\" (insumo).",
+      "sourceQuestionId": "transp15-q14"
     },
     {
       "id": "fc-ingles-020",
       "area": "ingles",
-      "front": "Como resolver uma questão que pede o sentido de dois itens 'respectively'?",
-      "back": "Glosando cada item separadamente antes de ler as alternativas e validando as duas metades. O distrator clássico acerta o primeiro item e erra o segundo.",
-      "sourceQuestionId": "psjpn2018-q15"
+      "front": "Em texto de energia, o que \"the grid\" designa?",
+      "back": "A rede elétrica de transmissão e distribuição. Aparece em contextos como conectar geração solar e eólica à rede (\"feeding the grid\"), e não significa \"grade\" nem \"mapa\"."
     },
     {
       "id": "fc-ingles-021",
@@ -352,9 +420,9 @@
     {
       "id": "fc-ingles-024",
       "area": "ingles",
-      "front": "Como responder a uma questão de inglês com EXCEPT em maiúsculas?",
-      "back": "Marcando V/F ao lado de cada alternativa segundo o critério positivo do enunciado e só depois invertendo: a correta é a única que NÃO pertence ao conjunto.",
-      "sourceQuestionId": "prova6-q20"
+      "front": "O que \"offset\" faz em \"a comparable increase in 2018 would offset most of the current OPEC production cuts\"?",
+      "back": "Compensa, anula o efeito de algo — o aumento da produção de shale cancelaria os cortes da OPEP. Como substantivo, \"offset\" é compensação (também em \"carbon offset\").",
+      "sourceQuestionId": "transp15-q14"
     },
     {
       "id": "fc-ingles-025",

@@ -82,6 +82,12 @@ function renderHome() {
         : `<p class="muted">Nada devido agora. ${CARDS.length ? "Volte amanhã — ou entre numa área e revise à força." : ""}</p>`}
     </div>
     <div class="card">
+      <h2>Onde estudar primeiro</h2>
+      <p class="muted">Prioridade = peso histórico da área × o quanto você ainda erra nela. Áreas sem tentativa no simulado entram como "não medido" e ficam no fim da lista, não porque sejam fáceis, mas porque ainda não há dado.</p>
+      <div id="priority"></div>
+      <p class="muted">O edital fixa 50 questões de Conhecimentos Específicos nas 8 áreas e 10 de Português + 10 de Inglês, mas não publica quantas caem por área técnica. O peso aqui é a fatia de cada área nas provas antigas — proxy, não garantia.</p>
+    </div>
+    <div class="card">
       <h2>Conteúdo por área</h2>
       <div class="alt-list">${AREAS.map(areaRow).join("")}</div>
     </div>
@@ -95,10 +101,34 @@ function renderHome() {
       </ul>
     </div>
   `;
+  renderPriority(stats);
   const rb = document.getElementById("review-all");
   if (rb) rb.addEventListener("click", () => startReview(shuffle(due), "Revisão geral"));
   app.querySelectorAll("[data-area]").forEach(b =>
     b.addEventListener("click", () => renderArea(b.dataset.area)));
+}
+
+function renderPriority(stats) {
+  const box = document.getElementById("priority");
+  if (!box) return;
+  const totalQ = Object.values(QCOUNT).reduce((a, b) => a + b, 0) || 1;
+  const rows = AREAS.map(a => {
+    const weight = (QCOUNT[a.id] || 0) / totalQ;      // fatia histórica da área
+    const st = stats[a.id];
+    const measured = !!(st && st.total);
+    const errRate = measured ? 1 - st.correct / st.total : null;
+    // Sem medição, usa 0.5 só para ordenar — e a linha é rotulada como não medida.
+    const score = weight * (measured ? errRate : 0.5);
+    return { a, weight, measured, pct: measured ? st.pct : null, score };
+  }).sort((x, y) => y.score - x.score);
+
+  const max = Math.max(...rows.map(r => r.score), 0.0001);
+  box.innerHTML = rows.map(r => `
+    <div class="area-bar">
+      <span class="prio-label">${esc(r.a.label)}</span>
+      <span class="track"><div style="width:${Math.round((r.score / max) * 100)}%"></div></span>
+      <span class="pct">${r.measured ? `${100 - r.pct}% erro` : "—"}</span>
+    </div>`).join("");
 }
 
 function shuffle(arr) {
