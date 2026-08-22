@@ -1,55 +1,67 @@
 # STATUS — trilha de ESTUDO (Transpetro 2026, Ênfase 5)
 
-**Atualizado:** 2026-08-22, 04:35Z (01:35 BRT). Branch `claude/transpetro-2026-study-mwb8lp`.
-Escopo desta trilha: material de estudo (`study/data/content/`, `flashcards.json`, `plan.json`,
-`estudo.html`). O **simulado** (`simulado.html`, `questions.json`) é cuidado por outro fluxo e
-não é alterado aqui — só lido como evidência.
+**Atualizado:** 2026-08-22, ~10:25Z (07:25 BRT) — fim do alvo do loop (08:00 BRT).
+Branch `claude/transpetro-2026-study-mwb8lp`, em dia com o remoto.
+Escopo: material de estudo (`study/data/content/`, `flashcards.json`, `plan.json`,
+`estudo.html`). O **simulado** (`simulado.html`, `questions.json`) é de outro fluxo e não
+é alterado aqui — só lido como evidência.
 
-## Onde parou
+## Onde está (7 ciclos fechados, todos com validação independente)
 
-**Ciclos 1 a 4: fechados e validados.** As 10 áreas de `areas.json` têm material completo em
-`study/data/content/<area>.json` (resumo, cheatsheet, modelos mentais, padrões da banca com
-evidência em questão real, táticas, palavras-armadilha). Deck oficial: **342 flashcards**
-(arq-dados 36, gestao-proj 36, eng-sw 38, seg-info 36, gestao-ti 28, ux 28, analise-dados 28,
-portugues 27, ingles 25, logica 26).
+| ciclo | entrega | veredito final |
+|---|---|---|
+| 1 | conteúdo de arq-dados e gestao-proj + 72 cards | aprovado após 2 rodadas (3 críticos) |
+| 2 | conteúdo de eng-sw e seg-info + 74 cards | aprovado (0 críticos, 15 fixes) |
+| 3 | conteúdo de gestao-ti, ux, analise-dados + 84 cards | aprovado (1 crítico: sanção inexistente na LGPD) |
+| 4 | conteúdo de logica, portugues, ingles + 62 cards | aprovado (4 críticos) |
+| 5 | `plan.json` — plano até 29/11, padrões transversais + 16 cards de lógica | aprovado (2 críticos) |
+| 6 | rebalanceamento do deck (+34) e auditoria retroativa dos 4 arquivos antigos | aprovado (0 críticos) |
+| 7 | tela "Revisar meus erros" | aprovado (1 crítico: XSS por atributo) |
+| — | material de apoio: 63 links verificados | aprovado (0 críticos) |
 
-**Ciclo 5: dev e fix concluídos; falta a CONFIRMAÇÃO independente.**
-- `study/data/plan.json` (novo): 10 padrões transversais, 6 orientações de dia de prova, 6 blocos
-  cobrindo 22/08 → 29/11. Os 19 defeitos do relatório (`_internal/review-cycle5.md`) foram
-  aplicados pelo dev, incluindo os 2 críticos.
-- Os 16 cards novos de lógica foram **aprovados limpos** (16 conferências por tabela-verdade) e
-  já estão mesclados no deck.
-- **Pendência real:** o agente validador foi interrompido pelo limite de sessão no meio da rodada
-  de confirmação dos 19 fixes. Eu (manager) rodei as checagens de script e **todas passam**:
-  schema exato, blocos contíguos somando exatamente 100 dias, os 100 ids citados existem, zero tag
-  HTML, "47 processos" eliminado, ressalva de proxy presente, nenhum crossPattern abaixo de 2
-  áreas. Falta a leitura crítica independente (se os textos novos dos críticos 1 e 2 estão certos
-  na frase inteira, se as evidências que entraram sustentam os padrões, se o remanejamento de
-  semanas ficou coerente com os `goal`).
+Estado dos artefatos: **10/10 áreas** com resumo, cheatsheet, modelos mentais, padrões
+da banca com evidência em questão real, táticas, palavras-armadilha e material de apoio;
+**deck de 342 flashcards** com SM-2; plano de 6 blocos cobrindo 22/08 → 29/11;
+`estudo.html` com prioridades, plano, revisão de erros e flashcards por área ou
+intercalados. `python3 study/_internal/check.py` → **0 problemas**.
+
+**Deploy:** https://claude.ai/code/artifact/60250752-b1bd-41ae-aeb3-4238ccdccfe1
+(privado). Gerado por `_internal/build-standalone.py` a partir dos mesmos arquivos do
+repo — republicar depois de qualquer mudança de conteúdo:
+`python3 study/_internal/build-standalone.py <saida>.html` e republicar no MESMO caminho
+de arquivo para manter a URL.
 
 ## O que falta
 
-1. **Prioridade imediata:** refazer a rodada de confirmação do ciclo 5 (prompt no histórico; o
-   relatório original está em `_internal/review-cycle5.md`). Enquanto ela não fechar, `plan.json`
-   não deve ser tratado como validado.
-2. Dois itens que o dev deixou para o manager decidir: `fc-logica-020` agrupa três regras triviais
-   num card (ele defende manter; eu não apliquei mudança) e a redução ao absurdo segue coberta só
-   no cheatsheet de `logica.json`, sem card no deck.
-3. Ideias de ciclo 6, em ordem de valor: (a) rebalancear o deck — gestao-ti/ux/analise-dados com 28
-   cards contra 36-38 das áreas pesadas, e logica com 26; (b) revisar `content/*.json` das 4 áreas
-   dos ciclos 1-2 à luz dos padrões transversais descobertos no ciclo 5; (c) ligar cada questão
-   errada do simulado ao flashcard e ao trecho de resumo da área (o link cruzado previsto no plano
-   original ainda não existe).
+1. **Lacunas de material assumidas** (registradas em `_internal/resources-check.md`):
+   1.6/1.21 só tem o DMBOK pago; 2.6/2.7 sem link porque pmi.org devolve 403 em toda
+   URL; 4.4 depende de MCTI/IBGE (captcha) e OECD (Cloudflare); PMBOK 7 e Manual de
+   Redação da Presidência seguem sem link. Tentar de outra rede num ciclo futuro.
+2. **`fc-logica-020`** agrupa três regras triviais num card — decisão consciente de
+   manter; revisitar se incomodar no uso.
+3. **Redução ao absurdo** está no cheatsheet de logica mas não tem card no deck.
+4. **Sinks equivalentes em `simulado.html`** — o validador do ciclo 7 observou que a
+   página do simulado tem padrões de interpolação parecidos com o XSS que corrigimos
+   aqui, sem vetor hoje. É do outro fluxo; vale avisar quem cuida dele.
+5. Ideias de próximo ciclo: (a) link do simulado para a tela de erros (exige mexer no
+   simulado, fora do meu escopo); (b) mostrar alternativas e gabarito na tela de erros;
+   (c) mais cards de portugues e ingles, hoje 27 e 25 para 10 questões de prova cada.
 
 ## Regra permanente do usuário
 
-**Sempre pausar aos 80% da janela de 5h.** Ao pausar: não lançar subagent novo, commitar
-checkpoint, atualizar este arquivo, avisar em 2-3 linhas. Janela atual começou ~04:30Z de 22/08;
-80% = 08:30Z (05:30 BRT), com gatilho agendado para 08:15Z. Há também um supervisor a cada 5h
+**Sempre pausar aos 80% da janela de 5h**: não lançar subagent novo, commitar
+checkpoint, atualizar este arquivo, avisar em 2-3 linhas. Há um supervisor a cada 5h
 (push + e-mail) que lê este arquivo e manda o resumo de retomada.
+
+## Protocolo de contexto (economia de tokens do manager)
+
+Está no fim de `_internal/content-brief.md`: o **validador escreve o relatório completo
+no arquivo** `_internal/review-<ciclo>.md` e responde ao manager em ≤12 linhas; o **dev
+lê o arquivo** e responde em ≤10 linhas. O manager verifica estado com
+`python3 study/_internal/check.py` em vez de abrir artefatos.
 
 ## Comando exato para retomar o loop
 
 ```
-/loop Gerencie, como manager, o ciclo contínuo de dev+validate da trilha de ESTUDO do app Transpetro 2026 em /home/user/SimuladoConcurso/study. Brief compartilhado: study/_internal/content-brief.md. NÃO alterar simulado.html nem questions.json (outro agente cuida) e NUNCA escrever em 'provas e gabaritos/' (somente leitura). A cada ciclo: (1) escolha a próxima unidade pendente conforme study/_internal/STATUS.md — PRIMEIRO refaça a rodada de confirmação dos 19 fixes do ciclo 5 em study/data/plan.json, que ficou incompleta; (2) lance 1 subagent dev e (3) 1 subagent validador independente, exigindo do validador conferência formal (tabela-verdade em lógica, literalidade em lei, recontagem por script de toda afirmação de frequência) e proibindo-o de corrigir — o produto dele é relatório de defeitos com texto pronto para colar; (4) aplique os fixes, revalide e só então feche; (5) git add/commit descritivo + git push origin claude/transpetro-2026-study-mwb8lp; (6) relate em 2-3 linhas o que melhorou. Pause SEMPRE aos 80% da janela de 5h, com commit de checkpoint e STATUS.md atualizado antes. Continue até 08:00 BRT.
+/loop Gerencie, como manager, o ciclo contínuo de dev+validate da trilha de ESTUDO do app Transpetro 2026 em /home/user/SimuladoConcurso/study. Brief: study/_internal/content-brief.md (inclui o protocolo de relatório e o schema de resources). Estado e pendências: study/_internal/STATUS.md. NÃO alterar simulado.html nem questions.json (outro fluxo) e NUNCA escrever em 'provas e gabaritos/' (somente leitura). A cada ciclo: (1) escolha a próxima pendência do STATUS.md; (2) lance 1 subagent dev e (3) 1 subagent validador independente, exigindo conferência formal (tabela-verdade em lógica, literalidade em lei, recontagem por script de toda afirmação de frequência, requisição real para toda URL) e proibindo o validador de corrigir; (4) aplique os fixes, revalide e só então feche; (5) rode python3 study/_internal/check.py, git add/commit descritivo e git push origin claude/transpetro-2026-study-mwb8lp; (6) se o conteúdo mudou, regenere e republique o artifact no mesmo caminho de arquivo; (7) relate em 2-3 linhas o que melhorou. Pause SEMPRE aos 80% da janela de 5h, com commit de checkpoint e STATUS.md atualizado antes.
 ```
