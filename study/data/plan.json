@@ -1,7 +1,7 @@
 {
   "version": 1,
   "examDate": "2026-11-29",
-  "sourceNote": "Edital nº 04/2026 TRANSPETRO/PSP/TERRA, Ênfase 5. 50 questões de Conhecimentos Específicos nas 8 áreas do Anexo IV + 10 de Português + 10 de Inglês. A duração da prova não consta das fontes disponíveis neste repositório — todo tempo DE PROVA abaixo é falado em proporção, não em minutos. As fatias por área citadas nos blocos são a contagem das 351 questões das provas antigas (231 técnicas, após a incorporação das provas de 2008 e 2012 no ciclo 10), usada como PROXY histórico para priorizar o estudo — não é a distribuição da prova de 2026, que o edital não detalha por área. O Anexo IV atual é mais largo que as provas antigas, então ux, analise-dados e logica provavelmente estão subrepresentadas no proxy.",
+  "sourceNote": "Edital nº 04/2026 TRANSPETRO/PSP/TERRA, Ênfase 5. 50 questões de Conhecimentos Específicos nas 8 áreas do Anexo IV + 10 de Português + 10 de Inglês. A duração da prova não consta das fontes disponíveis neste repositório — todo tempo DE PROVA abaixo é falado em proporção, não em minutos. As fatias por área citadas nos blocos são a contagem das 360 questões das provas antigas (240 técnicas, após a incorporação das provas de 2008 e 2012 e das questões de figura resolvidas em 2026-08), usada como PROXY histórico para priorizar o estudo — não é a distribuição da prova de 2026, que o edital não detalha por área. O Anexo IV atual é mais largo que as provas antigas, então ux, analise-dados e logica provavelmente estão subrepresentadas no proxy.",
   "crossPatterns": [
     {
       "title": "A alternativa errada descreve corretamente o conceito VIZINHO",
@@ -19,7 +19,7 @@
     },
     {
       "title": "Enunciado negativo: NÃO, EXCEPT, 'o único que não'",
-      "body": "Aparece em 6 das 10 áreas do banco — arquitetura de dados, engenharia de software, UX, segurança, Português e Inglês (em maiúsculas: EXCEPT) — e em nenhuma questão de gestão de projetos, governança, análise de dados ou lógica. Recontado sobre as 351 questões: são 24 questões negativas, e a distribuição por área não mudou com as provas novas; o que mudou foi o volume, com Português passando a 7 (quatro delas na prova de 2008) e UX a 3. Onde aparece, quatro alternativas são verdadeiras e a resposta é a falsa — quem lê no automático marca a primeira frase correta e perde a questão que sabia. Defesa mecânica: circule o NÃO/EXCEPT antes de ler as alternativas, e escreva V ou F ao lado de cada uma; a resposta é a única F. Em inglês, o EXCEPT inverte também a lógica do 'responda com o dedo no texto': a correta é a que NÃO tem apoio no trecho. Nunca marque questão negativa sem ter julgado as cinco.",
+      "body": "Aparece em 6 das 10 áreas do banco — arquitetura de dados, engenharia de software, UX, segurança, Português e Inglês (em maiúsculas: EXCEPT) — e em nenhuma questão de gestão de projetos, governança, análise de dados ou lógica. Recontado sobre as 360 questões, pelo critério 'enunciado com NÃO, EXCETO, EXCEPT, INCORRECTLY ou IMPROCEDENTE em maiúsculas': são 24 questões negativas (arq-dados 4, ingles 4, portugues 7, ux 3, seg-info 3, eng-sw 3), e a distribuição por área não mudou com as provas novas; o que mudou foi o volume, com Português passando a 7 (quatro delas na prova de 2008) e UX a 3. Onde aparece, quatro alternativas são verdadeiras e a resposta é a falsa — quem lê no automático marca a primeira frase correta e perde a questão que sabia. Defesa mecânica: circule o NÃO/EXCEPT antes de ler as alternativas, e escreva V ou F ao lado de cada uma; a resposta é a única F. Em inglês, o EXCEPT inverte também a lógica do 'responda com o dedo no texto': a correta é a que NÃO tem apoio no trecho. Nunca marque questão negativa sem ter julgado as cinco.",
       "evidence": [
         "transp23e6-q26",
         "transp23e6-q51",
@@ -95,7 +95,7 @@
     },
     {
       "title": "A prova cita a versão antiga do framework ou da norma",
-      "body": "O histórico cobra edições que já não são as do edital: 'Segundo o PMBOK 4ª Edição' com todas as letras, entradas/saídas/ferramentas de processos nomeados, e a NBR ISO 27002 citada no enunciado em 12 de 12 questões de segurança das provas de 2008, 2010, 2011 e 2012 (com cobrança literal de seções, listas e controles). O edital atual pede PMBOK 7ª edição, e a 7ª é por princípios e domínios de desempenho, não pela máquina de processos das edições anteriores (49 processos na 6ª, 42 na 4ª que as provas antigas citam). Consequência prática: estude a 7ª como base conceitual, mas mantenha a máquina de grupos de processos e áreas de conhecimento na memória, porque é dela que sai a maior parte das questões antigas — e o Anexo IV ainda lista 'processos, grupos de processos e áreas de conhecimento' explicitamente. Se o enunciado nomear a edição, responda pela edição nomeada, não pela mais nova.",
+      "body": "O histórico cobra edições que já não são as do edital: 'Segundo o PMBOK 4ª Edição' com todas as letras, entradas/saídas/ferramentas de processos nomeados, e a NBR ISO 27002 citada no enunciado em 13 de 13 questões de segurança das provas de 2008, 2010, 2011 e 2012 (com cobrança literal de seções, listas e controles). O edital atual pede PMBOK 7ª edição, e a 7ª é por princípios e domínios de desempenho, não pela máquina de processos das edições anteriores (49 processos na 6ª, 42 na 4ª que as provas antigas citam). Consequência prática: estude a 7ª como base conceitual, mas mantenha a máquina de grupos de processos e áreas de conhecimento na memória, porque é dela que sai a maior parte das questões antigas — e o Anexo IV ainda lista 'processos, grupos de processos e áreas de conhecimento' explicitamente. Se o enunciado nomear a edição, responda pela edição nomeada, não pela mais nova.",
       "evidence": [
         "prova6-q22",
         "prova6-q26",
@@ -106,7 +106,7 @@
     },
     {
       "title": "Cálculo é bloco pequeno, isolado e de retorno alto",
-      "body": "Conta pura aparece pouco e concentrada: caminho crítico/folga em tabela de atividades, valor agregado, pontos de função, razão simples em gestão de projetos; divisão relacional sobre instâncias pequenas e contagem de medidas não aditivas do lado dos dados. As provas de 2011 e 2023 não trouxeram nenhuma questão de conta em gestão de projetos; a de 2012, incorporada no ciclo 10, trouxe três (IDC/IDP, caminho crítico em diagrama de rede e redução percentual), o recorde do banco. Leitura tática: são poucas questões, o procedimento é fechado e decorável, e o erro quase nunca é conceitual — é aritmético ou de leitura de tabela. Vale treinar até virar receita, mas não vale planejar a área em cima delas.",
+      "body": "Conta pura aparece pouco e concentrada: caminho crítico/folga em tabela de atividades, valor agregado, pontos de função, razão simples em gestão de projetos; divisão relacional sobre instâncias pequenas e contagem de medidas não aditivas do lado dos dados. Três provas — 2008, 2011 e 2023 — não trouxeram nenhuma questão de conta em gestão de projetos; a de 2012 trouxe três (IDC/IDP, caminho crítico em diagrama de rede e redução percentual), o recorde do banco, e as de 2010 e 2018 trouxeram duas cada (em 2010, prova07-q14 e a planilha de BCWS/BCWP/ACWP/SPI de prova07-q19). Leitura tática: são poucas questões, o procedimento é fechado e decorável, e o erro quase nunca é conceitual — é aritmético ou de leitura de tabela. Vale treinar até virar receita, mas não vale planejar a área em cima delas.",
       "evidence": [
         "psjpn2018-q21",
         "psjpn2018-q22",
@@ -136,7 +136,7 @@
   "examDay": [
     {
       "title": "Ordem de ataque: Inglês, Português, técnicas conhecidas, técnicas caras",
-      "body": "Comece pelo bloco de Inglês. São 10 questões cuja resolução depende de leitura com o dedo no texto e de um filtro quase mecânico (absolutos, referência, conectivo), e é o bloco que mais sofre com pressa e cansaço — fazê-lo no início compra rendimento. Depois Português, também 10 e com checklist fixo por assunto. Só então as 50 de Conhecimentos Específicos, e dentro delas primeiro as áreas em que você chega firme, deixando para o fim as que exigem construção (SQL com cinco variantes, caminho crítico, divisão relacional, problema de associação com pistas). Motivo: 20 das 70 questões estão nos Conhecimentos Gerais — e no banco histórico Português e Inglês somam 120 das 351 questões, mais que arquitetura de dados e gestão de projetos juntas — não são um apêndice."
+      "body": "Comece pelo bloco de Inglês. São 10 questões cuja resolução depende de leitura com o dedo no texto e de um filtro quase mecânico (absolutos, referência, conectivo), e é o bloco que mais sofre com pressa e cansaço — fazê-lo no início compra rendimento. Depois Português, também 10 e com checklist fixo por assunto. Só então as 50 de Conhecimentos Específicos, e dentro delas primeiro as áreas em que você chega firme, deixando para o fim as que exigem construção (SQL com cinco variantes, caminho crítico, divisão relacional, problema de associação com pistas). Motivo: 20 das 70 questões estão nos Conhecimentos Gerais — e no banco histórico Português e Inglês somam 120 das 360 questões, mais que arquitetura de dados e gestão de projetos juntas — não são um apêndice."
     },
     {
       "title": "Orçamento de tempo por questão: pense em proporção, e faça três passadas",
@@ -168,14 +168,14 @@
         "arq-dados",
         "analise-dados"
       ],
-      "goal": "Fechar o eixo de dados do banco (59 questões entre as duas áreas) com modelagem dimensional, normalização e SQL na ponta da língua.",
+      "goal": "Fechar o eixo de dados do banco (64 questões entre as duas áreas) com modelagem dimensional, normalização e SQL na ponta da língua.",
       "checklist": [
         "Fechar os 36 cards de arq-dados e os 38 de analise-dados com 2 rodadas de acerto em dias diferentes",
         "Refazer as 8 questões de modelagem dimensional (psjpn2018-q43, psjpn2018-q44, prova07-q42, prova07-q44, prova07-q46, prova07-q48, petro2012-q49, petro2012-q50) sem olhar a explicação",
         "Escrever de memória as três primeiras formas normais com um exemplo próprio de violação de cada, e resolver psjpn2018-q58 e transp15-q42 pelo método da chave",
         "Reescrever as 4 questões de SQL (psjpn2018-q56, transp15-q38, transp23e6-q49, petro08-q23) explicando por que cada uma das 4 alternativas erradas está errada",
         "Montar a tabela de pares vizinhos da área (relacional x documento x grafo x multidimensional, estrela x floco, top-down x bottom-up, ROLAP x MOLAP x HOLAP) e recitá-la sem consultar",
-        "Rodar um mini-simulado só com as 59 questões das duas áreas e sair dele com acerto >= 80%"
+        "Rodar um mini-simulado só com as 64 questões das duas áreas e sair dele com acerto >= 80%"
       ]
     },
     {
@@ -186,11 +186,11 @@
         "gestao-proj",
         "ux"
       ],
-      "goal": "Dominar a máquina de processos do PMBOK e o vocabulário ágil/UX, que juntos são a maior fatia histórica (67 questões).",
+      "goal": "Dominar a máquina de processos do PMBOK e o vocabulário ágil/UX, que juntos são a maior fatia histórica (68 questões).",
       "checklist": [
         "Fechar os 36 cards de gestao-proj e os 38 de ux com 2 rodadas de acerto",
         "Desenhar de memória a matriz grupos de processos x áreas de conhecimento e marcar onde a 7ª edição trocou processos por princípios e domínios de desempenho",
-        "Resolver as 8 questões de cálculo (psjpn2018-q21, psjpn2018-q22, transp15-q30, transp15-q64, prova07-q14, petro2012-q22, petro2012-q25, petro2012-q36) duas vezes, cronometrando, até o procedimento virar receita",
+        "Resolver as 9 questões de cálculo (psjpn2018-q21, psjpn2018-q22, transp15-q30, transp15-q64, prova07-q14, prova07-q19, petro2012-q22, petro2012-q25, petro2012-q36) duas vezes, cronometrando, até o procedimento virar receita",
         "Reconstruir a tabela de influência organizacional (funcional, matricial fraca/balanceada/forte, projetizada) célula por célula e conferir contra prova6-q29 e transp23e6-q69",
         "Escrever a diferença canônica Scrum x Kanban em uma frase e checar contra transp23e6-q65 e transp15-q28",
         "Listar em uma folha as ferramentas de design thinking com uma linha de descrição cada (brainwriting, personas, jornada, MVP, protótipo) e acertar transp23e6-q30 e transp23e6-q34 de cabeça"
@@ -227,7 +227,7 @@
         "Fechar os 36 cards de seg-info e os 27 de logica com 2 rodadas de acerto",
         "Montar o glossário de siglas do item 9.2 e 9.5 (firewall, proxy, IPS/IDS, DLP, CASB, SIEM, antivírus, EDR, WAF, SAST/DAST/IAST) com uma frase de função cada, e acertar transp23e6-q43, transp15-q47 e transp23e6-q38 sem consultar",
         "Escrever de memória, com a forma simbólica ao lado, as 14 regras e equivalências (Modus Ponens, Modus Tollens, silogismo hipotético e disjuntivo, dilema construtivo e destrutivo, simplificação, adição, conjunção, absorção, De Morgan, contraposição, exportação, distributivas) e as duas falácias formais",
-        "Refazer as 20 questões de logica (prova6-q63, prova6-q65, prova6-q66, prova6-q67, prova6-q69, prova07-q22, psjpn2018-q67, psjpn2018-q68, psjpn2018-q69, psjpn2018-q70, transp23e6-q35, transp23e6-q37, petro2012-q65, petro2012-q67, petro2012-q68, petro2012-q69, petro2012-q70, petro08-q40, petro08-q41, petro08-q42) — a área quase triplicou de tamanho e passou a ter blocos novos (tautologia/insatisfatibilidade, contagem em tabela-verdade, quantificadores) resolvendo cada uma pelo método mais curto possível, e justificando por que escolheu tabela, linha única ou equivalência",
+        "Refazer as 22 questões de logica (prova6-q63, prova6-q65, prova6-q66, prova6-q67, prova6-q69, prova07-q22, prova07-q23, psjpn2018-q67, psjpn2018-q68, psjpn2018-q69, psjpn2018-q70, transp23e6-q28, transp23e6-q35, transp23e6-q37, petro2012-q65, petro2012-q67, petro2012-q68, petro2012-q69, petro2012-q70, petro08-q40, petro08-q41, petro08-q42) — atenção: prova07-q22 está com a extração dos símbolos comprometida (três alternativas tautológicas), então use-a como treino de raciocínio e não como aferição de gabarito — a área quase triplicou de tamanho e passou a ter blocos novos (tautologia/insatisfatibilidade, contagem em tabela-verdade, quantificadores) resolvendo cada uma pelo método mais curto possível, e justificando por que escolheu tabela, linha única ou equivalência",
         "Construir e conferir por tabela-verdade uma tautologia, uma contradição e uma contingência próprias, e converter uma fórmula com → e ↔ para FND e para FNC",
         "Fazer o pareamento ataque/controle x pilar (confidencialidade, integridade, disponibilidade) para 10 itens do Anexo IV e checar contra psjpn2018-q64 e prova07-q27"
       ]
