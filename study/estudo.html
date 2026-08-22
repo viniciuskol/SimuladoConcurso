@@ -26,6 +26,11 @@ let AREAS = [], CARDS = [], QCOUNT = {}, CONTENT = {}, PLAN = null, QBYID = {};
 
 // Escapa também " e ' porque o mesmo esc() é usado em valor de ATRIBUTO, onde
 // escapar só &<> deixa quebrar o atributo. Em texto, &quot;/&#39; renderizam como "/'.
+const safeUrl = u => {
+  try { const p = new URL(String(u), location.href); return (p.protocol === "https:" || p.protocol === "http:") ? p.href : null; }
+  catch { return null; }
+};
+
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c =>
   ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
@@ -346,14 +351,14 @@ async function renderArea(areaId, onBack = renderHome) {
     if ((content.resources || []).length)
       sections.push(sec("📚 Material de apoio",
         `<p class="muted">Links verificados um por um (HTTP 200 e conferência do conteúdo). Fonte oficial primeiro; o que é pago está marcado.</p>
-         <div class="alt-list">${content.resources.map(r => `
-          <a class="btn res" href="${encodeURI(r.url)}" target="_blank" rel="noopener noreferrer">
+         <div class="alt-list">${content.resources.map(r => { const u = safeUrl(r.url); return `
+          <${u ? `a class="btn res" href="${esc(u)}" target="_blank" rel="noopener noreferrer"` : `div class="btn res"`}>
             <span class="alt-text">
               <strong>${esc(r.title)}</strong>
               <span class="muted block">${esc(r.publisher)} · ${esc(r.kind)}${r.free ? "" : " · pago"}</span>
-              <span class="muted block">${esc(r.why)}</span>
+              <span class="muted block">${esc(r.why)}${u ? "" : " — link fora do padrão http(s), não exibido"}</span>
             </span>
-          </a>`).join("")}</div>`));
+          </${u ? "a" : "div"}>`; }).join("")}</div>`));
     if ((content.trapWords || []).length)
       sections.push(sec("⚠ Palavras-armadilha",
         `<div class="trap-list">${content.trapWords.map(t => `<div class="sub">
