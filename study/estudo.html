@@ -249,9 +249,9 @@ function shuffle(arr) {
 
 /* ---------- Revisar meus erros ---------- */
 
-// O `stem` vem de arquivo local, mas aqui ele é cortado em ~140 caracteres:
-// truncar HTML no meio geraria markup quebrado, então tiro as tags e escapo o
-// texto — assim nenhum `<script>` sobrevive nem por acidente.
+// O `stem` vem de arquivo local, mas aqui ele é cortado: truncar HTML no meio
+// geraria markup quebrado, então tiro as tags e escapo o texto — assim nenhum
+// `<script>` sobrevive nem por acidente.
 function trunc(s, n = 140) {
   const t = String(s ?? "").replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
   return esc(t.length > n ? t.slice(0, n).replace(/\s+\S*$/, "") + "…" : t);
@@ -261,6 +261,50 @@ function fmtDate(ts) {
   if (!ts) return "";
   const d = new Date(ts);
   return isNaN(d) ? "" : d.toLocaleDateString("pt-BR");
+}
+
+/* Revisão completa de uma questão errada: enunciado, alternativas com o gabarito
+   marcado, resumo da explicação e o porquê de cada alternativa errada.
+   TODO texto passa por esc(): varri as 235 questões do banco e nenhuma tem tag
+   HTML em `stem`, `alternatives[].text`, `alternatives[].explanation` nem
+   `explanationSummary` — logo não há nada a ganhar renderizando markup, e
+   escapar tudo mata a classe de bug do ciclo anterior. Nada de dado em atributo:
+   estes blocos são estáticos, sem listener e sem `data-*` com conteúdo. */
+function altRow(alt, correctKey) {
+  const isCorrect = alt.key === correctKey;
+  return `<div class="btn${isCorrect ? " correct" : ""}">
+      <span class="alt-key">${esc(alt.key)}</span>
+      <span class="alt-text">${esc(alt.text)}${isCorrect ? ` <strong class="tag-ok">✓ gabarito</strong>` : ""}</span>
+    </div>`;
+}
+
+function questionReview(q) {
+  const alts = Array.isArray(q.alternatives) ? q.alternatives : [];
+  const wrongWhy = alts
+    .filter(a => a.key !== q.correctKey && a.explanation)
+    .map(a => `<li><strong>${esc(a.key)})</strong> ${esc(a.explanation)}</li>`).join("");
+  const src = q.source || {};
+  const origem = [
+    q.subtopic,
+    src.year,
+    // Nome do arquivo da prova legível: sem extensão e com espaços no lugar de "_".
+    src.file ? String(src.file).replace(/\.html?$/i, "").replace(/_/g, " ") : null,
+    src.originalNumber ? `questão ${src.originalNumber} no original` : null
+  ].filter(Boolean).map(v => esc(v)).join(" · ");
+  return `
+    <p class="q-stem">${esc(q.stem)}</p>
+    ${alts.length
+      ? `<div class="alt-list review">${alts.map(a => altRow(a, q.correctKey)).join("")}</div>`
+      : `<p class="muted">Alternativas não registradas para esta questão.</p>`}
+    <p class="review-h">Por que o gabarito é ${esc(q.correctKey || "?")}</p>
+    ${q.explanationSummary
+      ? `<p>${esc(q.explanationSummary)}</p>`
+      : `<p class="muted">Sem explicação registrada.</p>`}
+    <p class="review-h">Por que as outras estão erradas</p>
+    ${wrongWhy
+      ? `<ul>${wrongWhy}</ul>`
+      : `<p class="muted">Sem explicação registrada por alternativa.</p>`}
+    ${origem ? `<p class="muted q-src">${origem}</p>` : ""}`;
 }
 
 function renderErrors() {
@@ -282,18 +326,15 @@ function renderErrors() {
         ${nc ? `<button class="btn" data-fc="${i}">🃏 Revisar os ${nc} flashcards desta área</button>`
              : `<p class="muted">Sem flashcards nesta área ainda.</p>`}
       </div>
-      <details class="explain">
-        <summary>${g.items.length === 1 ? "Ver a questão que errei" : `Ver as ${g.items.length} questões que errei`}</summary>
-        ${g.items.map(it => {
-          const q = QBYID[it.questionId];
-          return `<div class="sub">
-            <strong>Questão ${esc(it.questionId)}</strong>
-            <span class="muted">${it.wrong > 1 ? ` · errada ${it.wrong}×` : ""}${it.lastWrong ? ` · último erro ${esc(fmtDate(it.lastWrong))}` : ""}${it.recovered ? " · acertada depois ✓" : ""}</span>
-            ${q.subtopic ? `<span class="muted block">${esc(q.subtopic)}</span>` : ""}
-            <p>${trunc(q.stem)}</p>
-          </div>`;
-        }).join("")}
-      </details>
+      <p class="muted">Cada questão abre com o enunciado completo, as alternativas, o gabarito e a explicação.</p>
+      ${g.items.map(it => {
+        const q = QBYID[it.questionId];
+        const meta = `${it.wrong > 1 ? ` · errada ${it.wrong}×` : ""}${it.lastWrong ? ` · último erro ${esc(fmtDate(it.lastWrong))}` : ""}${it.recovered ? " · acertada depois ✓" : ""}`;
+        return `<details class="explain q-review">
+          <summary>${esc(it.questionId)}${meta}<span class="muted block">${trunc(q.stem, 110)}</span></summary>
+          ${questionReview(q)}
+        </details>`;
+      }).join("")}
     </div>`;
   };
 

@@ -2256,6 +2256,12 @@
       "area": "analise-dados",
       "front": "Como muda o conteúdo de um dashboard estratégico, tático e operacional?",
       "back": "O estratégico traz poucos indicadores agregados comparados à meta; o tático mostra desvio por área e período para a gerência; o operacional traz detalhe, alta frequência de atualização e alerta. Errar o público do painel é o defeito mais comum."
+    },
+    {
+      "id": "fc-logica-027",
+      "area": "logica",
+      "front": "Como funciona uma prova por absurdo (redução ao absurdo) e o que ela permite concluir?",
+      "back": "Para provar a conclusão C a partir das premissas, acrescente a NEGAÇÃO da conclusão (~C) ao conjunto de premissas e derive uma contradição (uma fórmula da forma p ∧ ~p, ou um par de linhas contraditórias). Se premissas + ~C são insatisfatíveis, então ~C é incompatível com as premissas e C é consequência lógica delas: premissas ⊨ C. O que se nega é a conclusão, não uma premissa; e a contradição derivada é o que fecha a prova — sem contradição, nada foi provado. Mesma ideia da regra ~p → contradição, logo p."
     }
   ]
 }

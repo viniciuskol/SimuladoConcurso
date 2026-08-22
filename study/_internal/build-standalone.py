@@ -15,10 +15,12 @@ css = (S / "shared" / "styles.css").read_text(encoding="utf-8")
 storage = (S / "shared" / "storage.js").read_text(encoding="utf-8")
 js = html.split('<script type="module">')[1].split("</script>")[0]
 
-# Dados: tudo que o app carrega. questions.json entra numa projeção enxuta —
-# a página publicada só usa id/área/subtópico/enunciado curto (contagem por
-# área e tela de erros), e o arquivo inteiro são 490 KB de alternativas e
-# explicações que só o simulado local consome.
+# Dados: tudo que o app carrega. A projeção de questions.json acompanha o que a
+# tela "Revisar meus erros" passou a usar no ciclo 8: além de id/área/subtópico,
+# ela abre a questão inteira (enunciado completo, as 5 alternativas, o gabarito,
+# o resumo da explicação e a explicação de cada alternativa errada) e cita a
+# prova de origem. Fica fora só o que nenhuma tela publicada lê: `images`,
+# `verification`, `status`, `annulled`.
 areas = json.loads((S / "data" / "areas.json").read_text(encoding="utf-8"))
 qs = json.loads((S / "data" / "questions.json").read_text(encoding="utf-8"))["questions"]
 data = {
@@ -27,7 +29,14 @@ data = {
     "data/plan.json": json.loads((S / "data" / "plan.json").read_text(encoding="utf-8")),
     "data/questions.json": {"questions": [
         {"id": q["id"], "area": q["area"], "subtopic": q.get("subtopic"),
-         "stem": re.sub(r"<[^>]+>", "", q.get("stem") or "")[:220]} for q in qs]},
+         "stem": q.get("stem") or "",
+         "correctKey": q.get("correctKey"),
+         "explanationSummary": q.get("explanationSummary"),
+         "alternatives": [{k: a[k] for k in ("key", "text", "explanation") if a.get(k)}
+                          for a in q.get("alternatives") or []],
+         "source": {k: (q.get("source") or {}).get(k)
+                    for k in ("year", "file", "originalNumber")
+                    if (q.get("source") or {}).get(k)}} for q in qs]},
 }
 for a in [x["id"] for x in areas["areas"]]:
     data[f"data/content/{a}.json"] = json.loads((S / "data" / "content" / f"{a}.json").read_text(encoding="utf-8"))
@@ -38,7 +47,9 @@ storage = re.sub(r"^export ", "", storage, flags=re.M)
 # Troca os imports por: os dados embutidos, um loadJSON que lê do mapa, o
 # showFetchHelp (que nunca dispara aqui, mas mantém a assinatura) e o storage.
 imports = re.search(r'^import .*?;\s*^import .*?;\s*', js, re.M | re.S).group(0)
-js = js.replace(imports, f"""const EMBEDDED = {json.dumps(data, ensure_ascii=False, separators=(',', ':'))};
+# "</" escapado: um "</script>" dentro do JSON encerraria o <script> da página.
+blob = json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace("</", "<\\/")
+js = js.replace(imports, f"""const EMBEDDED = {blob};
 
 async function loadJSON(relPath) {{
   if (!(relPath in EMBEDDED)) throw new Error(`sem dados embutidos para ${{relPath}}`);
