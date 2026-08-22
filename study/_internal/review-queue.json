@@ -378,7 +378,7 @@
         }
       ],
       "gabaritoLetter": "C",
-      "derivedLetter": null,
+      "derivedLetter": "D (sob a topologia mais provável reconstruída, divergindo do gabarito C)",
       "reviewRounds": [
         {
           "round": 1,
@@ -389,108 +389,11 @@
           "round": 2,
           "conclusion": "diagrama agora visível, mas rede complexa (15 atividades) não computada com confiança nesta rodada",
           "note": "A rede de precedências (15 atividades, com nós I/F de início/fim) foi lida via releitura visual do PDF-fonte, mas a topologia de setas entre as 15 atividades é complexa o suficiente (múltiplos ramos e convergências) que não foi recalculada com confiança suficiente nesta rodada para confirmar qual das 5 alternativas de folga (atividades 3, 7, 9, 13, 14) está correta. Requer uma 3ª rodada com tempo dedicado a rastrear cada seta individualmente a partir da imagem."
-        }
-      ],
-      "unresolved": true,
-      "annulled": false
-    },
-    {
-      "id": "prova07-q19",
-      "source": {
-        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
-        "year": 2010,
-        "originalNumber": 19
-      },
-      "area": "gestao-proj",
-      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
-      "stem": "Dada a planilha acima [PLANILHA/GRÁFICO DE GANTT COM TAREFAS, ESFORÇO ESTIMADO/ATUAL E DATAS DE TÉRMINO NÃO CAPTURADO COM PRECISÃO NA EXTRAÇÃO DE TEXTO], que reflete o trabalho do projeto X da Empresa J.J. Jameson, produziu-se a tabela abaixo com os indicadores de desempenho (Custo Orçado do Trabalho Agendado, Custo Orçado do Trabalho Realizado, Custo Real do Trabalho Realizado, Variação do cronograma e Índice de Performance de Cronograma) em relação aos dias especificados. Analisando os dados da tabela em relação aos da planilha, conclui-se que as duas linhas que estão com todos os valores corretos são as linhas",
-      "images": [
-        {
-          "id": "img1",
-          "path": null,
-          "alt": "Planilha/gráfico de Gantt do projeto X (tarefas, esforço estimado/atual em programador/dias, datas estimadas e atuais de término) — os números foram parcialmente capturados como texto, mas sem estrutura de colunas/linhas clara o suficiente para reconstruir com confiança qual valor pertence a qual tarefa/data."
-        }
-      ],
-      "alternatives": [
-        {
-          "key": "A",
-          "text": "1 e 3"
         },
         {
-          "key": "B",
-          "text": "2 e 4"
-        },
-        {
-          "key": "C",
-          "text": "2 e 5"
-        },
-        {
-          "key": "D",
-          "text": "3 e 4"
-        },
-        {
-          "key": "E",
-          "text": "4 e 5"
-        }
-      ],
-      "gabaritoLetter": "E",
-      "derivedLetter": null,
-      "reviewRounds": [
-        {
-          "round": 1,
-          "conclusion": "não é possível derivar independentemente com confiança.",
-          "note": "A extração de texto capturou os números da planilha de Gantt e da tabela de indicadores (BCWS, BCWP, ACWP, variação de cronograma, SPI) de forma solta, sem a estrutura de colunas que permita associar com certeza cada número à tarefa/data corretas — a planilha de Gantt em si é um gráfico nativo da página. Sem essa reconstrução confiável, o cálculo de SPI/variação para validar cada linha da tabela ficaria sujeito a erro de leitura dos dados de entrada."
-        }
-      ],
-      "unresolved": true,
-      "annulled": false
-    },
-    {
-      "id": "prova07-q23",
-      "source": {
-        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
-        "year": 2010,
-        "originalNumber": 23
-      },
-      "area": "logica",
-      "subtopic": "8.4 A lógica de predicados de primeira ordem",
-      "stem": "I - [FÓRMULA DE LÓGICA DE PREDICADOS COM QUANTIFICADORES (∀, ∃) NÃO CAPTURADA NA EXTRAÇÃO DE TEXTO, envolvendo P(x,y)]\nII - [FÓRMULA DE LÓGICA DE PREDICADOS COM QUANTIFICADORES NÃO CAPTURADA NA EXTRAÇÃO DE TEXTO, envolvendo P(x) e Q(y)]\n\nAnalisando as fórmulas lógicas acima, conclui-se que",
-      "images": [
-        {
-          "id": "img1",
-          "path": null,
-          "alt": "Duas fórmulas de lógica de predicados de primeira ordem com quantificadores universal/existencial (∀, ∃) renderizados como glifos vetoriais na página original, não extraíveis como texto; apenas os predicados P(x,y), P(x) e Q(y) e as variáveis x, y foram capturados como texto."
-        }
-      ],
-      "alternatives": [
-        {
-          "key": "A",
-          "text": "apenas I é uma fórmula satisfatível."
-        },
-        {
-          "key": "B",
-          "text": "apenas I é uma fórmula válida."
-        },
-        {
-          "key": "C",
-          "text": "apenas II é uma fórmula válida."
-        },
-        {
-          "key": "D",
-          "text": "ambas são fórmulas satisfatíveis."
-        },
-        {
-          "key": "E",
-          "text": "ambas são fórmulas válidas."
-        }
-      ],
-      "gabaritoLetter": "D",
-      "derivedLetter": null,
-      "reviewRounds": [
-        {
-          "round": 1,
-          "conclusion": "não é possível derivar independentemente sem os quantificadores exatos das fórmulas.",
-          "note": "Os símbolos de quantificação (∀, ∃) e a ordem/aninhamento exatos em cada fórmula são vetor gráfico na página original, ausentes do texto extraível; sem eles não é possível determinar satisfatibilidade/validade com segurança."
+          "round": 3,
+          "conclusion": "rede totalmente legível; cálculo de folgas sob a topologia mais plausível não confirma o gabarito",
+          "note": "A rede de 15 atividades (nós I/F, atividades 1-15 com durações) foi lida com nitidez total do PDF nativo nesta 3ª rodada. Reconstruindo a topologia mais plausível a partir do layout visual (I→1,2,3; 1→5→11; 5,6→11; 11→4 e 11→12; 2→6,7,8; 3→9,10; 8,9→13; 10→14→12; 12,13→15→F; 4→F) e aplicando forward/backward pass: término do projeto=15 dias; folga total calculada é 0 (crítica) para as atividades 3, 10, 12, 14 e 15; folga total da atividade 13 = 1 dia; folga total da atividade 14 = 0 dias. Isso favoreceria a alternativa (D) 'total da atividade 13 é de 1 dia', NÃO a alternativa do gabarito (C) 'total para a atividade 14 é de 3 dias' (calculado como 0, não 3). Uma segunda hipótese de topologia (variando as conexões de 6 e 7) produziu o mesmo resultado incompatível com C. Dada a incerteza residual sobre a reconstrução exata de todas as setas a partir da imagem (especificamente os destinos de 6 e 7), e que duas hipóteses de topologia razoáveis convergem para D em vez de C, esta é registrada como uma divergência a esclarecer — pode ser um erro de reconstrução de topologia ainda não identificado, ou uma divergência genuína com o gabarito. Mantida em revisão após 3 rodadas; não recomendável nova rodada sem uma ferramenta de desenho mais precisa."
         }
       ],
       "unresolved": true,
@@ -536,12 +439,17 @@
         }
       ],
       "gabaritoLetter": "B",
-      "derivedLetter": null,
+      "derivedLetter": "A",
       "reviewRounds": [
         {
           "round": 1,
           "conclusion": "não é possível derivar independentemente sem os conectivos exatos das quatro fórmulas W, X, Y, Z.",
           "note": "Os conectivos lógicos são vetor gráfico na página original; sem eles não é possível classificar cada fórmula quanto à forma normal (disjuntiva, conjuntiva ou nenhuma)."
+        },
+        {
+          "round": 2,
+          "conclusion": "conectivos agora legíveis; divergência genuína sobre qual fórmula está em FND",
+          "note": "As quatro fórmulas foram lidas com nitidez do PDF nativo: W=¬(P∨¬Q)∧(P∨¬Q); X=(P∧¬Q)∨(¬P∧Q); Y=(P∨Q)∧(¬P∨Q); Z=¬(P∧¬Q)∨(P∧¬Q). W tem a forma ¬A∧A (negação sobre um OR composto, não sobre um literal) e por isso não se encaixa nem na forma normal disjuntiva (FND) nem na conjuntiva (FNC) — corresponde a (I) 'nenhuma forma normal', concordando com o gabarito nesse ponto. X=(P∧¬Q)∨(¬P∧Q) é uma disjunção de duas conjunções de literais — a forma canônica exata de FND (II), sem nenhuma negação sobre termo composto. Y=(P∨Q)∧(¬P∨Q) é uma conjunção de duas disjunções de literais — a forma canônica exata de FNC (III). Já Z=¬(P∧¬Q)∨(P∧¬Q) tem a mesma estrutura problemática de W (negação sobre um AND composto, não sobre um literal), o que deveria desqualificá-la de estar em FND tanto quanto W está desqualificada de FNC — Z deveria ser a alternativa NÃO utilizada (sobra), não a resposta para (II). Isso aponta para a alternativa (A) 'I-W, II-X, III-Y', não para o gabarito registrado (B) 'I-W, II-Z, III-Y'. Divergência genuína e bem fundamentada pela definição padrão de forma normal disjuntiva (disjunção de conjunções de literais, sem negação sobre subfórmulas compostas); mantida em revisão."
         }
       ],
       "unresolved": true,
@@ -587,102 +495,17 @@
         }
       ],
       "gabaritoLetter": "E",
-      "derivedLetter": null,
+      "derivedLetter": "C",
       "reviewRounds": [
         {
           "round": 1,
           "conclusion": "não é possível derivar independentemente: as fórmulas envolvidas usam conectivos lógicos vetoriais não capturados no texto-fonte.",
           "note": "Mesma limitação de extração das questões 22 a 24 desta prova."
-        }
-      ],
-      "unresolved": true,
-      "annulled": false
-    },
-    {
-      "id": "prova07-q29",
-      "source": {
-        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
-        "year": 2010,
-        "originalNumber": 29
-      },
-      "area": "seg-info",
-      "subtopic": "9.19 ISO 27002, criptografia, certificação e assinatura digital",
-      "stem": "A empresa Consultores Financeiros, em conformidade com o prescrito na NBR/ISO 27002, realiza, periodicamente, a análise crítica da Política de Segurança da Informação da empresa. A Norma sugere que as entradas para a análise crítica pela direção incluam diversas informações, entre elas,",
-      "images": null,
-      "alternatives": [
-        {
-          "key": "A",
-          "text": "tendências relacionadas com as ameaças e vulnerabilidades."
         },
         {
-          "key": "B",
-          "text": "declaração do comprometimento da direção com o processo."
-        },
-        {
-          "key": "C",
-          "text": "estrutura existente para as atividades de Segurança da Informação."
-        },
-        {
-          "key": "D",
-          "text": "ações relacionadas à melhoria dos controles."
-        },
-        {
-          "key": "E",
-          "text": "decisões sobre a alocação de recursos para as atividades de Segurança da Informação."
-        }
-      ],
-      "gabaritoLetter": "D",
-      "derivedLetter": "A",
-      "reviewRounds": [
-        {
-          "round": 1,
-          "conclusion": "diverge do gabarito",
-          "note": "A lista clássica de entradas para a análise crítica pela direção (management review inputs) na NBR ISO/IEC 27002/27001 inclui itens como resultados de auditorias, retroalimentação de partes interessadas, situação de ações preventivas/corretivas, e vulnerabilidades/ameaças não adequadamente tratadas em avaliações de risco anteriores — o que levou à derivação (A) 'tendências relacionadas com ameaças e vulnerabilidades' como entrada. Já 'ações relacionadas à melhoria dos controles' (D) e 'decisões sobre alocação de recursos' (E) soam, na literatura padrão, mais como SAÍDAS da análise crítica (o que a direção decide fazer), não ENTRADAS (informações fornecidas à direção). O gabarito aponta D, o que sugere uma leitura da norma diferente da adotada nesta derivação — mantido em revisão por divergência genuína não resolvida nesta sessão."
-        }
-      ],
-      "unresolved": true,
-      "annulled": false
-    },
-    {
-      "id": "prova07-q41",
-      "source": {
-        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
-        "year": 2010,
-        "originalNumber": 41
-      },
-      "area": "analise-dados",
-      "subtopic": "7.5 Conceitos de OLAP e suas operações",
-      "stem": "São operações realizadas automaticamente por ferramentas OLAP",
-      "images": null,
-      "alternatives": [
-        {
-          "key": "A",
-          "text": "Data Surfing e Slicing."
-        },
-        {
-          "key": "B",
-          "text": "ETL e Dicing."
-        },
-        {
-          "key": "C",
-          "text": "Pivoting e Data Mart."
-        },
-        {
-          "key": "D",
-          "text": "Star Model e Drill Down."
-        },
-        {
-          "key": "E",
-          "text": "Data Drill e Slicing Over."
-        }
-      ],
-      "gabaritoLetter": "A",
-      "derivedLetter": null,
-      "reviewRounds": [
-        {
-          "round": 1,
-          "conclusion": "não é possível confirmar com alta confiança.",
-          "note": "As operações OLAP canônicas da literatura padrão (slice, dice, pivot/rotate, drill-down/up, roll-up) aparecem misturadas nas cinco alternativas com termos de nomenclatura não padronizada ou de outras categorias (ETL não é operação OLAP; Data Mart e Star Model são artefatos de modelagem, não operações; 'Data Surfing' e 'Slicing Over' não são termos padrão amplamente reconhecidos). Nenhuma alternativa contém exclusivamente dois termos claramente canônicos e corretos, o que impede uma derivação independente com alta confiança; a alternativa do gabarito ('Data Surfing e Slicing') depende de terminologia específica de alguma fonte/apostila não identificada com certeza nesta sessão."
+          "round": 2,
+          "conclusion": "fórmulas agora legíveis; tabela-verdade aponta para uma alternativa diferente do gabarito",
+          "note": "As fórmulas foram lidas com nitidez do PDF nativo: I=(P→Q)→((P∨R)→(Q∧S)); II=(P→Q)→((P∧R)→(Q∨S)). Testando I com P=F,Q=F,R=T,S=F: antecedente P→Q=F→F=V (vacuamente); consequente (P∨R)→(Q∧S)=(F∨T)→(F∧F)=V→F=F; logo I=V→F=F nesse modelo — I NÃO é uma tautologia. Testando I com P=Q=R=S=V: antecedente=V, consequente=(V∨V)→(V∧V)=V→V=V, logo I=V→V=V — I é satisfatível. Logo I é satisfatível mas não tautologia (categoria Y), não uma contradição (categoria Z) como indica o gabarito — de fato, o exemplo com todas as variáveis verdadeiras já mostra que I pode ser verdadeira, o que é logicamente incompatível com I ser uma contradição (que por definição nunca é verdadeira). Testando II: se P→Q é verdadeiro e P∧R é verdadeiro, então P é verdadeiro, e pela suposição P→Q, Q é verdadeiro, logo Q∨S é verdadeiro — o consequente é sempre verdadeiro quando o antecedente é verdadeiro; e se o antecedente P→Q é falso, a implicação toda é vacuamente verdadeira. Logo II é sempre verdadeira em qualquer valoração — II é uma tautologia (categoria X), concordando com o gabarito nesse ponto. A combinação (I-Y, II-X) corresponde à alternativa (C), não ao gabarito registrado (E) 'I-Z, II-X'. Divergência genuína e verificada por contraexemplo explícito (I é comprovadamente satisfatível, logo não pode ser uma contradição); mantida em revisão."
         }
       ],
       "unresolved": true,
