@@ -2,7 +2,7 @@
 
 | Prova fonte | Páginas lidas | Candidatas lidas | Relevantes (mantidas) | Confirmadas | Em revisão | Descartadas |
 |---|---|---|---|---|---|---|
-| prova_6_analista_de_sistemas_junior_processos_de_negocio.html | 19 | 70 | 54 | 44 | 10 | 16 |
+| prova_6_analista_de_sistemas_junior_processos_de_negocio.html | 19 | 70 | 54 | 49 | 5 | 16 |
 | tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html | 21 | 70 | 50 | 36 | 14 | 20 |
 | analista_de_sistemas_junior_processos_de_negocio2018.html | 71 | 70 | 48 | 45 | 3 | 22 |
 | cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html | 21 | 70 | 52 | 46 | 6 | 18 |
@@ -156,4 +156,17 @@ Usando essa releitura visual como uma 2ª rodada de verificação independente, 
 - **petro08-q40** (fórmula lógica "não capturada na extração"): a fórmula `((p ∨ q) → (r ∧ s)) ↔ (¬t)` foi lida diretamente da página do PDF-fonte (os símbolos ∨/∧/¬/↔ aparecem corretamente na renderização visual, apesar de terem sido perdidos na extração de texto original). Testando os 5 conjuntos de valores, apenas a alternativa C torna a proposição verdadeira, concordando com o gabarito.
 - **petro08-q42** (tradução para lógica de predicados com conectivos corrompidos): os conectivos corretos (∨, →, ↔) nas 5 alternativas foram lidos da página do PDF-fonte. A estrutura "X será bem-sucedido SE (A ou B)" é uma implicação simples (A∨B)→X, não uma equivalência — apenas a alternativa E tem essa forma, concordando com o gabarito.
 
-Itens de diagrama ainda pendentes (não resolvidos nesta rodada, por dependerem de SVG vetorial em HTML — não PDF nativo — ou por multiplicidade/posição de setas ainda ambígua mesmo após releitura visual): `prova6-q23/q52/q54/q63/q66/q67/q69`, `prova07-q6/q13/q19/q22/q23/q24/q25/q50/q52`, `psjpn2018-q54`, `transp15-q69/q70`, `transp23e6-q21/q22/q27/q28`, `petro08-q55` (diagrama de classes UML — estrutura geral compatível com a alternativa do gabarito por raciocínio de domínio, mas a posição exata dos símbolos de multiplicidade/composição não pôde ser confirmada com confiança alta o suficiente para promover).
+Itens de diagrama ainda pendentes nesta rodada, por dependerem de SVG vetorial em HTML — não PDF nativo — ou por multiplicidade/posição de setas ainda ambígua mesmo após releitura visual: `prova07-q6/q13/q19/q22/q23/q24/q25/q50/q52`, `psjpn2018-q54`, `transp15-q69/q70`, `transp23e6-q21/q22/q27/q28`, `petro08-q55` (diagrama de classes UML — estrutura geral compatível com a alternativa do gabarito por raciocínio de domínio, mas a posição exata dos símbolos de multiplicidade/composição não pôde ser confirmada com confiança alta o suficiente para promover).
+
+## Resolução de diagramas/fórmulas da prova_6 via PDF nativo (2026-08-22)
+
+A prova_6 também tem uma versão em PDF nativo (`prova_6_analista_de_sistemas_junior_processos_de_negocio.pdf`) além do HTML, o que permitiu aplicar a mesma técnica de releitura visual (via `Read` sem parâmetro `pages`) usada nas provas 2012/2008. 5 itens foram promovidos de `review-queue.json` para `questions.json`:
+- **prova6-q52** (diagrama de classes UML): diamante preenchido junto a C1 (composição, não agregação) com multiplicidade 0..* junto a C2 — confirma a alternativa E (composição/todo-parte/destruição do todo implica destruição da parte), concordando com o gabarito.
+- **prova6-q63** (fórmula lógica `(P→Q)→(¬P∧Q)`): tabela-verdade construída a partir da fórmula lida diretamente da página — exatamente 2 valorações verdadeiras, concordando com o gabarito.
+- **prova6-q66** (resolução de cláusulas `{¬A(x),B(x)}` e `{A(g(y)),B(y)}`): a hipótese alternativa da 1ª rodada não se confirmou; a leitura direta mostrou que as cláusulas originais já continham a negação corretamente posicionada, e o resolvente `{B(g(y)), B(y)}` concorda com o gabarito.
+- **prova6-q67** (4 fórmulas de tautologia): todas as 4 fórmulas lidas diretamente da página são tautologias (De Morgan, redução a implicação sempre verdadeira, Lei de Peirce, e regra de resolução) — concordando com o gabarito (E).
+- **prova6-q69** (3 sentenças de lógica de primeira ordem sobre satisfatibilidade): apenas a sentença II é logicamente insatisfatível (autocontraditória) — concordando com o gabarito (B).
+
+2 itens permanecem em revisão, agora com o diagrama/fórmula documentado mas ainda sem confiança suficiente para promover:
+- **prova6-q23** (rede CPM: Comunicação→Planejamento→Modelagem→Construção/Documentação→Implantação): a releitura visual esclareceu a topologia geral da rede, mas o recálculo independente do término mais cedo do projeto e da folga da atividade de Documentação não reproduziu exatamente os valores implícitos no gabarito (III apenas) — provavelmente por uma imprecisão residual na leitura exata do ramo de Documentação. Documentado em detalhe na entrada da fila de revisão para uma 3ª rodada futura.
+- **prova6-q54** (diagrama de classes UML com pacotes p1/p2, atributos com visibilidade +w/-x/#y/~z, generalização entre pacotes): a derivação independente pelas regras padrão de visibilidade UML/OO ("w e y, apenas") diverge do gabarito ("y, apenas"), sem explicação encontrada para a diferença — divergência genuína, mantida em revisão.

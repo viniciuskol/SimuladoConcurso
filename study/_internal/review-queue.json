@@ -54,7 +54,7 @@
         "originalNumber": 23
       },
       "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
-      "stem": "O planejamento inicial para um projeto de desenvolvimento de software gerou a rede do cronograma apenas com a data de início mais cedo da primeira atividade e término mais tarde da última atividade determinadas, conforme apresentado a seguir [DIAGRAMA DE REDE DO CRONOGRAMA NÃO CAPTURADO NA EXTRAÇÃO DE TEXTO]. Considerando o uso do Método do Caminho Crítico, analise as afirmativas abaixo. I - A data mais cedo que o projeto pode terminar é no dia 141. II - Caso a previsão para a fase de construção mude para 90 dias, a data limite para a fase de modelagem começar, sem atrasar, é o dia 70. III - A folga total na atividade de documentação é de 75 dias. É correto APENAS o que se afirma em",
+      "stem": "O planejamento inicial para um projeto de desenvolvimento de software gerou a rede do cronograma apenas com a data de início mais cedo da primeira atividade e término mais tarde da última atividade determinadas: Comunicação (20 dias) -> Planejamento (20 dias) -> Modelagem (30 dias) -> Construção (60 dias) -> Implantação (10 dias), com Documentação (45 dias) ramificando de Modelagem em paralelo com Construção e convergindo em Implantação; início no Dia 1. Considerando o uso do Método do Caminho Crítico, analise as afirmativas abaixo. I - A data mais cedo que o projeto pode terminar é no dia 141. II - Caso a previsão para a fase de construção mude para 90 dias, a data limite para a fase de modelagem começar, sem atrasar, é o dia 70. III - A folga total na atividade de documentação é de 75 dias. É correto APENAS o que se afirma em",
       "images": [
         {
           "id": "img1",
@@ -85,12 +85,17 @@
         }
       ],
       "gabaritoLetter": "C",
-      "derivedLetter": null,
+      "derivedLetter": "A (apenas I) por uma convenção de contagem, mas incerto",
       "reviewRounds": [
         {
           "round": 1,
           "conclusion": "não é possível derivar independentemente sem o diagrama de rede do cronograma (datas, durações e dependências das atividades), que é gráfico nativo da página e não foi capturado pela extração de texto.",
           "note": "Requer reconstrução do diagrama (assets/images) em fase posterior antes de qualquer tentativa de verificação independente."
+        },
+        {
+          "round": 2,
+          "conclusion": "diagrama agora visível (releitura do PDF-fonte), mas ainda não plenamente resolvido",
+          "note": "O diagrama de rede foi lido com sucesso via releitura visual da página do PDF-fonte (Read sem parâmetro pages): Comunicação(20d)->Planejamento(20d)->Modelagem(30d)->Construção(60d)->Implantação(10d), com Documentação(45d) ramificando de Modelagem em paralelo com Construção e convergindo em Implantação, início Dia 1. Usando a convenção de soma direta de datas (sem -1), o término mais cedo do projeto é dia 141 (1+20+20+30+60+10), o que faria a afirmativa I parecer verdadeira — mas o gabarito considera APENAS a III correta (logo I e II são falsas segundo a banca), sugerindo que a convenção correta de contagem dá término mais cedo = dia 140, não 141 (usando início mais cedo=1 e término mais cedo=início+duração-1, subtraindo 1 por task). Com essa convenção, recalculando a folga total de Documentação obtém-se 15 dias (LS=86, ES=71), não os 75 dias afirmados na alternativa III do gabarito — divergência não resolvida. É possível que a posição exata do ramo de Documentação no diagrama (de qual atividade ela parte) não tenha sido lida corretamente nesta rodada, pois um início mais precoce para Documentação (ex.: logo após Comunicação, dia 21) aproximaria mais o cálculo de folga de 75 dias sem, no entanto, reproduzi-lo exatamente. Recomenda-se uma 3ª rodada com inspeção ainda mais cuidadosa da posição das setas de/para Documentação antes de qualquer tentativa de confirmação."
         }
       ],
       "unresolved": true,
@@ -233,57 +238,6 @@
       "area": "eng-sw"
     },
     {
-      "id": "prova6-q52",
-      "source": {
-        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
-        "year": 2011,
-        "originalNumber": 52
-      },
-      "subtopic": "5.3 Modelos, metodologias, técnicas e ferramentas de análise e projeto (estruturado e orientado a objetos)",
-      "stem": "O esboço de diagrama de classes ilustrado na figura, usando a notação proposta pela linguagem UML, apresenta duas classes C1 e C2, relacionadas por [DIAGRAMA UML NÃO CAPTURADO NA EXTRAÇÃO DE TEXTO]",
-      "images": [
-        {
-          "id": "img1",
-          "path": null,
-          "alt": "Diagrama de classes UML com duas classes C1 e C2 e uma relação (agregação, composição ou generalização, com o tipo exato de losango/seta) — não capturado na extração de texto."
-        }
-      ],
-      "alternatives": [
-        {
-          "text": "agregação – todo-parte – destruição de um objeto todo implica necessariamente a destruição do objeto parte.",
-          "key": "A"
-        },
-        {
-          "text": "agregação – todo-parte – destruição de um objeto todo não implica necessariamente a destruição do objeto parte.",
-          "key": "B"
-        },
-        {
-          "text": "agregação – generalização-especialização – destruição de um objeto mais geral não implica necessariamente a destruição de um objeto mais específico.",
-          "key": "C"
-        },
-        {
-          "text": "composição – generalização-especialização – destruição de um objeto mais geral implica necessariamente a destruição de um objeto mais específico.",
-          "key": "D"
-        },
-        {
-          "text": "composição – todo-parte – destruição de um objeto todo implica necessariamente a destruição do objeto parte.",
-          "key": "E"
-        }
-      ],
-      "gabaritoLetter": "E",
-      "derivedLetter": null,
-      "reviewRounds": [
-        {
-          "round": 1,
-          "conclusion": "não é possível derivar independentemente sem o diagrama UML (notação do losango/relação entre C1 e C2), que é gráfico nativo da página e não foi capturado pela extração de texto.",
-          "note": "Requer reconstrução do diagrama (assets/images) em fase posterior antes de qualquer tentativa de verificação independente."
-        }
-      ],
-      "unresolved": true,
-      "annulled": false,
-      "area": "eng-sw"
-    },
-    {
       "id": "prova6-q54",
       "source": {
         "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
@@ -291,7 +245,7 @@
         "originalNumber": 54
       },
       "subtopic": "5.3 Modelos, metodologias, técnicas e ferramentas de análise e projeto (estruturado e orientado a objetos)",
-      "stem": "O esboço de diagrama de classes ilustrado na figura, usando a notação proposta pela linguagem UML, apresenta duas classes C1 e C2 e dois pacotes p1 e p2 [DIAGRAMA UML NÃO CAPTURADO NA EXTRAÇÃO DE TEXTO, incluindo visibilidade dos atributos w, x, y, z]. Quais atributos de instância podem ser manipulados por métodos definidos na classe C2?",
+      "stem": "O esboço de diagrama de classes ilustrado na figura, usando a notação proposta pela linguagem UML, mostra o pacote p1 contendo a classe C1 (com atributos +w, -x, #y, ~z) e o pacote p2 contendo a classe C2, com uma seta de generalização (triângulo vazio) de C2 apontando para C1 (C2 é subclasse de C1, em pacote diferente). Quais atributos de instância podem ser manipulados por métodos definidos na classe C2?",
       "images": [
         {
           "id": "img1",
@@ -322,221 +276,22 @@
         }
       ],
       "gabaritoLetter": "E",
-      "derivedLetter": null,
+      "derivedLetter": "C (w e y, apenas) — diverge do gabarito",
       "reviewRounds": [
         {
           "round": 1,
           "conclusion": "não é possível derivar independentemente sem o diagrama UML (visibilidade dos atributos w, x, y, z e localização de C1/C2 nos pacotes p1/p2), que é gráfico nativo da página e não foi capturado pela extração de texto.",
           "note": "Requer reconstrução do diagrama (assets/images) em fase posterior antes de qualquer tentativa de verificação independente."
+        },
+        {
+          "round": 2,
+          "conclusion": "diagrama agora visível, mas resultado diverge do gabarito",
+          "note": "O diagrama foi lido com sucesso via releitura visual do PDF-fonte: C1 (pacote p1) tem atributos +w (público), -x (privado), #y (protegido), ~z (pacote/default); C2 (pacote p2) generaliza (estende) C1, com o triângulo vazio de generalização apontando para C1. Pela semântica padrão de visibilidade UML/OO, uma subclasse em pacote diferente herda e pode manipular atributos públicos (+) e protegidos (#), mas não privados (-) nem de pacote/default (~) do pacote da superclasse — o que levaria a \"w e y, apenas\" (alternativa C). O gabarito, porém, indica a alternativa E (\"y, apenas\"), excluindo o atributo público w. Não foi possível reconciliar essa divergência nesta rodada — pode refletir uma convenção específica assumida pela banca (por exemplo, tratando \"manipular\" como exigindo passagem por um método de acesso mesmo para atributos públicos, ou uma leitura diferente da direção da seta de generalização) que não está clara a partir do enunciado e do diagrama isoladamente. Mantida em revisão por divergência genuína entre a derivação independente e o gabarito."
         }
       ],
       "unresolved": true,
       "annulled": false,
       "area": "eng-sw"
-    },
-    {
-      "id": "prova6-q63",
-      "source": {
-        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
-        "year": 2011,
-        "originalNumber": 63
-      },
-      "subtopic": "8.3 A lógica sentencial",
-      "stem": "No cálculo proposicional, dada a fórmula [FÓRMULA COM CONECTIVOS LÓGICOS (∨, ∧, →, ¬) NÃO CAPTURADOS NA EXTRAÇÃO DE TEXTO — os símbolos de conectivo/negação são desenhados como vetor gráfico, não como texto, na página original], exatamente em quantas valorações do par (P, Q) essa proposição assume o valor verdade?",
-      "images": [
-        {
-          "id": "img1",
-          "path": null,
-          "alt": "Fórmula proposicional com conectivos lógicos (∨, ∧, →, ¬) renderizados como glifos vetoriais/Type3 na página original, não extraíveis como texto."
-        }
-      ],
-      "alternatives": [
-        {
-          "text": "0",
-          "key": "A"
-        },
-        {
-          "text": "1",
-          "key": "B"
-        },
-        {
-          "text": "2",
-          "key": "C"
-        },
-        {
-          "text": "3",
-          "key": "D"
-        },
-        {
-          "text": "4",
-          "key": "E"
-        }
-      ],
-      "gabaritoLetter": "C",
-      "derivedLetter": null,
-      "reviewRounds": [
-        {
-          "round": 1,
-          "conclusion": "não é possível derivar independentemente: os símbolos de conectivo lógico da fórmula (∨, ∧, →, ¬) são desenhados como vetor gráfico na página original e não foram capturados pela extração de texto (confirmado inspecionando o HTML fonte diretamente, onde o espaço reservado ao símbolo aparece vazio entre 'P' e 'Q').",
-          "note": "Requer reconstrução da fórmula como imagem/MathML em fase posterior, a partir de inspeção visual do PDF, antes de qualquer tentativa de verificação independente."
-        }
-      ],
-      "unresolved": true,
-      "annulled": false,
-      "area": "logica"
-    },
-    {
-      "id": "prova6-q66",
-      "source": {
-        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
-        "year": 2011,
-        "originalNumber": 66
-      },
-      "subtopic": "8.6 Sistemas dedutivos",
-      "stem": "Considere as cláusulas C1 e C2, representadas, respectivamente, pelos conjuntos {[NEGAÇÃO NÃO CAPTURADA]A(x), B(x)} e {[NEGAÇÃO NÃO CAPTURADA]A(g(y)), B(y)}. Um resolvente dessas cláusulas é (nota: pelo padrão típico de exemplos de resolução em lógica de predicados, é provável que as cláusulas pretendidas sejam C1={¬A(x), B(x)} e C2={A(g(y)), ¬B(y)}, mas o símbolo de negação (¬) é desenhado como vetor gráfico na página original e não foi capturado pela extração de texto, então essa leitura não pôde ser confirmada com certeza).",
-      "images": [
-        {
-          "id": "img1",
-          "path": null,
-          "alt": "Cláusulas de resolução em lógica de predicados com símbolos de negação (¬) renderizados como vetor gráfico, não extraíveis como texto."
-        }
-      ],
-      "alternatives": [
-        {
-          "text": "{B(x), B(y)}",
-          "key": "A"
-        },
-        {
-          "text": "{B(g(y)), B(y)}",
-          "key": "B"
-        },
-        {
-          "text": "{¬A(x), A(g(x))} (negação inferida, não confirmada no texto-fonte)",
-          "key": "C"
-        },
-        {
-          "text": "{¬A(x), A(g(x)), B(x)} (negação inferida, não confirmada no texto-fonte)",
-          "key": "D"
-        },
-        {
-          "text": "{¬A(x), B(x), A(g(y)), B(y)} (negação inferida, não confirmada no texto-fonte)",
-          "key": "E"
-        }
-      ],
-      "gabaritoLetter": "B",
-      "derivedLetter": null,
-      "reviewRounds": [
-        {
-          "round": 1,
-          "conclusion": "não é possível confirmar com segurança a posição exata das negações nas cláusulas e alternativas: verificado no HTML fonte que os símbolos de negação (¬) são desenhados como vetor gráfico, ausentes do texto extraível.",
-          "note": "Requer reconstrução visual das cláusulas a partir do PDF/imagem em fase posterior antes de qualquer tentativa de verificação independente."
-        }
-      ],
-      "unresolved": true,
-      "annulled": false,
-      "area": "logica"
-    },
-    {
-      "id": "prova6-q67",
-      "source": {
-        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
-        "year": 2011,
-        "originalNumber": 67
-      },
-      "subtopic": "8.8 Valores-verdade",
-      "stem": "Considere as proposições a seguir. I - [FÓRMULA NÃO CAPTURADA] II - [FÓRMULA NÃO CAPTURADA] III - [FÓRMULA NÃO CAPTURADA] IV - [FÓRMULA NÃO CAPTURADA] São tautologias as proposições apresentadas em",
-      "images": [
-        {
-          "id": "img1",
-          "path": null,
-          "alt": "Quatro fórmulas proposicionais (I a IV) inteiramente renderizadas como vetor gráfico na página original — nenhum conteúdo textual foi capturado para essas fórmulas."
-        }
-      ],
-      "alternatives": [
-        {
-          "text": "I e IV, apenas.",
-          "key": "A"
-        },
-        {
-          "text": "II e III, apenas.",
-          "key": "B"
-        },
-        {
-          "text": "I, II e III, apenas.",
-          "key": "C"
-        },
-        {
-          "text": "II, III e IV, apenas.",
-          "key": "D"
-        },
-        {
-          "text": "I, II, III e IV.",
-          "key": "E"
-        }
-      ],
-      "gabaritoLetter": "E",
-      "derivedLetter": null,
-      "reviewRounds": [
-        {
-          "round": 1,
-          "conclusion": "não é possível derivar nem transcrever o enunciado: as quatro fórmulas proposicionais (I-IV), essenciais para a questão, são inteiramente vetor gráfico na página original, sem qualquer texto extraível.",
-          "note": "Questão inutilizável sem reconstrução visual completa das 4 fórmulas a partir do PDF em fase posterior."
-        }
-      ],
-      "unresolved": true,
-      "annulled": false,
-      "area": "logica"
-    },
-    {
-      "id": "prova6-q69",
-      "source": {
-        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
-        "year": 2011,
-        "originalNumber": 69
-      },
-      "subtopic": "8.4 A lógica de predicados de primeira ordem",
-      "stem": "Considere as sentenças da lógica de primeira ordem a seguir. I - [FÓRMULA NÃO CAPTURADA] II - [FÓRMULA NÃO CAPTURADA] III - [FÓRMULA NÃO CAPTURADA] São insatisfatíveis APENAS as sentenças apresentadas em",
-      "images": [
-        {
-          "id": "img1",
-          "path": null,
-          "alt": "Três sentenças de lógica de predicados de primeira ordem (I a III) inteiramente renderizadas como vetor gráfico na página original — nenhum conteúdo textual foi capturado para essas sentenças."
-        }
-      ],
-      "alternatives": [
-        {
-          "text": "I",
-          "key": "A"
-        },
-        {
-          "text": "II",
-          "key": "B"
-        },
-        {
-          "text": "III",
-          "key": "C"
-        },
-        {
-          "text": "I e II",
-          "key": "D"
-        },
-        {
-          "text": "II e III",
-          "key": "E"
-        }
-      ],
-      "gabaritoLetter": "B",
-      "derivedLetter": null,
-      "reviewRounds": [
-        {
-          "round": 1,
-          "conclusion": "não é possível derivar nem transcrever o enunciado: as três sentenças de lógica de predicados (I-III), essenciais para a questão, são inteiramente vetor gráfico na página original, sem qualquer texto extraível.",
-          "note": "Questão inutilizável sem reconstrução visual completa das 3 sentenças a partir do PDF em fase posterior."
-        }
-      ],
-      "unresolved": true,
-      "annulled": false,
-      "area": "logica"
     },
     {
       "id": "psjpn2018-q36",

@@ -16861,6 +16861,251 @@
       },
       "correctKey": "E",
       "explanationSummary": "A frase 'será bem-sucedido SE (Processo Unificado OU Java)' é uma implicação simples (não uma equivalência): a disjunção das duas condições implica o sucesso, mas o sucesso não implica necessariamente que uma delas ocorreu. Isso corresponde a (JI ∨ Ud) → Sp."
+    },
+    {
+      "id": "prova6-q52",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 52
+      },
+      "area": "eng-sw",
+      "subtopic": "5.3 Modelos, metodologias, técnicas e ferramentas de análise e projeto (estruturado e orientado a objetos)",
+      "stem": "O esboço de diagrama de classes ilustrado na figura, usando a notação proposta pela linguagem UML, apresenta duas classes C1 e C2, ligadas por um diamante preenchido (composição) do lado de C1, com multiplicidade 0..* do lado de C2. Relacionadas por",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "agregação – todo-parte – destruição de um objeto todo implica necessariamente a destruição do objeto parte.",
+          "explanation": "O diamante preenchido indica composição, não agregação."
+        },
+        {
+          "key": "B",
+          "text": "agregação – todo-parte – destruição de um objeto todo não implica necessariamente a destruição do objeto parte.",
+          "explanation": "O diamante preenchido indica composição (não agregação), e composição implica sim a destruição da parte."
+        },
+        {
+          "key": "C",
+          "text": "agregação – generalização-especialização – destruição de um objeto mais geral não implica necessariamente a destruição de um objeto mais específico.",
+          "explanation": "A notação usada (diamante) representa uma relação todo-parte (composição), não uma generalização-especialização (que usaria um triângulo vazio)."
+        },
+        {
+          "key": "D",
+          "text": "composição – generalização-especialização – destruição de um objeto mais geral implica necessariamente a destruição de um objeto mais específico.",
+          "explanation": "A notação usada é a de composição todo-parte (diamante), não de generalização-especialização."
+        },
+        {
+          "key": "E",
+          "text": "composição – todo-parte – destruição de um objeto todo implica necessariamente a destruição do objeto parte."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Resolvida via releitura visual direta da página do PDF-fonte (Read sem parâmetro pages): o diagrama mostra um diamante PREENCHIDO junto a C1 (composição, não agregação) e multiplicidade 0..* junto a C2. Composição é uma relação todo-parte forte, em que a destruição do todo implica a destruição da parte — exatamente a alternativa E, concordando com o gabarito."
+      },
+      "correctKey": "E",
+      "explanationSummary": "O diamante preenchido é o símbolo UML de composição (não agregação, que usa diamante vazio). Composição é uma relação todo-parte em que a destruição do objeto todo implica necessariamente a destruição do objeto parte."
+    },
+    {
+      "id": "prova6-q63",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 63
+      },
+      "area": "logica",
+      "subtopic": "8.3 A lógica sentencial",
+      "stem": "No cálculo proposicional, dada a fórmula (P→Q)→(¬P∧Q), exatamente em quantas valorações do par (P, Q) essa proposição assume o valor verdade?",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "0",
+          "explanation": "A tabela-verdade mostra 2 valorações verdadeiras (P=V,Q=F e P=F,Q=V), não 0."
+        },
+        {
+          "key": "B",
+          "text": "1",
+          "explanation": "São 2 valorações verdadeiras, não apenas 1."
+        },
+        {
+          "key": "C",
+          "text": "2"
+        },
+        {
+          "key": "D",
+          "text": "3",
+          "explanation": "São exatamente 2 valorações verdadeiras, não 3."
+        },
+        {
+          "key": "E",
+          "text": "4",
+          "explanation": "São exatamente 2 valorações verdadeiras, não todas as 4."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Fórmula lida diretamente da página do PDF-fonte: (P→Q)→(¬P∧Q). Tabela-verdade: (V,V)→F; (V,F)→T; (F,V)→T; (F,F)→F. Exatamente 2 valorações tornam a proposição verdadeira, concordando com o gabarito."
+      },
+      "correctKey": "C",
+      "explanationSummary": "Construindo a tabela-verdade de (P→Q)→(¬P∧Q) para as 4 valorações de (P,Q): a proposição é verdadeira apenas quando (P,Q)=(V,F) e quando (P,Q)=(F,V) — exatamente 2 valorações."
+    },
+    {
+      "id": "prova6-q66",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 66
+      },
+      "area": "logica",
+      "subtopic": "8.6 Sistemas dedutivos",
+      "stem": "Considere as cláusulas C1 e C2, representadas, respectivamente, pelos conjuntos {¬A(x), B(x)} e {A(g(y)), B(y)}. Um resolvente dessas cláusulas é",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "{B(x), B(y)}",
+          "explanation": "Não aplica a substituição correta de unificação (x=g(y)) ao literal remanescente de C1; deveria ser B(g(y)), não B(x)."
+        },
+        {
+          "key": "B",
+          "text": "{B(g(y)), B(y)}"
+        },
+        {
+          "key": "C",
+          "text": "{¬A(x), A(g(x))}",
+          "explanation": "Não é um resolvente válido: mistura literais que não resultam da unificação e resolução corretas entre C1 e C2."
+        },
+        {
+          "key": "D",
+          "text": "{¬A(x), A(g(x)), B(x)}",
+          "explanation": "Contém literais que se cancelariam (¬A(x) e A(g(x)) não se unificam desta forma) e não reflete a resolução correta."
+        },
+        {
+          "key": "E",
+          "text": "{¬A(x), B(x), A(g(y)), B(y)}",
+          "explanation": "Simplesmente concatena os literais das duas cláusulas sem realizar a resolução (cancelamento dos literais complementares ¬A(x) e A(g(y)))."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Os símbolos de negação, lidos diretamente da página do PDF-fonte, confirmam C1={¬A(x), B(x)} e C2={A(g(y)), B(y)} (a hipótese alternativa registrada na rodada 1 não se confirmou). Unificando ¬A(x) com A(g(y)) via x=g(y), o resolvente é {B(g(y)), B(y)}, concordando com o gabarito."
+      },
+      "correctKey": "B",
+      "explanationSummary": "Unificando o literal ¬A(x) de C1 com A(g(y)) de C2 (substituição x=g(y)) e removendo os dois literais complementares, o resolvente é a união dos literais remanescentes com a substituição aplicada: {B(g(y)), B(y)}."
+    },
+    {
+      "id": "prova6-q67",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 67
+      },
+      "area": "logica",
+      "subtopic": "8.8 Valores-verdade",
+      "stem": "Considere as proposições a seguir. I - ¬(A∧B)↔(A→¬B) II - ¬(A→¬B)→((A∨¬B)∧(¬A∨B)) III - ((A→B)→A)→A IV - ((A∨B)∧(¬A∨C))→(B∨C) São tautologias as proposições apresentadas em",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "I e IV, apenas.",
+          "explanation": "Omite II e III, que também são tautologias."
+        },
+        {
+          "key": "B",
+          "text": "II e III, apenas.",
+          "explanation": "Omite I e IV, que também são tautologias."
+        },
+        {
+          "key": "C",
+          "text": "I, II e III, apenas.",
+          "explanation": "Omite IV, que também é uma tautologia (equivalente à regra de resolução)."
+        },
+        {
+          "key": "D",
+          "text": "II, III e IV, apenas.",
+          "explanation": "Omite I, que também é uma tautologia (é a lei de De Morgan expressa como bicondicional)."
+        },
+        {
+          "key": "E",
+          "text": "I, II, III e IV."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": "As 4 fórmulas foram lidas diretamente da página do PDF-fonte. Verificação: I é a lei de De Morgan (¬(A∧B)≡A→¬B), sempre verdadeira; II reduz a (A∧B)→((A∨¬B)∧(¬A∨B)), verdadeira em todos os casos; III é a Lei de Peirce, tautologia clássica; IV é a regra de resolução ((A∨B)∧(¬A∨C))→(B∨C), também tautologia (se B∨C fosse falsa, o antecedente seria necessariamente falso). As 4 são tautologias, concordando com o gabarito."
+      },
+      "correctKey": "E",
+      "explanationSummary": "Todas as quatro proposições são tautologias: I é a lei de De Morgan; II se reduz a uma implicação sempre verdadeira; III é a Lei de Peirce (tautologia clássica do cálculo proposicional); IV é a regra de resolução, válida em lógica clássica."
+    },
+    {
+      "id": "prova6-q69",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 69
+      },
+      "area": "logica",
+      "subtopic": "8.4 A lógica de predicados de primeira ordem",
+      "stem": "Considere as sentenças da lógica de primeira ordem a seguir. I - ∃x∃y A(x,y)∧¬∃x A(x,x) II - ∀x∀y A(x,y)∧¬∀x A(x,x) III - ∀x∀y A(x,y)→¬∀x A(x,x) São insatisfatíveis APENAS as sentenças apresentadas em",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "I",
+          "explanation": "A sentença I é satisfatível: um modelo com A(1,2) verdadeiro e A(1,1)/A(2,2) falsos satisfaz ambas as partes da conjunção."
+        },
+        {
+          "key": "B",
+          "text": "II"
+        },
+        {
+          "key": "C",
+          "text": "III",
+          "explanation": "A sentença III é satisfatível: é uma implicação, verdadeira em qualquer modelo onde o antecedente é falso (por exemplo, quando A é sempre falso)."
+        },
+        {
+          "key": "D",
+          "text": "I e II",
+          "explanation": "A sentença I é satisfatível (ver explicação da alternativa A), então não deveria constar do conjunto insatisfatível."
+        },
+        {
+          "key": "E",
+          "text": "II e III",
+          "explanation": "A sentença III é satisfatível (ver explicação da alternativa C), então não deveria constar do conjunto insatisfatível."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": "As 3 sentenças foram lidas diretamente da página do PDF-fonte. I é satisfatível (contra-exemplo simples com dois elementos). II é insatisfatível: se ∀x∀y A(x,y) é verdadeira, então A(x,x) é verdadeira para todo x (caso particular y=x), logo ∀x A(x,x) é verdadeira, contradizendo ¬∀x A(x,x) — a conjunção é sempre falsa. III é satisfatível (implicação, vacuamente verdadeira quando o antecedente é falso). Apenas II é insatisfatível, concordando com o gabarito."
+      },
+      "correctKey": "B",
+      "explanationSummary": "A sentença II afirma simultaneamente que A(x,y) vale para todo par (x,y) — o que implica em particular que A(x,x) vale para todo x — e que não vale para todo x. Essas duas partes se contradizem em qualquer modelo, tornando II insatisfatível; I e III têm modelos que as satisfazem."
     }
   ]
 }
