@@ -7,8 +7,8 @@
 | analista_de_sistemas_junior_processos_de_negocio2018.html | 71 | 70 | 48 | 45 | 3 | 22 |
 | cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html | 21 | 70 | 52 | 46 | 6 | 18 |
 | cesgranrio-2023-transpetro-...-enfase-6-processos-de-negocios-prova.html | 19 | 70 | 68 | 64 | 4 | 2 |
-| cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf | 15 | 70 | 55 | 54 | 1 | 15 |
-| petrobras0208_gabsup_gabarito.pdf | 17 | 70 | 54 | 50 | 4 | 16 |
+| cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf | 15 | 70 | 55 | 55 | 0 | 15 |
+| petrobras0208_gabsup_gabarito.pdf | 17 | 70 | 54 | 52 | 2 | 16 |
 
 Atualizar esta tabela ao final de cada ciclo do loop de extração.
 
@@ -146,3 +146,14 @@ Com a conclusão desta prova, encerra-se a fase de extração/classificação/ve
 - Distribuição final de confirmadas por área (contagem sobre as 339 entradas de `questions.json`, todas as 7 provas): `portugues` e `ingles` somam a maior parte das questões de Conhecimentos Básicos recuperadas retroativamente (decisão de 2026-08-21); entre as áreas técnicas do Anexo IV/Ênfase 5, `gestao-proj`, `arq-dados`, `seg-info` e `eng-sw` são consistentemente as áreas mais representadas em todas as provas, enquanto `logica` e `ux` tendem a ter poucas questões por prova (limitadas pela raridade de questões de lógica proposicional/predicados com símbolos capturáveis em texto, e pela escassez de questões de UX nos editais mais antigos).
 - Padrões de descarte consolidados ao longo das 7 provas (documentados prova a prova, sempre pelo mesmo critério — ausência de tópico correspondente nas 8 áreas técnicas do Anexo IV/Ênfase 5): BPM/gestão de processos de negócio em sentido genérico (incluindo notações como Redes de Petri, BPEL, Pi-Calculus); SOA/Web services/Internet genérico (REST, SOAP, WSDL, HTTPS, RSS, CSS, Web 2.0); algoritmos e estruturas de dados (árvores AVL/B, hashing, ordenação, ML); legislação específica não citada no Anexo IV (Lei 13.303/2016, Lei 12.846/2013 — apenas a LGPD é citada explicitamente); classificação genérica de Sistemas de Informação/ERP/IA/cognição de IHC; redes de computadores genérico; e, nesta última prova, um novo padrão pontual de exercício de contagem/combinatória sem tópico de modelagem de dados correspondente.
 - Padrões de revisão consolidados: diagramas/gráficos nativos da página (E-R, UML, CPM/Gantt, tabelas) perdidos na extração de texto; glifos lógicos (¬, ∨, ∧, →, ∀, ∃) desenhados como vetor/Type3 e não capturados como texto; e um pequeno número de divergências genuínas entre a derivação independente e o gabarito impresso, sempre documentadas com o raciocínio completo de ambos os lados.
+
+## Resolução de diagramas/símbolos pendentes (2026-08-22)
+
+Descoberta importante: o `Read` consegue renderizar visualmente as páginas de PDFs nativos (sem precisar de `pdftoppm`/poppler, que não está instalado neste ambiente) quando chamado sobre o arquivo inteiro, sem o parâmetro `pages` (que tenta rasterizar via poppler e falha). Isso permite reler visualmente diagramas e fórmulas que a extração de texto original não capturou, para as provas cujo `source.file` é um PDF nativo (`petro2012-`, `petro08-`) — não se aplica diretamente às provas de origem HTML (`prova6-`, `prova07-`, `psjpn2018-`, `transp15-`, `transp23e6-`), cujos diagramas são SVG vetorial embutido no HTML.
+
+Usando essa releitura visual como uma 2ª rodada de verificação independente, 3 itens foram promovidos de `review-queue.json` para `questions.json`:
+- **petro2012-q35** (erro em gráfico de Gantt): a releitura visual confirmou a seta de dependência G→H com a barra de H começando antes do término de G — exatamente o erro da alternativa D (gabarito). Confirmada com `confidence: "high"`.
+- **petro08-q40** (fórmula lógica "não capturada na extração"): a fórmula `((p ∨ q) → (r ∧ s)) ↔ (¬t)` foi lida diretamente da página do PDF-fonte (os símbolos ∨/∧/¬/↔ aparecem corretamente na renderização visual, apesar de terem sido perdidos na extração de texto original). Testando os 5 conjuntos de valores, apenas a alternativa C torna a proposição verdadeira, concordando com o gabarito.
+- **petro08-q42** (tradução para lógica de predicados com conectivos corrompidos): os conectivos corretos (∨, →, ↔) nas 5 alternativas foram lidos da página do PDF-fonte. A estrutura "X será bem-sucedido SE (A ou B)" é uma implicação simples (A∨B)→X, não uma equivalência — apenas a alternativa E tem essa forma, concordando com o gabarito.
+
+Itens de diagrama ainda pendentes (não resolvidos nesta rodada, por dependerem de SVG vetorial em HTML — não PDF nativo — ou por multiplicidade/posição de setas ainda ambígua mesmo após releitura visual): `prova6-q23/q52/q54/q63/q66/q67/q69`, `prova07-q6/q13/q19/q22/q23/q24/q25/q50/q52`, `psjpn2018-q54`, `transp15-q69/q70`, `transp23e6-q21/q22/q27/q28`, `petro08-q55` (diagrama de classes UML — estrutura geral compatível com a alternativa do gabarito por raciocínio de domínio, mas a posição exata dos símbolos de multiplicidade/composição não pôde ser confirmada com confiança alta o suficiente para promover).

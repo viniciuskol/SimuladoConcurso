@@ -16714,6 +16714,153 @@
       "area": "arq-dados",
       "correctKey": "E",
       "explanationSummary": "Sistemas de banco de dados distribuídos são projetados para evitar dependência de um nó de coordenação central (justamente para ganhar escalabilidade e tolerância a falhas), o que torna a 'coordenação em um nó central' o único item que NÃO é um objetivo secundário buscado nesse tipo de sistema."
+    },
+    {
+      "id": "petro2012-q35",
+      "source": {
+        "file": "cesgranrio-2012-petrobras-analista-de-sistemas-junior-processos-de-negocios-2012-prova.pdf",
+        "year": 2012,
+        "originalNumber": 35
+      },
+      "area": "gestao-proj",
+      "subtopic": "2.4 PMBOK 7ª edição",
+      "stem": "Um gráfico de Gantt é uma ferramenta que pode auxiliar a determinar o caminho crítico de um projeto e as folgas de suas atividades. Um gerente iniciante apresentou o gráfico de Gantt de seu projeto (barras V, W, X, Y, Z, G, H, I, F, J distribuídas ao longo de 7 meses, com dependências indicadas por setas). Qual é o erro que esse diagrama possui?",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "X tem que terminar ao fim do projeto, pois não há nenhuma atividade que dependa dela.",
+          "explanation": "X de fato não tem sucessora no diagrama, mas isso não é um erro de modelagem — nem toda atividade precisa ter sucessora; o erro real está na relação G→H."
+        },
+        {
+          "key": "B",
+          "text": "Z não pode depender de duas atividades antecessoras, pois o gráfico de Gantt é limitado a uma conexão por atividade.",
+          "explanation": "O gráfico de Gantt não impõe limite de uma conexão de dependência por atividade; múltiplas antecessoras/sucessoras são permitidas nessa notação."
+        },
+        {
+          "key": "C",
+          "text": "Z tem que ocorrer em paralelo com G, pois ambas possuem uma dependência em comum (Y).",
+          "explanation": "Compartilhar uma dependência comum (Y) não obriga Z e G a ocorrerem em paralelo; isso não descreve o erro visível no diagrama."
+        },
+        {
+          "key": "D",
+          "text": "H não pode ocorrer antes do término de G, pois existe uma dependência entre as duas."
+        },
+        {
+          "key": "E",
+          "text": "I tem que começar no início do projeto, pois não tem nenhuma atividade antecessora.",
+          "explanation": "I de fato não tem antecessora indicada, mas o diagrama não exige que toda atividade sem antecessora comece no início do projeto; isso não é o erro apontado pelo gabarito."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Resolvida em 2ª rodada: releitura visual direta da página do PDF-fonte (via Read, sem parâmetro pages) mostrou claramente a seta de dependência G→H, com a barra H iniciando no mesmo mês em que G ainda está em andamento (G ocupa o mês 2-3, H começa no mês 2), violando a precedência implícita pela seta — exatamente o erro descrito na alternativa D. Nenhuma outra alternativa corresponde a uma leitura plausível do diagrama (B e C descrevem restrições que a notação Gantt não impõe; A e E descrevem fatos verdadeiros do diagrama que não constituem erro)."
+      },
+      "correctKey": "D",
+      "explanationSummary": "O diagrama mostra uma seta de dependência de G para H, mas a barra de H começa antes do término da barra de G — violando a precedência que a própria seta indica. Esse é o erro do gráfico de Gantt apresentado."
+    },
+    {
+      "id": "petro08-q40",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 40
+      },
+      "area": "logica",
+      "subtopic": "8.8 Valores-verdade",
+      "stem": "Considere a proposição ((p ∨ q) → (r ∧ s)) ↔ (¬t). Para que valores de p, q, r, s e t, respectivamente, a proposição acima é verdadeira?",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "V, V, V, V, V",
+          "explanation": "Com p=q=r=s=t=V: (V∨V)→(V∧V) = V→V = V; ¬t=¬V=F; V↔F=F. A proposição fica falsa, não verdadeira."
+        },
+        {
+          "key": "B",
+          "text": "V, F, V, F, F",
+          "explanation": "Com p=V,q=F,r=V,s=F,t=F: (V∨F)→(V∧F) = V→F = F; ¬t=¬F=V; F↔V=F. A proposição fica falsa."
+        },
+        {
+          "key": "C",
+          "text": "F, F, V, F, F"
+        },
+        {
+          "key": "D",
+          "text": "F, V, F, V, F",
+          "explanation": "Com p=F,q=V,r=F,s=V,t=F: (F∨V)→(F∧V) = V→F = F; ¬t=¬F=V; F↔V=F. A proposição fica falsa."
+        },
+        {
+          "key": "E",
+          "text": "F, F, V, V, V",
+          "explanation": "Com p=q=F,r=s=t=V: (F∨F)→(V∧V) = F→V = V; ¬t=¬V=F; V↔F=F. A proposição fica falsa."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": "A fórmula lógica citada no enunciado ('a proposição acima'), antes não capturada pela extração de texto, foi lida diretamente da página do PDF-fonte: ((p ∨ q) → (r ∧ s)) ↔ (¬t). Testando a alternativa C (p=F,q=F,r=V,s=F,t=F): (F∨F)=F; F→(V∧F=F)=V (implicação com antecedente falso é verdadeira); ¬t=¬F=V; V↔V=V — a proposição é verdadeira, concordando com o gabarito. As demais alternativas foram testadas e resultam em proposição falsa (ver explanation de cada alternativa errada)."
+      },
+      "correctKey": "C",
+      "explanationSummary": "Com p=F, q=F, r=V, s=F, t=F: (p∨q)=F, logo (p∨q)→(r∧s) é verdadeira (antecedente falso); ¬t=V; e V↔V=V. A proposição completa é verdadeira apenas com esses valores, entre as alternativas apresentadas."
+    },
+    {
+      "id": "petro08-q42",
+      "source": {
+        "file": "petrobras0208_gabsup_gabarito.pdf",
+        "year": 2008,
+        "originalNumber": 42
+      },
+      "area": "logica",
+      "subtopic": "8.4 A lógica de predicados de primeira ordem",
+      "stem": "\"O projeto será bem-sucedido se ou o processo de desenvolvimento é o Processo Unificado ou a linguagem utilizada é Java.\" Uma possível tradução da sentença acima para a lógica de predicados de primeira ordem é",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "(Sp → JI) ↔ (Sp → Ud)",
+          "explanation": "Não corresponde à estrutura da frase; introduz duas implicações condicionadas por Sp que não estão na sentença original."
+        },
+        {
+          "key": "B",
+          "text": "Sp ↔ (Ud ∨ JI)",
+          "explanation": "Usa um bicondicional (↔), o que exigiria também a implicação inversa ('só será bem-sucedido se...'), que a frase original não afirma."
+        },
+        {
+          "key": "C",
+          "text": "Sp ↔ (JI ∨ Ud)",
+          "explanation": "Mesmo problema da alternativa B: o bicondicional exige a implicação inversa, que não está presente na frase 'será bem-sucedido SE ...'."
+        },
+        {
+          "key": "D",
+          "text": "(Ud ∨ JI) ↔ Sp",
+          "explanation": "Também usa bicondicional (↔) em vez da implicação simples exigida pela estrutura 'X se Y', além de inverter a ordem antecedente/consequente."
+        },
+        {
+          "key": "E",
+          "text": "(JI ∨ Ud) → Sp"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Os conectivos corretos (∨, →, ↔) foram lidos diretamente da página do PDF-fonte, substituindo os caracteres substitutos da extração de texto original. A frase 'O projeto será bem-sucedido SE (A ou B)' é uma implicação simples com a disjunção como antecedente e o sucesso como consequente — (JI∨Ud)→Sp —, não um bicondicional (que exigiria também 'só será bem-sucedido se'). Apenas a alternativa E tem essa estrutura, concordando com o gabarito."
+      },
+      "correctKey": "E",
+      "explanationSummary": "A frase 'será bem-sucedido SE (Processo Unificado OU Java)' é uma implicação simples (não uma equivalência): a disjunção das duas condições implica o sucesso, mas o sucesso não implica necessariamente que uma delas ocorreu. Isso corresponde a (JI ∨ Ud) → Sp."
     }
   ]
 }
