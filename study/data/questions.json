@@ -17399,6 +17399,153 @@
       },
       "correctKey": "D",
       "explanationSummary": "O modelo E-R exige que toda ocorrência de E2 se associe a pelo menos 1 ocorrência de E1 (cardinalidade mínima 1 do lado (1,N)) e que cada ocorrência de E1 se associe a, no máximo, 1 ocorrência de E2 (cardinalidade máxima 1 do lado (0,1)). Apenas o diagrama (D), com um mapeamento direto onde todo b_j recebe exatamente uma seta e todo a_i emite no máximo uma seta, satisfaz essas duas regras simultaneamente; as demais alternativas deixam pelo menos um elemento de E2 sem nenhuma seta de entrada, violando a participação total obrigatória de E2."
+    },
+    {
+      "id": "transp23e6-q21",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 21
+      },
+      "area": "arq-dados",
+      "subtopic": "1.1 Modelagem de dados (conceitual, lógica e física)",
+      "stem": "Os conjuntos a seguir representam o estado de um banco de dados relacional. A = {a1, a2, a3}; B = {b1, b2}; C = {c1, c2, c3}; R = {(a1,b1), (a1,b2), (a2,b1), (a2,b2), (a3,b1)}; S = {(b1,c2), (b2,c3)}. Admita que os elementos dos conjuntos acima sejam instâncias das entidades ou das relações de mesmo nome presentes no diagrama E-R a partir do qual o esquema do banco de dados acima foi obtido, e que as regras definidas nesse diagrama E-R são preservadas pelo banco de dados em questão. Nesse contexto, qual diagrama E-R tem suas regras preservadas pelo banco de dados acima? (A) A(0,n) --R--(0,1) B (1,1) --S--(0,1) C. (B) A(0,1) --R--(0,n) B (1,1) --S--(0,1) C. (C) A(0,1) --R--(0,n) B (0,1) --S--(0,1) C. (D) A(0,n) --R--(1,n) B (0,1) --S--(0,1) C. (E) A(0,n) --R--(0,n) B (1,1) --S--(1,1) C.",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "A(0,n) R (0,1) B; B(1,1) S (0,1) C",
+          "explanation": "B(0,1) do lado de R não comporta b1, que se relaciona com 3 elementos de A (a1,a2,a3), violando o máximo 1."
+        },
+        {
+          "key": "B",
+          "text": "A(0,1) R (0,n) B; B(1,1) S (0,1) C",
+          "explanation": "A(0,1) do lado de R não comporta a1 e a2, que se relacionam cada um com 2 elementos de B, violando o máximo 1."
+        },
+        {
+          "key": "C",
+          "text": "A(0,1) R (0,n) B; B(0,1) S (0,1) C",
+          "explanation": "A(0,1) do lado de R não comporta a1 e a2 (cada um relacionado a 2 b's), violando o máximo 1."
+        },
+        {
+          "key": "D",
+          "text": "A(0,n) R (1,n) B; B(0,1) S (0,1) C"
+        },
+        {
+          "key": "E",
+          "text": "A(0,n) R (0,n) B; B(1,1) S (1,1) C",
+          "explanation": "C(1,1) do lado de S exige que todo elemento de C participe de S, mas c1 não aparece em nenhum par de S, violando a cardinalidade mínima 1."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Cardinalidades derivadas diretamente das instâncias dadas: em R, a1 e a2 relacionam-se cada um com 2 elementos de B (logo A precisa de cardinalidade máxima ≥2 do lado de R, eliminando (0,1) em A — elimina B e C); b1 relaciona-se com 3 elementos de A e b2 com 2, logo B precisa de cardinalidade mínima ≥1 e máxima ≥3 do lado de R (elimina A, cujo B-side é (0,1), incompatível com b1 ter 3 A's associados). Em S, b1 e b2 têm exatamely 1 c cada (compatível com (0,1) ou (1,1) no lado de B), mas c1 não aparece em nenhum par de S, exigindo cardinalidade mínima 0 do lado de C — isso elimina a alternativa E, cujo C-side é (1,1) (exigiria que todo c participasse de S). Apenas a alternativa D — A(0,n)-R-(1,n)B, B(0,1)-S-(0,1)C — é compatível com todas as instâncias dadas. Concorda com o gabarito D."
+      },
+      "correctKey": "D",
+      "explanationSummary": "As instâncias de R mostram que A pode se relacionar com até 2 elementos de B (eliminando cardinalidade máxima 1 em A) e que todo b em B se relaciona com pelo menos 1 a (cardinalidade mínima 1 em B, do lado de R); as instâncias de S mostram que nem todo c em C participa da relação (cardinalidade mínima 0 em C, do lado de S, eliminando (1,1)). Apenas o diagrama com A(0,n)--R--(1,n)B--(0,1)S(0,1)C é compatível com todos esses fatos."
+    },
+    {
+      "id": "transp23e6-q22",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 22
+      },
+      "area": "arq-dados",
+      "subtopic": "1.1 Modelagem de dados (conceitual, lógica e física)",
+      "stem": "Sejam A, B e D conjuntos não vazios, diferentes entre si e que atendam às seguintes propriedades: 1. A ⊂ D; 2. B ⊂ D; 3. B ∩ A ≠ ∅; 4. B ∪ A ≠ D. Admita, ainda, que esses conjuntos correspondam às entidades de mesmo nome de um diagrama Entidade-Relacionamento (E-R). Qual diagrama E-R satisfaz todas as propriedades apresentadas? (A) Especialização encadeada: B generaliza-se para A (parcial e exclusiva), e A generaliza-se para D (parcial e exclusiva), com B no topo e D na base. (B) D especializa-se diretamente em A e B, como subtipos irmãos, de forma total e compartilhada. (C) D especializa-se diretamente em A e B, como subtipos irmãos, de forma parcial e exclusiva. (D) D especializa-se diretamente em A e B, como subtipos irmãos, de forma total e exclusiva. (E) Especialização encadeada: D generaliza-se para A (parcial e exclusiva), e A generaliza-se para B (parcial e exclusiva), com D no topo e B na base.",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "Cadeia B→A→D (parcial e exclusiva em cada nível), com B no topo e D na base",
+          "explanation": "Inverte a direção da hierarquia (D deveria ser o topo, já que A⊂D e B⊂D); com B no topo, a relação de subconjunto fica invertida em relação às propriedades dadas."
+        },
+        {
+          "key": "B",
+          "text": "D especializa-se em A e B como subtipos irmãos, total e compartilhada",
+          "explanation": "\"Total\" exigiria A∪B=D, contradizendo a propriedade 4 (B∪A≠D)."
+        },
+        {
+          "key": "C",
+          "text": "D especializa-se em A e B como subtipos irmãos, parcial e exclusiva",
+          "explanation": "\"Exclusiva\" exigiria A∩B=∅, contradizendo a propriedade 3 (B∩A≠∅)."
+        },
+        {
+          "key": "D",
+          "text": "D especializa-se em A e B como subtipos irmãos, total e exclusiva",
+          "explanation": "\"Total\" contradiz a propriedade 4, e \"exclusiva\" contradiz a propriedade 3, simultaneamente."
+        },
+        {
+          "key": "E",
+          "text": "Cadeia D→A→B (parcial e exclusiva em cada nível), com D no topo e B na base"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Nenhuma combinação direta de 'D especializa-se em A e B como subtipos irmãos' encaixa nas quatro propriedades simultaneamente: precisaríamos de 'parcial e compartilhada' (parcial pela propriedade 4, compartilhada pela propriedade 3), combinação que não aparece entre as opções B/C/D. A alternativa E resolve isso com uma especialização encadeada: D generaliza-se para A (parcial — A⊂D, propriedade 1 — e exclusiva, vacuamente satisfeita já que há um único subtipo direto neste nível) e A generaliza-se para B (parcial — B⊂A, o que implica B⊂D por transitividade, propriedade 2 — e exclusiva, também vacuamente satisfeita). Como B⊆A, a intersecção B∩A=B é não vazia (propriedade 3, satisfeita sem precisar de 'compartilhada' entre irmãos) e a união A∪B=A é um subconjunto próprio de D (propriedade 4, satisfeita pela parcialidade de D→A). A alternativa A inverte a direção da cadeia (B no topo), o que não corresponde a A⊂D e B⊂D como dados. Concorda com o gabarito E."
+      },
+      "correctKey": "E",
+      "explanationSummary": "As quatro propriedades (A⊂D, B⊂D, B∩A≠∅, B∪A≠D) são satisfeitas por uma especialização encadeada D→A→B (cada nível parcial e exclusiva), já que B⊆A garante a intersecção não vazia e a parcialidade de D→A garante que a união A∪B=A seja um subconjunto próprio de D — sem precisar de uma combinação 'parcial e compartilhada' entre subtipos irmãos, que não está entre as alternativas."
+    },
+    {
+      "id": "transp23e6-q28",
+      "source": {
+        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
+        "year": 2023,
+        "originalNumber": 28
+      },
+      "area": "logica",
+      "subtopic": "8.3 A lógica sentencial",
+      "stem": "A seguir são apresentadas as três premissas de um argumento. Premissa 1: (¬A) → ((¬D)∨E). Premissa 2: D∧(¬E). Premissa 3: (¬A)∨B. Qual conclusão torna válido o argumento?",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "¬D",
+          "explanation": "A Premissa 2 (D∧¬E) já estabelece D como verdadeiro; ¬D contradiz diretamente uma premissa."
+        },
+        {
+          "key": "B",
+          "text": "E",
+          "explanation": "A Premissa 2 (D∧¬E) já estabelece E como falso; E contradiz diretamente uma premissa."
+        },
+        {
+          "key": "C",
+          "text": "¬A",
+          "explanation": "A derivação a partir das premissas mostra que A deve ser verdadeiro (para a Premissa 1 não ser violada), logo ¬A é falso."
+        },
+        {
+          "key": "D",
+          "text": "B"
+        },
+        {
+          "key": "E",
+          "text": "¬B",
+          "explanation": "A derivação mostra que B deve ser verdadeiro (pela Premissa 3, já que ¬A é falso), logo ¬B é falso."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "B (alternativa D)",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Da Premissa 2 (D∧¬E), obtém-se diretamente D=V e E=F. Substituindo na Premissa 1 (¬A→(¬D∨E)): ¬D∨E = F∨F = F. Como a premissa (¬A→F) deve ser verdadeira, e uma implicação com consequente falso só é verdadeira se o antecedente também for falso, conclui-se ¬A=F, logo A=V. Substituindo na Premissa 3 (¬A∨B): como ¬A=F, para a premissa ser verdadeira B deve ser V. Logo o argumento válido conclui B (alternativa D), concordando com o gabarito."
+      },
+      "correctKey": "D",
+      "explanationSummary": "Da Premissa 2, D é verdadeiro e E é falso. Substituindo na Premissa 1, o consequente (¬D∨E) fica falso, forçando o antecedente ¬A a ser falso (A verdadeiro), já que uma implicação verdadeira com consequente falso exige antecedente falso. Com A verdadeiro, a Premissa 3 (¬A∨B) só é verdadeira se B for verdadeiro. Logo, a conclusão que torna o argumento válido é B."
     }
   ]
 }
