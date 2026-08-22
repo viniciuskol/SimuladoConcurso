@@ -7,25 +7,26 @@
 Contexto: seguindo o plano em `~/.claude/plans/vou-fazer-um-concurso-compiled-wreath.md`, a fase de conteúdo (resumos/cheatsheets/flashcards) está a cargo de outra sessão/bot — este trabalho ficou focado em resolver os itens de `study/_internal/review-queue.json` que dependiam de diagramas/tabelas/fórmulas não capturados na extração de texto original, usando a técnica de reler o PDF nativo de cada prova via `Read` **sem** o parâmetro `pages` (que falha neste ambiente por falta de `poppler`/`pdftoppm`, mas ler o PDF inteiro sem esse parâmetro retorna o render visual completo).
 
 **Já commitado e no ar (GitHub Pages):**
-- `study/data/questions.json`: **356 questões confirmadas**.
-- `study/_internal/review-queue.json`: **25 itens pendentes**.
-- Último commit: `2942548` — "Resolve transp23e6-q21/q22/q28 via PDF nativo; q27 permanece bloqueada por formatação" (já enviado a `origin/main`).
-- Nesta sessão (desde o checkpoint anterior), foram promovidos: `psjpn2018-q54`, `transp15-q41`, `transp23e6-q21`, `transp23e6-q22`, `transp23e6-q28` — cada um com verificação independente documentada em `verification.notes`.
-- Vários itens foram **deliberadamente mantidos em revisão** mesmo após a releitura visual completa, porque a derivação independente diverge do gabarito de forma genuína e bem fundamentada (não por falta de dados): `transp15-q39`, `transp15-q40`, `transp15-q69`, `transp15-q70` (esta última tem divergência confirmada por tabela-verdade — o gabarito registrado é matematicamente incompatível com "contradição"), e `transp23e6-q27` (dedução lógica da chave primária concluída, mas as 5 alternativas têm texto idêntico e a diferença real está em sublinhados perdidos na extração).
+- `study/data/questions.json`: **363 questões confirmadas**.
+- `study/_internal/review-queue.json`: **18 itens pendentes**.
+- Último commit: `d125746` — "Resolve prova6-q23/q25/q50 via PDF nativo; confirma divergência em q54 (3ª rodada)" (já enviado a `origin/main`).
+- Desde o checkpoint anterior (commit `f932332`, 356/25), foram promovidos via releitura de PDF nativo: `prova07-q19`, `prova07-q23`, `prova07-q29`, `prova07-q41`, `prova6-q23`, `prova6-q25`, `prova6-q50` — 7 questões, elevando o total de 356→363 e reduzindo a fila de 25→18.
+- Itens com **divergência genuína confirmada** nesta rodada (mantidos em revisão, não forçados a bater com o gabarito): `prova07-q13` (3ª rodada — CPM converge para D, gabarito C), `prova07-q24` (2ª rodada — DNF converge para A, gabarito B), `prova07-q25` (2ª rodada — classificação lógica converge para C, gabarito E, com contraexemplo de satisfatibilidade), `prova6-q54` (3ª rodada — visibilidade UML converge para C "w e y", gabarito E "y, apenas").
+- Insight-chave desta rodada (resolveu `prova6-q23` após 2 rodadas travadas): o "Dia 200" no diagrama de rede é uma **data-limite fixa** (término mais tarde dado, não derivado pela soma de durações), e a convenção de contagem de dias deve ser **inclusiva** (EF = ES + duração − 1). Combinando os dois, a folga de "Documentação" bate exatamente com o gabarito C (75 dias).
 
-**Distribuição atual dos 25 itens restantes em `review-queue.json`** (por prefixo de prova):
-- `prova07`: 10 (majoritariamente divergências genuínas não ligadas a diagrama, já documentadas — ver `extraction-progress.md`)
-- `transp15`: 5 (q39, q40, q69, q70 documentados como divergência genuína; verificar se resta algum outro)
-- `prova6`: 5 (inclui q23/q54, já com 2 rodadas de revisão, ver notas)
-- `psjpn2018`: 2
-- `petro08`: 2 (inclui q55, diagrama UML com multiplicidade ainda ambígua)
-- `transp23e6`: 1 (q27)
+**Distribuição atual dos 18 itens restantes em `review-queue.json`** (por prefixo de prova, confirmado via script):
+- `prova07`: 6 (q13, q24, q25, q45, q47, q54 — a maioria já com 2-3 rodadas documentando divergência genuína, ver `extraction-progress.md`)
+- `transp15`: 5 (q26, q39, q40, q69, q70 — q39/40/69/70 já documentados como divergência/perda de dados genuína)
+- `petro08`: 2 (ainda não revisitados nesta sessão com a técnica de PDF nativo)
+- `psjpn2018`: 2 (ainda não revisitados nesta sessão com a técnica de PDF nativo)
+- `prova6`: 2 (q48 — divergência de julgamento, não revisitado; q54 — divergência genuína confirmada em 3 rodadas)
+- `transp23e6`: 1 (q27 — PK deduzida logicamente, mas letra não confirmável por perda de sublinhado na extração)
 
 ## O que falta (em ordem sugerida)
 
-1. Revisar os 10 itens de `prova07` (a maioria não é diagrama — ver `extraction-progress.md` para o motivo de cada um estar em revisão) e decidir se merecem uma 3ª rodada ou se ficam definitivamente `unresolved`.
-2. Revisar os 5 itens de `prova6` (q23/q54 já em rodada 2; ver se há algo novo a tentar) e os 2 de `psjpn2018`/2 de `petro08`.
-3. Considerar se vale uma 3ª rodada geral nos itens marcados como "divergência genuína com o gabarito" (transp15-q39/q40/q69/q70) — por exemplo, buscar uma segunda fonte externa para o gabarito de `cesgranrio-2018-transpetro`, já que o gabarito local usado para essa prova vem de uma fonte externa (estudegratis.com.br), não do material oficial da pasta `provas e gabaritos/`.
+1. Revisitar `psjpn2018` (2 itens) e `petro08` (2 itens, incluindo q55 com diagrama UML de multiplicidade ainda ambíguo) com a técnica de PDF nativo — ainda não tentado nesta sessão.
+2. Reavaliar se vale uma rodada extra em `prova07-q45`/`q47` (Data Warehouse — não são diagrama, podem ser puramente conceituais) e em `prova6-q48` (exemplo de qualidade de dados em DW).
+3. Considerar se vale uma 3ª rodada geral nos itens marcados como "divergência genuína com o gabarito" que usam gabarito de fonte externa (`transp15-q39/q40/q69/q70`, `transp23e6-q27`) — buscar uma segunda fonte para confirmar o gabarito impresso, já que esses gabaritos vêm de fontes externas (estudegratis.com.br/QConcursos), não do material oficial da pasta `provas e gabaritos/`.
 4. Depois de esgotar o backlog de diagramas/divergências, retomar o restante do plano original (fase de conteúdo já está com outra sessão; não duplicar esse trabalho).
 
 ## Regras que devem continuar valendo ao retomar
