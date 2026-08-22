@@ -1,25 +1,55 @@
-# STATUS — checkpoint
+# STATUS — trilha de ESTUDO (Transpetro 2026, Ênfase 5)
 
-**Quando:** 2026-08-21, ~03:2x BRT. Sessão atingiu o limite de uso de IA (5h); reseta 06:10 BRT (America/Sao_Paulo).
+**Atualizado:** 2026-08-22, 04:35Z (01:35 BRT). Branch `claude/transpetro-2026-study-mwb8lp`.
+Escopo desta trilha: material de estudo (`study/data/content/`, `flashcards.json`, `plan.json`,
+`estudo.html`). O **simulado** (`simulado.html`, `questions.json`) é cuidado por outro fluxo e
+não é alterado aqui — só lido como evidência.
 
 ## Onde parou
 
-- Ciclo em andamento: extração da prova `tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html` (dev agent concluído, 36 questões confirmadas + 14 em review-queue + 20 descartadas — ver `extraction-progress.md`).
-- O agente **validador** desse ciclo foi interrompido no meio da checagem (erro de API por limite de sessão) — ele já tinha confirmado que todos os `area` ids são válidos e estava no meio de um spot-check manual de plausibilidade das 36 classificações, mas **não terminou**. Portanto: **as 36 questões de `tarde_prova_07` estão marcadas `status: "confirmed"` em `study/data/questions.json` mas NÃO passaram pela validação independente completa deste ciclo** (schema, duplicidade de ids, fidelidade ao texto fonte, coluna do gabarito, correção do gabarito).
-- Estado dos arquivos: `study/_internal/extraction-progress.md`, `study/_internal/review-queue.json`, `study/data/questions.json` estão modificados no working tree (não commitados ainda no momento deste checkpoint) — serão commitados como checkpoint mesmo sem validação completa, para não perder o trabalho do dev agent. **`provas e gabaritos/` permanece intocada** (confirmado via `git status`).
+**Ciclos 1 a 4: fechados e validados.** As 10 áreas de `areas.json` têm material completo em
+`study/data/content/<area>.json` (resumo, cheatsheet, modelos mentais, padrões da banca com
+evidência em questão real, táticas, palavras-armadilha). Deck oficial: **308 flashcards**
+(arq-dados 36, gestao-proj 36, eng-sw 38, seg-info 36, gestao-ti 28, ux 28, analise-dados 28,
+portugues 27, ingles 25, logica 26).
+
+**Ciclo 5: dev e fix concluídos; falta a CONFIRMAÇÃO independente.**
+- `study/data/plan.json` (novo): 10 padrões transversais, 6 orientações de dia de prova, 6 blocos
+  cobrindo 22/08 → 29/11. Os 19 defeitos do relatório (`_internal/review-cycle5.md`) foram
+  aplicados pelo dev, incluindo os 2 críticos.
+- Os 16 cards novos de lógica foram **aprovados limpos** (16 conferências por tabela-verdade) e
+  já estão mesclados no deck.
+- **Pendência real:** o agente validador foi interrompido pelo limite de sessão no meio da rodada
+  de confirmação dos 19 fixes. Eu (manager) rodei as checagens de script e **todas passam**:
+  schema exato, blocos contíguos somando exatamente 100 dias, os 100 ids citados existem, zero tag
+  HTML, "47 processos" eliminado, ressalva de proxy presente, nenhum crossPattern abaixo de 2
+  áreas. Falta a leitura crítica independente (se os textos novos dos críticos 1 e 2 estão certos
+  na frase inteira, se as evidências que entraram sustentam os padrões, se o remanejamento de
+  semanas ficou coerente com os `goal`).
 
 ## O que falta
 
-1. **Prioridade imediata ao retomar**: rodar um validator agent completo sobre as 36 questões de `tarde_prova_07` (mesmo prompt do ciclo anterior — está no histórico da conversa) antes de confiar nelas. Se encontrar erros, aplicar fix e re-validar antes de seguir para a próxima prova.
-2. Continuar o rollout de extração pelas provas ainda não processadas: `cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html`, `cesgranrio-2023-transpetro-...-enfase-6-processos-de-negocios-prova.html`, `cesgranrio-2012-petrobras-...-prova.pdf`, `petrobras0208_gabsup.pdf` (todas ainda com 0 na tabela de `extraction-progress.md`).
-3. Depois de extrair todas as provas: `content/<area-id>.json` (resumos/cheatsheets/modelos mentais/padrões) e `flashcards.json` por área, usando só evidência de `questions.json`.
-4. Reconstruir diagramas pendentes na `review-queue.json` (CPM, UML) via SVG à mão ou screenshot headless do Chrome/Edge, para desbloquear os itens que dependem disso.
-5. Rodar a 2ª rodada de revisão nos itens `unresolved` da `review-queue.json` que ainda não passaram por 2 rodadas (critério de parada da seção F do plano).
+1. **Prioridade imediata:** refazer a rodada de confirmação do ciclo 5 (prompt no histórico; o
+   relatório original está em `_internal/review-cycle5.md`). Enquanto ela não fechar, `plan.json`
+   não deve ser tratado como validado.
+2. Dois itens que o dev deixou para o manager decidir: `fc-logica-020` agrupa três regras triviais
+   num card (ele defende manter; eu não apliquei mudança) e a redução ao absurdo segue coberta só
+   no cheatsheet de `logica.json`, sem card no deck.
+3. Ideias de ciclo 6, em ordem de valor: (a) rebalancear o deck — gestao-ti/ux/analise-dados com 28
+   cards contra 36-38 das áreas pesadas, e logica com 26; (b) revisar `content/*.json` das 4 áreas
+   dos ciclos 1-2 à luz dos padrões transversais descobertos no ciclo 5; (c) ligar cada questão
+   errada do simulado ao flashcard e ao trecho de resumo da área (o link cruzado previsto no plano
+   original ainda não existe).
 
-## Comando exato para retomar
+## Regra permanente do usuário
 
-Reinvocar o mesmo loop:
+**Sempre pausar aos 80% da janela de 5h.** Ao pausar: não lançar subagent novo, commitar
+checkpoint, atualizar este arquivo, avisar em 2-3 linhas. Janela atual começou ~04:30Z de 22/08;
+80% = 08:30Z (05:30 BRT), com gatilho agendado para 08:15Z. Há também um supervisor a cada 5h
+(push + e-mail) que lê este arquivo e manda o resumo de retomada.
+
+## Comando exato para retomar o loop
 
 ```
-/loop Gerencie, como manager, um ciclo contínuo de dev+validate para o app de estudo Transpetro 2026 em C:\project\Cesgranrio\provas\study\ (plano completo em C:\Users\vinic\.claude\plans\vou-fazer-um-concurso-compiled-wreath.md). Escopo atual: 10 áreas em study/data/areas.json (8 técnicas do Anexo IV Ênfase 5 + portugues/ingles, adicionadas em 2026-08-21 por pedido do usuário — provas já processadas foram reprocessadas para recuperar essas questões). A cada ciclo: (1) escolha a próxima unidade de trabalho pendente conforme o rollout do plano e study/_internal/extraction-progress.md — PRIMEIRO valide de forma completa as 36 questões de tarde_prova_07 que ficaram sem validação neste checkpoint, antes de seguir para novas provas; (2) lance 1 subagent 'dev' e (3) 1 subagent 'validator' independente por unidade de trabalho, sempre reforçando que 'provas e gabaritos/' é somente leitura e que o schema deve seguir os nomes de campo já usados em study/data/questions.json (area/correctKey/alternatives[].key/explanationSummary/per-alt explanation); (4) aplique fixes e revalide antes de fechar o ciclo; (5) git add/commit descritivo + git push origin main; (6) relate em 2-3 linhas o que melhorou. Continue até 08:00 BRT. Antes de qualquer novo risco de estourar o limite de sessão, repita este checkpoint (commit + STATUS.md atualizado). Nunca escrever/mover/renomear nada dentro de 'provas e gabaritos/' — só leitura ali.
+/loop Gerencie, como manager, o ciclo contínuo de dev+validate da trilha de ESTUDO do app Transpetro 2026 em /home/user/SimuladoConcurso/study. Brief compartilhado: study/_internal/content-brief.md. NÃO alterar simulado.html nem questions.json (outro agente cuida) e NUNCA escrever em 'provas e gabaritos/' (somente leitura). A cada ciclo: (1) escolha a próxima unidade pendente conforme study/_internal/STATUS.md — PRIMEIRO refaça a rodada de confirmação dos 19 fixes do ciclo 5 em study/data/plan.json, que ficou incompleta; (2) lance 1 subagent dev e (3) 1 subagent validador independente, exigindo do validador conferência formal (tabela-verdade em lógica, literalidade em lei, recontagem por script de toda afirmação de frequência) e proibindo-o de corrigir — o produto dele é relatório de defeitos com texto pronto para colar; (4) aplique os fixes, revalide e só então feche; (5) git add/commit descritivo + git push origin claude/transpetro-2026-study-mwb8lp; (6) relate em 2-3 linhas o que melhorou. Pause SEMPRE aos 80% da janela de 5h, com commit de checkpoint e STATUS.md atualizado antes. Continue até 08:00 BRT.
 ```
