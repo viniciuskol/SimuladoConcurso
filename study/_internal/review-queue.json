@@ -904,12 +904,17 @@
         }
       ],
       "gabaritoLetter": "E",
-      "derivedLetter": "não determinável sem a Figura",
+      "derivedLetter": "C (ou E, dependendo da leniência assumida sobre contagem de valores no INSERT)",
       "reviewRounds": [
         {
           "round": 1,
           "conclusion": "depende de imagem não capturada",
           "note": "O enunciado remete explicitamente a 'Figuras abaixo' com os dados armazenados nas tabelas FORNECEDOR/MATERIAL/VENDA (quais IDs de fornecedor/material já existem, quais têm vendas associadas, etc.), necessárias para avaliar violações de FK/PK/NOT NULL em cada alternativa (por exemplo, se o ID_FORN=5555 do item A já existe ou não, se o ID_F=3030/ID_M=2222 do item B existem nas tabelas referenciadas, etc.). Essas figuras/tabelas de dados são elementos gráficos nativos da página, não capturados na extração de texto do HTML/PDF (apenas as definições CREATE TABLE, comuns às questões 38 e 39, foram capturadas). Sem os dados de exemplo, não é possível confirmar com segurança qual comando executa sem erro; mantido em revisão com o gabarito oficial (E) registrado para referência."
+        },
+        {
+          "round": 2,
+          "conclusion": "dados agora visíveis, mas divergência genuína persiste",
+          "note": "As Figuras com os dados de FORNECEDOR/MATERIAL/VENDA foram lidas diretamente do PDF nativo. FORNECEDOR tem 4 linhas (ids 11111, 3333, 2222, 4444); VENDA referencia apenas ID_F em {11111, 3333, 2222} (4444 nunca aparece em VENDA). Analisando cada alternativa: (A) omite TEL1, que é NOT NULL sem valor default — erro de restrição. (B) insere VENDA com ID_F=3030, mas 3030 não é um ID_FORN válido em FORNECEDOR (é, na verdade, um ID_MATER de MATERIAL) — viola a FK VENDA_FK1. (C) apaga FORNECEDOR onde ID_FORN NOT IN (SELECT ID_F FROM VENDA) — como ID_F é NOT NULL em VENDA, não há risco do 'NULL trap' do NOT IN; o único fornecedor não referenciado em VENDA é 4444, e apagá-lo não viola nenhuma FK (nenhuma linha de VENDA aponta para 4444). Por uma leitura estritamente sintática/semântica de SQL, este comando deveria executar sem erro. (D) apaga FORNECEDOR onde TEL3 IS NOT NULL — isso inclui o fornecedor 2222, que TEM vendas associadas (referenciado por VENDA_FK1), violando a integridade referencial — erro. (E) insere em FORNECEDOR fornecendo apenas 3 valores (ID_FORN, NOME, TEL1) sem lista explícita de colunas, para uma tabela com 5 colunas — em SQL padrão/Oracle isso é um erro de sintaxe por contagem de valores insuficiente (equivalente a ORA-00947), independentemente de TEL2/TEL3 serem colunas opcionais/nulas. O gabarito (fonte externa, ver nota da extração original) indica E, mas a derivação independente aponta (C) como o comando que executa sem erro sob uma leitura estrita de SQL, e considera (E) também teoricamamente inválido pela contagem de valores — a menos que a banca tenha adotado uma leniência não-padrão sobre a obrigatoriedade de listar todos os valores. Mantida em revisão por divergência genuína, não por falta de dados."
         }
       ]
     },
@@ -927,75 +932,37 @@
       "alternatives": [
         {
           "key": "A",
-          "text": "Esquema com A(A1,A2,A3,B1) FK para B; B(B1,B2); C(C1,C2,C3); RB(C1,B1) ligando C e B"
+          "text": "A(A1,A2,A3,B1) FK→B; B(B1,B2); C(C1,C2,C3); RB(C1 PK, B1 UNIQUE) ligando C e B"
         },
         {
           "key": "B",
-          "text": "Esquema com A(A1,A2,A3); B(B1,B2,A1,A2) FK para A; C(C1,C2,C3); RB(C1,B1) ligando C e B"
+          "text": "A(A1,A2,A3); B(B1,B2,A1,A2 nullable) FK→A; C(C1,C2,C3); RB(C1 PK, B1 UNIQUE) ligando C e B"
         },
         {
           "key": "C",
-          "text": "Esquema com A(A1,A2,A3); B(B1,B2); RA(A1,A2,B1) ligando A e B; C(C1,C2,C3,B1) FK para B"
+          "text": "A(A1,A2,A3); B(B1,B2); RA(A1,A2,B1) PK composta ligando A e B; C(C1,C2,C3,B1) FK→B"
         },
         {
           "key": "D",
-          "text": "Esquema com A(A1,A2,A3); B(B1,B2,C1) FK para C; RA(A1,A2,B1) ligando A e B; C(C1,C2,C3)"
+          "text": "A(A1,A2,A3); B(B1,B2,C1) FK→C; RA(A1,A2,B1) PK=B1 ligando A e B; C(C1,C2,C3)"
         },
         {
           "key": "E",
-          "text": "Esquema com A(A1,A2,A3,B1) FK para B; B(B1,B2,C1) FK para C; C(C1,C2,C3)"
+          "text": "A(A1,A2,A3,B1 NOT NULL) FK→B; B(B1,B2,C1 NOT NULL UNIQUE) FK→C; C(C1,C2,C3)"
         }
       ],
       "gabaritoLetter": "E",
-      "derivedLetter": "não determinável sem a Figura",
+      "derivedLetter": "B",
       "reviewRounds": [
         {
           "round": 1,
           "conclusion": "depende de imagem não capturada",
           "note": "As cinco alternativas apresentam arranjos de chaves estrangeiras muito diferentes entre as entidades A, B e C (ligação direta A-B, A-B via tabela associativa, B-C direta, C-B via tabela associativa, etc.), o que só pode ser decidido a partir das cardinalidades/multiplicidades exatas do diagrama E-R referido como 'A Figura abaixo', que é um elemento gráfico nativo da página não capturado na extração de texto. O texto fornece apenas os identificadores das entidades, não os relacionamentos entre elas. Mantido em revisão, com o gabarito oficial (E) registrado para referência."
-        }
-      ]
-    },
-    {
-      "id": "transp15-q41",
-      "source": {
-        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
-        "year": 2018,
-        "originalNumber": 41
-      },
-      "area": "arq-dados",
-      "subtopic": "1.1 Modelagem de dados (conceitual, lógica e física)",
-      "stem": "A Figura a seguir exibe um modelo E-R composto por duas entidades e uma relação. Qual diagrama de Venn contém uma relação que atende às regras de multiplicidade definidas no modelo E-R acima?",
-      "images": null,
-      "alternatives": [
-        {
-          "key": "A",
-          "text": "(diagrama de Venn A — não capturado no texto extraído)"
         },
         {
-          "key": "B",
-          "text": "(diagrama de Venn B — não capturado no texto extraído)"
-        },
-        {
-          "key": "C",
-          "text": "(diagrama de Venn C — não capturado no texto extraído)"
-        },
-        {
-          "key": "D",
-          "text": "(diagrama de Venn D — não capturado no texto extraído)"
-        },
-        {
-          "key": "E",
-          "text": "(diagrama de Venn E — não capturado no texto extraído)"
-        }
-      ],
-      "gabaritoLetter": "D",
-      "derivedLetter": "não determinável sem a Figura",
-      "reviewRounds": [
-        {
-          "round": 1,
-          "conclusion": "depende de imagem não capturada",
-          "note": "Tanto o modelo E-R do enunciado quanto as cinco opções de resposta são diagramas de Venn (elementos puramente gráficos/vetoriais), sem nenhum texto alternativo extraído do PDF/HTML além dos rótulos '(A)'...'(E)'. É impossível reconstruir ou verificar esta questão sem acesso visual direto às imagens da página. Mantido em revisão, com o gabarito oficial (D) registrado para referência."
+          "round": 2,
+          "conclusion": "diagrama agora visível, mas divergência genuína de direção de FK persiste",
+          "note": "O diagrama E-R foi lido diretamente do PDF nativo: A --(0,n)-- RA --(0,1)-- B --(0,1)-- RB --(0,1)-- C, com identificadores (a1,a2) para A, b1 para B, c1 para C. Pela convenção padrão de cardinalidade mínima/máxima ensinada em cursos de BD no Brasil (Heuser e equivalentes) e usada de forma consistente na Q41 desta mesma prova: o rótulo perto de uma entidade X descreve a própria participação de X no relacionamento (quantas ocorrências da entidade OPOSTA uma ocorrência de X alcança). Logo, (0,n) perto de A significa 'cada A se relaciona com 0 a n B's' (A é o lado 'um', não precisa de FK), e (0,1) perto de B significa 'cada B se relaciona com 0 ou 1 A' (B é o lado 'muitos' equivalente, e deve carregar a FK para A, nullable pois o mínimo é 0). Isso aponta para a estrutura da alternativa (B): B(B1,B2,A1,A2 nullable) com FK para A, e A sem FK. Já o gabarito (E) inverte essa direção (A carrega FK para B, e ainda marcado NOT NULL, incompatível com a cardinalidade mínima 0 de A do lado de RA) — o que, pela convenção padrão, corresponderia a modelar o relacionamento inverso ao que o diagrama descreve. A alternativa (C) foi descartada por um defeito técnico independente: sua tabela associativa RA usa PK composta (A1,A2,B1), o que NÃO impede um mesmo B1 de aparecer em múltiplas linhas com A1,A2 diferentes, violando a cardinalidade máxima 1 de B seja qual for a direção adotada. Para o relacionamento RB (B--C, (0,1)-(0,1), simétrico opcional-opcional), tanto (B) quanto (D) modelam de formas tecnicamente válidas (tabela associativa chaveada por C1 com UNIQUE em B1, ou FK direta equivalente), então essa parte não distingue as alternativas. Esta é uma divergência genuína e bem fundamentada com a fonte externa do gabarito (não apenas falta de confiança): mantida em revisão para uma possível 3ª rodada ou confirmação cruzada com outra fonte do gabarito oficial."
         }
       ]
     },
@@ -1013,32 +980,37 @@
       "alternatives": [
         {
           "key": "A",
-          "text": "(fórmula com quantificadores ∀/∃ e conectivos ∧/→ — glifos lógicos não capturados no texto extraído)"
+          "text": "∀x((A(x)∧I(x)) → ∃y(T(y)∧E(x,y)))"
         },
         {
           "key": "B",
-          "text": "(fórmula com quantificadores ∀/∃ e conectivos ∧/→ — glifos lógicos não capturados no texto extraído)"
+          "text": "∀x(A(x)∧I(x)) ∧ ∀y(T(y)→E(x,y))"
         },
         {
           "key": "C",
-          "text": "(fórmula com quantificadores ∀/∃ e conectivos ∧/→ — glifos lógicos não capturados no texto extraído)"
+          "text": "∃x∀y(A(x)∧I(x)∧T(y)∧¬E(x,y))"
         },
         {
           "key": "D",
-          "text": "(fórmula com quantificadores ∀/∃ e conectivos ∧/→ — glifos lógicos não capturados no texto extraído)"
+          "text": "∀x((A(x)∧I(x)) → ∀y(T(y)→E(x,y)))"
         },
         {
           "key": "E",
-          "text": "(fórmula com quantificadores ∀/∃ e conectivos ∧/→ — glifos lógicos não capturados no texto extraído)"
+          "text": "∃x∀y(A(x)∧I(x)∧T(y)∧E(x,y))"
         }
       ],
       "gabaritoLetter": "D",
-      "derivedLetter": "não determinável sem os glifos",
+      "derivedLetter": "A",
       "reviewRounds": [
         {
           "round": 1,
           "conclusion": "símbolos lógicos ausentes do texto-fonte",
           "note": "Mesmo problema já documentado para outras provas deste banco (ex.: prova6-q63/66/67/69, prova07-q22-25): os glifos de quantificadores (∀, ∃) e conectivos (∧, →) desta prova são desenhados como vetor/Type3 na fonte do PDF, não como texto extraível, de modo que todas as cinco alternativas foram capturadas praticamente em branco (apenas vírgulas e espaços remanescentes). A tradução correta, em prosa, seria algo como ∀x((A(x)∧I(x)) → ∃y(T(y)∧E(x,y))), mas não é possível confirmar com segurança qual das cinco opções corresponde exatamente a essa fórmula sem reconstrução visual a partir do PDF original. Mantido em revisão, com o gabarito oficial (D) registrado para referência."
+        },
+        {
+          "round": 2,
+          "conclusion": "glifos agora legíveis, mas divergência semântica genuína com o gabarito",
+          "note": "As cinco fórmulas foram lidas com nitidez total do PDF nativo (sem corrupção de glifos nesta leitura). A sentença 'Todo aluno do curso de Informática estuda algum tópico de Matemática Discreta' tem estrutura '∀x, se x é aluno de Informática, ENTÃO existe algum y tópico de MD que x estuda' — tradução direta e padrão: ∀x((A(x)∧I(x)) → ∃y(T(y)∧E(x,y))), que é exatamente a alternativa (A). O gabarito, no entanto, indica (D): ∀x((A(x)∧I(x)) → ∀y(T(y)→E(x,y))), que traduz 'todo aluno de Informática estuda TODOS os tópicos de MD' — um quantificador universal sobre y, não existencial, o que corresponde a 'todo tópico', não a 'algum tópico' como está no enunciado em português. Essa é uma divergência semântica clara e verificável (o advérbio 'algum' em português é inequivocamente existencial), não uma questão de baixa confiança de leitura. Mantida em revisão; o gabarito para esta prova foi obtido de fonte externa (estudegratis.com.br, não do material oficial local), o que é a explicação mais provável para a divergência, mas isso não pôde ser confirmado de forma independente nesta rodada."
         }
       ]
     },
@@ -1056,32 +1028,37 @@
       "alternatives": [
         {
           "key": "A",
-          "text": "(fórmula proposicional — glifos lógicos não capturados no texto extraído)"
+          "text": "(P→Q)∨¬Q"
         },
         {
           "key": "B",
-          "text": "(fórmula proposicional — glifos lógicos não capturados no texto extraído)"
+          "text": "(P∧¬P)→Q"
         },
         {
           "key": "C",
-          "text": "(fórmula proposicional — glifos lógicos não capturados no texto extraído)"
+          "text": "¬(P∨Q)↔(P∨Q)"
         },
         {
           "key": "D",
-          "text": "(fórmula proposicional — glifos lógicos não capturados no texto extraído)"
+          "text": "(P↔P)∧(P∨Q)"
         },
         {
           "key": "E",
-          "text": "(fórmula proposicional — glifos lógicos não capturados no texto extraído)"
+          "text": "(P↔Q)∨(Q∨¬Q)"
         }
       ],
       "gabaritoLetter": "B",
-      "derivedLetter": "não determinável sem os glifos",
+      "derivedLetter": "C",
       "reviewRounds": [
         {
           "round": 1,
           "conclusion": "símbolos lógicos ausentes do texto-fonte",
           "note": "Mesmo problema de extração da Q69 desta prova (e precedente já documentado em prova6-q63/66/67/69): os conectivos lógicos (¬, ∨, ∧, →) das cinco fórmulas proposicionais são desenhados como vetor/Type3 na fonte do PDF, não capturáveis como texto. As cinco alternativas restaram apenas com as letras de variáveis proposicionais (P, Q) sem os conectivos entre elas, tornando inviável confirmar de forma independente qual fórmula é uma contradição sem reconstrução visual a partir do PDF original. Mantido em revisão, com o gabarito oficial (B) registrado para referência."
+        },
+        {
+          "round": 2,
+          "conclusion": "glifos agora legíveis; tabela-verdade aponta claramente para uma alternativa diferente do gabarito",
+          "note": "As cinco fórmulas foram lidas com nitidez total do PDF nativo. Tabela-verdade construída para cada uma: (A) (P→Q)∨¬Q é uma TAUTOLOGIA (sempre verdadeira: quando Q é falso, ¬Q cobre; quando Q é verdadeiro, P→Q é verdadeiro). (B) (P∧¬P)→Q também é uma TAUTOLOGIA — o antecedente P∧¬P é sempre falso (uma contradição em si), e uma implicação com antecedente falso é sempre verdadeira (verdade vacuosa), logo (B) nunca é falsa, não podendo ser a contradição pedida. (C) ¬(P∨Q)↔(P∨Q) é uma CONTRADIÇÃO genuína: sendo X=(P∨Q), a fórmula é ¬X↔X, que é sempre falsa (X e ¬X nunca têm o mesmo valor-verdade, então a bicondicional nunca é satisfeita), para qualquer combinação de P e Q. (D) (P↔P)∧(P∨Q): como P↔P é sempre verdadeiro, a fórmula equivale a (P∨Q), que é uma CONTINGÊNCIA (verdadeira sempre que P ou Q é verdadeiro, falsa apenas quando ambos são falsos) — não é constante. (E) (P↔Q)∨(Q∨¬Q): como Q∨¬Q é sempre verdadeiro, a fórmula é sempre verdadeira — TAUTOLOGIA. Conclusão: apenas (C) é uma contradição genuína (falsa em toda valoração); o gabarito registrado (B) corresponde, na verdade, a uma tautologia (verdade vacuosa de uma implicação com antecedente contraditório), o que é matematicamente incompatível com ser 'uma contradição'. Esta é uma divergência de alta confiança (verificada por tabela-verdade completa, não por leitura ambígua), sugerindo um provável erro de transcrição na fonte externa do gabarito usada para esta prova. Mantida em revisão em vez de forçar a concordância com o gabarito registrado."
         }
       ]
     },

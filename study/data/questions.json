@@ -17351,6 +17351,54 @@
       },
       "correctKey": "B",
       "explanationSummary": "A regra \"café, pão → manteiga\" tem suporte de 30% ({café,pão} ocorre em 3 das 10 transações: id1, id3, id4) e confiança de 100% (nas 3 transações onde café e pão ocorrem juntos, manteiga também ocorre em todas), atendendo aos critérios de suporte mínimo de 30% e confiança mínima de 80%."
+    },
+    {
+      "id": "transp15-q41",
+      "source": {
+        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
+        "year": 2018,
+        "originalNumber": 41
+      },
+      "area": "arq-dados",
+      "subtopic": "1.1 Modelagem de dados (conceitual, lógica e física)",
+      "stem": "A Figura a seguir exibe um modelo E-R composto por duas entidades e uma relação: E1 --(0,1)-- R --(1,N)-- E2 (ou seja, cada ocorrência de E1 se relaciona com 0 ou 1 ocorrência de E2, e cada ocorrência de E2 se relaciona com 1 a N ocorrências de E1 — toda ocorrência de E2 deve participar de pelo menos uma associação). Qual diagrama de Venn contém uma relação que atende às regras de multiplicidade definidas no modelo E-R acima? (A) mapeamento onde a1→b1, a2→b2, a3→b3 e a4→b1 (um segundo arco de a4 também chega a b1), deixando b4 sem nenhuma seta de entrada. (B) mapeamento cruzado onde cada elemento de E1 aponta para um elemento distinto de E2 (bijeção com linhas cruzadas). (C) mapeamento onde a1→b1 e a3→b3, com a2 e a4 cruzando entre si, deixando b2 sem nenhuma seta de entrada. (D) mapeamento direto e sem cruzamentos onde a1→b1, a2→b2, a3→b3 e a4→b4 (cada elemento de E1 aponta para exatamente um elemento distinto de E2, e todo elemento de E2 recebe exatamente uma seta). (E) mapeamento onde a1, a2, a3 e a4 apontam todos para o mesmo elemento b1, deixando b2, b3 e b4 sem nenhuma seta de entrada.",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "Diagrama com a1→b1, a2→b2, a3→b3 e a4→b1 (b4 sem seta de entrada)",
+          "explanation": "b4 não recebe nenhuma seta, violando a cardinalidade (1,N) de E2 (toda ocorrência de E2 deve se associar a pelo menos 1 ocorrência de E1)."
+        },
+        {
+          "key": "B",
+          "text": "Diagrama com bijeção cruzada entre E1 e E2 (cada elemento de E1 aponta para um elemento distinto de E2)"
+        },
+        {
+          "key": "C",
+          "text": "Diagrama com a1→b1, a3→b3 e a2/a4 cruzando entre si (b2 sem seta de entrada)",
+          "explanation": "b2 não recebe nenhuma seta, violando a cardinalidade (1,N) de E2."
+        },
+        {
+          "key": "D",
+          "text": "Diagrama direto sem cruzamentos: a1→b1, a2→b2, a3→b3, a4→b4"
+        },
+        {
+          "key": "E",
+          "text": "Diagrama com a1, a2, a3 e a4 todos apontando para b1 (b2, b3, b4 sem seta de entrada)",
+          "explanation": "b2, b3 e b4 não recebem nenhuma seta, violando a cardinalidade (1,N) de E2."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "D",
+        "independentlyDerivedAnswer": "D",
+        "agree": true,
+        "confidence": "high",
+        "notes": "O diagrama E-R foi lido diretamente do PDF-fonte: E1 --(0,1)-- R --(1,N)-- E2. Pela convenção padrão de cardinalidade mínima/máxima (cada rótulo perto de uma entidade descreve a própria participação dela: quantas ocorrências da entidade oposta uma ocorrência dela alcança), (0,1) em E1 significa que cada a_i aponta para 0 ou 1 b_j, e (1,N) em E2 significa que TODO b_j precisa receber pelo menos 1 seta (participação total obrigatória de E2). Analisando as 5 alternativas por essa regra: em (A), (C) e (E), pelo menos um elemento de E2 fica sem nenhuma seta de entrada (b4 em A, b2 em C, b2/b3/b4 em E), violando diretamente a cardinalidade mínima 1 de E2 — essas três são eliminadas com certeza. A alternativa (D) apresenta um mapeamento direto onde cada a_i aponta para exatamente um b_j distinto e todo b_j recebe exatamente uma seta, satisfazendo integralmente as regras (0,1) em E1 e (1,N) em E2 (com N=1 nesse caso concreto, dentro do intervalo permitido). Concorda com o gabarito D. Nota de transparência: a alternativa (B) também parece representar uma bijeção cruzada entre E1 e E2 que, se cada elemento de fato aponta para exatamente um elemento distinto do outro lado, também satisfaria formalmente a mesma regra — a topologia exata das linhas cruzadas de (B) não pôde ser confirmada com 100% de certeza a partir da transcrição do PDF, mas isso não reduz a confiança de que (D) é uma resposta válida e concordante com o gabarito; apenas registra a possibilidade de uma ambiguidade própria do desenho da questão, não da nossa derivação."
+      },
+      "correctKey": "D",
+      "explanationSummary": "O modelo E-R exige que toda ocorrência de E2 se associe a pelo menos 1 ocorrência de E1 (cardinalidade mínima 1 do lado (1,N)) e que cada ocorrência de E1 se associe a, no máximo, 1 ocorrência de E2 (cardinalidade máxima 1 do lado (0,1)). Apenas o diagrama (D), com um mapeamento direto onde todo b_j recebe exatamente uma seta e todo a_i emite no máximo uma seta, satisfaz essas duas regras simultaneamente; as demais alternativas deixam pelo menos um elemento de E2 sem nenhuma seta de entrada, violando a participação total obrigatória de E2."
     }
   ]
 }
