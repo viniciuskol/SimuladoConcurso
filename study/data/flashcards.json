@@ -2052,6 +2052,210 @@
       "front": "Qual a diferença entre \"B é consequência lógica de A\" e \"A é equivalente a B\"?",
       "back": "Consequência lógica é de mão única: toda valoração que torna A verdadeira torna B verdadeira (A ⊨ B, ou seja, A→B é tautologia). Equivalência é mão dupla: A ⊨ B e B ⊨ A, tabelas idênticas. Toda equivalente é consequência; o contrário não — se o comando pedir \"consequência lógica\", o gabarito pode ser uma afirmação mais fraca, que não equivale à original.",
       "sourceQuestionId": "transp23e6-q35"
+    },
+    {
+      "id": "fc-gestao-ti-029",
+      "area": "gestao-ti",
+      "front": "Que consentimento a LGPD exige para tratar dados pessoais de crianças?",
+      "back": "Consentimento específico e em destaque de pelo menos um dos pais ou do responsável legal (art. 14) — e essa exigência é só para CRIANÇA: para adolescente a lei não pede consentimento parental, só que o tratamento seja no melhor interesse do menor."
+    },
+    {
+      "id": "fc-gestao-ti-030",
+      "area": "gestao-ti",
+      "front": "Em que caso a LGPD permite coletar dados de criança sem o consentimento dos pais?",
+      "back": "Quando a coleta for necessária para contatar os pais ou o responsável legal — e aí os dados podem ser usados uma única vez e sem armazenamento — ou quando for necessária para a proteção da criança. Em nenhum caso podem ser repassados a terceiro sem aquele consentimento."
+    },
+    {
+      "id": "fc-gestao-ti-031",
+      "area": "gestao-ti",
+      "front": "Que prática a LGPD veda expressamente em jogos e aplicações de internet dirigidos a crianças?",
+      "back": "Condicionar a participação da criança em jogo, aplicação de internet ou outra atividade ao fornecimento de informações pessoais além das estritamente necessárias à atividade (art. 14). É a vedação de dados excedentes: querer o CPF da criança para liberar um jogo já viola o dispositivo."
+    },
+    {
+      "id": "fc-gestao-ti-032",
+      "area": "gestao-ti",
+      "front": "Quantas hipóteses de transferência internacional de dados a LGPD prevê, e quem decide se um país tem grau de proteção adequado?",
+      "back": "São nove hipóteses fechadas, no art. 33 — fora delas a transferência é vedada. O reconhecimento de que um país ou organismo internacional oferece grau de proteção adequado é competência da ANPD, não do controlador."
+    },
+    {
+      "id": "fc-gestao-ti-033",
+      "area": "gestao-ti",
+      "front": "Que garantias o controlador pode oferecer para viabilizar uma transferência internacional pela LGPD?",
+      "back": "Cláusulas contratuais específicas para aquela transferência, cláusulas-padrão contratuais, normas corporativas globais, ou selos, certificados e códigos de conduta regularmente emitidos. O controlador tem de oferecer e comprovar o cumprimento dos princípios, dos direitos do titular e do regime da lei."
+    },
+    {
+      "id": "fc-gestao-ti-034",
+      "area": "gestao-ti",
+      "front": "Quais são os prazos das sanções de suspensão previstas no art. 52 da LGPD, e qual delas admite proibição total?",
+      "back": "A suspensão parcial do funcionamento do banco de dados e a suspensão da atividade de tratamento são de até 6 meses, prorrogáveis por igual período. A proibição do exercício de atividades de tratamento é a única que pode ser parcial ou total."
+    },
+    {
+      "id": "fc-gestao-ti-035",
+      "area": "gestao-ti",
+      "front": "Além dos fins particulares, jornalísticos, artísticos, acadêmicos e de segurança pública, que outra hipótese o art. 4º da LGPD deixa fora da lei?",
+      "back": "Dados provenientes de fora do território nacional que não sejam objeto de comunicação, de uso compartilhado com agentes de tratamento brasileiros nem de transferência internacional para país diverso do de proveniência — desde que o país de origem ofereça grau de proteção adequado ao da lei."
+    },
+    {
+      "id": "fc-gestao-ti-036",
+      "area": "gestao-ti",
+      "front": "Por que dado pseudonimizado continua sendo dado pessoal para a LGPD, e dado anonimizado não?",
+      "back": "A pseudonimização apenas substitui o identificador por um código, mantendo a reidentificação possível com informação adicional guardada em separado. A anonimização, pela definição legal, retira a possibilidade de associação direta ou indireta ao indivíduo por meios técnicos razoáveis, e o dado sai do alcance da lei."
+    },
+    {
+      "id": "fc-gestao-ti-037",
+      "area": "gestao-ti",
+      "front": "Que princípio da LGPD limita o tratamento ao mínimo de dados indispensável à finalidade?",
+      "back": "O princípio da necessidade: os dados tratados devem ser pertinentes, proporcionais e não excessivos em relação à finalidade declarada. É diferente da finalidade, que exige propósito legítimo, específico e informado ao titular."
+    },
+    {
+      "id": "fc-gestao-ti-038",
+      "area": "gestao-ti",
+      "front": "Que direito a LGPD garante ao titular diante de uma decisão tomada unicamente por tratamento automatizado?",
+      "back": "O direito de solicitar a revisão da decisão, quando ela afete seus interesses — inclusive decisões de perfil pessoal, profissional, de consumo e de crédito. A redação vigente não exige que essa revisão seja feita por pessoa natural."
+    },
+    {
+      "id": "fc-gestao-ti-039",
+      "area": "gestao-ti",
+      "front": "Quem o controlador deve comunicar quando ocorre incidente de segurança com dados pessoais?",
+      "back": "A ANPD e o titular, quando o incidente possa acarretar risco ou dano relevante aos titulares, em prazo razoável definido pela autoridade. A ANPD pode determinar medidas como ampla divulgação do fato na imprensa."
+    },
+    {
+      "id": "fc-gestao-ti-040",
+      "area": "gestao-ti",
+      "front": "No ITIL 4, qual a diferença entre utilidade e garantia de um serviço?",
+      "back": "Utilidade é o serviço servir ao propósito (fit for purpose): entrega a funcionalidade que o consumidor precisa. Garantia é servir ao uso (fit for use): desempenho, capacidade, continuidade e segurança suficientes."
+    },
+    {
+      "id": "fc-gestao-ti-041",
+      "area": "gestao-ti",
+      "front": "Quais são os cinco componentes do Sistema de Valor de Serviço do ITIL 4?",
+      "back": "Princípios orientadores, governança, cadeia de valor de serviço, práticas e melhoria contínua. O SVS recebe oportunidade e demanda de um lado e entrega valor do outro."
+    },
+    {
+      "id": "fc-gestao-ti-042",
+      "area": "gestao-ti",
+      "front": "Quantos princípios o COBIT 2019 define para o sistema de governança, e como isso mudou em relação ao COBIT 5?",
+      "back": "Seis princípios para o sistema de governança — entre eles fornecer valor às partes interessadas, abordagem holística e governança distinta da gestão. O COBIT 5 trazia 5 princípios e 7 habilitadores."
+    },
+    {
+      "id": "fc-ux-029",
+      "area": "ux",
+      "front": "O que são os 3 C de uma história de usuário?",
+      "back": "Card (o cartão com o texto curto), Conversation (a conversa que detalha o pedido) e Confirmation (os critérios de aceitação). A história é promessa de conversa, não especificação completa."
+    },
+    {
+      "id": "fc-ux-030",
+      "area": "ux",
+      "front": "Qual a diferença entre história de usuário e caso de uso?",
+      "back": "O caso de uso descreve fluxo principal, passos e exceções em detalhe, como documento de análise. A história de usuário é um lembrete curto e negociável de valor, que será detalhado em conversa com o time."
+    },
+    {
+      "id": "fc-ux-031",
+      "area": "ux",
+      "front": "Qual é a estrutura Gherkin para escrever um critério de aceitação?",
+      "back": "Dado (o contexto inicial), Quando (a ação ou evento) e Então (o resultado observável esperado). O formato torna o critério verificável e automatizável em teste."
+    },
+    {
+      "id": "fc-ux-032",
+      "area": "ux",
+      "front": "Quais são as quatro atividades do projeto centrado no humano da ISO 9241-210?",
+      "back": "Entender e especificar o contexto de uso; especificar os requisitos do usuário; produzir soluções de projeto; avaliar o projeto contra os requisitos. São iterativas: a avaliação realimenta as anteriores."
+    },
+    {
+      "id": "fc-ux-033",
+      "area": "ux",
+      "front": "Qual a diferença entre affordance e significante, no vocabulário de Norman?",
+      "back": "Affordance é a possibilidade de ação que a relação entre objeto e usuário oferece. Significante é a pista perceptível que comunica essa possibilidade, como a seta, o rótulo ou a sombra do botão."
+    },
+    {
+      "id": "fc-ux-034",
+      "area": "ux",
+      "front": "Que técnica garante interoperabilidade entre navegadores melhor do que identificar o navegador do usuário?",
+      "back": "Detecção de funcionalidade (feature detection): testar se o recurso existe no agente e oferecer alternativa ou polyfill quando não existe. Detectar navegador por identificação envelhece mal e quebra em versões novas."
+    },
+    {
+      "id": "fc-ux-035",
+      "area": "ux",
+      "front": "Qual a diferença entre aprimoramento progressivo e degradação graciosa?",
+      "back": "O aprimoramento progressivo começa por conteúdo e HTML que funcionam em qualquer agente e soma camadas de CSS e JavaScript. A degradação graciosa parte da experiência completa e garante um mínimo aceitável onde os recursos faltam."
+    },
+    {
+      "id": "fc-ux-036",
+      "area": "ux",
+      "front": "O que distingue proto-persona e persona negativa de uma persona comum?",
+      "back": "A proto-persona é construída a partir de suposições da equipe e precisa ser validada por pesquisa. A persona negativa descreve quem a equipe decide deliberadamente NÃO atender, para evitar decisões de produto que a atendam."
+    },
+    {
+      "id": "fc-ux-037",
+      "area": "ux",
+      "front": "Qual a diferença entre mapa de jornada do usuário e service blueprint?",
+      "back": "O mapa de jornada registra fases, ações, pontos de contato, pensamentos, emoções e dores do usuário. O service blueprint acrescenta o que acontece nos bastidores: pessoas, sistemas e processos de apoio que sustentam cada ponto de contato."
+    },
+    {
+      "id": "fc-ux-038",
+      "area": "ux",
+      "front": "Como funciona o SUS (System Usability Scale) e como se lê seu resultado?",
+      "back": "Questionário de 10 itens em escala Likert respondido pelo usuário após a tarefa, convertido em um escore de 0 a 100. A média de referência fica em torno de 68 — e o escore não é percentual de acerto nem nota da interface."
+    },
+    {
+      "id": "fc-analise-dados-029",
+      "area": "analise-dados",
+      "front": "Qual é a definição de Business Intelligence, e qual é o seu objetivo final?",
+      "back": "É o conjunto de conceitos, métodos, processos e ferramentas que converte dado operacional em informação e conhecimento. O objetivo é apoiar a tomada de decisão: relatório e painel são meio, não fim."
+    },
+    {
+      "id": "fc-analise-dados-030",
+      "area": "analise-dados",
+      "front": "Qual a diferença entre ETL e ELT?",
+      "back": "No ETL a transformação ocorre antes da carga, em ferramenta intermediária. No ELT o dado bruto é carregado primeiro e transformado no destino, aproveitando o poder de processamento do armazém ou do lake. ELT não significa carga sem transformação."
+    },
+    {
+      "id": "fc-analise-dados-031",
+      "area": "analise-dados",
+      "front": "Sem catálogo e sem qualidade, no que degenera um data lake — e o que o lakehouse tenta resolver?",
+      "back": "Degenera em data swamp: dado bruto que ninguém acha, entende ou confia. O lakehouse tenta juntar a governança e o esquema do data warehouse com a flexibilidade e o custo do lake."
+    },
+    {
+      "id": "fc-analise-dados-032",
+      "area": "analise-dados",
+      "front": "O que é o grão (granularidade) de uma tabela de fatos?",
+      "back": "É o que uma única linha do fato representa — uma venda, um item de venda, um dia por produto por loja. Definir o grão é a primeira decisão do modelo: grão mais fino permite mais análise e custa mais volume."
+    },
+    {
+      "id": "fc-analise-dados-033",
+      "area": "analise-dados",
+      "front": "Como se avalia a força de uma regra de associação em mineração de dados?",
+      "back": "Por suporte (frequência do conjunto de itens na base), confiança (probabilidade do consequente dado o antecedente) e lift (quanto a regra supera o que se esperaria ao acaso). O algoritmo clássico é o Apriori."
+    },
+    {
+      "id": "fc-analise-dados-034",
+      "area": "analise-dados",
+      "front": "Por que a acurácia engana na avaliação de um classificador sobre base desbalanceada?",
+      "back": "Porque prever sempre a classe majoritária já produz acurácia altíssima sem capturar nada do fenômeno raro. Nesses casos olhe precisão, revocação e F1 sobre a classe de interesse, lendo a matriz de confusão."
+    },
+    {
+      "id": "fc-analise-dados-035",
+      "area": "analise-dados",
+      "front": "O que é o paradoxo de Simpson na leitura de dados agregados?",
+      "back": "É quando a mesma base mostra uma tendência no total e a tendência oposta em cada subgrupo, porque a agregação esconde a composição dos grupos. Por isso se confere o dado segmentado antes de concluir a partir do total."
+    },
+    {
+      "id": "fc-analise-dados-036",
+      "area": "analise-dados",
+      "front": "Quando o coeficiente de variação é preferível ao desvio-padrão?",
+      "back": "Quando se comparam séries de escalas ou unidades diferentes, porque o coeficiente de variação é o desvio-padrão dividido pela média e vira número relativo. O desvio-padrão só é comparável entre séries da mesma unidade e magnitude."
+    },
+    {
+      "id": "fc-analise-dados-037",
+      "area": "analise-dados",
+      "front": "Qual a diferença entre indicador leading e indicador lagging?",
+      "back": "O leading (direcionador) antecipa o resultado e ainda permite agir — número de propostas enviadas, taxa de conversão do funil. O lagging mede o que já ocorreu — receita, evasão do mês. Painel só com lagging avisa tarde."
+    },
+    {
+      "id": "fc-analise-dados-038",
+      "area": "analise-dados",
+      "front": "Como muda o conteúdo de um dashboard estratégico, tático e operacional?",
+      "back": "O estratégico traz poucos indicadores agregados comparados à meta; o tático mostra desvio por área e período para a gerência; o operacional traz detalhe, alta frequência de atualização e alerta. Errar o público do painel é o defeito mais comum."
     }
   ]
 }

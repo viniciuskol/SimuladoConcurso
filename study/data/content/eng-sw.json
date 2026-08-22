@@ -164,7 +164,7 @@
     },
     {
       "title": "Enunciado-caso: um diálogo ou uma narrativa longa que esconde uma única palavra-chave",
-      "howToSpot": "A Cesgranrio monta cenários de meia página (o diálogo do diretor com o desenvolvedor, os casos de uso do relatório anual, o software de mísseis, a versão a ser aprovada por representantes dos usuários) e a resposta depende de uma frase só. Em psjpn2018-q51 a chave é dupla: 'versões sucessivas e cada vez mais completas' aponta incremental, e a recusa do especialista em risco elimina espiral. Em psjpn2018-q46 a chave é 'fluxo de tarefas' entre dois papéis, que dá atividades. Em transp23e6-q31, 'representantes dos usuários finais' + 'antes de disponibilizar no mercado' dá aceitação. Tática: leia o cenário buscando o termo técnico disfarçado e ignore o resto do texto.",
+      "howToSpot": "A Cesgranrio monta cenários de meia página (o diálogo do diretor com o desenvolvedor, os casos de uso do relatório anual, o software de mísseis, a versão a ser aprovada por representantes dos usuários) e a resposta depende de uma frase só. Em psjpn2018-q51 a chave é dupla: 'versões sucessivas e cada vez mais completas' aponta incremental, e a recusa do especialista em risco elimina espiral. Em psjpn2018-q46 a chave é 'fluxo de tarefas' entre dois papéis, que dá atividades. Em transp23e6-q31, 'representantes dos usuários finais' + 'antes de disponibilizar no mercado' dá aceitação. Tática: leia o cenário buscando o termo técnico disfarçado — mas confira o SINAL de cada marcador antes de descartar o resto do texto, porque em psjpn2018-q51 a palavra “risco” está lá justamente para atrair quem decide por palavra isolada.",
       "evidence": [
         "psjpn2018-q51",
         "psjpn2018-q46",
@@ -222,7 +222,7 @@
   "tactics": [
     {
       "title": "Antes de escolher o modelo de processo, procure a palavra que elimina",
-      "body": "Nas questões de ciclo de vida, cada modelo tem um marcador exclusivo no enunciado. 'Risco' → espiral. 'Versões sucessivas cada vez mais completas', 'entregas parciais' → incremental. 'Cada fase concluída antes da próxima' → cascata (ou V, se houver nível de teste espelhado). 'Concepção, elaboração, construção, transição' → Processo Unificado. 'Protótipo descartado depois' → prototipação. 'Componentes prontos' → baseado em componentes. Ache o marcador e não leia o resto do diálogo."
+      "body": "Nas questões de ciclo de vida, cada modelo tem um marcador exclusivo no enunciado. “Risco” aponta espiral SE o enunciado disser que o risco é analisado a cada ciclo — e aponta o contrário se disser que o risco foi deliberadamente ignorado: em psjpn2018-q51 o usuário pede para “não contar nada para aquele especialista em risco” e o gabarito é incremental, com espiral de distrator. 'Versões sucessivas cada vez mais completas', 'entregas parciais' → incremental. 'Cada fase concluída antes da próxima' → cascata (ou V, se houver nível de teste espelhado). 'Concepção, elaboração, construção, transição' → Processo Unificado. 'Protótipo descartado depois' → prototipação. 'Componentes prontos' → baseado em componentes. Ache o marcador, mas leia a frase inteira em que ele aparece: o marcador só vale com o sinal certo. Nunca decida por palavra isolada em enunciado-diálogo."
     },
     {
       "title": "Em questão de UML, converta a pergunta em uma das cinco perguntas canônicas",

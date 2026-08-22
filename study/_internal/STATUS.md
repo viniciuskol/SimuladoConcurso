@@ -9,7 +9,7 @@ não é alterado aqui — só lido como evidência.
 
 **Ciclos 1 a 4: fechados e validados.** As 10 áreas de `areas.json` têm material completo em
 `study/data/content/<area>.json` (resumo, cheatsheet, modelos mentais, padrões da banca com
-evidência em questão real, táticas, palavras-armadilha). Deck oficial: **308 flashcards**
+evidência em questão real, táticas, palavras-armadilha). Deck oficial: **342 flashcards**
 (arq-dados 36, gestao-proj 36, eng-sw 38, seg-info 36, gestao-ti 28, ux 28, analise-dados 28,
 portugues 27, ingles 25, logica 26).
 

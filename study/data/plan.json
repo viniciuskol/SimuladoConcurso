@@ -43,7 +43,7 @@
     },
     {
       "title": "Absoluto e restrição indevida ('apenas', 'somente', 'exclusivamente', 'nunca', 'não influencia em nada')",
-      "body": "Duas caras do mesmo padrão. Nas questões conceituais, a correta é a afirmação abrangente e os distratores estreitam o alcance: KPI 'apenas de hardware', 'exclusivamente disponibilidade', MVP 'inadequado para empresas já estabelecidas' ou 'necessariamente' com as mesmas tecnologias do produto final, novos requisitos que 'não influenciam em nada' o projeto. Em inglês o mesmo filtro é ainda mais forte: no banco inteiro, nenhuma alternativa correta usa certainly, definitely, surely, absolutely, inevitable ou undeniable, e o texto com hedging (may, is likely to, is projected to) nunca sustentou alternativa absoluta. Exceção obrigatória de saber de cor: nas questões 'Comparing Texts I and II', 'only Text I' e 'only Text II' são a estrutura fixa da questão e podem ser o gabarito — ali o 'only' não conta como excesso (o mesmo para 'the whole world', expressão neutra).",
+      "body": "Duas caras do mesmo padrão. Nas questões conceituais, a correta é a afirmação abrangente e os distratores estreitam o alcance: KPI 'apenas de hardware', 'exclusivamente disponibilidade', MVP 'inadequado para empresas já estabelecidas' ou 'necessariamente' com as mesmas tecnologias do produto final, novos requisitos que 'não influenciam em nada' o projeto. Em inglês o mesmo filtro é ainda mais forte: no banco inteiro, nenhuma alternativa correta usa certainly, definitely, surely, absolutely, inevitable ou undeniable, e o texto com hedging (may, is likely to, is projected to) nunca sustentou alternativa absoluta. Exceção obrigatória de saber de cor: nas questões 'Comparing Texts I and II', 'only Text I' e 'only Text II' são a estrutura fixa da questão e podem ser o gabarito — ali o 'only' não conta como excesso (o mesmo para 'the whole world', expressão neutra). Nas técnicas a régua tem exceção: em psjpn2018-q43 o gabarito é a alternativa absoluta ('não tem o desempenho otimizado para nenhum usuário') e em transp15-q52 é 'apenas pela Autoridade Certificadora Raiz'. Absoluto é ordem de conferir primeiro, não licença para descartar; só elimine quando souber que a afirmação é falsa no mérito.",
       "evidence": [
         "transp23e6-q66",
         "transp23e6-q57",
@@ -52,18 +52,22 @@
         "transp15-q14",
         "prova6-q18",
         "psjpn2018-q20",
-        "prova07-q21"
+        "prova07-q21",
+        "psjpn2018-q43",
+        "transp15-q52"
       ]
     },
     {
       "title": "Asserção-razão com PORQUE: duas frases verdadeiras que não se justificam",
-      "body": "Formato concentrado nas provas de 2010 e 2011, e sempre com as mesmas cinco alternativas. O erro típico do candidato é parar na primeira metade: julga as duas frases verdadeiras e marca 'as duas são verdadeiras e a segunda justifica a primeira' sem testar o nexo. Nos casos do banco, o gabarito costuma ser exatamente 'verdadeiras, mas a segunda NÃO justifica' — definição de SI e definição de TI são independentes; criptografia protege confidencialidade, integridade e autenticidade, e a frase sobre chave pública cobre só uma dessas três. Defesa: julgue V/F cada frase isoladamente e só então pergunte 'a segunda é a CAUSA da primeira?'. Se a segunda é um caso particular, ou fala de outro objeto, não justifica.",
+      "body": "Formato concentrado nas provas de 2010 e 2011, e sempre com as mesmas cinco alternativas. O erro típico do candidato é parar na primeira metade: julga as duas frases verdadeiras e marca 'as duas são verdadeiras e a segunda justifica a primeira' sem testar o nexo. São 8 ocorrências no banco e os quatro gabaritos possíveis aparecem: 3 são 'verdadeiras, mas a segunda NÃO justifica' (definição de SI e definição de TI são independentes; criptografia protege confidencialidade, integridade e autenticidade, e a frase sobre chave pública cobre só uma dessas três), 2 são 'a segunda justifica' (prova6-q24, em gestão de projetos, e prova6-q10, em Português), 2 têm a primeira frase falsa e 1 tem as duas falsas. Não existe chute padrão neste formato: 'não justifica' é a resposta mais frequente, não a provável. Defesa: julgue V/F cada frase isoladamente e só então pergunte 'a segunda é a CAUSA da primeira?'. Se a segunda é um caso particular, ou fala de outro objeto, não justifica.",
       "evidence": [
         "prova07-q65",
         "prova07-q68",
         "prova6-q61",
         "prova6-q47",
-        "prova07-q55"
+        "prova07-q55",
+        "prova6-q24",
+        "prova6-q10"
       ]
     },
     {
@@ -166,7 +170,7 @@
       ],
       "goal": "Fechar o eixo de dados do banco (39 questões entre as duas áreas) com modelagem dimensional, normalização e SQL na ponta da língua.",
       "checklist": [
-        "Fechar os 36 cards de arq-dados e os 28 de analise-dados com 2 rodadas de acerto em dias diferentes",
+        "Fechar os 36 cards de arq-dados e os 38 de analise-dados com 2 rodadas de acerto em dias diferentes",
         "Refazer as 6 questões de modelagem dimensional (psjpn2018-q43, psjpn2018-q44, prova07-q42, prova07-q44, prova07-q46, prova07-q48) sem olhar a explicação",
         "Escrever de memória as três primeiras formas normais com um exemplo próprio de violação de cada, e resolver psjpn2018-q58 e transp15-q42 pelo método da chave",
         "Reescrever as 3 questões de SQL (psjpn2018-q56, transp15-q38, transp23e6-q49) explicando por que cada uma das 4 alternativas erradas está errada",
@@ -184,7 +188,7 @@
       ],
       "goal": "Dominar a máquina de processos do PMBOK e o vocabulário ágil/UX, que juntos são a maior fatia histórica (44 questões).",
       "checklist": [
-        "Fechar os 36 cards de gestao-proj e os 28 de ux com 2 rodadas de acerto",
+        "Fechar os 36 cards de gestao-proj e os 38 de ux com 2 rodadas de acerto",
         "Desenhar de memória a matriz grupos de processos x áreas de conhecimento e marcar onde a 7ª edição trocou processos por princípios e domínios de desempenho",
         "Resolver as 5 questões de cálculo (psjpn2018-q21, psjpn2018-q22, transp15-q30, transp15-q64, prova07-q14) duas vezes, cronometrando, até o procedimento virar receita",
         "Reconstruir a tabela de influência organizacional (funcional, matricial fraca/balanceada/forte, projetizada) célula por célula e conferir contra prova6-q29 e transp23e6-q69",
@@ -202,7 +206,7 @@
       ],
       "goal": "Fixar V&V, ciclos de vida e o núcleo de sistemas de informação/LGPD, com atenção aos pares vizinhos que a banca inverte.",
       "checklist": [
-        "Fechar os 38 cards de eng-sw e os 28 de gestao-ti com 2 rodadas de acerto",
+        "Fechar os 38 cards de eng-sw e os 42 de gestao-ti com 2 rodadas de acerto",
         "Refazer as 8 questões de teste e V&V (psjpn2018-q45, prova07-q16, prova07-q18, prova07-q56, transp15-q24, transp15-q25, transp23e6-q23, transp23e6-q31) e classificar cada uma no seu recorte (definição, atividade, técnica, nível, revisão)",
         "Escrever verificação x validação, caixa-branca x caixa-preta, teste de aceitação x de sistema e SAST x DAST em uma linha cada, sem consultar",
         "Fazer uma tabela de ciclos de vida (cascata, incremental, espiral, prototipação, Processo Unificado, ágil) com a característica que só ele tem, e checar contra prova07-q51 e prova07-q53",
@@ -267,7 +271,7 @@
         "Fazer 2 simulados completos de 70 questões, cronometrados de ponta a ponta e na ordem de ataque planejada (inglês, português, técnicas), com pelo menos 4 dias entre eles",
         "Depois de cada simulado, classificar TODO erro em uma de três causas — não sabia, sabia e li errado, sabia e errei a conta — e tratar cada causa de um jeito diferente",
         "Reler os crossPatterns deste plano e, para cada um, apontar uma questão do simulado em que ele apareceu (se um padrão não apareceu, dizer isso por escrito)",
-        "Rodar o deck completo (308 cards, já com os 16 de lógica) em modo intercalado, retirando só os cards com 3 acertos consecutivos",
+        "Rodar o deck completo (342 cards, já com os 16 de lógica e os 34 do ciclo 6) em modo intercalado, retirando só os cards com 3 acertos consecutivos",
         "Refazer, sem consultar, todas as questões erradas nos dois simulados, e considerar o bloco fechado quando o refazimento tiver acerto >= 90%",
         "Na última semana, nada de conteúdo novo: só cards, questões erradas e a folha de fórmulas/siglas; dormir cedo nas duas noites anteriores à prova"
       ]

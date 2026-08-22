@@ -183,7 +183,7 @@
     },
     {
       "title": "'Superchave mínima tem uma única coluna' é distrator reincidente",
-      "howToSpot": "Aparece tanto em item de assertiva (I, II, III) quanto em alternativa direta. Toda vez que uma opção ligar minimalidade a coluna única, ela é falsa: chave candidata composta continua sendo superchave mínima. No mesmo pacote costuma vir a falsa afirmação de que NULL é proibido em coluna com integridade referencial — também falsa, pois NULL em FK é permitido sem NOT NULL explícito.",
+      "howToSpot": "Aparece tanto em item de assertiva (I, II, III) quanto em alternativa direta. Toda vez que uma opção ligar minimalidade a coluna única, ela é falsa: chave candidata composta continua sendo superchave mínima. No mesmo pacote costuma vir a falsa afirmação de que NULL é proibido em coluna com integridade referencial — também falsa, pois NULL em FK é permitido sem NOT NULL explícito. É também o único item I-II-III-IV da área (prova07-q3) e o gabarito é PARCIAL — “I e III”, nunca “todas”: o desenho “todas corretas” do banco só ocorre em gestão e governança de TI e em gestão de projetos.",
       "evidence": [
         "prova6-q57",
         "prova07-q3"
@@ -225,7 +225,7 @@
     },
     {
       "title": "Cheque prioritariamente palavras absolutas",
-      "body": "Nas alternativas longas de DW, big data e NoSQL, a chave costuma ser um absoluto plantado: 'apenas', 'somente', 'sempre', 'única forma', 'todas as comunidades de usuários', 'opcional'. Data lake 'apenas para não estruturado', ETL considerando 'somente OLTP', dimensão tempo 'opcional', execução serial como 'única forma' de garantir correção — todas falsas por causa do absoluto."
+      "body": "Nas alternativas longas de DW, big data e NoSQL, a chave costuma ser um absoluto plantado: 'apenas', 'somente', 'sempre', 'única forma', 'todas as comunidades de usuários', 'opcional'. Data lake 'apenas para não estruturado', ETL considerando 'somente OLTP', dimensão tempo 'opcional', execução serial como 'única forma' de garantir correção — todas falsas por causa do absoluto. Exceção que a torna segura: absoluto é sinal para VERIFICAR, não para descartar. Em psjpn2018-q43 o gabarito é justamente a alternativa absoluta (“o modelo relacional é altamente flexível, mas não tem o desempenho otimizado para nenhum usuário”) — enquanto o distrator B da mesma questão usa “todas as comunidades de usuários”. As duas são absolutas; o que decide é o conteúdo. Use o absoluto para escolher por onde começar a conferir, e só elimine quando souber que a afirmação é falsa no mérito."
     },
     {
       "title": "Reserve tempo para as questões de cálculo, mas não comece por elas",

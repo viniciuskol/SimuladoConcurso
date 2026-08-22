@@ -219,11 +219,12 @@
       ]
     },
     {
-      "title": "Formatos-armadilha das provas antigas: asserção-razão e enunciado negativo",
-      "howToSpot": "Em prova6-q61 as duas afirmações são verdadeiras (é conveniente usar criptografia para proteger confidencialidade, integridade e autenticidade; chaves públicas dão método seguro de autenticação), mas a segunda cobre apenas uma das três propriedades e por isso não justifica a primeira — decisão entre as letras A e B. Em prova6-q62 pede-se o elemento que NÃO consta da lista da norma para acordos de confidencialidade. Nos dois casos o conteúdo era fácil e a perda vinha do formato. Julgue cada frase isoladamente antes de olhar o nexo, e circule o NÃO antes de ler as alternativas.",
+      "title": "Formatos-armadilha das provas antigas: asserção-razão, enunciado negativo e associação de colunas",
+      "howToSpot": "Em prova6-q61 as duas afirmações são verdadeiras (é conveniente usar criptografia para proteger confidencialidade, integridade e autenticidade; chaves públicas dão método seguro de autenticação), mas a segunda cobre apenas uma das três propriedades e por isso não justifica a primeira — decisão entre as letras A e B. Em prova6-q62 pede-se o elemento que NÃO consta da lista da norma para acordos de confidencialidade. Nos dois casos o conteúdo era fácil e a perda vinha do formato. Julgue cada frase isoladamente antes de olhar o nexo, e circule o NÃO antes de ler as alternativas. (3) ASSOCIAÇÃO DE COLUNAS — prova07-q28 dá duas categorias (controle exigido por requisito legal x controle de melhor prática) e seis controles da ISO 27002 para distribuir três a três. Não tente resolver as seis: ancore nas que são obviamente legais (proteção de dados pessoais, direito de propriedade intelectual, proteção de registros organizacionais) e elimine toda combinação que ponha qualquer uma delas do lado das melhores práticas — sobra uma. Gabarito C.",
       "evidence": [
         "prova6-q61",
-        "prova6-q62"
+        "prova6-q62",
+        "prova07-q28"
       ]
     },
     {
@@ -265,6 +266,10 @@
     {
       "title": "Estude os subtópicos que nunca caíram: são grandes e baratos",
       "body": "Do Anexo IV desta área, nunca foram OBJETO de uma questão (no máximo apareceram como distrator): DLP, CASB, STRIDE e DREAD (distratores em transp23e6-q43 e transp23e6-q38), políticas de segurança (item de prova07-q28), EDR, gestão de vulnerabilidades, threat intel e threat hunting, teste de intrusão, ISO 31000, ISO 22301, Sarbanes-Oxley, MFA, MDM, segurança em nuvem e segurança física — estes últimos sem nenhuma aparição. Como a prova de 2023 andou em largura, com uma questão por tema e enunciado de definição, uma frase decorada por item desses vale tanto quanto horas gastas aprofundando criptografia."
+    },
+    {
+      "title": "Nesta área, “apenas” não é sinal de alternativa falsa",
+      "body": "Em segurança há muita regra genuinamente exclusiva: só a AC Raiz assina o certificado da AC imediatamente subordinada (transp15-q52, gabarito “apenas pela Autoridade Certificadora Raiz”), só a chave privada do titular assina, só a chave privada do destinatário abre o envelope digital. Não importe a heurística “corte o absoluto” das áreas de dados e de engenharia de software: aqui o absoluto costuma ser estrutura da questão. O distrator perigoso nesta área não é o que restringe, é o que DESLOCA responsabilidade — em psjpn2018-q65 a classificação da informação aparece atribuída à alta gerência e ao setor de TI, e as duas estão erradas porque a decisão é do proprietário da informação."
     }
   ],
   "trapWords": [
