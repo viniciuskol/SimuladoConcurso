@@ -321,5 +321,47 @@
       "confusedWith": "entrega e implantação contínuas",
       "distinction": "Integração contínua = build e testes automáticos a cada integração no repositório. Entrega contínua = artefato sempre pronto, promoção decidida por pessoa. Implantação contínua = promoção automática até produção."
     }
+  ],
+  "resources": [
+    {
+      "title": "Manifesto para Desenvolvimento Ágil de Software",
+      "publisher": "agilemanifesto.org",
+      "url": "https://agilemanifesto.org/iso/ptbr/manifesto.html",
+      "kind": "norma",
+      "free": true,
+      "why": "Fonte primária dos 4 valores e 12 princípios para o 5.2 (paradigmas de ciclo de vida), na tradução oficial em português."
+    },
+    {
+      "title": "SWEBOK — Software Engineering Body of Knowledge",
+      "publisher": "IEEE Computer Society",
+      "url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+      "kind": "guia",
+      "free": true,
+      "why": "Corpo de conhecimento que organiza requisitos, projeto, teste e manutenção (5.1 a 5.4); download gratuito, só em inglês."
+    },
+    {
+      "title": "Unified Modeling Language (UML) 2.5.1 — especificação",
+      "publisher": "Object Management Group (OMG)",
+      "url": "https://www.omg.org/spec/UML/",
+      "kind": "norma",
+      "free": true,
+      "why": "Fonte primária dos diagramas de classes, casos de uso, sequência e estados usados no 5.3 (análise e projeto OO); em inglês."
+    },
+    {
+      "title": "Material de Apoio ao Estudo (syllabi ISTQB em português)",
+      "publisher": "BSTQB — Brazilian Software Testing Qualifications Board",
+      "url": "https://bstqb.qa/material-de-apoio-ao-estudo/",
+      "kind": "guia",
+      "free": true,
+      "why": "Syllabus e glossário de teste em português (representante oficial do ISTQB no Brasil) para o 5.4 — níveis, tipos e técnicas de teste."
+    },
+    {
+      "title": "Pro Git (tradução parcial para português)",
+      "publisher": "git-scm.com / Apress (CC BY-NC-SA)",
+      "url": "https://git-scm.com/book/pt-br/v2",
+      "kind": "livro",
+      "free": true,
+      "why": "Controle de versão, branches e fluxo de trabalho — parte concreta do 5.5 (ambientes de desenvolvimento)."
+    }
   ]
 }

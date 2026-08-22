@@ -268,5 +268,55 @@
       "confusedWith": "inovação radical e disruptiva",
       "distinction": "Incremental melhora o que existe na mesma trajetória técnica. Radical rompe a trajetória. Disruptiva (Christensen) é um conceito de mercado, não de intensidade técnica: entra por um nicho desatendido com desempenho inferior nos atributos tradicionais e depois desloca o incumbente."
     }
+  ],
+  "resources": [
+    {
+      "title": "Lei nº 13.709/2018 (LGPD) — texto compilado",
+      "publisher": "Presidência da República / Planalto",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+      "kind": "norma",
+      "free": true,
+      "why": "Fonte primária do 4.6: definições do art. 5º, bases legais dos arts. 7º e 11, direitos do titular e sanções."
+    },
+    {
+      "title": "Materiais Educativos e Publicações (guias orientativos)",
+      "publisher": "ANPD — Autoridade Nacional de Proteção de Dados",
+      "url": "https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes",
+      "kind": "guia",
+      "free": true,
+      "why": "Guias oficiais da ANPD (agentes de tratamento, encarregado, legítimo interesse, segurança) que interpretam o 4.6."
+    },
+    {
+      "title": "COBIT — Control Objectives for Information and Related Technologies",
+      "publisher": "ISACA",
+      "url": "https://www.isaca.org/resources/cobit",
+      "kind": "guia",
+      "free": false,
+      "why": "Página oficial do COBIT para o 4.5 (governança vs. gestão, objetivos de governança); framework pago, download só com cadastro/compra."
+    },
+    {
+      "title": "ITIL 4: princípios e práticas orientadores",
+      "publisher": "Atlassian",
+      "url": "https://www.atlassian.com/br/itsm/itil",
+      "kind": "artigo",
+      "free": true,
+      "why": "Alternativa gratuita e em português ao ITIL 4 oficial (pago) para o 4.5 — sistema de valor de serviço, quatro dimensões e práticas."
+    },
+    {
+      "title": "Governança de TIC no contexto da transformação digital (curso aberto)",
+      "publisher": "ENAP / Escola Virtual de Governo",
+      "url": "https://www.escolavirtual.gov.br/curso/379",
+      "kind": "curso",
+      "free": true,
+      "why": "Governança e gestão de TI no setor público e riscos de TI (4.5), em português e com certificado gratuito."
+    },
+    {
+      "title": "Transformação Digital no Serviço Público (curso aberto)",
+      "publisher": "ENAP / Escola Virtual de Governo",
+      "url": "https://www.escolavirtual.gov.br/curso/419",
+      "kind": "curso",
+      "free": true,
+      "why": "Cobre 4.1 a 4.3 (segmentos e perspectivas da tecnologia, inovação aplicada ao governo) — o pedaço mais órfão do Anexo IV nesta área."
+    }
   ]
 }

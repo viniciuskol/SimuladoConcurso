@@ -343,6 +343,17 @@ async function renderArea(areaId, onBack = renderHome) {
     if ((content.tactics || []).length)
       sections.push(sec("⏱ Táticas de prova",
         (content.tactics).map(t => `<div class="sub"><strong>${esc(t.title)}</strong><p>${t.body || ""}</p></div>`).join("")));
+    if ((content.resources || []).length)
+      sections.push(sec("📚 Material de apoio",
+        `<p class="muted">Links verificados um por um (HTTP 200 e conferência do conteúdo). Fonte oficial primeiro; o que é pago está marcado.</p>
+         <div class="alt-list">${content.resources.map(r => `
+          <a class="btn res" href="${encodeURI(r.url)}" target="_blank" rel="noopener noreferrer">
+            <span class="alt-text">
+              <strong>${esc(r.title)}</strong>
+              <span class="muted block">${esc(r.publisher)} · ${esc(r.kind)}${r.free ? "" : " · pago"}</span>
+              <span class="muted block">${esc(r.why)}</span>
+            </span>
+          </a>`).join("")}</div>`));
     if ((content.trapWords || []).length)
       sections.push(sec("⚠ Palavras-armadilha",
         `<div class="trap-list">${content.trapWords.map(t => `<div class="sub">

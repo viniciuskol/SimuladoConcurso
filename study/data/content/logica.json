@@ -261,5 +261,47 @@
       "confusedWith": "'mas', 'embora', 'contudo'",
       "distinction": "Adversativas e concessivas do português são traduzidas como ∧ na lógica sentencial: 'estudou, mas não passou' é E ∧ ~P. A carga de contraste é retórica e não altera a tabela-verdade. O mesmo vale para 'nem' (= e não)."
     }
+  ],
+  "resources": [
+    {
+      "title": "Lógica para Ciência da Computação e Áreas Afins",
+      "publisher": "João Nunes de Souza / FACOM-UFU",
+      "url": "https://facom.ufu.br/system/files/conteudo/logicajoaonunes.pdf",
+      "kind": "livro",
+      "free": true,
+      "why": "Livro aberto e em português que cobre 8.3 a 8.6 e 8.8 (fórmulas, semântica, dedução) com o rigor que a Cesgranrio cobra."
+    },
+    {
+      "title": "forall x: Calgary — A Free and Open Introduction to Formal Logic",
+      "publisher": "Open Logic Project / University of Calgary",
+      "url": "https://forallx.openlogicproject.org/",
+      "kind": "livro",
+      "free": true,
+      "why": "Livro-texto aberto com tabelas-verdade, dedução natural e FOL — 8.1, 8.5, 8.7 e 8.9; em inglês, com centenas de exercícios."
+    },
+    {
+      "title": "Open Logic Project",
+      "publisher": "Open Logic Project",
+      "url": "https://openlogicproject.org/",
+      "kind": "livro",
+      "free": true,
+      "why": "Texto avançado aberto para sistemas dedutivos e metateoria (8.6 e 8.7), quando o forall x ficar raso; em inglês."
+    },
+    {
+      "title": "Propositional Logic",
+      "publisher": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/logic-propositional/",
+      "kind": "artigo",
+      "free": true,
+      "why": "Sintaxe, semântica e funções de avaliação da lógica sentencial (8.3, 8.5, 8.8 e 8.9); em inglês, verbete de referência."
+    },
+    {
+      "title": "Logical Consequence",
+      "publisher": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/logical-consequence/",
+      "kind": "artigo",
+      "free": true,
+      "why": "Validade, consequência lógica e o que faz um argumento válido — 8.2; em inglês."
+    }
   ]
 }

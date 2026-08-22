@@ -342,5 +342,55 @@
       "confusedWith": "modelo iterativo/ágil",
       "distinction": "Cascata é sequencial e linear: cada fase depende da conclusão da anterior e os requisitos são fechados no início. Iterativo/ágil aceita mudança de requisitos e entrega incrementos em ciclos curtos."
     }
+  ],
+  "resources": [
+    {
+      "title": "O Guia do Scrum (2020) — versão em português do Brasil",
+      "publisher": "Ken Schwaber e Jeff Sutherland / scrumguides.org",
+      "url": "https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-PortugueseBR-3.0.pdf",
+      "kind": "norma",
+      "free": true,
+      "why": "Fonte primária do Scrum para o 2.1 — papéis, eventos e artefatos exatamente como a banca cobra; tradução oficial em português."
+    },
+    {
+      "title": "The Kanban Guide / Open Guide to Kanban",
+      "publisher": "Kanban Guides",
+      "url": "https://kanbanguides.org/",
+      "kind": "norma",
+      "free": true,
+      "why": "Definição aberta de Kanban (WIP, fluxo, métricas) para a metade Kanban do 2.1; em inglês, é o guia de referência."
+    },
+    {
+      "title": "SAFe — Scaled Agile Framework",
+      "publisher": "Scaled Agile, Inc.",
+      "url": "https://framework.scaledagile.com/",
+      "kind": "guia",
+      "free": true,
+      "why": "Site oficial do framework para 2.3 (ágil em escala): níveis, ARTs, PI Planning; conteúdo em inglês."
+    },
+    {
+      "title": "Product vs Feature Teams",
+      "publisher": "Silicon Valley Product Group (Marty Cagan)",
+      "url": "https://www.svpg.com/product-vs-feature-teams/",
+      "kind": "artigo",
+      "free": true,
+      "why": "Artigo de referência para 2.2 (gestão de produto vs. gestão de projeto) e para o papel do PO; em inglês."
+    },
+    {
+      "title": "User Stories: What They Are, How to Write Them, and Examples",
+      "publisher": "Mountain Goat Software (Mike Cohn)",
+      "url": "https://www.mountaingoatsoftware.com/agile/user-stories",
+      "kind": "artigo",
+      "free": true,
+      "why": "Histórias de usuário, INVEST e critérios de aceite — apoio ao backlog do 2.1; em inglês, do autor que consolidou a técnica."
+    },
+    {
+      "title": "Gerenciamento de Projetos na Prática (curso aberto)",
+      "publisher": "ENAP / Escola Virtual de Governo",
+      "url": "https://www.escolavirtual.gov.br/curso/680",
+      "kind": "curso",
+      "free": true,
+      "why": "Alternativa gratuita ao PMBOK (pago) para 2.4 e para o item 3 — grupos de processos de iniciação, planejamento, execução e controle, em português."
+    }
   ]
 }

@@ -311,5 +311,55 @@
       "confusedWith": "visto (particípio único)",
       "distinction": "Verbos abundantes têm duas formas de particípio, uma regular e uma curta (ganhado/ganho, pagado/pago, aceitado/aceito, entregado/entregue). 'Ver' não é abundante: só 'visto' circula na língua-padrão — foi o gabarito de prova6-q6."
     }
+  ],
+  "resources": [
+    {
+      "title": "VOLP — Vocabulário Ortográfico da Língua Portuguesa",
+      "publisher": "Academia Brasileira de Letras",
+      "url": "https://www.academia.org.br/nossa-lingua/busca-no-vocabulario",
+      "kind": "norma",
+      "free": true,
+      "why": "Autoridade oficial de grafia e hífen — é o que decide dúvida de ortografia oficial (P.2)."
+    },
+    {
+      "title": "Emprego da crase",
+      "publisher": "Michaelis On-line / Editora Melhoramentos",
+      "url": "https://michaelis.uol.com.br/moderno-portugues/nocoes-gramaticais/emprego-da-crase/",
+      "kind": "guia",
+      "free": true,
+      "why": "Regras e casos de crase com exemplos — P.11 (e ajuda no P.10, regência)."
+    },
+    {
+      "title": "Emprego dos sinais de pontuação",
+      "publisher": "Michaelis On-line / Editora Melhoramentos",
+      "url": "https://michaelis.uol.com.br/moderno-portugues/nocoes-gramaticais/emprego-dos-sinais-de-pontuacao/",
+      "kind": "guia",
+      "free": true,
+      "why": "Vírgula, ponto e vírgula, dois-pontos e travessão caso a caso — P.8, com reflexo no P.7."
+    },
+    {
+      "title": "Manual de Comunicação da Secom — Redação e Estilo",
+      "publisher": "Senado Federal",
+      "url": "https://www12.senado.leg.br/manualdecomunicacao",
+      "kind": "guia",
+      "free": true,
+      "why": "Padrão institucional de redação em português: coesão, concordância e regência aplicadas (P.3, P.9 e P.10)."
+    },
+    {
+      "title": "Ciberdúvidas da Língua Portuguesa",
+      "publisher": "ISCTE-IUL / Ciberdúvidas",
+      "url": "https://ciberduvidas.iscte-iul.pt/",
+      "kind": "artigo",
+      "free": true,
+      "why": "Consultório com respostas fundamentadas para dúvidas de classes de palavras, verbos e colocação pronominal (P.5, P.6 e P.12)."
+    },
+    {
+      "title": "Dicionário Priberam da Língua Portuguesa",
+      "publisher": "Priberam",
+      "url": "https://dicionario.priberam.org/",
+      "kind": "guia",
+      "free": true,
+      "why": "Significação das palavras e conjugação verbal completa por verbete — P.4 e P.5."
+    }
   ]
 }

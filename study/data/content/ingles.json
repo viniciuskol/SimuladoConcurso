@@ -304,5 +304,47 @@
       "confusedWith": "tricky / erratic",
       "distinction": "'Pivotal' = central, crucial, essencial (o pivô de algo). É avaliação positiva e forte, o que sozinho elimina tricky, erratic, haphazard e problematic em transp23e6-q18. Pareia com 'crucial', 'key', 'critical'."
     }
+  ],
+  "resources": [
+    {
+      "title": "English Grammar Today",
+      "publisher": "Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/",
+      "kind": "guia",
+      "free": true,
+      "why": "Gramática de referência para o I.2 (tempos verbais, modais, conectores) com exemplos autênticos; naturalmente em inglês."
+    },
+    {
+      "title": "Cambridge English Dictionary",
+      "publisher": "Cambridge University Press",
+      "url": "https://dictionary.cambridge.org/dictionary/english/",
+      "kind": "guia",
+      "free": true,
+      "why": "Definição, colocação e phrasal verbs para resolver vocabulário do I.1 sem apelar para tradução literal."
+    },
+    {
+      "title": "Oxford Learner's Dictionaries",
+      "publisher": "Oxford University Press",
+      "url": "https://www.oxfordlearnersdictionaries.com/us/",
+      "kind": "guia",
+      "free": true,
+      "why": "Verbetes com padrões gramaticais e uso — apoio a I.1 e I.2, útil para distinguir sinônimos em questão de inferência."
+    },
+    {
+      "title": "BBC Learning English — Course: lower intermediate",
+      "publisher": "BBC",
+      "url": "https://www.bbc.co.uk/learningenglish/english/course/lower-intermediate",
+      "kind": "curso",
+      "free": true,
+      "why": "Curso gratuito com textos e áudio para treinar leitura e itens gramaticais do I.1 e I.2 em volume."
+    },
+    {
+      "title": "Purdue OWL — Grammar",
+      "publisher": "Purdue University",
+      "url": "https://owl.purdue.edu/owl/general_writing/grammar/index.html",
+      "kind": "guia",
+      "free": true,
+      "why": "Explicações curtas e sistemáticas de pontos gramaticais (I.2) na fonte institucional mais usada em inglês acadêmico."
+    }
   ]
 }

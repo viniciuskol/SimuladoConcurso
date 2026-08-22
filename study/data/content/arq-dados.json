@@ -312,5 +312,63 @@
       "confusedWith": "banco orientado a grafos",
       "distinction": "Documento: JSON/BSON, semiestruturado, esquema flexível. Grafo: vértices e arestas, otimizado para travessia de relacionamentos (Cypher, MATCH ... RETURN)."
     }
+  ],
+  "resources": [
+    {
+      "title": "PostgreSQL — Documentation, Chapter 2: The SQL Language",
+      "publisher": "PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/tutorial-sql.html",
+      "kind": "guia",
+      "free": true,
+      "why": "SQL, DDL e DML (1.10 a 1.12) direto na documentação de um SGBD relacional de referência; só existe em inglês."
+    },
+    {
+      "title": "PostgreSQL — Documentation, Chapter 13: Concurrency Control",
+      "publisher": "PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/mvcc.html",
+      "kind": "guia",
+      "free": true,
+      "why": "Transações, níveis de isolamento e ACID na prática (1.14, 1.16 e 1.17); em inglês, é a fonte canônica do produto."
+    },
+    {
+      "title": "Dimensional Modeling Techniques",
+      "publisher": "Kimball Group",
+      "url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/",
+      "kind": "guia",
+      "free": true,
+      "why": "Material aberto do próprio Kimball sobre fato, dimensão, star schema e SCD — base do 1.7 (modelagem dimensional); em inglês."
+    },
+    {
+      "title": "What Is NoSQL? NoSQL Databases Explained",
+      "publisher": "MongoDB",
+      "url": "https://www.mongodb.com/resources/basics/databases/nosql-explained",
+      "kind": "guia",
+      "free": true,
+      "why": "Tipos de NoSQL, agregados e trade-offs de consistência para 1.18 e 1.23 (comparação com o relacional)."
+    },
+    {
+      "title": "Graph database concepts",
+      "publisher": "Neo4j",
+      "url": "https://neo4j.com/docs/getting-started/appendix/graphdb-concepts/",
+      "kind": "guia",
+      "free": true,
+      "why": "Nós, relacionamentos e propriedades — o lado 'grafos' do 1.23, na documentação do fabricante."
+    },
+    {
+      "title": "O que é um data lake?",
+      "publisher": "Amazon Web Services",
+      "url": "https://aws.amazon.com/pt/what-is/data-lake/",
+      "kind": "guia",
+      "free": true,
+      "why": "Data lake vs. data warehouse e arquitetura de Big Data (1.22), em português."
+    },
+    {
+      "title": "DAMA-DMBOK — Data Management Body of Knowledge",
+      "publisher": "DAMA International",
+      "url": "https://dama.org/learning-resources/dama-data-management-body-of-knowledge-dmbok/",
+      "kind": "livro",
+      "free": false,
+      "why": "Referência canônica (paga) de metadados, qualidade de dados e dados mestres — 1.6 e 1.21; a página em si explica o escopo de cada área de conhecimento."
+    }
   ]
 }

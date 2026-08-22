@@ -348,5 +348,63 @@
       "confusedWith": "técnica (MITRE ATT&CK)",
       "distinction": "Tática é o OBJETIVO do adversário (acesso a credenciais, persistência, movimentação lateral, exfiltração, impacto). Técnica é COMO ele alcança o objetivo (manipulação de conta, evasão do depurador). O enunciado que pede 'uma das táticas' quer o objetivo."
     }
+  ],
+  "resources": [
+    {
+      "title": "NIST Cybersecurity Framework (CSF) 2.0",
+      "publisher": "NIST",
+      "url": "https://www.nist.gov/cyberframework",
+      "kind": "guia",
+      "free": true,
+      "why": "Funções Govern/Identify/Protect/Detect/Respond/Recover — alternativa gratuita às ISO 27002 e 31000 (pagas) para 9.16 a 9.18; em inglês."
+    },
+    {
+      "title": "SP 800-61 Rev. 3 — Incident Response Recommendations and Considerations",
+      "publisher": "NIST",
+      "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+      "kind": "norma",
+      "free": true,
+      "why": "Fonte primária do 9.11 (gerenciamento de resposta a incidentes); em inglês — a Rev. 2, citada em provas antigas, está linkada na mesma página."
+    },
+    {
+      "title": "SP 800-63B — Digital Identity Guidelines: Authentication and Lifecycle Management",
+      "publisher": "NIST",
+      "url": "https://csrc.nist.gov/pubs/sp/800/63/b/upd2/final",
+      "kind": "norma",
+      "free": true,
+      "why": "Fatores de autenticação, AAL e federação — base técnica para 9.8, 9.9 e 9.10; em inglês."
+    },
+    {
+      "title": "MITRE ATT&CK",
+      "publisher": "MITRE",
+      "url": "https://attack.mitre.org/",
+      "kind": "guia",
+      "free": true,
+      "why": "Matriz oficial de táticas e técnicas para 9.15 e apoio a 9.12 (threat intel e threat hunting); em inglês."
+    },
+    {
+      "title": "OWASP Top 10 — Web Application Security Risks",
+      "publisher": "OWASP Foundation",
+      "url": "https://owasp.org/www-project-top-ten/",
+      "kind": "guia",
+      "free": true,
+      "why": "Catálogo de referência dos ataques do 9.4 (injection, XSS, CSRF, path traversal) e de controles do 9.5."
+    },
+    {
+      "title": "Threat Modeling Cheat Sheet",
+      "publisher": "OWASP Cheat Sheet Series",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html",
+      "kind": "guia",
+      "free": true,
+      "why": "STRIDE, DFD e priorização de ameaças — 9.14, com ponte para 9.5 e 9.13; em inglês."
+    },
+    {
+      "title": "Cartilha de Segurança para Internet",
+      "publisher": "CERT.br / NIC.br",
+      "url": "https://cartilha.cert.br/",
+      "kind": "guia",
+      "free": true,
+      "why": "Material oficial em português sobre malware, golpes, backup e boas práticas — 9.1, 9.2 e 9.3."
+    }
   ]
 }
