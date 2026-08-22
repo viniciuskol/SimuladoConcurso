@@ -17742,6 +17742,148 @@
       },
       "correctKey": "A",
       "explanationSummary": "'Data Surfing' e 'Slicing' são ambos operações reconhecidas de navegação/exploração de cubos OLAP na literatura de referência (Ponniah), enquanto as demais alternativas misturam termos de outras categorias (processos de ETL, artefatos de modelagem como Data Mart e Star Model, ou terminologia não padronizada)."
+    },
+    {
+      "id": "prova6-q23",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 23
+      },
+      "area": "gestao-proj",
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "O planejamento inicial para um projeto de desenvolvimento de software gerou a rede do cronograma apenas com a data de início mais cedo da primeira atividade e término mais tarde da última atividade determinadas: Comunicação (20 dias, início mais cedo = Dia 1) → Planejamento (20 dias) → Modelagem (30 dias) → Construção (60 dias) → Implantação (10 dias, término mais tarde = Dia 200), com Documentação (45 dias) ramificando de Modelagem em paralelo com Construção e convergindo em Implantação. Considerando o uso do Método do Caminho Crítico, analise as afirmativas abaixo. I - A data mais cedo que o projeto pode terminar é no dia 141. II - Caso a previsão para a fase de construção mude para 90 dias, a data limite para a fase de modelagem começar, sem atrasar, é o dia 70. III - A folga total na atividade de documentação é de 75 dias. É correto APENAS o que se afirma em",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "I",
+          "explanation": "Usando a convenção padrão de contagem inclusiva de dias (início dia 1, término = início+duração-1, próxima atividade inicia no dia seguinte ao término), o término mais cedo do projeto é o dia 140, não 141."
+        },
+        {
+          "key": "B",
+          "text": "II",
+          "explanation": "Com Construção=90 dias e término mais tarde fixo em 200, a data limite para Modelagem começar sem atrasar é o dia 71, não 70."
+        },
+        {
+          "key": "C",
+          "text": "III"
+        },
+        {
+          "key": "D",
+          "text": "I e II",
+          "explanation": "Nem I nem II estão corretas sob a convenção padrão de contagem de dias."
+        },
+        {
+          "key": "E",
+          "text": "II e III",
+          "explanation": "II não está correta (folga recalculada dá dia 71, não 70)."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "C",
+        "independentlyDerivedAnswer": "C",
+        "agree": true,
+        "confidence": "high",
+        "notes": "O diagrama foi lido com nitidez total do PDF nativo: início mais cedo de Comunicação = Dia 1 (dado); término mais tarde de Implantação = Dia 200 (dado, um prazo/deadline fixo, não calculado pela soma direta das durações). Usando a convenção padrão de contagem INCLUSIVA de dias (uma atividade que começa no dia X com duração D termina no dia X+D-1, e a atividade seguinte começa no dia X+D): ES(Comunicação)=1,EF=20; ES(Planejamento)=21,EF=40; ES(Modelagem)=41,EF=70; ES(Construção)=71,EF=130; ES(Documentação)=71,EF=115; ES(Implantação)=max(130,115)+1=131,EF=140. Logo o término mais cedo real do projeto é o dia 140, não 141 — (I) é FALSA. Fazendo o passe reverso a partir do prazo fixo LF(Implantação)=200: LS(Implantação)=191; LF(Construção)=LF(Documentação)=190; LS(Construção)=131; LS(Documentação)=146; LF(Modelagem)=130 (mínimo entre os sucessores -1); LS(Modelagem)=101. A folga total de Documentação = LS-ES = 146-71 = 75 dias — (III) é VERDADEIRA, batendo exatamente com o gabarito. Refazendo o passe reverso com Construção=90 dias (para testar II): LS(Construção)=101; LF(Modelagem)=min(101,146)-1=100; LS(Modelagem)=100-30+1=71 — a data limite para Modelagem começar sem atrasar é o dia 71, não 70 como afirma (II), que é portanto FALSA. Apenas (III) está correta, concordando com o gabarito C. A divergência da rodada anterior (que dava folga=15 em vez de 75) foi causada por não ter identificado que 'Dia 200' é um prazo fixo dado no diagrama, não o resultado do cálculo do caminho crítico."
+      },
+      "correctKey": "C",
+      "explanationSummary": "Usando a convenção inclusiva padrão de contagem de dias e o prazo fixo de término (Dia 200) dado no diagrama, o término mais cedo real do projeto é o dia 140 (não 141, refutando I), a folga total da atividade de Documentação é exatamente 75 dias (confirmando III), e a nova data limite para Modelagem começar, com Construção=90 dias, é o dia 71 (não 70, refutando II)."
+    },
+    {
+      "id": "prova6-q25",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 25
+      },
+      "area": "gestao-proj",
+      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
+      "stem": "Em uma Estrutura Analítica de Projeto organizada por fases, devem-se colocar as atividades mais complexas do projeto no nível mais detalhado (os pacotes de trabalho). PORQUE Um pacote de trabalho pode ser agendado, ter seu custo estimado, monitorado e controlado. Analisando-se as afirmações acima, conclui-se que",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "as duas afirmações são verdadeiras, e a segunda justifica a primeira.",
+          "explanation": "A segunda afirmação descreve uma propriedade geral de qualquer pacote de trabalho (poder ser agendado/estimado/monitorado/controlado), mas não explica especificamente por que as atividades MAIS COMPLEXAS devem ficar no nível mais detalhado — não há relação de causa/justificativa direta entre as duas afirmações."
+        },
+        {
+          "key": "B",
+          "text": "as duas afirmações são verdadeiras, e a segunda não justifica a primeira."
+        },
+        {
+          "key": "C",
+          "text": "a primeira afirmação é verdadeira, e a segunda é falsa.",
+          "explanation": "A segunda afirmação é uma descrição padrão e verdadeira de pacote de trabalho no PMBOK."
+        },
+        {
+          "key": "D",
+          "text": "a primeira afirmação é falsa, e a segunda é verdadeira.",
+          "explanation": "A primeira afirmação também é considerada verdadeira: é uma heurística reconhecida de decomposição da EAP que atividades mais complexas ou de maior risco devem ser decompostas em maior detalhe."
+        },
+        {
+          "key": "E",
+          "text": "as duas afirmações são falsas."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Uma heurística padrão de decomposição de EAP diz que atividades mais complexas, de maior risco ou menos compreendidas devem ser decompostas em maior detalhe (pacotes de trabalho mais granulares), enquanto atividades simples podem parar em um nível mais alto — tornando a 1ª afirmação verdadeira. A 2ª afirmação é a definição padrão de pacote de trabalho no PMBOK (pode ser agendado, ter custo estimado, monitorado e controlado) — também verdadeira, mas é uma propriedade genérica de qualquer pacote de trabalho, não uma explicação de por que atividades complexas especificamente vão para o nível mais detalhado. Ambas verdadeiras, mas a 2ª não justifica a 1ª — concorda com o gabarito B."
+      },
+      "correctKey": "B",
+      "explanationSummary": "Ambas as afirmações são verdadeiras — é uma heurística reconhecida de EAP que atividades complexas devem ser decompostas em maior detalhe, e pacotes de trabalho de fato podem ser agendados/estimados/monitorados/controlados — mas a segunda afirmação apenas descreve uma propriedade genérica de qualquer pacote de trabalho, sem explicar especificamente por que a complexidade determina o nível de detalhe."
+    },
+    {
+      "id": "prova6-q50",
+      "source": {
+        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
+        "year": 2011,
+        "originalNumber": 50
+      },
+      "area": "eng-sw",
+      "subtopic": "5.4 Verificação, validação e teste",
+      "stem": "A verificação de software é um processo mais abrangente que o processo de validação de software. PORQUE O objetivo da validação é assegurar que o sistema atenda às expectativas do cliente, enquanto que a verificação envolve testes de correção do produto. Analisando-se as afirmações acima, conclui-se que",
+      "images": null,
+      "alternatives": [
+        {
+          "text": "as duas afirmações são verdadeiras, e a segunda justifica a primeira.",
+          "key": "A"
+        },
+        {
+          "text": "as duas afirmações são verdadeiras, e a segunda não justifica a primeira.",
+          "key": "B"
+        },
+        {
+          "text": "a primeira afirmação é verdadeira, e a segunda é falsa.",
+          "key": "C"
+        },
+        {
+          "text": "a primeira afirmação é falsa, e a segunda é verdadeira.",
+          "key": "D"
+        },
+        {
+          "text": "as duas afirmações são falsas.",
+          "key": "E"
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "E",
+        "independentlyDerivedAnswer": "E",
+        "agree": true,
+        "confidence": "high",
+        "notes": "Pela literatura padrão de V&V (IEEE/Sommerville), verificação e validação respondem a perguntas diferentes e complementares, sem que uma seja definida como 'mais abrangente' que a outra — a 1ª afirmação é falsa. A 2ª afirmação restringe verificação a apenas 'testes de correção do produto', mas verificação também abrange técnicas estáticas (revisões, inspeções, walkthroughs), não somente testes dinâmicos — essa caracterização incompleta torna a 2ª afirmação também falsa. Ambas falsas, concorda com o gabarito E."
+      },
+      "correctKey": "E",
+      "explanationSummary": "Nem verificação nem validação é canonicamente 'mais abrangente' que a outra — são processos complementares que respondem perguntas diferentes. Além disso, a descrição da verificação como envolvendo apenas testes é incompleta, já que verificação também inclui técnicas estáticas como revisões e inspeções. Ambas as afirmações são falsas."
     }
   ]
 }
