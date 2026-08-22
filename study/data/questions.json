@@ -17302,6 +17302,55 @@
       },
       "correctKey": "D",
       "explanationSummary": "Nenhuma mensagem de criação explícita (<<create>>) aparece no diagrama para C1, C2, C3 ou C4 — todas as lifelines já aparecem ativas desde o topo do diagrama, indicando, pela convenção UML, que esses objetos já existiam antes do início da interação."
+    },
+    {
+      "id": "psjpn2018-q54",
+      "source": {
+        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
+        "year": 2018,
+        "originalNumber": 54
+      },
+      "area": "analise-dados",
+      "subtopic": "7.2 Conceitos, fundamentos, técnicas e métodos de Business Intelligence (BI)",
+      "stem": "Considere o conjunto de dados a seguir, obtido a partir de uma base de dados de transações ocorridas em uma padaria, em uma determinada faixa de tempo (indicação de presença \"sim\"/\"não\" de leite, café, pão e manteiga em cada uma de 10 transações): id1: não,sim,sim,sim; id2: sim,não,sim,sim; id3: não,sim,sim,sim; id4: sim,sim,sim,sim; id5: não,não,não,não; id6: não,não,não,sim; id7: não,não,sim,não; id8: não,não,não,não; id9: não,não,não,não; id10: não,não,não,não (colunas na ordem leite, café, pão, manteiga). Em mineração de dados, a partir desse conjunto de dados, podem ser geradas regras de associação, as quais buscam conjuntos de itens frequentes que guardam entre si uma relação de causa e efeito. Essas regras são da forma X→Y, onde X é o antecedente da regra, e Y, seu consequente. A menção X,Y indica referência aos dois itens frequentes X e Y. Dois indicadores utilizados para averiguar a eficácia de regras de associação são o suporte e a confiança. Qual das regras a seguir possui confiança mínima de 80%, dado um suporte mínimo de 30%?",
+      "images": null,
+      "alternatives": [
+        {
+          "key": "A",
+          "text": "café, leite → pão",
+          "explanation": "Suporte de {café,leite} = apenas 1 das 10 transações (id4) contém ambos = 10%, abaixo do mínimo de 30% exigido."
+        },
+        {
+          "key": "B",
+          "text": "café, pão → manteiga"
+        },
+        {
+          "key": "C",
+          "text": "leite, pão → café",
+          "explanation": "Suporte de {leite,pão} = 2 das 10 transações (id2, id4) = 20%, abaixo do mínimo de 30% exigido."
+        },
+        {
+          "key": "D",
+          "text": "manteiga → café, pão",
+          "explanation": "Suporte de {manteiga} = 50% (ok), mas confiança = 3/5 = 60% (transações com manteiga E café E pão, sobre transações com manteiga), abaixo dos 80% exigidos."
+        },
+        {
+          "key": "E",
+          "text": "manteiga, pão → café",
+          "explanation": "Suporte de {manteiga,pão} = 40% (ok), mas confiança = 3/4 = 75% (transações com manteiga, pão E café, sobre transações com manteiga e pão), abaixo dos 80% exigidos."
+        }
+      ],
+      "status": "confirmed",
+      "annulled": false,
+      "verification": {
+        "gabaritoAnswer": "B",
+        "independentlyDerivedAnswer": "B",
+        "agree": true,
+        "confidence": "high",
+        "notes": "A tabela de transações foi lida diretamente da página do PDF-fonte (10 transações, colunas leite/café/pão/manteiga). Calculando suporte e confiança para cada alternativa: {café,pão} aparece em 3 das 10 transações (id1,3,4) = 30% de suporte (no limite mínimo); dessas 3, todas têm manteiga=sim, dando confiança de 3/3=100% ≥ 80%. As demais alternativas foram calculadas e falham no suporte (A: 10%, C: 20%) ou na confiança (D: 60%, E: 75%). Apenas B atende a ambos os critérios, concordando com o gabarito."
+      },
+      "correctKey": "B",
+      "explanationSummary": "A regra \"café, pão → manteiga\" tem suporte de 30% ({café,pão} ocorre em 3 das 10 transações: id1, id3, id4) e confiança de 100% (nas 3 transações onde café e pão ocorrem juntos, manteiga também ocorre em todas), atendendo aos critérios de suporte mínimo de 30% e confiança mínima de 80%."
     }
   ]
 }

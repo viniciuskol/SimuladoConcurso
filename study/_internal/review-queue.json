@@ -339,57 +339,6 @@
       "area": "analise-dados"
     },
     {
-      "id": "psjpn2018-q54",
-      "source": {
-        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
-        "year": 2018,
-        "originalNumber": 54
-      },
-      "subtopic": "7.2 Conceitos, fundamentos, técnicas e métodos de Business Intelligence (BI)",
-      "stem": "Considere o conjunto de dados a seguir, obtido a partir de uma base de dados de transações ocorridas em uma padaria, em uma determinada faixa de tempo. Nesse conjunto, indica-se a ocorrência de um determinado produto em cada transação [TABELA DE TRANSAÇÕES (produtos por transação) NÃO CAPTURADA NA EXTRAÇÃO DE TEXTO]. Em mineração de dados, a partir desse conjunto de dados, podem ser geradas regras de associação, as quais buscam conjuntos de itens frequentes que guardam entre si uma relação de causa e efeito. Essas regras são da forma X→Y, onde X é o antecedente da regra, e Y, seu consequente. A menção X,Y indica referência aos dois itens frequentes X e Y. Dois indicadores utilizados para averiguar a eficácia de regras de associação são o suporte e a confiança. Qual das regras a seguir possui confiança mínima de 80%, dado um suporte mínimo de 30%?",
-      "images": [
-        {
-          "id": "img1",
-          "path": null,
-          "alt": "Tabela com a lista de transações de uma padaria e os produtos presentes em cada transação, necessária para calcular suporte e confiança das regras de associação — não capturada na extração de texto (é gráfico/imagem nativa da página, situada entre duas linhas de texto sem conteúdo textual extraído no intervalo correspondente)."
-        }
-      ],
-      "alternatives": [
-        {
-          "text": "café, leite → pão",
-          "key": "A"
-        },
-        {
-          "text": "café, pão → manteiga",
-          "key": "B"
-        },
-        {
-          "text": "leite, pão → café",
-          "key": "C"
-        },
-        {
-          "text": "manteiga → café, pão",
-          "key": "D"
-        },
-        {
-          "text": "manteiga, pão → café",
-          "key": "E"
-        }
-      ],
-      "gabaritoLetter": "B",
-      "derivedLetter": null,
-      "reviewRounds": [
-        {
-          "round": 1,
-          "conclusion": "não é possível derivar independentemente sem a tabela de transações.",
-          "note": "O cálculo de suporte e confiança de regras de associação depende diretamente da tabela de ocorrência de produtos por transação, que é gráfico/imagem nativa da página (confirmado: no HTML fonte há uma lacuna vertical de texto entre a frase \"...em cada transação.\" e \"Em mineração de dados...\" exatamente onde a tabela deveria estar, sem nenhum div de texto correspondente). Requer reconstrução da tabela a partir do PDF/imagem em fase posterior antes de qualquer tentativa de verificação independente."
-        }
-      ],
-      "unresolved": true,
-      "annulled": false,
-      "area": "analise-dados"
-    },
-    {
       "id": "prova07-q13",
       "source": {
         "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
