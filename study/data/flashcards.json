@@ -2038,7 +2038,7 @@
       "id": "fc-logica-024",
       "area": "logica",
       "front": "Qual é a negação de ∃x P(x)?",
-      "back": "~∃x P(x) ≡ ∀x ~P(x): se não existe x com a propriedade, então todo x não a tem. Simetricamente, ~∀x P(x) ≡ ∃x ~P(x). A negação atravessa o quantificador trocando o seu tipo e desce até o predicado."
+      "back": "~∃x P(x) ≡ ∀x ~P(x): se não existe x com a propriedade, então todo x não a tem. É o espelho simbólico do card da negação de \"todo A é B\". A negação atravessa o quantificador trocando o seu tipo e desce até o predicado."
     },
     {
       "id": "fc-logica-025",
