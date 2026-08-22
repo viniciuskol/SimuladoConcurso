@@ -170,7 +170,7 @@
     },
     {
       "title": "Antes de marcar, passe as alternativas pelo filtro das três variações",
-      "body": "Em questão de equivalência de condicional, classifique cada alternativa em quatro segundos: é recíproca (só inverteu)? inversa (só negou)? conjunção p∧~q (é a negação)? contrapositiva (inverteu e negou)? disjunção ~p∨q? Só as duas últimas podem estar certas — cuidado: se o comando disser \"consequência lógica\" (transp23e6-q35) e não \"equivalente\", o gabarito pode ser uma consequência mais fraca, não só uma equivalência. Esse filtro sozinho resolve prova6-q65, psjpn2018-q67 e transp23e6-q35 — quase metade da área."
+      "body": "Em questão de equivalência de condicional, classifique cada alternativa em quatro segundos: é recíproca (só inverteu)? inversa (só negou)? conjunção (nunca equivale a condicional — e se a frase original já traz um \"não\", a conjunção oferecida pode não ser nem a negação exata, como em prova6-q65)? contrapositiva (inverteu e negou)? disjunção ~p∨q? Só as duas últimas podem estar certas — cuidado: se o comando disser \"consequência lógica\" (transp23e6-q35) e não \"equivalente\", o gabarito pode ser uma consequência mais fraca, não só uma equivalência. Esse filtro sozinho já elimina a maior parte das alternativas de prova6-q65, psjpn2018-q67 e transp23e6-q35 — quase metade da área."
     },
     {
       "title": "Traduza 'todo/algum/nenhum' para símbolos com o conectivo certo",
