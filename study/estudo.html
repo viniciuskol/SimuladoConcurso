@@ -22,7 +22,7 @@ import { loadJSON, showFetchHelp } from "./shared/data-loader.js";
 import { dueCards, rateCard, statsByArea, srsSummary } from "./shared/storage.js";
 
 const app = document.getElementById("app");
-let AREAS = [], CARDS = [], QCOUNT = {}, CONTENT = {};
+let AREAS = [], CARDS = [], QCOUNT = {}, CONTENT = {}, PLAN = null;
 
 const esc = s => String(s ?? "").replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
 
@@ -34,6 +34,7 @@ async function init() {
     showFetchHelp(app);
     return;
   }
+  try { PLAN = await loadJSON("data/plan.json"); } catch { /* plano é opcional */ }
   try {
     const qs = (await loadJSON("data/questions.json")).questions || [];
     for (const q of qs) QCOUNT[q.area] = (QCOUNT[q.area] || 0) + 1;
@@ -81,6 +82,11 @@ function renderHome() {
            <p class="muted">Intercalação: misturar áreas na mesma sessão fixa mais do que estudar em bloco.</p>`
         : `<p class="muted">Nada devido agora. ${CARDS.length ? "Volte amanhã — ou entre numa área e revise à força." : ""}</p>`}
     </div>
+    ${PLAN ? `<div class="card accent">
+      <h2>Plano até a prova</h2>
+      <p class="muted">${daysToExam()} dias para 29/11/2026.${currentBlock() ? ` Bloco atual: <strong>${esc(currentBlock().label)}</strong> (${esc(currentBlock().weeks)}).` : ""}</p>
+      <button class="btn primary" id="open-plan">Abrir o plano</button>
+    </div>` : ""}
     <div class="card">
       <h2>Onde estudar primeiro</h2>
       <p class="muted">Prioridade = peso histórico da área × o quanto você ainda erra nela. Áreas sem tentativa no simulado entram como "não medido" e ficam no fim da lista, não porque sejam fáceis, mas porque ainda não há dado.</p>
@@ -102,10 +108,61 @@ function renderHome() {
     </div>
   `;
   renderPriority(stats);
+  const pb = document.getElementById("open-plan");
+  if (pb) pb.addEventListener("click", renderPlan);
   const rb = document.getElementById("review-all");
   if (rb) rb.addEventListener("click", () => startReview(shuffle(due), "Revisão geral"));
   app.querySelectorAll("[data-area]").forEach(b =>
     b.addEventListener("click", () => renderArea(b.dataset.area)));
+}
+
+function daysToExam() {
+  const ms = new Date(PLAN.examDate + "T00:00:00") - new Date();
+  return Math.max(0, Math.ceil(ms / 86400000));
+}
+
+// O bloco corrente sai do intervalo "dd/mm a dd/mm" impresso em `weeks`.
+// Sem match, nenhum bloco é destacado — melhor não destacar que destacar errado.
+function currentBlock() {
+  if (!PLAN) return null;
+  const y = new Date(PLAN.examDate).getFullYear();
+  const now = new Date();
+  for (const b of PLAN.blocks) {
+    const m = /(\d{2})\/(\d{2})\s*a\s*(\d{2})\/(\d{2})/.exec(b.weeks || "");
+    if (!m) continue;
+    const ini = new Date(y, +m[2] - 1, +m[1]);
+    const fim = new Date(y, +m[4] - 1, +m[3], 23, 59, 59);
+    if (now >= ini && now <= fim) return b;
+  }
+  return null;
+}
+
+function renderPlan() {
+  const cur = currentBlock();
+  const areaLabel = id => (AREAS.find(a => a.id === id) || {}).label || id;
+  app.innerHTML = `
+    <button class="btn" id="back">← Voltar</button>
+    <h1>Plano até 29/11/2026</h1>
+    <div class="card"><p class="muted">${esc(PLAN.sourceNote || "")}</p></div>
+    ${PLAN.blocks.map(b => `
+      <div class="card ${cur && cur.n === b.n ? "accent" : ""}">
+        <h2>${esc(b.label)}</h2>
+        <p class="muted">${esc(b.weeks)}${cur && cur.n === b.n ? " · agora" : ""} · ${(b.focus || []).map(f => esc(areaLabel(f))).join(", ")}</p>
+        <p>${esc(b.goal || "")}</p>
+        <ul class="tight">${(b.checklist || []).map(i => `<li>${esc(i)}</li>`).join("")}</ul>
+      </div>`).join("")}
+    <div class="card">
+      <h2>🎯 O que a banca faz em todas as áreas</h2>
+      ${(PLAN.crossPatterns || []).map(p => `<div class="sub">
+        <strong>${esc(p.title)}</strong><p>${esc(p.body)}</p>
+        ${(p.evidence || []).length ? `<p class="muted">Visto em: ${p.evidence.map(e => esc(e)).join(", ")}</p>` : ""}
+      </div>`).join("")}
+    </div>
+    <div class="card">
+      <h2>⏱ No dia da prova</h2>
+      ${(PLAN.examDay || []).map(e => `<div class="sub"><strong>${esc(e.title)}</strong><p>${esc(e.body)}</p></div>`).join("")}
+    </div>`;
+  document.getElementById("back").addEventListener("click", renderHome);
 }
 
 function renderPriority(stats) {
