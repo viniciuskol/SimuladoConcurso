@@ -387,3 +387,50 @@ Com `passage`: 0
 
 **ux** (4 novas): 
 - 6.1 Conceitos de acessibilidade e usabilidade — 4: petro2012-q58, petro08-q32, petro08-q60, petro08-q61
+
+---
+
+## O que foi corrigido no material (ciclo 10), por área
+
+Varredura feita por script (regex de numerais, superlativos, afirmações de ausência e
+percentuais) sobre os 10 `content/*.json` e o `plan.json`, seguida de conferência manual de
+cada trecho contra as contagens acima. **~150 afirmações quantitativas ou de frequência
+localizadas; 119 estavam desatualizadas e foram corrigidas, em 103 campos de texto.**
+Toda contagem escrita aqui e no material saiu de script rodado neste ciclo.
+
+### Afirmações de ausência / universalidade que se tornaram FALSAS (o caso mais grave)
+
+| área | afirmação antiga | realidade no banco novo |
+|---|---|---|
+| analise-dados | "oito subtópicos nunca foram objeto de questão", incluindo 7.2 (BI como corpo de conceitos) — "o termo só apareceu como contexto de enunciado" | 7.2 tem questão: **petro08-q47** (relacional x multidimensional, ROLAP, data mart departamental x DW institucional). Agora são sete subtópicos órfãos |
+| seg-info | "segurança física — sem nenhuma aparição" | **petro2012-q56** é inteira sobre as diretrizes de controle de entrada física da ISO 27002 |
+| gestao-proj | "o PMO ... ainda não apareceu" (subtópico 2.6) | **petro08-q39** cobra a prática que dá visibilidade dos projetos aos executivos → gerenciamento de portfólio. A sigla PMO segue ausente; o assunto não |
+| logica | "a prova de 2010 não contribui com nenhuma questão ao banco" | **prova07-q22** (tautologia) entrou. Restam fora só as de formas normais e validade x satisfatibilidade |
+| ingles | "*never*, *always* e *must* não aparecem em nenhuma alternativa" | *never* e *always* aparecem 3 vezes (petro08-q11 B e C, petro2012-q13 C) — e, confirmando a regra, todas em alternativas ERRADAS. *must* segue ausente |
+| ingles | "a questão 11 é sempre a global" (universal) | falso em 2 das 6 provas: em 2012 a global é a q18, em 2008 é a q20 |
+| analise-dados | "a área com menos lastro do banco" (superlativo) | 15 questões; as menores hoje são gestao-ti (12) e ux (13) |
+| logica | "a campeã absoluta" = equivalência de condicional | 3 de 20; classificar tautologia/insatisfatibilidade passou à frente, com 4 |
+| portugues | "sete questões de 'cinco frases novas', **todas** nas duas provas de 2018" | são 11, e quatro estão na prova de 2012 |
+
+### Correções por área
+
+- **logica** (7 → 20): resumo refeito com a distribuição de formatos das 20; "3 das 7" → "3 das 20"; título do pattern 0 sem o superlativo; pattern 1 de 2 → 5 questões; pattern 2 saiu de "amostra n=1" para 2 questões; pattern 3 "das sete" → "das 20". **3 patterns novos**: tautologia/insatisfatibilidade (4 q.), contagem sobre tabela-verdade (2 q.), quantificadores e tradução para predicados (2 q.).
+- **analise-dados** (6 → 15): totais, distribuição por prova e por subtópico; "5 das 6" → "12 das 15"; lista de subtópicos órfãos de 8 → 7; superlativo de menor área; pattern 0 (título e evidências), pattern 1 (2 → 5 questões de OLAP, com a exceção petro2012-q41 que pede aplicação); tactics 0 e 5. **2 patterns novos**: definição→nome do jargão de Kimball (4 q.), afirmativas em romanos com alternativas em pares (2 q.).
+- **arq-dados** (33 → 44): total e a comparação com gestão de projetos (35 → 54); os cinco blocos recontados; "Seis das 33" → "Oito das 44"; lista de subtópicos com 1-2 questões; estreia de 1.13 (SGBD) e 1.15 (independência de dados); nota sobre 1.23. **2 patterns novos**: propriedades formais da relação (2 q.), banco de dados distribuído (3 q.).
+- **eng-sw** (27 → 41): total e os cinco subtópicos; "Oito das 27" → "Onze das 41"; "só duas questões exigem cálculo" → três (petro08-q52 é ciclomática sobre código Java). **2 patterns novos**: leitura de diagrama UML (3 q.), listas literais de livro-texto (4 q.).
+- **gestao-proj** (35 → 54): total, "18 no item 3" → 26; superlativo "mais da metade" → "quase metade" (26 de 54, ou 37 somando o item 2.4); bloco de cálculo (2012 trouxe 3, recorde; "duas das cinco provas" → sete); asserção-razão no banco 8 → 9 ocorrências; lista I-II-III 4 → 7 questões. **1 pattern novo**: figura para ler — Gantt, diagrama de rede e curvas do ciclo de vida (3 q.).
+- **seg-info** (26 → 32): total; 9.19 de 11 → 16; classificação de 2 → 3; "metade da área" → "quase dois terços (19 de 32)"; **"todas as 6 questões de 2010/2011 citavam a 27002" → "todas as 12 de 2008, 2010, 2011 e 2012"** — a tese do pattern 0 saiu reforçada, não enfraquecida. **1 pattern novo**: literalidade da ISO 27002 (5 q.).
+- **ux** (9 → 13): total, 6.1 de 4 → 8, distribuição por prova, tactics 0. As afirmações de ausência (seis subtópicos; Nielsen, ISO 9241 e INVEST nunca citados em enunciado) foram reconferidas por grep no banco inteiro e **continuam verdadeiras**. **1 pattern novo**: formato "assinale a que NÃO é" (3 q.).
+- **gestao-ti** (12 → 12): única área sem questão nova. As 8 afirmações quantitativas e as 3 de ausência (ITIL, COBIT, subtópico 4.4) foram reconferidas contra as 351 questões e **todas continuam corretas**; só se acrescentou que a área é hoje a menor do banco.
+- **portugues** (40 → 60): total e nº de provas (4 → 6); os 12 subtópicos recontados (compreensão 9 → 16; significação 4 → 8; regência 3 → 5; coesão 4 → 5; concordância 2 → 4, corrigido em 4 lugares diferentes); "17 das 40" → "29 das 60"; escopo do formato "cinco frases novas". **1 pattern novo**: comando negativo (7 q., quatro delas na prova de 2008).
+- **ingles** (40 → 60): total e nº de provas; compreensão 26 → 38 e gramática 14 → 22; tabela de formatos (globais 5 → 7, vocabulário 7 → 11, conectivo+referência 4+3 → 6+4); **contagem de linguagem absoluta refeita por script: 16 ocorrências em 10 questões → 24 em 14, e zero em alternativa correta**, com o ruído recalculado (7 de andaime comparativo, 2 de "the whole world", 15 de endurecimento real); conectivo confirmado em 6 de 6 provas; provas com dois textos 2 de 4 → 3 de 6; EXCEPT 2 → 3; ordem de parágrafo agora em 2 provas (2008 e 2023). **Nenhum pattern novo**: os 20 itens novos caem todos nos 8 patterns já descritos, que ganharam 30 evidências.
+- **plan.json**: `sourceNote` 235/155 → 351/231; crossPattern de asserção-razão 8 → 9 ocorrências, com a distribuição de gabaritos refeita; "6 de 6 em norma" → "12 de 12" (2 lugares); linguagem absoluta em inglês; bloco de cálculo; eixo de dados 39 → 59 questões; gestão+UX 44 → 67; checklists de dimensional (6 → 8), SQL (3 → 4), cálculo de projetos (5 → 8), V&V (8 → 11), lógica (7 → 20 ids), português (40 → 60), "cinco frases novas" (7 → 11), inglês (40 → 60, 2 → 3 comparativas); contagens de cards de logica, portugues e ingles alinhadas ao `check.py`; crossPattern de lista I-II-III ganhou o terceiro desenho (romanos com alternativas em pares, 6 questões de 2008).
+
+### Evidências e patterns
+
+- **101 ids distintos acrescentados a `patterns[].evidence`** (162 inserções somando repetições entre patterns), dos quais **99 são questões novas deste ciclo** — cada id foi aberto e conferido antes de entrar.
+- **13 patterns novos**, em 8 áreas: logica 3, analise-dados 2, arq-dados 2, eng-sw 2, gestao-proj 1, seg-info 1, ux 1, portugues 1.
+- **Sem pattern novo em ingles e gestao-ti**, por motivo declarado: gestao-ti não recebeu questão nova, e em ingles as 20 novas se encaixam sem sobra nos 8 patterns existentes (globais, conectivo, endurecimento, vocabulário, referência, comparativa, EXCEPT, ordem de parágrafo) — forçar um 9º seria inventar padrão.
+- O campo `passage` (103 questões) não sustenta nenhuma afirmação do material: é dado de renderização do simulado e nenhuma questão mudou de conteúdo por causa dele.
+
+`python3 study/_internal/check.py` → **PROBLEMAS: 0**.
