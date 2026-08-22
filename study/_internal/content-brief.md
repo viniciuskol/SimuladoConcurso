@@ -96,3 +96,31 @@ longo no contexto. Portanto:
 
 **Ambos:** se algo exigir decisão do manager, diga em uma linha o que é e quais são as
 duas opções — não escreva um ensaio de justificativa.
+
+## Campo `resources` (materiais didáticos por área)
+
+Cada `content/<area>.json` pode ter um array `resources` com material de apoio real:
+
+```json
+"resources": [
+  { "title": "Lei nº 13.709/2018 (LGPD) — texto compilado",
+    "publisher": "Planalto",
+    "url": "https://www.planalto.gov.br/...",
+    "kind": "norma",          // norma | guia | artigo | curso | livro | video | prova
+    "free": true,
+    "why": "1 linha: para que subtópico do Anexo IV isso serve" }
+]
+```
+
+**Regra inviolável: nenhuma URL entra sem verificação por requisição real.** Nada de
+URL "de memória". Para cada link: fazer a requisição, exigir HTTP 200 e conferir que o
+conteúdo é o que se diz que é (título/trecho). O que não resolver, ou resolver para
+página diferente, **não entra** — link quebrado num material de estudo é pior que
+ausência de link. Registrar o status verificado em `study/_internal/resources-check.md`.
+
+Preferências, nesta ordem: fonte **primária e oficial** (lei no Planalto, norma do
+órgão, especificação do W3C, guia do fabricante do framework) > publicação institucional
+gratuita > artigo de referência reconhecido. Material pago pode entrar, mas com
+`free: false` e sem prometer acesso gratuito. Evitar link profundo que apodrece; preferir
+a URL canônica estável. Nada de blog de conteúdo raso, agregador de apostila pirata ou
+PDF de terceiro que redistribui norma paga.
