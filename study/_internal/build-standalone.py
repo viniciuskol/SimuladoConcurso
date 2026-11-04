@@ -17,8 +17,8 @@ js = html.split('<script type="module">')[1].split("</script>")[0]
 
 # Dados: tudo que o app carrega. A projeção de questions.json acompanha o que a
 # tela "Revisar meus erros" passou a usar no ciclo 8: além de id/área/subtópico,
-# ela abre a questão inteira (enunciado completo, as 5 alternativas, o gabarito,
-# o resumo da explicação e a explicação de cada alternativa errada) e cita a
+# ela abre a questão inteira (texto-base, enunciado completo, as 5 alternativas, o
+# gabarito, o resumo da explicação e a explicação de cada alternativa errada) e cita a
 # prova de origem. Fica fora só o que nenhuma tela publicada lê: `images`,
 # `verification`, `status`, `annulled`.
 areas = json.loads((S / "data" / "areas.json").read_text(encoding="utf-8"))
@@ -29,6 +29,7 @@ data = {
     "data/plan.json": json.loads((S / "data" / "plan.json").read_text(encoding="utf-8")),
     "data/questions.json": {"questions": [
         {"id": q["id"], "area": q["area"], "subtopic": q.get("subtopic"),
+         "passage": q.get("passage"),
          "stem": q.get("stem") or "",
          "correctKey": q.get("correctKey"),
          "explanationSummary": q.get("explanationSummary"),

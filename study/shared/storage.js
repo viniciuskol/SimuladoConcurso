@@ -12,10 +12,15 @@ export function loadAttempts() {
   } catch { return []; }
 }
 
+// Devolve false se o navegador recusar a gravação (cota estourada, modo privado):
+// a tela segue funcionando e decide como avisar, em vez de travar na exceção.
 export function recordAttempt(entry) {
   const attempts = loadAttempts();
   attempts.push({ ...entry, timestamp: Date.now() });
-  localStorage.setItem(ATTEMPTS_KEY, JSON.stringify(attempts));
+  try {
+    localStorage.setItem(ATTEMPTS_KEY, JSON.stringify(attempts));
+    return true;
+  } catch { return false; }
 }
 
 export function clearAttempts() {
@@ -37,33 +42,95 @@ export function statsByArea(areas) {
 }
 
 // SRS (SM-2 simplificado). Estado por cardId: { interval, easeFactor, dueDate, reps }
+// Entrada sem dueDate válida é descartada: um card assim nunca venceria.
+function sanitizeSRS(v) {
+  const out = {};
+  if (!v || typeof v !== "object" || Array.isArray(v)) return out;
+  for (const [id, s] of Object.entries(v)) {
+    if (s && typeof s === "object" && /^\d{4}-\d{2}-\d{2}$/.test(s.dueDate) &&
+        Number.isFinite(s.interval) && Number.isFinite(s.easeFactor) && Number.isFinite(s.reps)) out[id] = s;
+  }
+  return out;
+}
+
+// Só é preenchido quando o localStorage recusa a gravação: a sessão continua
+// valendo em memória, sem esconder o que outra aba gravou no caso normal.
+let srsFallback = null;
+
 export function loadSRS() {
-  try { return JSON.parse(localStorage.getItem(SRS_KEY)) || {}; }
+  if (srsFallback) return srsFallback;
+  try { return sanitizeSRS(JSON.parse(localStorage.getItem(SRS_KEY))); }
   catch { return {}; }
 }
 
 function saveSRS(state) {
-  localStorage.setItem(SRS_KEY, JSON.stringify(state));
+  try {
+    localStorage.setItem(SRS_KEY, JSON.stringify(state));
+    srsFallback = null;
+    return true;
+  } catch {
+    srsFallback = state;
+    return false;
+  }
+}
+
+// Data LOCAL em AAAA-MM-DD: com toISOString o dia viraria às 21h em Brasília.
+function localDate(d = new Date()) {
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+}
+
+function addDays(dateStr, n) {
+  const [y, m, d] = dateStr.split("-").map(Number);
+  return localDate(new Date(y, m - 1, d + n));
+}
+
+function hashText(text) {
+  let h = 0x811c9dc5;
+  const s = String(text ?? "");
+  for (let i = 0; i < s.length; i++) {
+    h ^= s.charCodeAt(i);
+    h = Math.imul(h, 0x01000193) >>> 0;
+  }
+  return h;
 }
 
 export function dueCards(cards) {
   const state = loadSRS();
-  const today = new Date().toISOString().slice(0, 10);
+  const today = localDate();
   return cards.filter(c => {
     const s = state[c.id];
     return !s || s.dueDate <= today;
   });
 }
 
-// rating: 1=Errei, 2=Difícil, 3=Bom, 4=Fácil
-export function rateCard(cardId, rating) {
+const FINAL_REVIEW_DAYS = 4;
+
+// Reta final: a última revisão acontece nos 4 dias antes da prova. O card cujo
+// intervalo passaria da véspera cai num desses dias, escolhido pelo id para não
+// empilhar o baralho inteiro em 28/11. Quem já foi bem dentro da janela não volta.
+function fitToExam(cardId, due, today, examDate) {
+  if (!examDate) return due;
+  const eve = addDays(examDate, -1);
+  if (due <= eve) return due;
+  const windowStart = addDays(eve, -(FINAL_REVIEW_DAYS - 1));
+  if (today >= windowStart) return due;
+  return addDays(windowStart, hashText(cardId) % FINAL_REVIEW_DAYS);
+}
+
+// rating: 1=Errei, 2=Difícil, 3=Bom, 4=Fácil. Devolve false se a gravação falhar.
+export function rateCard(cardId, rating, examDate) {
   const state = loadSRS();
+  const today = localDate();
   const s = state[cardId] || { interval: 0, easeFactor: 2.5, reps: 0 };
   let { interval, easeFactor, reps } = s;
 
+  // Acertar um card que ainda não venceu é treino extra: não pode inflar o intervalo.
+  if (rating !== 1 && s.dueDate && s.dueDate > today) return true;
+
   if (rating === 1) {
     interval = 1;
-    easeFactor = Math.max(1.3, easeFactor - 0.2);
+    // Errar de novo o mesmo card antes de recuperá-lo não penaliza duas vezes.
+    if (reps > 0) easeFactor = Math.max(1.3, easeFactor - 0.2);
     reps = 0;
   } else {
     reps += 1;
@@ -72,10 +139,9 @@ export function rateCard(cardId, rating) {
     interval = reps === 1 ? 1 : Math.round(interval * easeFactor);
   }
 
-  const due = new Date();
-  due.setDate(due.getDate() + interval);
-  state[cardId] = { interval, easeFactor, reps, dueDate: due.toISOString().slice(0, 10) };
-  saveSRS(state);
+  const dueDate = fitToExam(cardId, addDays(today, interval), today, examDate);
+  state[cardId] = { interval, easeFactor, reps, dueDate };
+  return saveSRS(state);
 }
 
 // Resumo do estado de revisão espaçada (quantos cards já foram vistos ao menos uma vez).
@@ -130,13 +196,7 @@ const PLAN_KEY = "transpetro2026:plan";
 // migra marcação para o item errado, e item cujo texto for reescrito num ciclo
 // futuro gera outra chave e volta desmarcado em vez de herdar a marcação do vizinho.
 export function planItemKey(blockN, text) {
-  let h = 0x811c9dc5;
-  const s = String(text ?? "");
-  for (let i = 0; i < s.length; i++) {
-    h ^= s.charCodeAt(i);
-    h = Math.imul(h, 0x01000193) >>> 0;
-  }
-  return `b${Number(blockN) || 0}#${h.toString(36)}`;
+  return `b${Number(blockN) || 0}#${hashText(text).toString(36)}`;
 }
 
 // A memória é a fonte de verdade da sessão, com escrita passante para o
@@ -184,4 +244,56 @@ export function planProgress(block, state) {
     if (checks[k]) done.add(k);
   }
   return { done: done.size, total: all.size };
+}
+
+/* ---------- Backup do progresso ---------- */
+
+const BACKUP_APP = "transpetro2026";
+
+export function exportProgress() {
+  return {
+    app: BACKUP_APP,
+    version: 1,
+    exportedAt: new Date().toISOString(),
+    attempts: loadAttempts(),
+    srs: loadSRS(),
+    plan: loadPlanChecks()
+  };
+}
+
+// Confere o arquivo sem gravar nada: devolve o conteúdo saneado e as contagens,
+// ou null se não for um backup deste app.
+export function parseBackup(text) {
+  let v;
+  try { v = JSON.parse(text); } catch { return null; }
+  if (!v || v.app !== BACKUP_APP || !Array.isArray(v.attempts)) return null;
+  const attempts = v.attempts.filter(a => a && typeof a === "object" && a.questionId && a.area);
+  const srs = sanitizeSRS(v.srs);
+  const plan = {};
+  if (v.plan && typeof v.plan === "object" && !Array.isArray(v.plan)) {
+    for (const k of Object.keys(v.plan)) if (v.plan[k] === true) plan[k] = true;
+  }
+  return { attempts, srs, plan, counts: { attempts: attempts.length, srs: Object.keys(srs).length, plan: Object.keys(plan).length } };
+}
+
+// Substitui o progresso deste navegador. Em caso de falha, restaura o estado anterior.
+export function restoreProgress(backup) {
+  const keys = [ATTEMPTS_KEY, SRS_KEY, PLAN_KEY];
+  try {
+    const before = keys.map(k => localStorage.getItem(k));
+    try {
+      localStorage.setItem(ATTEMPTS_KEY, JSON.stringify(backup.attempts));
+      localStorage.setItem(SRS_KEY, JSON.stringify(backup.srs));
+      localStorage.setItem(PLAN_KEY, JSON.stringify(backup.plan));
+    } catch (e) {
+      keys.forEach((k, i) => {
+        if (before[i] === null) localStorage.removeItem(k);
+        else localStorage.setItem(k, before[i]);
+      });
+      throw e;
+    }
+  } catch { return false; }
+  srsFallback = null;
+  planCache = null;
+  return true;
 }

@@ -20,7 +20,8 @@
 <script type="module">
 import { loadJSON, showFetchHelp } from "./shared/data-loader.js";
 import { dueCards, rateCard, statsByArea, srsSummary, wrongByArea,
-         planItemKey, loadPlanChecks, setPlanCheck, planProgress } from "./shared/storage.js";
+         planItemKey, loadPlanChecks, setPlanCheck, planProgress,
+         exportProgress, parseBackup, restoreProgress } from "./shared/storage.js";
 
 const app = document.getElementById("app");
 let AREAS = [], CARDS = [], QCOUNT = {}, CONTENT = {}, PLAN = null, QBYID = {};
@@ -34,6 +35,13 @@ const safeUrl = u => {
 
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c =>
   ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+// Texto de questão: as tags de formatação do banco valem; qualquer outro "<" é
+// texto (<<interface>>, i<=raiz). Entidades já escritas nos dados são mantidas.
+const richText = s => String(s ?? "")
+  .replace(/&(?!(?:amp|lt|gt|quot|#\d+);)/g, "&amp;")
+  .replace(/</g, "&lt;").replace(/>/g, "&gt;")
+  .replace(/&lt;(\/?)(p|strong|em|br)&gt;/g, "<$1$2>");
 
 async function init() {
   try {
@@ -161,7 +169,16 @@ function renderHome() {
         <li><strong>Padrões da banca</strong> e <strong>palavras-armadilha</strong> de cada área valem mais que releitura do resumo.</li>
       </ul>
     </div>
+    <div class="card">
+      <h2>Backup do progresso</h2>
+      <p class="muted">Respostas, revisões e plano ficam só neste navegador. Exporte um arquivo para não perdê-los ou para continuar em outro aparelho.</p>
+      <button class="btn" id="export-progress">Exportar progresso</button>
+      <button class="btn" id="import-progress-btn">Importar progresso</button>
+      <input type="file" id="import-progress" accept="application/json,.json" hidden>
+      <p class="muted" id="backup-msg" role="status"></p>
+    </div>
   `;
+  wireBackup();
   renderPriority(stats);
   const pb = document.getElementById("open-plan");
   if (pb) pb.addEventListener("click", renderPlan);
@@ -172,6 +189,33 @@ function renderHome() {
   // O id da área vai pelo closure, não por atributo: nada de dado no HTML.
   app.querySelectorAll("[data-i]").forEach(b =>
     b.addEventListener("click", () => renderArea(AREAS[Number(b.dataset.i)].id)));
+}
+
+function wireBackup() {
+  const msg = document.getElementById("backup-msg");
+  document.getElementById("export-progress").addEventListener("click", () => {
+    const blob = new Blob([JSON.stringify(exportProgress(), null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `progresso-transpetro-${new Date().toLocaleDateString("sv-SE")}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+    msg.textContent = "Arquivo de progresso gerado.";
+  });
+  const input = document.getElementById("import-progress");
+  document.getElementById("import-progress-btn").addEventListener("click", () => input.click());
+  input.addEventListener("change", async () => {
+    const file = input.files[0];
+    input.value = "";
+    if (!file) return;
+    const backup = parseBackup(await file.text());
+    if (!backup) { msg.textContent = "Este arquivo não é um backup válido deste app. Nada foi alterado."; return; }
+    const { attempts, srs, plan } = backup.counts;
+    if (!confirm(`Substituir o progresso deste navegador por este backup?\n\n${attempts} resposta(s), ${srs} card(s) revisado(s) e ${plan} item(ns) do plano.`)) return;
+    if (restoreProgress(backup)) renderHome();
+    else msg.textContent = "Não foi possível gravar o backup neste navegador. O progresso atual foi mantido.";
+  });
 }
 
 function daysToExam() {
@@ -316,18 +360,15 @@ function fmtDate(ts) {
   return isNaN(d) ? "" : d.toLocaleDateString("pt-BR");
 }
 
-/* Revisão completa de uma questão errada: enunciado, alternativas com o gabarito
-   marcado, resumo da explicação e o porquê de cada alternativa errada.
-   TODO texto passa por esc(): varri as 235 questões do banco e nenhuma tem tag
-   HTML em `stem`, `alternatives[].text`, `alternatives[].explanation` nem
-   `explanationSummary` — logo não há nada a ganhar renderizando markup, e
-   escapar tudo mata a classe de bug do ciclo anterior. Nada de dado em atributo:
-   estes blocos são estáticos, sem listener e sem `data-*` com conteúdo. */
+/* Revisão completa de uma questão errada: texto-base, enunciado, alternativas com o
+   gabarito marcado, resumo da explicação e o porquê de cada alternativa errada.
+   Texto de questão passa por richText(), o mesmo critério do simulado. Nada de dado
+   em atributo: estes blocos são estáticos, sem listener e sem `data-*` com conteúdo. */
 function altRow(alt, correctKey) {
   const isCorrect = alt.key === correctKey;
   return `<div class="btn${isCorrect ? " correct" : ""}">
       <span class="alt-key">${esc(alt.key)}</span>
-      <span class="alt-text">${esc(alt.text)}${isCorrect ? ` <strong class="tag-ok">✓ gabarito</strong>` : ""}</span>
+      <span class="alt-text">${richText(alt.text)}${isCorrect ? ` <strong class="tag-ok">✓ gabarito</strong>` : ""}</span>
     </div>`;
 }
 
@@ -335,7 +376,7 @@ function questionReview(q) {
   const alts = Array.isArray(q.alternatives) ? q.alternatives : [];
   const wrongWhy = alts
     .filter(a => a.key !== q.correctKey && a.explanation)
-    .map(a => `<li><strong>${esc(a.key)})</strong> ${esc(a.explanation)}</li>`).join("");
+    .map(a => `<li><strong>${esc(a.key)})</strong> ${richText(a.explanation)}</li>`).join("");
   const src = q.source || {};
   const origem = [
     q.subtopic,
@@ -345,13 +386,14 @@ function questionReview(q) {
     src.originalNumber ? `questão ${src.originalNumber} no original` : null
   ].filter(Boolean).map(v => esc(v)).join(" · ");
   return `
-    <p class="q-stem">${esc(q.stem)}</p>
+    ${q.passage ? `<div class="passage-card">${richText(q.passage)}</div>` : ""}
+    <p class="q-stem">${richText(q.stem)}</p>
     ${alts.length
       ? `<div class="alt-list review">${alts.map(a => altRow(a, q.correctKey)).join("")}</div>`
       : `<p class="muted">Alternativas não registradas para esta questão.</p>`}
     <p class="review-h">Por que o gabarito é ${esc(q.correctKey || "?")}</p>
     ${q.explanationSummary
-      ? `<p>${esc(q.explanationSummary)}</p>`
+      ? `<p>${richText(q.explanationSummary)}</p>`
       : `<p class="muted">Sem explicação registrada.</p>`}
     <p class="review-h">Por que as outras estão erradas</p>
     ${wrongWhy
@@ -487,13 +529,17 @@ function sec(title, html, cls = "") {
 function startReview(queue, label, onDone) {
   const done = onDone || renderHome;
   if (!queue.length) { done(); return; }
+  queue = queue.slice();   // "Errei" recoloca o card no fim da fila desta sessão
+  const distinct = new Set(queue.map(c => c.id)).size;
   let idx = 0;
+  let saveFailed = false;
   const areaLabel = id => (AREAS.find(a => a.id === id) || {}).label || id;
 
   const showCard = () => {
     if (idx >= queue.length) {
       app.innerHTML = `<div class="card"><h2>Sessão concluída</h2>
-        <p class="muted">${queue.length} card(s) revisado(s) — ${esc(label)}.</p>
+        <p class="muted">${distinct} card(s) revisado(s) — ${esc(label)}.</p>
+        ${saveFailed ? `<p class="muted">⚠ O navegador recusou a gravação: as revisões desta sessão valem só até fechar a página.</p>` : ""}
         <button class="btn primary" id="home">Voltar</button></div>`;
       document.getElementById("home").addEventListener("click", done);
       return;
@@ -531,7 +577,9 @@ function startReview(queue, label, onDone) {
       </div>`;
     document.getElementById("quit").addEventListener("click", done);
     app.querySelectorAll("[data-r]").forEach(b => b.addEventListener("click", () => {
-      rateCard(c.id, Number(b.dataset.r));
+      const rating = Number(b.dataset.r);
+      if (!rateCard(c.id, rating, PLAN && PLAN.examDate)) saveFailed = true;
+      if (rating === 1) queue.push(c);
       idx += 1;
       showCard();
     }));

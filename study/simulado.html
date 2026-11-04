@@ -25,6 +25,20 @@ const app = document.getElementById("app");
 let AREAS = [], QUESTIONS = [];
 let session = null; // { areaIds, order: [questionId,...], idx, correctCount, mode }
 
+// Os dados têm só estas tags de formatação; qualquer outro "<" é texto da questão
+// (<<interface>>, i<=raiz) e precisa aparecer na tela. Entidades já escritas nos
+// dados são mantidas para não virarem "&amp;lt;".
+const richText = s => String(s ?? "")
+  .replace(/&(?!(?:amp|lt|gt|quot|#\d+);)/g, "&amp;")
+  .replace(/</g, "&lt;").replace(/>/g, "&gt;")
+  .replace(/&lt;(\/?)(p|strong|em|br)&gt;/g, "<$1$2>");
+
+function showAtTop() {
+  window.scrollTo(0, 0);
+  const el = document.getElementById("screen-start");
+  if (el) el.focus({ preventScroll: true });
+}
+
 async function init() {
   try {
     [AREAS, QUESTIONS] = await Promise.all([
@@ -86,7 +100,7 @@ function renderStats() {
   }
   el.innerHTML = `<h2>Desempenho por área</h2>` + stats.map(s => `
     <div class="area-bar">
-      <span style="width:140px">${s.label ?? s.id}</span>
+      <span style="width:140px">${richText(s.label ?? s.id)}</span>
       <div class="track"><div style="width:${s.pct ?? 0}%"></div></div>
       <span class="pct">${s.pct === null ? "-" : s.pct + "%"}</span>
     </div>`).join("");
@@ -104,23 +118,24 @@ function renderQuestion() {
   const areaLabel = (AREAS.find(a => a.id === q.area) || {}).label || q.area;
   app.innerHTML = `
     <div class="progressbar"><div style="width:${(100 * session.idx) / session.order.length}%"></div></div>
-    <p class="muted">${areaLabel} · questão ${session.idx + 1} de ${session.order.length}</p>
-    ${q.passage ? `<div class="passage-card">${q.passage}</div>` : ""}
-    <div class="stem-card">${q.stem}</div>
+    <p class="muted" id="screen-start" tabindex="-1">${richText(areaLabel)} · questão ${session.idx + 1} de ${session.order.length}</p>
+    ${q.passage ? `<div class="passage-card">${richText(q.passage)}</div>` : ""}
+    <div class="stem-card">${richText(q.stem)}</div>
     <div class="alt-list" id="alts">
-      ${q.alternatives.map(alt => `<button class="btn" data-key="${alt.key}"><span class="alt-key">${alt.key}</span><span class="alt-text">${alt.text}</span></button>`).join("")}
+      ${q.alternatives.map(alt => `<button class="btn" data-key="${alt.key}"><span class="alt-key">${alt.key}</span><span class="alt-text">${richText(alt.text)}</span></button>`).join("")}
     </div>
     <div id="feedback"></div>
   `;
   app.querySelectorAll("#alts button").forEach(btn => {
     btn.addEventListener("click", () => answer(q, btn.dataset.key));
   });
+  showAtTop();
 }
 
 function answer(q, chosenKey) {
   const correct = chosenKey === q.correctKey;
   if (correct) session.correctCount += 1;
-  recordAttempt({ questionId: q.id, area: q.area, chosenKey, correct });
+  const saved = recordAttempt({ questionId: q.id, area: q.area, chosenKey, correct });
 
   app.querySelectorAll("#alts button").forEach(btn => {
     btn.disabled = true;
@@ -130,12 +145,13 @@ function answer(q, chosenKey) {
 
   const wrongExplain = q.alternatives
     .filter(a => a.key !== q.correctKey && a.explanation)
-    .map(a => `<li><strong>(${a.key})</strong> ${a.explanation}</li>`).join("");
+    .map(a => `<li><strong>(${a.key})</strong> ${richText(a.explanation)}</li>`).join("");
 
   document.getElementById("feedback").innerHTML = `
     <div class="card">
       <p class="feedback-banner ${correct ? "correct" : "incorrect"}">${correct ? "✅ Certo!" : "❌ Errado."}</p>
-      <p>${q.explanationSummary || ""}</p>
+      ${saved ? "" : `<p class="muted">⚠ Não foi possível salvar esta resposta no navegador, então ela não entra no histórico.</p>`}
+      <p>${richText(q.explanationSummary)}</p>
       ${wrongExplain ? `<details class="explain"><summary>Por que as outras estão erradas</summary><ul>${wrongExplain}</ul></details>` : ""}
       <button class="btn primary" id="next">${session.idx + 1 < session.order.length ? "Próxima" : "Ver resultado"}</button>
     </div>`;
@@ -150,11 +166,12 @@ function renderResult() {
   const pct = Math.round((100 * session.correctCount) / session.order.length);
   app.innerHTML = `
     <div class="card">
-      <h1>Resultado</h1>
+      <h1 id="screen-start" tabindex="-1">Resultado</h1>
       <p>${session.correctCount} de ${session.order.length} corretas (${pct}%).</p>
       <button class="btn primary" id="back">Voltar</button>
     </div>`;
   document.getElementById("back").addEventListener("click", renderPicker);
+  showAtTop();
 }
 
 init();
