@@ -19,9 +19,11 @@
 </div>
 <script type="module">
 import { loadJSON, showFetchHelp } from "./shared/data-loader.js";
-import { dueCards, rateCard, statsByArea, srsSummary, wrongByArea,
+import { dueCards, rateCard, statsByArea, srsSummary, wrongByArea, loadAttempts, loadSRS, localDate,
          planItemKey, loadPlanChecks, setPlanCheck, planProgress,
          exportProgress, parseBackup, restoreProgress } from "./shared/storage.js";
+import { subtopicPriority, cardsForQuestion, cardsForQuestions, pendingErrorIds,
+         dailyCards, fullExamDays, fullExamAdvice, answeredOn } from "./shared/planner.js";
 
 const app = document.getElementById("app");
 let AREAS = [], CARDS = [], QCOUNT = {}, CONTENT = {}, PLAN = null, QBYID = {};
@@ -42,6 +44,13 @@ const richText = s => String(s ?? "")
   .replace(/&(?!(?:amp|lt|gt|quot|#\d+);)/g, "&amp;")
   .replace(/</g, "&lt;").replace(/>/g, "&gt;")
   .replace(/&lt;(\/?)(p|strong|em|br)&gt;/g, "<$1$2>");
+
+const questionUrl = id => `simulado.html?q=${encodeURIComponent(id)}`;
+
+// Em texto já seguro para HTML, sem atributos: troca cada id de questão real por um
+// link que abre a questão num treino, em outra aba para não perder o lugar na leitura.
+const linkIds = html => String(html ?? "").replace(/\b[a-zA-Z0-9]+-q\d+\b/g, id =>
+  QBYID[id] ? `<a class="q-link" href="${questionUrl(id)}" target="_blank" rel="noopener">${id}</a>` : id);
 
 async function init() {
   try {
@@ -125,11 +134,12 @@ function renderHome() {
 
   app.innerHTML = `
     <h1>Área de estudo</h1>
+    ${agendaHtml()}
     <div class="card">
       <h2>Revisão espaçada</h2>
-      <p class="muted">${due.length} card(s) para hoje · ${CARDS.length} no total · ${srs.seen} já vistos.</p>
+      <p class="muted">${due.length} card(s) disponível(is), entre vencidos e ainda não vistos · ${CARDS.length} no total · ${srs.seen} já vistos.</p>
       ${due.length
-        ? `<button class="btn primary" id="review-all">Revisar agora (misturando áreas)</button>
+        ? `<button class="btn" id="review-all">Revisar todos os disponíveis (misturando áreas)</button>
            <p class="muted">Intercalação: misturar áreas na mesma sessão fixa mais do que estudar em bloco.</p>`
         : `<p class="muted">Nada devido agora. ${CARDS.length ? "Volte amanhã — ou entre numa área e revise à força." : ""}</p>`}
     </div>
@@ -152,9 +162,9 @@ function renderHome() {
     </div>` : ""}
     <div class="card">
       <h2>Onde estudar primeiro</h2>
-      <p class="muted">Prioridade = peso histórico da área × o quanto você ainda erra nela. Áreas sem tentativa no simulado entram como "não medido" e ficam no fim da lista, não porque sejam fáceis, mas porque ainda não há dado.</p>
+      <p class="muted">Prioridade = quantas questões o assunto deve valer × a chance estimada de você errar. A chance olha suas 10 tentativas mais recentes no assunto e parte de 50% quando há poucas.</p>
       <div id="priority"></div>
-      <p class="muted">O edital fixa 50 questões de Conhecimentos Específicos nas 8 áreas e 10 de Português + 10 de Inglês, mas não publica quantas caem por área técnica. O peso aqui é a fatia de cada área nas provas antigas — proxy, não garantia.</p>
+      <p class="muted">O edital fixa 50 questões de Conhecimentos Específicos nas 8 áreas e 10 de Português + 10 de Inglês, mas não publica quantas caem por assunto. O valor aqui é a fatia de cada assunto nas provas antigas, com 2018 e 2023 pesando em dobro: proxy, não garantia. Assuntos do edital sem nenhuma questão no banco não aparecem.</p>
     </div>
     <div class="card">
       <h2>Conteúdo por área</h2>
@@ -179,7 +189,8 @@ function renderHome() {
     </div>
   `;
   wireBackup();
-  renderPriority(stats);
+  renderPriority();
+  wireAgenda();
   const pb = document.getElementById("open-plan");
   if (pb) pb.addEventListener("click", renderPlan);
   const rb = document.getElementById("review-all");
@@ -189,6 +200,76 @@ function renderHome() {
   // O id da área vai pelo closure, não por atributo: nada de dado no HTML.
   app.querySelectorAll("[data-i]").forEach(b =>
     b.addEventListener("click", () => renderArea(AREAS[Number(b.dataset.i)].id)));
+}
+
+/* ---------- Agenda do dia ---------- */
+
+const trainUrl = (area, subtopic, n = 10) =>
+  `simulado.html?area=${encodeURIComponent(area)}&sub=${encodeURIComponent(subtopic)}&n=${n}`;
+
+function priorityRows() {
+  return subtopicPriority(Object.values(QBYID), loadAttempts());
+}
+
+// Itens de blocos já encerrados que seguem desmarcados. O plano só atrasa: nenhum bloco muda de data.
+function overdueItems() {
+  const cur = currentBlock();
+  if (!cur) return 0;
+  const checks = loadPlanChecks();
+  return PLAN.blocks
+    .filter(b => b.n < cur.n)
+    .reduce((total, b) => { const p = planProgress(b, checks); return total + p.total - p.done; }, 0);
+}
+
+let todayCards = [];
+
+function agendaHtml() {
+  if (!PLAN) return "";
+  const left = daysToExam();
+  if (left <= 0) return `<div class="card accent"><h2>Hoje</h2><p>Hoje é o dia da prova. Boa prova!</p></div>`;
+
+  const today = localDate();
+  const attempts = loadAttempts();
+  const rows = priorityRows();
+  const cards = dailyCards({ cards: CARDS, srs: loadSRS(), today, daysLeft: left, rows, byId: QBYID });
+  todayCards = [...cards.reviews, ...cards.newCards];
+  const pending = pendingErrorIds(wrongByArea(), QBYID);
+  const focus = rows[0];
+  const advice = fullExamAdvice(fullExamDays(attempts), today, left);
+  const overdue = overdueItems();
+
+  const parts = [];
+  if (cards.reviews.length) parts.push(`${cards.reviews.length} revisão(ões)`);
+  if (cards.newCards.length) parts.push(`${cards.newCards.length} novo(s)`);
+  const cardItem = todayCards.length
+    ? `<button class="btn primary" id="today-cards">Fazer os cards de hoje: ${parts.join(" + ")}</button>`
+    : `<p class="muted">✓ Cards de hoje concluídos.${left <= 7 && cards.unseen ? ` Faltam ${cards.unseen} sem ver, mas o plano não traz conteúdo novo na última semana.` : ""}</p>`;
+
+  const REDO_LIMIT = 10;
+  const examLine = {
+    soon: `Primeira prova completa em ${advice.inDays} dia(s), como pede o bloco 6 do plano.`,
+    gap: `Próxima prova completa em ${advice.inDays} dia(s): o plano pede pelo menos 4 dias entre elas.`,
+    done: `✓ ${advice.count} provas completas feitas, a meta do plano.`,
+    late: ""
+  }[advice.status];
+
+  return `<div class="card accent">
+    <h2>Hoje</h2>
+    <p class="muted">${left} dia(s) para a prova · ${answeredOn(attempts, today)} questão(ões) respondida(s) hoje</p>
+    <div class="alt-list">
+      ${cardItem}
+      ${advice.status === "now" ? `<a class="btn primary center" href="simulado.html">Fazer a ${advice.count + 1}ª prova completa</a>` : ""}
+      ${pending.length ? `<a class="btn center" href="simulado.html?refazer=1&n=${REDO_LIMIT}">Refazer ${Math.min(pending.length, REDO_LIMIT)} de ${pending.length} erro(s) pendente(s)</a>` : ""}
+      ${focus ? `<a class="btn center" href="${esc(trainUrl(focus.area, focus.subtopic))}">Treinar o assunto mais prioritário: ${esc(focus.subtopic)}</a>` : ""}
+    </div>
+    ${examLine ? `<p class="muted">${examLine}</p>` : ""}
+    ${overdue ? `<p class="muted">${overdue} item(ns) de blocos anteriores do plano ainda sem marcar.</p>` : ""}
+  </div>`;
+}
+
+function wireAgenda() {
+  const b = document.getElementById("today-cards");
+  if (b) b.addEventListener("click", () => startReview(shuffle(todayCards), "Cards de hoje"));
 }
 
 function wireBackup() {
@@ -253,7 +334,7 @@ function renderPlan() {
     const items = (b.checklist || []).map(text => {
       const done = !!checks[planItemKey(b.n, text)];
       return `<li class="plan-item${done ? " done" : ""}">
-        <label><input type="checkbox" class="plan-chk"${done ? " checked" : ""}><span>${esc(text)}</span></label>
+        <label><input type="checkbox" class="plan-chk"${done ? " checked" : ""}><span>${linkIds(esc(text))}</span></label>
       </li>`;
     }).join("");
     const prog = planProgress(b, checks);
@@ -275,8 +356,8 @@ function renderPlan() {
     <div class="card">
       <h2>🎯 O que a banca repete entre áreas</h2>
       ${(PLAN.crossPatterns || []).map(p => `<div class="sub">
-        <strong>${esc(p.title)}</strong><p>${esc(p.body)}</p>
-        ${(p.evidence || []).length ? `<p class="muted">Visto em: ${p.evidence.map(e => esc(e)).join(", ")}</p>` : ""}
+        <strong>${esc(p.title)}</strong><p>${linkIds(esc(p.body))}</p>
+        ${(p.evidence || []).length ? `<p class="muted">Visto em: ${p.evidence.map(e => linkIds(esc(e))).join(", ")}</p>` : ""}
       </div>`).join("")}
     </div>
     <div class="card">
@@ -315,27 +396,28 @@ function renderPlan() {
     });
 }
 
-function renderPriority(stats) {
+const PRIORITY_SHOWN = 8;
+
+function renderPriority() {
   const box = document.getElementById("priority");
   if (!box) return;
-  const totalQ = Object.values(QCOUNT).reduce((a, b) => a + b, 0) || 1;
-  const rows = AREAS.map(a => {
-    const weight = (QCOUNT[a.id] || 0) / totalQ;      // fatia histórica da área
-    const st = stats[a.id];
-    const measured = !!(st && st.total);
-    const errRate = measured ? 1 - st.correct / st.total : null;
-    // Sem medição, usa 0.5 só para ordenar — e a linha é rotulada como não medida.
-    const score = weight * (measured ? errRate : 0.5);
-    return { a, weight, measured, pct: measured ? st.pct : null, score };
-  }).sort((x, y) => y.score - x.score);
-
-  const max = Math.max(...rows.map(r => r.score), 0.0001);
-  box.innerHTML = rows.map(r => `
-    <div class="area-bar">
-      <span class="prio-label">${esc(r.a.label)}</span>
-      <span class="track"><div style="width:${Math.round((r.score / max) * 100)}%"></div></span>
-      <span class="pct">${r.measured ? `${100 - r.pct}% erro` : "—"}</span>
+  const rows = priorityRows().slice(0, PRIORITY_SHOWN);
+  const fmtExpected = n => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  const measure = r => {
+    if (!r.attempts) return "sem tentativas";
+    return `${r.errorPct}% de erro em ${r.attempts} tentativa(s)${r.smallSample ? ", pouca amostra" : ""}`;
+  };
+  box.innerHTML = rows.map((r, i) => `
+    <div class="sub">
+      <strong>${esc(r.subtopic)}</strong>
+      <span class="muted block">${esc(areaLabelOf(r.area))} · cerca de ${fmtExpected(r.expected)} questão(ões) · ${measure(r)}</span>
+      <div class="row-actions">
+        <button class="btn" data-prio="${i}">Estudar a área</button>
+        <a class="btn" href="${esc(trainUrl(r.area, r.subtopic))}">Treinar</a>
+      </div>
     </div>`).join("");
+  box.querySelectorAll("[data-prio]").forEach(b =>
+    b.addEventListener("click", () => renderArea(rows[Number(b.dataset.prio)].area)));
 }
 
 function shuffle(arr) {
@@ -407,8 +489,9 @@ function renderErrors() {
   const max = Math.max(...err.groups.map(g => g.items.length), 1);
 
   const group = (g, i) => {
-    const nc = cardsOf(g.area).length;
     const rec = g.items.filter(it => it.recovered).length;
+    const pending = g.items.filter(it => !it.recovered);
+    const linked = linkedCards(g);
     return `<div class="card">
       <h2>${esc(areaLabelOf(g.area))}</h2>
       <p class="muted">${g.items.length} questão(ões) errada(s)${rec ? ` · ${rec} já recuperada(s) depois` : ""}</p>
@@ -417,17 +500,23 @@ function renderErrors() {
         <span class="pct">${g.items.length}</span>
       </div>
       <div class="alt-list">
+        ${pending.length ? `<a class="btn primary center" href="simulado.html?refazer=1&area=${encodeURIComponent(g.area)}">Refazer os ${pending.length} erro(s) pendente(s), sem ver o gabarito</a>` : ""}
         <button class="btn" data-sum="${i}">📘 Ver o resumo da área</button>
-        ${nc ? `<button class="btn" data-fc="${i}">🃏 Revisar os ${nc} flashcards desta área</button>`
+        ${linked.length ? `<button class="btn" data-fc="${i}">🃏 Revisar os ${linked.length} flashcards ${linked.fromErrors ? "ligados a estes erros" : "desta área"}</button>`
              : `<p class="muted">Sem flashcards nesta área ainda.</p>`}
       </div>
-      <p class="muted">Cada questão abre com o enunciado completo, as alternativas, o gabarito e a explicação.</p>
+      <p class="muted">Abrir uma questão abaixo mostra o gabarito e a explicação. Para testar de verdade, refaça antes.</p>
       ${g.items.map(it => {
         const q = QBYID[it.questionId];
+        const qCards = cardsForQuestion(q, CARDS, QBYID);
         const meta = `${it.wrong > 1 ? ` · errada ${it.wrong}×` : ""}${it.lastWrong ? ` · último erro ${esc(fmtDate(it.lastWrong))}` : ""}${it.recovered ? " · acertada depois ✓" : ""}`;
         return `<details class="explain q-review">
           <summary>${esc(it.questionId)}${meta}<span class="muted block">${trunc(q.stem, 110)}</span></summary>
           ${questionReview(q)}
+          <div class="row-actions">
+            <a class="btn" href="${questionUrl(q.id)}">Refazer esta questão</a>
+            ${qCards.length ? `<button class="btn" data-qcards="${esc(q.id)}">Flashcards do assunto (${qCards.length})</button>` : ""}
+          </div>
         </details>`;
       }).join("")}
     </div>`;
@@ -450,12 +539,26 @@ function renderErrors() {
     const area = err.groups[Number(b.dataset.sum)].area;
     b.addEventListener("click", () => renderArea(area, renderErrors));
   });
-  // Sessão forçada: usa todos os cards da área, mesmo que nenhum esteja devido hoje.
+  // Sessão forçada: revisa mesmo os cards que não venceram, sem mexer no agendamento deles.
   app.querySelectorAll("[data-fc]").forEach(b => {
-    const area = err.groups[Number(b.dataset.fc)].area;
+    const g = err.groups[Number(b.dataset.fc)];
     b.addEventListener("click", () => startReview(
-      shuffle(cardsOf(area)), `${areaLabelOf(area)} — erros`, renderErrors));
+      shuffle(linkedCards(g)), `${areaLabelOf(g.area)} — erros`, renderErrors));
   });
+  app.querySelectorAll("[data-qcards]").forEach(b => {
+    const q = QBYID[b.dataset.qcards];
+    b.addEventListener("click", () => startReview(
+      cardsForQuestion(q, CARDS, QBYID), `Assunto de ${q.id}`, renderErrors));
+  });
+}
+
+// Cards dos erros ainda pendentes da área; sem nenhum ligado, a área inteira.
+function linkedCards(g) {
+  const pending = g.items.filter(it => !it.recovered).map(it => QBYID[it.questionId]);
+  const cards = cardsForQuestions(pending, CARDS, QBYID);
+  const list = cards.length ? cards : cardsOf(g.area);
+  list.fromErrors = cards.length > 0;
+  return list;
 }
 
 /* ---------- Área ---------- */
@@ -469,21 +572,21 @@ async function renderArea(areaId, onBack = renderHome) {
 
   const sections = [];
   if (content) {
-    if (content.resumo) sections.push(sec("Resumo", content.resumo));
+    if (content.resumo) sections.push(sec("Resumo", linkIds(content.resumo)));
     for (const c of content.cheatsheet || [])
-      sections.push(sec(`📌 ${esc(c.heading)}`, `<ul class="tight">${(c.items || []).map(i => `<li>${i}</li>`).join("")}</ul>`));
+      sections.push(sec(`📌 ${esc(c.heading)}`, `<ul class="tight">${(c.items || []).map(i => `<li>${linkIds(i)}</li>`).join("")}</ul>`));
     for (const m of content.mentalModels || [])
-      sections.push(sec(`🧠 ${esc(m.title)}`, `<p>${m.body}</p>`, "accent"));
+      sections.push(sec(`🧠 ${esc(m.title)}`, `<p>${linkIds(m.body)}</p>`, "accent"));
     if ((content.patterns || []).length)
       sections.push(sec("🎯 Padrões da banca nesta área",
         (content.patterns).map(p => `<div class="sub">
             <strong>${esc(p.title)}</strong>
-            <p>${p.howToSpot || ""}</p>
-            ${(p.evidence || []).length ? `<p class="muted">Visto em: ${p.evidence.map(e => esc(e)).join(", ")}</p>` : ""}
+            <p>${linkIds(p.howToSpot)}</p>
+            ${(p.evidence || []).length ? `<p class="muted">Visto em: ${p.evidence.map(e => linkIds(esc(e))).join(", ")}</p>` : ""}
           </div>`).join("")));
     if ((content.tactics || []).length)
       sections.push(sec("⏱ Táticas de prova",
-        (content.tactics).map(t => `<div class="sub"><strong>${esc(t.title)}</strong><p>${t.body || ""}</p></div>`).join("")));
+        (content.tactics).map(t => `<div class="sub"><strong>${esc(t.title)}</strong><p>${linkIds(t.body)}</p></div>`).join("")));
     if ((content.resources || []).length)
       sections.push(sec("📚 Material de apoio",
         `<p class="muted">Links verificados um por um (HTTP 200 e conferência do conteúdo). Fonte oficial primeiro; o que é pago está marcado.</p>
@@ -499,7 +602,7 @@ async function renderArea(areaId, onBack = renderHome) {
       sections.push(sec("⚠ Palavras-armadilha",
         `<div class="trap-list">${content.trapWords.map(t => `<div class="sub">
             <strong>${esc(t.term)}</strong> <span class="muted">× ${esc(t.confusedWith)}</span>
-            <p>${t.distinction || ""}</p></div>`).join("")}</div>`));
+            <p>${linkIds(t.distinction)}</p></div>`).join("")}</div>`));
   }
 
   app.innerHTML = `
@@ -567,7 +670,7 @@ function startReview(queue, label, onDone) {
         <p class="muted">${esc(areaLabel(c.area))}</p>
         <h2>${c.front}</h2>
         <div class="answer">${c.back}</div>
-        ${c.sourceQuestionId ? `<p class="muted">Origem: questão ${esc(c.sourceQuestionId)}</p>` : ""}
+        ${c.sourceQuestionId ? `<p class="muted">Origem: questão ${linkIds(esc(c.sourceQuestionId))}</p>` : ""}
       </div>
       <div class="alt-list rate-row">
         <button class="btn" data-r="1">Errei</button>

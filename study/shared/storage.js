@@ -75,7 +75,7 @@ function saveSRS(state) {
 }
 
 // Data LOCAL em AAAA-MM-DD: com toISOString o dia viraria às 21h em Brasília.
-function localDate(d = new Date()) {
+export function localDate(d = new Date()) {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
 }
 
@@ -140,7 +140,7 @@ export function rateCard(cardId, rating, examDate) {
   }
 
   const dueDate = fitToExam(cardId, addDays(today, interval), today, examDate);
-  state[cardId] = { interval, easeFactor, reps, dueDate };
+  state[cardId] = { interval, easeFactor, reps, dueDate, firstSeen: s.firstSeen || today };
   return saveSRS(state);
 }
 

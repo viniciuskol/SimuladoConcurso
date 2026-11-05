@@ -309,3 +309,10 @@ details.passage .passage-card { margin-bottom: 0; }
 .res-label { flex: 0 0 46%; font-size: 0.88rem; overflow-wrap: anywhere; }
 .alt-list.review .btn.incorrect, .alt-list.review .btn.incorrect:hover { border-color: var(--err); }
 .tag-no { color: var(--err); white-space: nowrap; font-size: 0.85rem; }
+
+/* ---- estudo: agenda e prioridade ---- */
+a.btn { text-decoration: none; }
+.btn.center { justify-content: center; text-align: center; }
+.row-actions { display: flex; gap: 8px; margin-top: 10px; }
+.row-actions .btn { flex: 1 1 0; min-height: 44px; padding: 10px 8px; justify-content: center; text-align: center; font-size: 0.9rem; }
+.q-link { color: var(--accent); white-space: nowrap; }

@@ -19,10 +19,11 @@
 </div>
 <script type="module">
 import { loadJSON, showFetchHelp } from "./shared/data-loader.js";
-import { recordAttempt, loadAttempts, statsByArea, clearAttempts,
+import { recordAttempt, loadAttempts, statsByArea, clearAttempts, wrongByArea,
          loadSession, saveSession, clearSession } from "./shared/storage.js";
 import { EXAM_SHAPE, blockLabel, buildExam, historicExam, filterQuestions,
-         buildTraining, examSources, summarize } from "./shared/exam.js";
+         buildTraining, examSources, summarize, shuffle } from "./shared/exam.js";
+import { pendingErrorIds } from "./shared/planner.js";
 
 const app = document.getElementById("app");
 let AREAS = [], QUESTIONS = [], QBYID = {};
@@ -40,6 +41,7 @@ const picker = { areas: null, subtopic: "", file: "", qty: 20, minutes: DEFAULT_
 let storageFailed = false;
 let mapOpen = false;
 let passageSeen = null, passageClosed = false;
+let linkNotice = "";
 
 // Os dados têm só estas tags de formatação; qualquer outro "<" é texto da questão
 // (<<interface>>, i<=raiz) e precisa aparecer na tela. Entidades já escritas nos
@@ -93,8 +95,42 @@ async function init() {
   QBYID = Object.fromEntries(QUESTIONS.map(q => [q.id, q]));
   picker.areas = new Set(AREAS.map(a => a.id));
   restoreSession();
+  if (startFromLink()) return;
   if (session && session.status === "finished") renderResult();
   else renderPicker();
+}
+
+// Links vindos da tela de estudo: ?q=id,id · ?refazer=1&area=x&n=10 · ?area=x&sub=y&n=10.
+// O endereço é limpo logo em seguida para recarregar a página não abrir outro treino.
+function startFromLink() {
+  const params = new URLSearchParams(location.search);
+  if (!params.toString()) return false;
+  history.replaceState(null, "", location.pathname);
+  const limit = Math.max(0, Number(params.get("n")) || 0);
+  const area = params.get("area") || "";
+  const sub = params.get("sub") || "";
+  let order = null, title = "", empty = "";
+
+  if (params.has("q")) {
+    order = params.get("q").split(",").filter(id => QBYID[id]);
+    title = order.length === 1 ? `Questão ${order[0]}` : `Treino de ${order.length} questões`;
+    empty = "Esta questão não está mais no banco.";
+  } else if (params.has("refazer")) {
+    const pending = shuffle(pendingErrorIds(wrongByArea(), QBYID, area));
+    order = limit ? pending.slice(0, limit) : pending;
+    title = `Refazer ${order.length} erro(s)`;
+    empty = "Nenhum erro pendente para refazer.";
+  } else if (sub) {
+    const pool = filterQuestions(QUESTIONS, { areaIds: area ? [area] : AREAS.map(a => a.id), subtopic: sub });
+    order = buildTraining(pool, limit);
+    title = `Treino: ${sub}`;
+    empty = "Nenhuma questão neste assunto.";
+  }
+  if (!order) return false;
+  if (!order.length) { linkNotice = empty; return false; }
+  if (!confirmReplace()) return false;
+  beginSession("treino", title, order, null);
+  return true;
 }
 
 // Questão removida do banco depois de salva a sessão sai da ordem.
@@ -176,9 +212,16 @@ function resumeCard() {
 function renderPicker() {
   stopTimer();
   const historic = historicExam(QUESTIONS, HISTORIC_YEAR);
+  const pending = pendingErrorIds(wrongByArea(), QBYID);
   app.innerHTML = `
     <h1 id="screen-start" tabindex="-1">Simulado</h1>
+    ${linkNotice ? `<p class="muted" role="status">${richText(linkNotice)}</p>` : ""}
     ${resumeCard()}
+    ${pending.length ? `<div class="card">
+      <h2>Refazer meus erros</h2>
+      <p class="muted">${pending.length} questão(ões) ainda sem acerto depois do último erro. Cada uma só sai da lista quando você acertar.</p>
+      <button class="btn primary" id="redo-errors">Refazer os erros (${pending.length})</button>
+    </div>` : ""}
     <div class="card">
       <h2>Prova completa</h2>
       <p class="muted">Sem correção até entregar. Você navega à vontade, marca questões para voltar e pode continuar depois; o tempo só corre com esta página aberta e visível.</p>
@@ -231,6 +274,10 @@ function renderPicker() {
   document.getElementById("start-exam").addEventListener("click", startExam);
   const hb = document.getElementById("start-historic");
   if (hb) hb.addEventListener("click", startHistoric);
+  const eb = document.getElementById("redo-errors");
+  if (eb) eb.addEventListener("click", () => {
+    if (confirmReplace()) beginSession("treino", `Refazer ${pending.length} erro(s)`, shuffle(pending), null);
+  });
   const rb = document.getElementById("resume");
   if (rb) rb.addEventListener("click", renderQuestion);
   const db = document.getElementById("discard");
@@ -618,6 +665,7 @@ function renderResult() {
         : `<p>Nenhuma questão respondida.</p>`}
       ${notes.map(n => `<p class="muted">${n}</p>`).join("")}
       <button class="btn primary" id="back">Novo simulado</button>
+      ${r.review.length ? `<button class="btn" id="redo-result">Refazer os erros e questões em branco (${r.review.length})</button>` : ""}
     </div>
     ${r.total ? `
     <div class="card">
@@ -646,6 +694,12 @@ function renderResult() {
     session = null;
     clearSession();
     renderPicker();
+  });
+  const redo = document.getElementById("redo-result");
+  if (redo) redo.addEventListener("click", () => {
+    if (confirm("Este resultado sai da tela ao começar. As respostas continuam no histórico.")) {
+      beginSession("treino", `Refazer ${r.review.length} questão(ões)`, shuffle(r.review), null);
+    }
   });
   showAtTop();
 }

@@ -13,6 +13,7 @@ out = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else "/tmp/estudo-standalone
 html = (S / "estudo.html").read_text(encoding="utf-8")
 css = (S / "shared" / "styles.css").read_text(encoding="utf-8")
 storage = (S / "shared" / "storage.js").read_text(encoding="utf-8")
+planner = (S / "shared" / "planner.js").read_text(encoding="utf-8")
 js = html.split('<script type="module">')[1].split("</script>")[0]
 
 # Dados: tudo que o app carrega. A projeção de questions.json acompanha o que a
@@ -42,12 +43,13 @@ data = {
 for a in [x["id"] for x in areas["areas"]]:
     data[f"data/content/{a}.json"] = json.loads((S / "data" / "content" / f"{a}.json").read_text(encoding="utf-8"))
 
-# storage.js: tira os `export` (vai tudo para o escopo do módulo único).
+# storage.js e planner.js: tira os `export` (vai tudo para o escopo do módulo único).
 storage = re.sub(r"^export ", "", storage, flags=re.M)
+planner = re.sub(r"^export ", "", planner, flags=re.M)
 
 # Troca os imports por: os dados embutidos, um loadJSON que lê do mapa, o
-# showFetchHelp (que nunca dispara aqui, mas mantém a assinatura) e o storage.
-imports = re.search(r'^import .*?;\s*^import .*?;\s*', js, re.M | re.S).group(0)
+# showFetchHelp (que nunca dispara aqui, mas mantém a assinatura) e os módulos.
+imports = re.search(r'^import .*?;\s*^import .*?;\s*^import .*?;\s*', js, re.M | re.S).group(0)
 # "</" escapado: um "</script>" dentro do JSON encerraria o <script> da página.
 blob = json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace("</", "<\\/")
 js = js.replace(imports, f"""const EMBEDDED = {blob};
@@ -61,6 +63,8 @@ function showFetchHelp(container) {{
 }}
 
 {storage}
+
+{planner}
 """, 1)
 
 # Suporte aos três estados de tema do visualizador: a escolha explícita
