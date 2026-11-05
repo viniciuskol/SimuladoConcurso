@@ -496,6 +496,129 @@
       "sourceQuestionId": "transp23e6-q54"
     },
     {
+      "id": "fc-gestao-proj-037",
+      "area": "gestao-proj",
+      "front": "Por que se diz que o plano de gerenciamento do projeto é elaborado progressivamente, e por onde entram suas atualizações?",
+      "back": "Ele ganha detalhe ao longo do projeto. No PMBOK 4ª edição, as mudanças aprovadas chegam a ele pelo processo Realizar o Controle Integrado de Mudanças.",
+      "sourceQuestionId": "prova6-q24"
+    },
+    {
+      "id": "fc-gestao-proj-038",
+      "area": "gestao-proj",
+      "front": "Que técnicas a Análise da Rede do Cronograma reúne no PMBOK 4ª edição?",
+      "back": "Entre outras, o método do caminho crítico, o método da corrente crítica, a análise de cenários 'e se' e o nivelamento de recursos.",
+      "sourceQuestionId": "prova6-q26"
+    },
+    {
+      "id": "fc-gestao-proj-039",
+      "area": "gestao-proj",
+      "front": "Qual é a técnica e quais são as saídas de Encerrar o Projeto ou Fase no PMBOK 4ª edição?",
+      "back": "A técnica é a opinião especializada. As saídas são a transição do produto, serviço ou resultado final e as atualizações dos ativos de processos organizacionais.",
+      "sourceQuestionId": "prova6-q27"
+    },
+    {
+      "id": "fc-gestao-proj-040",
+      "area": "gestao-proj",
+      "front": "A que processos pertencem entrevistas e oficinas facilitadas, análise da variação e decomposição?",
+      "back": "Entrevistas e oficinas facilitadas são de Coletar os Requisitos. Análise da variação é técnica de controle, como em Controlar o Escopo. Decomposição é de Criar a EAP.",
+      "sourceQuestionId": "prova6-q28"
+    },
+    {
+      "id": "fc-gestao-proj-041",
+      "area": "gestao-proj",
+      "front": "Que saídas típicas tem o processo Mobilizar a Equipe do Projeto?",
+      "back": "As designações de pessoal do projeto e os calendários dos recursos.",
+      "sourceQuestionId": "prova6-q30"
+    },
+    {
+      "id": "fc-gestao-proj-042",
+      "area": "gestao-proj",
+      "front": "Que documento produzido antes é entrada essencial de Definir o Escopo, e por que a EAP não serve de resposta?",
+      "back": "A documentação dos requisitos, saída de Coletar os Requisitos. A EAP vem depois: ela é saída de Criar a EAP, que usa a declaração do escopo.",
+      "sourceQuestionId": "petro2012-q37"
+    },
+    {
+      "id": "fc-gestao-proj-043",
+      "area": "gestao-proj",
+      "front": "Qual a diferença entre validar o escopo e controlar a qualidade?",
+      "back": "Validar o escopo busca a aceitação formal das entregas pelo cliente ou patrocinador. Controlar a qualidade verifica se as entregas estão corretas e, em geral, vem antes. No PMBOK 4ª edição, o processo se chama Verificar o Escopo.",
+      "sourceQuestionId": "prova07-q15"
+    },
+    {
+      "id": "fc-gestao-proj-044",
+      "area": "gestao-proj",
+      "front": "Qual a diferença entre escopo do projeto e escopo do produto?",
+      "back": "O escopo do produto reúne as características e funções do que será entregue. O escopo do projeto é o trabalho necessário para fazer essa entrega.",
+      "sourceQuestionId": "prova07-q20"
+    },
+    {
+      "id": "fc-gestao-proj-045",
+      "area": "gestao-proj",
+      "front": "Quais processos formam o grupo de encerramento nas edições 4 a 6 do PMBOK?",
+      "back": "Na 4ª e na 5ª edição, Encerrar o Projeto ou Fase e Encerrar as Aquisições. Na 6ª, só Encerrar o Projeto ou Fase: o encerramento das aquisições passa a ser tratado em Controlar as Aquisições.",
+      "sourceQuestionId": "petro2012-q34"
+    },
+    {
+      "id": "fc-gestao-proj-046",
+      "area": "gestao-proj",
+      "front": "O que é o planejamento em ondas sucessivas (rolling wave)?",
+      "back": "Detalhar o trabalho próximo e manter o trabalho distante em nível mais alto, refinando o plano conforme surgem informações. Sem todas as informações, o gerente planeja e atualiza de forma iterativa.",
+      "sourceQuestionId": "petro2012-q28"
+    },
+    {
+      "id": "fc-gestao-proj-047",
+      "area": "gestao-proj",
+      "front": "A que correspondem BCWS, BCWP e ACWP nos termos atuais de valor agregado?",
+      "back": "BCWS é o valor planejado (VP), BCWP é o valor agregado (VA) e ACWP é o custo real (CR). 'Custo real do trabalho previsto' não é métrica do método.",
+      "sourceQuestionId": "petro08-q35"
+    },
+    {
+      "id": "fc-gestao-proj-048",
+      "area": "gestao-proj",
+      "front": "O que um controle formal de mudanças deve cobrir, e como ficam as mudanças de emergência?",
+      "back": "Deve rastrear mudanças em qualquer fator crítico do projeto, como escopo, prazo e custo. Emergências podem ter categoria pré-aprovada, mas continuam registradas e rastreadas.",
+      "sourceQuestionId": "petro08-q36"
+    },
+    {
+      "id": "fc-gestao-proj-049",
+      "area": "gestao-proj",
+      "front": "Para que servem a carta de controle e o diagrama de Ishikawa?",
+      "back": "A carta de controle mostra se a medida saiu dos limites definidos. O diagrama de Ishikawa, ou espinha de peixe, organiza a investigação das causas do problema.",
+      "sourceQuestionId": "petro2012-q26"
+    },
+    {
+      "id": "fc-gestao-proj-050",
+      "area": "gestao-proj",
+      "front": "Que quatro grupos de fatores dão origem a projetos no PMBOK 6ª edição?",
+      "back": "Atender a regulamentos ou requisitos legais; atender a pedidos das partes interessadas; implementar ou mudar estratégias de negócio ou tecnologia; e criar, melhorar ou corrigir produtos, processos ou serviços.",
+      "sourceQuestionId": "psjpn2018-q25"
+    },
+    {
+      "id": "fc-gestao-proj-051",
+      "area": "gestao-proj",
+      "front": "No fechamento do projeto, o que fazer com as experiências ruins nas lições aprendidas, e quando esse fechamento ocorre?",
+      "back": "As experiências ruins ficam registradas, porque também ensinam. Os fechamentos administrativos ocorrem também ao fim de cada fase, e até um resultado melhor que o previsto deve ter as causas investigadas.",
+      "sourceQuestionId": "petro08-q38"
+    },
+    {
+      "id": "fc-gestao-proj-052",
+      "area": "gestao-proj",
+      "front": "Quais são as 10 áreas de conhecimento do PMBOK 6ª edição?",
+      "back": "Integração, escopo, cronograma, custos, qualidade, recursos, comunicações, riscos, aquisições e partes interessadas."
+    },
+    {
+      "id": "fc-gestao-proj-053",
+      "area": "gestao-proj",
+      "front": "Quantos processos têm as edições 4, 5 e 6 do PMBOK?",
+      "back": "42 na 4ª, 47 na 5ª e 49 na 6ª. A 7ª edição troca essa estrutura por princípios e domínios de desempenho."
+    },
+    {
+      "id": "fc-gestao-proj-054",
+      "area": "gestao-proj",
+      "front": "Que mudanças de áreas de conhecimento separam as edições 4, 5 e 6 do PMBOK?",
+      "back": "A 4ª tem 9 áreas. A 5ª cria a 10ª, partes interessadas. A 6ª renomeia tempo para cronograma e recursos humanos para recursos."
+    },
+    {
       "id": "fc-eng-sw-001",
       "area": "eng-sw",
       "front": "Qual é a diferença entre verificação e validação?",
@@ -2335,6 +2458,96 @@
       "area": "portugues",
       "front": "Como separar a coordenada explicativa da subordinada causal quando as duas vêm com 'pois' ou 'porque'?",
       "back": "A explicativa justifica o ato de dizer e costuma seguir imperativo ou suposição: 'Traga o guarda-chuva, pois vai chover'. A causal dá a causa real do fato enunciado: 'Não saí porque chovia'. Só na explicativa cabe a paráfrase 'digo isso porque...'."
+    },
+    {
+      "id": "fc-portugues-040",
+      "area": "portugues",
+      "front": "O que o comando 'Segundo o texto' exige?",
+      "back": "O que o autor afirma ou sustenta. Sua opinião e seu conhecimento externo não contam: localize o trecho que justifica a alternativa.",
+      "sourceQuestionId": "prova6-q1"
+    },
+    {
+      "id": "fc-portugues-041",
+      "area": "portugues",
+      "front": "Como resolver 'a única oposição que NÃO aparece no texto é'?",
+      "back": "Procure cada par no texto e elimine os que têm trecho de apoio. A resposta é o par sem apoio nenhum, mesmo que pareça plausível.",
+      "sourceQuestionId": "prova6-q2"
+    },
+    {
+      "id": "fc-portugues-042",
+      "area": "portugues",
+      "front": "Qual a diferença entre 'segundo o texto' e 'infere-se'?",
+      "back": "Inferir é concluir algo não dito, mas autorizado pelas pistas. 'Um desejo que não quer acabar de morrer' permite inferir que Lobo Neves ainda esperava ter êxito na política, não que estivesse morrendo.",
+      "sourceQuestionId": "transp15-q4"
+    },
+    {
+      "id": "fc-portugues-043",
+      "area": "portugues",
+      "front": "No texto de Machado, Lobo Neves fala do teatro. Por que 'teatro da época' não é a causa do desabafo?",
+      "back": "O teatro é metáfora. 'Vira o teatro pelo lado da plateia' fala da vida pública vista de fora, e é com ela que ele está insatisfeito. Separe a imagem usada do assunto real.",
+      "sourceQuestionId": "transp15-q1"
+    },
+    {
+      "id": "fc-portugues-044",
+      "area": "portugues",
+      "front": "Que efeito tem a abertura 'Estou me vendo debaixo de uma árvore' numa crônica?",
+      "back": "Marca reminiscência: a narradora adulta evoca uma cena vivida no passado, como se a visse de novo.",
+      "sourceQuestionId": "transp23e6-q1"
+    },
+    {
+      "id": "fc-portugues-045",
+      "area": "portugues",
+      "front": "Como responder 'as palavras que marcam o sentimento de insegurança são'?",
+      "back": "Veja o que cada termo descreve no contexto e exija que os dois do par marquem o sentimento. 'Rodeios' e 'gaguejar' descrevem hesitação ao falar. Um par com um só termo certo está errado.",
+      "sourceQuestionId": "transp23e6-q2"
+    },
+    {
+      "id": "fc-portugues-046",
+      "area": "portugues",
+      "front": "Como achar o motivo da reação de um personagem?",
+      "back": "Releia o trecho indicado e o entorno, porque a causa costuma estar explícita. Em 'À moda brasileira', o susto vem do temor de que escritos em português não sejam conhecidos.",
+      "sourceQuestionId": "transp23e6-q4"
+    },
+    {
+      "id": "fc-portugues-047",
+      "area": "portugues",
+      "front": "Numa questão 'Segundo os Textos I e II', que condição a alternativa precisa cumprir?",
+      "back": "Valer para os dois textos. A alternativa que descreve bem só um deles está errada, por mais exata que seja.",
+      "sourceQuestionId": "petro2012-q1"
+    },
+    {
+      "id": "fc-portugues-048",
+      "area": "portugues",
+      "front": "O que pede 'o pensamento do autor citado está ratificado em tal trecho'?",
+      "back": "O trecho que confirma aquela ideia, mesmo com outras palavras. Compare o sentido, não a repetição de termos.",
+      "sourceQuestionId": "petro08-q2"
+    },
+    {
+      "id": "fc-portugues-049",
+      "area": "portugues",
+      "front": "Que marcas indicam um texto predominantemente argumentativo?",
+      "back": "Uma tese defendida com argumentos, como citações de autoridade e exemplos. Narrar fatos ou descrever não é o objetivo principal, ainda que apareçam para apoiar a tese.",
+      "sourceQuestionId": "petro08-q5"
+    },
+    {
+      "id": "fc-portugues-050",
+      "area": "portugues",
+      "front": "Como avaliar uma alternativa que resume o raciocínio de um parágrafo?",
+      "back": "Refaça a cadeia de ideias e confira a ordem das relações, como causa e consequência. Mesmas palavras em relação trocada tornam a alternativa errada.",
+      "sourceQuestionId": "petro08-q6"
+    },
+    {
+      "id": "fc-portugues-051",
+      "area": "portugues",
+      "front": "O que 'assinale a afirmativa IMPROCEDENTE' pede?",
+      "back": "A que o texto contradiz ou não sustenta. Marque a incorreta: no fragmento 'Prazer e Vocação', vocação é algo imanente, então 'dom que se adquire com o tempo' é a improcedente.",
+      "sourceQuestionId": "petro08-q7"
+    },
+    {
+      "id": "fc-portugues-052",
+      "area": "portugues",
+      "front": "Quais são os três desvios mais comuns de alternativas erradas em compreensão de texto?",
+      "back": "Extrapolação, que vai além do que o texto permite; redução, que toma uma parte pelo todo; e contradição, que afirma o contrário do texto."
     },
     {
       "id": "fc-ingles-026",
