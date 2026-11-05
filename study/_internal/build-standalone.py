@@ -21,7 +21,7 @@ js = html.split('<script type="module">')[1].split("</script>")[0]
 # ela abre a questão inteira (texto-base, enunciado completo, as 5 alternativas, o
 # gabarito, o resumo da explicação e a explicação de cada alternativa errada) e cita a
 # prova de origem. Fica fora só o que nenhuma tela publicada lê:
-# `verification`, `status`, `annulled`.
+# o resto de `verification`, `status`, `annulled`.
 areas = json.loads((S / "data" / "areas.json").read_text(encoding="utf-8"))
 qs = json.loads((S / "data" / "questions.json").read_text(encoding="utf-8"))["questions"]
 
@@ -41,6 +41,7 @@ data = {
          "stem": q.get("stem") or "",
          "correctKey": q.get("correctKey"),
          "explanationSummary": q.get("explanationSummary"),
+         "verification": {"confidence": (q.get("verification") or {}).get("confidence")},
          "alternatives": [{k: a[k] for k in ("key", "text", "explanation") if a.get(k)}
                           for a in q.get("alternatives") or []],
          "source": {k: (q.get("source") or {}).get(k)

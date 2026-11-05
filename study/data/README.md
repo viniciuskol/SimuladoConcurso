@@ -1,6 +1,6 @@
 # study/data — invariantes
 
-- `questions.json` só contém questões com `verification.agree: true` e `confidence: "high"`. Nunca escrever uma entrada aqui sem passar pelo processo de verificação (ver plano em `~/.claude/plans/vou-fazer-um-concurso-compiled-wreath.md`, seção F).
+- `questions.json` só contém questões com `verification.agree: true`. A regra é `confidence: "high"`; as 10 questões antigas com `"medium"` aparecem no app com aviso. Nunca escrever uma entrada aqui sem passar pelo processo de verificação (ver plano em `~/.claude/plans/vou-fazer-um-concurso-compiled-wreath.md`, seção F).
 - Divergências entre a resposta re-derivada e o gabarito impresso vão para `study/_internal/review-queue.json`, nunca direto para `questions.json`.
 - `areas.json` é a fonte única da taxonomia: 8 áreas técnicas do Anexo IV do Edital nº 04/2026, Ênfase 5 (Conhecimentos Específicos, 50 questões) + 2 áreas de Conhecimentos Gerais/Básicos comuns a todas as ênfases (`portugues`, `ingles` — 10+10 questões, ver `sourceNote` de cada uma). Os `id`s são estáveis — não renomear, só ajustar `label`/`topics` se necessário. Por decisão explícita do usuário em 2026-08-21, Português/Inglês foram incluídos no app mesmo sendo de uma fase de prova separada (Conhecimentos Gerais) — provas já processadas antes dessa decisão (prova_6, exame 2018) devem ser reprocessadas para recuperar essas questões que haviam sido descartadas.
 - `content/<area-id>.json` só deve citar como `patterns[].evidence` questões que já existem em `questions.json`.

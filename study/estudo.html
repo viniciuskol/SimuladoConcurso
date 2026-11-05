@@ -23,7 +23,7 @@ import { dueCards, rateCard, statsByArea, srsSummary, wrongByArea, loadAttempts,
          planItemKey, loadPlanChecks, setPlanCheck, planProgress,
          exportProgress, parseBackup, restoreProgress } from "./shared/storage.js";
 import { subtopicPriority, cardsForQuestion, cardsForQuestions, pendingErrorIds,
-         dailyCards, fullExamDays, fullExamAdvice, answeredOn } from "./shared/planner.js";
+         dailyCards, fullExamDays, fullExamAdvice, answeredOn, contentNotices } from "./shared/planner.js";
 
 const app = document.getElementById("app");
 let AREAS = [], CARDS = [], QCOUNT = {}, CONTENT = {}, PLAN = null, QBYID = {};
@@ -487,6 +487,7 @@ function questionReview(q) {
     ${q.explanationSummary
       ? `<p>${richText(q.explanationSummary)}</p>`
       : `<p class="muted">Sem explicação registrada.</p>`}
+    ${contentNotices(q).map(text => `<p class="muted">⚠ ${esc(text)}</p>`).join("")}
     <p class="review-h">Por que as outras estão erradas</p>
     ${wrongWhy
       ? `<ul>${wrongWhy}</ul>`

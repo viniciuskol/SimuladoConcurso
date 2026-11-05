@@ -224,7 +224,7 @@
       ],
       "goal": "Cobrir o Anexo IV de segurança em largura (é o subtópico mais espalhado da prova de 2023) e transformar lógica em pontos garantidos.",
       "checklist": [
-        "Fechar os 36 cards de seg-info e os 27 de logica com 2 rodadas de acerto",
+        "Fechar os 38 cards de seg-info e os 27 de logica com 2 rodadas de acerto",
         "Montar o glossário de siglas do item 9.2 e 9.5 (firewall, proxy, IPS/IDS, DLP, CASB, SIEM, antivírus, EDR, WAF, SAST/DAST/IAST) com uma frase de função cada, e acertar transp23e6-q43, transp15-q47 e transp23e6-q38 sem consultar",
         "Escrever de memória, com a forma simbólica ao lado, as 14 regras e equivalências (Modus Ponens, Modus Tollens, silogismo hipotético e disjuntivo, dilema construtivo e destrutivo, simplificação, adição, conjunção, absorção, De Morgan, contraposição, exportação, distributivas) e as duas falácias formais",
         "Refazer as 22 questões de logica (prova6-q63, prova6-q65, prova6-q66, prova6-q67, prova6-q69, prova07-q22, prova07-q23, psjpn2018-q67, psjpn2018-q68, psjpn2018-q69, psjpn2018-q70, transp23e6-q28, transp23e6-q35, transp23e6-q37, petro2012-q65, petro2012-q67, petro2012-q68, petro2012-q69, petro2012-q70, petro08-q40, petro08-q41, petro08-q42) — atenção: prova07-q22 está com a extração dos símbolos comprometida (três alternativas tautológicas), então use-a como treino de raciocínio e não como aferição de gabarito — a área quase triplicou de tamanho e passou a ter blocos novos (tautologia/insatisfatibilidade, contagem em tabela-verdade, quantificadores) resolvendo cada uma pelo método mais curto possível, e justificando por que escolheu tabela, linha única ou equivalência",
@@ -271,7 +271,7 @@
         "Fazer 2 simulados completos de 70 questões, cronometrados de ponta a ponta e na ordem de ataque planejada (inglês, português, técnicas), com pelo menos 4 dias entre eles",
         "Depois de cada simulado, classificar TODO erro em uma de três causas — não sabia, sabia e li errado, sabia e errei a conta — e tratar cada causa de um jeito diferente",
         "Reler os crossPatterns deste plano e, para cada um, apontar uma questão do simulado em que ele apareceu (se um padrão não apareceu, dizer isso por escrito)",
-        "Rodar o deck completo (398 cards, já com os 16 de lógica e os 34 do ciclo 6) em modo intercalado, retirando só os cards com 3 acertos consecutivos",
+        "Rodar o deck completo (400 cards, já com os 16 de lógica e os 34 do ciclo 6) em modo intercalado, retirando só os cards com 3 acertos consecutivos",
         "Refazer, sem consultar, todas as questões erradas nos dois simulados, e considerar o bloco fechado quando o refazimento tiver acerto >= 90%",
         "Na última semana, nada de conteúdo novo: só cards, questões erradas e a folha de fórmulas/siglas; dormir cedo nas duas noites anteriores à prova"
       ]

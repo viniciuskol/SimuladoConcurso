@@ -55,6 +55,24 @@ export function subtopicPriority(questions, attempts) {
   }).sort((a, b) => b.score - a.score);
 }
 
+// Avisos da correção: conteúdo cobrado por edição antiga e explicação menos segura.
+// Só aparecem depois de responder, para não mudar a questão em relação à prova.
+export function contentNotices(q) {
+  const notices = [];
+  const stem = String(q.stem ?? "");
+  const year = q.source?.year ?? 0;
+  if (/PMBOK/i.test(stem) && (year < 2018 || /PMBOK\s*4/i.test(stem))) {
+    notices.push(`Questão de ${year}, baseada em edição antiga do PMBOK. O edital pede a 7ª edição e mantém processos, grupos de processos e áreas de conhecimento.`);
+  }
+  if (/27002/.test(stem)) {
+    notices.push(`Questão de ${year}. A ISO 27002 foi reorganizada na edição 2022, então a redação e a estrutura cobradas aqui podem ter mudado.`);
+  }
+  if (q.verification?.confidence === "medium") {
+    notices.push("O gabarito é o oficial, mas a explicação tem confiança média. Se discordar, confira na prova ou na fonte.");
+  }
+  return notices;
+}
+
 // Cards citados pela própria questão primeiro, depois os de outras questões do assunto.
 export function cardsForQuestion(q, cards, byId) {
   const own = cards.filter(c => c.sourceQuestionId === q.id);

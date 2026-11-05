@@ -890,35 +890,35 @@
       "id": "fc-seg-info-003",
       "area": "seg-info",
       "front": "Segundo a NBR/ISO 27002, quais são os quatro objetivos da segurança da informação?",
-      "back": "Garantir a continuidade do negócio; minimizar o risco ao negócio; maximizar o retorno sobre os investimentos; e maximizar as oportunidades de negócio.",
+      "back": "Garantir a continuidade do negócio; minimizar o risco ao negócio; maximizar o retorno sobre os investimentos; e maximizar as oportunidades de negócio. Cobrado em prova de 2010, antes da edição 2022 da norma.",
       "sourceQuestionId": "prova07-q26"
     },
     {
       "id": "fc-seg-info-004",
       "area": "seg-info",
       "front": "Segundo a ISO 27002, qual propriedade a proteção contra códigos maliciosos e códigos móveis visa proteger?",
-      "back": "A integridade do software e da informação.",
+      "back": "A integridade do software e da informação. Cobrado em prova de 2010, antes da edição 2022 da norma.",
       "sourceQuestionId": "prova07-q27"
     },
     {
       "id": "fc-seg-info-005",
       "area": "seg-info",
-      "front": "Em que grupo de controles da ISO 27002 fica a proteção contra malware?",
-      "back": "Na segurança nas operações — não em comunicações, controle de acesso, recursos humanos ou segurança física.",
+      "front": "Em que grupo da ISO 27002 fica a proteção contra malware, nas edições 2013 e 2022?",
+      "back": "Na edição 2013, em segurança nas operações, como cobrado na prova de 2023. Na edição 2022, que reorganizou os controles em 4 temas, no tema tecnológico.",
       "sourceQuestionId": "transp23e6-q44"
     },
     {
       "id": "fc-seg-info-006",
       "area": "seg-info",
       "front": "Segundo a ISO 27002, quando e onde as responsabilidades de segurança da informação devem ser atribuídas aos funcionários?",
-      "back": "Antes da contratação, nas descrições de cargo e nos termos e condições de contratação. O termo de confidencialidade é assinado antes da concessão de acesso.",
+      "back": "Antes da contratação, nas descrições de cargo e nos termos e condições de contratação. O termo de confidencialidade é assinado antes da concessão de acesso. Cobrado em prova de 2011, antes da edição 2022 da norma.",
       "sourceQuestionId": "prova6-q64"
     },
     {
       "id": "fc-seg-info-007",
       "area": "seg-info",
       "front": "O que a ISO 27002 recomenda especificamente no controle de acesso à rede?",
-      "back": "Usar métodos apropriados de autenticação para controlar o acesso de usuários remotos.",
+      "back": "Usar métodos apropriados de autenticação para controlar o acesso de usuários remotos. Cobrado em prova de 2018, antes da edição 2022 da norma.",
       "sourceQuestionId": "transp15-q46"
     },
     {
@@ -932,7 +932,7 @@
       "id": "fc-seg-info-009",
       "area": "seg-info",
       "front": "Segundo a ISO 27002, o que deve ser rotulado na classificação da informação?",
-      "back": "As informações e as saídas geradas pelos sistemas que tratam dados confidenciais, conforme o valor e a sensibilidade para a organização.",
+      "back": "As informações e as saídas geradas pelos sistemas que tratam dados confidenciais, conforme o valor e a sensibilidade para a organização. Cobrado em prova de 2018, antes da edição 2022 da norma.",
       "sourceQuestionId": "psjpn2018-q65"
     },
     {
@@ -1083,7 +1083,7 @@
       "id": "fc-seg-info-032",
       "area": "seg-info",
       "front": "Qual publicação define o ciclo de vida de resposta a incidentes?",
-      "back": "NIST SP 800-61. A SP 800-30 trata de avaliação de riscos e a SP 800-34, de planejamento de contingência.",
+      "back": "NIST SP 800-61, tratada por esse ciclo de vida na Rev. 2. A SP 800-30 trata de avaliação de riscos e a SP 800-34, de planejamento de contingência.",
       "sourceQuestionId": "transp23e6-q42"
     },
     {
@@ -1110,6 +1110,18 @@
       "area": "seg-info",
       "front": "Quantas funções tem o NIST Cybersecurity Framework?",
       "back": "Cinco na versão 1.1 — Identificar, Proteger, Detectar, Responder e Recuperar — e seis na versão 2.0, que acrescentou Governar."
+    },
+    {
+      "id": "fc-seg-info-037",
+      "area": "seg-info",
+      "front": "O que mudou da NIST SP 800-61 Rev. 2 para a Rev. 3?",
+      "back": "A Rev. 2, de 2012, organiza a resposta em quatro fases: preparação; detecção e análise; contenção, erradicação e recuperação; e atividade pós-incidente. A Rev. 3, de abril de 2025, a substituiu e distribui a resposta a incidentes pelas seis funções do CSF 2.0."
+    },
+    {
+      "id": "fc-seg-info-038",
+      "area": "seg-info",
+      "front": "Como a estrutura da ISO/IEC 27002 mudou de 2013 para 2022?",
+      "back": "A edição 2013 tem 114 controles em 14 seções. A edição 2022 tem 93 controles em 4 temas: organizacional, pessoas, físico e tecnológico. Questão que nomeia a edição se responde por ela."
     },
     {
       "id": "fc-gestao-ti-001",

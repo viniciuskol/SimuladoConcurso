@@ -20,10 +20,10 @@
         "ISO/IEC 27001: REQUISITOS do SGSI; é a norma certificável/auditável.",
         "ISO/IEC 27002: CÓDIGO DE PRÁTICA (catálogo de controles e diretrizes). Não se certifica em 27002.",
         "ISO/IEC 27005: gestão de riscos de segurança da informação. ISO 31000: gestão de riscos em geral. ISO 22301: continuidade de negócios.",
-        "ISO 27002 edição 2013: 14 seções de controle (5 a 18), entre elas segurança em recursos humanos, controle de acesso, criptografia, segurança física e do ambiente, segurança nas operações, segurança nas comunicações, gestão de incidentes.",
-        "ISO 27002 edição 2022: controles reorganizados em 4 temas — organizacional, pessoas, físico e tecnológico.",
+        "ISO 27002 edição 2013: 114 controles em 14 seções (5 a 18), entre elas segurança em recursos humanos, controle de acesso, criptografia, segurança física e do ambiente, segurança nas operações, segurança nas comunicações, gestão de incidentes.",
+        "ISO 27002 edição 2022: 93 controles reorganizados em 4 temas — organizacional, pessoas, físico e tecnológico.",
         "NIST CSF 1.1: 5 funções — Identificar, Proteger, Detectar, Responder, Recuperar. NIST CSF 2.0: acrescentou GOVERNAR, ficando 6. Cite a versão sempre que a questão citar um número.",
-        "NIST SP 800-61: ciclo de vida de resposta a incidentes. SP 800-30: avaliação de riscos. SP 800-34: planejamento de contingência. SP 800-207: arquitetura Zero Trust.",
+        "NIST SP 800-61: resposta a incidentes. A Rev. 2 (2012) tem 4 fases: preparação; detecção e análise; contenção, erradicação e recuperação; pós-incidente. A Rev. 3 (abril de 2025) a substituiu e distribui a resposta pelas 6 funções do CSF 2.0. SP 800-30: avaliação de riscos. SP 800-34: planejamento de contingência. SP 800-207: arquitetura Zero Trust.",
         "Sarbanes-Oxley (SOX): lei norte-americana de governança e controles internos sobre relatórios financeiros — cai como contexto de conformidade, não como norma técnica de TI."
       ]
     },
@@ -303,7 +303,7 @@
     {
       "term": "NIST SP 800-61",
       "confusedWith": "NIST SP 800-30 e 800-34",
-      "distinction": "800-61: ciclo de vida de resposta a incidentes. 800-30: avaliação/gestão de riscos. 800-34: planejamento de contingência de sistemas. Também não confunda com a ISO 27035, que trata de gestão de incidentes."
+      "distinction": "800-61: resposta a incidentes; o ciclo de 4 fases é da Rev. 2, e a Rev. 3 (2025) segue as funções do CSF 2.0. 800-30: avaliação/gestão de riscos. 800-34: planejamento de contingência de sistemas. Também não confunda com a ISO 27035, que trata de gestão de incidentes."
     },
     {
       "term": "criptografia simétrica",

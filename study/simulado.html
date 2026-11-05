@@ -23,7 +23,7 @@ import { recordAttempt, loadAttempts, statsByArea, clearAttempts, wrongByArea,
          loadSession, saveSession, clearSession } from "./shared/storage.js";
 import { EXAM_SHAPE, blockLabel, buildExam, historicExam, filterQuestions,
          buildTraining, examSources, summarize, editalCut, shuffle } from "./shared/exam.js";
-import { pendingErrorIds } from "./shared/planner.js";
+import { pendingErrorIds, contentNotices } from "./shared/planner.js";
 
 const app = document.getElementById("app");
 let AREAS = [], QUESTIONS = [], QBYID = {};
@@ -56,6 +56,8 @@ const figureHtml = img => `<a class="q-figure" href="${richText(img.src)}" targe
 // [[fig:N]] marca no enunciado onde entra a figura N, na ordem da prova original.
 const stemHtml = q => richText(q.stem).replace(/\s*\[\[fig:(\d+)\]\]\s*/g, (_, n) =>
   q.images?.[n - 1] ? figureHtml(q.images[n - 1]) : "");
+
+const noticesHtml = q => contentNotices(q).map(text => `<p class="muted">⚠ ${richText(text)}</p>`).join("");
 
 function showAtTop() {
   window.scrollTo(0, 0);
@@ -563,6 +565,7 @@ function showFeedback(q, notSaved = false) {
       <p class="feedback-banner ${correct ? "correct" : "incorrect"}">${correct ? "✅ Certo!" : "❌ Errado."}</p>
       ${notSaved ? `<p class="muted">⚠ Não foi possível salvar esta resposta no navegador, então ela não entra no histórico.</p>` : ""}
       <p>${richText(q.explanationSummary)}</p>
+      ${noticesHtml(q)}
       ${wrongExplain ? `<details class="explain"><summary>Por que as outras estão erradas</summary><ul>${wrongExplain}</ul></details>` : ""}
       <button class="btn primary" id="next">${session.idx + 1 < session.order.length ? "Próxima" : "Ver resultado"}</button>
     </div>`;
@@ -645,6 +648,7 @@ function reviewItem(id) {
     <div class="alt-list review">${q.alternatives.map(a => reviewAlt(a, q, chosen)).join("")}</div>
     <p class="review-h">Por que o gabarito é ${q.correctKey}</p>
     <p>${richText(q.explanationSummary)}</p>
+    ${noticesHtml(q)}
     ${wrongWhy ? `<p class="review-h">Por que as outras estão erradas</p><ul>${wrongWhy}</ul>` : ""}
     ${q.subtopic ? `<p class="muted q-src">${richText(q.subtopic)}${q.source?.year ? ` · ${q.source.year}` : ""}</p>` : ""}
   </details>`;
