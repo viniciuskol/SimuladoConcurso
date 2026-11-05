@@ -246,6 +246,37 @@ export function planProgress(block, state) {
   return { done: done.size, total: all.size };
 }
 
+/* ---------- Sessão do simulado em andamento ---------- */
+
+const SESSION_KEY = "transpetro2026:session";
+
+// Devolve null para qualquer conteúdo que não dê para retomar com segurança.
+export function loadSession() {
+  try {
+    const s = JSON.parse(localStorage.getItem(SESSION_KEY));
+    const plainObject = v => v && typeof v === "object" && !Array.isArray(v);
+    if (!plainObject(s) || s.version !== 1) return null;
+    if (s.kind !== "prova" && s.kind !== "treino") return null;
+    if (s.status !== "active" && s.status !== "finished") return null;
+    if (!Array.isArray(s.order) || !s.order.length || !s.order.every(id => typeof id === "string")) return null;
+    if (!plainObject(s.answers) || !plainObject(s.flagged) || !plainObject(s.timeMs)) return null;
+    if (!Number.isInteger(s.idx) || !Number.isFinite(s.elapsedMs)) return null;
+    if (s.limitMs !== null && !Number.isFinite(s.limitMs)) return null;
+    return s;
+  } catch { return null; }
+}
+
+export function saveSession(session) {
+  try {
+    localStorage.setItem(SESSION_KEY, JSON.stringify(session));
+    return true;
+  } catch { return false; }
+}
+
+export function clearSession() {
+  try { localStorage.removeItem(SESSION_KEY); } catch { /* ignora */ }
+}
+
 /* ---------- Backup do progresso ---------- */
 
 const BACKUP_APP = "transpetro2026";
