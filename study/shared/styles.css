@@ -321,3 +321,22 @@ a.btn { text-decoration: none; }
 .stem-card { white-space: pre-wrap; overflow-wrap: anywhere; }
 .q-figure { display: block; margin: 12px 0; }
 .q-figure img { display: block; max-width: 100%; height: auto; border-radius: 8px; background: #fff; }
+/* Figura larga: mantém o texto legível e rola para os lados em vez de encolher. */
+.q-figure.wide { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.q-figure.wide + .q-figure-hint { display: block; margin: -6px 0 12px; font-size: 0.82rem; color: var(--text-dim); }
+.q-figure.wide img { width: 100%; max-width: none; }
+@media (min-width: 620px) { .q-figure.wide + .q-figure-hint { display: none; } }
+
+.fig-zoom-open, .fig-zoom-open body { overflow: hidden; }
+.fig-zoom { position: fixed; inset: 0; z-index: 100; display: flex; flex-direction: column; background: var(--bg); }
+.fig-zoom-close { flex: 0 0 auto; width: auto; min-height: 44px; margin: 8px 8px 8px auto; padding: 8px 18px; justify-content: center; }
+.fig-zoom-scroll { flex: 1 1 auto; overflow: auto; -webkit-overflow-scrolling: touch; padding: 0 8px 16px; }
+.fig-zoom-scroll img { display: block; max-width: none; height: auto; border-radius: 8px; background: #fff; }
+
+/* Telas estreitas: o título não quebra em duas linhas, senão a barra cresce e cobre o cronômetro. */
+.topbar > a { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.topbar nav { flex: 0 0 auto; }
+@media (max-width: 360px) { .topbar > a { font-size: 0.85rem; } }
+
+/* O foco vai para o início da tela só para leitores de tela: sem contorno visível. */
+#screen-start:focus { outline: none; }

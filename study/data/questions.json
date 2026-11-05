@@ -1935,7 +1935,8 @@
       "images": [
         {
           "src": "data/figures/psjpn2018-q56-1.png",
-          "alt": "Modelo conceitual: Álbum contém Cromo, com cardinalidades (1,1) e (0,n); Cromo possui Fabricação, com (1,1) e (0,n)."
+          "alt": "Modelo conceitual: Álbum contém Cromo, com cardinalidades (1,1) e (0,n); Cromo possui Fabricação, com (1,1) e (0,n).",
+          "minWidth": 326
         }
       ],
       "alternatives": [
@@ -4827,7 +4828,8 @@
       "images": [
         {
           "src": "data/figures/prova07-q14-1.png",
-          "alt": "Tabela de atividades com responsável, duração e precedentes: 1, 10 dias; 2, 8; 3, 3, depois de 1; 4, 5, depois de 2 e 3; 5, 4, depois de 3; 6, 6, depois de 4; 7, 4, depois de 5; 8, 5, depois de 6 e 7."
+          "alt": "Tabela de atividades com responsável, duração e precedentes: 1, 10 dias; 2, 8; 3, 3, depois de 1; 4, 5, depois de 2 e 3; 5, 4, depois de 3; 6, 6, depois de 4; 7, 4, depois de 5; 8, 5, depois de 6 e 7.",
+          "minWidth": 358
         }
       ],
       "alternatives": [
@@ -7696,7 +7698,8 @@
       "images": [
         {
           "src": "data/figures/transp15-q38-1.png",
-          "alt": "Comandos CREATE TABLE de FORNECEDOR, MATERIAL e VENDA. Um fornecedor pode vender muitos materiais, e um material pode ser vendido por vários fornecedores."
+          "alt": "Comandos CREATE TABLE de FORNECEDOR, MATERIAL e VENDA. Um fornecedor pode vender muitos materiais, e um material pode ser vendido por vários fornecedores.",
+          "minWidth": 490
         }
       ],
       "alternatives": [
@@ -14299,7 +14302,8 @@
       "images": [
         {
           "src": "data/figures/petro2012-q36-1.png",
-          "alt": "Rede: Início leva a A (2 meses), B (2) e C (1); A vai a F (2); B vai a D (2); D vai a F e a E (5); C vai a E; F vai a G (1); G e E vão a Fim."
+          "alt": "Rede: Início leva a A (2 meses), B (2) e C (1); A vai a F (2); B vai a D (2); D vai a F e a E (5); C vai a E; F vai a G (1); G e E vão a Fim.",
+          "minWidth": 364
         }
       ],
       "alternatives": [
@@ -15401,7 +15405,8 @@
       "images": [
         {
           "src": "data/figures/petro08-q23-1.png",
-          "alt": "Tabelas CLIENTE, PRODUTO e VENDA com seus campos e chaves, e as regras de chaves estrangeiras e candidatas."
+          "alt": "Tabelas CLIENTE, PRODUTO e VENDA com seus campos e chaves, e as regras de chaves estrangeiras e candidatas.",
+          "minWidth": 490
         }
       ],
       "alternatives": [
@@ -16784,7 +16789,8 @@
       "images": [
         {
           "src": "data/figures/petro2012-q35-1.png",
-          "alt": "Gráfico de Gantt de 7 meses com as barras V, W, Y, X, Z, F, G, I, H e J e setas de dependência."
+          "alt": "Gráfico de Gantt de 7 meses com as barras V, W, Y, X, Z, F, G, I, H e J e setas de dependência.",
+          "minWidth": 378
         }
       ],
       "alternatives": [
@@ -16936,7 +16942,8 @@
       "images": [
         {
           "src": "data/figures/petro08-q22-1.png",
-          "alt": "Tabelas CLIENTE, PRODUTO e VENDA com seus campos e chaves, e as regras de chaves estrangeiras e candidatas."
+          "alt": "Tabelas CLIENTE, PRODUTO e VENDA com seus campos e chaves, e as regras de chaves estrangeiras e candidatas.",
+          "minWidth": 490
         }
       ],
       "alternatives": [
@@ -17449,7 +17456,8 @@
       "images": [
         {
           "src": "data/figures/prova07-q52-1.png",
-          "alt": "Diagrama de sequência entre Actor0, C1, C2, C3 e C4, com msg00, msg01 e um fragmento alt: se val maior que 0, msg02 para C3 e autochamada msg03; se val menor que 0, msg04 para C4."
+          "alt": "Diagrama de sequência entre Actor0, C1, C2, C3 e C4, com msg00, msg01 e um fragmento alt: se val maior que 0, msg02 para C3 e autochamada msg03; se val menor que 0, msg04 para C4.",
+          "minWidth": 380
         }
       ],
       "alternatives": [
@@ -17651,7 +17659,7 @@
       },
       "area": "arq-dados",
       "subtopic": "1.1 Modelagem de dados (conceitual, lógica e física)",
-      "stem": "A Figura a seguir exibe um modelo E-R composto por duas entidades e uma relação.\n\n[[fig:1]]\n\nQual diagrama de Venn contém uma relação que atende às regras de multiplicidade definidas no modelo E-R acima?\n\n[[fig:2]]",
+      "stem": "A Figura a seguir exibe um modelo E-R composto por duas entidades e uma relação.\n\n[[fig:1]]\n\nQual diagrama de Venn contém uma relação que atende às regras de multiplicidade definidas no modelo E-R acima?\n\n[[fig:2]]\n\n[[fig:3]]\n\n[[fig:4]]\n\n[[fig:5]]\n\n[[fig:6]]",
       "images": [
         {
           "src": "data/figures/transp15-q41-1.png",
@@ -17659,7 +17667,23 @@
         },
         {
           "src": "data/figures/transp15-q41-2.png",
-          "alt": "Cinco diagramas de Venn, de A a E, com setas de a1 a a4 em E1 para b1 a b4 em E2."
+          "alt": "Diagrama de Venn A: a1 para b1, a2 para b2, a3 para b3 e a4 para b1."
+        },
+        {
+          "src": "data/figures/transp15-q41-3.png",
+          "alt": "Diagrama de Venn B: a1 para b1 e b4, a2 para b2, a3 para b3 e a4 para b2."
+        },
+        {
+          "src": "data/figures/transp15-q41-4.png",
+          "alt": "Diagrama de Venn C: a1 para b1 e b4, a2 para b2 e a3 para b3; a4 sem seta."
+        },
+        {
+          "src": "data/figures/transp15-q41-5.png",
+          "alt": "Diagrama de Venn D: a1 para b1, a2 para b2, a3 para b3 e a4 para b4."
+        },
+        {
+          "src": "data/figures/transp15-q41-6.png",
+          "alt": "Diagrama de Venn E: a1, a2, a3 e a4 todos para b1."
         }
       ],
       "alternatives": [
@@ -17757,11 +17781,27 @@
       },
       "area": "arq-dados",
       "subtopic": "1.1 Modelagem de dados (conceitual, lógica e física)",
-      "stem": "Os conjuntos a seguir representam o estado de um banco de dados relacional.\n\nA = { a1, a2, a3 }\nB = { b1, b2 }\nC = { c1, c2, c3 }\nR = { (a1, b1), (a1, b2), (a2, b1), (a2, b2), (a3, b1) }\nS = { (b1, c2), (b2, c3) }\n\nAdmita que os elementos dos conjuntos acima sejam instâncias das entidades ou das relações de mesmo nome presentes no diagrama E-R a partir do qual o esquema do banco de dados acima foi obtido, e que as regras definidas nesse diagrama E-R são preservadas pelo banco de dados em questão.\n\nNesse contexto, qual diagrama E-R tem suas regras preservadas pelo banco de dados acima?\n\n[[fig:1]]",
+      "stem": "Os conjuntos a seguir representam o estado de um banco de dados relacional.\n\nA = { a1, a2, a3 }\nB = { b1, b2 }\nC = { c1, c2, c3 }\nR = { (a1, b1), (a1, b2), (a2, b1), (a2, b2), (a3, b1) }\nS = { (b1, c2), (b2, c3) }\n\nAdmita que os elementos dos conjuntos acima sejam instâncias das entidades ou das relações de mesmo nome presentes no diagrama E-R a partir do qual o esquema do banco de dados acima foi obtido, e que as regras definidas nesse diagrama E-R são preservadas pelo banco de dados em questão.\n\nNesse contexto, qual diagrama E-R tem suas regras preservadas pelo banco de dados acima?\n\n[[fig:1]]\n\n[[fig:2]]\n\n[[fig:3]]\n\n[[fig:4]]\n\n[[fig:5]]",
       "images": [
         {
           "src": "data/figures/transp23e6-q21-1.png",
-          "alt": "Cinco diagramas E-R, de A a E, com as entidades A, B e C e as relações R e S, variando as cardinalidades."
+          "alt": "Diagrama A: (0,n) em A e (0,1) em B no relacionamento R; (1,1) em B e (0,1) em C no relacionamento S."
+        },
+        {
+          "src": "data/figures/transp23e6-q21-2.png",
+          "alt": "Diagrama B: (0,1) em A e (0,n) em B em R; (1,1) em B e (0,1) em C em S."
+        },
+        {
+          "src": "data/figures/transp23e6-q21-3.png",
+          "alt": "Diagrama C: (0,1) em A e (0,n) em B em R; (0,1) em B e (0,1) em C em S."
+        },
+        {
+          "src": "data/figures/transp23e6-q21-4.png",
+          "alt": "Diagrama D: (0,n) em A e (1,n) em B em R; (0,1) em B e (0,1) em C em S."
+        },
+        {
+          "src": "data/figures/transp23e6-q21-5.png",
+          "alt": "Diagrama E: (0,n) em A e (0,n) em B em R; (1,1) em B e (1,1) em C em S."
         }
       ],
       "alternatives": [
@@ -17980,11 +18020,13 @@
       "images": [
         {
           "src": "data/figures/prova07-q19-1.png",
-          "alt": "Planilha com 11 tarefas: esforço estimado, esforço atual, data estimada e data atual de término."
+          "alt": "Planilha com 11 tarefas: esforço estimado, esforço atual, data estimada e data atual de término.",
+          "minWidth": 391
         },
         {
           "src": "data/figures/prova07-q19-2.png",
-          "alt": "Tabela com 5 linhas de indicadores: dia, custo orçado do trabalho agendado e realizado, custo real, variação do cronograma e índice de performance."
+          "alt": "Tabela com 5 linhas de indicadores: dia, custo orçado do trabalho agendado e realizado, custo real, variação do cronograma e índice de performance.",
+          "minWidth": 396
         }
       ],
       "alternatives": [
@@ -18185,7 +18227,8 @@
       "images": [
         {
           "src": "data/figures/prova07-q13-1.png",
-          "alt": "Rede de 15 atividades. I leva a 1 (2 dias), 2 (3) e 3 (3). 1 vai a 4 (3) e 5 (2). 5 e 6 (1) vão a 11 (3). 2 vai a 6, 7 (2) e 8 (3). 7 vai a 12 (4). 8 e 9 (5) vão a 13 (4). 3 vai a 9 e 10 (3). 10 vai a 14 (3). 4, 12, 13 e 14 vão a 15 (2), que vai a F."
+          "alt": "Rede de 15 atividades. I leva a 1 (2 dias), 2 (3) e 3 (3). 1 vai a 4 (3) e 5 (2). 5 e 6 (1) vão a 11 (3). 2 vai a 6, 7 (2) e 8 (3). 7 vai a 12 (4). 8 e 9 (5) vão a 13 (4). 3 vai a 9 e 10 (3). 10 vai a 14 (3). 4, 12, 13 e 14 vão a 15 (2), que vai a F.",
+          "minWidth": 333
         }
       ],
       "alternatives": [
@@ -18494,7 +18537,8 @@
       "images": [
         {
           "src": "data/figures/prova6-q23-1.png",
-          "alt": "Rede do cronograma: Comunicação 20 dias, início no dia 1; Planejamento 20; Modelagem 30; depois Construção 60 e Documentação 45 em paralelo; Implantação 10, término no dia 200."
+          "alt": "Rede do cronograma: Comunicação 20 dias, início no dia 1; Planejamento 20; Modelagem 30; depois Construção 60 e Documentação 45 em paralelo; Implantação 10, término no dia 200.",
+          "minWidth": 418
         }
       ],
       "alternatives": [

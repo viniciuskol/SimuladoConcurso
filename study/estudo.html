@@ -24,6 +24,7 @@ import { dueCards, rateCard, statsByArea, srsSummary, wrongByArea, loadAttempts,
          exportProgress, parseBackup, restoreProgress } from "./shared/storage.js";
 import { subtopicPriority, cardsForQuestion, cardsForQuestions, pendingErrorIds,
          dailyCards, fullExamDays, fullExamAdvice, answeredOn, contentNotices } from "./shared/planner.js";
+import { figureHtml } from "./shared/figures.js";
 
 const app = document.getElementById("app");
 let AREAS = [], CARDS = [], QCOUNT = {}, CONTENT = {}, PLAN = null, QBYID = {};
@@ -459,10 +460,8 @@ function altRow(alt, correctKey) {
 }
 
 // [[fig:N]] marca no enunciado onde entra a figura N, na ordem da prova original.
-const stemHtml = q => richText(q.stem).replace(/\s*\[\[fig:(\d+)\]\]\s*/g, (_, n) => {
-  const img = q.images?.[n - 1];
-  return img ? `<a class="q-figure" href="${esc(img.src)}" target="_blank" rel="noopener"><img src="${esc(img.src)}" alt="${esc(img.alt)}"></a>` : "";
-});
+const stemHtml = q => richText(q.stem).replace(/\s*\[\[fig:(\d+)\]\]\s*/g, (_, n) =>
+  q.images?.[n - 1] ? figureHtml(q.images[n - 1]) : "");
 
 function questionReview(q) {
   const alts = Array.isArray(q.alternatives) ? q.alternatives : [];

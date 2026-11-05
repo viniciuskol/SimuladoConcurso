@@ -14,6 +14,7 @@ html = (S / "estudo.html").read_text(encoding="utf-8")
 css = (S / "shared" / "styles.css").read_text(encoding="utf-8")
 storage = (S / "shared" / "storage.js").read_text(encoding="utf-8")
 planner = (S / "shared" / "planner.js").read_text(encoding="utf-8")
+figures_js = (S / "shared" / "figures.js").read_text(encoding="utf-8")
 js = html.split('<script type="module">')[1].split("</script>")[0]
 
 # Dados: tudo que o app carrega. A projeção de questions.json acompanha o que a
@@ -27,7 +28,7 @@ qs = json.loads((S / "data" / "questions.json").read_text(encoding="utf-8"))["qu
 
 # As figuras vão embutidas: a página publicada é um arquivo único.
 def figures(q):
-    return [{"alt": i["alt"], "src": "data:image/png;base64," + base64.b64encode((S / i["src"]).read_bytes()).decode()}
+    return [{**i, "src": "data:image/png;base64," + base64.b64encode((S / i["src"]).read_bytes()).decode()}
             for i in q.get("images") or []]
 
 data = {
@@ -51,13 +52,14 @@ data = {
 for a in [x["id"] for x in areas["areas"]]:
     data[f"data/content/{a}.json"] = json.loads((S / "data" / "content" / f"{a}.json").read_text(encoding="utf-8"))
 
-# storage.js e planner.js: tira os `export` (vai tudo para o escopo do módulo único).
+# storage.js, planner.js e figures.js: tira os `export` (vai tudo para o escopo do módulo único).
 storage = re.sub(r"^export ", "", storage, flags=re.M)
 planner = re.sub(r"^export ", "", planner, flags=re.M)
+figures_js = re.sub(r"^export ", "", figures_js, flags=re.M)
 
 # Troca os imports por: os dados embutidos, um loadJSON que lê do mapa, o
 # showFetchHelp (que nunca dispara aqui, mas mantém a assinatura) e os módulos.
-imports = re.search(r'^import .*?;\s*^import .*?;\s*^import .*?;\s*', js, re.M | re.S).group(0)
+imports = re.search(r'^import .*?;\s*^import .*?;\s*^import .*?;\s*^import .*?;\s*', js, re.M | re.S).group(0)
 # "</" escapado: um "</script>" dentro do JSON encerraria o <script> da página.
 blob = json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace("</", "<\\/")
 js = js.replace(imports, f"""const EMBEDDED = {blob};
@@ -73,6 +75,8 @@ function showFetchHelp(container) {{
 {storage}
 
 {planner}
+
+{figures_js}
 """, 1)
 
 # Suporte aos três estados de tema do visualizador: a escolha explícita

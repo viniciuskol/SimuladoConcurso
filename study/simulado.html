@@ -24,6 +24,7 @@ import { recordAttempt, loadAttempts, statsByArea, clearAttempts, wrongByArea,
 import { EXAM_SHAPE, blockLabel, buildExam, historicExam, filterQuestions,
          buildTraining, examSources, summarize, editalCut, shuffle } from "./shared/exam.js";
 import { pendingErrorIds, contentNotices } from "./shared/planner.js";
+import { figureHtml } from "./shared/figures.js";
 
 const app = document.getElementById("app");
 let AREAS = [], QUESTIONS = [], QBYID = {};
@@ -50,8 +51,6 @@ const richText = s => String(s ?? "")
   .replace(/&(?!(?:amp|lt|gt|quot|#\d+);)/g, "&amp;")
   .replace(/</g, "&lt;").replace(/>/g, "&gt;")
   .replace(/&lt;(\/?)(p|strong|em|br)&gt;/g, "<$1$2>");
-
-const figureHtml = img => `<a class="q-figure" href="${richText(img.src)}" target="_blank" rel="noopener"><img src="${richText(img.src)}" alt="${richText(img.alt).replace(/"/g, "&quot;")}"></a>`;
 
 // [[fig:N]] marca no enunciado onde entra a figura N, na ordem da prova original.
 const stemHtml = q => richText(q.stem).replace(/\s*\[\[fig:(\d+)\]\]\s*/g, (_, n) =>
