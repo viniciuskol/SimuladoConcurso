@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "examDate": "2026-11-29",
-  "sourceNote": "Edital nº 04/2026 TRANSPETRO/PSP/TERRA, Ênfase 5. 50 questões de Conhecimentos Específicos nas 8 áreas do Anexo IV + 10 de Português + 10 de Inglês. A duração da prova não consta das fontes disponíveis neste repositório — todo tempo DE PROVA abaixo é falado em proporção, não em minutos. As fatias por área citadas nos blocos são a contagem das 360 questões das provas antigas (240 técnicas, após a incorporação das provas de 2008 e 2012 e das questões de figura resolvidas em 2026-08), usada como PROXY histórico para priorizar o estudo — não é a distribuição da prova de 2026, que o edital não detalha por área. O Anexo IV atual é mais largo que as provas antigas, então ux, analise-dados e logica provavelmente estão subrepresentadas no proxy.",
+  "examDate": "2026-12-06",
+  "sourceNote": "Edital nº 04/2026 TRANSPETRO/PSP/TERRA, Ênfase 5. 50 questões de Conhecimentos Específicos nas 8 áreas do Anexo IV + 10 de Português + 10 de Inglês. As provas objetivas duram 4h30 (subitem 8.1), e todo tempo DE PROVA abaixo é falado em proporção. É eliminado quem fizer menos de 50% em Específicos ou em Gerais, ou zerar Português ou Inglês (subitem 7.1.4.3). Data da prova: 06/12/2026, pelo Anexo V, sujeita a alteração por edital. As fatias por área citadas nos blocos são a contagem das 360 questões das provas antigas (240 técnicas, após a incorporação das provas de 2008 e 2012 e das questões de figura resolvidas em 2026-08), usada como PROXY histórico para priorizar o estudo — não é a distribuição da prova de 2026, que o edital não detalha por área. O Anexo IV atual é mais largo que as provas antigas, então ux, analise-dados e logica provavelmente estão subrepresentadas no proxy.",
   "crossPatterns": [
     {
       "title": "A alternativa errada descreve corretamente o conceito VIZINHO",
@@ -140,7 +140,7 @@
     },
     {
       "title": "Orçamento de tempo por questão: pense em proporção, e faça três passadas",
-      "body": "A duração oficial da prova não está nas fontes deste repositório — não trabalhe com um número de minutos inventado; no dia, divida o tempo impresso no caderno por 70 e use isso como unidade. Regra de proporção: uma questão de definição direta deve custar menos de meia unidade, e é essa sobra que financia as de cálculo e de SQL, que custam duas ou três. Faça três passadas: (1) resolva tudo o que sai em menos de uma unidade e marque no caderno; (2) volte nas caras, com o tempo já medido; (3) reserve o equivalente a cinco unidades no fim para transcrever o gabarito e revisar as questões negativas. Nunca deixe a transcrição para os últimos minutos."
+      "body": "A prova tem 4h30 (subitem 8.1 do edital). Dividido por 70, isso dá cerca de 3 minutos e 50 segundos: use essa unidade. Regra de proporção: uma questão de definição direta deve custar menos de meia unidade, e é essa sobra que financia as de cálculo e de SQL, que custam duas ou três. Faça três passadas: (1) resolva tudo o que sai em menos de uma unidade e marque no caderno; (2) volte nas caras, com o tempo já medido; (3) reserve o equivalente a cinco unidades no fim para transcrever o gabarito e revisar as questões negativas. Nunca deixe a transcrição para os últimos minutos."
     },
     {
       "title": "Questão de cálculo: leia a tabela duas vezes, resolva no rascunho, confira a unidade",
@@ -253,7 +253,7 @@
     {
       "n": 6,
       "label": "Bloco 6 — Revisão geral e simulados cronometrados",
-      "weeks": "semanas 13-14 + véspera (14/11 a 29/11)",
+      "weeks": "semanas 13-16 + véspera (14/11 a 06/12)",
       "focus": [
         "arq-dados",
         "gestao-proj",

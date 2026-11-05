@@ -107,7 +107,7 @@ const FINAL_REVIEW_DAYS = 4;
 
 // Reta final: a última revisão acontece nos 4 dias antes da prova. O card cujo
 // intervalo passaria da véspera cai num desses dias, escolhido pelo id para não
-// empilhar o baralho inteiro em 28/11. Quem já foi bem dentro da janela não volta.
+// empilhar o baralho inteiro na véspera. Quem já foi bem dentro da janela não volta.
 function fitToExam(cardId, due, today, examDate) {
   if (!examDate) return due;
   const eve = addDays(examDate, -1);

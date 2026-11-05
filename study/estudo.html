@@ -155,7 +155,7 @@ function renderHome() {
     </div>
     ${PLAN ? `<div class="card accent">
       <h2>Plano até a prova</h2>
-      <p class="muted">${daysToExam()} dias para 29/11/2026.${cur ? ` Bloco atual: <strong>${esc(cur.label)}</strong> (${esc(cur.weeks)}).` : ""}</p>
+      <p class="muted">${daysToExam()} dias para ${examDateLabel()}.${cur ? ` Bloco atual: <strong>${esc(cur.label)}</strong> (${esc(cur.weeks)}).` : ""}</p>
       ${cur ? `<p class="muted">Checklist do bloco atual: <strong>${curProg.done} de ${curProg.total}</strong> concluído(s).</p>
                <div class="progressbar"><div style="width:${curProg.total ? Math.round((curProg.done / curProg.total) * 100) : 0}%"></div></div>` : ""}
       <button class="btn primary" id="open-plan">Abrir o plano</button>
@@ -299,6 +299,10 @@ function wireBackup() {
   });
 }
 
+function examDateLabel() {
+  return new Date(PLAN.examDate + "T00:00:00").toLocaleDateString("pt-BR");
+}
+
 function daysToExam() {
   const ms = new Date(PLAN.examDate + "T00:00:00") - new Date();
   return Math.max(0, Math.ceil(ms / 86400000));
@@ -349,7 +353,7 @@ function renderPlan() {
 
   app.innerHTML = `
     <button class="btn" id="back">← Voltar</button>
-    <h1>Plano até 29/11/2026</h1>
+    <h1>Plano até ${examDateLabel()}</h1>
     <div class="card"><p class="muted">${esc(PLAN.sourceNote || "")}</p></div>
     <div class="card"><p class="muted">Marque cada item ao concluir: as marcações ficam salvas neste navegador e sobrevivem a recarregar a página.</p></div>
     ${PLAN.blocks.map(blockCard).join("")}
@@ -432,7 +436,7 @@ function shuffle(arr) {
 // geraria markup quebrado, então tiro as tags e escapo o texto — assim nenhum
 // `<script>` sobrevive nem por acidente.
 function trunc(s, n = 140) {
-  const t = String(s ?? "").replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+  const t = String(s ?? "").replace(/\[\[fig:\d+\]\]/g, " ").replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
   return esc(t.length > n ? t.slice(0, n).replace(/\s+\S*$/, "") + "…" : t);
 }
 
@@ -454,6 +458,12 @@ function altRow(alt, correctKey) {
     </div>`;
 }
 
+// [[fig:N]] marca no enunciado onde entra a figura N, na ordem da prova original.
+const stemHtml = q => richText(q.stem).replace(/\s*\[\[fig:(\d+)\]\]\s*/g, (_, n) => {
+  const img = q.images?.[n - 1];
+  return img ? `<a class="q-figure" href="${esc(img.src)}" target="_blank" rel="noopener"><img src="${esc(img.src)}" alt="${esc(img.alt)}"></a>` : "";
+});
+
 function questionReview(q) {
   const alts = Array.isArray(q.alternatives) ? q.alternatives : [];
   const wrongWhy = alts
@@ -469,7 +479,7 @@ function questionReview(q) {
   ].filter(Boolean).map(v => esc(v)).join(" · ");
   return `
     ${q.passage ? `<div class="passage-card">${richText(q.passage)}</div>` : ""}
-    <p class="q-stem">${richText(q.stem)}</p>
+    <div class="q-stem">${stemHtml(q)}</div>
     ${alts.length
       ? `<div class="alt-list review">${alts.map(a => altRow(a, q.correctKey)).join("")}</div>`
       : `<p class="muted">Alternativas não registradas para esta questão.</p>`}

@@ -9,7 +9,7 @@ const PRIOR_ATTEMPTS = 2;
 const SMALL_SAMPLE = 3;
 const NO_NEW_CARDS_DAYS = 7;       // o plano veta conteúdo novo na última semana
 const FULL_EXAM_MIN_ANSWERS = 30;
-const FIRST_FULL_EXAM_DAYS = 15;   // bloco 6 do plano: a partir de 14/11
+const FIRST_FULL_EXAM_DAYS = 22;   // bloco 6 do plano: a partir de 14/11, prova em 06/12
 const FULL_EXAM_GAP_DAYS = 4;
 const FULL_EXAMS_TARGET = 2;
 

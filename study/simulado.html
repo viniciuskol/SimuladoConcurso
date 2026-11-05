@@ -22,7 +22,7 @@ import { loadJSON, showFetchHelp } from "./shared/data-loader.js";
 import { recordAttempt, loadAttempts, statsByArea, clearAttempts, wrongByArea,
          loadSession, saveSession, clearSession } from "./shared/storage.js";
 import { EXAM_SHAPE, blockLabel, buildExam, historicExam, filterQuestions,
-         buildTraining, examSources, summarize, shuffle } from "./shared/exam.js";
+         buildTraining, examSources, summarize, editalCut, shuffle } from "./shared/exam.js";
 import { pendingErrorIds } from "./shared/planner.js";
 
 const app = document.getElementById("app");
@@ -50,6 +50,12 @@ const richText = s => String(s ?? "")
   .replace(/&(?!(?:amp|lt|gt|quot|#\d+);)/g, "&amp;")
   .replace(/</g, "&lt;").replace(/>/g, "&gt;")
   .replace(/&lt;(\/?)(p|strong|em|br)&gt;/g, "<$1$2>");
+
+const figureHtml = img => `<a class="q-figure" href="${richText(img.src)}" target="_blank" rel="noopener"><img src="${richText(img.src)}" alt="${richText(img.alt).replace(/"/g, "&quot;")}"></a>`;
+
+// [[fig:N]] marca no enunciado onde entra a figura N, na ordem da prova original.
+const stemHtml = q => richText(q.stem).replace(/\s*\[\[fig:(\d+)\]\]\s*/g, (_, n) =>
+  q.images?.[n - 1] ? figureHtml(q.images[n - 1]) : "");
 
 function showAtTop() {
   window.scrollTo(0, 0);
@@ -228,7 +234,7 @@ function renderPicker() {
       <label class="field">Tempo de prova, em minutos (0 = sem limite)
         <input type="number" id="minutes" min="0" max="600" step="1" inputmode="numeric" value="${picker.minutes}">
       </label>
-      <p class="muted">Os 270 minutos (4h30) vêm das provas de 2018 e 2023. Confira a duração no edital de 2026.</p>
+      <p class="muted">A prova tem 4h30 (270 minutos), conforme o subitem 8.1 do edital.</p>
       <button class="btn primary" id="start-exam">Sortear prova de ${EXAM_SHAPE.portugues + EXAM_SHAPE.ingles + EXAM_SHAPE.especificas} questões</button>
       <p class="muted">${EXAM_SHAPE.portugues} de Português, ${EXAM_SHAPE.ingles} de Inglês e ${EXAM_SHAPE.especificas} específicas, priorizando questões que você respondeu menos. A divisão das específicas por área é estimada pelas provas antigas: o edital não a detalha.</p>
       ${historic.order.length ? `<button class="btn" id="start-historic">Fazer a prova de ${HISTORIC_YEAR} (${historic.order.length} de 70 questões)</button>
@@ -420,7 +426,7 @@ function renderExamQuestion(q) {
     ${saveWarning()}
     <p class="muted" id="screen-start" tabindex="-1">${richText(blockLabel(q.area))} · questão ${session.idx + 1} de ${n}</p>
     ${passageHtml(q)}
-    <div class="stem-card">${richText(q.stem)}</div>
+    <div class="stem-card">${stemHtml(q)}</div>
     <div class="alt-list" id="alts">
       ${q.alternatives.map(alt => `<button class="btn" data-key="${alt.key}"><span class="alt-key">${alt.key}</span><span class="alt-text">${richText(alt.text)}</span></button>`).join("")}
     </div>
@@ -511,7 +517,7 @@ function renderTrainingQuestion(q) {
     ${saveWarning()}
     <p class="muted" id="screen-start" tabindex="-1">${richText((AREAS.find(a => a.id === q.area) || {}).label || q.area)} · questão ${session.idx + 1} de ${session.order.length}</p>
     ${passageHtml(q)}
-    <div class="stem-card">${richText(q.stem)}</div>
+    <div class="stem-card">${stemHtml(q)}</div>
     <div class="alt-list" id="alts">
       ${q.alternatives.map(alt => `<button class="btn" data-key="${alt.key}"><span class="alt-key">${alt.key}</span><span class="alt-text">${richText(alt.text)}</span></button>`).join("")}
     </div>
@@ -628,20 +634,35 @@ function reviewItem(id) {
   const q = QBYID[id];
   const chosen = session.answers[id];
   const position = session.order.indexOf(id) + 1;
-  const plain = String(q.stem).replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+  const plain = String(q.stem).replace(/\[\[fig:\d+\]\]/g, " ").replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
   const wrongWhy = q.alternatives
     .filter(a => a.key !== q.correctKey && a.explanation)
     .map(a => `<li><strong>(${a.key})</strong> ${richText(a.explanation)}</li>`).join("");
   return `<details class="explain q-review">
     <summary>Questão ${position}${chosen ? "" : " · em branco"}${session.timeMs[id] ? ` · ${fmtDuration(session.timeMs[id])}` : ""}<span class="muted block">${richText(plain.length > 110 ? plain.slice(0, 110) + "…" : plain)}</span></summary>
     ${q.passage ? `<details class="passage"><summary>Texto-base</summary><div class="passage-card">${richText(q.passage)}</div></details>` : ""}
-    <div class="q-stem">${richText(q.stem)}</div>
+    <div class="q-stem">${stemHtml(q)}</div>
     <div class="alt-list review">${q.alternatives.map(a => reviewAlt(a, q, chosen)).join("")}</div>
     <p class="review-h">Por que o gabarito é ${q.correctKey}</p>
     <p>${richText(q.explanationSummary)}</p>
     ${wrongWhy ? `<p class="review-h">Por que as outras estão erradas</p><ul>${wrongWhy}</ul>` : ""}
     ${q.subtopic ? `<p class="muted q-src">${richText(q.subtopic)}${q.source?.year ? ` · ${q.source.year}` : ""}</p>` : ""}
   </details>`;
+}
+
+function cutHtml(r) {
+  const cut = editalCut(r);
+  const line = (ok, text) => `<li>${ok ? "✅" : "❌"} ${text}</li>`;
+  return `<div class="card">
+    <h2>Critério de eliminação do edital</h2>
+    <p>${cut.passed ? "Com este resultado, você não seria eliminado." : "Com este resultado, você seria eliminado."}</p>
+    <ul class="tight">
+      ${line(cut.specificOk, `Específicos: ${cut.specific.correct} de ${cut.specific.total}. Mínimo de 50%.`)}
+      ${line(cut.generalOk, `Conhecimentos Gerais: ${cut.general.correct} de ${cut.general.total}. Mínimo de 50%.`)}
+      ${line(cut.noZero, `Português: ${cut.portuguese} acerto(s). Inglês: ${cut.english} acerto(s). Nenhum dos dois pode zerar.`)}
+    </ul>
+    <p class="muted">Subitem 7.1.4.3. Não ser eliminado não garante classificação: a ordem inicial é pela nota de Específicos, até 2 vezes o número de vagas mais cadastro de reserva.</p>
+  </div>`;
 }
 
 function renderResult() {
@@ -667,6 +688,7 @@ function renderResult() {
       <button class="btn primary" id="back">Novo simulado</button>
       ${r.review.length ? `<button class="btn" id="redo-result">Refazer os erros e questões em branco (${r.review.length})</button>` : ""}
     </div>
+    ${session.kind === "prova" && r.total ? cutHtml(r) : ""}
     ${r.total ? `
     <div class="card">
       <h2>Por bloco</h2>

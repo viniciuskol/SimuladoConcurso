@@ -184,3 +184,16 @@ export function summarize(session, byId, areas) {
     review
   };
 }
+
+// Subitem 7.1.4.3 do edital: elimina quem ficar abaixo de 50% em Específicos ou em
+// Conhecimentos Gerais, ou zerar Português ou Inglês.
+export function editalCut(result) {
+  const block = key => result.blocks.find(b => b.key === key) || { correct: 0, total: 0 };
+  const pt = block("portugues"), en = block("ingles"), specific = block("especificas");
+  const general = { correct: pt.correct + en.correct, total: pt.total + en.total };
+  const specificOk = specific.correct * 2 >= specific.total;
+  const generalOk = general.correct * 2 >= general.total;
+  const noZero = pt.correct > 0 && en.correct > 0;
+  return { specific, general, portuguese: pt.correct, english: en.correct,
+           specificOk, generalOk, noZero, passed: specificOk && generalOk && noZero };
+}

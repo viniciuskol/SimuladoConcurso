@@ -31,6 +31,14 @@ for a in areas:
         if t.lstrip('/') not in ALLOW: prob.append(f"{a}: tag fora da whitelist <{t}>")
     if re.search(r'<[^>]*\son[a-z]+\s*=|<script', txt, re.I): prob.append(f"{a}: script/handler")
 
+for q in qs:
+    imgs = q.get("images") or []
+    marks = {int(m) for m in re.findall(r"\[\[fig:(\d+)\]\]", q["stem"])}
+    if marks != set(range(1, len(imgs) + 1)): prob.append(f"{q['id']}: marcadores de figura não batem com images")
+    for i in imgs:
+        if not (D.parent / i["src"]).exists(): prob.append(f"{q['id']}: figura ausente {i['src']}")
+        if not i.get("alt"): prob.append(f"{q['id']}: figura sem alt")
+
 cards = load("flashcards.json")["cards"]
 ids = [c["id"] for c in cards]
 if len(ids) != len(set(ids)): prob.append("deck: id duplicado")

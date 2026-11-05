@@ -5,7 +5,7 @@ Fonte única de verdade: lê os mesmos arquivos que o app local usa, então a
 página publicada não pode divergir do repositório. Uso:
     python3 study/_internal/build-standalone.py <saida.html>
 """
-import json, re, sys, pathlib
+import base64, json, re, sys, pathlib
 
 S = pathlib.Path(__file__).resolve().parent.parent
 out = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else "/tmp/estudo-standalone.html")
@@ -20,10 +20,16 @@ js = html.split('<script type="module">')[1].split("</script>")[0]
 # tela "Revisar meus erros" passou a usar no ciclo 8: além de id/área/subtópico,
 # ela abre a questão inteira (texto-base, enunciado completo, as 5 alternativas, o
 # gabarito, o resumo da explicação e a explicação de cada alternativa errada) e cita a
-# prova de origem. Fica fora só o que nenhuma tela publicada lê: `images`,
+# prova de origem. Fica fora só o que nenhuma tela publicada lê:
 # `verification`, `status`, `annulled`.
 areas = json.loads((S / "data" / "areas.json").read_text(encoding="utf-8"))
 qs = json.loads((S / "data" / "questions.json").read_text(encoding="utf-8"))["questions"]
+
+# As figuras vão embutidas: a página publicada é um arquivo único.
+def figures(q):
+    return [{"alt": i["alt"], "src": "data:image/png;base64," + base64.b64encode((S / i["src"]).read_bytes()).decode()}
+            for i in q.get("images") or []]
+
 data = {
     "data/areas.json": areas,
     "data/flashcards.json": json.loads((S / "data" / "flashcards.json").read_text(encoding="utf-8")),
@@ -31,6 +37,7 @@ data = {
     "data/questions.json": {"questions": [
         {"id": q["id"], "area": q["area"], "subtopic": q.get("subtopic"),
          "passage": q.get("passage"),
+         "images": figures(q),
          "stem": q.get("stem") or "",
          "correctKey": q.get("correctKey"),
          "explanationSummary": q.get("explanationSummary"),

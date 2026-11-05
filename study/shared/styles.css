@@ -316,3 +316,8 @@ a.btn { text-decoration: none; }
 .row-actions { display: flex; gap: 8px; margin-top: 10px; }
 .row-actions .btn { flex: 1 1 0; min-height: 44px; padding: 10px 8px; justify-content: center; text-align: center; font-size: 0.9rem; }
 .q-link { color: var(--accent); white-space: nowrap; }
+
+/* Figuras e tabelas recortadas das provas: fundo branco para ler também no tema escuro. */
+.stem-card { white-space: pre-wrap; overflow-wrap: anywhere; }
+.q-figure { display: block; margin: 12px 0; }
+.q-figure img { display: block; max-width: 100%; height: auto; border-radius: 8px; background: #fff; }
