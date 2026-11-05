@@ -45,3 +45,9 @@ Este trabalho não estava sendo rodado como um `/loop` autônomo nesta sessão (
 ```
 
 Se preferir continuação manual direta (sem o `/loop`), basta dizer algo como: "Continue resolvendo o backlog da review-queue, seguindo o STATUS.md" — o contexto e as regras acima já bastam para retomar exatamente de onde parou.
+
+## Auditoria de gabaritos (novembro de 2026)
+
+- Colunas oficiais de 2008, 2010, 2011, 2012 e da prova de 2018 com gabarito local foram relidas na imagem. Havia leitura de coluna errada em `prova07-q24/q25/q29/q42/q47/q54` e `petro08-q2/q4/q6`.
+- 14 questões saíram da fila. `review-queue.json` ficou com 5: `transp15-q39/q40/q69/q70`, que dependem do gabarito oficial da Cesgranrio, e `petro08-q43`, em que a coluna oficial contradiz a norma.
+- `transp15` e `transp23e6` usam gabarito externo e não puderam ser auditadas pela coluna oficial.

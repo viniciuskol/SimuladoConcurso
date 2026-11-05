@@ -2,557 +2,6 @@
   "version": 1,
   "entries": [
     {
-      "id": "psjpn2018-q55",
-      "source": {
-        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
-        "year": 2018,
-        "originalNumber": 55
-      },
-      "area": "eng-sw",
-      "subtopic": "5.1 Levantamento, análise e gerenciamento de requisitos",
-      "stem": "O processo de desenvolvimento de requisitos pode ser dividido em 4 etapas: elicitação, análise, especificação e validação. Qual prática da Engenharia de Requisitos está associada à etapa de análise?",
-      "images": null,
-      "alternatives": [
-        {
-          "text": "Criar protótipos.",
-          "key": "A"
-        },
-        {
-          "text": "Identificar casos de uso.",
-          "key": "B"
-        },
-        {
-          "text": "Inspecionar documentos de requisitos.",
-          "key": "C"
-        },
-        {
-          "text": "Definir critérios de aceitação.",
-          "key": "D"
-        },
-        {
-          "text": "Registrar regras de negócio.",
-          "key": "E"
-        }
-      ],
-      "gabaritoLetter": "A",
-      "derivedLetter": "B",
-      "reviewRounds": [
-        {
-          "round": 1,
-          "conclusion": "diverge do gabarito",
-          "note": "O agente de extração original leu o gabarito como 'B' e reportou concordância com sua derivação (também B, 'Identificar casos de uso' — modelagem de casos de uso é tipicamente uma atividade de análise). Um validador independente releu o PDF do gabarito diretamente (texto embutido + imagem da tabela) e confirmou duas vezes que a resposta impressa para a questão 55, coluna 3 (Analista de Sistemas Júnior Processos de Negócio), é 'A' ('Criar protótipos'), não 'B'. Isso é uma divergência genuína: prototipação é classicamente associada à etapa de elicitação (não de análise) na literatura de Engenharia de Requisitos, o que motivou a derivação B — mas o gabarito impresso diz A. Sem uma segunda fonte que explique por que a banca considerou 'criar protótipos' como prática de análise (e não de elicitação), fica em revisão."
-        }
-      ],
-      "unresolved": true,
-      "annulled": false
-    },
-    {
-      "id": "prova6-q48",
-      "source": {
-        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
-        "year": 2011,
-        "originalNumber": 48
-      },
-      "subtopic": "1.21 Qualidade de dados e gestão de dados mestres e de referência",
-      "stem": "Um dos grandes desafios na construção de bases de dados de data warehouses reside na qualidade dos seus dados. Como esses dados que servem de matéria-prima para esses repositórios de dados podem ter as mais diversas procedências, vários tipos de problemas precisam ser resolvidos. Um exemplo da situação acima descrita encontra-se no fato de que os",
-      "images": null,
-      "alternatives": [
-        {
-          "text": "campos numéricos das bases de dados de origem podem conter dados que não pertençam ao domínio de valores do atributo, por problemas relativos ao endereçamento dos cálculos efetuados pela ferramenta de extração, transformação e carga.",
-          "key": "A"
-        },
-        {
-          "text": "campos que armazenam datas precisam fazer menção à latitude e à longitude onde se encontra a base de dados do data warehouse, sob pena de comprometer o processo de construção de eventuais datamarts em momentos posteriores.",
-          "key": "B"
-        },
-        {
-          "text": "dados que representam medidas que ocorrem em diversas fontes de dados, como um atributo que armazene medições de temperatura de diversas regiões, podem, em algumas bases, se encontrar incompletos, necessitando tratamento.",
-          "key": "C"
-        },
-        {
-          "text": "atributos categóricos, tais como, sexo ou categoria funcional, necessitam, na integração, ser convertidos em valores numéricos, pois ferramentas OLAP possuem limitações quanto ao tratamento de valores de atributos discretos.",
-          "key": "D"
-        },
-        {
-          "text": "identificadores, tais como, atributos-chave de tabelas, podem, no processo de integração, conter valores de chaves primárias inválidas de outras tabelas, indicando problemas de integridade referencial e de unicidade.",
-          "key": "E"
-        }
-      ],
-      "gabaritoLetter": "C",
-      "derivedLetter": "E",
-      "reviewRounds": [
-        {
-          "round": 1,
-          "conclusion": "diverge do gabarito",
-          "note": "Considerei E (chaves estrangeiras inválidas / violação de integridade referencial) o exemplo mais canônico de problema de qualidade de dados na integração para DW. O gabarito aponta C (dados incompletos/faltantes vindos de múltiplas fontes), que também é um problema de qualidade de dados clássico e genuíno (dados incompletos). Ambas as opções descrevem problemas reais; a escolha da banca por C sobre E é defensável mas não decorre de um critério inequívoco a partir do enunciado — mantido em revisão por divergência da primeira derivação independente."
-        }
-      ],
-      "unresolved": true,
-      "annulled": false,
-      "area": "arq-dados"
-    },
-    {
-      "id": "prova6-q54",
-      "source": {
-        "file": "prova_6_analista_de_sistemas_junior_processos_de_negocio.html",
-        "year": 2011,
-        "originalNumber": 54
-      },
-      "subtopic": "5.3 Modelos, metodologias, técnicas e ferramentas de análise e projeto (estruturado e orientado a objetos)",
-      "stem": "O esboço de diagrama de classes ilustrado na figura, usando a notação proposta pela linguagem UML, mostra o pacote p1 contendo a classe C1 (com atributos +w, -x, #y, ~z) e o pacote p2 contendo a classe C2, com uma seta de generalização (triângulo vazio) de C2 apontando para C1 (C2 é subclasse de C1, em pacote diferente). Quais atributos de instância podem ser manipulados por métodos definidos na classe C2?",
-      "images": [
-        {
-          "id": "img1",
-          "path": null,
-          "alt": "Diagrama de classes UML com pacotes p1/p2, classes C1/C2 e atributos w, x, y, z com modificadores de visibilidade — não capturado na extração de texto."
-        }
-      ],
-      "alternatives": [
-        {
-          "text": "w, y e z, apenas.",
-          "key": "A"
-        },
-        {
-          "text": "x, y e z, apenas.",
-          "key": "B"
-        },
-        {
-          "text": "w e y, apenas.",
-          "key": "C"
-        },
-        {
-          "text": "w, apenas.",
-          "key": "D"
-        },
-        {
-          "text": "y, apenas.",
-          "key": "E"
-        }
-      ],
-      "gabaritoLetter": "E",
-      "derivedLetter": "C (w e y, apenas) — diverge do gabarito",
-      "reviewRounds": [
-        {
-          "round": 1,
-          "conclusion": "não é possível derivar independentemente sem o diagrama UML (visibilidade dos atributos w, x, y, z e localização de C1/C2 nos pacotes p1/p2), que é gráfico nativo da página e não foi capturado pela extração de texto.",
-          "note": "Requer reconstrução do diagrama (assets/images) em fase posterior antes de qualquer tentativa de verificação independente."
-        },
-        {
-          "round": 2,
-          "conclusion": "diagrama agora visível, mas resultado diverge do gabarito",
-          "note": "O diagrama foi lido com sucesso via releitura visual do PDF-fonte: C1 (pacote p1) tem atributos +w (público), -x (privado), #y (protegido), ~z (pacote/default); C2 (pacote p2) generaliza (estende) C1, com o triângulo vazio de generalização apontando para C1. Pela semântica padrão de visibilidade UML/OO, uma subclasse em pacote diferente herda e pode manipular atributos públicos (+) e protegidos (#), mas não privados (-) nem de pacote/default (~) do pacote da superclasse — o que levaria a \"w e y, apenas\" (alternativa C). O gabarito, porém, indica a alternativa E (\"y, apenas\"), excluindo o atributo público w. Não foi possível reconciliar essa divergência nesta rodada — pode refletir uma convenção específica assumida pela banca (por exemplo, tratando \"manipular\" como exigindo passagem por um método de acesso mesmo para atributos públicos, ou uma leitura diferente da direção da seta de generalização) que não está clara a partir do enunciado e do diagrama isoladamente. Mantida em revisão por divergência genuína entre a derivação independente e o gabarito."
-        },
-        {
-          "round": 3,
-          "conclusion": "diagrama re-confirmado a partir do PDF original; divergência persiste com alta confiança",
-          "note": "Releitura direta da página 14 do PDF nativo (não apenas uma reconstrução textual) confirma integralmente o diagrama descrito na rodada 2: pacote p1 contém C1 com atributos +w, -x, #y, ~z; pacote p2 contém C2; seta de generalização (triângulo vazio) liga C2 a C1, com a ponta do triângulo em C1 (C1 é superclasse, C2 é subclasse em pacote diferente). Pelas regras padrão e amplamente ensinadas de visibilidade UML/OO — público (+) acessível em qualquer lugar, incluindo subclasses em outros pacotes; protegido (#) acessível por subclasses independentemente do pacote; privado (-) nunca acessível fora da própria classe; pacote/default (~) acessível somente dentro do mesmo pacote — uma subclasse em pacote diferente do da superclasse pode manipular atributos públicos e protegidos herdados (w e y), mas não privados nem de pacote (x e z). Isso aponta inequivocamente para a alternativa C ('w e y, apenas'), não para o gabarito registrado (E, 'y, apenas'), que excluiria o atributo público w sem nenhuma justificativa nas regras padrão de visibilidade UML. Esta é agora uma divergência confirmada com alta confiança após 3 rodadas independentes (incluindo verificação direta da imagem original, não apenas de uma transcrição); mantida em revisão, pois a derivação segue as regras padrão de UML/OO de forma inequívoca e não há indício de uma convenção alternativa que justifique excluir w."
-        }
-      ],
-      "unresolved": true,
-      "annulled": false,
-      "area": "eng-sw"
-    },
-    {
-      "id": "psjpn2018-q36",
-      "source": {
-        "file": "analista_de_sistemas_junior_processos_de_negocio2018.html",
-        "year": 2018,
-        "originalNumber": 36
-      },
-      "subtopic": "7.2 Conceitos, fundamentos, técnicas e métodos de Business Intelligence (BI)",
-      "stem": "Uma das principais técnicas de controle de processos é o acompanhamento dos KPIs (Key Performance Indicators). Os KPIs são elementos-chave no acompanhamento de performance da empresa e dos processos que a compõem, por isso, é absolutamente importante ter KPIs bem configurados. Um KPI bem configurado apresenta as cinco seguintes características:",
-      "images": null,
-      "alternatives": [
-        {
-          "text": "precisão, comparabilidade, eficiência, mensurabilidade e flexibilidade",
-          "key": "A"
-        },
-        {
-          "text": "precisão, conversibilidade, eficiência, mensurabilidade e confiabilidade",
-          "key": "B"
-        },
-        {
-          "text": "precisão, comparabilidade, limitação de tempo, maneabilidade e flexibilidade",
-          "key": "C"
-        },
-        {
-          "text": "pertinência, conversibilidade, eficiência, maneabilidade e confiabilidade",
-          "key": "D"
-        },
-        {
-          "text": "pertinência, comparabilidade, limitação de tempo, mensurabilidade e confiabilidade",
-          "key": "E"
-        }
-      ],
-      "gabaritoLetter": "E",
-      "derivedLetter": null,
-      "reviewRounds": [
-        {
-          "round": 1,
-          "conclusion": "não é possível derivar independentemente com confiança.",
-          "note": "A questão exige memorização de uma lista específica de \"cinco características de um KPI bem configurado\" de uma fonte/apostila determinada (termos como pertinência, comparabilidade, limitação de tempo, mensurabilidade, confiabilidade não constituem um framework universalmente padronizado, ao contrário de, por ex., critérios SMART). Não há como confirmar por dedução de conhecimento geral de BI/indicadores qual dentre as 5 alternativas (todas plausíveis combinações de termos similares) é a lista exata adotada pela banca, sem acesso à fonte específica usada na elaboração da questão."
-        }
-      ],
-      "unresolved": true,
-      "annulled": false,
-      "area": "analise-dados"
-    },
-    {
-      "id": "prova07-q13",
-      "source": {
-        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
-        "year": 2010,
-        "originalNumber": 13
-      },
-      "area": "gestao-proj",
-      "subtopic": "3. Processos, grupos de processos e áreas de conhecimento",
-      "stem": "Analisando a rede acima [DIAGRAMA DE REDE DO CRONOGRAMA (CPM) COM DURAÇÕES E FOLGAS DAS ATIVIDADES NÃO CAPTURADO NA EXTRAÇÃO DE TEXTO], verifica-se que a folga",
-      "images": [
-        {
-          "id": "img1",
-          "path": null,
-          "alt": "Diagrama de rede do cronograma (CPM) com atividades numeradas, durações e dependências, referenciado por 'a rede acima' — é vetor/imagem nativa da página, não capturado na extração de texto. Um segundo bloco de dados na mesma página (Atividade/Duração para os números 1 a 15) parece pertencer aos nós dessa rede, mas sem as arestas/dependências não é possível reconstruir o grafo."
-        }
-      ],
-      "alternatives": [
-        {
-          "key": "A",
-          "text": "livre da atividade 7 é de 1 dia."
-        },
-        {
-          "key": "B",
-          "text": "livre para a atividade 9 é de 2 dias."
-        },
-        {
-          "key": "C",
-          "text": "total para a atividade 14 é de 3 dias."
-        },
-        {
-          "key": "D",
-          "text": "total da atividade 13 é de 1 dia."
-        },
-        {
-          "key": "E",
-          "text": "total da atividade 3 é de 2 dias."
-        }
-      ],
-      "gabaritoLetter": "C",
-      "derivedLetter": "D (sob a topologia mais provável reconstruída, divergindo do gabarito C)",
-      "reviewRounds": [
-        {
-          "round": 1,
-          "conclusion": "não é possível derivar independentemente sem o diagrama de rede do cronograma.",
-          "note": "O texto extraído contém apenas rótulos isolados 'Atividade: N / Duração: D dias' para os números 1 a 15 (mais F e I, provavelmente Fim e Início), sem as arestas/setas de precedência que definem a topologia da rede — essas são vetor gráfico nativo da página. Sem a estrutura de dependências entre atividades não é possível calcular folgas livres/totais de forma independente."
-        },
-        {
-          "round": 2,
-          "conclusion": "diagrama agora visível, mas rede complexa (15 atividades) não computada com confiança nesta rodada",
-          "note": "A rede de precedências (15 atividades, com nós I/F de início/fim) foi lida via releitura visual do PDF-fonte, mas a topologia de setas entre as 15 atividades é complexa o suficiente (múltiplos ramos e convergências) que não foi recalculada com confiança suficiente nesta rodada para confirmar qual das 5 alternativas de folga (atividades 3, 7, 9, 13, 14) está correta. Requer uma 3ª rodada com tempo dedicado a rastrear cada seta individualmente a partir da imagem."
-        },
-        {
-          "round": 3,
-          "conclusion": "rede totalmente legível; cálculo de folgas sob a topologia mais plausível não confirma o gabarito",
-          "note": "A rede de 15 atividades (nós I/F, atividades 1-15 com durações) foi lida com nitidez total do PDF nativo nesta 3ª rodada. Reconstruindo a topologia mais plausível a partir do layout visual (I→1,2,3; 1→5→11; 5,6→11; 11→4 e 11→12; 2→6,7,8; 3→9,10; 8,9→13; 10→14→12; 12,13→15→F; 4→F) e aplicando forward/backward pass: término do projeto=15 dias; folga total calculada é 0 (crítica) para as atividades 3, 10, 12, 14 e 15; folga total da atividade 13 = 1 dia; folga total da atividade 14 = 0 dias. Isso favoreceria a alternativa (D) 'total da atividade 13 é de 1 dia', NÃO a alternativa do gabarito (C) 'total para a atividade 14 é de 3 dias' (calculado como 0, não 3). Uma segunda hipótese de topologia (variando as conexões de 6 e 7) produziu o mesmo resultado incompatível com C. Dada a incerteza residual sobre a reconstrução exata de todas as setas a partir da imagem (especificamente os destinos de 6 e 7), e que duas hipóteses de topologia razoáveis convergem para D em vez de C, esta é registrada como uma divergência a esclarecer — pode ser um erro de reconstrução de topologia ainda não identificado, ou uma divergência genuína com o gabarito. Mantida em revisão após 3 rodadas; não recomendável nova rodada sem uma ferramenta de desenho mais precisa."
-        }
-      ],
-      "unresolved": true,
-      "annulled": false
-    },
-    {
-      "id": "prova07-q24",
-      "source": {
-        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
-        "year": 2010,
-        "originalNumber": 24
-      },
-      "area": "logica",
-      "subtopic": "8.3 A lógica sentencial",
-      "stem": "Associe as proposições da lógica sentencial na coluna da direita, onde P e Q são predicados atômicos, às explicações na coluna da esquerda.\n\nI - A proposição não está em nenhuma forma normal.\nII - A proposição está na forma normal disjuntiva.\nIII - A proposição está na forma normal conjuntiva.\n\nW, X, Y, Z - [QUATRO FÓRMULAS ENVOLVENDO P E Q COM CONECTIVOS (∨, ∧, ¬) NÃO CAPTURADAS NA EXTRAÇÃO DE TEXTO]\n\nAs associações corretas são:",
-      "images": [
-        {
-          "id": "img1",
-          "path": null,
-          "alt": "Quatro fórmulas proposicionais rotuladas W, X, Y, Z envolvendo P e Q, com conectivos (∨, ∧, ¬) renderizados como glifos vetoriais na página original, não extraíveis como texto — necessárias para associar cada uma às formas normais (disjuntiva, conjuntiva ou nenhuma)."
-        }
-      ],
-      "alternatives": [
-        {
-          "key": "A",
-          "text": "I - W, II - X, III - Y"
-        },
-        {
-          "key": "B",
-          "text": "I - W, II - Z, III - Y"
-        },
-        {
-          "key": "C",
-          "text": "I - X, II - W, III - Z"
-        },
-        {
-          "key": "D",
-          "text": "I - Y, II - X, III - Z"
-        },
-        {
-          "key": "E",
-          "text": "I - Z, II - Y, III - X"
-        }
-      ],
-      "gabaritoLetter": "B",
-      "derivedLetter": "A",
-      "reviewRounds": [
-        {
-          "round": 1,
-          "conclusion": "não é possível derivar independentemente sem os conectivos exatos das quatro fórmulas W, X, Y, Z.",
-          "note": "Os conectivos lógicos são vetor gráfico na página original; sem eles não é possível classificar cada fórmula quanto à forma normal (disjuntiva, conjuntiva ou nenhuma)."
-        },
-        {
-          "round": 2,
-          "conclusion": "conectivos agora legíveis; divergência genuína sobre qual fórmula está em FND",
-          "note": "As quatro fórmulas foram lidas com nitidez do PDF nativo: W=¬(P∨¬Q)∧(P∨¬Q); X=(P∧¬Q)∨(¬P∧Q); Y=(P∨Q)∧(¬P∨Q); Z=¬(P∧¬Q)∨(P∧¬Q). W tem a forma ¬A∧A (negação sobre um OR composto, não sobre um literal) e por isso não se encaixa nem na forma normal disjuntiva (FND) nem na conjuntiva (FNC) — corresponde a (I) 'nenhuma forma normal', concordando com o gabarito nesse ponto. X=(P∧¬Q)∨(¬P∧Q) é uma disjunção de duas conjunções de literais — a forma canônica exata de FND (II), sem nenhuma negação sobre termo composto. Y=(P∨Q)∧(¬P∨Q) é uma conjunção de duas disjunções de literais — a forma canônica exata de FNC (III). Já Z=¬(P∧¬Q)∨(P∧¬Q) tem a mesma estrutura problemática de W (negação sobre um AND composto, não sobre um literal), o que deveria desqualificá-la de estar em FND tanto quanto W está desqualificada de FNC — Z deveria ser a alternativa NÃO utilizada (sobra), não a resposta para (II). Isso aponta para a alternativa (A) 'I-W, II-X, III-Y', não para o gabarito registrado (B) 'I-W, II-Z, III-Y'. Divergência genuína e bem fundamentada pela definição padrão de forma normal disjuntiva (disjunção de conjunções de literais, sem negação sobre subfórmulas compostas); mantida em revisão."
-        }
-      ],
-      "unresolved": true,
-      "annulled": false
-    },
-    {
-      "id": "prova07-q25",
-      "source": {
-        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
-        "year": 2010,
-        "originalNumber": 25
-      },
-      "area": "logica",
-      "subtopic": "8.3 A lógica sentencial",
-      "stem": "Dadas as proposições da lógica sentencial e as explicações, associe a coluna da direita com a coluna da esquerda [FÓRMULAS E EXPLICAÇÕES NÃO CAPTURADAS COM CLAREZA NA EXTRAÇÃO DE TEXTO — mesmo problema de conectivos lógicos vetoriais das questões anteriores]. As associações corretas são:",
-      "images": [
-        {
-          "id": "img1",
-          "path": null,
-          "alt": "Fórmulas proposicionais e rótulos de associação (X, Y, Z) com conectivos lógicos renderizados como glifos vetoriais, não extraíveis como texto."
-        }
-      ],
-      "alternatives": [
-        {
-          "key": "A",
-          "text": "I - X, II - Y"
-        },
-        {
-          "key": "B",
-          "text": "I - X, II - Z"
-        },
-        {
-          "key": "C",
-          "text": "I - Y, II - X"
-        },
-        {
-          "key": "D",
-          "text": "I - Y, II - Z"
-        },
-        {
-          "key": "E",
-          "text": "I - Z, II - X"
-        }
-      ],
-      "gabaritoLetter": "E",
-      "derivedLetter": "C",
-      "reviewRounds": [
-        {
-          "round": 1,
-          "conclusion": "não é possível derivar independentemente: as fórmulas envolvidas usam conectivos lógicos vetoriais não capturados no texto-fonte.",
-          "note": "Mesma limitação de extração das questões 22 a 24 desta prova."
-        },
-        {
-          "round": 2,
-          "conclusion": "fórmulas agora legíveis; tabela-verdade aponta para uma alternativa diferente do gabarito",
-          "note": "As fórmulas foram lidas com nitidez do PDF nativo: I=(P→Q)→((P∨R)→(Q∧S)); II=(P→Q)→((P∧R)→(Q∨S)). Testando I com P=F,Q=F,R=T,S=F: antecedente P→Q=F→F=V (vacuamente); consequente (P∨R)→(Q∧S)=(F∨T)→(F∧F)=V→F=F; logo I=V→F=F nesse modelo — I NÃO é uma tautologia. Testando I com P=Q=R=S=V: antecedente=V, consequente=(V∨V)→(V∧V)=V→V=V, logo I=V→V=V — I é satisfatível. Logo I é satisfatível mas não tautologia (categoria Y), não uma contradição (categoria Z) como indica o gabarito — de fato, o exemplo com todas as variáveis verdadeiras já mostra que I pode ser verdadeira, o que é logicamente incompatível com I ser uma contradição (que por definição nunca é verdadeira). Testando II: se P→Q é verdadeiro e P∧R é verdadeiro, então P é verdadeiro, e pela suposição P→Q, Q é verdadeiro, logo Q∨S é verdadeiro — o consequente é sempre verdadeiro quando o antecedente é verdadeiro; e se o antecedente P→Q é falso, a implicação toda é vacuamente verdadeira. Logo II é sempre verdadeira em qualquer valoração — II é uma tautologia (categoria X), concordando com o gabarito nesse ponto. A combinação (I-Y, II-X) corresponde à alternativa (C), não ao gabarito registrado (E) 'I-Z, II-X'. Divergência genuína e verificada por contraexemplo explícito (I é comprovadamente satisfatível, logo não pode ser uma contradição); mantida em revisão."
-        }
-      ],
-      "unresolved": true,
-      "annulled": false
-    },
-    {
-      "id": "prova07-q45",
-      "source": {
-        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
-        "year": 2010,
-        "originalNumber": 45
-      },
-      "area": "arq-dados",
-      "subtopic": "1.7 Modelagem dimensional",
-      "stem": "Data Warehouses virtuais proporcionam visões de bancos de dados operacionais que são materializadas para acesso eficiente.\n\nPORQUE\n\nData Warehouse (depósito de dados) proporciona acesso a bancos de dados disjuntos e geralmente heterogêneos.\n\nAnalisando as afirmações acima, conclui-se que",
-      "images": null,
-      "alternatives": [
-        {
-          "key": "A",
-          "text": "as duas afirmações são verdadeiras e a segunda justifica a primeira."
-        },
-        {
-          "key": "B",
-          "text": "as duas afirmações são verdadeiras e a segunda não justifica a primeira."
-        },
-        {
-          "key": "C",
-          "text": "a primeira afirmação é verdadeira e a segunda é falsa."
-        },
-        {
-          "key": "D",
-          "text": "a primeira afirmação é falsa e a segunda é verdadeira."
-        },
-        {
-          "key": "E",
-          "text": "as duas afirmações são falsas."
-        }
-      ],
-      "gabaritoLetter": "C",
-      "derivedLetter": "D",
-      "reviewRounds": [
-        {
-          "round": 1,
-          "conclusion": "diverge do gabarito",
-          "note": "Interpretei a primeira afirmação como falsa: por definição, um data warehouse 'virtual' oferece acesso via visões sobre os sistemas de origem justamente SEM materializar os dados (a materialização é o que o distingue de um DW 'real'/físico); afirmar que ele 'proporciona visões... que são materializadas para acesso eficiente' pareceria contraditório com o próprio conceito de 'virtual'. Já a segunda afirmação (DW dá acesso a bases disjuntas/heterogêneas) pareceu razoável como descrição geral de um DW federado, levando-me a D (primeira falsa, segunda verdadeira). O gabarito indica C (primeira verdadeira, segunda falsa), sugerindo uma leitura em que 'virtual' se refere a uma camada de visões que PODE ser materializada sob demanda para desempenho (uso não estritamente definicional do termo), e que a descrição de 'bancos de dados disjuntos e heterogêneos' não corresponderia à definição padrão (Inmon) de data warehouse como coleção integrada e não volátil. Divergência não resolvida nesta sessão."
-        }
-      ],
-      "unresolved": true,
-      "annulled": false
-    },
-    {
-      "id": "prova07-q47",
-      "source": {
-        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
-        "year": 2010,
-        "originalNumber": 47
-      },
-      "area": "arq-dados",
-      "subtopic": "1.7 Modelagem dimensional",
-      "stem": "Data warehouse tem por característica ser",
-      "images": null,
-      "alternatives": [
-        {
-          "key": "A",
-          "text": "orientado a assuntos."
-        },
-        {
-          "key": "B",
-          "text": "temporário."
-        },
-        {
-          "key": "C",
-          "text": "descentralizado."
-        },
-        {
-          "key": "D",
-          "text": "focalizado em aspectos operacionais."
-        },
-        {
-          "key": "E",
-          "text": "normalizado."
-        }
-      ],
-      "gabaritoLetter": "B",
-      "derivedLetter": "A",
-      "reviewRounds": [
-        {
-          "round": 1,
-          "conclusion": "diverge do gabarito",
-          "note": "Pela definição clássica de Inmon, um data warehouse é caracterizado por quatro atributos: orientado a assuntos, integrado, não volátil e variável no tempo (time-variant) — o que levou à derivação (A) 'orientado a assuntos', uma das quatro características mais citadas na literatura. O gabarito indica (B) 'temporário', que contraria a literatura padrão (data warehouses são tipicamente descritos como repositórios de dados históricos de longo prazo, não temporários/efêmeros) — a menos que a intenção da banca fosse uma tradução livre de 'time-variant' (variável no tempo) como 'temporário' (relativo ao tempo), o que seria uma leitura não convencional do termo em português. Divergência não resolvida nesta sessão; mantida em revisão."
-        }
-      ],
-      "unresolved": true,
-      "annulled": false
-    },
-    {
-      "id": "prova07-q54",
-      "source": {
-        "file": "tarde_prova_07_analista_de_sistemas_junior_processos_de_negocio.html",
-        "year": 2010,
-        "originalNumber": 54
-      },
-      "area": "eng-sw",
-      "subtopic": "5.3 Modelos, metodologias, técnicas e ferramentas de análise e projeto (estruturado e orientado a objetos)",
-      "stem": "Tanto no paradigma orientado a objetos quanto no paradigma estruturado, existem diversas técnicas úteis para averiguar se um sistema de software foi bem projetado. No primeiro, essas medidas são aplicáveis a classes, e no segundo, são aplicáveis a módulos. Quais, dentre os termos apresentados a seguir, são medidas de qualidade de projeto aplicáveis em ambos os paradigmas?",
-      "images": null,
-      "alternatives": [
-        {
-          "key": "A",
-          "text": "Fan-in, fan-out e herança.",
-          "explanation": "Herança é um conceito específico do paradigma orientado a objetos; módulos no paradigma estruturado não possuem herança."
-        },
-        {
-          "key": "B",
-          "text": "Encapsulamento, herança e coesão.",
-          "explanation": "Encapsulamento e herança, como entendidos na orientação a objetos, não se aplicam da mesma forma a módulos do paradigma estruturado."
-        },
-        {
-          "key": "C",
-          "text": "Coesão, acoplamento e polimorfismo.",
-          "explanation": "Polimorfismo é um conceito específico da orientação a objetos, não aplicável a módulos do paradigma estruturado."
-        },
-        {
-          "key": "D",
-          "text": "Fan-in, fan-out e acoplamento."
-        },
-        {
-          "key": "E",
-          "text": "Coesão, acoplamento e polimorfismo.",
-          "explanation": "Idêntica à alternativa (C) no texto extraído; polimorfismo, de todo modo, não se aplica ao paradigma estruturado."
-        }
-      ],
-      "gabaritoLetter": "C",
-      "derivedLetter": "D",
-      "reviewRounds": [
-        {
-          "round": 1,
-          "conclusion": "diverge do gabarito / possível anomalia nas alternativas",
-          "note": "Fan-in, fan-out e acoplamento são métricas de dependência entre componentes historicamente originadas no paradigma estruturado, mas aplicáveis também a classes no paradigma OO, o que levou à derivação (D). O gabarito aponta a alternativa de índice C, cujo texto — 'Coesão, acoplamento e polimorfismo' — inclui polimorfismo, um conceito que não existe em módulos do paradigma estruturado (o que tornaria a própria alternativa logicamente inconsistente com o enunciado). Chama atenção que, na extração de texto, as alternativas (C) e (E) desta questão têm exatamente o mesmo texto ('Coesão, acoplamento e polimorfismo'), o que sugere possível erro de digitação/diagramação no caderno original (talvez uma das duas devesse ser apenas 'Coesão e acoplamento', sem polimorfismo) — não é possível confirmar a redação exata pretendida sem reinspecionar o PDF original com mais cuidado. Mantida em revisão por essa combinação de divergência de derivação e possível anomalia no enunciado."
-        }
-      ],
-      "unresolved": true,
-      "annulled": false
-    },
-    {
-      "id": "transp15-q26",
-      "source": {
-        "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
-        "year": 2018,
-        "originalNumber": 26
-      },
-      "area": "eng-sw",
-      "subtopic": "5.4 Verificação, validação e teste",
-      "stem": "O custo da qualidade inclui todos os custos feitos na busca da qualidade, dividindo-se em custos de prevenção, de avaliação e de falha, interna e externa. Entre os custos de prevenção está o das atividades de",
-      "images": null,
-      "alternatives": [
-        {
-          "key": "A",
-          "text": "testes e depuração"
-        },
-        {
-          "key": "B",
-          "text": "coleta de dados e métricas de avaliação"
-        },
-        {
-          "key": "C",
-          "text": "retrabalho necessárias para corrigir o erro"
-        },
-        {
-          "key": "D",
-          "text": "condução de revisões técnicas para os produtos de engenharia de software"
-        },
-        {
-          "key": "E",
-          "text": "gerência para planejar e coordenar todas as atividades de controle e garantia de qualidade"
-        }
-      ],
-      "gabaritoLetter": "E",
-      "derivedLetter": "D ou E (ambíguo)",
-      "reviewRounds": [
-        {
-          "round": 1,
-          "conclusion": "diverge/ambíguo",
-          "note": "O gabarito oficial indica (E). Em Pressman ('Engenharia de Software'), referência comum para esse tema em concursos de TI, os custos de PREVENÇÃO são explicitamente descritos como: 'quality planning, formal technical reviews, test equipment, training' — ou seja, tanto o planejamento/coordenação da qualidade (opção E) quanto a condução de revisões técnicas formais (opção D, 'formal technical reviews') aparecem juntos, no mesmo texto-fonte, como exemplos de custo de PREVENÇÃO. Isso torna as opções D e E ambas defensáveis como resposta a partir da literatura padrão, sem um critério textual inequívoco para eliminar D. Marcada para revisão por baixa confiança na derivação independente (não por mero desacordo pontual), mantendo o gabarito oficial (E) registrado para referência."
-        }
-      ]
-    },
-    {
       "id": "transp15-q39",
       "source": {
         "file": "cesgranrio-2018-transpetro-analista-de-sistemas-junior-processos-de-negocio-prova.html",
@@ -597,6 +46,11 @@
           "round": 2,
           "conclusion": "dados agora visíveis, mas divergência genuína persiste",
           "note": "As Figuras com os dados de FORNECEDOR/MATERIAL/VENDA foram lidas diretamente do PDF nativo. FORNECEDOR tem 4 linhas (ids 11111, 3333, 2222, 4444); VENDA referencia apenas ID_F em {11111, 3333, 2222} (4444 nunca aparece em VENDA). Analisando cada alternativa: (A) omite TEL1, que é NOT NULL sem valor default — erro de restrição. (B) insere VENDA com ID_F=3030, mas 3030 não é um ID_FORN válido em FORNECEDOR (é, na verdade, um ID_MATER de MATERIAL) — viola a FK VENDA_FK1. (C) apaga FORNECEDOR onde ID_FORN NOT IN (SELECT ID_F FROM VENDA) — como ID_F é NOT NULL em VENDA, não há risco do 'NULL trap' do NOT IN; o único fornecedor não referenciado em VENDA é 4444, e apagá-lo não viola nenhuma FK (nenhuma linha de VENDA aponta para 4444). Por uma leitura estritamente sintática/semântica de SQL, este comando deveria executar sem erro. (D) apaga FORNECEDOR onde TEL3 IS NOT NULL — isso inclui o fornecedor 2222, que TEM vendas associadas (referenciado por VENDA_FK1), violando a integridade referencial — erro. (E) insere em FORNECEDOR fornecendo apenas 3 valores (ID_FORN, NOME, TEL1) sem lista explícita de colunas, para uma tabela com 5 colunas — em SQL padrão/Oracle isso é um erro de sintaxe por contagem de valores insuficiente (equivalente a ORA-00947), independentemente de TEL2/TEL3 serem colunas opcionais/nulas. O gabarito (fonte externa, ver nota da extração original) indica E, mas a derivação independente aponta (C) como o comando que executa sem erro sob uma leitura estrita de SQL, e considera (E) também teoricamamente inválido pela contagem de valores — a menos que a banca tenha adotado uma leniência não-padrão sobre a obrigatoriedade de listar todos os valores. Mantida em revisão por divergência genuína, não por falta de dados."
+        },
+        {
+          "round": 3,
+          "conclusion": "mantida fora do simulado; gabarito externo contradiz o raciocínio",
+          "note": "C é a única derivação sem erro: apaga o fornecedor 4444, sem vendas. E tem 3 valores para 5 colunas. Falta conferir no gabarito oficial da Cesgranrio."
         }
       ]
     },
@@ -645,6 +99,11 @@
           "round": 2,
           "conclusion": "diagrama agora visível, mas divergência genuína de direção de FK persiste",
           "note": "O diagrama E-R foi lido diretamente do PDF nativo: A --(0,n)-- RA --(0,1)-- B --(0,1)-- RB --(0,1)-- C, com identificadores (a1,a2) para A, b1 para B, c1 para C. Pela convenção padrão de cardinalidade mínima/máxima ensinada em cursos de BD no Brasil (Heuser e equivalentes) e usada de forma consistente na Q41 desta mesma prova: o rótulo perto de uma entidade X descreve a própria participação de X no relacionamento (quantas ocorrências da entidade OPOSTA uma ocorrência de X alcança). Logo, (0,n) perto de A significa 'cada A se relaciona com 0 a n B's' (A é o lado 'um', não precisa de FK), e (0,1) perto de B significa 'cada B se relaciona com 0 ou 1 A' (B é o lado 'muitos' equivalente, e deve carregar a FK para A, nullable pois o mínimo é 0). Isso aponta para a estrutura da alternativa (B): B(B1,B2,A1,A2 nullable) com FK para A, e A sem FK. Já o gabarito (E) inverte essa direção (A carrega FK para B, e ainda marcado NOT NULL, incompatível com a cardinalidade mínima 0 de A do lado de RA) — o que, pela convenção padrão, corresponderia a modelar o relacionamento inverso ao que o diagrama descreve. A alternativa (C) foi descartada por um defeito técnico independente: sua tabela associativa RA usa PK composta (A1,A2,B1), o que NÃO impede um mesmo B1 de aparecer em múltiplas linhas com A1,A2 diferentes, violando a cardinalidade máxima 1 de B seja qual for a direção adotada. Para o relacionamento RB (B--C, (0,1)-(0,1), simétrico opcional-opcional), tanto (B) quanto (D) modelam de formas tecnicamente válidas (tabela associativa chaveada por C1 com UNIQUE em B1, ou FK direta equivalente), então essa parte não distingue as alternativas. Esta é uma divergência genuína e bem fundamentada com a fonte externa do gabarito (não apenas falta de confiança): mantida em revisão para uma possível 3ª rodada ou confirmação cruzada com outra fonte do gabarito oficial."
+        },
+        {
+          "round": 3,
+          "conclusion": "mantida fora do simulado; gabarito externo contradiz o raciocínio",
+          "note": "O gabarito E exige NOT NULL, incompatível com as cardinalidades mínimas 0 do diagrama. Falta conferir no gabarito oficial da Cesgranrio."
         }
       ]
     },
@@ -693,6 +152,11 @@
           "round": 2,
           "conclusion": "glifos agora legíveis, mas divergência semântica genuína com o gabarito",
           "note": "As cinco fórmulas foram lidas com nitidez total do PDF nativo (sem corrupção de glifos nesta leitura). A sentença 'Todo aluno do curso de Informática estuda algum tópico de Matemática Discreta' tem estrutura '∀x, se x é aluno de Informática, ENTÃO existe algum y tópico de MD que x estuda' — tradução direta e padrão: ∀x((A(x)∧I(x)) → ∃y(T(y)∧E(x,y))), que é exatamente a alternativa (A). O gabarito, no entanto, indica (D): ∀x((A(x)∧I(x)) → ∀y(T(y)→E(x,y))), que traduz 'todo aluno de Informática estuda TODOS os tópicos de MD' — um quantificador universal sobre y, não existencial, o que corresponde a 'todo tópico', não a 'algum tópico' como está no enunciado em português. Essa é uma divergência semântica clara e verificável (o advérbio 'algum' em português é inequivocamente existencial), não uma questão de baixa confiança de leitura. Mantida em revisão; o gabarito para esta prova foi obtido de fonte externa (estudegratis.com.br, não do material oficial local), o que é a explicação mais provável para a divergência, mas isso não pôde ser confirmado de forma independente nesta rodada."
+        },
+        {
+          "round": 3,
+          "conclusion": "mantida fora do simulado; gabarito externo contradiz o raciocínio",
+          "note": "A tradução direta de 'algum tópico' é A, com ∃y. O gabarito D traduz 'todos os tópicos'. Falta conferir no gabarito oficial da Cesgranrio."
         }
       ]
     },
@@ -741,160 +205,62 @@
           "round": 2,
           "conclusion": "glifos agora legíveis; tabela-verdade aponta claramente para uma alternativa diferente do gabarito",
           "note": "As cinco fórmulas foram lidas com nitidez total do PDF nativo. Tabela-verdade construída para cada uma: (A) (P→Q)∨¬Q é uma TAUTOLOGIA (sempre verdadeira: quando Q é falso, ¬Q cobre; quando Q é verdadeiro, P→Q é verdadeiro). (B) (P∧¬P)→Q também é uma TAUTOLOGIA — o antecedente P∧¬P é sempre falso (uma contradição em si), e uma implicação com antecedente falso é sempre verdadeira (verdade vacuosa), logo (B) nunca é falsa, não podendo ser a contradição pedida. (C) ¬(P∨Q)↔(P∨Q) é uma CONTRADIÇÃO genuína: sendo X=(P∨Q), a fórmula é ¬X↔X, que é sempre falsa (X e ¬X nunca têm o mesmo valor-verdade, então a bicondicional nunca é satisfeita), para qualquer combinação de P e Q. (D) (P↔P)∧(P∨Q): como P↔P é sempre verdadeiro, a fórmula equivale a (P∨Q), que é uma CONTINGÊNCIA (verdadeira sempre que P ou Q é verdadeiro, falsa apenas quando ambos são falsos) — não é constante. (E) (P↔Q)∨(Q∨¬Q): como Q∨¬Q é sempre verdadeiro, a fórmula é sempre verdadeira — TAUTOLOGIA. Conclusão: apenas (C) é uma contradição genuína (falsa em toda valoração); o gabarito registrado (B) corresponde, na verdade, a uma tautologia (verdade vacuosa de uma implicação com antecedente contraditório), o que é matematicamente incompatível com ser 'uma contradição'. Esta é uma divergência de alta confiança (verificada por tabela-verdade completa, não por leitura ambígua), sugerindo um provável erro de transcrição na fonte externa do gabarito usada para esta prova. Mantida em revisão em vez de forçar a concordância com o gabarito registrado."
+        },
+        {
+          "round": 3,
+          "conclusion": "mantida fora do simulado; gabarito externo contradiz o raciocínio",
+          "note": "A única contradição por tabela-verdade é C; B é tautologia. Falta conferir no gabarito oficial da Cesgranrio."
         }
       ]
     },
     {
-      "id": "transp23e6-q27",
-      "source": {
-        "file": "cesgranrio-2023-transpetro-profissional-transpetro-de-nivel-superior-junior-enfase-6-processos-de-negocios-prova.html",
-        "year": 2023,
-        "originalNumber": 27
-      },
-      "area": "arq-dados",
-      "subtopic": "1.1 Modelagem de dados (conceitual, lógica e física)",
-      "stem": "A Figura a seguir exibe um diagrama E-R, que representa o modelo conceitual de um banco de dados. [Diagrama com entidades R, S, T e um relacionamento W entre as três, com cardinalidades (0,n) e (1,1) nas extremidades — posições exatas não capturadas com segurança na extração de texto.] Esse modelo conceitual deu origem a um esquema relacional cujas tabelas, que representam o mapeamento das entidades R, S e T, são mostradas a seguir. A notação usada para descrevê-las representa suas respectivas chaves primárias, por meio de nomes de colunas sublinhados.\n\nR (RX)\nS (SX)\nT (TX)\n\nQual tabela representa, adequadamente, a relação W, de modo a preservar as restrições existentes no diagrama E-R?",
-      "images": [
-        {
-          "id": "img1",
-          "path": null,
-          "alt": "As cinco alternativas mostram todas o mesmo texto solto 'W (RX, SX, TX, W1)'; a diferença real entre elas está em qual subconjunto de {RX, SX, TX} aparece sublinhado (indicando a chave primária composta da tabela W), formatação de sublinhado que não é preservada pela extração de texto simples, tornando as cinco alternativas indistinguíveis no texto capturado."
-        }
-      ],
-      "alternatives": [
-        {
-          "key": "A",
-          "text": "W (RX, SX, TX, W1) — com uma combinação de colunas sublinhadas (chave primária) não distinguível das demais alternativas no texto extraído"
-        },
-        {
-          "key": "B",
-          "text": "W (RX, SX, TX, W1) — com uma combinação de colunas sublinhadas (chave primária) não distinguível das demais alternativas no texto extraído"
-        },
-        {
-          "key": "C",
-          "text": "W (RX, SX, TX, W1) — com uma combinação de colunas sublinhadas (chave primária) não distinguível das demais alternativas no texto extraído"
-        },
-        {
-          "key": "D",
-          "text": "W (RX, SX, TX, W1) — com uma combinação de colunas sublinhadas (chave primária) não distinguível das demais alternativas no texto extraído"
-        },
-        {
-          "key": "E",
-          "text": "W (RX, SX, TX, W1) — com uma combinação de colunas sublinhadas (chave primária) não distinguível das demais alternativas no texto extraído"
-        }
-      ],
-      "gabaritoLetter": "C",
-      "derivedLetter": "não determinável sem a formatação de sublinhado original",
-      "reviewRounds": [
-        {
-          "round": 1,
-          "conclusion": "depende de formatação (sublinhado de chave primária) perdida na extração de texto",
-          "note": "As cinco alternativas têm exatamente o mesmo texto de colunas ('W (RX, SX, TX, W1)'); a diferença entre elas está inteiramente em qual subconjunto dessas colunas está sublinhado no PDF original, indicando a chave primária (possivelmente composta) da tabela que representa o relacionamento W. Essa formatação de sublinhado não é preservada pela extração de texto (`<div class=\"t\">` não carrega decoração de sublinhado nesta extração), tornando as cinco opções indistinguíveis sem inspeção visual direta do PDF. O diagrama E-R (cardinalidades entre R, S, T e W) também não foi capturado com posições confiáveis. Gabarito oficial (fonte: Gabarito Cesgranrio Transpetro 2023.2, Edital nº 2, alterado em 9/01/2024, Prova 6): C."
-        },
-        {
-          "round": 2,
-          "conclusion": "diagrama E-R agora visível; PK correta deduzida logicamente, mas letra não confirmável",
-          "note": "O diagrama E-R foi lido diretamente do PDF nativo: R e S participam de W com cardinalidade (0,n) cada, e T participa de W com cardinalidade (1,1). Pela regra padrão de tradução de relacionamentos ternários, quando um dos participantes tem cardinalidade máxima 1 (aqui, T), esse participante determina funcionalmente a instância do relacionamento — ou seja, a chave primária da tabela W deve ser TX isoladamente (não a combinação de RX+SX+TX, nem RX+TX, nem SX+TX), já que cada T se associa a exatamente 1 combinação (R,S) via W. Essa conclusão lógica está bem fundamentada e não depende de sublinhado. O problema é que as cinco alternativas continuam com texto idêntico 'W (RX, SX, TX, W1)' mesmo na releitura do PDF nativo — a única diferença real entre elas (qual subconjunto de colunas está sublinhado, indicando a chave primária) é uma formatação visual que não sobrevive na transcrição de texto recebida, mesmo a partir do render multimodal do PDF. Não foi possível, portanto, confirmar com segurança qual letra (A-E) corresponde a 'TX sublinhado isoladamente'. Mantida em revisão; o gabarito (C) é registrado para referência, mas a correspondência entre a dedução lógica (PK=TX) e a letra C não pôde ser verificada de forma independente nesta rodada."
-        }
-      ],
-      "unresolved": true,
-      "annulled": false
-    },
-    {
-      "id": "petro08-q22",
+      "id": "petro08-q43",
       "source": {
         "file": "petrobras0208_gabsup_gabarito.pdf",
         "year": 2008,
-        "originalNumber": 22
+        "originalNumber": 43
       },
-      "subtopic": "1.4 Normalização das estruturas de dados",
-      "stem": "Considere as tabelas CLIENTE (*CODIGO_C, CPF, NOME, CIDADE), PRODUTO (*CODIGO_P, DESCRICAO, PRECO) e VENDA (*CODIGO_C, *CODIGO_P, CPF, DATA, QUANTIDADE), com chaves estrangeiras de VENDA para CLIENTE (via CODIGO_C) e para PRODUTO (via CODIGO_P). O campo CPF é chave candidata para CLIENTE e também é armazenado na tabela VENDA. NOME e DESCRICAO também são chaves candidatas de suas respectivas tabelas. CIDADE, PRECO, DATA e QUANTIDADE admitem valores repetidos. Sobre as formas normais a que as tabelas satisfazem, assinale a afirmativa correta.",
+      "area": "seg-info",
+      "subtopic": "9.19 ISO 27002, criptografia, certificação e assinatura digital",
+      "stem": "De acordo com a norma NBR/ISO 27002, protegem as informações da organização e informam aos signatários das suas responsabilidades, para proteger, usar e divulgar a informação de maneira responsável e autorizada, os(as)",
       "images": null,
       "alternatives": [
         {
-          "text": "CLIENTE satisfaz à segunda forma normal (2FN), mas não à terceira (3FN).",
+          "text": "acordos de confidencialidade e de não-divulgação.",
           "key": "A"
         },
         {
-          "text": "PRODUTO satisfaz à segunda forma normal (2FN), mas não à terceira (3FN).",
-          "key": "B"
+          "text": "contratos de não-repúdio e privacidade.",
+          "key": "B",
+          "explanation": "Não-repúdio e privacidade são propriedades/controles de segurança distintos, não o instrumento específico citado pela norma para formalizar responsabilidades de proteção/uso/divulgação da informação por signatários."
         },
         {
-          "text": "VENDA satisfaz à segunda forma normal (2FN), mas não à terceira (3FN).",
-          "key": "C"
+          "text": "direitos autorais e industriais.",
+          "key": "C",
+          "explanation": "Tratam de propriedade intelectual, não do compromisso formal de proteção/divulgação responsável da informação pelos signatários."
         },
         {
-          "text": "VENDA não satisfaz à segunda forma normal (2FN).",
-          "key": "D"
+          "text": "normas e políticas de segurança.",
+          "key": "D",
+          "explanation": "São documentos organizacionais gerais de segurança, não o instrumento específico assinado por signatários citado na questão."
         },
         {
-          "text": "As três tabelas satisfazem à terceira forma normal (3FN).",
-          "key": "E"
+          "text": "senhas e identidades digitais.",
+          "key": "E",
+          "explanation": "São mecanismos de autenticação, não instrumentos que formalizam responsabilidades de proteção e divulgação da informação por signatários."
         }
       ],
-      "gabaritoLetter": "E",
-      "derivedLetter": "D",
+      "gabaritoLetter": "C",
+      "derivedLetter": "A",
       "reviewRounds": [
         {
           "round": 1,
           "conclusion": "diverge do gabarito",
-          "note": "A chave primária de VENDA é o par composto (CODIGO_C, CODIGO_P). O enunciado afirma explicitamente que o campo CPF (que depende funcionalmente apenas de CODIGO_C, um subconjunto próprio da chave composta, dado que CPF é atributo de CLIENTE e é 'também armazenado' redundantemente em VENDA) está presente em VENDA. Isso configura uma dependência funcional parcial de um atributo não-primo (CPF) sobre parte da chave primária (CODIGO_C), o que é a definição clássica de violação da 2FN — levando à derivação independente de que a alternativa D ('VENDA não satisfaz à 2FN') é a correta. O gabarito oficial, porém, indica a alternativa E ('as três tabelas satisfazem à 3FN'). Não foi encontrada uma leitura alternativa do enunciado que reconcilie essa divergência com segurança (por exemplo, se a banca não considerou CPF em VENDA como constituindo uma dependência funcional formal sobre CODIGO_C, apenas como redundância de armazenamento sem FD associada, o que seria uma leitura não convencional da teoria de normalização). Enviada para revisão por divergência genuína entre a derivação independente e o gabarito impresso."
+          "note": "A coluna oficial do cargo traz 43-C (direitos autorais e industriais), mas a norma trata esse conteúdo como acordos de confidencialidade e de não divulgação (A). O banco registrava A por engano de leitura."
         }
       ],
       "unresolved": true,
-      "annulled": false,
-      "area": "arq-dados"
-    },
-    {
-      "id": "petro08-q55",
-      "source": {
-        "file": "petrobras0208_gabsup_gabarito.pdf",
-        "year": 2008,
-        "originalNumber": 55
-      },
-      "subtopic": "5.3 Modelos, metodologias, técnicas e ferramentas de análise e projeto (estruturado e orientado a objetos)",
-      "stem": "A figura acima mostra um diagrama de classes UML (ClasseA, ClasseB, ClasseC, ClasseD, ClasseE) desenvolvido para um projeto em que ainda não se sabe em que linguagem será realizada a implementação. Sobre o diagrama, assinale a afirmação correta. [O DIAGRAMA DE CLASSES (RELAÇÕES DE COMPOSIÇÃO, GENERALIZAÇÃO E MULTIPLICIDADES ENTRE AS CLASSES) NÃO FOI CAPTURADO COM FIDELIDADE NA EXTRAÇÃO DE TEXTO — OS SÍMBOLOS DE MULTIPLICIDADE/DIAMANTES DE COMPOSIÇÃO APARECEM COMO ASTERISCOS SOLTOS, SEM POSIÇÃO CLARA]",
-      "images": [
-        {
-          "id": "img1",
-          "path": null,
-          "alt": "Diagrama de classes UML com ClasseA, ClasseB, ClasseC (associação/composição), ClasseD e ClasseE (generalização), com símbolos de multiplicidade representados apenas por asteriscos soltos ('**', '*') na extração de texto, sem associação clara a qual relação/extremidade cada símbolo pertence — mesmo problema de diagramas UML nativos da página não capturados com fidelidade já documentado em exames anteriores (prova6-q52/q54, prova07-q50/q52)."
-        }
-      ],
-      "alternatives": [
-        {
-          "text": "Há um erro na cardinalidade da associação entre ClasseA e ClasseB, pois se trata de uma composição e, como tal, um objeto da ClasseB só pode estar associado a um objeto da ClasseA.",
-          "key": "A"
-        },
-        {
-          "text": "Há uma dependência cíclica entre ClasseB, ClasseC e ClasseE, o que não é permitido pela UML.",
-          "key": "B"
-        },
-        {
-          "text": "O fato de que ClasseD generaliza ClasseA e ClasseB se traduz em herança múltipla, o que não é permitido pela UML.",
-          "key": "C"
-        },
-        {
-          "text": "Retirando a ClasseA, o diagrama resultante corresponde ao padrão de projeto composite.",
-          "key": "D"
-        },
-        {
-          "text": "Invertendo o sentido de todas as generalizações, o diagrama resultante corresponde ao padrão de projeto chain of responsability.",
-          "key": "E"
-        }
-      ],
-      "gabaritoLetter": "A",
-      "derivedLetter": null,
-      "reviewRounds": [
-        {
-          "round": 1,
-          "conclusion": "não é possível derivar independentemente com segurança sem a posição exata dos símbolos de multiplicidade/composição no diagrama original, que na extração de texto aparecem apenas como asteriscos soltos ('**', '*'), sem indicação de qual extremidade de qual relação (ClasseA-ClasseB, ClasseB-ClasseC, ClasseD/ClasseA/ClasseB, ClasseE) cada um qualifica.",
-          "note": "Todas as cinco alternativas dependem criticamente da leitura visual exata do diagrama (posição do diamante de composição, sentido das setas de generalização, multiplicidades numéricas); requer reconstrução visual a partir do PDF-fonte em fase posterior."
-        }
-      ],
-      "unresolved": true,
-      "annulled": false,
-      "area": "eng-sw"
+      "annulled": false
     }
   ]
 }
